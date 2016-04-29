@@ -47,7 +47,7 @@ P{}
 .header_bg {
 width: 100%; 
 height: 600px;
-background: url("/i/header_background.jpg");
+background: url(i/header_background.jpg);
 background-size: cover;
 border-top: 10px solid #2ecc71;  
 }
@@ -147,7 +147,7 @@ color: white;
  margin: 0 auto;
  border-radius: 50%;
  background:  
- url("/i/sprite.png");
+ url("i/sprite.png");
  background-color: #2ecc71;
  
 }
@@ -359,7 +359,7 @@ z-index: 7;
     height: 34px;
     border-radius: 50%;
     margin-right: 10px;
-    background: url("/i/sprite.png");
+    background: url("i/sprite.png");
     background-color: #d4d4d4;
  }
 .reviews ul.social li:last-child{margin-right: 0px;}
