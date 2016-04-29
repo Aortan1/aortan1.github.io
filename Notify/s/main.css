@@ -80,7 +80,7 @@ color: white;
  width: 52px; height: 52px;
  border-radius: 50%;
  margin-right: 13px;
- background: url("i/sprite.png");
+ background: url(http://aortan1.github.io/Notify/i/sprite.png);
  background-color: #1d130f;
  opacity: 0.6;
 }
@@ -147,7 +147,7 @@ color: white;
  margin: 0 auto;
  border-radius: 50%;
  background:  
- url("i/sprite.png");
+ url(http://aortan1.github.io/Notify/i/sprite.png);
  background-color: #2ecc71;
  
 }
@@ -359,7 +359,7 @@ z-index: 7;
     height: 34px;
     border-radius: 50%;
     margin-right: 10px;
-    background: url("i/sprite.png");
+    background: url(http://aortan1.github.io/Notify/i/sprite.png);
     background-color: #d4d4d4;
  }
 .reviews ul.social li:last-child{margin-right: 0px;}
