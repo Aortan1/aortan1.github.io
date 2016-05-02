@@ -182,7 +182,6 @@ div.promo_bg{
 }
 
 ul.promo {
-  min-width:960px; max-width: 1300px;
   height: 427px;
    -webkit-box-sizing: border-box;
       -moz-box-sizing:border-box;
