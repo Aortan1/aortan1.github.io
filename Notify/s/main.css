@@ -63,7 +63,8 @@ border-top: 10px solid #2ecc71;
 
 .header{
 width: 505px; 
-margin:  152px 0px 0 326px; 
+margin:  152px 0px 0 116px;
+border: 1px solid red;   
 }
 
 .header h1{ font-family: 'Pacifico', cursive;
