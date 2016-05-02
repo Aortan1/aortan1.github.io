@@ -315,8 +315,8 @@ z-index: 7;
 
 .slider-nav {
  z-index: 9;
- /*max-width: 1200px;
- min-width: 960px;*/ 
+ max-width: 1200px;
+ /*min-width: 960px;*/ 
  height: 50px;
  overflow: hidden;
  position: relative;
