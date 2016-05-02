@@ -131,7 +131,7 @@ color: white;
       -moz-box-sizing:border-box;
            box-sizing:border-box;
   padding: 0px 4px; 
-  margin: 0px auto;
+  margin: 60px auto;
   border: 1px solis blue;
   }
 
@@ -142,7 +142,7 @@ color: white;
       -moz-box-sizing:border-box;
            box-sizing:border-box; 
   margin: 0 auto;
-  padding: 60px 30px ;
+  padding: 0px 30px ;
   text-align: center;
   
 }
