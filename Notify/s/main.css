@@ -236,7 +236,8 @@ ul.promo .div_iframe {
 }
 
 ul.promo iframe {
-      width: 500px;
+      /*width: 500px;*/
+      width: 100%;
       height: 307px;
       border-radius: 10px; 
       
@@ -416,4 +417,11 @@ div.footer_bg{
  color: #848484;}
 .footer a:hover {color: #2ecc71;}
 .footer a:active {color: red;}
+
+
+
+ul.promo {
+    min-width: 960px;
+    max-width: 1300px;
+}
   
