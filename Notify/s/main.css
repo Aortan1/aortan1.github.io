@@ -134,23 +134,25 @@ color: white;
   padding: 0px 4px; 
   margin: 0px auto; 
   padding: 60px 0 0 0;
-  border: 1px solid blue;
+  border: 0px solid blue;
   }
 
  ul.features li{
   display: inline-block;
-  width: 33%;
+  width: 31%;
   -webkit-box-sizing: border-box;
       -moz-box-sizing:border-box;
            box-sizing:border-box; 
-  margin: 0 auto;
   padding: 0px 30px ;
+  margin: 0 1%; 
   text-align: center;
-  border: 1px solid black;
-  
-  
+  border: 0px solid black;
+  float: left; 
 }
- 
+
+ul.features li:fist-child{
+  
+} 
 
  ul.features .ico{
  width: 98px;
