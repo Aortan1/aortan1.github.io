@@ -302,7 +302,7 @@ z-index: 7;
 .reviews h3{padding-right: 15px; }
 
 .reviews .slider_and_masks{position: relative;
-  max-width: 1184px;
+  width: 1184px;
   height: 50px;
   margin: -5px auto 31px; border:0px solid red;
   padding-left: 12px;
