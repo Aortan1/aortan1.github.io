@@ -135,6 +135,7 @@ color: white;
   margin: 0px auto;
   padding: 60px 0 0 0;
   border: 1px solid blue;
+  overflow: hidden;
   }
 
  ul.features li{
@@ -146,7 +147,7 @@ color: white;
   margin: 0 auto;
   padding: 0px 30px ;
   text-align: center;
-  overflow: hidden;
+  
   
 }
  
