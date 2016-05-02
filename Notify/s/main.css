@@ -91,10 +91,7 @@ color: white;
     cursor: pointer;
     background-color: #2ecc71;
     opacity: 1.0;
-     -webkit-transition: 0.4s linear;
-     -moz-transition: 0.4s linear;
-     -o-transition: 0.4s linear;
-     transition: 0.4s linear;
+    transition: 0.4s;
 }
 
 .header li.sn_apple_in_header{
@@ -369,10 +366,7 @@ z-index: 7;
 .reviews ul.social li:last-child{margin-right: 0px;}
 
 .reviews ul.social li:hover{background-color: #62d995; cursor:pointer;
--webkit-transition: 0.4s linear;
-     -moz-transition: 0.4s linear;
-     -o-transition: 0.4s linear;
-     transition: 0.4s linear;
+     transition: 0.4s;
 }
 
 
