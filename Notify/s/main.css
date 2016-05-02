@@ -131,7 +131,8 @@ color: white;
       -moz-box-sizing:border-box;
            box-sizing:border-box;
   padding: 0px 4px; 
-  margin: 60px auto;
+  margin: 0px auto;
+  padding: 60px 0;
   border: 1px solis blue;
   }
 
