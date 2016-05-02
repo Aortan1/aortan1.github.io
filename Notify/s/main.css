@@ -41,7 +41,6 @@ h3 { font-family: 'Raleway', sans-serif;
   
 }
 
-P{}
 
 
 .header_bg {
@@ -152,11 +151,11 @@ color: white;
  
 }
 
-ul.features .ico_editable {  
+ul.features div.ico_editable {  
   background-position: 15px -131px;}
-ul.features .ico_flat { 
+ul.features div.ico_flat { 
   background-position: -79px -130px;}
-ul.features .ico_reach{
+ul.features div.ico_reach{
   background-position: -173px -130px;}
 
 ul.features h2 {margin: 3px 0 -4px 0; } 
@@ -184,7 +183,7 @@ ul.promo {
 
 ul.promo h2 {text-align: left;}
 
-ul.promo p {margin-top: -4px;}
+ul.promo p {margin-top: -4px; padding-right: 40px;}
 
 ul.promo li {float:left; 
  width: 50%;
@@ -194,7 +193,7 @@ ul.promo li {float:left;
 }   
 
 ul.promo .li_with_form {
-  padding: 0px 40px 0 59px;
+  padding: 0px 0px 0 59px;
   margin-top: -18px;
 }
 
@@ -223,7 +222,7 @@ ul.promo .li_with_form .input_submit{
 
 }
 
-ul.promo li_with_video{
+ul.promo .li_with_video{
   margin: 0px 0 0px 0px;
   padding: 0px 0 0 0px;
 }
@@ -243,6 +242,10 @@ ul.promo iframe {
       
 }
 
+ul.promo {
+    min-width: 960px;
+    max-width: 1300px;
+}
 
 div.reviews_bg{
   width:100%;
@@ -420,8 +423,5 @@ div.footer_bg{
 
 
 
-ul.promo {
-    min-width: 960px;
-    max-width: 1300px;
-}
+
   
