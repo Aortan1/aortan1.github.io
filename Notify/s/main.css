@@ -5,8 +5,6 @@
   outline: none;
 }
 
-/* 18 */
-
 img {
   border: 0;
 }
@@ -27,7 +25,9 @@ body {
   
 }
 
-.main{}
+
+
+
 h2 { font-family: 'Raleway', sans-serif; 
   font-size: 22px;
   font-weight: 700;
@@ -45,7 +45,13 @@ h3 { font-family: 'Raleway', sans-serif;
   
 }
 
-
+.main{
+min-width:960px; 
+max-width: 1300px;
+margin: 0 auto;
+padding: 20px;
+border: 1px solid green;  
+}
 
 .header_bg {
 width: 100%; 
