@@ -5,6 +5,8 @@
   outline: none;
 }
 
+/* 09 */
+
 img {
   border: 0;
 }
@@ -395,7 +397,7 @@ div.footer_bg{
 
 
 .footer{ 
-  width: 549px;
+  width: 549px; 
   
    -webkit-box-sizing: border-box;
       -moz-box-sizing:border-box;
@@ -405,7 +407,7 @@ div.footer_bg{
 }
 
 .footer ul{ 
-  
+  /*width: auto;*/
   padding: 55px 0 65px 0px;
   
   }
@@ -425,4 +427,3 @@ div.footer_bg{
 
 
 
-  
