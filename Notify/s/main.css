@@ -63,7 +63,7 @@ border-top: 10px solid #2ecc71;
 
 .header{
 width: 505px; 
-margin:  152px 0px 0 116px;
+margin:  152px 0px 0 95px;
 border: 1px solid red;   
 }
 
@@ -126,13 +126,13 @@ color: white;
 
 
  div.features_bg ul.features { 
-  min-width:960px; max-width: 1300px;
   height: 335px; 
    -webkit-box-sizing: border-box;
       -moz-box-sizing:border-box;
            box-sizing:border-box;
   padding: 0px 4px; 
   margin: 0px auto;
+  border: 1px solis blue;
   }
 
  ul.features li{
