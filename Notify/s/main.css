@@ -351,6 +351,7 @@ z-index: 7;
 
 .reviews ul.social  {
   width: 256px;
+  padding: 0 352px;
   height: 36px;
   margin: 0 auto;
   margin-top: 22px;
