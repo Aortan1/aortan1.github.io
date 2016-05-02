@@ -22,6 +22,7 @@ body {
   line-height: 1.5;
   color: #848484;
   
+  
 }
 
 h2 { font-family: 'Raleway', sans-serif; 
@@ -111,7 +112,7 @@ color: white;
    width: 100%; 
    background-color: #fff;
    border-left: 1px solid  #fff;
-}
+   }
 
 
  div.features_bg ul.features { 
@@ -121,7 +122,7 @@ color: white;
       -moz-box-sizing:border-box;
            box-sizing:border-box;
   padding: 0px 4px; 
-  margin: 0px auto;  
+  margin: 0px auto;
   }
 
  ul.features li{
@@ -263,7 +264,8 @@ div.reviews_bg .reviews{
 
 .slider-for { margin: 0 auto;
 z-index: 7;
- width: 1180px;
+ max-width: 1180px;
+ min-width: 860px; 
  height: 150px;
  overflow: hidden;
  position: relative;
@@ -302,7 +304,8 @@ z-index: 7;
 
 .slider-nav {
  z-index: 9;
- width: 1200px;
+ max-width: 1200px;
+ min-width: 960px; 
  height: 50px;
  overflow: hidden;
  position: relative;
@@ -351,7 +354,7 @@ z-index: 7;
 
 .reviews ul.social  {
   width: 256px;
-  padding: 0 352px;
+  padding: 0 0px;
   height: 36px;
   margin: 0 auto;
   margin-top: 22px;
