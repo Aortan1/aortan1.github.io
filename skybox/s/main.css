@@ -1016,7 +1016,7 @@ border: 0px solid blue;
   margin: 40px 0 0 0;
 }
 
-.b-footer ul.soc-net li {
+.b-footer ul.soc-net div {
   display: inline-block;
   width: 30px;
   height: 35px;
@@ -1029,16 +1029,16 @@ border: 0px solid blue;
   cursor: pointer;
 }
 
-.b-footer ul.soc-net li.sn-facebook {
+.b-footer ul.soc-net div.sn-facebook {
  background-position: 2px -186px; 
 }
-.b-footer ul.soc-net li.sn-twitter {
+.b-footer ul.soc-net div.sn-twitter {
  background-position: -42px -186px; 
 }
-.b-footer ul.soc-net li.sn-googleplus {
+.b-footer ul.soc-net div.sn-googleplus {
  background-position: -88px -186px;  
 }
-.b-footer ul.soc-net li.sn-youtube {
+.b-footer ul.soc-net div.sn-youtube {
  background-position: -134px -186px;  
 }
 
