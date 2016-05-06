@@ -956,7 +956,7 @@ padding: 65px 0 45px 0;
 
  .b-footer input.btn-email {
   position: absolute;
-  top: 6px; right:-25px;
+  top: 6px; right: 5px;
   z-index: 22; 
   display: block;
   width: 120px;
