@@ -13,6 +13,8 @@ $(this).parent().parent().find("span").html(tx);
 });
 });
 
+
+
 var fil=[]; var tpost=[]; 
 fil[0] = 'living'; tpost[0] = 'x-li';
 fil[1] = 'female'; tpost[1] = 'x-fe';
@@ -20,6 +22,8 @@ fil[2] = 'education'; tpost[2] = 'x-ed';
 fil[3] = 'entertain'; tpost[3] = 'x-en';
 fil[4] = 'travel'; tpost[4] = 'x-tr';
 
+
+$(function(){
 $('.filters li').click(function(){
    //alert ('dlkjdkljfl');
    if ($(this).hasClass("no-active")) {
@@ -33,7 +37,7 @@ $('.filters li').click(function(){
          }
     
 });
-
+});
 
 $('.filters li').hover(function(){
   $(this).effect( "shake", {}, "fast" );
