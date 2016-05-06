@@ -142,7 +142,7 @@ section.b-navigation {
   height: 17px;
   margin: 28px 0 0 40px;
   border: 0px solid black;
-  background: url(i/sprite.png) -289px -14px no-repeat;
+  background: url(../i/sprite.png) -289px -14px no-repeat;
 }
 
 .b-navigation .nav-3 a {
@@ -157,7 +157,7 @@ section.b-search {
   margin: 0 auto;
   color: white;
   font-weight: ;
-  background: url(../s/bgsearch.png);
+  background: url(../i/bgsearch.png);
 }
 
 .b-search h1 {
@@ -217,7 +217,7 @@ section.b-search {
 
 .b-search .btn,
 .b-filter .btn {
-  background: url(i/sprite.png) -426px -17px;
+  background: url(../i/sprite.png) -426px -17px;
   width: 15px;
   height: 10px;
   float: right;
