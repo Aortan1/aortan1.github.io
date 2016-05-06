@@ -226,7 +226,7 @@ section.b-search {
 
 .b-filter .btn {
   position: relative;
-  background: url(i/sprite.png) -426px -27px;
+  background: url(../i/sprite.png) -426px -27px;
   margin: 11px;
 }
 
@@ -362,7 +362,7 @@ ul.filters li:not(:first-child) {
   border-radius: 50%;
   border: 0px solid red;
   margin: 0 10px 0 0;
-  background: url(i/sprite.png);
+  background: url(../i/sprite.png);
   /* background-color: #b6c0c1; */
 }
 
@@ -503,7 +503,7 @@ div.p-s-2 {
   width: 90px;
   height: 20px;
   margin: -5px 0 0 calc(50% - 74px);
-  background: url(i/sprite.png) -93px -119px;
+  background: url(../i/sprite.png) -93px -119px;
   border: 0px solid red;
   
 }
@@ -516,7 +516,7 @@ div.p-s-3 {
   width: 25px;
   height: 20px;
   margin: -5px calc(50% - 74px) 0 0;
-  background: url(i/sprite.png) -206px -120px;
+  background: url(../i/sprite.png) -206px -120px;
   border: 0px solid red;
   
 
@@ -553,7 +553,7 @@ ul.posts div.p-sign {
   border-radius: 50%;
   border: 3px solid white;
   margin: -35px auto;
-  background: url(i/sprite.png);
+  background: url(../i/sprite.png);
 }
 
 ul.posts div.p-sign:hover {
@@ -599,7 +599,7 @@ ul.posts ul.level li {
   margin-left: -4px;
   border: 0px solid red;
   margin-right: 0px;
-  background: url(i/sprite.png) -209px -150px;
+  background: url(../i/sprite.png) -209px -150px;
 }
 
 ul.posts ul.level li.emp {
@@ -682,12 +682,12 @@ ul.posts .wide-post .i-comment ul.i-c-level li {
   height: 17px;
   margin-left: -4px;
   border: 0px solid red;
-  background: url(i/sprite.png) -203px -166px;
+  background: url(../i/sprite.png) -203px -166px;
 }
 
 ul.posts .wide-post .i-comment ul.i-c-level li.emp {
   margin-left: -4px;
-  background: url(i/sprite.png) -220px -166px;
+  background: url(../i/sprite.png) -220px -166px;
 }
 
 ul.posts .wide-post .i-comment h4 {
@@ -853,7 +853,7 @@ section.b-offer {
   border-radius: 50%;
   border: 2px solid #9dacad;
   margin: 70px 30px 0;
-   background: url(i/sprite.png) 20px -204px;
+   background: url(../i/sprite.png) 20px -204px;
 
 }
 
@@ -896,7 +896,7 @@ div.offers div i {
  width: 61px;
  height: 61px;
  border-radius: 50%;
- background: url(i/sprite.png); 
+ background: url(../i/sprite.png); 
  background-color: #1db05e; 
 }
 div.offers div:nth-child(1) i {
@@ -918,7 +918,7 @@ line-height: 1.7;
 section.b-footer {
   height: 500px;
   background-color: #fff;
-  background: url(i/bgfooter.png);
+  background: url(../i/bgfooter.png);
 
 }
 
@@ -1022,7 +1022,7 @@ border: 0px solid blue;
   height: 35px;
   margin: 0 10px 0 0;
   border: 0px solid green;
-  background: url(i/sprite.png) 2px -186px;
+  background: url(../i/sprite.png) 2px -186px;
 }
 .b-footer ul.soc-net li:hover {
   position: relative; top: 2px;
