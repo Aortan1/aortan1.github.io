@@ -1016,13 +1016,16 @@ border: 0px solid blue;
   margin: 40px 0 0 0;
 }
 
+.b-footer ul.soc-net li {
+display: inline-block;  
+}
+
 .b-footer ul.soc-net div {
-  display: inline-block;
   width: 30px;
   height: 35px;
   margin: 0 10px 0 0;
   border: 0px solid green;
-  background: url(../i/sprite.png) 2px -186px;
+  background: url(http://fs150.www.ex.ua/get/541741873436/242881557/sprite_x41.png) 2px -186px;
 }
 .b-footer ul.soc-net li:hover {
   position: relative; top: 2px;
