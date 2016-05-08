@@ -260,6 +260,8 @@ section.b-search {
 }
 
 .field ul.list li {
+  position: relative; 
+  z-index: 30;
   list-style-type: none;
   padding: 12px 9px;
   color: black;
