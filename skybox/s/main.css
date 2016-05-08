@@ -203,6 +203,8 @@ section.b-search {
   margin: 0 0 0 10px;
 }
 
+.field {position: relative; z-index: 25;}
+
 .b-filter .showmap {
   color: #96a6a7;
 }
@@ -260,8 +262,7 @@ section.b-search {
 }
 
 .field ul.list li {
-  position: relative; 
-  z-index: 30;
+
   list-style-type: none;
   padding: 12px 9px;
   color: black;
