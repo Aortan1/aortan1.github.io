@@ -1,4 +1,5 @@
 body {background: linear-gradient(to top, #8cd890, #0372ff);
+  height: 1080px;
 }
 
 :focus {
@@ -201,7 +202,7 @@ span.y{ top: 80px; left: -80px;}
   display:inline-block;
   position: relative;
   z-index:25;
-  margin: 460px 3px;
+  margin: 400px 3px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
