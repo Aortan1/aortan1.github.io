@@ -17,8 +17,10 @@ margin: 70px auto;
 }
 
 .cube {
+  position: absolute;
+  top: calc(50% - 75px);
   width: 300px;
-  margin: 190px auto;
+  margin: 0px auto;
   border: 0px solid black;
  
 }
