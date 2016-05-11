@@ -1,5 +1,6 @@
 body {background: linear-gradient(to top, #8cd890, #0372ff);
   height: 1080px;
+
 }
 
 :focus {
@@ -20,7 +21,7 @@ margin: 70px auto;
   position: absolute;
   top: 50%; left: 50%;
   width: 300px;
-  margin: -75px -75px 0 0;
+  margin: -75px 0px 0 -75px;
   border: 0px solid black;
  
 }
