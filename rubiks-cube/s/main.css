@@ -18,9 +18,9 @@ margin: 70px auto;
 
 .cube {
   position: absolute;
-  top: 50%;
+  top: 50%; left: 50%;
   width: 300px;
-  margin: -75px auto;
+  margin: -75px 75px 0 0;
   border: 0px solid black;
  
 }
