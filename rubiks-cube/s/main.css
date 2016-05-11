@@ -17,11 +17,11 @@ margin: 100px auto;
 }
 
 .cube {
-  position: absolute;
-  height: 100%;  
+  position: relative;
+  height: 350px;  
   top: 50%; left: 50%;
   width: 300px;
-  margin: -75px 0px 0 -170px;
+  margin: 75px 0px 0 -170px;
   border: 0px solid black;
  
 }
