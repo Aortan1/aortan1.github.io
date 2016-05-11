@@ -1,6 +1,4 @@
 body {background: linear-gradient(to top, #8cd890, #0372ff);
-  height: 1080px;
-
 }
 
 :focus {
@@ -11,17 +9,15 @@ h1 {
 display: block; width: 500px;
 color: #bfcef5;
 font-family: 'Pacifico', cursive;
-font-size: 42px;
+font-size: 35px;
 font-weight: 300;
 padding: 0 20px 0 0px;  
-margin: 100px auto; 
+margin: 40px auto; 
 }
 
 .cube {
-  position: absolute;
-  top: 50%; left: 50%;
   width: 300px;
-  margin: -75px 0px 0 -170px;
+  margin: 70px auto;
   border: 0px solid black;
  
 }
@@ -49,7 +45,7 @@ i {
 .edge-1 {
   z-index: 15;
   width: 179px;
-  height: 178px;
+  height: 175px;
   margin: 50px 0 0 0;
 }
 
@@ -59,10 +55,9 @@ i {
 
 .edge-2 {
   z-index: 0;
-  width: 115px;
-  height: 130px;
-  margin: -35px 0 0 0;
-  padding-right: 57px;
+  width: 86px;
+  height: 175px;
+  margin: 7px 57px 0 0;
   -webkit-transform: skewY(-45deg);
   -moz-transform: skewY(-45deg);
   -o-transform: skewY(-45deg);
@@ -77,8 +72,8 @@ i {
 
 .edge-3 {
   z-index: 0;
-  width: 230px;
-  height: 230px;
+  width: 179px;
+  height: 178px;
   margin: -35px 0 0 85px;
 }
 
@@ -88,9 +83,9 @@ i {
 
 .edge-4 {
   z-index: 16;
-  width: 115px;
-  height: 130px;
-  margin: -8px 0 0 179px;
+  width: 86px;
+  height: 175px;
+  margin: 7px 0 0 179px;
   -webkit-transform: skewY(-45deg);
   -moz-transform: skewY(-45deg);
   -o-transform: skewY(-45deg);
@@ -105,9 +100,9 @@ i {
 
 .edge-5 {
   z-index: 12;
-  width: 185px;
-  height: 115px;
-  margin: -38px 0 0 28px;
+  width: 180px;
+  height: 87px;
+  margin: -37px 0 0 42px;
   -webkit-transform: skewX(-45deg);
   -moz-transform: skewX(-45deg);
   -o-transform: skewX(-45deg);
@@ -122,9 +117,9 @@ i {
 
 .edge-6 {
   z-index: 0;
-  width: 185px;
-  height: 115px;
-  margin: 143px 0 0 28px;
+  width: 180px;
+  height: 88px;
+  margin: 140px 0 0 42px;
   -webkit-transform: skewX(-45deg);
   -moz-transform: skewX(-45deg);
   -o-transform: skewX(-45deg);
@@ -137,24 +132,29 @@ i {
   /*background: maroon;*/
 }
 
-.edge-2,
-.edge-3,
-.edge-6 {
-  opacity:0.3;
+.eedge-1,
+.eedge-2,
+.eedge-3,
+.eedge-4,
+.eedge-5,
+.eedge-6{
+  opacity:0.0;
 }
 
-.eedge-2 i,
-.eedge-3 i,
-.eedge-6 i{
-  opacity:1.0;
-  background-color: #fff !important;
+.edge-2 i,
+.edge-3 i,
+.edge-6 i{
+  opacity:0.9;
 }
+
+.edge {background-color: #111;}
+
 
 .axes{
  color:  #bfcef5; 
  width: 200px; height: 200px;
  position: absolute;
- top: 350px; left: calc(50% - 360px); 
+ top: 200px; left: calc(50% - 310px); 
  transform: scale(0.6,0.6); 
 }
 
@@ -205,7 +205,7 @@ span.y{ top: 80px; left: -80px;}
   display:inline-block;
   position: relative;
   z-index:25;
-  margin: 325px 3px;
+  margin: 280px 3px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
