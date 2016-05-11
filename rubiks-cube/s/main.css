@@ -13,14 +13,14 @@ font-family: 'Pacifico', cursive;
 font-size: 42px;
 font-weight: 300;
 padding: 0 20px 0 0px;  
-margin: 100px auto; 
+margin: 100px auto 0; 
 }
 
 .cube {
   position: relative;
+  width: 300px;
   height: 350px;  
   top: 50%; left: 50%;
-  width: 300px;
   margin: -175px 0px 0 -170px;
   border: 2px solid black;
  
