@@ -1,5 +1,6 @@
 body {background: linear-gradient(to top, #8cd890, #0372ff);
   height: 1080px;
+  overflow: hidden;
 }
 
 :focus {
