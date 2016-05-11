@@ -1,4 +1,6 @@
 body {background: linear-gradient(to top, #8cd890, #0372ff);
+  height: 1080px;
+
 }
 
 :focus {
@@ -9,15 +11,17 @@ h1 {
 display: block; width: 500px;
 color: #bfcef5;
 font-family: 'Pacifico', cursive;
-font-size: 35px;
+font-size: 42px;
 font-weight: 300;
 padding: 0 20px 0 0px;  
-margin: 40px auto; 
+margin: 100px auto; 
 }
 
 .cube {
+  position: absolute;
+  top: 50%; left: 50%;
   width: 300px;
-  margin: 70px auto;
+  margin: -75px 0px 0 -170px;
   border: 0px solid black;
  
 }
@@ -149,12 +153,11 @@ i {
 
 .edge {background-color: #111;}
 
-
 .axes{
  color:  #bfcef5; 
  width: 200px; height: 200px;
  position: absolute;
- top: 200px; left: calc(50% - 310px); 
+ top: 350px; left: calc(50% - 360px); 
  transform: scale(0.6,0.6); 
 }
 
@@ -205,7 +208,7 @@ span.y{ top: 80px; left: -80px;}
   display:inline-block;
   position: relative;
   z-index:25;
-  margin: 280px 3px;
+  margin: 325px 3px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
