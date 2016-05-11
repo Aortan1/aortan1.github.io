@@ -1,4 +1,6 @@
 
+
+function () {
 var difficulty_level=400; // уровень сложности (количество движений размешивания)
 //3-5 - ЛЁГКИЙ,
 //6-9 - СРЕДНИЙ,
@@ -6,7 +8,7 @@ var difficulty_level=400; // уровень сложности (количест
 
  cube = fill_in_cells() ;
  cube = randcolors(difficulty_level, cube) ;
-
+};
 
 $(document).ready (function(){ 
 var this1,this2;  
