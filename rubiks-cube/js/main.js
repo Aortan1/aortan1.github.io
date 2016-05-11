@@ -305,9 +305,8 @@ color [5]='maroon';//maroon || dark
  
 $('i').eq(k).attr("co",cube[k].color).attr("x",cube[k].x).attr("y",cube[k].y).attr("z",cube[k].z).attr("edge",cube[k].edge);
   //$(".edge").eq(cube[k].edge).find("i").eq(ncell(cube[k])-1).css("background-color", color[cube[k].color]);
-if (cube[k].edge=="1" || cube[k].edge=="2" || cube[k].edge=="5") { 
-$(".edge").eq(cube[k].edge).find("i").eq(ncell(cube[k])-1).animate({ backgroundColor: white}, 150);
-}
+if (cube[k].edge=="1" || cube[k].edge=="2" || cube[k].edge=="5")  
+     $(".edge").eq(cube[k].edge).find("i").eq(ncell(cube[k])-1).animate({ backgroundColor: #fff}, 150);
 else $(".edge").eq(cube[k].edge).find("i").eq(ncell(cube[k])-1).animate({ backgroundColor: color[cube[k].color]}, 150);
 //document.write("<b> k="+k+" koords: x="+cube[k].x+" y="+cube[k].y+" z="+cube[k].z+" edge="+cube[k].edge+" COL="+cube[k].color+" nc="+ncell(cube[k])+"</b><br>");
    
