@@ -41,8 +41,7 @@ i {
 
 .edge {
   position: absolute;
-  width: 230px;
-  height: 130px;
+  border-radius: 15px;
   /*background-color: #fff;*/
 }
 
