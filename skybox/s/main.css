@@ -182,16 +182,13 @@ section.b-search {
   background-color: #fff;
   border: 0px solid black;
   color: black;
-  cursor: pointer;
-  z-index: 11;
+    
 }
 
-.b-search input::-webkit-input-placeholder {color:#000;}
-.b-search input::-moz-placeholder          {color:#000;}
-.b-search input:-moz-placeholder           {color:#000;}
-.b-search input:-ms-input-placeholder      {color:#000;}
-
-
+input::-webkit-input-placeholder {color:#000;}
+ input::-moz-placeholder          {color:#000;}
+ input:-moz-placeholder           {color:#000;}
+ input:-ms-input-placeholder      {color:#000;}
 
  .b-search div.hid-find input.btn-find {
   position: absolute;
@@ -205,8 +202,51 @@ section.b-search {
   background-color: #e94e38;
   color: white;
   font-size: 24px;
-  text-align: center; 
+  text-align: center;
+  cursor: pointer; 
  }
+
+.b-search div.hid-login{
+ display: none;
+ position: absolute;
+ margin: 0 0 0 76%;
+ border-radius: 0 0 0 35px; 
+ width: 24%;
+ height: 185px;
+ background-color: #e94e38;
+  
+}
+
+.b-search div.hid-login input.inp-login{
+  width: 80%;
+  height: 40px;
+  border-radius: 30px;
+  margin: 17px 0 0 5%;
+  padding: 0 0 0 30px;
+  font-size: 16px;
+  background-color: #fff;
+  border: 0px solid black;
+  color: black;
+  }
+
+
+
+ .b-search div.hid-login input.btn-login {
+  position: absolute;
+  top: 135px; right: 35%;
+  z-index: 22; 
+  display: block;
+  width: 30%;
+  height: 30px;
+  border-radius: 15px;
+  border: none; 
+  background-color: white;
+  color: #e94e38;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer; 
+ }
+
 
 
 

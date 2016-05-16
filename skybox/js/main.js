@@ -47,9 +47,22 @@ $('.filters li').hover(function(){
 $(document).ready (function() { 
       $(".nav-find div").bind("click", function() {
         var delay = 250;
-        var p = $("div.hid-find");
-        if ($(p).is(":visible")) $(p).slideUp(delay);
-        else $(p).slideDown(delay);
+        var l = $("div.hid-login");
+        var f = $("div.hid-find");
+        if ($(f).is(":visible")) $(f).slideUp(delay);
+        else { 
+        if ($(l).is(":visible"))    $(l).slideUp(delay);
+        $(f).slideDown(delay);}
       });
-    
+  
+  $(".nav-login div").bind("click", function() {
+        var delay = 250;
+        var l = $("div.hid-login");
+        var f = $("div.hid-find");
+        if ($(l).is(":visible")) $(l).slideUp(delay);
+        else { 
+        if ($(f).is(":visible"))    $(f).slideUp(delay);
+        $(l).slideDown(delay);}
+      }); 
+  
     }); 
