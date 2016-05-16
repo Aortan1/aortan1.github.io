@@ -160,6 +160,56 @@ section.b-search {
   background: url(../i/bgsearch.png);
 }
 
+.b-search div.hid-find{
+ position: absolute; 
+ margin: 0 0 0 70%;
+ border-radius: 0 0 0 35px; 
+ width: 30%;
+ height: 75px;
+ background-color: #e2dee0;
+  
+}
+
+.b-search div.hid-find input.inp-find{
+  
+  width: 90%;
+  height: 40px;
+  border-radius: 30px;
+  margin: 17px 0 0 5%;
+  padding: 0 0 0 30px;
+  font-size: 20px;
+  background-color: #fff;
+  border: 0px solid black;
+  color: black;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.b-search input::-webkit-input-placeholder {color:#000;}
+.b-search input::-moz-placeholder          {color:#000;}
+.b-search input:-moz-placeholder           {color:#000;}
+.b-search input:-ms-input-placeholder      {color:#000;}
+
+
+
+ .b-search div.hid-find input.btn-find {
+  display: none; 
+  position: absolute;
+  top: 22px; right: 6%;
+  z-index: 22; 
+  display: block;
+  width: 14%;
+  height: 30px;
+  border-radius: 15px;
+  border: none; 
+  background-color: #e94e38;
+  color: white;
+  font-size: 24px;
+  text-align: center; 
+ }
+
+
+
 .b-search h1 {
   display: block;
   color: white;

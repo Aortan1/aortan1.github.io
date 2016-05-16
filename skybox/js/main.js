@@ -43,3 +43,13 @@ $('.filters li').hover(function(){
   $(this).effect( "shake", {}, "fast" );
 
 });
+
+$(document).ready (function() { 
+      $(".nav-find div").bind("click", function() {
+        var delay = 250;
+        var p = $("div.hid-find");
+        if ($(p).is(":visible")) $(p).slideUp(delay);
+        else $(p).slideDown(delay);
+      });
+    
+    }); 
