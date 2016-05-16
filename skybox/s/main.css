@@ -164,7 +164,7 @@ section.b-search {
 .b-search div.hid-find{
  display: none; 
  position: absolute; 
- margin: 2px 0 0 70%;
+ margin: 0 0 0 70%;
  border-radius: 0 0 0 35px; 
  width: 30%;
  height: 75px;
@@ -178,7 +178,7 @@ section.b-search {
   height: 40px;
   border-radius: 30px;
   margin: 17px 0 0 5%;
-  padding: 0 0 0 30px;
+  padding: 2px 0 0 30px;
   font-size: 16px;
   background-color: #fff;
   border: 0px solid black;
