@@ -67,7 +67,7 @@ section.b-navigation {
   border: 0px solid red;
 }
 
-.b-navigation .nav-1 {
+.b-navigation .nav-links {
   width: 56%;
   float: left;
   height: 75px;
@@ -80,7 +80,7 @@ section.b-navigation {
   border: solid 1px transparent;
 }
 
-.b-navigation .nav-1 .logo {
+.b-navigation .nav-links .logo {
   width: 160px;
   height: 45px;
   float: left;
@@ -89,7 +89,7 @@ section.b-navigation {
   border: 0px solid red;
 }
 
-.b-navigation .nav-1 ul {
+.b-navigation .nav-links ul {
   float: rigth;
   position: absolute;
   right: calc(45% - 160px);
@@ -103,7 +103,7 @@ section.b-navigation {
   padding: 30px 20px 0 0;
 }
 
-.b-navigation .nav-2 {
+.b-navigation .nav-find {
   float: right;
   position: relative;
   z-index: 2;
@@ -113,7 +113,7 @@ section.b-navigation {
   margin: 0 0 0 0;
 }
 
-.b-navigation .nav-2 div {
+.b-navigation .nav-find div {
   width: 30px;
   height: 30px;
   border: 0px solid red;
@@ -121,9 +121,9 @@ section.b-navigation {
   background: url(../i/sprite.png) -197px -9px;
 }
 
-.b-navigation .nav-2 div:hover {cursor:pointer;}
+.b-navigation .nav-find div:hover {cursor:pointer;}
 
-.b-navigation .nav-3 {
+.b-navigation .nav-login {
   position: relative;
   z-index: 2;
   width: 24%;
@@ -136,7 +136,7 @@ section.b-navigation {
   box-sizing: border-box;
 }
 
-.b-navigation .nav-3 div {
+.b-navigation .nav-login div {
   float: left;
   width: 17px;
   height: 17px;
@@ -145,7 +145,7 @@ section.b-navigation {
   background: url('../i/sprite.png') -289px -14px no-repeat;
 }
 
-.b-navigation .nav-3 a {
+.b-navigation .nav-login a {
   color: white;
   display: block;
   margin: 30px 0 0 70px;
