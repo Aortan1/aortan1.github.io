@@ -150,7 +150,8 @@ i {
   opacity:0.9;
 }
 
-.edge {background-color: #000;}
+.edge {background-color: #111;}
+.edge-3 i {background-color: #111!important;}
 
 .axes{
  color:  #bfcef5; 
