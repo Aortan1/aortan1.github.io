@@ -153,7 +153,8 @@ section.b-navigation {
   margin: 0px 0 0 30px;
 }
 
-.b-navigation .nav-login span:hover, .b-navigation .nav-login span:hover  {
+.b-navigation .nav-login span:hover, 
+.b-navigation .nav-login div:hover  {
   cursor: url("../i/cursor_black_hand.png"), pointer;
 }
 
