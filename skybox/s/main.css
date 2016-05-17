@@ -503,7 +503,7 @@ ul.filters li.travel {
 ul.filters li:not(:first-child):hover {
   /*position: relative;
   top: 3px;*/
-  cursor: w-resize, pointer;
+  cursor: n-resize, pointer;
 }
 
 .no-active {
