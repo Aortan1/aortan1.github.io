@@ -120,7 +120,9 @@ section.b-navigation {
   background: url(../i/sprite.png) -197px -9px;
 }
 
-.b-navigation .nav-find div:hover {cursor:pointer;}
+.b-navigation .nav-find div:hover {
+  cursor: url("../i/cursor_black_hand.png"), pointer;
+}
 
 .b-navigation .nav-login {
   position: relative;
@@ -151,7 +153,7 @@ section.b-navigation {
   margin: 0px 0 0 30px;
 }
 
-.b-navigation .nav-login span:hover {
+.b-navigation .nav-login span:hover, .b-navigation .nav-login span:hover  {
   cursor: url("../i/cursor_black_hand.png"), pointer;
 }
 
