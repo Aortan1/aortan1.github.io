@@ -378,7 +378,7 @@ input::-webkit-input-placeholder {color:#000;}
   color: black;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 25px;
-  border: 2px solid rgba(255, 255, 255, 0.0);
+  border: 2px solid transparent;
 }
 
 .b-search .field ul.list li:hover {
