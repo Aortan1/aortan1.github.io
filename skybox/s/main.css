@@ -802,7 +802,8 @@ ul.posts .wide-post .i-comment ul.i-c-level li.emp {
 }
 
 .emp-js {
-  background-position: -220px -166px !important;
+  background: none;
+  background: url(../i/sprite.png) -220px -166px !important;
 }
 
 .noemp-js {
