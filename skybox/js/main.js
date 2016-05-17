@@ -71,7 +71,7 @@ $(document).ready (function() {
 
 $(function(){
   
-$('ul.i-c-level li').mouseover(function() {
+$('ul.i-c-level li').hover(function() {
 var n = $(this).index(); 
 for (var i=0; i<5; i++){
  if (i <= n) $(this).parent().children().eq(i).removeClass('emp-js').addClass('noemp-js');
