@@ -240,8 +240,7 @@ input::-webkit-input-placeholder {color:#000;}
 
 
  .b-search div.hid-login input.btn-login {
-  position: absolute;
-  top: 135px; right: 35%;
+  margin: 20px auto;
   z-index: 22; 
   display: block;
   width: 30%;
