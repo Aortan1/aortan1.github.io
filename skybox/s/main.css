@@ -503,7 +503,7 @@ ul.filters li.travel {
 ul.filters li:not(:first-child):hover {
   /*position: relative;
   top: 3px;*/
-  cursor: url("../i/cursor_black_hand.png"), pointer;
+  cursor: w-resize, pointer;
 }
 
 .no-active {
