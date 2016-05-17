@@ -471,7 +471,7 @@ ul.filters li:not(:first-child) {
   border: 0px solid red;
   margin: 0 10px 0 0;
   background: url(../i/sprite.png);
-  transition: 0.5s;
+  transition: 0.3s;
   /* background-color: #b6c0c1; */
 }
 
@@ -503,12 +503,12 @@ ul.filters li.travel {
 ul.filters li:not(:first-child):hover {
   /*position: relative;
   top: 3px;*/
-  cursor: n-resize, pointer;
+  cursor: url("../i/cursor_black_hand.png"), pointer;
 }
 
 .no-active {
   background-color: #b6c0c1 !important;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .hide-post {display: none;}
