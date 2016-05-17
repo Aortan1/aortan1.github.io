@@ -801,11 +801,11 @@ ul.posts .wide-post .i-comment ul.i-c-level li.emp {
   background: url(../i/sprite.png) -220px -166px;
 }
 
-ul.posts .wide-post .i-comment ul.i-c-level li.emp-js {
-  background: url(../i/sprite.png)) -220px -166px !important;
+.emp-js {
+  background-position -220px -166px !important;
 }
 
-ul.posts .wide-post .i-comment ul.i-c-level li.noemp-js {
+.noemp-js {
   background: url(../i/sprite.png) -203px -166px !important; 
 }
 
