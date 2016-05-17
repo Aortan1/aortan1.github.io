@@ -794,11 +794,13 @@ ul.posts .wide-post .i-comment ul.i-c-level li {
   margin-left: -4px;
   border: 0px solid red;
   background: url(../i/sprite.png) -203px -166px;
+  transition: 0.1s;
 }
 
 ul.posts .wide-post .i-comment ul.i-c-level li.emp {
   margin-left: -4px;
   background: url(../i/sprite.png) -220px -166px;
+  transition: 0.1s;
 }
 
 .emp-js {
