@@ -1,6 +1,7 @@
 $(function(){
 
 $('div.select').click(function(){
+$(document).find("ul.list").slideUp('fast');
 $(this).parent().find("ul").slideToggle('fast');
 });
 $(this).find(".list li").click(function(){
