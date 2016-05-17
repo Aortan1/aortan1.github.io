@@ -793,12 +793,14 @@ ul.posts .wide-post .i-comment ul.i-c-level li {
   height: 17px;
   margin-left: -4px;
   border: 0px solid red;
+  background: none;
   background: url(../i/sprite.png) -203px -166px;
   transition: 0.1s;
 }
 
 ul.posts .wide-post .i-comment ul.i-c-level li.emp {
   margin-left: -4px;
+  background: none;
   background: url(../i/sprite.png) -220px -166px;
   transition: 0.1s;
 }
