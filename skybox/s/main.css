@@ -360,6 +360,7 @@ input::-webkit-input-placeholder {color:#000;}
   padding: 12px 9px;
   color: black;
   border-radius: 25px;
+  border: 1px solid #b6c0c1;
 }
 
 .b-filter .field ul.list li {
@@ -367,6 +368,8 @@ input::-webkit-input-placeholder {color:#000;}
   color: black;
   background-color: #e2dee0;
   border-radius: 25px;
+  border: 2px solid #e2dee0;
+
 }
 
 .b-search .field ul.list li:hover {
