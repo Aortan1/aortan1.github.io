@@ -357,7 +357,7 @@ input::-webkit-input-placeholder {color:#000;}
 .b-filter .field ul.list {
   width: 115px;
   background-color: white;
-  border: 1px solid #96a6a7;
+  border: 0px solid #96a6a7;
   box-shadow: 0 0 4px #96a6a7;
 }
 
@@ -471,6 +471,7 @@ ul.filters li:not(:first-child) {
   border: 0px solid red;
   margin: 0 10px 0 0;
   background: url(../i/sprite.png);
+  transition: 0.5s;
   /* background-color: #b6c0c1; */
 }
 
@@ -500,12 +501,14 @@ ul.filters li.travel {
 }
 
 ul.filters li:not(:first-child):hover {
-  position: relative;
-  top: 3px;
+  /*position: relative;
+  top: 3px;*/
+  cursor: url("../i/cursor_black_hand.png"), pointer;
 }
 
 .no-active {
   background-color: #b6c0c1 !important;
+  transition: 0.5s;
 }
 
 .hide-post {display: none;}
