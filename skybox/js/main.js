@@ -67,3 +67,31 @@ $(document).ready (function() {
       }); 
   
     }); 
+
+
+$(function(){
+  
+$('ul.i-c-level li').mouseover(function() {
+var n = $(this).index(); 
+for (var i=0; i<5; i++){
+ if (i <= n) $(this).parent().children().eq(i).removeClass('emp-js').addClass('noemp-js');
+ else
+$(this).parent().children().eq(i).removeClass('noemp-js').addClass('emp-js');}
+
+$(this).mouseout(function() { 
+for (var j=0; j<5; j++){  
+$(this).parent().children(j).removeClass('noemp-js').removeClass('emp-js');}
+});  
+});
+  
+$('ul.i-c-level li').click(function() {
+var n = $(this).index(); 
+for (var i=0; i<5; i++){
+ if (i <= n) $(this).parent().children().eq(i).removeClass('emp');
+ else
+$(this).parent().children().eq(i).addClass('emp');}
+
+ 
+});  
+  
+});

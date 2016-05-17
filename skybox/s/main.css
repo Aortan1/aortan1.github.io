@@ -350,7 +350,7 @@ input::-webkit-input-placeholder {color:#000;}
   position: absolute;
   border-radius: 25px;
   border: 1px solid #b6c0c1;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   display: none;
 }
 
@@ -800,6 +800,15 @@ ul.posts .wide-post .i-comment ul.i-c-level li.emp {
   margin-left: -4px;
   background: url(../i/sprite.png) -220px -166px;
 }
+
+.emp-js {
+  background: url(../i/sprite.png)) -220px -166px !important;
+}
+
+.noemp-js {
+  background: url(../i/sprite.png) -203px -166px !important; 
+}
+
 
 ul.posts .wide-post .i-comment h4 {
   font-size: 17px;
