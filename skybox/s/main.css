@@ -1151,7 +1151,7 @@ display: inline-block;
   height: 35px;
   margin: 0 10px 0 0;
   border: 0px solid green;
-  background: url(http://fs150.www.ex.ua/get/541741873436/242881557/sprite_x41.png) 2px -186px;
+  background: url(../i/sprite.png) 2px -161px;
 }
 .b-footer ul.soc-net li:hover {
   position: relative; top: 2px;
@@ -1159,16 +1159,16 @@ display: inline-block;
 }
 
 .b-footer ul.soc-net div.sn-facebook {
- background-position: 2px -186px; 
+ background-position: 2px -161px; 
 }
 .b-footer ul.soc-net div.sn-twitter {
- background-position: -42px -186px; 
+ background-position: -42px -161px; 
 }
 .b-footer ul.soc-net div.sn-googleplus {
- background-position: -88px -186px;  
+ background-position: -88px -161px;  
 }
 .b-footer ul.soc-net div.sn-youtube {
- background-position: -134px -186px;  
+ background-position: -134px -161px;  
 }
 
 .b-footer p.copy {
