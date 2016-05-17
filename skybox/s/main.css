@@ -357,7 +357,7 @@ input::-webkit-input-placeholder {color:#000;}
 .b-filter .field ul.list {
   width: 115px;
   background-color: white;
-  border: 0px solid #96a6a7;
+  border: 1px solid #96a6a7;
   box-shadow: 0 0 4px #96a6a7;
 }
 
