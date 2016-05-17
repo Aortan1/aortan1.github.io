@@ -250,7 +250,7 @@ input::-webkit-input-placeholder {color:#000;}
   background-color: white;
   color: #e94e38;
   font-size: 18px;
-  
+
   text-align: center;
   cursor: pointer; 
  }
@@ -356,10 +356,11 @@ input::-webkit-input-placeholder {color:#000;}
 
 .b-filter .field ul.list {
   width: 115px;
-  background-color: white;
-  border: 0px solid #96a6a7;
-  box-shadow: 0 0 4px #96a6a7;
+  background-color: ;
+  border: 0px solid black;
 }
+
+
 
 .field ul.list li {
   position: relative;
@@ -374,10 +375,9 @@ input::-webkit-input-placeholder {color:#000;}
 .b-filter .field ul.list li {
   padding: 7px 4px;
   color: black;
-  background-color: #e2dee0;
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 25px;
-  border: 2px solid #e2dee0;
-
+  border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .b-search .field ul.list li:hover {
