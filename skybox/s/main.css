@@ -151,6 +151,10 @@ section.b-navigation {
   margin: 0px 0 0 30px;
 }
 
+.b-navigation .nav-login span:hover {
+  cursor: url("../i/cursor_black_hand.png"), pointer;
+}
+
 section.b-search {
   width: 100%;
   height: 375px;
@@ -373,7 +377,7 @@ input::-webkit-input-placeholder {color:#000;}
 }
 
 .b-search .field ul.list li:hover {
-  cursor: pointer;
+  cursor: pointer;  
   color: #e94e38;
   background-color: #fff;
   border: 1px solid #b6c0c1;
@@ -530,7 +534,7 @@ ul.posts li.post {
 }
 
 ul.posts li.post:hover {
-   cursor: url("i/cursor_black_hand.png"), pointer;
+   cursor: url("../i/cursor_black_hand.png"), pointer;
   
 }
 
