@@ -644,18 +644,18 @@ ul.posts div.picture ul.level {
 
 
 ul.posts div.p-price {
-  width: 65px;
   height: 16px;
-  position: relative; 
+  position: absolute; 
   z-index: 1;
-  top: -127px; left: 137px;
+  top: 6px; right: 8px;
   border-radius: 25px;
   color: white;
   background-color: #1baf5d;
   font-size: 12px;
   text-align: center;
-  padding: 4px 0px;
+  padding: 4px 12px;
 }
+
 
 ul.posts div.p-price:hover {color: yellow;}
 
@@ -1095,7 +1095,7 @@ padding: 65px 0 45px 0;
 
  .b-footer input.btn-email {
   position: absolute;
-  top: 5px; right:5px;
+  top: 5px; right:6px;
   z-index: 22; 
   display: block;
   width: 120px;
