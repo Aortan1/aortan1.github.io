@@ -855,6 +855,44 @@ ul.posts li.post div.p-sign {
   background-color: #1baf5d;
 }
 
+
+ul.posts li.post-orange_beach div.picture {
+  border-bottom: 3px solid #f19e1f;
+}
+
+ul.posts li.post-orange_beach h5 {
+  color: #f19e1f;
+}
+
+ul.posts li.post-orange_beach div.p-sign {
+  background-position: -383px -36px;
+  background-color: #f19e1f;
+}
+
+ul.posts li.post-violet_house div.picture {
+  border-bottom: 3px solid #88499c;
+}
+
+ul.posts li.post-violet_house h5 {
+  color: #88499c;
+}  
+
+ul.posts li.post-violet_house div.p-sign {
+  background-position: -436px -34px;
+  background-color: #88499c;
+}
+
+ul.posts li.post-orange_disco div.p-sign {
+  background-position: -239px -39px;
+  background-color: #f19e1f;
+}
+
+ul.posts li.post-orange_disco div.picture {
+border-bottom: 3px solid #f19e1f;
+}
+
+
+
 ul.posts li.post02 div.picture {
   border-bottom: 3px solid #f19e1f;
 }
@@ -1095,7 +1133,7 @@ padding: 65px 0 45px 0;
 
  .b-footer input.btn-email {
   position: absolute;
-  top: 5px; right:6px;
+  top: 5px; right:7px;
   z-index: 22; 
   display: block;
   width: 120px;
