@@ -514,7 +514,7 @@ ul.filters li:not(:first-child):hover {
   transition: 0.4s;
 }
 
-.hide-post {display: none;}
+.hide-post {display: none; transition: 0.5s;}
 
 section.b-postarea {
   position: relative;
@@ -541,6 +541,7 @@ ul.posts li.post {
   background-color: #fff;
   border-radius: 5px;
   border-bottom: 2px solid #e2dee0;
+  transition: 0.5s;
   
 }
 
