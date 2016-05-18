@@ -1088,13 +1088,13 @@ padding: 65px 0 45px 0;
   
   
 }  
-.b-footer div.links div {
+.b-footer div.links div.links-pile {
 float: left;
 width: 328px;
 border: 0px solid blue;
 }
 
-.b-footer div.links div:last-child { float: right;
+.b-footer div.links div.links-pile:last-child { float: right;
 }
 
 
