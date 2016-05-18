@@ -17,11 +17,11 @@ $(this).parent().parent().find("span").html(tx);
 
 
 var fil=[]; var tpost=[]; 
-fil[0] = 'living'; tpost[0] = 'x-li';
-fil[1] = 'female'; tpost[1] = 'x-fe';
-fil[2] = 'education'; tpost[2] = 'x-ed';
-fil[3] = 'entertain'; tpost[3] = 'x-en';
-fil[4] = 'travel'; tpost[4] = 'x-tr';
+fil[0] = 'living'; tpost[0] = 'js-living';
+fil[1] = 'female'; tpost[1] = 'js-female';
+fil[2] = 'education'; tpost[2] = 'js-educat';
+fil[3] = 'entertain'; tpost[3] = 'js-entert';
+fil[4] = 'travel'; tpost[4] = 'js-travel';
 
 
 $(function(){
@@ -30,10 +30,10 @@ $('.filters li').click(function(){
    if ($(this).hasClass("no-active")) {
        $(this).removeClass("no-active");
        for (var i=0; i<5; i++) 
-         if ($(this).hasClass(fil[i])) $('li.'+tpost[i]).removeClass("hide-post");  }
+         if ($(this).hasClass(fil[i])) $('[data-for-filter="'+tpost[i]+'"]').removeClass("hide-post");  }
    else  {$(this).addClass("no-active");
          for (var i=0; i<5; i++) 
-         if ($(this).hasClass(fil[i])) $('li.'+tpost[i]).addClass("hide-post");
+         if ($(this).hasClass(fil[i])) $('[data-for-filter="'+tpost[i]+'"]').addClass("hide-post");
          
          }
     
