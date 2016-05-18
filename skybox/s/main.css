@@ -1,3 +1,6 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
 * {
   padding: 0;
   margin: 0;
@@ -1055,16 +1058,26 @@ padding: 65px 0 45px 0;
   
 }
 
+.b-footer div.envelope {
+  position: absolute;
+  top: 24px; left: 34px;
+  width: 18px;
+  height: 14px;
+  background: url(../i/sprite.png) -39px -118px;
+  border: 0px solid red;
+  
+}
+
 .b-footer .form-email {
   position: relative;
   width: 492px; 
   margin: 0 auto;}
 
 .b-footer input.inp-email {
-  width: 490px;
+  width: 421px;
   height: 60px;
   border-radius: 30px;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 69px;
   font-size: 20px;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1082,7 +1095,7 @@ padding: 65px 0 45px 0;
 
  .b-footer input.btn-email {
   position: absolute;
-  top: 6px; right: 8px;
+  top: 6px; right:5px;
   z-index: 22; 
   display: block;
   width: 120px;
