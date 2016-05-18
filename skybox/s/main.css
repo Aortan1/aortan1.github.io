@@ -564,29 +564,36 @@ ul.posts div.picture div.p-showmore {
   opacity:0.0;
 } 
 
-ul.posts .x-li .p-showmore {
+ul.posts .p-showmore { /*дефолтный стиль*/
   background-color: rgba(27,175,93,0.85);
   border:1px solid #1baf5d;
   /*background-color: #1baf5d;*/
 }
-ul.posts .x-fe .p-showmore {
+
+ul.posts .post-green_house .p-showmore { /*=дефолтный стиль*/
+  background-color: rgba(27,175,93,0.85);
+  border:1px solid #1baf5d;
+  /*background-color: #1baf5d;*/
+}
+ul.posts .post-orange_disco .p-showmore {
   background-color: rgba(241,158,31,0.8);
   border:1px solid #f19e1f;
   /*background-color: #f19e1f;*/
 }
-ul.posts .x-ed .p-showmore {
+ul.posts .post-education .p-showmore { /*для синих постов,их нет*/
   background-color: rgba(33,150,243,0.8);
+  border:1px solid #2196f3;
  /* background-color: #2196f3;*/
 }
-ul.posts .x-en .p-showmore {
+ul.posts .post-orange_beach .p-showmore {
   background-color: rgba(241,158,31,0.85);
+  border:1px solid #f19e1f;
   /*background-color: #f19e1f;*/
 }
-ul.posts .x-tr .p-showmore {
+ul.posts .post-violet_house .p-showmore {
   background-color: rgba(136,73,156,0.8);
+  border:1px solid #88499c;
   /*background-color: #88499c;*/
-  
-  
 }
 
 ul.posts div.picture div.p-showmore:hover {
