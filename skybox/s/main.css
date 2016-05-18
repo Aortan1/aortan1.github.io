@@ -48,6 +48,11 @@ p {
 color: #566375;
 }
 
+ input::-webkit-input-placeholder {color:#96a6a7;}
+ input::-moz-placeholder          {color:#96a6a7;}
+ input:-moz-placeholder           {color:#96a6a7;}
+ input:-ms-input-placeholder      {color:#96a6a7;}
+
 .main {
   max-width: 1280px;
   min-width: 960px;
@@ -203,14 +208,11 @@ section.b-search {
   font-size: 16px;
   background-color: #fff;
   border: 0px solid black;
-  color: black;
+  color: #96a6a7;
     
 }
 
-input::-webkit-input-placeholder {color:#000;}
- input::-moz-placeholder          {color:#000;}
- input:-moz-placeholder           {color:#000;}
- input:-ms-input-placeholder      {color:#000;}
+
 
  .b-search div.hid-find input.btn-find {
   position: absolute;
@@ -248,7 +250,7 @@ input::-webkit-input-placeholder {color:#000;}
   font-size: 16px;
   background-color: #fff;
   border: 0px solid black;
-  color: black;
+  color: #96a6a7;
   }
 
 
