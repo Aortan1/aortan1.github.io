@@ -186,7 +186,7 @@ section.b-search {
  display: none; 
  position: absolute; 
  margin: 0 0 0 70%;
- border-radius: 0 0 0 35px; 
+ border-radius: 0 0 35px 35px; 
  width: 30%;
  height: 75px;
  background-color: #e2dee0;
@@ -232,7 +232,7 @@ input::-webkit-input-placeholder {color:#000;}
  display: none;
  position: absolute;
  margin: 0 0 0 76%;
- border-radius: 0 0 0 35px; 
+ border-radius: 0 0 35px 35px; 
  width: 24%;
  height: 185px;
  background-color: #e94e38;
