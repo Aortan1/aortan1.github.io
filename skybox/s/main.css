@@ -164,7 +164,7 @@ section.b-navigation {
 .b-navigation div.red {
   position: absolute;
   right: 0px;
-  width: calc(23% - 180px) ;
+  width: calc(26% - 182px)
   height: 75px;
   background-color: #e94e38;
 }
