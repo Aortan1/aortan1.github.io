@@ -115,7 +115,7 @@ section.b-navigation {
   margin: 0 0 0 0;
 }
 
-.b-navigation .nav-find div {
+.b-navigation .nav-find div.find-bg {
   width: 30px;
   height: 30px;
   border: 0px solid red;
@@ -140,7 +140,7 @@ section.b-navigation {
   box-sizing: border-box;
 }
 
-.b-navigation .nav-login div {
+.b-navigation .nav-login div.login-bg {
   float: left;
   width: 17px;
   height: 17px;
@@ -160,6 +160,17 @@ section.b-navigation {
 .b-navigation .nav-login div:hover  {
   cursor: url("../i/cursor_black_hand.png"), pointer;
 }
+
+.b-navigation div.red {
+  position: absolute;
+  right: 0px;
+  width: calc(23% - 180px) ;
+  height: 75px;
+  background-color: #e94e38;
+}
+
+
+
 
 section.b-search {
   width: 100%;
