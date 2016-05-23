@@ -145,6 +145,13 @@ section.b-navigation {
   box-sizing: border-box;
 }
 
+.b-navigation .nav-login .forclick-login{
+cursor: url("../i/cursor_black_hand.png"), pointer;
+border: 0px solid black;
+width: 150px;
+height: 75px;  
+}
+
 .b-navigation .nav-login div.login-bg {
   float: left;
   width: 17px;
@@ -161,10 +168,6 @@ section.b-navigation {
   margin: 0px 0 0 30px;
 }
 
-.b-navigation .nav-login span:hover, 
-.b-navigation .nav-login div:hover  {
-  cursor: url("../i/cursor_black_hand.png"), pointer;
-}
 
 .b-navigation div.red {
   position: absolute;
