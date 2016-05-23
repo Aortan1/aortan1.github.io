@@ -3,7 +3,7 @@ $(function(){
 $('div.select').click(function(){
 $(document).find("ul.list").slideUp('fast');
 $(this).parent().find("ul").slideToggle('fast');
-}); return false;
+}); 
 $(this).find(".list li").click(function(){
 var tx = $(this).html();
 //alert (tx); 
@@ -11,7 +11,7 @@ var tx = $(this).html();
 $(this).parent().slideUp('fast');
 $(this).parent().parent().find("span").html(tx);
 //$(".delivery_text").html(tv);
-});
+}); return false;
 });
 
 
