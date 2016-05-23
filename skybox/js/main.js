@@ -46,7 +46,7 @@ $('.filters li').hover(function(){
 });
 
 $(document).ready (function() { 
-      $(".nav-find div.nav-find").bind("click", function() {
+      $(".nav-find").bind("click", function() {
         var delay = 250;
         var l = $("div.hid-login");
         var f = $("div.hid-find");
