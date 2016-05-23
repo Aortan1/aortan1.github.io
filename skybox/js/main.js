@@ -3,7 +3,7 @@ $(function(){
 $('div.select').click(function(){
 $(document).find("ul.list").slideUp('fast');
 $(this).parent().find("ul").slideToggle('fast');
-});
+}); return false;
 $(this).find(".list li").click(function(){
 var tx = $(this).html();
 //alert (tx); 
@@ -74,9 +74,11 @@ $(document).ready (function() {
   return;
       if( $(event.target).closest(f).length ) 
   return;
+      if( $(event.target).closest("div.select").length ) 
+  return;
         if ($(l).is(":visible")) $(l).slideUp(delay);
         if ($(f).is(":visible")) $(f).slideUp(delay);  
-        //if ($("ul.list").is(":visible")) $("ul.list").slideUp(delay);
+        if ($("ul.list").is(":visible")) $("ul.list").slideUp(delay);
         event.stopPropagation();
         
   });
