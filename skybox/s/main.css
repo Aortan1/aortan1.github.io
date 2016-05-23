@@ -117,7 +117,7 @@ section.b-navigation {
   width: 6%;
   height: 75px;
   background-color: #e2dee0;
-  margin: 0 0 0 0;
+  cursor: url("../i/cursor_black_hand.png"), pointer;
 }
 
 .b-navigation .nav-find div.find-bg {
@@ -126,7 +126,7 @@ section.b-navigation {
   border: 0px solid red;
   margin: 23px auto;
   background: url(../i/sprite.png) -197px -9px;
-  cursor: url("../i/cursor_black_hand.png"), pointer;
+  
 }
 
 
