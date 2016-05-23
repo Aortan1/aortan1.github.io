@@ -46,7 +46,7 @@ $('.filters li').hover(function(){
 });
 
 $(document).ready (function() { 
-      $(".nav-find div.find-bg").bind("click", function() {
+      $(".nav-find div.nav-find").bind("click", function() {
         var delay = 250;
         var l = $("div.hid-login");
         var f = $("div.hid-find");
@@ -56,7 +56,7 @@ $(document).ready (function() {
         $(f).slideDown(delay);}
       });
   
-  $(".nav-login div.login-bg").bind("click", function() {
+  $(".nav-login div.forclick-login").bind("click", function() {
         var delay = 250;
         var l = $("div.hid-login");
         var f = $("div.hid-find");
