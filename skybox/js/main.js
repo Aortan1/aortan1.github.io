@@ -1,9 +1,11 @@
 $(function(){
 
 $('div.select').click(function(){
-//$(document).find("ul.list").slideUp('fast');
-$(this).parent().find("ul").slideToggle('fast');
+var u = $(document).find("div.select").not(this).next();
+if (u.is(":visible") ) u.slideUp('fast'); 
+$(this).next().slideToggle('fast');
 }); 
+// $(this).next() - это ul.list 
 $(this).find(".list li").click(function(){
 var tx = $(this).html();
 //alert (tx); 
