@@ -90,7 +90,7 @@ section.b-header {
   width: 1640px;
 }
 .b-content .main {
-  width: 1530px;
+  max-width: 1530px;
 }
 .b-copyright .main {
   width: 705px;
@@ -152,7 +152,7 @@ section.b-header {
   width: 1528px;
   height: 580px;
   margin: 0 auto;
-  background: url("http://fs51.www.ex.ua/get/928009583032/247074662/header_bg.png");
+  background: url("i/header_bg.png");
 }
 .b-header .menu .banner div.h {
   width: 485px;
@@ -550,4 +550,55 @@ section.b-copyright {
   content: "|";
   position: relative;
   left: -15px;
+}
+
+@media screen and (max-width: 1530px) {
+body {
+ /*background-color: red;*/
+ }
+section.b-content {
+  height: 2190px;
+  margin: 27px 0 0 0;
+  padding: 45px 0 60px 0;
+  background-color: #f9f9fb;
+}
+
+.b-content .main {
+  max-width: 1160px;
+}
+
+}
+
+@media screen and (max-width: 1160px) {
+body {
+ /*background-color: green;*/
+ }
+section.b-content {
+  height: 3180px;
+  margin: 27px 0 0 0;
+  padding: 45px 0 60px 0;
+  background-color: #f9f9fb;
+}
+
+.b-content .main {
+  max-width: 780px;
+}
+
+}
+
+@media screen and (max-width: 780px) {
+body {
+ /*background-color: blue;*/
+ }
+section.b-content {
+  height: 6400px;
+  margin: 27px 0 0 0;
+  padding: 45px 0 60px 0;
+  background-color: #f9f9fb;
+}
+
+.b-content .main {
+  max-width: 360px;
+}
+
 }
