@@ -248,13 +248,13 @@ section.b-content {
   position: relative;
   width: 358px;
   /*height: 480px;*/
-  
   margin: 30px 30px 0 0;
   background-color: #fff;
   border: 1px solid #f1f1f3;
-  border: 1px solid black;
+/*   border: 1px solid black; */
   /*  background-color: red;
  height: 280px;  */
+  box-shadow: 0 0 25px #aaa;
 }
 .box-shadow-25 {
   box-shadow: 0 0 25px #aaa;
@@ -414,10 +414,17 @@ section.b-content {
   text-align: center;
   margin: 65px 15px 65px;
 }
-.b-content .article img {
+.b-content .article img.img-standart {
   width: 358px;
   display: block;
 }
+
+.b-content .article img.img-4in1 {
+  width: 175px ;
+  margin: 0px 2px;
+  display: inline-block;
+}
+
 .b-content .article div.round-img {
   width: 137px;
   height: 137px;
@@ -464,10 +471,10 @@ section.b-footer div.others {
   width: 360px;
 }
 .b-footer div.others p.w-text {
-  margin: 30px 0 12px 0px;
+  margin: 27px 0 7px 0px;
   font-size: 13px;
   text-align: justify;
-  border: 0px solid green;
+  border: 0px solid red;
 }
 .b-footer div.others h6 {
   font-size: 13px;
@@ -475,7 +482,7 @@ section.b-footer div.others {
   text-transform: none;
 }
 .b-footer div.others div.tweet {
-  padding: 35px 0 0 0;
+  padding: 31px 0 0 0;
 }
 .b-footer div.others div.tweet:before {
   content: '';
@@ -493,21 +500,33 @@ section.b-footer div.others {
   float: left;
 }
 .b-footer div.others .oth.latest-tweets p.w-text {
-  margin: 17px 0 0 25px;
+  margin: 8px 0 0 25px;
 }
 .b-footer div.others .oth.follow-me img {
-  margin: 30px 0 0 0;
+  margin: 37px 0 0 0;
 }
 .b-footer div.others .oth.latest-comment div.co {
-  padding: 25px 0 15px 0;
+  padding: 27px 0 15px 0;
 }
 .b-footer div.others .oth.latest-comment div.co:nth-child(2) {
   border-bottom: 1px solid white;
+/*   background-color: red; */
 }
+.b-footer div.others .oth.latest-comment div.co:nth-child(3) {
+margin: -12px 0 0 0px;  
+}
+
 .b-footer div.others .oth.latest-comment p.w-text {
-  margin: -5px 0 0 0px;
-  padding: 0px 0 20px 0;
+  margin: -0px 0 0 0px;
+  padding: 0px 0 5px 0;
 }
+
+
+.b-footer div.others .oth.latest-comment p.w-text.co-text {
+  margin: -0px 0 0 0px;
+  padding: 0px 0 15px 0;
+}  
+
 section.b-copyright {
   height: 20px;
   padding: 10px;
