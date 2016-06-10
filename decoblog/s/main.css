@@ -552,7 +552,7 @@ section.b-copyright {
   left: -15px;
 }
 
-@media screen and (max-width: 1530px) {
+@media screen and (max-width: 1570px) {
 body {
  /*background-color: red;*/
  }
@@ -569,7 +569,7 @@ section.b-content {
 
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1180px) {
 body {
  /*background-color: green;*/
  }
@@ -586,7 +586,7 @@ section.b-content {
 
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 790px) {
 body {
  /*background-color: blue;*/
  }
