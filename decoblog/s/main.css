@@ -450,6 +450,7 @@ section.b-content {
   margin-bottom: 24px;
 }
 section.b-footer {
+  min-width: 1660px;
   height: 370px;
   background-color: #212429;
   border: 0px solid blue;
@@ -528,6 +529,7 @@ margin: -12px 0 0 0px;
 }  
 
 section.b-copyright {
+  min-width: 1640px;
   height: 20px;
   padding: 10px;
   color: #747577;
