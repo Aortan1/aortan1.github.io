@@ -176,30 +176,30 @@ section.b-header {
 }  
  
 .sl-1 {
-  background: url("tem/header_bg-01.jpg");
+  background: url("../tem/header_bg-01.jpg");
 }
 
 .sl-2 {
-  background: url("tem//header_bg-02.jpg");
+  background: url("../tem//header_bg-02.jpg");
 }
 
 .sl-3 {
-  background: url("tem//header_bg-03.jpg");
+  background: url("../tem//header_bg-03.jpg");
 }
 .sl-4 {
-  background: url("tem//header_bg-04.jpg");
+  background: url("../tem//header_bg-04.jpg");
 }
 
 .sl-5 {
-  background: url("tem//header_bg-05.jpg");
+  background: url("../tem//header_bg-05.jpg");
 }
 
 .sl-6 {
-  background: url("tem//header_bg-06.jpg");
+  background: url("../tem//header_bg-06.jpg");
 }
 
 .sl-7 {
-  background: url("tem//header_bg-07.jpg");
+  background: url("../tem//header_bg-07.jpg");
 }
 
 
