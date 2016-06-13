@@ -149,17 +149,67 @@ section.b-header {
   background-position: -214px -47px;
 }
 .b-header .menu div.banner {
+  position: absolute;
+  z-index: 2000;
+  top: 0;
   width: 1528px;
   height: 580px;
   margin: 0 auto;
-  background: url("../i/header_bg.png");
+  border: 0px solid red;
+  
 }
+
+.b-header .menu div.banner-slides{
+  position: relative;
+  overflow: hidden;
+  width: 1528px;
+  height: 580px;
+  margin: 0 auto 0;
+}
+
+.b-header .menu div.banner-slide{
+  position: relative;
+  float: left;
+  width: 1528px;
+  height: 580px;
+  background-repeat: no-repeat;
+}  
+ 
+.sl-1 {
+  background: url("tem/header_bg-01.jpg");
+}
+
+.sl-2 {
+  background: url("tem//header_bg-02.jpg");
+}
+
+.sl-3 {
+  background: url("tem//header_bg-03.jpg");
+}
+.sl-4 {
+  background: url("tem//header_bg-04.jpg");
+}
+
+.sl-5 {
+  background: url("tem//header_bg-05.jpg");
+}
+
+.sl-6 {
+  background: url("tem//header_bg-06.jpg");
+}
+
+.sl-7 {
+  background: url("tem//header_bg-07.jpg");
+}
+
+
 .b-header .menu .banner div.h {
+  
   width: 485px;
   height: 130x;
   float: left;
-  margin: 222px 0 0 6%;
-  border: 0px solid white;
+  margin: 222px 0 0 9%;
+  border: 0px solid red;
   color: white;
 }
 .b-header div.h h6 {
