@@ -4,7 +4,7 @@ $(document).ready(function (){
 $('.banner-slides').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  speed: 2000,
+  speed: 1500,
   arrows: false,
   // fade: true,
   initialSlide: 0,
