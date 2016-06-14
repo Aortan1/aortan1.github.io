@@ -265,7 +265,7 @@ section.b-header {
 }
 
 .b-header .menu .slick-dots li{
- margin: 8px;
+ margin: 0px;
 }
 
 .b-header .menu .slick-dots li button:before{
