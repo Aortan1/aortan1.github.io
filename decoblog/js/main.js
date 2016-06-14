@@ -2,20 +2,23 @@ $(document).ready(function (){
 ///alert ('ddd');
   
 $('.banner-slides').slick({
+  аccessibility: true,
+  dots: true,
+  infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  speed: 1000,
-  arrows: false,
+  speed: 1500,
+  draggable: true,
+  arrows: true,
   fade: true,
   cssEase: 'linear',
-  initialSlide: 0,
   prevArrow: '.sl-prev',
   nextArrow: '.sl-next',
-  draggable: true,
+  initialSlide: 0,
   // vertical: true,
   // verticalSwiping: true,
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 2000,
   lazyLoad: 'ondemand'
   
 });
