@@ -6,11 +6,12 @@ $('.banner-slides').slick({
   slidesToScroll: 1,
   speed: 1500,
   arrows: false,
-  // fade: true,
+  fade: true,
+  cssEase: 'linear',
   initialSlide: 0,
   draggable: true,
-  vertical: true,
-  verticalSwiping: true,
+  // vertical: true,
+  // verticalSwiping: true,
   autoplay: true,
   autoplaySpeed: 4000
     
