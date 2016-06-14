@@ -4,7 +4,7 @@ $(document).ready(function (){
 $('.banner-slides').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  speed: 1500,
+  speed: 1000,
   arrows: false,
   fade: true,
   cssEase: 'linear',
@@ -13,8 +13,8 @@ $('.banner-slides').slick({
   // vertical: true,
   // verticalSwiping: true,
   autoplay: true,
-  autoplaySpeed: 4000
-    
+  autoplaySpeed: 4000,
+  lazyLoad: 'ondemand'
   
 });
 
