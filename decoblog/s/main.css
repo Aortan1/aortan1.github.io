@@ -177,33 +177,17 @@ section.b-header {
   background-repeat: no-repeat;
 }  
  
-.sl-1 {
-  background: url("../tem/header_bg-01.jpg");
-}
-
-.sl-2 {
-  background: url("../tem//header_bg-02.jpg");
-}
-
-.sl-3 {
-  background: url("../tem//header_bg-03.jpg");
-}
-.sl-4 {
-  background: url("../tem//header_bg-04.jpg");
-}
-
-.sl-5 {
-  background: url("../tem//header_bg-05.jpg");
-}
-
-.sl-6 {
-  background: url("../tem//header_bg-06.jpg");
-}
-
-.sl-7 {
-  background: url("../tem//header_bg-07.jpg");
-}
-
+.sl-1 { background: url("../tem/header_bg-01.jpg");}
+.sl-2 { background: url("../tem/header_bg-02.jpg");}
+.sl-3 { background: url("../tem/header_bg-03.jpg");}
+.sl-4 { background: url("../tem/header_bg-04.jpg");}
+.sl-5 { background: url("../tem/header_bg-05.jpg");}
+.sl-6 { background: url("../tem/header_bg-06.jpg");}
+.sl-7 { background: url("../tem/header_bg-07.jpg");}
+.sl-8 { background: url("../tem/header_bg-08.jpg");}
+.sl-9 { background: url("../tem/header_bg-09.jpg");}
+.sl-10 { background: url("../tem/header_bg-10.jpg");}
+.sl-11 { background: url("../tem/header_bg-11.jpg");}
 
 .b-header .menu div.arrows {
   position: absolute;
