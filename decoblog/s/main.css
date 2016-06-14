@@ -205,6 +205,88 @@ section.b-header {
 }
 
 
+.b-header .menu div.arrows {
+  position: absolute;
+  right: 30px; top: 330px;
+  border: 0px solid blue;
+  width: 210px;
+  height: 20px;
+  color: black;
+    transform: rotate(-90deg);
+  
+}
+
+.b-header .menu div.arrows span {
+  display: inline-block;
+  margin: 0 20px 0;
+  color: white;
+  font-size: 14px;
+  border: 0px solid white;
+  
+
+}
+
+
+.b-header .menu .sl-prev, .b-header .menu .sl-next {
+  display: inline-block;
+  position: relative;
+  left: 0px; top: 0px;
+  border: 0px solid red;
+  background: none;
+}
+
+.b-header .menu .sl-next {
+   float:right;
+}
+
+.b-header .menu .sl-prev:before{
+  content:"←";
+  color: white;
+  font-size: 20px;
+ }
+  
+.b-header .menu .sl-next:before{
+  content:"→";
+  color: white;
+  font-size: 20px;
+ }
+
+
+ 
+
+
+.b-header .menu .slick-dots{
+ display: block;
+ height: 160px;
+ width: 10px; 
+ right: 70px;
+ top: 38%;
+ border: 0px solid red;
+}
+
+.b-header .menu .slick-dots li{
+ margin: -6px;
+}
+
+.b-header .menu .slick-dots li button:before{
+ content: '';
+ display: block;
+ width: 6px;
+ height: 6px; 
+ background-color: #999; 
+ border: 1px solid #fff;  
+ color:  #fff; 
+ opacity: 0.7;
+}
+.b-header .menu .slick-dots li button:focus:before{
+background-color: #eee;
+opacity: 1.0;
+}
+
+
+
+
+
 .b-header .menu .banner div.h {
   
   width: 485px;

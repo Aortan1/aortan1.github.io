@@ -9,6 +9,8 @@ $('.banner-slides').slick({
   fade: true,
   cssEase: 'linear',
   initialSlide: 0,
+  prevArrow: '.sl-prev',
+  nextArrow: '.sl-next',
   draggable: true,
   // vertical: true,
   // verticalSwiping: true,
