@@ -153,7 +153,8 @@ section.b-header {
   z-index: 2000;
   top: 0;
   width: 1528px;
-  height: 580px;
+  /*height: 580px;*/
+  height: 0px;
   margin: 0 auto;
   border: 0px solid red;
   
