@@ -1,7 +1,7 @@
 $(document).ready(function (){
 ///alert ('ddd');
   
-$('.banner-slides').slick({
+$('.slick-list').slick({
   аccessibility: true,
   dots: true,
   infinite: true,
