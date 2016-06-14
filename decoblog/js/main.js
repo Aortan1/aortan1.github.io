@@ -18,8 +18,8 @@ $('.slick-list').slick({
   // vertical: true,
   // verticalSwiping: true,
   autoplay: true,
-  autoplaySpeed: 2000,
-  lazyLoad: 'ondemand'
+  autoplaySpeed: 2000
+  // lazyLoad: 'ondemand'
   
 });
 
