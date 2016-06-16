@@ -1,7 +1,7 @@
 
 
 
-$(document).ready (function(){ 
+// $(document).ready (function(){ 
 
 
 function rand_till(n){
@@ -164,5 +164,5 @@ Btags[ii].style.borderColor = "black";
 
 
   
- });
+ // });
   
