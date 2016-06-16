@@ -7,7 +7,7 @@ $('.slick-list').slick({
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
-  speed: 700,
+  speed: 500,
   draggable: true,
   arrows: true,
   fade: true,
