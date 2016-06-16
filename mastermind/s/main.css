@@ -1,0 +1,160 @@
+body {background: linear-gradient(to top, #8cd890, #0372ff);
+height: 100%;
+}
+
+:focus {
+outline: none;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*#myDIV {background-color: #fff;} */
+
+h1 {
+display: block; width: 250px;
+font-family: 'Pacifico', cursive;
+font-size: 40px;
+font-weight: 300;
+padding: 0 20px 0 20px;  
+margin: 0 auto; 
+  
+}
+
+h2 {float:left;
+font-family: 'Pacifico', cursive;
+font-size: 25px;
+display: block;
+position: absolute;  
+padding: 10px -10px 0 0;  
+  
+}
+
+h5 {
+font-family: 'Pacifico', cursive;
+height: 20px;  
+padding: 4px 3px 0 0px;
+text-align: right;
+}
+
+h5.how {display: block; margin: 0px 18px -50px -10px; }
+
+.game{
+ width: 600px;
+ height: 600px;
+ margin: 0px auto; 
+ }
+
+.field {height: 500px;}
+
+li { height: 100px;}
+
+
+ul.attempts { margin: 20px 0 -20px 20px; }
+ul.attempts li{ margin-bottom: -40px; }
+
+div.attempt i{
+display:inline-block; 
+width: 40px;
+height: 40px;
+border-radius: 50% ; 
+margin: 0px 0px 0px 15px;
+}
+div.attempt i:activ {background-color: red;}
+
+div.attempt .secret{
+display:inline-block; 
+width: 50px;
+height: 50px;
+border-radius: 50% ; 
+border: 1px solid black;
+background-color: black; 
+margin: 0px 0px 0px 15px;
+}
+
+.secrets {width: 350px; margin-left: 150px; display: none;}
+
+div.result {
+float:left;  
+width: 50px;
+height: 50px;
+border-radius: 10px ; 
+border: 1px solid black;
+margin: 0px 70px 0px 30px;
+padding: 0px 5px 5px 0; 
+-webkit-box-sizing: border-box;
+      -moz-box-sizing:border-box;
+           box-sizing:border-box; 
+border: 2px solid #444444;   
+}
+
+div.result b {
+float: left;
+display:block;
+width: 5px;
+height: 5px;
+border-radius: 50% ; 
+border: 1px solid black;
+margin: 8px 0px 0px 8px;
+background-color: #aaaaaa;
+border: 3px solid #444444;  
+}
+
+
+
+div.fild_buttons { width: 600px; }
+
+.fild_buttons .buttons {
+ margin: 10px auto;
+ margin-left: 20px;
+ }
+
+.fild_buttons .buttons input {
+ display:inline-block;
+ margin: 8px; 
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ color: transparent; 
+ }
+
+
+
+h1 {color: #007668; background-color: white;} 
+h2 {color: #002618;}
+h5 a {color: #009688;}
+.game{ 
+  background-color: #455658; 
+  border: 1px solid #444444;}
+.field{
+  border-bottom: 2px solid #557668;  
+  background: linear-gradient(to top, #556668,  #DDDCCD);}
+div.attempt i{
+background: #B6B6B6;
+border: 1px solid #33695B; }
+div.result {border: 2px solid #444444;}
+div.result b {
+background-color: #CDDCb9;
+border: 3px solid #444444;  
+}
+.fild_buttons input.b_cansel{
+color: black; background-color: #607D8B;  
+}
+
+
+
+.b_white {background-color: #fff;}  
+.b_lilac {background-color: #9C27B0;} 
+.b_yellow{background-color: #FFC107;} 
+.b_green {background-color: #388E3C;} 
+.b_red {background-color: #D32F2F;} 
+.b_blue {background-color: #1976D2;} 
+.fonc {padding-left: 40px; display: none !important;}
