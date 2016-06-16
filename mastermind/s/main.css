@@ -20,18 +20,22 @@ ul {
 /*#myDIV {background-color: #fff;} */
 
 h1 {
-display: block; width: 250px;
+display: block; 
+width: 250px;
+color: #007668; 
+background-color: transparent;  
 font-family: 'Pacifico', cursive;
 font-size: 40px;
 font-weight: 300;
 padding: 0 20px 0 20px;  
-margin: 0 auto;
-background: blue; 
-  
+margin: 0 auto; 
+background-color: blue;  
 }
 
-h2 {float:left;
+h2 {
+float: left;
 font-family: 'Pacifico', cursive;
+color: #002618;
 font-size: 25px;
 display: block;
 position: absolute;  
@@ -47,6 +51,8 @@ text-align: right;
 }
 
 h5.how {display: block; margin: 0px 18px -50px -10px; }
+
+h5 a {color: #009688;}
 
 .game{
  width: 600px;
@@ -129,9 +135,7 @@ div.fild_buttons { width: 600px; }
 
 
 
-h1 {color: #007668; background-color: white;} 
-h2 {color: #002618;}
-h5 a {color: #009688;}
+
 .game{ 
   background-color: #455658; 
   border: 1px solid #444444;}
