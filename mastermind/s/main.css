@@ -21,15 +21,16 @@ ul {
 
 h1 {
 display: block; 
-width: 250px;
-color: #007668; 
+width: 200px;
+color: #55b618; 
 background-color: transparent;  
 font-family: 'Pacifico', cursive;
-font-size: 40px;
+font-size: 55px;
 font-weight: 300;
-padding: 0 20px 0 20px;  
-margin: 0 auto; 
+padding: 0 100px 0 20px;  
+margin: 100px auto 100px;  
 }
+
 
 h2 {
 float: left;
