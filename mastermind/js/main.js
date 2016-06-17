@@ -135,10 +135,11 @@ Bcan =  document.getElementsByClassName("b_cansel");
            }   
     
 if (sum1==n){Htag[0].innerHTML="ПОЗДРАВЛЯЮ!!! ВЫ РАЗГАДАЛИ КОМБИНАЦИЮ ЦВЕТОВ!!!";
-Htag[0].style.backgroundColor = "#388E3C"; Htag[0].style.color="yellow";
-Htag[0].style.fontSize = "20px"; 
+// Htag[0].style.backgroundColor = "#388E3C"; Htag[0].style.color="white";
+// Htag[0].style.fontSize = "20px"; 
+Htag[0].classList.add("rai");             
 Sec[0].style.display ="block";            
-}      
+}       
 
 if (attempt_now==n_at && sum1!=n){
 Htag[0].innerHTML="Попробуйте ещё раз, у вас получится.";
