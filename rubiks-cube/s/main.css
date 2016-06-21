@@ -57,6 +57,8 @@ i {
  box-sizing: border-box;
  width: 56px; height: 56px;
  padding-top: 32px;
+ border-top-right-radius: 0;
+ border-bottom-right-radius: 0;
 }
 
 .edge-2 {
@@ -96,6 +98,8 @@ i {
   -moz-transform: skewY(-45deg);
   -o-transform: skewY(-45deg);
   transform: skewY(-45deg);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .edge-4 i {
@@ -117,6 +121,7 @@ i {
   -moz-transform: skewX(-45deg);
   -o-transform: skewX(-45deg);
   transform: skewX(-45deg);
+  border-bottom-right-radius: 0;
 }
 
 .edge-5 i {
@@ -166,7 +171,7 @@ i {
 }
 
 .edge {background-color: #111;}
-.edge-3 i {background-color: #111!important;}
+/*.edge-3 i {background-color: #111!important;}*/
 
 .axes{
  color:  #bfcef5; 
