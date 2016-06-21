@@ -12,12 +12,12 @@ var difficulty_level=400; // уровень сложности (количест
  cube = randcolors(difficulty_level, cube) ;
 
  $('.edge i:nth-child(5)').click(function fadeedge(){ //(убор верхних граней)
-  $('.edge-1,.edge-4,.edge-5').fadeTo(200,0.0).fadeTo(1000,0.0).fadeTo(500,1.0); 
+  $('.edge-1,.edge-4,.edge-5').fadeTo(200,0.0).fadeTo(1000,0.0).fadeTo(300,1.0); 
   });
   
  
  $('h1').click(function fadeedge(){
-  $('.edge-1,.edge-4,.edge-5').fadeTo(400,0.2).fadeTo(600,0.8).fadeTo(900,0.6).fadeTo(1350,1.0); //(декоративное мелькание граней)
+  $('.edge-1,.edge-4,.edge-5').fadeTo(400,0.3).fadeTo(600,0.8).fadeTo(900,0.6).fadeTo(1350,1.0); //(декоративное мелькание граней)
   });
 
   
