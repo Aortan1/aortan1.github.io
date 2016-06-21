@@ -11,9 +11,10 @@ var difficulty_level=400; // уровень сложности (количест
  cube = fill_in_cells() ;
  cube = randcolors(difficulty_level, cube) ;
 
-$('.edge i:nth-child(5)').bind("click", function fadeedge(){
-  $('.edge-1,.edge-4,.edge-5').fadeTo(1000,0.15).fadeTo(2000,0.8).fadeTo(5000,1.0); 
+ $('.edge i:nth-child(5)').click(function fadeedge(){ //(убор верхних граней)
+  $('.edge-1,.edge-4,.edge-5').fadeTo(200,0.0).fadeTo(1000,0.0).fadeTo(1000,0.8).fadeTo(1000,1.0); 
   });
+  
   
   
 $('.but').bind("click", function funbut(){
@@ -331,7 +332,7 @@ function randcolors(ran, cube){
   }
   draw_cube(cube);
 
-  $('.edge-1,.edge-4,.edge-5').fadeTo(0,0.5).fadeTo(3000,0.8).fadeTo(10000,1.0);
+  $('.edge-1,.edge-4,.edge-5').fadeTo(0,0.5).fadeTo(2000,0.8).fadeTo(3000,1.0); //(плавное появление верзних граней куба)
   
 return cube;
 };
