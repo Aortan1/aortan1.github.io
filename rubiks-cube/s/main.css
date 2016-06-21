@@ -157,10 +157,13 @@ i {
   opacity:0.9;
 }
 
-/*.edge i:hover{
-  border-color: rgba(255,255,255,0.5);
+.edge i:hover{
+  border-color: rgba(255,255,255,0.1);
 }
-*/
+
+.edge i:active{
+  border-color: black;
+}
 
 .edge {background-color: #111;}
 .edge-3 i {background-color: #111!important;}
