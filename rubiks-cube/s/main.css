@@ -13,7 +13,8 @@ font-family: 'Pacifico', cursive;
 font-size: 42px;
 font-weight: 300;
 padding: 0 20px 0 0px;  
-margin: 100px auto 0; 
+margin: 100px auto 0;
+cursor: crosshair; 
 }
 
 .cube {
