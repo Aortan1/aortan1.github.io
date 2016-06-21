@@ -327,6 +327,8 @@ function randcolors(ran, cube){
   cube=move_segment(n1,n2,n3,cube);  
   }
   draw_cube(cube);
+
+  $('.edge-1,.edge-4,.edge-5').fadeTo(0,0.5).fadeTo(3000,0.8).fadeTo(10000,1.0);
   
 return cube;
 };
