@@ -7,6 +7,8 @@ rn++;
 if (rn == n) {rn=1;}  
 return rn;  
 }
+var rn=rand_till(15);
+
 
 $(document).ready(function (){
   
@@ -21,7 +23,7 @@ $('.slides').slick({
   arrows: true,
   fade: true,
   cssEase: 'linear',
-  initialSlide: rand_till(15),
+  initialSlide: rn,
   autoplay: true,
   autoplaySpeed: 4000,
   draggable: true 
@@ -37,7 +39,9 @@ $('.slides').slick({
   centerMode: true,
   focusOnSelect: true,
   speed: 300,
-  initialSlide: 08,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  initialSlide: rn,
   prevArrow: '.sl-prev',
   nextArrow: '.sl-next',
   
