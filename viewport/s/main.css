@@ -1,0 +1,916 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 11px;
+  font-style: italic;
+  font-family: Open Sans;
+  color: #bbb;
+  background-color: #f4f4f4;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+img {
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #aaa;
+}
+
+a:hover {
+  color: #fff;
+  cursor: pointer;
+  
+}
+
+a:active {
+  color: red;
+}
+
+h1, h1 a {
+  color: #444444;
+  font-size: 14px;
+}
+h2, h2 a {
+  color: #444444;
+  font-size: 13px;
+  font-style: normal;
+}
+
+h1 a:hover, h2 a:hover {
+  color: #e47600;
+}
+
+p {
+  color: #333;
+  font-size: 13px;
+  font-style: normal;
+}
+
+.main {
+  -moz-box-sizing: border-box;  
+  box-sizing: border-box; 
+  width: 980px;
+  margin: 0 auto;
+  border: 0px solid red;
+}
+
+section.b-header {
+  height: 35px;
+  background-color: #232323;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+section.b-header i.date {
+  margin: 0 6px 0 0;
+}
+
+ul.menu {
+ position: relative;
+ width: 550px;
+ border: 0px solid red;
+ text-transform: capitalize; 
+}
+
+ul.menu>li{
+ display: inline-block;
+ margin: 12px 0px 0 0;
+ cursor: pointer;
+}
+
+section.b-header ul.menu>li:not(:first-child){
+  padding: 0 0 0 10px;
+  border-left: 1px solid #4d4d4d;
+}
+
+
+b.spare {
+  display: inline-block;
+  width: 22px;
+  height: 10px;
+  background: url("../i/sprite.png") 8px 3px;
+}
+
+
+
+ul.menu>li:hover b.spare{
+ color: white;
+ background: url("../i/sprite.png") -112px 3px; 
+}
+
+ul.menu>li:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+ul.menu>li ul.menu-item-list { 
+  position: absolute;
+  width: 140px;
+  height: 150px;
+  padding: 10px 0 0 0;
+  margin: 0 0 0 -10px;
+  display: none;
+  
+  
+}
+
+section.b-header ul.menu>li:first-child ul.menu-item-list { 
+  width: 170px;
+}
+
+ul.menu>li ul.menu-item-list>li{ 
+  height: 17px;
+  padding: 10px 10px 5px 15px;
+  color: #999;
+  background-color: #222222;
+  border-bottom: 1px solid #444;
+}
+
+ul.menu>li ul.menu-item-list>li:last-child{
+  border-radius: 0 0 5px 5px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+
+ul.menu>li ul.menu-item-list>li:hover a{ 
+  color: white; 
+}
+
+ul.menu>li ul.menu-item-list>li:active a{ 
+  color: red;
+  font-weight: 600;
+}
+
+ul.menu>li:hover ul.menu-item-list {
+  display: block;
+  z-index: 2;
+
+}
+
+
+section.b-header div.subscr {
+  float: right;
+  margin: -12px 0 0 0;
+  
+}
+
+section.b-header ul.menu i.date, div.subscr a.rss, div.subscr a.mail {
+  color: white;
+} 
+
+section.b-header div.subscr a.rss:hover, div.subscr a.mail:hover {
+  color: yellow;
+} 
+
+/*-------------------------------------------------------- */
+
+section.b-logoarea {
+  height: 205px;
+  background-color: #2f2f2f;
+  border-bottom: 1px solid #3d3d3d;
+}
+
+section.b-logoarea .main {
+  padding: 32px 0 0 15px
+}
+
+section.b-logoarea img.logotype {
+  width: 134px;
+  float: left;
+  margin: 15px 0 0 0;
+}
+
+section.b-logoarea div.tagline {
+/*   display: inline-block; */
+  float: left;
+  width: 200px;
+  margin: 25px 0 0 10px;
+  padding: 0 0 0 10px;
+  color: #ffffaa;
+  font-size: 12px;
+  border-left: 1px solid #aaa;
+}
+
+section.b-logoarea img.long {
+  float: right;
+  width: 590px;
+  height: 60px;
+  margin: 5px 0 0 0;
+  border-radius: 30px;
+}
+
+
+section.b-wall{
+  height: 2030px;
+  background-color: #fff;
+}
+
+section.b-wall .bg-lines{
+  position: absolute;
+  width: 100%;
+  height: 380px;
+/*   background: url("http://fs62.www.ex.ua/get/968863125248/253140493/bg-lines.png"); */
+/*    background: url("http://fs136.www.ex.ua/get/421072402533/253392349/bg-briks01.jpg");  */
+/*    background: url("http://fs54.www.ex.ua/get/733273556634/253393977/material_03s01.jpg");  */
+/*   background: url("http://fs153.www.ex.ua/get/269044726529/254180787/bg-briks02.jpg");  */
+ background: url("../i/bg-briks-four02.jpg");  
+  
+}
+
+section.b-wall .content{
+  position: relative;
+  top: -75px;
+  height: 2165px;
+  background-color: #fff;
+  box-shadow: 0 0 2px #aaa; 
+  border: 0px solid green;
+  overflow: hidden;
+ }
+
+
+
+section.b-wall .content ul.con-menu {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+/*   height: 55px; */
+  background-color: #282828;
+  border-bottom: 5px solid #1e1e1e;
+  text-transform: capitalize;
+  border: 0px solid red;
+    
+}
+
+div.black-line{
+  position: relative;
+  z-index:3;
+  width: 100%;
+  height: 7px;
+  background-color: #1e1e1e;
+}
+
+section.b-wall .content ul.con-menu>li{
+   display: inline-block;
+   vertical-align: bottom;
+   width: 150px;
+   height: 62px;
+   margin: 0px 0px 0 0;
+   padding: 0 0 0 0px;
+   background-color: #282828;
+   border: 0px solid green;
+   cursor: pointer;
+   white-space: nowrap;
+/*    overflow: */
+}
+
+section.b-wall .content ul.con-menu>li ul.con-menu-list {
+  position: absolute;
+  width: 150px;
+  z-index: 2;
+}
+
+section.b-wall .content .con-menu>li ul.con-menu-list>li {
+  padding: 10px 10px 5px 15px;
+  background-color: #2a2a2a;
+/*   border-bottom: 1px solid #444; */
+}
+
+section.b-wall .content .con-menu>li ul.con-menu-list>li:first-child{
+  height: 40px;
+  border-bottom: 7px solid #1e1e1e;
+}
+
+section.b-wall .content .con-menu>li ul.con-menu-list:hover>li:first-child{
+/*   height: 57px;
+/*   padding-top: 25px; */
+/*   position: relative;
+  vertical-align: top; */
+/*   top: -25px; */ 
+}
+
+section.b-wall .content .con-menu>li ul.con-menu-list>li:not(:first-child){
+  border-bottom: 1px solid #444;
+}
+
+section.b-wall .content .con-menu>li ul.con-menu-list>li:last-child{
+  border-radius: 0 0 5px 5px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #191919;
+}
+
+section.b-wall .content ul.con-menu>li ul.con-menu-list li:not(:first-child){
+  display: none;
+}
+
+section.b-wall .content ul.con-menu>li ul.con-menu-list:hover li {
+  display: block;
+  background-color: #252525;
+  
+}
+
+section.b-wall .content .con-menu>li:not(:first-child):after {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 15px; 
+  width: 2px; 
+  height: 32px;
+  margin:  0 0 0 -3px;
+  background:  url("../i/lll2.png");
+  border: 0px solid red;
+}  
+
+
+
+
+
+
+
+/* section.b-wall .content .con-menu>li:hover {
+  background-color: #222222;
+  
+  } */
+
+section.b-wall h3.co-me-h3 {
+  display: block;
+  padding: 0px 0 7px 0px;
+  margin: 0px;
+  font-size: 12px;
+  color: white;
+  font-style: normal;
+}
+
+section.b-wall span.menu-item{
+  padding: 0px 15px 0 0px;
+}
+
+section.b-wall .content .con-menu>li ul>li:hover span.menu-item{
+  color: white;
+  transition: 0.5s;
+}
+
+
+
+
+section.b-wall .content-area {
+ height: 2110px;
+ margin: 15px 25px; 
+ 
+}
+
+div.bg-lines-up {
+  height: 15px;
+/*   background: url("http://fs3.www.ex.ua/get/509402500112/253280323/bg-lines-op35.png");  */
+/*  background: url("http://fs155.www.ex.ua/get/733273556634/253394365/material_03s01_o50.png");   */
+  opacity: 0.5;
+  background: url("../i/bg-briks02.jpg");   
+
+
+}
+
+.content-area div.for-img {
+  position: relative;
+  height: 377px;
+  padding: 0x 0 0 0px;
+  border: 0px solid green;
+  
+/*   background: url("http://fs3.www.ex.ua/get/509402500112/253280323/bg-lines-op35.png"); */
+/*   background: url("http://fs139.www.ex.ua/get/509402500112/253282027/bg-lines-op50.png");  */
+  
+}
+
+.content-area  div.for-img .slides{
+  position: relative;
+  width: 930px;
+  height: 300px; 
+  overflow: hidden;
+  margin: 0 auto 0;
+  margin: 15px auto 20px;
+  background-color: ;
+}
+
+.content-area  div.for-img .slides:hover{
+/*  z-index: 10;
+ transition: 3s; */
+}
+
+.content-area  .slides img.picture {
+display: block;  
+width: 930px;
+height: 300px; 
+}
+
+.content-area  .slides-control{
+  position: absolute;
+  top: 290px; 
+  left: 90px;
+  z-index: 2;
+  width: 740px;
+  height: 90px;
+  padding: 0 0px 0 0px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 0px solid red;
+}
+
+
+div.for-button-prev, div.for-button-next {
+  position: absolute;
+  z-index: 3;
+  top: 300px; 
+  width: 22px;
+  height: 60px;
+  padding: 5px 0;
+  background-color: #fff;
+  border: 0px solid green;
+  
+}
+
+.content-area .for-button-prev {
+  right: 100px;
+  padding-right: 10px;
+  padding-left: 7px;
+  
+}
+.content-area .for-button-next {
+  left: 90px;
+  padding-left: 10px;
+  padding-right: 7px;
+  
+}
+
+.content-area   a.sli{
+  display: inline-block;
+  width: 15px;
+  height: 40px;
+  border: 0px solid red;
+  padding: 20px 0 0 5px;
+  color: black;
+  background-color: #efefef;
+  background: url("../i/sprite.png") -174px 22px;
+  border-radius: 0 5px 5px 0;
+/*   transition: 0.3s; */
+}
+
+.refl {
+  transform: scale(-1, 1);
+}
+
+.content-area   a.sli:hover{
+  background: url("../i/sprite.png") -214px 22px; 
+}
+
+.content-area   a.sli:hover{
+    
+  background-color: #414141;
+  transition: 0.1s;
+}
+
+
+
+.content-area  .for-button-prev  a.sl-prev {
+  float: right;
+/*   border-radius: 0 5px 5px 0; */
+}
+
+div.content-area  .for-button-next  a.sl-next {
+/*   border-radius: 5px 0 0 5px; */
+/*   border: 2px solid red; */
+}
+
+section.b-wall .content-area  .slides-control img.pic {
+float: left;  
+margin: 15px 5px 20px;  
+width: 94px!important;
+/* width: 94px; */
+height: 56px;
+padding: 2px;
+border: 1px solid #c2c2c3;
+transition: 0.3s;
+}
+
+#carusel_partners div ul li a{
+  
+}
+
+div.content-area .slides-control img.pic:hover, div.content-area .slides-control img.pic:focus {
+background-color: #000;
+}
+
+div.for-img:hover h1.silicon, div.for-img:hover p.by{
+  transition: 3s;
+  opacity: 0;
+}
+
+
+
+div.content-area h1.silicon {
+  position: absolute;
+  top: 137px; left: 55px;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  padding: 10px 14px 10px 15px;
+  border-radius: 5px 5px 5px 0;
+  background-color: rgba(20, 20, 20, 0.8);
+  transition: 1s;
+}
+
+div.content-area p.by {
+  position: absolute;
+  top: 180px; left: 55px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 0 0 5px 5px;
+  padding: 0px 20px 10px 14px;
+  background-color: rgba(20, 20, 20, 0.8);
+  transition: 1s;
+  
+}
+
+
+section.b-wall div.wide-col {
+  float: left;
+  width: 600px;
+  height: 1535px;
+  padding: 0 0px 0 0;
+  border: 0px solid #999;
+}
+
+ section.b-wall div.narrow-col{
+  float: right;
+  width: 300px;
+  height: 1560px;
+  padding: 0 0 0 0px;
+  border: 0px solid #999;
+}
+
+section.b-wall article.ar-big {
+  display: inline-block;
+  width: 275px;
+  height: 340px;
+  margin: 0 30px 40px 0px;
+  border: 0px solid blue;
+}
+
+section.b-wall .ar-big:nth-child(2n) {
+  margin: 0 0 0 0;
+}
+
+section.b-wall .ar-big img.i-big{
+  width: 265px;
+  height: 155px;
+  padding: 4px;
+  margin: 0 0 15px 0;
+  border: 1px solid #a3a3a3;
+}
+
+section.b-wall  h1.ar-big-h1 {
+  padding: 30px 0px 15px 0;
+  margin: 0px;
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section.b-wall  h1.ar-big-h1:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+/*   background: url("http://fs155.www.ex.ua/get/733273556634/253394365/material_03s01_o50.png"); */
+  opacity: 0.5;
+  background: url("../i/bg-briks02.jpg") 0 2px; 
+  margin: 0px 0 0 10px;
+  border: 0px solid red;
+}
+
+section.b-wall  h2.ar-big-h2 {
+  margin: 15px 0px 0px 0;
+  text-transform: capitalize;
+  border: 0px solid red;
+}
+
+section.b-wall .ar-date {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  font-style: italic;
+  text-transform: capitalize;
+  color: #aaa;
+}
+
+section.b-wall .ar-date:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+
+/* section.b-wall .ar-big  p.ar-date {
+  margin: 0 0 10px 0;
+}
+ */
+
+section.b-wall article a.ar-numcom:hover {
+  color: #000;
+}
+
+section.b-wall article p.ar-text {
+  line-height: 18px;
+  
+}
+
+section.b-wall .ar-small {
+  width: 48%;
+  display: inline-block;
+  margin: 0 1.5% 0 0;
+  
+}
+
+
+section.b-wall .ar-small img.i-small {
+  float: left;
+  
+  width: 45px;
+  height: 45px;
+  padding: 2px;
+  margin: 0 12px 40px 0;
+  border: 1px solid #a3a3a3;
+}
+
+section.b-wall .ar-small h1.ar-small-h1 {
+  font-size: 12px;
+  line-height: 18px;
+  font-style: normal;
+  margin: -5px 0 5px 0;
+  
+}
+
+section.b-wall article.ar-latest {
+  width: 100%;
+  margin: 20px 0 0 0;
+  
+}
+
+section.b-wall img.img-latest {
+  float: left;
+  clear: both;
+  width: 170px;
+  height: 90px;
+  padding: 4px;
+  margin: 0 18px 40px 0;
+  border: 1px solid #a3a3a3;
+}
+
+section.b-wall h2.ar-big-h2 {
+  margin: 0 0 12px 0;
+}
+
+section.b-wall p.ar-text {
+  padding: 0 0 30px 0;
+}
+
+
+section.b-wall .narrow-col input.search-input {
+  width: 97%;
+  height: 34px;
+  padding: 0 0 0 2%;
+  margin: 25px 0 0 0;
+
+}
+
+section.b-wall .narrow-col img.adver-img {
+  
+  width: 100%;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+}
+
+section.b-wall .narrow-col h1.ar-big-h1 {
+  margin: 5px 0 0 0;
+}
+
+section.b-wall .narrow-col img.sponsor-img {
+  display: inline-block;  
+/*   float: left; */
+  width: 43%;
+  margin: 20px 20px 00px 5px;
+ 
+}
+
+section.b-wall .narrow-col img.sponsor-img:nth-child(2n){
+  margin-right: 0;
+}
+
+
+section.b-wall .narrow-col div.for-iframe {
+  margin: 20px 0 0 0;
+}
+
+
+section.b-wall .narrow-col p.tweet{
+  margin: 0 0 35px 0;
+}
+
+section.b-wall .narrow-col p.tweet a{
+  color: #e47600;
+}
+
+
+section.b-wall .narrow-col span.ar-date {
+    white-space: nowrap;
+}
+
+section.b-wall .narrow-col h2.ar-big-h2 {
+  margin: 0 0 30px 0;
+}
+
+.clearfix {
+    height: 10px;
+    clear: both;
+    background: #e74c3c;
+}
+
+section.b-wall a.back-to-top {
+  width: 98.6%;
+/* служит в т.ч. КЛИАРФИКСОМ   */
+  display: block;
+  height: 25px;
+  position: relative; 
+  bottom: -93px; 
+  clear: both;
+  padding: 15px 15px 0 0;
+  margin: 0px 00px 0 0px;
+  text-align: right;
+  color: black;
+  font-size: 14px;
+  /*   background: url("http://fs155.www.ex.ua/get/733273556634/253394365/material_03s01_o50.png"); */
+  opacity: 0.7;
+  background-image: url("../i/bg-briks02.jpg");
+  background-image-opacity: 0.5;
+  border: 0px solid green;
+}
+
+section.b-wall  a.back-to-top:after {
+  content: "";
+  display: inline-block;
+  margin: 0 0 1px 5px;
+  width: 8px;
+  height: 5px;
+  border: 0px solid red;
+  background: url("../i/sprite.png") 0px -60px;
+}
+
+section.b-wall a.back-to-top:hover  {
+  color: #bf720e;
+}
+
+section.b-wall  a.back-to-top:hover:after{
+    background-position: -120px -60px;
+}
+
+
+
+
+/*-------------------------------------------------------- */
+section.b-footer {
+  height: 475px;
+  background-color: #2c2c2c;
+} 
+
+section.b-footer ul.footer-list {
+  width: 100%;
+  padding: 115px 0 0 0;
+  color: #aaa;
+  border: 0px solid red;
+}
+
+section.b-footer ul.footer-list  li.list-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 23%;
+  margin: 0 10px 0 0;
+  border: 0px solid blue;
+ 
+  
+}
+
+section.b-footer ul.footer-list h3.h3-foot  {
+  margin: 0 0 25px 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+section.b-footer ul.footer-list h3.h3-foot:hover {
+  color: white;
+  transition: 2s;
+}
+
+section.b-footer ul.footer-list h3.h3-foot:after  {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+/*   background: url("http://fs142.www.ex.ua/get/776592163240/254178677/bg-lines-dark.png");
+  opacity: 0.7; */
+  background: url("../i/bg-briks02inv1.jpg") 0 31px;
+  opacity: 0.2;
+  margin: 0px 0 0 10px;
+  border: 0px solid red;
+}
+
+
+section.b-footer ul.footer-list p.p-foot {
+  color: #aaa;
+  margin: 14px 0 0 0;
+  padding: 0 0 14px 0;
+  
+}
+
+section.b-footer ul.footer-list a.a-foot {
+  display: block;
+  width: 100%;
+  color: #bbb;
+  font-size: 13px;
+  font-style: normal;
+  margin: 14px 0 0 0;
+  padding: 0 0 14px 0;
+  border-bottom: 1px solid #444;
+}
+
+section.b-footer ul.footer-list a.a-foot:hover {
+  color: white; 
+}
+
+
+
+
+
+section.b-footer ul.footer-list  p.p-feet {
+  width: 100%;
+  color: #bbb;
+  font-size: 13px;
+  margin: 14px 0 0 0;
+  padding: 0 0 14px 0;
+  border-bottom: 1px solid #444;
+}
+
+section.b-footer ul.footer-list  div.end-logo {
+  float: right;
+  width: 24%;
+  margin: -5px 0 0 0;
+  border: 0px solid red;
+  
+}
+
+img.small-logo {
+  float: right;
+  width: 108;
+  margin: 0 0 18px 100%;
+  width: 108px;
+  
+  
+}
+
+p.p-right {
+ color: #bbb;
+ text-align: right; 
+}
+
+
+
+/*-------------------------------------------------------- */
+
+section.b-copyright{
+  height: 30px;
+  padding: 20px 0 0 0;
+}
+
+section.b-copyright p.copy-left{
+    float: left;
+    
+}
+
+section.b-copyright p.copy-right {
+  float: right;
+}
+
+section.b-copyright .a-copy-right{
+  color: black;
+  padding: 0 5px;
+}
+
+section.b-copyright .a-copy-right:hover{
+  color: #bf720e;
+}
