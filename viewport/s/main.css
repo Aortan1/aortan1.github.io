@@ -438,13 +438,13 @@ div.for-button-prev, div.for-button-next {
   
 }
 
-.content-area .for-button-prev {
+.content-area .for-button-next {
   right: 100px;
   padding-right: 10px;
   padding-left: 7px;
   
 }
-.content-area .for-button-next {
+.content-area .for-button-prev {
   left: 90px;
   padding-left: 10px;
   padding-right: 7px;
@@ -459,7 +459,7 @@ div.for-button-prev, div.for-button-next {
   padding: 20px 0 0 5px;
   color: black;
   background-color: #efefef;
-  background: url("../i/sprite.png") -174px 22px;
+  background: url("http://fs182.www.ex.ua/get/693571501845/254698805/sprite_X63.png") -174px 22px;
   border-radius: 0 5px 5px 0;
 /*   transition: 0.3s; */
 }
@@ -469,7 +469,7 @@ div.for-button-prev, div.for-button-next {
 }
 
 .content-area   a.sli:hover{
-  background: url("../i/sprite.png") -214px 22px; 
+  background: url("http://fs182.www.ex.ua/get/693571501845/254698805/sprite_X63.png") -214px 22px; 
 }
 
 .content-area   a.sli:hover{
@@ -480,15 +480,16 @@ div.for-button-prev, div.for-button-next {
 
 
 
-.content-area  .for-button-prev  a.sl-prev {
+.content-area  .for-button-next  a.sl-next {
   float: right;
 /*   border-radius: 0 5px 5px 0; */
 }
 
-div.content-area  .for-button-next  a.sl-next {
+div.content-area  .for-button-prev  a.sl-prev {
 /*   border-radius: 5px 0 0 5px; */
 /*   border: 2px solid red; */
 }
+
 
 section.b-wall .content-area  .slides-control img.pic {
 float: left;  
