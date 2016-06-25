@@ -459,7 +459,7 @@ div.for-button-prev, div.for-button-next {
   padding: 20px 0 0 5px;
   color: black;
   background-color: #efefef;
-  background: url("http://fs182.www.ex.ua/get/693571501845/254698805/sprite_X63.png") -174px 22px;
+  background: url("../i/sprite.png") -174px 22px;
   border-radius: 0 5px 5px 0;
 /*   transition: 0.3s; */
 }
@@ -469,7 +469,7 @@ div.for-button-prev, div.for-button-next {
 }
 
 .content-area   a.sli:hover{
-  background: url("http://fs182.www.ex.ua/get/693571501845/254698805/sprite_X63.png") -214px 22px; 
+  background: url("../i/sprite.png") -214px 22px; 
 }
 
 .content-area   a.sli:hover{
