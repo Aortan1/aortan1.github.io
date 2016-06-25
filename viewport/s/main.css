@@ -464,7 +464,7 @@ div.for-button-prev, div.for-button-next {
 /*   transition: 0.3s; */
 }
 
-.refl {
+.content-area  a.refl {
   transform: scale(-1, 1);
 }
 
