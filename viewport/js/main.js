@@ -3,7 +3,8 @@ function rand_till(n){
  // если n = 6, ф-я выдаёт случайное из набора целых от 0 до 5.
 var r=Math.random();
 var rn = Math.floor(r*n);
-if (rn == n) {rn=0;}  
+rn++;
+if (rn == n) {rn=1;}  
 return rn;  
 }
 
