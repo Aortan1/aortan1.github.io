@@ -482,14 +482,14 @@ div.for-button-prev, div.for-button-next {
 
 
 
-.content-area  .for-button-next  a.sl-next {
+.content-area .for-button-next  a.sl-next {
   float: right;
 /*   border-radius: 0 5px 5px 0; */
 }
 
-div.content-area  .for-button-prev  a.sl-prev {
-/*   border-radius: 5px 0 0 5px; */
-/*   border: 2px solid red; */
+div.content-area .for-button-prev  a.sl-prev {
+ float: left;
+ z-index:100;
 }
 
 
