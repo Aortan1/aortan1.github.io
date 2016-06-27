@@ -442,10 +442,10 @@ div.for-button-prev, div.for-button-next {
 
 .content-area .for-button-next {
   right: 100px;
-  padding-right: 10px;
   padding-left: 7px;
-  
+  padding-right: 10px;
 }
+
 .content-area .for-button-prev {
   left: 90px;
   padding-left: 10px;
@@ -454,12 +454,11 @@ div.for-button-prev, div.for-button-next {
 }
 
 .content-area   a.sli{
-  display: inline-block;
+  display: block;
   width: 15px;
   height: 40px;
   border: 0px solid red;
   padding: 20px 0 0 5px;
-  color: black;
   background-color: #efefef;
   background: url("../i/sprite.png") -174px 22px;
   border-radius: 0 5px 5px 0;
@@ -477,10 +476,10 @@ div.for-button-prev, div.for-button-next {
 }
 
 
-/*.content-area  a.refl {
+.content-area  a.refl {
   transform: scaleX(-1, 1);
 }
-*/
+
 
 
 .content-area  .for-button-next  a.sl-next {
