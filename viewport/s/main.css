@@ -260,7 +260,7 @@ section.b-wall .content ul.con-menu {
 
 section.b-wall .content div.black-line{
   position: absolute;
-  top: 50px; right: 0;
+  top: 0px; right: 0px;
   z-index: 10;
   width: 100%;
   height: 7px;
