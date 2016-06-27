@@ -466,10 +466,6 @@ div.for-button-prev, div.for-button-next {
 /*   transition: 0.3s; */
 }
 
-.content-area  a.refl {
-  transform: scale(-1, 1);
-}
-
 .content-area   a.sli:hover{
   background: url("../i/sprite.png") -214px 22px; 
 }
@@ -478,6 +474,11 @@ div.for-button-prev, div.for-button-next {
     
   background-color: #414141;
   transition: 0.1s;
+}
+
+
+.content-area  a.refl {
+  transform: scaleX(-1, 1);
 }
 
 
