@@ -58,6 +58,7 @@ p {
 }
 
 .main {
+  position: relative;
   -moz-box-sizing: border-box;  
   box-sizing: border-box; 
   width: 980px;
@@ -158,9 +159,12 @@ ul.menu>li:hover ul.menu-item-list {
 }
 
 
-section.b-header div.subscr {
-  float: right;
-  margin: -12px 0 0 0;
+section.b-header .main div.subscr {
+/*     float: right; */
+  position: absolute; right: 0px; top: 0px;
+  margin: 12px 0 0 0;
+  border: 0px solid white;
+  
   
 }
 
@@ -193,18 +197,19 @@ section.b-logoarea img.logotype {
 section.b-logoarea div.tagline {
 /*   display: inline-block; */
   float: left;
-  width: 215px;
+/*   width: 215px; */
   margin: 30px 0 0 10px;
   padding: 0 0 0 10px;
   color: #ffffaa;
   font-size: 12px;
+  white-space: nowrap;
   border-left: 1px solid #aaa;
 /*   border: 1px solid red; */
 }
 
 section.b-logoarea img.long {
   float: right;
-  width: 458px;
+  width: 445px;
   height: 60px;
   margin: 5px 0 0 0;
   border-radius: 30px;
@@ -475,21 +480,18 @@ div.for-button-prev, div.for-button-next {
   transition: 0.1s;
 }
 
-
-.content-area  a.refl {
-  transform: scale(-1, 1);
-}
-
-
-
 .content-area .for-button-next  a.sl-next {
   float: right;
 /*   border-radius: 0 5px 5px 0; */
 }
 
-div.content-area .for-button-prev  a.sl-prev {
+.content-area .for-button-prev  a.sl-prev {
  float: left;
  z-index:100;
+}
+
+.content-area  a.refl {
+  transform: scale(-1, 1);
 }
 
 
