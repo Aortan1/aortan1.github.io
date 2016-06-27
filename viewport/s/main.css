@@ -477,7 +477,7 @@ div.for-button-prev, div.for-button-next {
 
 
 .content-area  a.refl {
-  transform: scaleY(-1, 1);
+  transform: scale(-1, 1);
 }
 
 
