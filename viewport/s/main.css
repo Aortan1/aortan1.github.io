@@ -750,7 +750,8 @@ section.b-wall a.back-to-top {
 /* служит в т.ч. КЛИАРФИКСОМ   */
   display: block;
   height: 25px;
-  position: relative; 
+  position: relative;
+  z-index: 1; 
   bottom: -93px; 
   clear: both;
   padding: 15px 15px 0 0;
