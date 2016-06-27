@@ -477,10 +477,10 @@ div.for-button-prev, div.for-button-next {
 }
 
 
-.content-area  a.refl {
+/*.content-area  a.refl {
   transform: scaleX(-1, 1);
 }
-
+*/
 
 
 .content-area  .for-button-next  a.sl-next {
