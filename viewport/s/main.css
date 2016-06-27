@@ -564,9 +564,9 @@ section.b-wall div.wide-col {
 
 section.b-wall article.ar-big {
   display: inline-block;
-  width: 275px;
+  width: 48%;
   height: 340px;
-  margin: 0 30px 40px 0px;
+  margin: 0 1.6% 40px 0px;
   border: 0px solid blue;
 }
 
@@ -639,7 +639,7 @@ section.b-wall article p.ar-text {
 section.b-wall .ar-small {
   width: 48%;
   display: inline-block;
-  margin: 0 1.5% 0 0;
+  margin: 0 1.6% 0 0;
   
 }
 
