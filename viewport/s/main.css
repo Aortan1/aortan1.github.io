@@ -523,7 +523,7 @@ div.for-img:hover h1.silicon, div.for-img:hover p.by{
 
 div.content-area h1.silicon {
   position: absolute;
-  top: 137px; left: 55px;
+  top: 60px; left: 30px;
   color: #fff;
   font-size: 20px;
   font-style: normal;
@@ -535,7 +535,7 @@ div.content-area h1.silicon {
 
 div.content-area p.by {
   position: absolute;
-  top: 180px; left: 55px;
+  top: 103px; left: 30px;
   color: #fff;
   font-size: 16px;
   border-radius: 0 0 5px 5px;
