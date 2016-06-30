@@ -359,7 +359,7 @@ section.b-content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-start;
   border: 0px solid red;
 }
 .b-content div.article {
