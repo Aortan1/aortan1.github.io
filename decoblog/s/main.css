@@ -533,12 +533,12 @@ section.b-content {
   margin: 65px 15px 65px;
 }
 .b-content .article img.img-standart {
-  width: 358px;
+  width: 100%;
   display: block;
 }
 
 .b-content .article img.img-4in1 {
-  width: 175px ;
+  width: 48.8% ;
   margin: 2px 2px;
   display: inline-block;
 }
