@@ -597,6 +597,7 @@ section.b-footer div.others {
   margin: 27px 0 7px 0px;
   font-size: 13px;
   /*text-align: justify;*/
+  text-align: left;
   border: 0px solid red;
 }
 .b-footer div.others h6 {
