@@ -58,7 +58,7 @@ border: 0px solid green;
 .header_bg {
 width: 100%; 
 height: 600px;
-background: url(http://aortan1.github.io/Notify/i/header_background.jpg) no-repeat;
+background: url(http://aortan1.github.io/notify/i/header_background.jpg) no-repeat;
 background-size: cover;
 border-top: 10px solid #2ecc71;  
 }
@@ -92,7 +92,7 @@ color: white;
  width: 52px; height: 52px;
  border-radius: 50%;
  margin-right: 13px;
- background: url(http://aortan1.github.io/Notify/i/sprite.png);
+ background: url(http://aortan1.github.io/notify/i/sprite.png);
  background-color: #1d130f;
  opacity: 0.6;
 }
@@ -161,7 +161,7 @@ ul.features li:fist-child{
  margin: 0 auto;
  border-radius: 50%;
  background:  
- url(http://aortan1.github.io/Notify/i/sprite.png);
+ url(http://aortan1.github.io/notify/i/sprite.png);
  background-color: #2ecc71;
  
 }
@@ -383,7 +383,7 @@ z-index: 7;
     height: 34px;
     border-radius: 50%;
     margin-right: 10px;
-    background: url(http://aortan1.github.io/Notify/i/sprite.png);
+    background: url(http://aortan1.github.io/notify/i/sprite.png);
     background-color: #d4d4d4;
  }
 .reviews ul.social li:last-child{margin-right: 0px;}
