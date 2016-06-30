@@ -544,15 +544,18 @@ section.b-content {
 }
 
 .b-content .article div.round-img {
-  width: 137px;
-  height: 137px;
+  /*   width: 137px;
+  height: 137px; */
+  width: 38%;
+  height: 38%;
   margin: 0 auto 157px;
   border-radius: 50%;
   border: 0px solid red;
   overflow: hidden;
 }
 .b-content .article div.round-img img {
-  width: 137px;
+  /*width: 137px;*/
+  width: 100%;
 }
 .b-content .article .div-iframe {
   height: 250px;
