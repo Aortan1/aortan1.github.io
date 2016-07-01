@@ -588,7 +588,7 @@ section.b-content {
   height: 100%;
 }
 .b-content .article p.p-film {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 
@@ -740,12 +740,12 @@ section.b-footer {
   margin: 0 2%;
   border: 0px solid blue;
 }  
-.b-footer  .oth:nth-child(2n) {
   
-  margin: 35px 16% 35px 8%;
+.b-footer  .oth:nth-child(2n) {
+    margin: 5px 16% 45px 8%;
 }
-  .b-footer  .oth:nth-child(2n-1) {
-  margin: 35px 8% 35px 16%;
+.b-footer  .oth:nth-child(2n-1) {
+  margin: 5px 8% 45px 16%;
 }
 
 
