@@ -439,13 +439,14 @@ section.b-content {
   text-align: center;
 }
 .b-content .article h5.first-h5 {
-  padding: 52px 0 0 0;
+  padding: 52px 30px 0;
 }
 .b-content .article h3 {
-  padding: 10px 0 0 0;
+  letter-spacing: 2px;
+  padding: 10px 20px 0;
 }
 .b-content .article h5.date {
-  padding: 8px 0 10px 0;
+  padding: 8px 30px 10px;
 }
 .b-content .article p.text {
   padding: 10px 20px 10px;
