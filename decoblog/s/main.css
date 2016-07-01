@@ -23,7 +23,8 @@ body {
 }
 
 .main {
-  width: 1530px;
+  max-width: 1530px;
+  min-width: 960px; 
   position: relative;
   margin: 0 auto;
   padding: 0 20px;
@@ -84,7 +85,7 @@ section.b-header {
   background-color: #212429;
   border: 0px solid blue;
 }
-.b-header .main {
+/*.b-header .main {
   width: 1640px;
 }
 .b-footer .main {
@@ -92,10 +93,18 @@ section.b-header {
 }
 .b-content .main {
   max-width: 1530px;
-}
+}*/
+
+
 .b-copyright .main {
   width: 705px;
 }
+
+
+
+
+
+
 .b-header div.menu div.leftmenu {
   position: relative;
   float: left;
@@ -153,7 +162,7 @@ section.b-header {
   position: absolute;
   z-index: 2000;
   top: 0;
-  width: 1528px;
+  width: 550px;
   /*height: 580px;*/
   height: 0px;
   margin: 0 auto;
@@ -164,8 +173,8 @@ section.b-header {
 .b-header .menu div.banner-slides{
   position: relative;
   overflow: hidden;
-  width: 1528px;
-  height: 580px;
+  /*width: 1528px;
+  height: 580px;*/
   margin: 0 auto 0;
   background-color: #212429;
 }
@@ -173,7 +182,8 @@ section.b-header {
 .b-header .menu div.banner-slide{
   position: relative;
   float: left;
-  width: 1528px;
+  width: 100%; 
+  /*width: 1528px;*/
   height: 580px;
   background-repeat: no-repeat;
 }  
@@ -307,7 +317,8 @@ section.b-signup {
   height: 48px;
 }
 .b-signup input.inp-signup {
-  width: 418px;
+  /*width: 418px;*/
+  width: 27.35%;
   margin: 27px 28px 0 0;
   padding: 0 0 0 30px;
   border: 1px solid #f3f3f3;
@@ -316,9 +327,13 @@ section.b-signup {
   letter-spacing: 1px;
 }
 .b-signup input.btn-signup {
+  position: absolute;
+  float:right;
   clear: right;
-  width: 280px;
-  margin: 28px 0px 0 3px;
+  overflow: hidden;
+  /*width: 280px;*/
+  width: 18.3%;
+  margin: 28px 20px 0 3px;
   border: 1px solid #212121;
   font-size: 15px;
   background-color: #212121;
@@ -571,44 +586,55 @@ section.b-content {
 .b-content .article p.p-film {
   margin-bottom: 32px;
 }
+
+
+
 section.b-footer {
-  min-width: 1660px;
-  height: 370px;
+  /*min-width: 1660px;
+  height: 370px;*/
+  width: 100%;
   background-color: #212429;
   border: 0px solid blue;
 }
-section.b-footer div.others {
+/*section.b-footer div.others {
   height: 315px;
   padding: 55px 35px 0 35px;
   color: #f7f7f7;
-  border: 0px solid red;
+  border: 0px solid red;*/
 }
-.b-footer div.others .oth {
+.b-footer .oth {
   display: inline-block;
   vertical-align: top;
-  width: 22.5%;
-  margin: 0 1.1% 0 1.1%;
+  width: 23.8%;
+  margin: 0 0.5%;
   border: 0px solid blue;
 }
-.b-footer div.others img {
+.b-footer .oth:first-child {
+  margin-left: 0;
+}
+.b-footer .oth:last-child {
+  margin-right: 0;
+}
+
+.b-footer img {
   width: 360px;
 }
-.b-footer div.others p.w-text {
+.b-footer  p.w-text {
   margin: 27px 0 7px 0px;
   font-size: 13px;
   /*text-align: justify;*/
   text-align: left;
   border: 0px solid red;
 }
-.b-footer div.others h6 {
+.b-footer  h6 {
   font-size: 13px;
   font-weight: 400;
   text-transform: none;
 }
-.b-footer div.others div.tweet {
+.b-footer  div.tweet {
   padding: 31px 0 0 0;
 }
-.b-footer div.others div.tweet:before {
+.b-footer  div.tweet:before {
   content: '';
   background-image: url("../i/sprite_x54.png");
   background-repeat: no-repeat;
@@ -623,36 +649,36 @@ section.b-footer div.others {
   display: inline-block;
   float: left;
 }
-.b-footer div.others .oth.latest-tweets p.w-text {
+.b-footer .oth.latest-tweets p.w-text {
   margin: 8px 0 0 25px;
 }
-.b-footer div.others .oth.follow-me img {
+.b-footer .oth.follow-me img {
   margin: 37px 0 0 0;
 }
-.b-footer div.others .oth.latest-comment div.co {
+.b-footer .oth.latest-comment div.co {
   padding: 27px 0 15px 0;
 }
-.b-footer div.others .oth.latest-comment div.co:nth-child(2) {
+.b-footer .oth.latest-comment div.co:nth-child(2) {
   border-bottom: 1px solid white;
 /*   background-color: red; */
 }
-.b-footer div.others .oth.latest-comment div.co:nth-child(3) {
+.b-footer .oth.latest-comment div.co:nth-child(3) {
 margin: -12px 0 0 0px;  
 }
 
-.b-footer div.others .oth.latest-comment p.w-text {
+.b-footer .oth.latest-comment p.w-text {
   margin: -0px 0 0 0px;
   padding: 0px 0 5px 0;
 }
 
 
-.b-footer div.others .oth.latest-comment p.w-text.co-text {
+.b-footer .oth.latest-comment p.w-text.co-text {
   margin: -0px 0 0 0px;
   padding: 0px 0 15px 0;
 }  
 
 section.b-copyright {
-  min-width: 1640px;
+  /*min-width: 1640px;*/
   height: 20px;
   padding: 10px;
   color: #747577;
@@ -691,6 +717,29 @@ section.b-content {
 .b-content .main {
   max-width: 1160px;
 }
+
+section.b-footer {
+  width: 100%;
+  color: #f7f7f7;
+  background-color: #212429;
+  border: 0px solid blue;
+}
+
+.b-footer .oth {
+  display: inline-block;
+  vertical-align: top;
+  width: 24%;
+  margin: 0 2%;
+  border: 0px solid blue;
+}  
+.b-footer  .oth:nth-child(2n) {
+  
+  margin: 35px 16% 35px 8%;
+}
+  .b-footer  .oth:nth-child(2n-1) {
+  margin: 35px 8% 35px 16%;
+}
+
 
 }
 
