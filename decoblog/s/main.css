@@ -593,6 +593,8 @@ section.b-footer {
   /*min-width: 1660px;
   height: 370px;*/
   width: 100%;
+  padding-top: 55px ; 
+  color: #f7f7f7;
   background-color: #212429;
   border: 0px solid blue;
 }
