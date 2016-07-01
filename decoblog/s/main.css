@@ -591,27 +591,29 @@ section.b-content {
 
 
 section.b-footer {
-  /*min-width: 1660px;
-  height: 370px;*/
+/*   min-width: 1660px; */
   width: 100%;
+/*   height: 370px; */
   padding-top: 55px ; 
   color: #f7f7f7;
   background-color: #212429;
   border: 0px solid blue;
 }
-/*section.b-footer div.others {
+/* section.b-footer div.others {
   height: 315px;
   padding: 55px 35px 0 35px;
   color: #f7f7f7;
-  border: 0px solid red;*/
-}
-.b-footer .oth {
+  border: 0px solid red;
+} */
+
+.b-footer  .oth {
   display: inline-block;
   vertical-align: top;
   width: 23.8%;
   margin: 0 0.5%;
   border: 0px solid blue;
 }
+
 .b-footer .oth:first-child {
   margin-left: 0;
 }
