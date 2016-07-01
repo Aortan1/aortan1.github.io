@@ -14,7 +14,8 @@ ul {
 
 body {
   width: 100%;
-  min-width: 1440px;
+  /*min-width: 1440px;*/
+  min-width: 960px;
   margin: 0 auto;
   font-size: 14px;
   font-family: Open Sans;
