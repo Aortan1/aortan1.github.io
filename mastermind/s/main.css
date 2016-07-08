@@ -28,7 +28,7 @@ font-family: 'Pacifico', cursive;
 font-size: 55px;
 font-weight: 300;
 padding: 0 20px 0 20px;  
-margin: 50px auto 50px;
+margin: 70px auto 5px
 border-radius: 5px;
 /*border: 1px solid red;  */
 }
@@ -89,7 +89,12 @@ background-color: black;
 margin: 0px 0px 0px 15px;
 }
 
-.secrets {width: 350px; margin-left: 150px; display: none;}
+.secrets {
+  width: 350px; 
+  /*margin-left: 150px;*/
+  margin: 5px auto 5px;
+  padding: 0 0 0 46px;
+  opacity: 0;}
 
 div.result {
 float:left;  
