@@ -13,6 +13,25 @@ return Math.floor(aa*n);
 }
 
 
+function FunSample() {
+  var Butt = document.getElementsByClassName("bcol");
+  var Htag = document.getElementsByTagName("h1");
+  var Sample = document.getElementsByClassName("sample");
+  var opac = window.getComputedStyle(document.getElementsByClassName("secrets")[0]).opacity;
+  
+if (opac==1)  { 
+  window["location"].reload(true);  
+} 
+  
+  Htag[0].style.opacity=0;
+  Sample[0].value="PLAY";
+  Sample[0].style.display="block";
+  for (var i = 0;  i < 33; i++ ){
+  FunColor(Butt[rand_till(6)]);
+  }
+}
+
+
 function FunColor(but) {
   
   var n_at=8; // число попыток или строк по 4 яцейки.
@@ -28,6 +47,8 @@ function FunColor(but) {
   var color_def; //!!ВАЖНО менять. Цвет пустой ячейки.
   color_def = window.getComputedStyle(document.getElementsByClassName("fonc")[0]).backgroundColor;
   
+  var Sample = document.getElementsByClassName("sample");
+  Sample[0].style.display="none";
 
   
   //window.alert(x);
@@ -145,7 +166,8 @@ if (attempt_now==n_at && sum1!=n){
 Htag[0].innerHTML="Попробуйте ещё раз, у вас получится.";
 Htag[0].style.color="black";
 Htag[0].style.fontSize = "18px";
-Sec[0].style.opacity = 1;  
+Sec[0].style.opacity = 1;
+Sample[0].style.display="block";  
 } 
     
 for (i = 0;  i < n; i++ ){

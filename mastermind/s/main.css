@@ -48,13 +48,24 @@ padding: 10px -10px 0 0;
 h5 {
 font-family: 'Pacifico', cursive;
 height: 20px;  
-padding: 4px 3px 0 0px;
+padding: 4px 20px 0 0px;
 text-align: right;
 }
 
-h5.how {display: block; margin: 0px 18px -50px -10px; }
+h5.how {display: block; margin: 0px 27px -50px -10px; }
 
 h5 a {color: #009688;}
+
+input.sample {
+  float: right;
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  margin:  70px 15px 0 0;
+  font-size: 18px;
+  color: white;
+  background-color: #55b618;
+}
 
 .game{
  width: 600px;
