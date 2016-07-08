@@ -46,13 +46,14 @@ padding: 10px -10px 0 0;
 }
 
 h5 {
-font-family: 'Pacifico', cursive;
+font-family: 'Roboto', cursive;
 height: 20px;  
-padding: 4px 20px 0 0px;
+padding: 5px 20px 0 0px;
 text-align: right;
 }
 
-h5.how {display: block; margin: 0px 27px -50px -10px; }
+h5.how {display: block; margin: 0px 18px -50px -10px; }
+
 
 h5 a {color: #009688;}
 
