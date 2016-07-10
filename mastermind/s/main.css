@@ -66,6 +66,7 @@ input.sample {
   font-size: 18px;
   color: white;
   background-color: #55b618;
+  cursor: pointer; 
 }
 
 .game{
@@ -149,7 +150,8 @@ div.fild_buttons { width: 600px; }
  width: 60px;
  height: 60px;
  border-radius: 50%;
- color: transparent; 
+ color: transparent;
+ cursor: pointer; 
  }
 
 
@@ -170,7 +172,8 @@ background-color: #CDDCb9;
 border: 3px solid #444444;  
 }
 .fild_buttons input.b_cansel{
-color: black; background-color: #607D8B;  
+color: black; background-color: #607D8B;
+cursor: pointer;   
 }
 
 h1.rai {
