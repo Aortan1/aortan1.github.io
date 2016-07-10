@@ -1,7 +1,15 @@
 
 
+var Itags = document.getElementsByTagName("i"); 
+var Secrets = document.getElementsByClassName("secret"); 
+var Fon =  document.getElementsByClassName("fonc");
+var Btags = document.getElementsByTagName("b");   
+var Htag = document.getElementsByTagName("h1");  
+var Sec =  document.getElementsByClassName("secrets");
+var Att =  document.getElementsByClassName("attempt");
 
-// $(document).ready (function(){ 
+var Sample = document.getElementsByClassName("sample");
+var Butt = document.getElementsByClassName("bcol");
 
 
 function rand_till(n){
@@ -13,23 +21,33 @@ return Math.floor(aa*n);
 }
 
 
+
 function FunSample() {
-  var Butt = document.getElementsByClassName("bcol");
-  var Htag = document.getElementsByTagName("h1");
-  var Sample = document.getElementsByClassName("sample");
+  
   var opac = window.getComputedStyle(document.getElementsByClassName("secrets")[0]).opacity;
   
 if (opac==1)  { 
   window["location"].reload(true);  
 } 
   
-  Htag[0].style.opacity=0;
-  Sample[0].value="PLAY";
-  Sample[0].style.display="block";
-  for (var i = 0;  i < 33; i++ ){
+  
+  // function go() { return; }
+  
+  for (var i = 0;  i < 32; i++ ){
   FunColor(Butt[rand_till(6)]);
-  }
+  // setTimeout(go, 10000);
+  for (var j = 0;  j < 99; j++ ){ a=1;}
+  } 
+  // Htag[0].style.opacity=0;
+  // alert (Sample[0].style.display); 
+  Sample[0].style.display="block";
+  Sample[0].value="PLAY";
+  Htag[0].innerHTML="Mastermind";
+  Htag[0].style.fontSize="55px";
+  Htag[0].style.color="#55b618";  
+
 }
+
 
 
 function FunColor(but) {
@@ -46,32 +64,15 @@ function FunColor(but) {
   var end_of_attempt = false;
   var color_def; //!!ВАЖНО менять. Цвет пустой ячейки.
   color_def = window.getComputedStyle(document.getElementsByClassName("fonc")[0]).backgroundColor;
-  
-  var Sample = document.getElementsByClassName("sample");
+  // var Sample = document.getElementsByClassName("sample");
   Sample[0].style.display="none";
-
   
-  //window.alert(x);
-  //T =  document.getElementsByClassName("blu");
-  // T[0].style.backgroundColor = "red"; 
-  
-  //El =  document.querySelectorAll("i");
-  //El[1].style.backgroundColor = "white";
-   //m2=window.getComputedStyle(document.getElementsByClassName("b_lilac")[0]).backgroundColor;
- // window.alert(m2);
   
 for (i = 0;  i < n_colors; i++ ){ // цвета от 1 до 6. Формирую массив цветов по стилям.
 colors[i]=window.getComputedStyle(document.getElementsByClassName("bcol")[i]).backgroundColor;
    }
 
-Itags = document.getElementsByTagName("i"); 
-Secrets = document.getElementsByClassName("secret"); 
-Fon =  document.getElementsByClassName("fonc");
-Btags = document.getElementsByTagName("b");   
-Htag = document.getElementsByTagName("h1");  
-Sec =  document.getElementsByClassName("secrets");
-Att =  document.getElementsByClassName("attempt");
-
+  
   if (window.getComputedStyle(Secrets[0]).backgroundColor == "rgb(0, 0, 0)") { // СОЗДАНИЕ СЕКРЕТНОГО НАБОРА ЦВЕТОВ
   color_def=window.getComputedStyle(Itags[0]).backgroundColor;
   Fon[0].style.backgroundColor = color_def;  
@@ -159,15 +160,17 @@ if (sum1==n){Htag[0].innerHTML="ПОЗДРАВЛЯЮ!!! ВЫ РАЗГАДАЛИ 
 // Htag[0].style.backgroundColor = "#388E3C"; Htag[0].style.color="white";
 // Htag[0].style.fontSize = "20px"; 
 Htag[0].classList.add("rai");             
-Sec[0].style.opacity = 1;             
-}       
+Sec[0].style.opacity = 1;            
+}      
 
 if (attempt_now==n_at && sum1!=n){
+
 Htag[0].innerHTML="Попробуйте ещё раз, у вас получится.";
 Htag[0].style.color="black";
 Htag[0].style.fontSize = "18px";
 Sec[0].style.opacity = 1;
-Sample[0].style.display="block";  
+// Sample[0].style.display="block";
+// alert (Sample[0].style.display);
 } 
     
 for (i = 0;  i < n; i++ ){
@@ -181,11 +184,11 @@ Btags[ii].style.backgroundColor = "black";
 Btags[ii].style.borderColor = "black";
           }
 }  
+
+
+   
+  
 }    
+
 }
 
-
-
-  
- // });
-  
