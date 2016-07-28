@@ -49,6 +49,15 @@ return Math.floor(aa*n);
 
 
 function FunSample() {
+  if (n==4) {  
+  All[0].classList.add('n46');}
+  if (n==5) {  
+  All[0].classList.add('n-5-8');
+   n_colors = 8;
+   Itags = document.querySelectorAll("i,tt");
+   Btags = document.querySelectorAll("b,em"); 
+  }
+  
  
   var opac = window.getComputedStyle(document.getElementsByClassName("secrets")[0]).opacity;
   
@@ -84,7 +93,14 @@ if (opac==1)  {
 
 
 function FunColor(but) {
-  
+  if (n==4) {  
+  All[0].classList.add('n46');}
+  if (n==5) {  
+  All[0].classList.add('n-5-8');
+   n_colors = 8;
+   Itags = document.querySelectorAll("i,tt");
+   Btags = document.querySelectorAll("b,em"); 
+  }
   
   var pressed_color = but.value; //код цвета нажатой кнопки
   var colors = []; 
