@@ -191,7 +191,7 @@ div.fild_buttons { width: 600px; }
 {display:none;}
 .n-4-6 h5.ruls {
   top:10px; right: 35px;}
-.n-4-6 input.sample {display: block;}
+.n-4-6 input.sample {display: block; background-color: red;}
 .n-4-6 .fild_buttons .buttons input {
   width: 60px;
   height: 60px;
