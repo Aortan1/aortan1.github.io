@@ -177,7 +177,8 @@ div.fild_buttons { width: 600px; }
  border-radius: 50%;
  color: transparent; 
  }
-
+.fild_buttons .buttons input.b_pink, .fild_buttons .buttons input.b_dark{
+  display: none;}
 
 
 .n-4-6 div.secret:nth-child(5),
