@@ -212,6 +212,7 @@ height: 50px;}
 {display:block;}
 .n-5-8 h5.ruls {
   top:10px; right: 15px;}
+.n-5-8 h5.ruls a {color: red!important;}  
 .n-5-8 input.sample {display: none;}
 .n-5-8 .fild_buttons .buttons input {
   width: 50px;
