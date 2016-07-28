@@ -10,7 +10,7 @@ var n_at=8; // число попыток или строк по 4 яцейки.
 
 var Itags = document.getElementsByTagName("i"); 
 var Btags = document.getElementsByTagName("b");
-if (n==4) {document.getElementsTagName("body").className += "n-4-6";}
+if (n==4) {document.getElementsClassName("ALL").className += "n-4-6";}
 // if (n==4) {document.getElementsByTagName("body").classList.add("n-4-6");}
 // if (n==5) {
 //   document.querySelector("body").classList.add("n-5-8");
