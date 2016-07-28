@@ -30,8 +30,9 @@ if (n==5) {
    Itags = document.querySelectorAll("i,tt");
    Btags = document.querySelectorAll("b,em"); 
   }
+  alert('n=',n);
  };
- iff();  alert('n=',n);
+ iff();  
    
  // alert(Itags.length);
 
