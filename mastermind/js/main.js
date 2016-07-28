@@ -1,5 +1,5 @@
 
-function her(b){
+function (){
 
 var n = 5; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
