@@ -184,21 +184,21 @@ div.fild_buttons { width: 600px; }
   display: none;}
 
 
-.n-4-6 div.secret:nth-child(5),
-.n-4-6 .fild_buttons .buttons input:nth-child(7),
-.n-4-6 .fild_buttons .buttons input:nth-child(8),
-.n-4-6 div.attempt tt, .n-4-6 div.result em
+.n46 div.secret:nth-child(5),
+.n46 .fild_buttons .buttons input:nth-child(7),
+.n46 .fild_buttons .buttons input:nth-child(8),
+.n46 div.attempt tt, .n46 div.result em
 {display:none;}
-.n-4-6 h5.ruls {
+.n46 h5.ruls {
   top:10px; right: 35px;}
-.n-4-6 input.sample {display: block; background-color: red;}
-.n-4-6 .fild_buttons .buttons input {
+.n46 input.sample {display: block; background-color: red;}
+.n46 .fild_buttons .buttons input {
   width: 60px;
   height: 60px;
   margin: 0 8px;
 } 
-.n-4-6 div.result{ margin-right: 70px;} 
-.n-4-6 div.secrets .secret{
+.n46 div.result{ margin-right: 70px;} 
+.n46 div.secrets .secret{
 width: 50px;
 height: 50px;}
 
