@@ -19,12 +19,12 @@ var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var All = document.getElementsByClassName("ALL");
 
-function iff(){
+
 if (n==4) {
-  Htag[0].classList.add("raiii");
-  alert("cont="+Htag[0].classList.contains('raiii'));  
-  alert("leng="+document.getElementsByTagName("body")[0].classList.length); //  МЕТОД classList ТУПО НЕ РАБОТАЕТ, И НА НЁМ ПРЕРЫВАЕТСЯ ВЫПОЛНЕНИЕ ДЖИ-ЕС. ПОЧЕМУ - ХУЙ ЕГО ЗНАЕТ.
-  All[0].classList.add('n46');n=9;  alert("4444444444");}
+  // Htag[0].classList.add("raiii");
+  // alert("cont="+Htag[0].classList.contains('raiii'));  
+  // alert("leng="+document.getElementsByTagName("body")[0].classList.length); //  МЕТОД classList ТУПО НЕ РАБОТАЕТ, И НА НЁМ ПРЕРЫВАЕТСЯ ВЫПОЛНЕНИЕ ДЖИ-ЕС. ПОЧЕМУ - ХУЙ ЕГО ЗНАЕТ.
+  All[0].classList.add('n46'); alert("4444444444");}
 if (n==5) {
   
   document.querySelectorAll("body").classList.add('n-5-8');alert("55555555");
@@ -32,9 +32,8 @@ if (n==5) {
    Itags = document.querySelectorAll("i,tt");
    Btags = document.querySelectorAll("b,em"); 
   }
-  alert('nn=',n);
- };
- iff();  
+  alert('n_colors='+n_colors);
+   
    
  // alert(Itags.length);
 
