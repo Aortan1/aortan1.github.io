@@ -27,8 +27,9 @@ if (n==5) {
   document.getElementsByTagName("body").classList.add('n-5-8');
    n_colors = 8;
    Itags = document.querySelectorAll("i,tt");
-   Btags = document.querySelectorAll("b,em"); }
-   alert("djf;lajf");
+   Btags = document.querySelectorAll("b,em"); 
+   alert("djf;lajf");}
+   
    
  // alert(Itags.length);
 
