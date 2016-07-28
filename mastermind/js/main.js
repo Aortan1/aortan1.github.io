@@ -200,7 +200,7 @@ if (sum1==n){Htag[0].innerHTML="ПОЗДРАВЛЯЮ!!! ВЫ РАЗГАДАЛИ 
 // Htag[0].style.backgroundColor = "#388E3C"; Htag[0].style.color="white";
 // Htag[0].style.fontSize = "20px"; 
 Htag[0].classList.add("rai");
-alert("cont_rai="+Htag[0].classList.contains('rai'); 
+alert("cont_rai="+Htag[0].classList.contains('rai')); 
 alert("len_htag="+Htag[0].classList.length);
 var dd=All[0].innerHTML;
 All[0].classList.add("n-5-8");             
