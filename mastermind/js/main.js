@@ -24,10 +24,10 @@ if (n==4) {
   document.querySelectorAll("body").classList.add('n-4-6');}
 
 if (n==5) {
-  document.querySelectorAll("body").classList.add("n-5-8");
-  n_colors = 8;
-   Itags = document.querySelectorAll("i,tt");
-   Btags = document.querySelectorAll("b,em");
+  document.querySelectorAll("body").classList.add('n-5-8');
+   n_colors = 8;
+   Itags = document.querySelectorAll('i,tt');
+   Btags = document.querySelectorAll('b,em');
   } 
  // alert(Itags.length);
 
