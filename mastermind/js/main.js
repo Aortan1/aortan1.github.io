@@ -21,8 +21,9 @@ var All = document.getElementsByClassName("ALL");
 
 function iff(){
 if (n==4) {
-  Htag[0].classList.add("raiii");  
-  alert(document.getElementsByTagName("body")[0].classList.length); //  МЕТОД classList ТУПО НЕ РАБОТАЕТ, И НА НЁМ ПРЕРЫВАЕТСЯ ВЫПОЛНЕНИЕ ДЖИ-ЕС. ПОЧЕМУ - ХУЙ ЕГО ЗНАЕТ.
+  Htag[0].classList.add("raiii");
+  alert("cont="+Htag[0].classList.contains('raiii');  
+  alert("leng="+document.getElementsByTagName("body")[0].classList.length); //  МЕТОД classList ТУПО НЕ РАБОТАЕТ, И НА НЁМ ПРЕРЫВАЕТСЯ ВЫПОЛНЕНИЕ ДЖИ-ЕС. ПОЧЕМУ - ХУЙ ЕГО ЗНАЕТ.
   All[0].classList.add('n46');n=9;  alert("4444444444");}
 if (n==5) {
   
@@ -199,7 +200,8 @@ if (sum1==n){Htag[0].innerHTML="ПОЗДРАВЛЯЮ!!! ВЫ РАЗГАДАЛИ 
 // Htag[0].style.backgroundColor = "#388E3C"; Htag[0].style.color="white";
 // Htag[0].style.fontSize = "20px"; 
 Htag[0].classList.add("rai");
-alert('htn='+Htag[0].classList.length);
+alert("cont_rai="+Htag[0].classList.contains('rai'); 
+alert("len_htag="+Htag[0].classList.length);
 var dd=All[0].innerHTML;
 All[0].classList.add("n-5-8");             
 Sec[0].style.opacity = 1;            
