@@ -40,8 +40,6 @@ return Math.floor(aa*n);
 
 
 function FunSample() {
-  var n = 4; // число ячеек в строке
-var n_colors = 6; // число вариантов цветов
  
   var opac = window.getComputedStyle(document.getElementsByClassName("secrets")[0]).opacity;
   
@@ -130,7 +128,7 @@ case false:
 // if (but.value=="DO IT." || but.value=="NICE!")  {window.location=window.location+'?sup=true';}
 if (but.value=="DO IT." || but.value=="NICE!")  {
  // 
- window["location"].sup=1;
+ // window["location"].sup=1;
  window["location"].reload(true);
 }
     
