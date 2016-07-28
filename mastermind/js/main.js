@@ -94,7 +94,7 @@ function FunColor(but) {
   // var Sample = document.getElementsByClassName("sample");
   Sample[0].style.display="none";
   
-alert (n);  alert (n_colors);
+// alert (n);  alert (n_colors);
 for (i = 0;  i < n_colors; i++ ){ // цвета от 1 до 6. Формирую массив цветов по стилям.
 colors[i]=window.getComputedStyle(document.getElementsByClassName("bcol")[i]).backgroundColor;
    }
