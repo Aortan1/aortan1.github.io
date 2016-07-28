@@ -45,7 +45,6 @@ return Math.floor(aa*n);
 function FunSample() {
  
   var opac = window.getComputedStyle(document.getElementsByClassName("secrets")[0]).opacity;
-  alert (n);
   
 if (opac==1)  { 
   window["location"].reload(true);  
@@ -93,7 +92,7 @@ function FunColor(but) {
   // var Sample = document.getElementsByClassName("sample");
   Sample[0].style.display="none";
   
-  
+alert (n,n_colors);  
 for (i = 0;  i < n_colors; i++ ){ // цвета от 1 до 6. Формирую массив цветов по стилям.
 colors[i]=window.getComputedStyle(document.getElementsByClassName("bcol")[i]).backgroundColor;
    }
