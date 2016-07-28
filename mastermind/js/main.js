@@ -45,6 +45,7 @@ return Math.floor(aa*n);
 function FunSample() {
  
   var opac = window.getComputedStyle(document.getElementsByClassName("secrets")[0]).opacity;
+  alert (n);
   
 if (opac==1)  { 
   window["location"].reload(true);  
