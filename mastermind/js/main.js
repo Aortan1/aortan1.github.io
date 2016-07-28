@@ -203,7 +203,9 @@ Htag[0].classList.add("rai");
 alert("cont_rai="+Htag[0].classList.contains('rai')); 
 alert("len_htag="+Htag[0].classList.length);
 var dd=All[0].innerHTML;
-All[0].classList.add("n-5-8");             
+All[0].classList.add("n-5-8");
+alert("cont_n-5-8="+All[0].classList.contains('n-5-8')); 
+alert("len_all0tag="+All[0].classList.length);             
 Sec[0].style.opacity = 1;            
 }      
 
