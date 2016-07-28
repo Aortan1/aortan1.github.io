@@ -113,6 +113,9 @@ border: 1px solid black;
 background-color: black; 
 margin: 0px 0px 0px 15px;
 }
+div.secret:nth-child(5){
+ display: none;
+}
 
 .secrets {
   width: 350px; 
