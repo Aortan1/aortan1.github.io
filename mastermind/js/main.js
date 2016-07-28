@@ -27,7 +27,7 @@ if (n==5) {
    n_colors = 8;
    Itags = document.querySelectorAll("i,tt");
    Btags = document.querySelectorAll("b,em"); }
-   return n_colors, Itags, Btags;  
+   return;  
   }(); 
  // alert(Itags.length);
 
