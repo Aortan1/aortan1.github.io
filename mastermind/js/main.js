@@ -19,10 +19,9 @@ var Att =  document.getElementsByClassName("attempt");
 var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 
-if (n==4) {k=k+1;}
+
 if (n==4) {
-  var All=document.getElementById('ALL');
-  All.classList.add('n-4-6');}
+  document.getElementById('ALL').classList.add('n-4-6');}
 // if (n==4) {document.getElementsByTagName("body").classList.add("n-4-6");}
 // if (n==5) {
 //   document.querySelector("body").classList.add("n-5-8");
