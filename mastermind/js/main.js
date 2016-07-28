@@ -10,7 +10,16 @@ var n_at=8; // число попыток или строк по 4 яцейки.
 
 var Itags = document.getElementsByTagName("i"); 
 var Btags = document.getElementsByTagName("b");
-if (n==4) {k=n+1;}
+
+var Secrets = document.getElementsByClassName("secret"); 
+var Fon =  document.getElementsByClassName("fonc");
+var Htag = document.getElementsByTagName("h1");  
+var Sec =  document.getElementsByClassName("secrets");
+var Att =  document.getElementsByClassName("attempt");
+var Sample = document.getElementsByClassName("sample");
+var Butt = document.getElementsByClassName("bcol");
+
+if (n==4) {k=k+1;}
 if (n==4) {
   var All=document.getElementById('ALL');
   All.classList.add('n-4-6');}
@@ -22,14 +31,6 @@ if (n==4) {
 //   var Btags = document.querySelectorAll("b,em");
 //   } 
  // alert(Itags.length);
-var Secrets = document.getElementsByClassName("secret"); 
-var Fon =  document.getElementsByClassName("fonc");
-var Htag = document.getElementsByTagName("h1");  
-var Sec =  document.getElementsByClassName("secrets");
-var Att =  document.getElementsByClassName("attempt");
-var Sample = document.getElementsByClassName("sample");
-var Butt = document.getElementsByClassName("bcol");
-
 
 
 function rand_till(n){
