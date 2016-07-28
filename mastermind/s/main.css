@@ -183,7 +183,7 @@ div.fild_buttons { width: 600px; }
 .fild_buttons .buttons input.b_pink, .fild_buttons .buttons input.b_dark{
   display: none;}
 
-.raiii {color: red;}
+.raiii {color: red!important;}
 
 .n46 div.secret:nth-child(5),
 .n46 .fild_buttons .buttons input:nth-child(7),
