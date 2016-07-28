@@ -1,5 +1,6 @@
 
 
+function (){
 
 var n = 4; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
@@ -10,7 +11,7 @@ var n_at=8; // число попыток или строк по 4 яцейки.
 
 var Itags = document.getElementsByTagName("i"); 
 var Btags = document.getElementsByTagName("b");
-// if (n==4) {document.getElementsByClassName("ALL").classList.add("n-4-6");}
+ if (n==4) {document.getElementsByClassName("ALL").classList.add("n-4-6");}
 // if (n==4) {document.getElementsByTagName("body").classList.add("n-4-6");}
 // if (n==5) {
 //   document.querySelector("body").classList.add("n-5-8");
@@ -221,4 +222,4 @@ Btags[ii].style.borderColor = "black";
 }    
 
 }
-
+}
