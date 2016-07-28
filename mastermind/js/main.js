@@ -1,6 +1,6 @@
 
 
-var n = 5; // число ячеек в строке
+var n = 4; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
 var n_at=8; // число попыток или строк по 4 яцейки.
 // if (sup==1) { n = 4;}
@@ -21,14 +21,14 @@ var Butt = document.getElementsByClassName("bcol");
 
 
 if (n==4) {
-  document.getElementsByTagName("body").classList.add('n-4-6');}
+  document.getElementsByTagName("body").classList.add('n-4-6');alert("4444444444");}
 if (n==5) {
 
   document.getElementsByTagName("body").classList.add('n-5-8');
    n_colors = 8;
    Itags = document.querySelectorAll("i,tt");
    Btags = document.querySelectorAll("b,em"); 
-   alert("djf;lajf");}
+   alert("55555555");}
    
    
  // alert(Itags.length);
