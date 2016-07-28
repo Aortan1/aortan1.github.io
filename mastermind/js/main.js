@@ -14,8 +14,8 @@ if (n==4) document.getElementsByTagName("body").classList.add("n-4-6");
 if (n==5) {
   document.getElementsByTagName("body").classList.add("n-5-8");
   n_colors = 8;
-  var Itags = document.querySelectorAll("i,tt");
-  var Btags = document.querySelectorAll("b,em");
+  var Itags = document.getElementsByTagName("i,tt");
+  var Btags = document.getElementsByTagName("b,em");
   } 
  // alert(Itags.length);
 var Secrets = document.getElementsByClassName("secret"); 
