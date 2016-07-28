@@ -26,8 +26,9 @@ if (n==4) {
   // alert("leng="+document.getElementsByTagName("body")[0].classList.length); //  МЕТОД classList ТУПО НЕ РАБОТАЕТ, И НА НЁМ ПРЕРЫВАЕТСЯ ВЫПОЛНЕНИЕ ДЖИ-ЕС. ПОЧЕМУ - ХУЙ ЕГО ЗНАЕТ.
   All[0].classList.add('n46'); alert("4444444444");}
 if (n==5) {
-  
-  document.querySelectorAll("body").classList.add('n-5-8');alert("55555555");
+  All[0].classList.add('n-5-8');
+  // document.querySelectorAll("body").classList.add('n-5-8');
+  alert("55555555");
    n_colors = 8;
    Itags = document.querySelectorAll("i,tt");
    Btags = document.querySelectorAll("b,em"); 
