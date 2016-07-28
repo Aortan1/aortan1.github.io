@@ -19,7 +19,7 @@ var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 
 
-
+function iff(){
 if (n==4) {
   document.getElementsByTagName("body").classList.add('n-4-6');alert("4444444444");}
 if (n==5) {
@@ -29,7 +29,8 @@ if (n==5) {
    Itags = document.querySelectorAll("i,tt");
    Btags = document.querySelectorAll("b,em"); 
    alert("55555555");}
-   
+ };
+ iff();  
    
  // alert(Itags.length);
 
