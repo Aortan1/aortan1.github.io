@@ -22,10 +22,10 @@ var Butt = document.getElementsByClassName("bcol");
 function iff(){
 if (n==4) {
   n=9; 
-  document.getElementsByClassName("ALL")[0].classList.add('n46');alert("4444444444");}
+  document.getElementsByClassName("ALL").classList.add('n46');alert("4444444444");}
 if (n==5) {
   
-  document.querySelectorAll("body")[0].classList.add('n-5-8');alert("55555555");
+  document.querySelectorAll("body").classList.add('n-5-8');alert("55555555");
    n_colors = 8;
    Itags = document.querySelectorAll("i,tt");
    Btags = document.querySelectorAll("b,em"); 
