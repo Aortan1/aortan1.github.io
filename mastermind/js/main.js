@@ -21,6 +21,7 @@ var Butt = document.getElementsByClassName("bcol");
 
 function iff(){
 if (n==4) {
+  n=9; alert(n);
   document.getElementsByClassName("ALL")[0].classList.add('n46');alert("4444444444");}
 if (n==5) {
   
