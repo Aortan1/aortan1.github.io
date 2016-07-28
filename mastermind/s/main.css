@@ -183,27 +183,26 @@ div.fild_buttons { width: 600px; }
 .fild_buttons .buttons input.b_pink, .fild_buttons .buttons input.b_dark{
   display: none;}
 
-.raiii {color: red!important;}
 
-.n46 div.secret:nth-child(5),
-.n46 .fild_buttons .buttons input:nth-child(7),
-.n46 .fild_buttons .buttons input:nth-child(8),
-.n46 div.attempt tt, .n46 div.result em
+.n-4-6 div.secret:nth-child(5),
+.n-4-6 .fild_buttons .buttons input:nth-child(7),
+.n-4-6 .fild_buttons .buttons input:nth-child(8),
+.n-4-6 div.attempt tt, .n-4-6 div.result em
 {display:none;}
-.n46 h5.ruls {
+.n-4-6 h5.ruls {
   top:10px; right: 35px;}
-.n46 input.sample {display: block; background-color: red!important;}
-.n46 .fild_buttons .buttons input {
+.n-4-6 input.sample {display: block;}
+.n-4-6 .fild_buttons .buttons input {
   width: 60px;
   height: 60px;
   margin: 0 8px;
 } 
-.n46 div.result{ margin-right: 70px;} 
-.n46 div.secrets .secret{
+.n-4-6 div.result{ margin-right: 70px;} 
+.n-4-6 div.secrets .secret{
 width: 50px;
 height: 50px;}
 
-.n-5-8 {border: 20px solid yellow;}
+
 .n-5-8 div.secret:nth-child(5),
 .n-5-8 .fild_buttons .buttons input:nth-child(7),
 .n-5-8 .fild_buttons .buttons input:nth-child(8)
@@ -211,8 +210,7 @@ height: 50px;}
 .n-5-8 div.attempt tt, .n-5-8 div.result em
 {display:block;}
 .n-5-8 h5.ruls {
-  top:10px; right: 15px;}
-.n-5-8 h5.ruls a {color: red!important;}  
+  top:10px; right: 15px;} 
 .n-5-8 input.sample {display: none;}
 .n-5-8 .fild_buttons .buttons input {
   width: 50px;

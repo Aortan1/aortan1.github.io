@@ -17,23 +17,20 @@ var Sec =  document.getElementsByClassName("secrets");
 var Att =  document.getElementsByClassName("attempt");
 var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
-var All = document.getElementsByClassName("ALL");
+var Bod = document.getElementsByTagName("body");
 
 window.onload=function(){
 if (n==4) {
   // Htag[0].classList.add("raiii");
   // alert("cont="+Htag[0].classList.contains('raiii'));  
   // alert("leng="+document.getElementsByTagName("body")[0].classList.length); //  МЕТОД classList ТУПО НЕ РАБОТАЕТ, И НА НЁМ ПРЕРЫВАЕТСЯ ВЫПОЛНЕНИЕ ДЖИ-ЕС. ПОЧЕМУ - ХУЙ ЕГО ЗНАЕТ.
-  All[0].classList.add('n46'); alert("4444444444");}
+  Bod[0].classList.add('n-4-6');}
 if (n==5) {
-  All[0].classList.add('n-5-8');
-  // document.querySelectorAll("body").classList.add('n-5-8');
-  alert("55555555");
+  Bod[0].classList.add('n-5-8');  
    n_colors = 8;
    Itags = document.querySelectorAll("i,tt");
    Btags = document.querySelectorAll("b,em"); 
-  }
-  alert('n_colors='+n_colors);
+  }  
  };  
    
  // alert(Itags.length);
@@ -50,16 +47,7 @@ return Math.floor(aa*n);
 
 
 function FunSample() {
-  if (n==4) {  
-  All[0].classList.add('n46');}
-  if (n==5) {  
-  All[0].classList.add('n-5-8');
-   n_colors = 8;
-   Itags = document.querySelectorAll("i,tt");
-   Btags = document.querySelectorAll("b,em"); 
-  }
-  
- 
+   
   var opac = window.getComputedStyle(document.getElementsByClassName("secrets")[0]).opacity;
   
 if (opac==1)  { 
@@ -94,15 +82,7 @@ if (opac==1)  {
 
 
 function FunColor(but) {
-  if (n==4) {  
-  All[0].classList.add('n46');}
-  if (n==5) {  
-  All[0].classList.add('n-5-8');
-   n_colors = 8;
-   Itags = document.querySelectorAll("i,tt");
-   Btags = document.querySelectorAll("b,em"); 
-  }
-  
+    
   var pressed_color = but.value; //код цвета нажатой кнопки
   var colors = []; 
   var colors_cod = [];
@@ -215,13 +195,7 @@ Bcan =  document.getElementsByClassName("b_cansel");
 if (sum1==n){Htag[0].innerHTML="ПОЗДРАВЛЯЮ!!! ВЫ РАЗГАДАЛИ КОМБИНАЦИЮ ЦВЕТОВ!!!";
 // Htag[0].style.backgroundColor = "#388E3C"; Htag[0].style.color="white";
 // Htag[0].style.fontSize = "20px"; 
-Htag[0].classList.add("rai");
-alert("cont_rai="+Htag[0].classList.contains('rai')); 
-alert("len_htag="+Htag[0].classList.length);
-var dd=All[0].innerHTML;
-All[0].classList.add("n-5-8");
-alert("cont_n-5-8="+All[0].classList.contains('n-5-8')); 
-alert("len_all0tag="+All[0].classList.length);             
+Htag[0].classList.add("rai");          
 Sec[0].style.opacity = 1;            
 }      
 
