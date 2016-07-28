@@ -1,5 +1,4 @@
 
-function (){
 
 var n = 5; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
@@ -24,6 +23,7 @@ if (n==4) {
   document.getElementsByTagName("body").classList.add('n-4-6');}
 
 if (n==5) {
+  alert("djf;lajf");
   document.getElementsByTagName("body").classList.add('n-5-8');
    n_colors = 8;
    Itags = document.querySelectorAll("i,tt");
@@ -225,4 +225,3 @@ Btags[ii].style.borderColor = "black";
 
 }
 
-}();
