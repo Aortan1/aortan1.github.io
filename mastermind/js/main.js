@@ -10,9 +10,9 @@ var n_at=8; // число попыток или строк по 4 яцейки.
 
 var Itags = document.getElementsByTagName("i"); 
 var Btags = document.getElementsByTagName("b");
-// if (n==4) document.querySelector("body").classList.add("n-4-6");
+if (n==4) document.getElementsByTagName("body").classList.add("n-4-6");
 if (n==5) {
-  document.querySelector("body").classList.add("n-5-8");
+  document.getElementsByTagName("body").classList.add("n-5-8");
   n_colors = 8;
   var Itags = document.querySelectorAll("i,tt");
   var Btags = document.querySelectorAll("b,em");
