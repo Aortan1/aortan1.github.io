@@ -94,7 +94,7 @@ i {
   z-index: 16;
   width: 86px;
   height: 175px;
-  margin: 6px 0 0 179px;
+  margin: 7px 0 0 179px;
   -webkit-transform: skewY(-45deg);
   -moz-transform: skewY(-45deg);
   -o-transform: skewY(-45deg);
@@ -117,7 +117,7 @@ i {
   z-index: 12;
   width: 180px;
   height: 87px;
-  margin: -37px 0 0 43px;
+  margin: -37px 0 0 42px;
   -webkit-transform: skewX(-45deg);
   -moz-transform: skewX(-45deg);
   -o-transform: skewX(-45deg);
