@@ -21,7 +21,7 @@ var Butt = document.getElementsByClassName("bcol");
 
 function iff(){
 if (n==4) {
-  n=9; alert(n);
+  n=9; 
   document.getElementsByClassName("ALL")[0].classList.add('n46');alert("4444444444");}
 if (n==5) {
   
@@ -31,7 +31,7 @@ if (n==5) {
    Btags = document.querySelectorAll("b,em"); 
   }
  };
- iff();  
+ iff();  alert('n=',n);
    
  // alert(Itags.length);
 
