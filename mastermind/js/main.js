@@ -1,6 +1,6 @@
 
 
-var n = 5; // число ячеек в строке
+var n = 4; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
 var n_at=8; // число попыток или строк по 4 яцейки.
 // if (sup==1) { n = 4;}
@@ -23,7 +23,7 @@ window.onload=function(){
 if (n==4) {
   // Htag[0].classList.add("raiii");
   // alert("cont="+Htag[0].classList.contains('raiii'));  
-  // alert("leng="+document.getElementsByTagName("body")[0].classList.length); //  МЕТОД classList ТУПО НЕ РАБОТАЕТ, И НА НЁМ ПРЕРЫВАЕТСЯ ВЫПОЛНЕНИЕ ДЖИ-ЕС. ПОЧЕМУ - ХУЙ ЕГО ЗНАЕТ.
+  // alert("leng="+document.getElementsByTagName("body")[0].classList.length); //  МЕТОД classList ТУПО НЕ РАБОТАЕТ, И НА НЁМ ПРЕРЫВАЕТСЯ ВЫПОЛНЕНИЕ ДЖИ-ЕС. ПОЧЕМУ - ПОТОМУ ЧТО СТРАНИЦА ЕЩЁ НЕ ЗАГРУЗИЛАСЬ, А ДЖИ ЭС УЖЕ ИЩЕТ ТЕГ БАДИ.
   Bod[0].classList.add('n-4-6');}
 if (n==5) {
   Bod[0].classList.add('n-5-8');  
