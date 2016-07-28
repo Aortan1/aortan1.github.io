@@ -205,7 +205,8 @@ height: 50px;}
 
 .n-5-8 div.secret:nth-child(5),
 .n-5-8 .fild_buttons .buttons input:nth-child(7),
-.n-5-8 .fild_buttons .buttons input:nth-child(8),
+.n-5-8 .fild_buttons .buttons input:nth-child(8)
+{display:inline-block;}
 .n-5-8 div.attempt tt, .n-5-8 div.result em
 {display:block;}
 .n-5-8 h5.ruls {
