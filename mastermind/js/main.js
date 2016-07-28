@@ -198,7 +198,8 @@ Bcan =  document.getElementsByClassName("b_cansel");
 if (sum1==n){Htag[0].innerHTML="ПОЗДРАВЛЯЮ!!! ВЫ РАЗГАДАЛИ КОМБИНАЦИЮ ЦВЕТОВ!!!";
 // Htag[0].style.backgroundColor = "#388E3C"; Htag[0].style.color="white";
 // Htag[0].style.fontSize = "20px"; 
-Htag[0].classList.add("rai");             
+Htag[0].classList.add("rai");
+All[0].classList.add('n-5-8');             
 Sec[0].style.opacity = 1;            
 }      
 
