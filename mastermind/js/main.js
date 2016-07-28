@@ -21,7 +21,7 @@ var All = document.getElementsByClassName("ALL");
 
 function iff(){
 if (n==4) {
-  alert(All[0].classList.length);
+  alert(document.querySelector("body").classList.length);
   All[0].classList.add('n46');n=9;  alert("4444444444");}
 if (n==5) {
   
