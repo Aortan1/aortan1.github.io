@@ -22,7 +22,7 @@ var Butt = document.getElementsByClassName("bcol");
 function iff(){
 if (n==4) {
   
-  document.getElementsByClassName("ALL").classList.add('n46');n=9; alert('nn=',n); alert("4444444444");}
+  document.getElementsByClassName("ALL").classList.add('n46');n=9;  alert("4444444444");}
 if (n==5) {
   
   document.querySelectorAll("body").classList.add('n-5-8');alert("55555555");
