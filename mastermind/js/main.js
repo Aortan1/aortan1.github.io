@@ -18,7 +18,8 @@ var Att =  document.getElementsByClassName("attempt");
 var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 
-function (){
+window.onload = funonload;
+function funonload (){
 if (n==4) {
   document.getElementsByTagName("body").classList.add('n-4-6');}
 if (n==5) {
@@ -27,8 +28,8 @@ if (n==5) {
    n_colors = 8;
    Itags = document.querySelectorAll("i,tt");
    Btags = document.querySelectorAll("b,em"); }
-   return;  
-  }(); 
+   
+  }; 
  // alert(Itags.length);
 
 
