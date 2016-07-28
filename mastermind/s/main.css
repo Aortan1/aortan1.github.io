@@ -1,9 +1,5 @@
 body {background: linear-gradient(to top, #8cd890, #0372ff);
-height: 100%;
-}
-
-:focus {
-outline: none;
+height: 960px;
 }
 
 
@@ -29,10 +25,20 @@ font-size: 55px;
 font-weight: 300;
 padding: 0 20px 0 20px;  
 margin: 70px auto 5px;
-border-radius: 5px;
-/*border: 1px solid red;  */
+border-radius: 20px;
+border: 0px solid red;
+  
 }
 
+a.a-github {
+  display: block;
+  position: absolute; 
+  top: 70px;
+  width: 280px;
+  height: 70px;
+  border: 0px solid black;
+  cursor: crosshair;
+}
 
 h2 {
 float: left;
@@ -45,28 +51,29 @@ padding: 10px -10px 0 0;
   
 }
 
-h5 {
-font-family: 'Roboto', cursive;
+h5.ruls {
+display: block;
+position: absolute;
+top: 10px;
+right: 35px;
 height: 20px;  
-padding: 5px 20px 0 0px;
-text-align: right;
+padding: 5px 5px 0 0px;
+text-align: left; 
 }
-
-h5.how {display: block; margin: 0px 18px -50px -10px; }
-
-
-h5 a {color: #009688;}
-
+h5.ruls a {
+  padding-left: 5px;
+  font-family: 'Roboto', cursive;
+  color: #009688;
+}
 input.sample {
-  float: right;
+  display: none;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin:  70px 15px 0 0;
+  margin:  20px 0px 0 0;
   font-size: 18px;
   color: white;
   background-color: #55b618;
-  cursor: pointer; 
 }
 
 .game{
@@ -75,24 +82,29 @@ input.sample {
  margin: 0px auto; 
  }
 
-.field {height: 500px;}
+.field {
+  position: relative;
+  height: 500px;}
 
 li { height: 100px;}
 
 
-ul.attempts { margin: 20px 0 -20px 20px; }
+ul.attempts { 
+   padding: 20px 0 0 20px; }
 ul.attempts li{ margin-bottom: -40px; }
 
-div.attempt i{
+div.attempt i,div.attempt tt{
 display:inline-block; 
+float: left;  
 width: 40px;
 height: 40px;
 border-radius: 50% ; 
 margin: 0px 0px 0px 15px;
 }
-div.attempt i:activ {background-color: red;}
+div.attempt tt{
+  display:none;}
 
-div.attempt .secret{
+div.secrets .secret{
 display:inline-block; 
 width: 50px;
 height: 50px;
@@ -104,10 +116,10 @@ margin: 0px 0px 0px 15px;
 
 .secrets {
   width: 350px; 
-  /*margin-left: 150px;*/
+/*   margin-left: 150px; */
   margin: 5px auto 5px;
   padding: 0 0 0 46px;
-  opacity: 0;}
+ }
 
 div.result {
 float:left;  
@@ -123,7 +135,7 @@ padding: 0px 5px 5px 0;
 border: 2px solid #444444;   
 }
 
-div.result b {
+div.result b, div.result em  {
 float: left;
 display:block;
 width: 5px;
@@ -134,46 +146,101 @@ margin: 8px 0px 0px 8px;
 background-color: #aaaaaa;
 border: 3px solid #444444;  
 }
-
+div.result em {
+display: none;
+position: relative;
+top: -28px;
+left: 9px;
+}
 
 
 div.fild_buttons { width: 600px; }
 
 .fild_buttons .buttons {
- margin: 10px auto;
- margin-left: 20px;
+ width: 600px; 
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around; 
+ margin-top: 18px;
+/*  margin: 18px auto; */
+/*  margin-left: 20px; */
+ 
  }
 
 .fild_buttons .buttons input {
- display:inline-block;
- margin: 8px; 
+/*  display:inline-block;
+ margin: 8px;  */
+ margin: 0 8px;   
+ justify-content: space-around;
  width: 60px;
  height: 60px;
  border-radius: 50%;
- color: transparent;
- cursor: pointer; 
+ color: transparent; 
  }
 
 
+
+.n-4-6 div.secret:nth-child(5),
+.n-4-6 .fild_buttons .buttons input:nth-child(7),
+.n-4-6 .fild_buttons .buttons input:nth-child(8),
+.n-4-6 div.attempt tt, .n-4-6 div.result em
+{display:none;}
+.n-4-6 h5.ruls {
+  top:10px; right: 35px;}
+.n-4-6 input.sample {display: block;}
+.n-4-6 .fild_buttons .buttons input {
+  width: 60px;
+  height: 60px;
+  margin: 0 8px;
+} 
+.n-4-6 div.result{ margin-right: 70px;} 
+.n-4-6 div.secrets .secret{
+width: 50px;
+height: 50px;}
+
+
+.n-5-8 div.secret:nth-child(5),
+.n-5-8.fild_buttons .buttons input:nth-child(7),
+.n-5-8 .fild_buttons .buttons input:nth-child(8),
+.n-5-8 div.attempt tt, .n-5-8 div.result em
+{display:block;}
+.n-5-8 h5.ruls {
+  top:10px; right: 15px;}
+.n-5-8 input.sample {display: none;}
+.n-5-8 .fild_buttons .buttons input {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+} 
+.n-5-8 div.result{ margin-right: 60px;} 
+.n-5-8 div.secrets .secret{
+width: 45px;
+height: 45px;}
+
+
+
+
+.secrets { opacity: 0;}
 
 
 .game{ 
   background-color: #455658; 
   border: 1px solid #444444;}
 .field{
+  border-radius: 0px;
   border-bottom: 2px solid #557668;  
   background: linear-gradient(to top, #556668,  #DDDCCD);}
-div.attempt i{
+div.attempt i,div.attempt tt{
 background: #B6B6B6;
 border: 1px solid #33695B; }
+
 div.result {border: 2px solid #444444;}
-div.result b {
+div.result b, div.result em{
 background-color: #CDDCb9;
 border: 3px solid #444444;  
 }
 .fild_buttons input.b_cansel{
-color: black; background-color: #607D8B;
-cursor: pointer;   
+color: black; background-color: #607D8B;  
 }
 
 h1.rai {
@@ -204,5 +271,12 @@ h1.rai {
 .b_yellow{background-color: #FFC107;} 
 .b_green {background-color: #388E3C;} 
 .b_red {background-color: #D32F2F;} 
-.b_blue {background-color: #1976D2;} 
+.b_blue {background-color: #1976D2;}
+.b_pink {background-color: #FF90a1;}
+.b_dark {background-color: #202F8F;}
+
+.ra {width: 300px;
+border: 5px solid red;}
+
+/* .fonc {padding-left: 40px; display: none;}  */
 .fonc {padding-left: 40px; display: none !important;}

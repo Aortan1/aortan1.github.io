@@ -1,9 +1,26 @@
 
 
+
+var n = 4; // число ячеек в строке
+var n_colors = 6; // число вариантов цветов
+var n_at=8; // число попыток или строк по 4 яцейки.
+// if (sup==1) { n = 4;}
+
+// alert (window.location.sup);
+
 var Itags = document.getElementsByTagName("i"); 
+var Btags = document.getElementsByTagName("b");
+if (n==4) document.querySelector("body").classList.add("n-4-6");
+if (n==5) {
+  document.querySelector("body").classList.add("n-5-8");
+  n_colors = 8;
+  var Itags = document.querySelectorAll("i,tt");
+  var Btags = document.querySelectorAll("b,em");
+  } 
+ // alert(Itags.length);
 var Secrets = document.getElementsByClassName("secret"); 
 var Fon =  document.getElementsByClassName("fonc");
-var Btags = document.getElementsByTagName("b");   
+  
 var Htag = document.getElementsByTagName("h1");  
 var Sec =  document.getElementsByClassName("secrets");
 var Att =  document.getElementsByClassName("attempt");
@@ -23,7 +40,7 @@ return Math.floor(aa*n);
 
 
 function FunSample() {
-  
+ 
   var opac = window.getComputedStyle(document.getElementsByClassName("secrets")[0]).opacity;
   
 if (opac==1)  { 
@@ -33,10 +50,12 @@ if (opac==1)  {
   
   // function go() { return; }
   
-  for (var i = 0;  i < 32; i++ ){
-  FunColor(Butt[rand_till(6)]);
-  // setTimeout(go, 10000);
-  for (var j = 0;  j < 99; j++ ){ a=1;}
+  for (var i = 0;  i < n*n_at; i++ ){
+  // for (var j = 0;  j < 77999; j++ ){ a=1;}  
+  // sleep(1000);
+   //FunColor(Butt[rand_till(n_colors)]);
+  setInterval(FunColor(Butt[rand_till(n_colors)]), 1000);
+  
   } 
   // Htag[0].style.opacity=0;
   // alert (Sample[0].style.display); 
@@ -50,11 +69,14 @@ if (opac==1)  {
 
 
 
+
+
+
+
+
 function FunColor(but) {
   
-  var n_at=8; // число попыток или строк по 4 яцейки.
-  var n = 4; // число ячеек в строке
-  var n_colors = 6; // число вариантов цветов
+  
   var pressed_color = but.value; //код цвета нажатой кнопки
   var colors = []; 
   var colors_cod = [];
@@ -84,9 +106,11 @@ colors[i]=window.getComputedStyle(document.getElementsByClassName("bcol")[i]).ba
   
   
   
-  j=n; at=1; for (i = n*n_at;  i > 0; i-- ){ // закраска ячеек
+  j=n; at=1; for (i = n_at*n;  i > 0; i-- ){ // закраска ячеек
   x=i-j;  j=j-2;  if (j == (-1)*n) {j=n;end_of_attempt = true;}
+    
   citag= window.getComputedStyle(Itags[x]).backgroundColor;
+  // if (n==4 && (i)%5==0 ) continue;  
   if (citag==color_def) {x_now=x; attempt_now=at; break;}
   if (j==n) at++; end_of_attempt = false;
   }
@@ -100,7 +124,13 @@ AttNow=Att[n_at-attempt_now];
 switch (v==1){
   
 case false:
-if (but.value=="DO IT." || but.value=="NICE!")  { window["location"].reload(true);}
+
+// if (but.value=="DO IT." || but.value=="NICE!")  {window.location=window.location+'?sup=true';}
+if (but.value=="DO IT." || but.value=="NICE!")  {
+ // 
+ window["location"].sup=1;
+ window["location"].reload(true);
+}
     
 else if (but.value=="Cancel"){x_now--;           Itags[x_now].style.backgroundColor = color_def;  return; } 
     
@@ -149,7 +179,7 @@ Bcan =  document.getElementsByClassName("b_cansel");
    Bcan[0].style.backgroundColor = "#FFC107";
    Bcan[0].style.color="white";
              }    
- if (x_now==3 && sum1!=n) {Bcan[0].style.backgroundColor = "#E91E63";
+ if (x_now==n-1 && sum1!=n) {Bcan[0].style.backgroundColor = "#E91E63";
  Bcan[0].style.color="black";
  Bcan[0].value = "DO IT.";
  Bcan[0].style.fontSize = "15px";
