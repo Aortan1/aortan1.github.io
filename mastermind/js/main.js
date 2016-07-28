@@ -21,14 +21,14 @@ var Butt = document.getElementsByClassName("bcol");
 
 
 if (n==4) {
-  document.getElementById('ALL').classList.add('n-4-6');}
-// if (n==4) {document.getElementsByTagName("body").classList.add("n-4-6");}
-// if (n==5) {
-//   document.querySelector("body").classList.add("n-5-8");
-//   n_colors = 8;
-//   var Itags = document.querySelectorAll("i,tt");
-//   var Btags = document.querySelectorAll("b,em");
-//   } 
+  document.querySelectorAll("body").classList.add('n-4-6');}
+
+if (n==5) {
+  document.querySelector("body").classList.add("n-5-8");
+  n_colors = 8;
+  var Itags = document.querySelectorAll("i,tt");
+  var Btags = document.querySelectorAll("b,em");
+  } 
  // alert(Itags.length);
 
 
