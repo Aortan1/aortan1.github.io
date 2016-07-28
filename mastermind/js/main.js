@@ -24,7 +24,7 @@ if (n==4) {
   document.querySelectorAll("body").classList.add('n-4-6');}
 
 if (n==5) {
-  document.querySelector("body").classList.add("n-5-8");
+  document.querySelectorAll("body").classList.add("n-5-8");
   n_colors = 8;
   var Itags = document.querySelectorAll("i,tt");
   var Btags = document.querySelectorAll("b,em");
