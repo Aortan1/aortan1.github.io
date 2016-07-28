@@ -13,7 +13,7 @@ var Btags = document.getElementsByTagName("b");
 if (n==4) {k=n+1;}
 if (n==4) {
   var All=document.getElementsByClassName('ALL');
-  All[0].classList.add('n-4-6');}
+  All[1].classList.add('n-4-6');}
 // if (n==4) {document.getElementsByTagName("body").classList.add("n-4-6");}
 // if (n==5) {
 //   document.querySelector("body").classList.add("n-5-8");
