@@ -19,7 +19,7 @@ var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var All = document.getElementsByClassName("ALL");
 
-
+window.onload=function(){
 if (n==4) {
   // Htag[0].classList.add("raiii");
   // alert("cont="+Htag[0].classList.contains('raiii'));  
@@ -33,7 +33,7 @@ if (n==5) {
    Btags = document.querySelectorAll("b,em"); 
   }
   alert('n_colors='+n_colors);
-   
+ };  
    
  // alert(Itags.length);
 
