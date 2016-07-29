@@ -22,6 +22,7 @@ var Fn = document.getElementById("id_fn");
 
 window.onload=function(){
 n=Fn.value;
+n=4;
 // if (n!=5) {n=4;}
 if (n==4) {
   // Htag[0].classList.add("raiii");
