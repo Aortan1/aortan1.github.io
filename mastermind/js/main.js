@@ -208,8 +208,8 @@ Bcan =  document.getElementsByClassName("b_cansel");
  Bcan[0].style.fontSize = "15px";
  Bcan[0].style.fontWeight= "bold";   
            }   
-if (sum1==n && n==4){Htag[0].innerHTML="ВЫ УГАДАЛИ 4из6!!! СУПЕРИГРА - 5из8.";}
-if (sum1==n && n==5){Htag[0].innerHTML="ПОЗДРАВЛЯЮ!!! ВЫ РАЗГАДАЛИ КОМБИНАЦИЮ 5ти ЦВЕТОВ!!!";}       
+if (sum1==n && n==4){Htag[0].innerHTML="ВЫ РАЗГАДАЛИ 4 из 6 ЦВЕТОВ!!! ТЕПЕРЬ СУПЕРИГРА - 5 из 8.";}
+if (sum1==n && n==5){Htag[0].innerHTML="ПОЗДРАВЛЯЮ!!! ВЫ РАЗГАДАЛИ КОМБИНАЦИЮ 5ти ЦВЕТОВ из 8!!!";}       
 if (sum1==n){
 // Htag[0].style.backgroundColor = "#388E3C"; Htag[0].style.color="white";
 // Htag[0].style.fontSize = "20px"; 
