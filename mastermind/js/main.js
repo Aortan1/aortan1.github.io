@@ -22,7 +22,7 @@ alert("nu");
 alert("n="+n);
 
 window.onload=function(){
-if (n==undefined) {var n=4;}
+if (n==undefined) {n=4;}
 if (n==4) {
   // Htag[0].classList.add("raiii");
   // alert("cont="+Htag[0].classList.contains('raiii'));  
