@@ -37,7 +37,7 @@ if (n==5) {
    Btags = document.querySelectorAll("b,em"); 
   }
  
- alert("n="+n);
+ // alert("n="+n);
    
  };  
    
