@@ -24,8 +24,7 @@ var Sn = document.getElementById("id_sn");
 
 window.onload=function(){
 Sn = document.getElementById("id_sn");  
-// n=Sn.value;
-n=4; if (sup==1) n=5;
+n=Sn.value;
 // alert ("Sn.value"); 
 // n=4;
 // if (n!=5) {n=4;}
