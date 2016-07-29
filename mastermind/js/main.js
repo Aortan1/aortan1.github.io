@@ -19,10 +19,11 @@ var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
 var Fn = document.getElementById("id_fn");
+var Sn = document.getElementById("id_sn");
 
 window.onload=function(){
-// n=Fn.value;
-n=4;
+n=Sn.value;
+// n=4;
 // if (n!=5) {n=4;}
 if (n==4) {
   // Htag[0].classList.add("raiii");
