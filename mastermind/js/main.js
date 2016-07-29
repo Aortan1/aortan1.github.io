@@ -18,7 +18,7 @@ var Att =  document.getElementsByClassName("attempt");
 var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
-alert("nu");  
+alert("fn.value="+fn.value);
 alert("n="+n);
 
 window.onload=function(){
