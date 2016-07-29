@@ -1,6 +1,6 @@
 
 
-var n=fn.value; // число ячеек в строке
+var n; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
 var n_at=8; // число попыток или строк по 4 яцейки.
 // if (sup==1) { n = 4;}
@@ -18,11 +18,11 @@ var Att =  document.getElementsByClassName("attempt");
 var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
-alert("fn.value="+fn.value);
-alert("n="+n);
+var Fn = document.getElementById("id_fn");
 
 window.onload=function(){
-if (n!=5) {n=4;}
+n=Fn.value;
+// if (n!=5) {n=4;}
 if (n==4) {
   // Htag[0].classList.add("raiii");
   // alert("cont="+Htag[0].classList.contains('raiii'));  
@@ -33,7 +33,10 @@ if (n==5) {
    n_colors = 8;
    Itags = document.querySelectorAll("i,tt");
    Btags = document.querySelectorAll("b,em"); 
-  }  
+  }
+ 
+ alert("n="+n);
+   
  };  
    
  // alert(Itags.length);
