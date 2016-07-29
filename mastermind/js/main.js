@@ -141,7 +141,8 @@ case false:
 
 // if (but.value=="NICE!")  {window.location="http://aortan1.github.io/mastermind?n=5";}
 if (but.value=="NICE!")  {Sn.value=5;
-  window.location='http://aortan1.github.io/mastermind/?sn=5';
+  window["location"]='http://aortan1.github.io/mastermind/?sn=5';
+  window["location"].reload(true);
 
 }
 // if (but.value=="DO IT." || but.value=="NICE!")  {
