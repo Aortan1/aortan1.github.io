@@ -1,7 +1,7 @@
 
 
 
-var n; // число ячеек в строке
+var n=4; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
 var n_at=8; // число попыток или строк по 4 яцейки.
 // if (sup==1) { n = 4;}
@@ -19,18 +19,12 @@ var Att =  document.getElementsByClassName("attempt");
 var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
-// var Fn = document.getElementById("id_fn");
-// var sn = document.getElementById("id_sn");
+
 
 window.onload=function(){
-// sn = document.getElementById("id_sn");  
-// n=sn.value;
-n=4;
-sup = $_GET('sup');
-if (sup==5) n=5;
-// alert ("Sn.value"); 
-// n=4;
-// if (n!=5) {n=4;}
+
+sup = $_GET('sup'); if (sup==5) n=5;
+
 if (n==4) {
   Bod[0].classList.add('n-4-6');}
 if (n==5) {
