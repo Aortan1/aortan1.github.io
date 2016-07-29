@@ -19,12 +19,13 @@ var Att =  document.getElementsByClassName("attempt");
 var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
-var Fn = document.getElementById("id_fn");
-var sn = document.getElementById("id_sn");
+// var Fn = document.getElementById("id_fn");
+// var sn = document.getElementById("id_sn");
 
 window.onload=function(){
-sn = document.getElementById("id_sn");  
-n=sn.value;
+// sn = document.getElementById("id_sn");  
+// n=sn.value;
+n=4;
 sup = $_GET('sup');
 if (sup==5) n=5;
 // alert ("Sn.value"); 
@@ -148,7 +149,8 @@ switch (v==1){
 case false:
 
 // if (but.value=="NICE!")  {window.location="http://aortan1.github.io/mastermind?n=5";}
-if (but.value=="NICE!")  {sn.value=5;
+// if (but.value=="NICE!")  {sn.value=5;
+   if (but.value=="NICE!")  {
   window.location='http://aortan1.github.io/mastermind/?sup=5';
 
 }
