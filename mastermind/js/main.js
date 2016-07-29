@@ -141,7 +141,8 @@ case false:
 
 // if (but.value=="NICE!")  {window.location="http://aortan1.github.io/mastermind?n=5";}
 if (but.value=="NICE!")  {Sn.value=5;}
-if (but.value=="DO IT." || but.value=="NICE!")  {
+// if (but.value=="DO IT." || but.value=="NICE!")  {
+   if (but.value=="DO IT.")  {  
  // 
  // window["location"].sup=1;
  window["location"].reload(true);
