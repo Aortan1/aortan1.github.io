@@ -20,6 +20,7 @@ var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
 
 window.onload=function(){
+alert("su");  
 alert("sup="+sup);
 if (n==4) {
   // Htag[0].classList.add("raiii");
