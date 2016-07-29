@@ -20,12 +20,12 @@ var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
 var Fn = document.getElementById("id_fn");
-var Sn = document.getElementsByTagName("select")[0];
+var Sn = document.getElementById("id_sn");
 
 window.onload=function(){
 n=Sn.value;
 alert ("Sn.value"); 
-n=4;
+// n=4;
 // if (n!=5) {n=4;}
 if (n==4) {
   Bod[0].classList.add('n-4-6');}
