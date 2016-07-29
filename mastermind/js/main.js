@@ -25,6 +25,7 @@ var sn = document.getElementById("id_sn");
 window.onload=function(){
 sn = document.getElementById("id_sn");  
 n=sn.value;
+sup = $_GET('sup');
 if (sup==5) n=5;
 // alert ("Sn.value"); 
 // n=4;
@@ -42,7 +43,13 @@ if (n==5) {
    
  };  
    
- // alert(Itags.length);
+ function $_GET(key) {
+  var s = window.location.search;
+  s = s.match(new RegExp(key + '=([^&=]+)'));
+  return s ? s[1] : false;
+};
+
+alert( $_GET('test') );
 
 
 function rand_till(n){
