@@ -25,7 +25,7 @@ var Sn = document.getElementById("id_sn");
 window.onload=function(){
 Sn = document.getElementById("id_sn");  
 n=Sn.value;
-alert ("Sn.value"); 
+// alert ("Sn.value"); 
 // n=4;
 // if (n!=5) {n=4;}
 if (n==4) {
@@ -108,7 +108,7 @@ for (i = 0;  i < n_colors; i++ ){ // цвета от 1 до 6. Формирую 
 colors[i]=window.getComputedStyle(document.getElementsByClassName("bcol")[i]).backgroundColor;
    }
 
- alert("nn="+n);  
+ // alert("nn="+n);  
   if (window.getComputedStyle(Secrets[0]).backgroundColor == "rgb(0, 0, 0)") { // СОЗДАНИЕ СЕКРЕТНОГО НАБОРА ЦВЕТОВ
   color_def=window.getComputedStyle(Itags[0]).backgroundColor;
   Fon[0].style.backgroundColor = color_def;  
