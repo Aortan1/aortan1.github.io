@@ -21,7 +21,7 @@ var Bod = document.getElementsByTagName("body");
 var Fn = document.getElementById("id_fn");
 
 window.onload=function(){
-n=Fn.value;
+// n=Fn.value;
 n=4;
 // if (n!=5) {n=4;}
 if (n==4) {
