@@ -24,7 +24,8 @@ var Sn = document.getElementById("id_sn");
 
 window.onload=function(){
 Sn = document.getElementById("id_sn");  
-n=Sn.value;
+// n=Sn.value;
+n=4; if (sup==1) n=5;
 // alert ("Sn.value"); 
 // n=4;
 // if (n!=5) {n=4;}
@@ -141,7 +142,7 @@ case false:
 
 // if (but.value=="NICE!")  {window.location="http://aortan1.github.io/mastermind?n=5";}
 if (but.value=="NICE!")  {Sn.value=5;
-  window["location"]='http://aortan1.github.io/mastermind/?sn=5';
+  window["location"]='http://aortan1.github.io/mastermind/?sup=1';
   window["location"].reload(true);
 
 }
