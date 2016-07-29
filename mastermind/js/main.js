@@ -46,10 +46,10 @@ if (n==5) {
  function $_GET(key) {
   var s = window.location.search;
   s = s.match(new RegExp(key + '=([^&=]+)'));
-  return s ? s[1] : false;
+  return s;
 };
 
-alert( $_GET('test') );
+// alert( $_GET('test') );
 
 
 function rand_till(n){
