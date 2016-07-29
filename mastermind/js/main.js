@@ -20,6 +20,7 @@ var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
 
 window.onload=function(){
+alert("sup="+sup);
 if (n==4) {
   // Htag[0].classList.add("raiii");
   // alert("cont="+Htag[0].classList.contains('raiii'));  
@@ -131,7 +132,7 @@ switch (v==1){
   
 case false:
 
-// if (but.value=="DO IT." || but.value=="NICE!")  {window.location=window.location+'?sup=true';}
+if (but.value=="NICE!")  {window.location="http://aortan1.github.io/mastermind?sup=true";}
 if (but.value=="DO IT." || but.value=="NICE!")  {
  // 
  // window["location"].sup=1;
