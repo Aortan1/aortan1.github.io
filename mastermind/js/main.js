@@ -60,7 +60,7 @@ if (opac==1)  {
   window["location"].reload(true);  
 } 
   
-  
+ 
   // function go() { return; }
   
   for (var i = 0;  i < n*n_at; i++ ){
@@ -106,7 +106,7 @@ for (i = 0;  i < n_colors; i++ ){ // цвета от 1 до 6. Формирую 
 colors[i]=window.getComputedStyle(document.getElementsByClassName("bcol")[i]).backgroundColor;
    }
 
-  
+ alert("nn="+n);  
   if (window.getComputedStyle(Secrets[0]).backgroundColor == "rgb(0, 0, 0)") { // СОЗДАНИЕ СЕКРЕТНОГО НАБОРА ЦВЕТОВ
   color_def=window.getComputedStyle(Itags[0]).backgroundColor;
   Fon[0].style.backgroundColor = color_def;  
