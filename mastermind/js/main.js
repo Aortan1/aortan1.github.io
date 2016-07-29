@@ -23,7 +23,7 @@ var Fn = document.getElementById("id_fn");
 var Sn = document.getElementById("id_sn");
 
 window.onload=function(){
-n=Sn.value;
+// n=Sn.value;
 n=4;
 // if (n!=5) {n=4;}
 if (n==4) {
