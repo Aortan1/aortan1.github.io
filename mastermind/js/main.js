@@ -20,7 +20,7 @@ var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
 var Fn = document.getElementById("id_fn");
-var Sn = document.getElementById("id_sn");
+var Sn = document.getElementByName("sn");
 
 window.onload=function(){
 // n=Sn.value;
