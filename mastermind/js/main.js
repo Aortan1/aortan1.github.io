@@ -27,9 +27,6 @@ n=Sn.value;
 // n=4;
 // if (n!=5) {n=4;}
 if (n==4) {
-  // Htag[0].classList.add("raiii");
-  // alert("cont="+Htag[0].classList.contains('raiii'));  
-  // alert("leng="+document.getElementsByTagName("body")[0].classList.length); //  МЕТОД classList ТУПО НЕ РАБОТАЕТ, И НА НЁМ ПРЕРЫВАЕТСЯ ВЫПОЛНЕНИЕ ДЖИ-ЕС. ПОЧЕМУ - ПОТОМУ ЧТО СТРАНИЦА ЕЩЁ НЕ ЗАГРУЗИЛАСЬ, А ДЖИ ЭС УЖЕ ИЩЕТ ТЕГ БАДИ.
   Bod[0].classList.add('n-4-6');}
 if (n==5) {
   Bod[0].classList.add('n-5-8');  
