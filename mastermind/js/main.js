@@ -1,5 +1,6 @@
 
-
+window.onload=function(){
+  
 var n; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
 var n_at=8; // число попыток или строк по 4 яцейки.
@@ -21,7 +22,7 @@ var Bod = document.getElementsByTagName("body");
 var Fn = document.getElementById("id_fn");
 var Sn = document.getElementById("id_sn");
 
-window.onload=function(){
+
 n=Sn.value;
 // n=4;
 // if (n!=5) {n=4;}
