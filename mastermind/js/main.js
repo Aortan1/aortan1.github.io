@@ -210,7 +210,7 @@ Bcan =  document.getElementsByClassName("b_cansel");
            }   
 if (sum1==n && n==4){Htag[0].innerHTML="Отлично, комбинация разгадана!<br>А теперь СУПЕРИГРА:<br>5 цветов из 8.";}
 if (sum1==n && n==4){Htag[0].innerHTML="Отлично, вы угадали!<br>А теперь СУПЕРИГРА:<br>5 цветов из 8.";}
-if (sum1==n && n==5){Htag[0].innerHTML="ПОЗДРАВЛЯЮ!!! ВЫ РАЗГАДАЛИ КОМБИНАЦИЮ 5ти ЦВЕТОВ из 8!!!";}       
+if (sum1==n && n==5){Htag[0].innerHTML="ПОЗДРАВЛЯЮ!!! ВЫ РАЗГАДАЛИ КОМБИНАЦИЮ 5 из 8!!!";}       
 if (sum1==n){
 // Htag[0].style.backgroundColor = "#388E3C"; Htag[0].style.color="white";
 // Htag[0].style.fontSize = "20px"; 
