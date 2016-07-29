@@ -1,6 +1,6 @@
 
 
-var n; // число ячеек в строке
+// var n; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
 var n_at=8; // число попыток или строк по 4 яцейки.
 // if (sup==1) { n = 4;}
@@ -22,7 +22,7 @@ alert("nu");
 alert("n="+n);
 
 window.onload=function(){
-if (n==undefined) {n=4;}
+if (n==undefined) {var n=4;}
 if (n==4) {
   // Htag[0].classList.add("raiii");
   // alert("cont="+Htag[0].classList.contains('raiii'));  
