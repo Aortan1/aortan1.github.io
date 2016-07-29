@@ -1,5 +1,5 @@
 
-window.onload=function(){
+
 
 var n; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
@@ -19,12 +19,12 @@ var Att =  document.getElementsByClassName("attempt");
 var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
-// var Fn = document.getElementById("id_fn");
-// var Sn = document.getElementById("id_sn");
+var Fn = document.getElementById("id_fn");
+var Sn = document.getElementById("id_sn");
 
-
-// n=Sn.value;
-n=4;
+window.onload=function(){
+n=Sn.value;
+// n=4;
 // if (n!=5) {n=4;}
 if (n==4) {
   Bod[0].classList.add('n-4-6');}
