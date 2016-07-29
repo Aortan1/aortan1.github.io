@@ -23,8 +23,8 @@ var Fn = document.getElementById("id_fn");
 var Sn = document.getElementById("id_sn");
 
 
-n=Sn.value;
-// n=4;
+// n=Sn.value;
+n=4;
 // if (n!=5) {n=4;}
 if (n==4) {
   Bod[0].classList.add('n-4-6');}
