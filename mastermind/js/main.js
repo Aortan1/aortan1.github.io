@@ -20,10 +20,10 @@ var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
 var Fn = document.getElementById("id_fn");
-var sn = document.getElementById("id_sn");
+// var sn = document.getElementById("id_sn");
 
 window.onload=function(){
-sn = document.getElementById("id_sn");  
+// sn = document.getElementById("id_sn");  
 n=sn.value;
 // alert ("Sn.value"); 
 // n=4;
