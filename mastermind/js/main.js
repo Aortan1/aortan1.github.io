@@ -1,6 +1,6 @@
 
 
-var n = 4; // число ячеек в строке
+var n; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
 var n_at=8; // число попыток или строк по 4 яцейки.
 // if (sup==1) { n = 4;}
@@ -18,10 +18,11 @@ var Att =  document.getElementsByClassName("attempt");
 var Sample = document.getElementsByClassName("sample");
 var Butt = document.getElementsByClassName("bcol");
 var Bod = document.getElementsByTagName("body");
-alert("su");  
-alert("sup="+sup);
-window.onload=function(){
+alert("nu");  
+alert("n="+n);
 
+window.onload=function(){
+if (n==undefined) {n=4;}
 if (n==4) {
   // Htag[0].classList.add("raiii");
   // alert("cont="+Htag[0].classList.contains('raiii'));  
@@ -133,7 +134,7 @@ switch (v==1){
   
 case false:
 
-if (but.value=="NICE!")  {window.location="http://aortan1.github.io/mastermind?sup=true";}
+if (but.value=="NICE!")  {window.location="http://aortan1.github.io/mastermind?n=5";}
 if (but.value=="DO IT." || but.value=="NICE!")  {
  // 
  // window["location"].sup=1;
