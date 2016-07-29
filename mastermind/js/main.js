@@ -1,6 +1,6 @@
 
 window.onload=function(){
-  
+
 var n; // число ячеек в строке
 var n_colors = 6; // число вариантов цветов
 var n_at=8; // число попыток или строк по 4 яцейки.
@@ -140,7 +140,8 @@ switch (v==1){
   
 case false:
 
-if (but.value=="NICE!")  {window.location="http://aortan1.github.io/mastermind?n=5";}
+// if (but.value=="NICE!")  {window.location="http://aortan1.github.io/mastermind?n=5";}
+if (but.value=="NICE!")  {Sn.value=5;}
 if (but.value=="DO IT." || but.value=="NICE!")  {
  // 
  // window["location"].sup=1;
