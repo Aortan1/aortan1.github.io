@@ -16,8 +16,14 @@ var difficulty_level=400; // уровень сложности (количест
   });
   
  
- $('h1, .axes').click(function fadeedge(){
-  $('.edge-1,.edge-4,.edge-5').fadeTo(500,0.3).fadeTo(600,0.8).fadeTo(900,0.6).fadeTo(1350,1.0); //(декоративное мелькание граней)
+$('.axes').click(function fadeedge1(){
+  
+    $('.edge-1,.edge-4,.edge-5').fadeTo(500,0.3).fadeTo(600,0.8).fadeTo(900,0.6).fadeTo(1350,1.0); //(декоративное мелькание граней)
+  });
+
+$('h1').click(function fadeedge2(){
+  
+    $('.edge-1,.edge-4,.edge-5').fadeTo(300,0.4).fadeTo(400,0.7).fadeTo(500,0.5).fadeTo(600,0.8).fadeTo(700,0.6).fadeTo(1350,1.0); //(декоративное мелькание граней)
   });
 
   
