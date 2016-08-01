@@ -11,20 +11,26 @@ var difficulty_level=400; // уровень сложности (количест
  cube = fill_in_cells() ;
  cube = randcolors(difficulty_level, cube) ;
 
- $('.edge i:nth-child(5)').click(function fadeedge(){ //(убор верхних граней)
-  $('.edge-1,.edge-4,.edge-5').fadeTo(10,0.5).fadeTo(300,0.0).fadeTo(1000,0.0).fadeTo(300,1.0); 
+
+  $('h1').hover(function fadeedge0(){  
+    $('.edge-1,.edge-4,.edge-5').fadeTo(300,0.4); 
+  });
+ 
+ $('i').hover(function fadeedge1(){  
+    $('.edge-1,.edge-4,.edge-5').fadeTo(100,1.0); //(декоративное мелькание граней)
+  });
+
+  $('.axes').click(function fadeedge2(){  
+    $('.edge-1,.edge-4,.edge-5').fadeTo(300,0.4).fadeTo(400,0.7).fadeTo(533,0.5).fadeTo(709,0.8).fadeTo(943,0.6).fadeTo(1254,1.0); //(декоративное мелькание граней)
   });
   
  
-$('.axes').click(function fadeedge1(){
+// $('.axes').click(function fadeedge1(){
   
-    $('.edge-1,.edge-4,.edge-5').fadeTo(500,0.3).fadeTo(600,0.8).fadeTo(900,0.6).fadeTo(1350,1.0); //(декоративное мелькание граней)
-  });
+//     $('.edge-1,.edge-4,.edge-5').fadeTo(500,0.3).fadeTo(600,0.8).fadeTo(900,0.6).fadeTo(1350,1.0); //(декоративное мелькание граней)
+//   });
 
-$('h1').click(function fadeedge2(){
-  
-    $('.edge-1,.edge-4,.edge-5').fadeTo(300,0.4).fadeTo(400,0.7).fadeTo(500,0.5).fadeTo(600,0.8).fadeTo(700,0.6).fadeTo(1350,1.0); //(декоративное мелькание граней)
-  });
+
 
   
 $('.but').bind("click", function funbut(){
