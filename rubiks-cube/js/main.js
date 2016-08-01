@@ -16,7 +16,7 @@ var difficulty_level=400; // уровень сложности (количест
   });
   
  
- $('h1').click(function fadeedge(){
+ $('h1, .axes').click(function fadeedge(){
   $('.edge-1,.edge-4,.edge-5').fadeTo(500,0.3).fadeTo(600,0.8).fadeTo(900,0.6).fadeTo(1350,1.0); //(декоративное мелькание граней)
   });
 
