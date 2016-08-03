@@ -214,7 +214,7 @@ section.b-logoarea img.long {
   margin: 5px 0 0 0;
   border-radius: 30px;
 }
-
+section.b-logoarea img.long:hover{cursor:pointer;}
 
 
 section.b-wall{
@@ -411,13 +411,14 @@ div.bg-lines-up {
 .content-area  div.for-img .slides:hover{
 /*  z-index: 10;
  transition: 3s; */
+ cursor: pointer; 
 }
 
 .content-area  .slides img.picture {
 display: block;  
 width: 930px;
 height: 300px;
-cursor: pointer; 
+
 }
 
 .content-area  .slides-control{
@@ -509,7 +510,7 @@ border: 1px solid #c2c2c3;
 transition: 0.3s;
 cursor: pointer; 
 }
-
+section.b-wall .content-area  .slides-control img.pic:hover {cursor: pointer;}
 
 
 div.content-area .slides-control img.pic:hover, div.content-area .slides-control img.pic:focus {
@@ -582,8 +583,8 @@ section.b-wall .ar-big img.i-big{
   padding: 4px;
   margin: 0 0 15px 0;
   border: 1px solid #a3a3a3;
-  cursor: pointer; 
 }
+section.b-wall .ar-big img.i-big:hover {cursor: pointer;}
 
 section.b-wall  h1.ar-big-h1 {
   padding: 30px 0px 15px 0;
@@ -655,8 +656,8 @@ section.b-wall .ar-small img.i-small {
   padding: 2px;
   margin: 0 12px 40px 0;
   border: 1px solid #c6c6c6;
-  cursor: pointer; 
 }
+section.b-wall .ar-small img.i-small:hover {cursor: pointer;}
 
 section.b-wall .ar-small h1.ar-small-h1 {
   font-size: 12px;
@@ -680,8 +681,8 @@ section.b-wall img.img-latest {
   padding: 4px;
   margin: 0 18px 40px 0;
   border: 1px solid #a3a3a3;
-  cursor: pointer; 
 }
+section.b-wall img.img-latest:hover {cursor: pointer;}
 
 section.b-wall h2.ar-big-h2 {
   margin: 0 0 12px 0;
@@ -704,8 +705,9 @@ section.b-wall .narrow-col img.adver-img {
   
   width: 100%;
   margin: 20px 0 0 0;
-  cursor: pointer;
+
 }
+section.b-wall .narrow-col img.adver-img:hover {cursor: pointer;}
 
 section.b-wall .narrow-col h1.ar-big-h1 {
   margin: 5px 0 0 0;
@@ -715,10 +717,10 @@ section.b-wall .narrow-col img.sponsor-img {
   display: inline-block;  
 /*   float: left; */
   width: 43%;
-  margin: 20px 20px 00px 5px;
-  cursor: pointer; 
+  margin: 20px 20px 00px 5px; 
  
 }
+section.b-wall .narrow-col img.sponsor-img:hover {cursor: pointer;}
 
 section.b-wall .narrow-col img.sponsor-img:nth-child(2n){
   margin-right: 0;
@@ -894,6 +896,8 @@ img.small-logo {
   
   
 }
+img.small-logo:hover {cursor: pointer;}
+
 
 p.p-right {
  color: #bbb;
