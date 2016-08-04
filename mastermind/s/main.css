@@ -179,7 +179,8 @@ div.fild_buttons { width: 600px; }
  width: 60px;
  height: 60px;
  border-radius: 50%;
- color: transparent; 
+ color: transparent;
+ cursor: pointer; 
  }
 .fild_buttons .buttons input.b_pink, .fild_buttons .buttons input.b_dark{
   display: none;}
