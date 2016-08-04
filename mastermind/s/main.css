@@ -75,6 +75,7 @@ input.sample {
   font-size: 18px;
   color: white;
   background-color: #55b618;
+  cursor: pointer; 
 }
 
 .game{
