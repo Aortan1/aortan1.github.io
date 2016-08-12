@@ -205,7 +205,7 @@ div.fild_buttons { width: 600px; }
 width: 50px;
 height: 50px;}
 
-
+.n-5-8{background: linear-gradient(to top, #512DA8, #00796B);}
 .n-5-8 div.secret:nth-child(5),
 .n-5-8 .fild_buttons .buttons input:nth-child(7),
 .n-5-8 .fild_buttons .buttons input:nth-child(8)
