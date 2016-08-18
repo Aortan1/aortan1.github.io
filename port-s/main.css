@@ -504,7 +504,7 @@ body .ani .wrapper[data-anim~=wrapper] {
 
 body .ani .circle {
   -webkit-animation-iteration-count: 1;
-  -webkit-animation-duration: 7s;
+  -webkit-animation-duration: 20s;
   -webkit-animation-name: blow;
 }
 
