@@ -11,8 +11,8 @@
     $('.skills').removeClass('ani').addClass('ani');
     
     }
- if (scrolled>h_light && scrolled<h_light+200) $('.skill').removeClass('ho').addClass('ho');   
- if (scrolled<h_light || scrolled>h_light+200) $('.skill').removeClass('ho');
+ // if (scrolled>h_light && scrolled<h_light+200) $('.skill').removeClass('ho').addClass('ho');   
+ // if (scrolled<h_light || scrolled>h_light+200) $('.skill').removeClass('ho');
  
  if (scrolled>h_panel) $('body').addClass('sticky'); 
  if (scrolled<h_panel) $('body').removeClass('sticky');   

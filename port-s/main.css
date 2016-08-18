@@ -472,6 +472,42 @@ body .ani .wrapper[data-anim~=wrapper] {
   -webkit-animation-name: close-wrapper;
 }
 
+@-webkit-keyframes blow {
+  0% {
+    box-shadow: 0 0 0;
+    opacity: 0.2;
+  }
+  5% {
+    box-shadow: 0 0 50px;
+    opacity: 0.6;
+  }
+  100% {
+    box-shadow: 0 0 0;
+    opacity: 0.2;
+  }
+}
+
+@keyframes blow {
+  0% {
+    box-shadow: 0 0 0;
+    opacity: 0.2;
+  }
+  5% {
+    box-shadow: 0 0 50px;
+    opacity: 0.6;
+  }
+  100% {
+    box-shadow: 0 0 0;
+    opacity: 0.2;
+  }
+}
+
+body .ani .circle {
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-duration: 7s;
+  -webkit-animation-name: blow;
+}
+
 body .ani .circle[data-anim~=left] {
   -webkit-animation-duration: 1s;
   -webkit-animation-name: left-spin;
@@ -487,9 +523,17 @@ body .ani .s_html .circle[data-anim~=left] {
   -webkit-animation-name: left-spin-ht;
 }
 
+body .ani .s_html .circle.bg {
+  -webkit-animation-delay: 0;
+}
+
 body .ani .s_css .circle[data-anim~=left] {
   -webkit-animation-duration: 0.75s;
   -webkit-animation-name: left-spin-cs;
+}
+
+body .ani .s_css .circle.bg {
+  -webkit-animation-delay: 0.1s;
 }
 
 body .ani .s_js .circle[data-anim~=left] {
@@ -497,9 +541,17 @@ body .ani .s_js .circle[data-anim~=left] {
   -webkit-animation-name: left-spin-js;
 }
 
+body .ani .s_js .circle.bg {
+  -webkit-animation-delay: 0.2s;
+}
+
 body .ani .s_jquery .circle[data-anim~=left] {
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: left-spin-jq;
+}
+
+body .ani .s_jquery .circle.bg {
+  -webkit-animation-delay: 0.3s;
 }
 
 body .ani .s_jade .circle[data-anim~=left] {
@@ -507,14 +559,26 @@ body .ani .s_jade .circle[data-anim~=left] {
   -webkit-animation-name: left-spin-ja;
 }
 
+body .ani .s_jade .circle.bg {
+  -webkit-animation-delay: 0.4s;
+}
+
 body .ani .s_sass .circle[data-anim~=left] {
   -webkit-animation-duration: 0.33s;
   -webkit-animation-name: left-spin-sa;
 }
 
+body .ani .s_sass .circle.bg {
+  -webkit-animation-delay: 0.5s;
+}
+
 body .ani .s_php .circle[data-anim~=left] {
   -webkit-animation-duration: 0.25s;
   -webkit-animation-name: left-spin-ph;
+}
+
+body .ani .s_php .circle.bg {
+  -webkit-animation-delay: 0.6s;
 }
 
 @-webkit-keyframes right-spin {

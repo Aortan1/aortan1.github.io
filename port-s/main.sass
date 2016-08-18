@@ -11,6 +11,8 @@ $c_yell: #FFEB3B
 $c_grey: #9E9E9E
 
 $ti: 1s
+$to: 0.1s
+$c_bg: 7s
 
 $ht: 0.75
 $cs: 0.75
@@ -393,6 +395,22 @@ body
       -webkit-animation-duration: 0.01s
       -webkit-animation-delay: $ti / 2
       -webkit-animation-name: close-wrapper
+      
+    @keyframes blow
+      0%
+        box-shadow: 0 0 0
+        opacity: 0.2
+      5% 
+        box-shadow: 0 0 50px
+        opacity: 0.6
+      100% 
+        box-shadow: 0 0 0
+        opacity: 0.2      
+    
+    .circle
+      -webkit-animation-iteration-count: 1
+      -webkit-animation-duration: $c_bg   
+      -webkit-animation-name: blow      
 
     .circle
       &[data-anim~=left]
@@ -407,30 +425,44 @@ body
       &[data-anim~=left]
         -webkit-animation-duration: $ht * $ti
         -webkit-animation-name: left-spin-ht
+      &.bg
+        -webkit-animation-delay: 0
     .s_css .circle
       &[data-anim~=left]
         -webkit-animation-duration: $cs * $ti
         -webkit-animation-name: left-spin-cs
+      &.bg
+        -webkit-animation-delay: $to
     .s_js .circle
       &[data-anim~=left]
         -webkit-animation-duration: $js * $ti
         -webkit-animation-name: left-spin-js
+      &.bg
+        -webkit-animation-delay: $to * 2  
     .s_jquery .circle
       &[data-anim~=left]
         -webkit-animation-duration: $jq * $ti
         -webkit-animation-name: left-spin-jq
+      &.bg
+        -webkit-animation-delay: $to * 3      
     .s_jade .circle
       &[data-anim~=left]
         -webkit-animation-duration: $ja * $ti
         -webkit-animation-name: left-spin-ja
+      &.bg
+        -webkit-animation-delay: $to * 4      
     .s_sass .circle
       &[data-anim~=left]
         -webkit-animation-duration: $sa * $ti
         -webkit-animation-name: left-spin-sa
+      &.bg
+        -webkit-animation-delay: $to * 5      
     .s_php .circle
       &[data-anim~=left]
         -webkit-animation-duration: $ph * $ti
         -webkit-animation-name: left-spin-ph
+      &.bg
+        -webkit-animation-delay: $to * 6    
     
     
       @-webkit-keyframes right-spin
