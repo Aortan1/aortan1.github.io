@@ -533,7 +533,7 @@ body .ani .s_css .circle[data-anim~=left] {
 }
 
 body .ani .s_css .circle.bg {
-  -webkit-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.5s;
 }
 
 body .ani .s_js .circle[data-anim~=left] {
@@ -542,7 +542,7 @@ body .ani .s_js .circle[data-anim~=left] {
 }
 
 body .ani .s_js .circle.bg {
-  -webkit-animation-delay: 0.2s;
+  -webkit-animation-delay: 1s;
 }
 
 body .ani .s_jquery .circle[data-anim~=left] {
@@ -551,7 +551,7 @@ body .ani .s_jquery .circle[data-anim~=left] {
 }
 
 body .ani .s_jquery .circle.bg {
-  -webkit-animation-delay: 0.3s;
+  -webkit-animation-delay: 1.5s;
 }
 
 body .ani .s_jade .circle[data-anim~=left] {
@@ -560,7 +560,7 @@ body .ani .s_jade .circle[data-anim~=left] {
 }
 
 body .ani .s_jade .circle.bg {
-  -webkit-animation-delay: 0.4s;
+  -webkit-animation-delay: 2s;
 }
 
 body .ani .s_sass .circle[data-anim~=left] {
@@ -569,7 +569,7 @@ body .ani .s_sass .circle[data-anim~=left] {
 }
 
 body .ani .s_sass .circle.bg {
-  -webkit-animation-delay: 0.5s;
+  -webkit-animation-delay: 2.5s;
 }
 
 body .ani .s_php .circle[data-anim~=left] {
@@ -578,7 +578,7 @@ body .ani .s_php .circle[data-anim~=left] {
 }
 
 body .ani .s_php .circle.bg {
-  -webkit-animation-delay: 0.6s;
+  -webkit-animation-delay: 3s;
 }
 
 @-webkit-keyframes right-spin {
