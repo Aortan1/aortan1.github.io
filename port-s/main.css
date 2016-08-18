@@ -1,0 +1,736 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+.opaa {
+  opacity: 0.8;
+  background-color: red;
+  border: 10px solid green;
+  background-size: content;
+  transition: 2.5s;
+}
+
+img {
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font: 400 normal 16px 'Roboto','Open Sans', sans-serif;
+  color: #fff;
+}
+
+body .main {
+  text-align: center;
+  margin: 0 auto;
+  border: 0px solid red;
+}
+
+body .main h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 45px 0 0 0;
+}
+
+body .main h2 {
+  width: 250px;
+  margin: 0px auto;
+  padding: 30px 0;
+  font-size: 24px;
+  color: #5e5f58;
+  border: 0px solid green;
+}
+
+body section.me {
+  height: 460px;
+  background-color: black;
+  margin: 0 auto;
+  background: url("../port-i/gb-cod-02.png");
+  background-size: cover;
+}
+
+body section.me .main {
+  text-align: center;
+  padding-top: 65px;
+}
+
+body section.me .main .img-me {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+body section.me .main p.coder {
+  color: #dcd067;
+  font-size: 25px;
+  margin: 5px 0 0 0;
+}
+
+body section.me .main p.about {
+  color: #888;
+  font-size: 14px;
+  margin: 40px auto;
+  width: 585px;
+}
+
+body a.contact-me {
+  position: relative;
+  display: block;
+  width: 268px;
+  padding: 17px 0 0 32px;
+  height: 38px;
+  background: #83ad05 url("../port-i/sprite_p05.png") 56px -89px;
+  color: white;
+  font-size: 19px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 60px auto;
+  border-radius: 5px;
+}
+
+body section.info {
+  height: 320px;
+  background-color: #272822;
+  border-top: 1px solid #272822;
+}
+
+body section.info ul.ul-info {
+  position: relative;
+  width: 490px;
+  height: 150px;
+  font-family: Roboto-Regular;
+  border: 0px solid red;
+  margin: 100px auto 0;
+  padding: 0 0 0 50px;
+}
+
+body section.info ul.ul-info li {
+  position: relative;
+  float: left;
+  height: 50%;
+  padding: 0 0 0 0;
+  text-align: left;
+  font-size: 12px;
+  width: 49%;
+  border: 0px solid green;
+  opacity: 0.9;
+}
+
+body section.info ul.ul-info li:before {
+  content: "";
+  float: left;
+  display: block;
+  width: 55px;
+  height: 45px;
+  border: 0px solid white;
+  background: url("../port-i/sprite_p05.png");
+  opacity: 1;
+}
+
+body section.info ul.ul-info li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+body section.info ul.ul-info li:nth-child(1), body section.info ul.ul-info li:nth-child(2) {
+  clear: left;
+}
+
+body section.info ul.ul-info li:nth-child(3), body section.info ul.ul-info li:nth-child(4) {
+  float: right;
+  top: -51%;
+}
+
+body section.info ul.ul-info li.call, body section.info ul.ul-info li.call a {
+  color: #ac85ff;
+  cursor: default;
+}
+
+body section.info ul.ul-info li.skype, body section.info ul.ul-info li.skype a {
+  color: #67d9f0;
+}
+
+body section.info ul.ul-info li.mail, body section.info ul.ul-info li.mail a {
+  color: #f82840;
+}
+
+body section.info ul.ul-info li.git, body section.info ul.ul-info li.git a {
+  color: #a8e000;
+}
+
+body section.info ul.ul-info li.call:before {
+  background-position: 0 -38px;
+}
+
+body section.info ul.ul-info li.skype:before {
+  background-position: -159px -38px;
+}
+
+body section.info ul.ul-info li.mail:before {
+  background-position: -76px -38px;
+}
+
+body section.info ul.ul-info li.git:before {
+  background-position: -240px -38px;
+}
+
+.sticky {
+  padding-top: 320px;
+}
+
+.sticky section.me .main {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(23, 23, 20, 0.9);
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  z-index: 2;
+  top: 0;
+}
+
+.sticky section.me .main .img-me {
+  position: absolute;
+  top: 0;
+  left: 161px;
+  padding: 0;
+  margin: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.sticky section.me .main h1 {
+  position: absolute;
+  margin: 0;
+  top: 9px;
+  left: 271px;
+  font-size: 20px;
+}
+
+.sticky section.me .main p.coder {
+  position: absolute;
+  margin: 0;
+  top: 37px;
+  left: 271px;
+  font-size: 16px;
+}
+
+.sticky section.me .main p.about, .sticky section.me .main a.contact-me {
+  display: none;
+}
+
+.sticky section.info {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  border: 0px solid white;
+  height: 0;
+  top: 5px;
+}
+
+.sticky section.info .main {
+  position: absolute;
+  width: 100%;
+}
+
+.sticky section.info .main ul.ul-info {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0 0 0 500px;
+  border: 0px solid blue;
+}
+
+.sticky section.info .main ul.ul-info li:nth-child(n) {
+  top: 0;
+  min-width: 155px;
+  width: 11%;
+  clear: right;
+  display: inline-block;
+  float: left;
+  height: 60px;
+  padding: 13px 0 0 10px;
+}
+
+.sticky section.info .main ul.ul-info li:nth-child(n) p {
+  display: none;
+}
+
+.sticky section.info .main ul.ul-info li:nth-child(n) a {
+  font-size: 14px;
+}
+
+.sticky section.info .main ul.ul-info li:nth-child(n):before {
+  width: 22px;
+  height: 22px;
+  padding-right: 8px;
+}
+
+.sticky section.info .main ul.ul-info li:nth-child(n).call:before {
+  background-position: 0 -180px;
+}
+
+.sticky section.info .main ul.ul-info li:nth-child(n).skype:before {
+  background-position: -159px -180px;
+}
+
+.sticky section.info .main ul.ul-info li:nth-child(n).mail:before {
+  background-position: -76px -180px;
+}
+
+.sticky section.info .main ul.ul-info li:nth-child(n).git:before {
+  background-position: -240px -180px;
+}
+
+.sticky section.info .main ul.ul-info li:nth-child(3) {
+  border: 0px solid red;
+  margin-left: -50px;
+}
+
+.for-to-top section.my-pro a.to-top {
+  position: fixed;
+  top: 450px;
+}
+
+body section.knowlidge {
+  height: 280px;
+  background: url("../port-i/gb-cod-02.png");
+  background-size: cover;
+  border-top: 1px solid black;
+}
+
+body section.knowlidge h3 {
+  font-size: 24px;
+  margin-top: 45px;
+  text-transform: uppercase;
+}
+
+body section.knowlidge .skills {
+  position: relative;
+  width: 1050px;
+  height: 120px;
+  margin: 0 auto;
+  border: 0px solid white;
+}
+
+body section.knowlidge .skills .wrapper {
+  margin: 0px 0px;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  clip: rect(0px, 120px, 120px, 60px);
+}
+
+body section.knowlidge .skills .skill {
+  float: left;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-right: 35px;
+  border: 0px solid red;
+  transition: 5s;
+  opacity: 0.9;
+}
+
+body section.knowlidge .skills .skill:hover, body section.knowlidge .skills .skill.ho {
+  opacity: 1.0;
+  transition: 0.3s;
+}
+
+body section.knowlidge .skills .skill:hover .circle.bg, body section.knowlidge .skills .skill.ho .circle.bg {
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+body section.knowlidge .skills .skill.s_html {
+  color: #f2273e;
+}
+
+body section.knowlidge .skills .skill.s_html .circle {
+  border-color: #f2273e;
+}
+
+body section.knowlidge .skills .skill.s_html:hover .circle.bg, body section.knowlidge .skills .skill.s_html.ho .circle.bg {
+  box-shadow: -24px 15px 50px #f2273e;
+}
+
+body section.knowlidge .skills .skill.s_css {
+  color: #a781f8;
+}
+
+body section.knowlidge .skills .skill.s_css .circle {
+  border-color: #a781f8;
+}
+
+body section.knowlidge .skills .skill.s_css:hover .circle.bg, body section.knowlidge .skills .skill.s_css.ho .circle.bg {
+  box-shadow: -16px 15px 50px #a781f8;
+}
+
+body section.knowlidge .skills .skill.s_js {
+  color: #ff9a05;
+}
+
+body section.knowlidge .skills .skill.s_js .circle {
+  border-color: #ff9a05;
+}
+
+body section.knowlidge .skills .skill.s_js:hover .circle.bg, body section.knowlidge .skills .skill.s_js.ho .circle.bg {
+  box-shadow: -8px 15px 50px #ff9a05;
+}
+
+body section.knowlidge .skills .skill.s_jquery {
+  color: #a5db00;
+}
+
+body section.knowlidge .skills .skill.s_jquery .circle {
+  border-color: #a5db00;
+}
+
+body section.knowlidge .skills .skill.s_jquery:hover .circle.bg, body section.knowlidge .skills .skill.s_jquery.ho .circle.bg {
+  box-shadow: 0px 15px 50px #a5db00;
+}
+
+body section.knowlidge .skills .skill.s_jade {
+  color: #67dcf3;
+}
+
+body section.knowlidge .skills .skill.s_jade .circle {
+  border-color: #67dcf3;
+}
+
+body section.knowlidge .skills .skill.s_jade:hover .circle.bg, body section.knowlidge .skills .skill.s_jade.ho .circle.bg {
+  box-shadow: 8px 15px 50px #67dcf3;
+}
+
+body section.knowlidge .skills .skill.s_sass {
+  color: #FFEB3B;
+}
+
+body section.knowlidge .skills .skill.s_sass .circle {
+  border-color: #FFEB3B;
+}
+
+body section.knowlidge .skills .skill.s_sass:hover .circle.bg, body section.knowlidge .skills .skill.s_sass.ho .circle.bg {
+  box-shadow: 16px 15px 50px #FFEB3B;
+}
+
+body section.knowlidge .skills .skill.s_php {
+  color: #9E9E9E;
+}
+
+body section.knowlidge .skills .skill.s_php .circle {
+  border-color: #9E9E9E;
+}
+
+body section.knowlidge .skills .skill.s_php:hover .circle.bg, body section.knowlidge .skills .skill.s_php.ho .circle.bg {
+  box-shadow: 24px 15px 50px #9E9E9E;
+}
+
+body section.knowlidge .skills .skill:last-child {
+  margin-right: 0;
+}
+
+body section.knowlidge .skills .circle {
+  float: rigth;
+  width: 110px;
+  height: 110px;
+  border: 5px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  clip: rect(0px, 60px, 120px, 0px);
+  transition: 5s;
+}
+
+body section.knowlidge .skills .circle.bg {
+  clip: auto;
+  opacity: 0.2;
+}
+
+body .ani {
+  transition: 5s;
+}
+
+body .ani div[data-anim~=base] {
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+}
+
+body .ani .wrapper[data-anim~=wrapper] {
+  -webkit-animation-duration: 0.01s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-name: close-wrapper;
+}
+
+body .ani .circle[data-anim~=left] {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: left-spin;
+}
+
+body .ani .circle[data-anim~=right] {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: right-spin;
+}
+
+body .ani .s_html .circle[data-anim~=left] {
+  -webkit-animation-duration: 0.75s;
+  -webkit-animation-name: left-spin-ht;
+}
+
+body .ani .s_css .circle[data-anim~=left] {
+  -webkit-animation-duration: 0.75s;
+  -webkit-animation-name: left-spin-cs;
+}
+
+body .ani .s_js .circle[data-anim~=left] {
+  -webkit-animation-duration: 0.33s;
+  -webkit-animation-name: left-spin-js;
+}
+
+body .ani .s_jquery .circle[data-anim~=left] {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: left-spin-jq;
+}
+
+body .ani .s_jade .circle[data-anim~=left] {
+  -webkit-animation-duration: 0.66s;
+  -webkit-animation-name: left-spin-ja;
+}
+
+body .ani .s_sass .circle[data-anim~=left] {
+  -webkit-animation-duration: 0.33s;
+  -webkit-animation-name: left-spin-sa;
+}
+
+body .ani .s_php .circle[data-anim~=left] {
+  -webkit-animation-duration: 0.25s;
+  -webkit-animation-name: left-spin-ph;
+}
+
+@-webkit-keyframes right-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes left-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes left-spin-ht {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(270deg);
+  }
+}
+
+@-webkit-keyframes left-spin-cs {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(270deg);
+  }
+}
+
+@-webkit-keyframes left-spin-js {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(118.8deg);
+  }
+}
+
+@-webkit-keyframes left-spin-jq {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes left-spin-ja {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(237.6deg);
+  }
+}
+
+@-webkit-keyframes left-spin-sa {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(118.8deg);
+  }
+}
+
+@-webkit-keyframes left-spin-ph {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(90deg);
+  }
+}
+
+@-webkit-keyframes close-wrapper {
+  to {
+    clip: rect(auto, auto, auto, auto);
+  }
+}
+
+body section.my-pro {
+  position: relative;
+  background-color: #272822;
+  border: 1px dotted #444;
+  border-width: 1px 0 1px 0;
+}
+
+body section.my-pro h2 {
+  padding: 60px 0;
+}
+
+body section.my-pro a.to-top {
+  position: absolute;
+  top: 320px;
+  left: 170px;
+  width: 54px;
+  height: 54px;
+  border: 4px solid #fff;
+  opacity: 0.2;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+body section.my-pro a.to-top .line {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  z-index: 1;
+  width: 10px;
+  height: 0px;
+  border: 2px solid #fff;
+}
+
+body section.my-pro a.to-top .line.n1 {
+  -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  top: 23px;
+  left: 15px;
+}
+
+body section.my-pro a.to-top .line.n2 {
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
+  top: 23px;
+  left: 25px;
+}
+
+body section.my-pro a.to-top:hover {
+  opacity: 0.4;
+}
+
+body section.my-pro .pro {
+  position: relative;
+  width: 940px;
+  margin: 0 auto 80px;
+  border: 0px solid white;
+}
+
+body section.my-pro .pro img {
+  width: 940px;
+}
+
+body section.my-pro .pro .mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+body section.my-pro .pro .mask p.view {
+  width: 300px;
+  height: 40px;
+  padding-top: 16px;
+  margin: 90px auto;
+  border-radius: 5px;
+  border: 2px solid white;
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0.5;
+}
+
+body section.my-pro .pro .mask:hover {
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+body section.my-pro .pro .mask:hover p.view {
+  opacity: 0.9;
+  color: #a5db00;
+  border-color: #a5db00;
+  transition: 0.5s;
+}
+
+body section.my-pro .pro .mask p.name {
+  position: absolute;
+  width: 100%;
+  bottom: -40px;
+  color: #fff;
+  text-shadow: #222 1px 1px;
+  text-align: left;
+  font-size: 20px;
+  padding: 10px 0 10px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+body section.my-pro .pro .mask:hover p.name {
+  bottom: 0px;
+  transition: 0.5s;
+}
+
+body section.footer {
+  padding-top: 20px;
+  height: 300px;
+  background-color: #272822;
+}
+
+body section.footer button.contact-me {
+  margin: 0px auto 50px;
+}
+
+body section.footer p.thanks {
+  font-size: 18px;
+}
