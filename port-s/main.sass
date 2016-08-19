@@ -409,14 +409,14 @@ body
   .ani
     transition: 5s
     div[data-anim~=base]
-      -webkit-animation-iteration-count: 1
-      -webkit-animation-fill-mode: forwards
-      -webkit-animation-timing-function: linear
+      animation-iteration-count: 1
+      animation-fill-mode: forwards
+      animation-timing-function: linear
 
     .wrapper[data-anim~=wrapper]
-      -webkit-animation-duration: 0.01s
-      -webkit-animation-delay: $ti / 2
-      -webkit-animation-name: close-wrapper
+      animation-duration: 0.01s
+      animation-delay: $ti / 2
+      animation-name: close-wrapper
       
     @keyframes blow
       0%
@@ -430,137 +430,137 @@ body
         opacity: 0.4      
     
     .circle.light
-      -webkit-animation-iteration-count: 1
-      -webkit-animation-duration: $c_bg   
-      -webkit-animation-name: blow
+      animation-iteration-count: 1
+      animation-duration: $c_bg   
+      animation-name: blow
 
     .circle
       &[data-anim~=left]
-        -webkit-animation-duration: $ti   
-        -webkit-animation-name: left-spin    
+        animation-duration: $ti   
+        animation-name: left-spin    
       &[data-anim~=right]
-        -webkit-animation-duration: $ti / 2
-        -webkit-animation-name: right-spin    
+        animation-duration: $ti / 2
+        animation-name: right-spin    
     .s_html .circle
       &[data-anim~=left]
-        -webkit-animation-duration: $ht * $ti
-        -webkit-animation-name: left-spin-ht
+        animation-duration: $ht * $ti
+        animation-name: left-spin-ht
     .s_css .circle
       &[data-anim~=left]
-        -webkit-animation-duration: $cs * $ti
-        -webkit-animation-name: left-spin-cs
+        animation-duration: $cs * $ti
+        animation-name: left-spin-cs
     .s_js .circle
       &[data-anim~=left]
-        -webkit-animation-duration: $js * $ti
-        -webkit-animation-name: left-spin-js
+        animation-duration: $js * $ti
+        animation-name: left-spin-js
     .s_jquery .circle
       &[data-anim~=left]
-        -webkit-animation-duration: $jq * $ti
-        -webkit-animation-name: left-spin-jq 
+        animation-duration: $jq * $ti
+        animation-name: left-spin-jq 
     .s_jade .circle
       &[data-anim~=left]
-        -webkit-animation-duration: $ja * $ti
-        -webkit-animation-name: left-spin-ja    
+        animation-duration: $ja * $ti
+        animation-name: left-spin-ja    
     .s_sass .circle
       &[data-anim~=left]
-        -webkit-animation-duration: $sa * $ti
-        -webkit-animation-name: left-spin-sa     
+        animation-duration: $sa * $ti
+        animation-name: left-spin-sa     
     .s_php .circle
       &[data-anim~=left]
-        -webkit-animation-duration: $ph * $ti
-        -webkit-animation-name: left-spin-ph
+        animation-duration: $ph * $ti
+        animation-name: left-spin-ph
     
     .s_html      
       div[data-anim~=wrapper]  
-        -webkit-animation-delay: $ti / 2    
+        animation-delay: $ti / 2    
     .s_css
       div[data-anim~=base], .light
-        -webkit-animation-delay: $to
+        animation-delay: $to
       div[data-anim~=wrapper]  
-        -webkit-animation-delay: $ti / 2 + $to
+        animation-delay: $ti / 2 + $to
     .s_js
       div[data-anim~=base], .light
-        -webkit-animation-delay: $to * 2 
+        animation-delay: $to * 2 
       div[data-anim~=wrapper]  
-        -webkit-animation-delay: $ti / 2 + $to * 2
+        animation-delay: $ti / 2 + $to * 2
     .s_jquery
       div[data-anim~=base], .light
-        -webkit-animation-delay: $to * 3 
+        animation-delay: $to * 3 
       div[data-anim~=wrapper]  
-        -webkit-animation-delay: $ti / 2 + $to * 3
+        animation-delay: $ti / 2 + $to * 3
     .s_jade
       div[data-anim~=base], .light
-        -webkit-animation-delay: $to * 4
+        animation-delay: $to * 4
       div[data-anim~=wrapper]  
-        -webkit-animation-delay: $ti / 2 + $to * 4  
+        animation-delay: $ti / 2 + $to * 4  
     .s_sass
       div[data-anim~=base], .light
-        -webkit-animation-delay: $to * 5
+        animation-delay: $to * 5
       div[data-anim~=wrapper]  
-        -webkit-animation-delay: $ti / 2 + $to * 5
+        animation-delay: $ti / 2 + $to * 5
     .s_php
       div[data-anim~=base], .light
-        -webkit-animation-delay: $to * 6
+        animation-delay: $to * 6
       div[data-anim~=wrapper]  
-        -webkit-animation-delay: $ti / 2 + $to * 6     
+        animation-delay: $ti / 2 + $to * 6     
     
     
-      @-webkit-keyframes right-spin
+      @keyframes right-spin
         from
-          -webkit-transform: rotate(0deg)
+          transform: rotate(0deg)
         to
-          -webkit-transform: rotate(180deg)
+          transform: rotate(180deg)
 
     
-      @-webkit-keyframes left-spin
+      @keyframes left-spin
         from
-          -webkit-transform: rotate(0deg)
+          transform: rotate(0deg)
         to
-          -webkit-transform: rotate(360deg)  
+          transform: rotate(360deg)  
     
-      @-webkit-keyframes left-spin-ht
+      @keyframes left-spin-ht
         from
-          -webkit-transform: rotate(0deg)
+          transform: rotate(0deg)
         to
-          -webkit-transform: rotate($ht * 360deg)
+          transform: rotate($ht * 360deg)
     
-      @-webkit-keyframes left-spin-cs
+      @keyframes left-spin-cs
         from
-          -webkit-transform: rotate(0deg)
+          transform: rotate(0deg)
         to
-          -webkit-transform: rotate($cs * 360deg)
+          transform: rotate($cs * 360deg)
     
-      @-webkit-keyframes left-spin-js
+      @keyframes left-spin-js
         from
-          -webkit-transform: rotate(0deg)
+          transform: rotate(0deg)
         to
-          -webkit-transform: rotate($js * 360deg)
+          transform: rotate($js * 360deg)
     
-      @-webkit-keyframes left-spin-jq
+      @keyframes left-spin-jq
         from
-          -webkit-transform: rotate(0deg)
+          transform: rotate(0deg)
         to
-          -webkit-transform: rotate($jq * 360deg)
+          transform: rotate($jq * 360deg)
     
-      @-webkit-keyframes left-spin-ja
+      @keyframes left-spin-ja
         from
-          -webkit-transform: rotate(0deg)
+          transform: rotate(0deg)
         to
-          -webkit-transform: rotate($ja * 360deg)
+          transform: rotate($ja * 360deg)
     
-      @-webkit-keyframes left-spin-sa
+      @keyframes left-spin-sa
         from
-          -webkit-transform: rotate(0deg)
+          transform: rotate(0deg)
         to
-          -webkit-transform: rotate($sa * 360deg)
+          transform: rotate($sa * 360deg)
     
-      @-webkit-keyframes left-spin-ph
+      @keyframes left-spin-ph
         from
-          -webkit-transform: rotate(0deg)
+          transform: rotate(0deg)
         to
-          -webkit-transform: rotate($ph * 360deg)    
+          transform: rotate($ph * 360deg)    
     
-      @-webkit-keyframes close-wrapper
+      @keyframes close-wrapper
         to
           clip: rect(auto, auto, auto, auto)
   
