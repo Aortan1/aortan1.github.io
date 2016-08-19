@@ -4,7 +4,7 @@
   window.onscroll = function() {
   
   var scrolled = window.pageYOffset;
-  var h_light=00, h_ani=50, h_panel=670, h_to_top=900;  
+  var h_light=00, h_ani=5, h_panel=670, h_to_top=900;  
   if (scrolled<h_ani)  $('.skills').removeClass('ani'); 
   if (scrolled>h_ani) {
     
