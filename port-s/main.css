@@ -53,6 +53,7 @@ body section.me {
   margin: 0 auto;
   background: url("../port-i/gb-cod-02.png");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 body section.me .main {
@@ -304,6 +305,7 @@ body section.knowlidge {
   height: 280px;
   background: url("../port-i/gb-cod-02.png");
   background-size: cover;
+  background-attachment: fixed;
   border-top: 1px solid black;
 }
 
