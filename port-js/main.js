@@ -27,7 +27,7 @@
 
 $(document).ready (function(){
  $('a.to-top').click(function () {
-            $('body,html').animate({
+            $('body, html').animate({
                 scrollTop: 0
             }, 1000);
             // return false;
