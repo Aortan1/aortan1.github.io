@@ -347,7 +347,7 @@ body section.knowlidge .skills .skill:hover, body section.knowlidge .skills .ski
 }
 
 body section.knowlidge .skills .skill:hover .circle.bg, body section.knowlidge .skills .skill.ho .circle.bg {
-  opacity: 0.5;
+  opacity: 0.8;
   transition: 0.2s;
 }
 
@@ -456,6 +456,20 @@ body section.knowlidge .skills .circle.bg {
   opacity: 0.2;
 }
 
+body section.knowlidge .skills .circle.black {
+  clip: auto;
+  opacity: 1;
+  border: 5px solid #161613 !important;
+}
+
+body section.knowlidge .skills .circle.light {
+  clip: auto;
+  opacity: 1;
+  width: 120px;
+  height: 120px;
+  border-width: 0;
+}
+
 body .ani {
   transition: 5s;
 }
@@ -475,34 +489,34 @@ body .ani .wrapper[data-anim~=wrapper] {
 @-webkit-keyframes blow {
   0% {
     box-shadow: 0 0 0;
-    opacity: 0.2;
+    opacity: 0.5;
   }
   5% {
     box-shadow: 0 0 50px;
-    opacity: 0.6;
+    opacity: 1.0;
   }
   100% {
     box-shadow: 0 0 0;
-    opacity: 0.2;
+    opacity: 0.7;
   }
 }
 
 @keyframes blow {
   0% {
     box-shadow: 0 0 0;
-    opacity: 0.2;
+    opacity: 0.5;
   }
   5% {
     box-shadow: 0 0 50px;
-    opacity: 0.6;
+    opacity: 1.0;
   }
   100% {
     box-shadow: 0 0 0;
-    opacity: 0.2;
+    opacity: 0.7;
   }
 }
 
-body .ani .circle {
+body .ani .circle.light {
   -webkit-animation-iteration-count: 1;
   -webkit-animation-duration: 20s;
   -webkit-animation-name: blow;
@@ -523,17 +537,9 @@ body .ani .s_html .circle[data-anim~=left] {
   -webkit-animation-name: left-spin-ht;
 }
 
-body .ani .s_html .circle.bg {
-  -webkit-animation-delay: 0;
-}
-
 body .ani .s_css .circle[data-anim~=left] {
   -webkit-animation-duration: 0.75s;
   -webkit-animation-name: left-spin-cs;
-}
-
-body .ani .s_css .circle.bg {
-  -webkit-animation-delay: 0.5s;
 }
 
 body .ani .s_js .circle[data-anim~=left] {
@@ -541,17 +547,9 @@ body .ani .s_js .circle[data-anim~=left] {
   -webkit-animation-name: left-spin-js;
 }
 
-body .ani .s_js .circle.bg {
-  -webkit-animation-delay: 1s;
-}
-
 body .ani .s_jquery .circle[data-anim~=left] {
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: left-spin-jq;
-}
-
-body .ani .s_jquery .circle.bg {
-  -webkit-animation-delay: 1.5s;
 }
 
 body .ani .s_jade .circle[data-anim~=left] {
@@ -559,17 +557,9 @@ body .ani .s_jade .circle[data-anim~=left] {
   -webkit-animation-name: left-spin-ja;
 }
 
-body .ani .s_jade .circle.bg {
-  -webkit-animation-delay: 2s;
-}
-
 body .ani .s_sass .circle[data-anim~=left] {
   -webkit-animation-duration: 0.33s;
   -webkit-animation-name: left-spin-sa;
-}
-
-body .ani .s_sass .circle.bg {
-  -webkit-animation-delay: 2.5s;
 }
 
 body .ani .s_php .circle[data-anim~=left] {
@@ -577,8 +567,56 @@ body .ani .s_php .circle[data-anim~=left] {
   -webkit-animation-name: left-spin-ph;
 }
 
-body .ani .s_php .circle.bg {
+body .ani .s_html div[data-anim~=wrapper] {
+  -webkit-animation-delay: 0.5s;
+}
+
+body .ani .s_css div[data-anim~=base], body .ani .s_css .light {
+  -webkit-animation-delay: 0.5s;
+}
+
+body .ani .s_css div[data-anim~=wrapper] {
+  -webkit-animation-delay: 1s;
+}
+
+body .ani .s_js div[data-anim~=base], body .ani .s_js .light {
+  -webkit-animation-delay: 1s;
+}
+
+body .ani .s_js div[data-anim~=wrapper] {
+  -webkit-animation-delay: 1.5s;
+}
+
+body .ani .s_jquery div[data-anim~=base], body .ani .s_jquery .light {
+  -webkit-animation-delay: 1.5s;
+}
+
+body .ani .s_jquery div[data-anim~=wrapper] {
+  -webkit-animation-delay: 2s;
+}
+
+body .ani .s_jade div[data-anim~=base], body .ani .s_jade .light {
+  -webkit-animation-delay: 2s;
+}
+
+body .ani .s_jade div[data-anim~=wrapper] {
+  -webkit-animation-delay: 2.5s;
+}
+
+body .ani .s_sass div[data-anim~=base], body .ani .s_sass .light {
+  -webkit-animation-delay: 2.5s;
+}
+
+body .ani .s_sass div[data-anim~=wrapper] {
   -webkit-animation-delay: 3s;
+}
+
+body .ani .s_php div[data-anim~=base], body .ani .s_php .light {
+  -webkit-animation-delay: 3s;
+}
+
+body .ani .s_php div[data-anim~=wrapper] {
+  -webkit-animation-delay: 3.5s;
 }
 
 @-webkit-keyframes right-spin {

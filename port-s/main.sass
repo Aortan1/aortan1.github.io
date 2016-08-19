@@ -302,7 +302,7 @@ body
         opacity: 1.0
         transition: 0.3s
         .circle.bg
-          opacity: 0.5
+          opacity: 0.8
           transition: 0.2s
         
         
@@ -380,8 +380,16 @@ body
       &.bg
         clip: auto        
         opacity: 0.2
-    // Врепер полюбому обрезает видимость, значит фоновый кружок нужно делать снаружи Врепера. Таки предётся для каждого кружка делать ещё один внешний релятивный контейнер.
-  
+      &.black
+        clip: auto        
+        opacity: 1
+        border: 5px solid #161613!important
+      &.light
+        clip: auto        
+        opacity: 1
+        width: 120px
+        height: 120px
+        border-width: 0
     
     
   .ani
@@ -395,74 +403,92 @@ body
       -webkit-animation-duration: 0.01s
       -webkit-animation-delay: $ti / 2
       -webkit-animation-name: close-wrapper
-
+      
     @keyframes blow
       0%
         box-shadow: 0 0 0
-        opacity: 0.2
+        opacity: 0.5
       5% 
         box-shadow: 0 0 50px
-        opacity: 0.6
+        opacity: 1.0
       100% 
         box-shadow: 0 0 0
-        opacity: 0.2      
+        opacity: 0.7      
     
-    .circle
+    .circle.light
       -webkit-animation-iteration-count: 1
       -webkit-animation-duration: $c_bg   
-      -webkit-animation-name: blow      
+      -webkit-animation-name: blow
 
     .circle
       &[data-anim~=left]
         -webkit-animation-duration: $ti   
-        -webkit-animation-name: left-spin
-    
+        -webkit-animation-name: left-spin    
       &[data-anim~=right]
         -webkit-animation-duration: $ti / 2
-        -webkit-animation-name: right-spin
-    
+        -webkit-animation-name: right-spin    
     .s_html .circle
       &[data-anim~=left]
         -webkit-animation-duration: $ht * $ti
         -webkit-animation-name: left-spin-ht
-      &.bg
-        -webkit-animation-delay: 0
     .s_css .circle
       &[data-anim~=left]
         -webkit-animation-duration: $cs * $ti
         -webkit-animation-name: left-spin-cs
-      &.bg
-        -webkit-animation-delay: $to
     .s_js .circle
       &[data-anim~=left]
         -webkit-animation-duration: $js * $ti
         -webkit-animation-name: left-spin-js
-      &.bg
-        -webkit-animation-delay: $to * 2  
     .s_jquery .circle
       &[data-anim~=left]
         -webkit-animation-duration: $jq * $ti
-        -webkit-animation-name: left-spin-jq
-      &.bg
-        -webkit-animation-delay: $to * 3      
+        -webkit-animation-name: left-spin-jq 
     .s_jade .circle
       &[data-anim~=left]
         -webkit-animation-duration: $ja * $ti
-        -webkit-animation-name: left-spin-ja
-      &.bg
-        -webkit-animation-delay: $to * 4      
+        -webkit-animation-name: left-spin-ja    
     .s_sass .circle
       &[data-anim~=left]
         -webkit-animation-duration: $sa * $ti
-        -webkit-animation-name: left-spin-sa
-      &.bg
-        -webkit-animation-delay: $to * 5      
+        -webkit-animation-name: left-spin-sa     
     .s_php .circle
       &[data-anim~=left]
         -webkit-animation-duration: $ph * $ti
         -webkit-animation-name: left-spin-ph
-      &.bg
-        -webkit-animation-delay: $to * 6    
+    
+    .s_html      
+      div[data-anim~=wrapper]  
+        -webkit-animation-delay: $ti / 2    
+    .s_css
+      div[data-anim~=base], .light
+        -webkit-animation-delay: $to
+      div[data-anim~=wrapper]  
+        -webkit-animation-delay: $ti / 2 + $to
+    .s_js
+      div[data-anim~=base], .light
+        -webkit-animation-delay: $to * 2 
+      div[data-anim~=wrapper]  
+        -webkit-animation-delay: $ti / 2 + $to * 2
+    .s_jquery
+      div[data-anim~=base], .light
+        -webkit-animation-delay: $to * 3 
+      div[data-anim~=wrapper]  
+        -webkit-animation-delay: $ti / 2 + $to * 3
+    .s_jade
+      div[data-anim~=base], .light
+        -webkit-animation-delay: $to * 4
+      div[data-anim~=wrapper]  
+        -webkit-animation-delay: $ti / 2 + $to * 4  
+    .s_sass
+      div[data-anim~=base], .light
+        -webkit-animation-delay: $to * 5
+      div[data-anim~=wrapper]  
+        -webkit-animation-delay: $ti / 2 + $to * 5
+    .s_php
+      div[data-anim~=base], .light
+        -webkit-animation-delay: $to * 6
+      div[data-anim~=wrapper]  
+        -webkit-animation-delay: $ti / 2 + $to * 6     
     
     
       @-webkit-keyframes right-spin
