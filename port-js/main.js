@@ -22,4 +22,11 @@
  if (scrolled<h_to_top-winh) $('body').removeClass('for-to-top');     
  };
  // });              
-        
+ 
+
+ $('a.to-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });       
