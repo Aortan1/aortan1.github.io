@@ -23,6 +23,7 @@ ul {
 body {
   font: 400 normal 16px 'Roboto','Open Sans', sans-serif;
   color: #fff;
+  background: transparent;
 }
 
 body .main {
@@ -313,7 +314,7 @@ body section.info ul.ul-info li.git:before {
 
 .for-to-top section.my-pro a.to-top {
   position: fixed;
-  top: 450px;
+  top: calc(100% - 120px);
 }
 
 body section.knowlidge {
