@@ -482,7 +482,7 @@ body .ani div[data-anim~=base] {
 
 body .ani .wrapper[data-anim~=wrapper] {
   -webkit-animation-duration: 0.01s;
-  -webkit-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.4s;
   -webkit-animation-name: close-wrapper;
 }
 
@@ -523,100 +523,100 @@ body .ani .circle.light {
 }
 
 body .ani .circle[data-anim~=left] {
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 0.8s;
   -webkit-animation-name: left-spin;
 }
 
 body .ani .circle[data-anim~=right] {
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.4s;
   -webkit-animation-name: right-spin;
 }
 
 body .ani .s_html .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.75s;
+  -webkit-animation-duration: 0.6s;
   -webkit-animation-name: left-spin-ht;
 }
 
 body .ani .s_css .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.75s;
+  -webkit-animation-duration: 0.6s;
   -webkit-animation-name: left-spin-cs;
 }
 
 body .ani .s_js .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.33s;
+  -webkit-animation-duration: 0.264s;
   -webkit-animation-name: left-spin-js;
 }
 
 body .ani .s_jquery .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.4s;
   -webkit-animation-name: left-spin-jq;
 }
 
 body .ani .s_jade .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.66s;
+  -webkit-animation-duration: 0.528s;
   -webkit-animation-name: left-spin-ja;
 }
 
 body .ani .s_sass .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.33s;
+  -webkit-animation-duration: 0.264s;
   -webkit-animation-name: left-spin-sa;
 }
 
 body .ani .s_php .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.25s;
+  -webkit-animation-duration: 0.2s;
   -webkit-animation-name: left-spin-ph;
 }
 
 body .ani .s_html div[data-anim~=wrapper] {
-  -webkit-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.4s;
 }
 
 body .ani .s_css div[data-anim~=base], body .ani .s_css .light {
-  -webkit-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.4s;
 }
 
 body .ani .s_css div[data-anim~=wrapper] {
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 0.8s;
 }
 
 body .ani .s_js div[data-anim~=base], body .ani .s_js .light {
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 0.8s;
 }
 
 body .ani .s_js div[data-anim~=wrapper] {
-  -webkit-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.2s;
 }
 
 body .ani .s_jquery div[data-anim~=base], body .ani .s_jquery .light {
-  -webkit-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.2s;
 }
 
 body .ani .s_jquery div[data-anim~=wrapper] {
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 1.6s;
 }
 
 body .ani .s_jade div[data-anim~=base], body .ani .s_jade .light {
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 1.6s;
 }
 
 body .ani .s_jade div[data-anim~=wrapper] {
-  -webkit-animation-delay: 2.5s;
+  -webkit-animation-delay: 2s;
 }
 
 body .ani .s_sass div[data-anim~=base], body .ani .s_sass .light {
-  -webkit-animation-delay: 2.5s;
+  -webkit-animation-delay: 2s;
 }
 
 body .ani .s_sass div[data-anim~=wrapper] {
-  -webkit-animation-delay: 3s;
+  -webkit-animation-delay: 2.4s;
 }
 
 body .ani .s_php div[data-anim~=base], body .ani .s_php .light {
-  -webkit-animation-delay: 3s;
+  -webkit-animation-delay: 2.4s;
 }
 
 body .ani .s_php div[data-anim~=wrapper] {
-  -webkit-animation-delay: 3.5s;
+  -webkit-animation-delay: 2.8s;
 }
 
 @-webkit-keyframes right-spin {
