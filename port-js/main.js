@@ -41,7 +41,7 @@
 // });
 
 $(document).ready (function(){
-    $('a.to-top').click(function(){
+    $('a.to-top').click(function totop(){
        $('html, body').animate({scrollTop:0}, 4000);
        $('section.me').fadeTo(1000,0).fadeTo(1000,1.0).fadeTo(1000,0.0).fadeTo(3000,1.0);
        return false; 
