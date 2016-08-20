@@ -27,9 +27,9 @@
 
 $(document).ready (function(){
  $('a.to-top').click(function () {
-            $('body, html').animate({
+            $('html, body').animate({
                 scrollTop: 0
-            }, 1000);
+            }, 'slow');
             return false;
         });
 });                
