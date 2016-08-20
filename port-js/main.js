@@ -1,6 +1,14 @@
 
 
-
+$(document).ready (function(){
+	
+    $('body a.to-top').click(function f-top(){
+       alert("rrreeeddyyy!!!!!!");
+       $('html, body').animate({scrollTop: 300}, 4000);
+       $('section.me').fadeTo(1000,0.5).fadeTo(1000,1.0).fadeTo(1000,0.5).fadeTo(3000,1.0);
+       alert("rrreeeddyyy222222222!!!!!!");
+   });
+});
 
 // $(document).ready (function(){
 
@@ -31,14 +39,7 @@
 
                
 
-$(document).ready (function(){
-    $('a.to-top').click(function(){
-       alert("rrreeeddyyy!!!!!!");
-       $('html, body').animate({scrollTop: 300}, 4000);
-       $('section.me').fadeTo(1000,0.5).fadeTo(1000,1.0).fadeTo(1000,0.5).fadeTo(3000,1.0);
-       alert("rrreeeddyyy222222222!!!!!!");
-   });
-});
+
 
 
 
