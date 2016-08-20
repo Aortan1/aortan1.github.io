@@ -1,13 +1,13 @@
 
 
-$(document).ready (function(){
-	$('body a.contact-me').click(function ffade(){
+$(document).ready (function(){ 
+	$('a.contact-me').click(function ffade(){
 
 	$('section.me').fadeTo(1000,0.0).fadeTo(100000,1.0);
 
 	});
 	
-    $('body a.to-top').click(function ftop(){
+    $('a.to-top').click(function ftop(){
        alert("rrreeeddyyy!!!!!!");
        $('html, body').animate({scrollTop: 300}, 4000);
        $('section.me').fadeTo(1000,0.5).fadeTo(1000,1.0).fadeTo(1000,0.5).fadeTo(3000,1.0);
