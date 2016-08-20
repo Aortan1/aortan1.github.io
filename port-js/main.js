@@ -2,7 +2,7 @@
 
 $(document).ready (function(){
 	
-    $('body a.to-top').click(function f-top(){
+    $('body a.to-top').click(function ftop(){
        alert("rrreeeddyyy!!!!!!");
        $('html, body').animate({scrollTop: 300}, 4000);
        $('section.me').fadeTo(1000,0.5).fadeTo(1000,1.0).fadeTo(1000,0.5).fadeTo(3000,1.0);
