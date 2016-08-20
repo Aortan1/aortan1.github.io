@@ -25,11 +25,17 @@
  
 
 
-$(document).ready (function(){
- $('a.to-top').click(function () {
-            $('html, body').animate({
-                scrollTop: 0
-            }, 'slow');
-            return false;
-        });
-});                
+// $(document).ready (function(){
+//  $('a.to-top').click(function () {
+//             $('html, body').animate({
+//                 scrollTop: 0
+//             }, 'slow');
+//             return false;
+//         });
+// });                
+
+$(function() {
+    $('a.to-top').click(function(){
+       $('html, body').animate({scrollTop:0}, 'slow');
+   });
+});
