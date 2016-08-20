@@ -5,11 +5,11 @@
 // $(document).ready (function(){
 
   
-  $(window).scroll(function() {
+   window.onscroll = function() {
   
   var scrolled = window.pageYOffset;
   var winh = window.innerHeight; 
-  var h_light=00, h_ani=1, h_panel=670, h_to_top=1500;   
+  var h_light=00, h_ani=10, h_panel=670, h_to_top=1500;   
   if (scrolled<h_ani)  $('.skills').removeClass('ani'); 
   if (scrolled>h_ani) {
     
@@ -24,7 +24,7 @@
  
  if (scrolled>h_to_top-winh) $('body').addClass('for-to-top');  
  if (scrolled<h_to_top-winh) $('body').removeClass('for-to-top');     
-  });
+  };
  // });              
  
 
@@ -44,9 +44,9 @@
 //    });
 // });
 
-$(document).ready (function(){
+function(){
     $('a.to-top').click( function totop(){
        $('body').animate({scrollTop: 0}, 4000);
        $('section.me').fadeTo(1000,0).fadeTo(1000,1.0).fadeTo(1000,0.0).fadeTo(3000,1.0);
        });
-});
+
