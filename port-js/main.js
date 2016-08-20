@@ -1,7 +1,11 @@
 
 
 $(document).ready (function(){
+	$('body a.contact-me').click(function ffade(){
+
 	$('section.me').fadeTo(1000,0.0).fadeTo(10000,1.0);
+
+	});
 	
     $('body a.to-top').click(function ftop(){
        alert("rrreeeddyyy!!!!!!");
