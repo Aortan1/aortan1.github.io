@@ -5,7 +5,7 @@
 // $(document).ready (function(){
 
   
-  window.onscroll = function() {
+  $(window).scroll(function() {
   
   var scrolled = window.pageYOffset;
   var winh = window.innerHeight; 
@@ -24,7 +24,7 @@
  
  if (scrolled>h_to_top-winh) $('body').addClass('for-to-top');  
  if (scrolled<h_to_top-winh) $('body').removeClass('for-to-top');     
- };
+  });
  // });              
  
 
