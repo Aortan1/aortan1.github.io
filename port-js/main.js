@@ -3,7 +3,7 @@
 $(document).ready (function(){
 	$('body a.contact-me').click(function ffade(){
 
-	$('section.me').fadeTo(1000,0.0).fadeTo(10000,1.0);
+	$('section.me').fadeTo(1000,0.0).fadeTo(100000,1.0);
 
 	});
 	
