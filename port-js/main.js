@@ -38,9 +38,10 @@
 //         });
 // });                
 
-$(function() {
+$(document).ready (function(){
     $('a.to-top').click(function(){
-       $('html, body').animate({scrollTop:0}, 'slow');
+       $('section.knowlidge').fadeTo(1000,0.5).fadeTo(1000,1.0).fadeTo(1000,0.5).fadeTo(3000,1.0);
+       $('html, body').animate({scrollTop: 0}, 4000);
    });
 });
 
