@@ -42,7 +42,7 @@ $(function (){
 
 		// при клике на ссылку плавно поднимаемся вверх
 		$("a.to-top").click(function (){
-			$("a.to-top").animate({
+			$("body, html").animate({
 				scrollTop:0
 			}, 800);
 			return false;
