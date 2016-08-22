@@ -29,6 +29,11 @@
  
 
 $(document).ready (function(){ 
+	
+	$('h1').hover(function fadeedge0(){
+  
+    $('р1').fadeTo(300,0.1); 
+  });
   
   	$('a.contact-me').click(function ffade(){
 
