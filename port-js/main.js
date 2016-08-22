@@ -1,7 +1,7 @@
 
 
 $(document).ready (function(){ 
-		var s=1
+		var s=1;
 
 	 $('a.contact-me').hover(function fadeedge0(){
   
