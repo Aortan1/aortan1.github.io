@@ -39,7 +39,7 @@ $(function (){
 		$("a.to-top").click(function (){
 			$("body, html").animate({
 				scrollTop:0
-			}, 1500);
+			}, 1000);
 			return false;
 		});
 	});
