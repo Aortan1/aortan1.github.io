@@ -1033,7 +1033,7 @@ body section.my-pro .pro .mask:hover p.view {
   opacity: 0.8;
   color: #a5db00;
   border-color: #a5db00;
-  transition: 0.5s;
+  transition: 1.0s;
 }
 
 body section.my-pro .pro .mask p.name {
