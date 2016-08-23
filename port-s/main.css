@@ -135,7 +135,7 @@ body section.info ul.ul-info li {
   height: 50%;
   padding: 0 0 0 0;
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
   width: 49%;
   border: 0px solid green;
   opacity: 0.9;
@@ -167,7 +167,7 @@ body section.info ul.ul-info li:hover p {
 body section.info ul.ul-info li a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 body section.info ul.ul-info li:nth-child(1), body section.info ul.ul-info li:nth-child(2) {
@@ -205,7 +205,7 @@ body section.info ul.ul-info li.skype:before {
 }
 
 body section.info ul.ul-info li.mail:before {
-  background-position: -76px -36px;
+  background-position: -76px -31px;
 }
 
 body section.info ul.ul-info li.git:before {
@@ -225,7 +225,7 @@ body section.info ul.ul-info li.skype:hover:before {
 }
 
 body section.info ul.ul-info li.mail:hover:before {
-  background-position: -76px -276px;
+  background-position: -76px -271px;
 }
 
 body section.info ul.ul-info li.git:hover:before {
