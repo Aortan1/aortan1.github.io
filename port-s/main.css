@@ -134,6 +134,7 @@ body section.info ul.ul-info li {
   width: 49%;
   border: 0px solid green;
   opacity: 0.9;
+  cursor: pointer;
 }
 
 body section.info ul.ul-info li:before {
@@ -204,6 +205,10 @@ body section.info ul.ul-info li.mail:before {
 
 body section.info ul.ul-info li.git:before {
   background-position: -240px -38px;
+}
+
+body section.info ul.ul-info li:hover a {
+  text-decoration: underline;
 }
 
 body section.info ul.ul-info li.call:hover:before {
