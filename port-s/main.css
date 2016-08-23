@@ -61,6 +61,7 @@ body section {
 }
 
 body section.me {
+  position: relative;
   height: 460px;
   background-color: black;
   margin: 0 auto;
@@ -97,6 +98,7 @@ body section.me .main p.about {
 
 body a.contact-me {
   position: relative;
+  bottom: -20px;
   display: block;
   width: 268px;
   padding: 15px 0 0 32px;
@@ -107,14 +109,13 @@ body a.contact-me {
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-  margin: 60px auto;
+  margin: 0px auto;
   border-radius: 5px;
 }
 
 body section.info {
   height: 320px;
   background-color: #272822;
-  border-top: 1px solid #272822;
 }
 
 body section.info ul.ul-info {
