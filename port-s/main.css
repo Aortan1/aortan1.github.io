@@ -322,6 +322,7 @@ body section.info ul.ul-info li.git:hover:before {
   float: left;
   height: 60px;
   padding: 13px 0 0 10px;
+  font-weight: 700;
   transition: 0.5s;
 }
 
