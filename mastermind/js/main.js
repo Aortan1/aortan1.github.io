@@ -105,6 +105,7 @@ function FunColor(but) {
   color_def = window.getComputedStyle(document.getElementsByClassName("fonc")[0]).backgroundColor;
   // var Sample = document.getElementsByClassName("sample");
   Sample[0].style.display="none";
+  if (n==5) {Htag[0].innerHTML="Ultimate Mastermind";}
   
 // alert (n);  alert (n_colors);
 for (i = 0;  i < n_colors; i++ ){ // цвета от 1 до 6. Формирую массив цветов по стилям.
