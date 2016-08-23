@@ -312,6 +312,7 @@ body section.info ul.ul-info li.git:hover:before {
   float: left;
   height: 60px;
   padding: 13px 0 0 10px;
+  transition: 0.5s;
 }
 
 .sticky section.info .main ul.ul-info li:nth-child(n) p {
@@ -342,6 +343,10 @@ body section.info ul.ul-info li.git:hover:before {
 
 .sticky section.info .main ul.ul-info li:nth-child(n).git:before {
   background-position: -240px -180px;
+}
+
+.sticky section.info .main ul.ul-info li:nth-child(n):hover {
+  transition: 0.5s;
 }
 
 .sticky section.info .main ul.ul-info li:nth-child(n).call:hover:before {
