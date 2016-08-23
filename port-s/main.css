@@ -150,6 +150,12 @@ body section.info ul.ul-info li:before {
 
 body section.info ul.ul-info li p {
   padding: 0 0 5px 0;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
+body section.info ul.ul-info li:hover p {
+  opacity: 1;
 }
 
 body section.info ul.ul-info li a {
