@@ -56,6 +56,10 @@ body .onsticky {
   display: none;
 }
 
+body section {
+  border-top: 1px dotted #444;
+}
+
 body section.me {
   height: 460px;
   background-color: black;
@@ -95,11 +99,11 @@ body a.contact-me {
   position: relative;
   display: block;
   width: 268px;
-  padding: 17px 0 0 32px;
-  height: 38px;
+  padding: 15px 0 0 32px;
+  height: 40px;
   background: #83ad05 url("../port-i/sprite.png") 56px -89px;
   color: white;
-  font-size: 19px;
+  font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
@@ -115,8 +119,8 @@ body section.info {
 
 body section.info ul.ul-info {
   position: relative;
-  width: 550px;
-  height: 160px;
+  width: 560px;
+  height: 165px;
   font-family: Roboto-Regular;
   border: 0px solid red;
   margin: 100px auto 0;
@@ -370,7 +374,6 @@ body section.knowlidge {
   background: url("../port-i/gb-cod-02.png");
   background-size: cover;
   background-attachment: fixed;
-  border-top: 1px solid black;
 }
 
 body section.knowlidge h3 {
