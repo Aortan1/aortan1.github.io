@@ -1046,7 +1046,6 @@ body section.my-pro .pro .mask p.name {
   text-align: left;
   font-size: 20px;
   padding: 10px 0 10px 20px;
-  background: rgba(0, 0, 0, 0.5);
   opacity: 0.8;
   transition: 0.5s;
 }
