@@ -1032,6 +1032,7 @@ body section.my-pro .pro .mask p.view {
 
 body section.my-pro .pro .mask:hover {
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+  transition: 1s;
 }
 
 body section.my-pro .pro .mask:hover p.view {
