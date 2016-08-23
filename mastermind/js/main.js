@@ -24,7 +24,7 @@ var Bod = document.getElementsByTagName("body");
 window.onload=function(){
 
 sup = $_GET('sup'); if (sup==5) n=5;
-if (n==5) {Htag[0].innerHTML="Ultimate Mastermind";}
+if (n==5) {Htag[0].style.width = "300px"; Htag[0].innerHTML="<h2>Ultimate</h2> Mastermind"; }
 
 if (n==4) {
   Bod[0].classList.add('n-4-6');}
