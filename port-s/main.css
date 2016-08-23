@@ -1039,7 +1039,7 @@ body section.my-pro .pro .mask:hover p.view {
 body section.my-pro .pro .mask p.name {
   position: absolute;
   width: 100%;
-  bottom: 0px;
+  bottom: -40px;
   color: #fff;
   text-shadow: #222 1px 1px;
   text-align: left;
@@ -1050,7 +1050,7 @@ body section.my-pro .pro .mask p.name {
 }
 
 body section.my-pro .pro .mask:hover p.name {
-  bottom: -40px;
+  bottom: 0px;
   transition: 0.5s;
 }
 
