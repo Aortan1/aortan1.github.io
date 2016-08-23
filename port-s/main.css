@@ -1062,8 +1062,9 @@ body section.footer {
   background-color: #272822;
 }
 
-body section.footer button.contact-me {
-  margin: 0px auto 50px;
+body section.footer a.contact-me {
+  position: static;
+  margin: 55px auto 50px;
 }
 
 body section.footer p.thanks {
