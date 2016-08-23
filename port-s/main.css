@@ -979,7 +979,7 @@ body section.my-pro .pro .mask:hover {
 }
 
 body section.my-pro .pro .mask:hover p.view {
-  opacity: 0.8;
+  opacity: 0.7;
   color: #a5db00;
   border-color: #a5db00;
   transition: 0.5s;
