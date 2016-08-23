@@ -24,6 +24,7 @@ var Bod = document.getElementsByTagName("body");
 window.onload=function(){
 
 sup = $_GET('sup'); if (sup==5) n=5;
+if (n==5) {Htag[0].innerHTML="Ultimate Mastermind";}
 
 if (n==4) {
   Bod[0].classList.add('n-4-6');}
@@ -105,7 +106,7 @@ function FunColor(but) {
   color_def = window.getComputedStyle(document.getElementsByClassName("fonc")[0]).backgroundColor;
   // var Sample = document.getElementsByClassName("sample");
   Sample[0].style.display="none";
-  if (sup==5||n==5) {Htag[0].innerHTML="Ultimate Mastermind";}
+  
 
 // alert (n);  alert (n_colors);
 for (i = 0;  i < n_colors; i++ ){ // цвета от 1 до 6. Формирую массив цветов по стилям.
