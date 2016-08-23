@@ -139,6 +139,7 @@ body section.info ul.ul-info li {
   width: 49%;
   border: 0px solid green;
   opacity: 0.9;
+  transition: 0.5s;
   cursor: pointer;
 }
 
@@ -158,6 +159,10 @@ body section.info ul.ul-info li p {
   padding: 0 0 5px 0;
   font-weight: 600;
   opacity: 0.6;
+}
+
+body section.info ul.ul-info li:hover {
+  transition: 0.5s;
 }
 
 body section.info ul.ul-info li:hover p {
