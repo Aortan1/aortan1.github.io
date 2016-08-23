@@ -216,12 +216,9 @@ body section.info ul.ul-info li.git:before {
   background-position: -240px -38px;
 }
 
-body section.info ul.ul-info li:hover {
-  transition: 0.5s;
-}
-
 body section.info ul.ul-info li:hover a {
   text-decoration: underline;
+  transition: 0.5s;
 }
 
 body section.info ul.ul-info li.call:hover:before {
