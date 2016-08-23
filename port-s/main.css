@@ -159,20 +159,19 @@ body section.info ul.ul-info li p {
   padding: 0 0 5px 0;
   font-weight: 600;
   opacity: 0.6;
-}
-
-body section.info ul.ul-info li:hover {
   transition: 0.5s;
 }
 
 body section.info ul.ul-info li:hover p {
   opacity: 1;
+  transition: 0.5s;
 }
 
 body section.info ul.ul-info li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
+  transition: 0.5s;
 }
 
 body section.info ul.ul-info li:nth-child(1), body section.info ul.ul-info li:nth-child(2) {
@@ -215,6 +214,10 @@ body section.info ul.ul-info li.mail:before {
 
 body section.info ul.ul-info li.git:before {
   background-position: -240px -38px;
+}
+
+body section.info ul.ul-info li:hover {
+  transition: 0.5s;
 }
 
 body section.info ul.ul-info li:hover a {
@@ -1019,7 +1022,7 @@ body section.my-pro .pro .mask {
   height: 100%;
   background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
   opacity: 0;
-  transition: 1s;
+  transition: 0.7s;
   overflow: hidden;
 }
 
@@ -1039,14 +1042,14 @@ body section.my-pro .pro .mask p.view {
 
 body section.my-pro .pro .mask:hover {
   opacity: 1;
-  transition: 1s;
+  transition: 0.7s;
 }
 
 body section.my-pro .pro .mask:hover p.view {
   opacity: 0.8;
   color: #a5db00;
   border-color: #a5db00;
-  transition: 1.0s;
+  transition: 0.7s;
 }
 
 body section.my-pro .pro .mask p.name {

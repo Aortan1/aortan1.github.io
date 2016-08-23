@@ -155,15 +155,17 @@ body
           padding: 0 0 5px 0
           font-weight: 600
           opacity: 0.6
-        &:hover
           transition: 0.5s
+        &:hover          
           p
             opacity: 1
+            transition: 0.5s
         
         a
           text-decoration: none
           color: white
           font-size: 20px
+          transition: 0.5s
       li:nth-child(1),li:nth-child(2) 
         clear: left
       li:nth-child(3),li:nth-child(4) 
@@ -188,6 +190,7 @@ body
         background-position: -240px -38px
 
       li:hover
+        transition: 0.5s
         a
           text-decoration: underline
 
@@ -650,7 +653,7 @@ body
         height: 100%
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.9) 100%)
         opacity: 0
-        transition: 1s
+        transition: 0.7s
         overflow: hidden
         p.view
           width: 300px
@@ -666,13 +669,13 @@ body
           opacity: 0.0        
         &:hover
           opacity: 1
-          transition: 1s
+          transition: 0.7s
           // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.3) 100%)
           p.view
             opacity: 0.8
             color: $c_gree
             border-color: $c_gree
-            transition: 1.0s
+            transition: 0.7s
         p.name
           position: absolute
           width: 100%
