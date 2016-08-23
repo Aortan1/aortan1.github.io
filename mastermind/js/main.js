@@ -212,7 +212,7 @@ Bcan =  document.getElementsByClassName("b_cansel");
            }   
 
 if (sum1==n && n==4){Htag[0].innerHTML="ОТЛИЧНО, ЦВЕТА РАЗГАДАНЫ!<br>Усложним задачу:<br>разгадайте 5 цветов из 8.";}
-if (sum1==n && n==5){Htag[0].innerHTML='<span style="color: orange;">ПОЗДРАВЛЯЮ!!!</span><br>УРОВЕНЬ ULTIMATE<br>ПРОЙДЕН!!!';}       
+if (sum1==n && n==5){Htag[0].innerHTML='<span style="color: orange;">ПОЗДРАВЛЯЮ!!!</span><br><span style="color: yellow;">УРОВЕНЬ ULTIMATE<br>ПРОЙДЕН!!!</span>';}       
 if (sum1==n){
 // Htag[0].style.backgroundColor = "#388E3C"; Htag[0].style.color="white";
 // Htag[0].style.fontSize = "20px"; 
