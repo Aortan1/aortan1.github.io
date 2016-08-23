@@ -22,14 +22,6 @@ $ja: 0.66
 $sa: 0.33
 $ph: 0.25
 
-// $ht: 0.70
-// $cs: 0.55
-// $js: 0.25
-// $jq: 0.35
-// $ja: 0.45
-// $sa: 0.35
-// $ph: 0.25
-
 *
   padding: 0
   margin: 0
@@ -349,61 +341,61 @@ body
         
         
       &.s_html    
-        color: #f2273e
+        color: $c_lila
         .circle
-          border-color: #f2273e
+          border-color: $c_lila
         &:hover, &.ho  
           .circle.bg
-            box-shadow: -0px 0px 50px #f2273e            
-            // box-shadow: -24px 15px 50px #f2273e
+            box-shadow: -0px 0px 50px $c_lila            
+            // box-shadow: -24px 15px 50px $c_lila
       &.s_css
-        color: #a781f8
+        color: $c_viol
         .circle
-          border-color: #a781f8
+          border-color: $c_viol
         &:hover, &.ho  
           .circle.bg
-            box-shadow: 0px 0px 50px #a781f8            
-            // box-shadow: -16px 15px 50px #a781f8
+            box-shadow: 0px 0px 50px $c_viol            
+            // box-shadow: -16px 15px 50px $c_viol
       &.s_js
-        color: #ff9a05
+        color: $c_oran
         .circle
-          border-color: #ff9a05
+          border-color: $c_oran
         &:hover , &.ho 
           .circle.bg
-            box-shadow: 0px 0px 50px #ff9a05              
-            // box-shadow: -8px 15px 50px #ff9a05        
+            box-shadow: 0px 0px 50px $c_oran              
+            // box-shadow: -8px 15px 50px $c_oran        
       &.s_jquery
-        color: #a5db00
+        color: $c_gree
         .circle
-          border-color: #a5db00
+          border-color: $c_gree
         &:hover, &.ho  
           .circle.bg            
-            box-shadow: 0px 0px 50px #a5db00
-            // box-shadow: 0px 15px 50px #a5db00        
+            box-shadow: 0px 0px 50px $c_gree
+            // box-shadow: 0px 15px 50px $c_gree        
       &.s_jade
-        color: #67dcf3
+        color: $c_blue
         .circle
-          border-color: #67dcf3
+          border-color: $c_blue
         &:hover, &.ho  
           .circle.bg            
-            box-shadow: 0px 0px 50px #67dcf3
-            // box-shadow: 8px 15px 50px #67dcf3         
+            box-shadow: 0px 0px 50px $c_blue
+            // box-shadow: 8px 15px 50px $c_blue         
       &.s_sass
-        color: #FFEB3B
+        color: $c_yell
         .circle
-          border-color: #FFEB3B
+          border-color: $c_yell
         &:hover, &.ho  
           .circle.bg            
-            box-shadow: 0px 0px 50px #FFEB3B
-            // box-shadow: 16px 15px 50px #FFEB3B
+            box-shadow: 0px 0px 50px $c_yell
+            // box-shadow: 16px 15px 50px $c_yell
       &.s_php
-        color: #9E9E9E
+        color: $c_grey
         .circle
-          border-color: #9E9E9E
+          border-color: $c_grey
         &:hover, &.ho  
           .circle.bg            
-            box-shadow: 0px 0px 50px #9E9E9E
-            // box-shadow: 24px 15px 50px #9E9E9E     
+            box-shadow: 0px 0px 50px $c_grey
+            // box-shadow: 24px 15px 50px $c_grey     
       &:last-child
         margin-right: 0
     
@@ -660,9 +652,9 @@ body
         &:hover
           background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.3) 100%)
           p.view
-            opacity: 0.7
-            color: #a5db00
-            border-color: #a5db00
+            opacity: 0.8
+            color: $c_gree
+            border-color: $c_gree
             transition: 0.5s
         p.name
           position: absolute

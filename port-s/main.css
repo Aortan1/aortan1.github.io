@@ -421,7 +421,7 @@ body section.knowlidge .skills .skill.s_html .circle {
 }
 
 body section.knowlidge .skills .skill.s_html:hover .circle.bg, body section.knowlidge .skills .skill.s_html.ho .circle.bg {
-  box-shadow: -0px 0px 50px #f2273e;
+  box-shadow: 0px 0px 50px #f2273e;
 }
 
 body section.knowlidge .skills .skill.s_css {
@@ -1022,7 +1022,7 @@ body section.my-pro .pro .mask:hover {
 }
 
 body section.my-pro .pro .mask:hover p.view {
-  opacity: 0.7;
+  opacity: 0.8;
   color: #a5db00;
   border-color: #a5db00;
   transition: 0.5s;
