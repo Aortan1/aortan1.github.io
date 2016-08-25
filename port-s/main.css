@@ -44,7 +44,7 @@ body a.contact-me:after {
   transition-timing-function: ease;
   top: -550%;
   left: -210%;
-  width: 200%;
+  width: 202%;
   height: 500%;
   opacity: 1;
   -webkit-transform: rotate(30deg);
