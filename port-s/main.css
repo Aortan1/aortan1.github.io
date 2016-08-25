@@ -135,7 +135,7 @@ body section.me .main .div-i:hover img.img-me {
   -webkit-transform: scale(2);
       -ms-transform: scale(2);
           transform: scale(2);
-  -webkit-filter: brightness(200%);
+  -webkit-filter: brightness(150%);
   -webkit-filter: contrast(110%);
   box-shadow: 0 0 10px white;
   transition: 0.7s;
