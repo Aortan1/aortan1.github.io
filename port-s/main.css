@@ -212,15 +212,6 @@ body section.info ul.ul-info li.git, body section.info ul.ul-info li.git a {
   color: #a8e000;
 }
 
-body section.info ul.ul-info li:hover {
-  transition: 0.5s;
-}
-
-body section.info ul.ul-info li:hover a {
-  text-decoration: underline;
-  transition: 0.5s;
-}
-
 body section.info ul.ul-info li:hover:before {
   opacity: 0;
 }
