@@ -39,6 +39,9 @@ body a.contact-me {
 body a.contact-me:after {
   content: "";
   position: absolute;
+  transition-property: left, top, opacity;
+  transition-duration: 1.5s, 1.5s, 0.5s;
+  transition-timing-function: ease;
   top: -550%;
   left: -210%;
   width: 200%;
