@@ -176,8 +176,13 @@ body section.info ul.ul-info li:hover p {
 
 body section.info ul.ul-info li a {
   text-decoration: none;
-  color: white;
   font-size: 20px;
+  border-bottom: 1px solid transparent;
+  transition: 0.5s;
+}
+
+body section.info ul.ul-info li:hover a {
+  border-bottom: 1px solid;
   transition: 0.5s;
 }
 
