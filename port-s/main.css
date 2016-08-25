@@ -4,14 +4,6 @@
   outline: 0;
 }
 
-.opaa {
-  opacity: 0.8;
-  background-color: red;
-  border: 10px solid green;
-  background-size: content;
-  transition: 2.5s;
-}
-
 img {
   border: 0;
 }
