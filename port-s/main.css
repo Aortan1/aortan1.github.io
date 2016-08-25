@@ -319,15 +319,18 @@ body section.info ul.ul-info li.git:after {
   top: 0;
 }
 
-.sticky section.me .main .img-me {
+.sticky section.me .main .div-i {
   position: absolute;
   top: 0;
   left: 161px;
-  padding: 0;
-  margin: 0;
   width: 75px;
   height: 75px;
   transition: 0.5s;
+}
+
+.sticky section.me .main .div-i .img-me {
+  width: 75px;
+  height: 75px;
 }
 
 .sticky section.me .main h1 {
