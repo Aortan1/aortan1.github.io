@@ -116,11 +116,25 @@ body section.me .main {
   padding-top: 65px;
 }
 
-body section.me .main .img-me {
+body section.me .main .div-i {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  transition: 0.7s;
+}
+
+body section.me .main .div-i img.img-me {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  transition: 1.5s;
+  transition: 0.5s;
+}
+
+body section.me .main .div-i:hover img.img-me {
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+  transition: 0.7s;
 }
 
 body section.me .main p.coder {
