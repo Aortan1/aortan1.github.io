@@ -95,7 +95,7 @@ body
     margin: 0 auto    
     border: 0px solid red
     h1
-      color: #fff
+      color: red
       font-size: 40px
       font-weight: 300
       margin: 45px 0 0 0
@@ -137,19 +137,20 @@ body
           width: 100px
           height: 100px
           border-radius: 50%
-          box-shadow: 0 0 0 white
+          box-shadow: 0 0 0 #111
           transition: 0.5s
         &:hover
           img.img-me
             transform: scale(2)
             // -webkit-filter: brightness(150%)
             // -webkit-filter: contrast(110%)
-            box-shadow: 0 0 10px white
+            // box-shadow: 0 0 10px #111
+            box-shadow: 10px 5px 10px #111
             transition: 0.7s
         &:hover+h1
           transform: translateY(20px)
         &:hover+h1+p.coder
-          transform: translateY(15px)            
+          transform: translateY(15px)
       p.coder 
         color: #dcd067
         font-size: 25px
