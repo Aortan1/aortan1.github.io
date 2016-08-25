@@ -127,6 +127,7 @@ body section.me .main .div-i img.img-me {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  box-shadow: 0 0 0 white;
   transition: 0.5s;
 }
 
@@ -134,6 +135,7 @@ body section.me .main .div-i:hover img.img-me {
   -webkit-transform: scale(2);
       -ms-transform: scale(2);
           transform: scale(2);
+  box-shadow: 0 0 10px white;
   transition: 0.7s;
 }
 
