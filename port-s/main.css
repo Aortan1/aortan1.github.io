@@ -47,9 +47,7 @@ body a.contact-me:after {
   width: 200%;
   height: 500%;
   opacity: 0;
-  -webkit-transform: rotate(30deg);
-      -ms-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
   background: rgba(255, 255, 255, 0.13);
   background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 88%, rgba(255, 255, 255, 0.5) 96%, rgba(255, 255, 255, 0) 100%);
 }
@@ -74,9 +72,9 @@ body .main {
 }
 
 body .main h1 {
-  color: #fff;
+  color: black112;
   font-size: 40px;
-  font-weight: 300;
+  font-weight: 300px;
   margin: 45px 0 0 0;
   transition: 1.5s;
 }
@@ -132,23 +130,17 @@ body section.me .main .div-i img.img-me {
 }
 
 body section.me .main .div-i:hover img.img-me {
-  -webkit-transform: scale(2);
-      -ms-transform: scale(2);
-          transform: scale(2);
+  transform: scale(2);
   box-shadow: 10px 5px 10px #111;
   transition: 0.7s;
 }
 
 body section.me .main .div-i:hover + h1 {
-  -webkit-transform: translateY(20px);
-      -ms-transform: translateY(20px);
-          transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 body section.me .main .div-i:hover + h1 + p.coder {
-  -webkit-transform: translateY(15px);
-      -ms-transform: translateY(15px);
-          transform: translateY(15px);
+  transform: translateY(15px);
 }
 
 body section.me .main p.coder {
@@ -629,36 +621,15 @@ body .ani {
 }
 
 body .ani div[data-anim~=base] {
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
 }
 
 body .ani .wrapper[data-anim~=wrapper] {
-  -webkit-animation-duration: 0.01s;
-          animation-duration: 0.01s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-  -webkit-animation-name: close-wrapper;
-          animation-name: close-wrapper;
-}
-
-@-webkit-keyframes blow {
-  0% {
-    box-shadow: 0 0 0;
-    opacity: 0.4;
-  }
-  5% {
-    box-shadow: 0 0 50px;
-    opacity: 1.0;
-  }
-  100% {
-    box-shadow: 0 0 0;
-    opacity: 0.4;
-  }
+  animation-duration: 0.01s;
+  animation-delay: 0.4s;
+  animation-name: close-wrapper;
 }
 
 @keyframes blow {
@@ -677,343 +648,186 @@ body .ani .wrapper[data-anim~=wrapper] {
 }
 
 body .ani .circle.light {
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-duration: 20s;
-          animation-duration: 20s;
-  -webkit-animation-name: blow;
-          animation-name: blow;
+  animation-iteration-count: 1;
+  animation-duration: 20s;
+  animation-name: blow;
 }
 
 body .ani .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-name: left-spin;
-          animation-name: left-spin;
+  animation-duration: 0.8s;
+  animation-name: left-spin;
 }
 
 body .ani .circle[data-anim~=right] {
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
-  -webkit-animation-name: right-spin;
-          animation-name: right-spin;
+  animation-duration: 0.4s;
+  animation-name: right-spin;
 }
 
 body .ani .s_html .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-name: left-spin-ht;
-          animation-name: left-spin-ht;
+  animation-duration: 0.6s;
+  animation-name: left-spin-ht;
 }
 
 body .ani .s_css .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-name: left-spin-cs;
-          animation-name: left-spin-cs;
+  animation-duration: 0.6s;
+  animation-name: left-spin-cs;
 }
 
 body .ani .s_js .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.264s;
-          animation-duration: 0.264s;
-  -webkit-animation-name: left-spin-js;
-          animation-name: left-spin-js;
+  animation-duration: 0.264s;
+  animation-name: left-spin-js;
 }
 
 body .ani .s_jquery .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
-  -webkit-animation-name: left-spin-jq;
-          animation-name: left-spin-jq;
+  animation-duration: 0.4s;
+  animation-name: left-spin-jq;
 }
 
 body .ani .s_jade .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.528s;
-          animation-duration: 0.528s;
-  -webkit-animation-name: left-spin-ja;
-          animation-name: left-spin-ja;
+  animation-duration: 0.528s;
+  animation-name: left-spin-ja;
 }
 
 body .ani .s_sass .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.264s;
-          animation-duration: 0.264s;
-  -webkit-animation-name: left-spin-sa;
-          animation-name: left-spin-sa;
+  animation-duration: 0.264s;
+  animation-name: left-spin-sa;
 }
 
 body .ani .s_php .circle[data-anim~=left] {
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-name: left-spin-ph;
-          animation-name: left-spin-ph;
+  animation-duration: 0.2s;
+  animation-name: left-spin-ph;
 }
 
 body .ani .s_html div[data-anim~=wrapper] {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 body .ani .s_css div[data-anim~=base], body .ani .s_css .light {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 body .ani .s_css div[data-anim~=wrapper] {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 body .ani .s_js div[data-anim~=base], body .ani .s_js .light {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+  animation-delay: 0.8s;
 }
 
 body .ani .s_js div[data-anim~=wrapper] {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 
 body .ani .s_jquery div[data-anim~=base], body .ani .s_jquery .light {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 
 body .ani .s_jquery div[data-anim~=wrapper] {
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
+  animation-delay: 1.6s;
 }
 
 body .ani .s_jade div[data-anim~=base], body .ani .s_jade .light {
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
+  animation-delay: 1.6s;
 }
 
 body .ani .s_jade div[data-anim~=wrapper] {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 body .ani .s_sass div[data-anim~=base], body .ani .s_sass .light {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 body .ani .s_sass div[data-anim~=wrapper] {
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
+  animation-delay: 2.4s;
 }
 
 body .ani .s_php div[data-anim~=base], body .ani .s_php .light {
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
+  animation-delay: 2.4s;
 }
 
 body .ani .s_php div[data-anim~=wrapper] {
-  -webkit-animation-delay: 2.8s;
-          animation-delay: 2.8s;
-}
-
-@-webkit-keyframes right-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
+  animation-delay: 2.8s;
 }
 
 @keyframes right-spin {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-}
-
-@-webkit-keyframes left-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(180deg);
   }
 }
 
 @keyframes left-spin {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes left-spin-ht {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes left-spin-ht {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-  }
-}
-
-@-webkit-keyframes left-spin-cs {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    transform: rotate(270deg);
   }
 }
 
 @keyframes left-spin-cs {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-  }
-}
-
-@-webkit-keyframes left-spin-js {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(118.8deg);
-            transform: rotate(118.8deg);
+    transform: rotate(270deg);
   }
 }
 
 @keyframes left-spin-js {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(118.8deg);
-            transform: rotate(118.8deg);
-  }
-}
-
-@-webkit-keyframes left-spin-jq {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    transform: rotate(118.8deg);
   }
 }
 
 @keyframes left-spin-jq {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-}
-
-@-webkit-keyframes left-spin-ja {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(237.6deg);
-            transform: rotate(237.6deg);
+    transform: rotate(180deg);
   }
 }
 
 @keyframes left-spin-ja {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(237.6deg);
-            transform: rotate(237.6deg);
-  }
-}
-
-@-webkit-keyframes left-spin-sa {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(118.8deg);
-            transform: rotate(118.8deg);
+    transform: rotate(237.6deg);
   }
 }
 
 @keyframes left-spin-sa {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(118.8deg);
-            transform: rotate(118.8deg);
-  }
-}
-
-@-webkit-keyframes left-spin-ph {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(118.8deg);
   }
 }
 
 @keyframes left-spin-ph {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-}
-
-@-webkit-keyframes close-wrapper {
-  to {
-    clip: rect(auto, auto, auto, auto);
+    transform: rotate(90deg);
   }
 }
 
@@ -1057,17 +871,13 @@ body section.my-pro a.to-top .line {
 }
 
 body section.my-pro a.to-top .line.n1 {
-  -webkit-transform: rotate(-40deg);
-      -ms-transform: rotate(-40deg);
-          transform: rotate(-40deg);
+  transform: rotate(-40deg);
   top: 23px;
   left: 15px;
 }
 
 body section.my-pro a.to-top .line.n2 {
-  -webkit-transform: rotate(40deg);
-      -ms-transform: rotate(40deg);
-          transform: rotate(40deg);
+  transform: rotate(40deg);
   top: 23px;
   left: 25px;
 }
