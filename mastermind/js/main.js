@@ -148,10 +148,12 @@ case false:
 // if (but.value=="NICE!")  {sn.value=5;
    if (but.value=="NICE!" && n==4)  {
   window.location='http://aortan1.github.io/mastermind/?sup=5';
-   if (but.value=="NICE!" && n==5)  {
-  window.location='https://youtu.be/tv3Rsz-EbzE';
-
 }
+  if (but.value=="NICE!" && n==5)  {
+  window.location='https://youtu.be/tv3Rsz-EbzE';
+}
+
+
 // if (but.value=="DO IT." || but.value=="NICE!")  {
    if (but.value=="DO IT.")  {  
  // 
