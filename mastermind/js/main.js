@@ -150,7 +150,7 @@ case false:
   window.location='http://aortan1.github.io/mastermind/?sup=5';
 }
   if (but.value=="NICE!" && n==5)  {
-  window.location='https://www.youtube.com/embed/tv3Rsz-EbzE?autoplay=1&amp;?vq=480;'
+  window.location='https://www.youtube.com/embed/tv3Rsz-EbzE?autoplay=1&start=9&?vq=480';
 }
 
 
