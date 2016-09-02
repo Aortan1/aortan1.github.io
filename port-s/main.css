@@ -74,7 +74,7 @@ body .main {
 body .main h1 {
   color: white;
   font-size: 40px;
-  font-weight: 100px;
+  font-weight: 100;
   margin: 45px 0 0 0;
   transition: 1.5s;
 }
