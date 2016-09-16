@@ -1,0 +1,1496 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #49617d;
+  font: 16px 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #475055;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+a:hover {
+  transition: 0.3s;
+}
+
+p.time {
+  font-size: 14px;
+  color: #a3abaf;
+}
+
+p.about {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+a.more {
+  font-size: 15px;
+  line-height: 24px;
+  color: #ea6060;
+  transition: 0.5s;
+}
+
+a.more:hover {
+  color: orange;
+  transition: 0.5s;
+}
+
+a.box {
+  display: block;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  width: 50px;
+  height: 70px;
+  padding: 40px 0 0 0;
+  border: 0px solid red;
+  background: url("../i/sprite.png");
+  transition: ease-out 0.5s;
+}
+
+a.box:hover {
+  transform: matrix(1.3, 0, 0, 1.3, 0, 0);
+  transition: ease-out 0.5s;
+}
+
+input, textarea {
+  width: 259px;
+  height: 38px;
+  margin: 0 0 18px 0;
+  padding: 0 0 0 18px;
+  font-size: 16px;
+  border: 1px solid #dde2e4;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #4bc7c7;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font: 300 17px Roboto, sans-serif;
+}
+
+input::-moz-input-placeholder, textarea::-moz-input-placeholder {
+  color: #475055;
+}
+
+input:-moz-input-placeholder, textarea:-moz-input-placeholder {
+  color: #475055;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #475055;
+}
+
+a.submit {
+  display: block;
+  width: 95px;
+  height: 19px;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 0;
+  background-color: #ea6060;
+  transition: 0.5s;
+}
+
+a.submit:hover {
+  background-color: orange;
+  transition: 0.5s;
+}
+
+a.submit:active {
+  background-color: #ea6060;
+  transform: matrix(0.97, 0, 0, 0.97, -3, -2);
+  transition: 0.1s;
+}
+
+.s {
+  transition: ease-out 0.5s;
+}
+
+.s:hover {
+  transform: matrix(1.05, 0, 0, 1.05, 0, 0);
+  transition: ease-out 0.5s;
+}
+
+.container {
+  width: 930px;
+  margin: 105px auto;
+}
+
+.container section.header {
+  width: 929px;
+  height: 60px;
+  background-color: white;
+  border: 0px solid red;
+}
+
+.container section.header .main-menu {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: #56ccc8 url("../i/sprite.png") 17px -99px;
+  cursor: pointer;
+}
+
+.container section.header ul.top-links {
+  float: left;
+  margin: 0 0 0 0px;
+  padding: 6px 0 0 29px;
+}
+
+.container section.header ul.top-links li {
+  display: inline-block;
+  padding: 15px 20px 15px 20px;
+  border: 0px solid red;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.container section.header ul.top-links li:hover {
+  color: #56ccc8;
+  transition: 0.3s;
+  font-weight: 500;
+  text-shadow: 1px 15px 15px black;
+}
+
+.container section.header ul.social {
+  float: right;
+  margin: 0px 0 0 0px;
+  padding: 2px 0 0 0px;
+  border: 0px solid blue;
+}
+
+.container section.header ul.social li {
+  display: inline-block;
+  width: 41px;
+  height: 57px;
+  margin: 0 0 0 -5px;
+  border: 0px solid red;
+  cursor: pointer;
+  background: url("../i/sprite.png");
+}
+
+.container section.header ul.social li.search {
+  width: 60px;
+  border-right: 1px solid #dde2e4;
+  background-position: -39px -100px;
+}
+
+.container section.header ul.social li.facebook {
+  background-position: -99px -100px;
+}
+
+.container section.header ul.social li.twitter {
+  background-position: -139px -100px;
+}
+
+.container section.header ul.social li.google-plus {
+  background-position: -178px -100px;
+}
+
+.container section.header ul.social li.profile {
+  width: 61px;
+  border-left: 1px solid #dde2e4;
+  background-position: -219px -100px;
+}
+
+.container section.header ul.social li:hover {
+  background-position-y: -140px;
+}
+
+.container section.top-cols {
+  margin: 14px 0 0 0;
+  height: 673px;
+  overflow: hidden;
+  border: 0px solid yellow;
+}
+
+.container section.top-cols .column-1 {
+  float: left;
+  border: 0px solid green;
+}
+
+.container section.top-cols .column-1 ul.first li {
+  width: 205px;
+  padding: 22px 20px 19px 0;
+  background-color: #fff;
+  border: 0px solid blue;
+  border-bottom: 1px solid #e1e5e7;
+  text-transform: capitalize;
+}
+
+.container section.top-cols .column-1 ul.first li:before {
+  content: "";
+  display: block;
+  float: left;
+  width: 45px;
+  height: 40px;
+  margin: -3px 20px 0 0;
+  background: white url("../i/sprite.png") 17px 0px;
+}
+
+.container section.top-cols .column-1 ul.first li:hover, .container section.top-cols .column-1 ul.first li:hover:before {
+  background-color: #56ccc8;
+  transition: 0s;
+}
+
+.container section.top-cols .column-1 ul.first li:hover a {
+  color: white;
+}
+
+.container section.top-cols .column-1 ul.first li:hover:before {
+  background-color: #56ccc8;
+  background-position-y: -60px;
+}
+
+.container section.top-cols .column-1 ul.first li.store:before {
+  background-position-x: -43px;
+}
+
+.container section.top-cols .column-1 ul.first li.blog:before {
+  background-position-x: -101px;
+}
+
+.container section.top-cols .column-1 ul.first li.community:before {
+  background-position-x: -163px;
+}
+
+.container section.top-cols .column-1 ul.first li.contests:before {
+  background-position-x: -222px;
+}
+
+.container section.top-cols .column-1 ul.first li.about:before {
+  background-position-x: -281px;
+}
+
+.container section.top-cols .column-1 ul.first li.contact:before {
+  background-position-x: -342px;
+}
+
+.container section.top-cols .column-1 ul.first li.call, .container section.top-cols .column-1 ul.first li.place, .container section.top-cols .column-1 ul.first li.mail {
+  background-color: #c5cdd1;
+  width: 215px;
+  padding: 20px 10px 10px 0;
+  color: white;
+  font-size: 15px;
+  border: none;
+}
+
+.container section.top-cols .column-1 ul.first li.call:before, .container section.top-cols .column-1 ul.first li.place:before, .container section.top-cols .column-1 ul.first li.mail:before {
+  background: #c5cdd1 url("../i/sprite.png") -401px -55px;
+  padding-bottom: 10px;
+  border: 0px solid red;
+}
+
+.container section.top-cols .column-1 ul.first li.call:hover, .container section.top-cols .column-1 ul.first li.call:hover:before, .container section.top-cols .column-1 ul.first li.place:hover, .container section.top-cols .column-1 ul.first li.place:hover:before, .container section.top-cols .column-1 ul.first li.mail:hover, .container section.top-cols .column-1 ul.first li.mail:hover:before {
+  background-color: #aaa;
+  transition: 0.3s;
+}
+
+.container section.top-cols .column-1 ul.first li.call a, .container section.top-cols .column-1 ul.first li.place a, .container section.top-cols .column-1 ul.first li.mail a {
+  color: white;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.container section.top-cols .column-1 ul.first li.call a:hover, .container section.top-cols .column-1 ul.first li.place a:hover, .container section.top-cols .column-1 ul.first li.mail a:hover {
+  text-decoration: underline;
+  color: maroon;
+}
+
+.container section.top-cols .column-1 ul.first li.call {
+  padding-top: 30px;
+}
+
+.container section.top-cols .column-1 ul.first li.place:before {
+  background-position: -458px -53px;
+}
+
+.container section.top-cols .column-1 ul.first li.mail {
+  padding-bottom: 30px;
+}
+
+.container section.top-cols .column-1 ul.first li.mail:before {
+  background-position: -342px -51px;
+}
+
+.container section.top-cols .column-2 {
+  float: left;
+}
+
+.container section.top-cols .column-2 ul.box {
+  width: 200px;
+  background-color: #152840;
+  padding: 15px 15px 15px 25px;
+  border-bottom: 1px solid #445e78;
+}
+
+.container section.top-cols .column-2 ul.box:nth-child(2) {
+  background-color: #263a54;
+}
+
+.container section.top-cols .column-2 ul.box a {
+  color: white;
+  text-transform: capitalize;
+}
+
+.container section.top-cols .column-2 ul.box li {
+  padding: 7px;
+}
+
+.container section.top-cols .column-2 ul.box li:first-child a {
+  color: #56ccc8;
+}
+
+.container section.top-cols .column-2 ul.box li:first-child:after {
+  content: '';
+  display: inline-block;
+  float: right;
+  background: #56ccc8 url("../i/sprite.png") -1px -180px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.container section.top-cols .column-2 ul.box li:hover a {
+  color: #ea6060;
+}
+
+.container section.top-cols .column-2 ul.box li:hover:first-child:after {
+  background: #e05353 url("../i/sprite.png") -1px -201px;
+}
+
+.container section.top-cols .column-3 {
+  float: left;
+  margin: 0 0 0 14px;
+}
+
+.container section.top-cols .column-3 ul.socblock {
+  width: 217px;
+  padding: 15px 0 0 0;
+  height: 300px;
+  background-color: #fff;
+}
+
+.container section.top-cols .column-3 ul.socblock li a {
+  display: block;
+  padding: 20px 20px 17px 28px;
+}
+
+.container section.top-cols .column-3 ul.socblock li a:before {
+  content: "";
+  display: block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin: -5px 20px 0 0px;
+  background: #c5cdd1 url("../i/sprite.png") -110px -213px;
+}
+
+.container section.top-cols .column-3 ul.socblock li a:hover {
+  color: #4fc6f8;
+}
+
+.container section.top-cols .column-3 ul.socblock li a:hover:before {
+  background-color: #4fc6f8;
+}
+
+.container section.top-cols .column-3 ul.socblock li.twitter a:before {
+  background-position: -111px -268px;
+}
+
+.container section.top-cols .column-3 ul.socblock li.google-plus a:before {
+  background-position: -110px -324px;
+}
+
+.container section.top-cols .column-3 ul.socblock li.rss-feeds a:before {
+  background-position: -110px -379px;
+}
+
+.container section.top-cols .column-3 ul.socblock li.pinterest a:before {
+  background-position: -110px -434px;
+}
+
+.container section.top-cols .column-4 .ico {
+  width: 45px;
+  height: 45px;
+  margin: 20px;
+  border: 0px solid red;
+  background: #4d6baa url("../i/sprite.png");
+}
+
+.container section.top-cols .column-4 p.num {
+  position: absolute;
+  left: 25px;
+  bottom: 15px;
+  float: left;
+  border: 0px solid red;
+  color: #fff;
+  font-weight: 600;
+}
+
+.container section.top-cols .column-4 p.follow {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  border: 0px solid red;
+  color: #fff;
+}
+
+.container section.top-cols .column-4 p.follow:after {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin: 0 0 -7px 15px;
+  border: 2px solid white;
+  background: url("../i/sprite.png");
+}
+
+.container section.top-cols .column-4 a.b-facebook {
+  position: relative;
+  float: right;
+  display: block;
+  width: 219px;
+  height: 150px;
+  margin: 0 1px 15px 14px;
+  background-color: #4d6baa;
+}
+
+.container section.top-cols .column-4 a.b-facebook .ico-f {
+  background-position: -335px -140px;
+}
+
+.container section.top-cols .column-4 a.b-facebook p.follow:after {
+  background-position: -342px -242px;
+}
+
+.container section.top-cols .column-4 a.b-twitter {
+  position: relative;
+  float: right;
+  display: block;
+  width: 219px;
+  height: 150px;
+  margin: 0 1px 0 14px;
+  background-color: #4fc6f8;
+}
+
+.container section.top-cols .column-4 a.b-twitter .ico-t {
+  background-position: -440px -140px;
+  background-color: #4fc6f8;
+}
+
+.container section.top-cols .column-4 a.b-twitter p.follow:after {
+  background-position: -441px -242px;
+}
+
+.container section.top-cols .column-4 a.b-facebook.s:hover, .container section.top-cols .column-4 a.b-twitter.s:hover {
+  transform: matrix(1.04, 0, 0, 1.02, -6, 3);
+  border-radius: 50%;
+}
+
+.container section.top-cols .sign {
+  float: left;
+  width: 450px;
+  height: 165px;
+  margin: 14px 0 0 14px;
+  background-color: #fff;
+  border: 0px solid red;
+}
+
+.container section.top-cols .sign h1 {
+  margin: 20px 0 0 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.container section.top-cols .sign p {
+  margin: 15px 0 0 0;
+  text-align: center;
+}
+
+.container section.top-cols .sign ul.soc {
+  margin: 15px 0 0 120px;
+}
+
+.container section.top-cols .sign ul.soc li a {
+  display: block;
+  float: left;
+  margin: 0 23px 0 0;
+  width: 32px;
+  height: 32px;
+  border: 0px solid red;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.container section.top-cols .sign ul.soc li a:hover {
+  transform: matrix(1.3, 0, 0, 1.3, 0, 0);
+  transition: 0.3s;
+}
+
+.container section.top-cols .sign ul.soc li.facebook a {
+  background: #4d6baa url("../i/sprite.png") -110px -213px;
+}
+
+.container section.top-cols .sign ul.soc li.twitter a {
+  background: #4fc6f8 url("../i/sprite.png") -111px -268px;
+}
+
+.container section.top-cols .sign ul.soc li.google-plus a {
+  background: #ea6060 url("../i/sprite.png") -110px -324px;
+}
+
+.container section.top-cols .sign ul.soc li.in a {
+  background: #238cc8 url("../i/sprite.png") -112px -495px;
+}
+
+.container section.top-cols .sign.si-up p {
+  font-size: 12px;
+}
+
+.container section.top-cols .sign.si-up input.inp-mail {
+  width: 267px;
+  height: 35px;
+  padding: 0 0 0 18px;
+  margin: 25px 15px 0 25px;
+}
+
+.container section.top-cols .sign.si-up a.submit {
+  float: right;
+  margin: 25px 30px 0 0;
+}
+
+.container section.b-slides {
+  position: relative;
+  margin: 14px 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #787878;
+}
+
+.container section.b-slides .slides.slick-list {
+  position: relative;
+  z-index: 1;
+  border: 0px solid white;
+  height: 450px;
+  margin: 0 auto 0;
+}
+
+.container section.b-slides .slides.slick-list .slide {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  height: 450px;
+  border: 0px solid red;
+}
+
+.container section.b-slides .slides.slick-list .sl-1 {
+  background: url("../tem/sl01.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container section.b-slides .slides.slick-list .sl-2 {
+  background: url("../tem/sl02.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container section.b-slides .slides.slick-list .sl-3 {
+  background: url("../tem/sl03.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container section.b-slides .slides.slick-list .sl-4 {
+  background: url("../tem/sl04.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container section.b-slides button.sl-prev, .container section.b-slides button.sl-next {
+  position: absolute;
+  margin-left: 25px;
+  z-index: 3;
+  top: 53.5%;
+  width: 34px;
+  height: 52px;
+  padding: 5px 10px;
+  background: #fff;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #bbb;
+  color: transparent;
+}
+
+.container section.b-slides button.sl-prev:before, .container section.b-slides button.sl-next:before {
+  content: '';
+}
+
+.container section.b-slides button.sl-prev div.line, .container section.b-slides button.sl-next div.line {
+  position: absolute;
+  z-index: 4;
+  width: 10px;
+  height: 3px;
+  background: #585858;
+}
+
+.container section.b-slides button.sl-prev div.line.r, .container section.b-slides button.sl-next div.line.r {
+  transform: rotate(45deg);
+}
+
+.container section.b-slides button.sl-prev div.line.l, .container section.b-slides button.sl-next div.line.l {
+  transform: rotate(-45deg);
+}
+
+.container section.b-slides button.sl-prev div.line:nth-child(1), .container section.b-slides button.sl-next div.line:nth-child(1) {
+  margin-top: -3px;
+}
+
+.container section.b-slides button.sl-prev div.line:nth-child(2), .container section.b-slides button.sl-next div.line:nth-child(2) {
+  margin-top: 3px;
+}
+
+.container section.b-slides button.sl-next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+  padding-left: 13px;
+}
+
+.container section.b-slides .slick-dots {
+  z-index: 4;
+  bottom: 10px;
+}
+
+.container section.b-slides .slick-dots li {
+  margin: 0 0px;
+}
+
+.container section.b-slides .slick-dots li button:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  opacity: 0.8;
+}
+
+.container section.b-slides .slick-dots li button:hover:before {
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.container section.b-slides .slick-dots li button:focus:before {
+  background-color: #FFF;
+}
+
+.container section.b-slides .slick-dots li.slick-active button:before {
+  background-color: #fff;
+}
+
+.container section.b-slides .h {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  width: 410px;
+  padding: 40px 0 0 60px;
+  color: #fff;
+}
+
+.container section.b-slides .h h1 {
+  font-size: 40px;
+  font-weight: 100;
+  text-shadow: 1px 1px 5px rgba(10, 10, 10, 0.8);
+  margin-bottom: 25px;
+}
+
+.container section.b-slides .h p.now {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 25px;
+  text-shadow: 1px 1px 3px #010101;
+}
+
+.container section.b-slides .h a.view-more {
+  display: block;
+  margin: 30px 0 0 0;
+  padding: 15px 0px 0 0;
+  width: 168px;
+  height: 34px;
+  color: #fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.container section.b-content .sq {
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  margin: 0 14px 14px 0;
+  color: #475055;
+  background-color: white;
+  border: 0px solid red;
+  transition: 0.5s;
+}
+
+.container section.b-content .rec {
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  margin: 0 14px 0 0;
+  color: #475055;
+  background-color: white;
+  border: 0px solid blue;
+  transition: 0.5s;
+}
+
+.container section.b-content .ico-left {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 35px;
+  left: 0;
+  background: url("../i/sprite.png");
+  border: 0px solid red;
+}
+
+.container section.b-content div.column-left {
+  float: left;
+  width: 314px;
+  border: 0px solid orange;
+}
+
+.container section.b-content div.column-right {
+  position: relative;
+  float: left;
+  width: 616px;
+  border: 0px solid orange;
+}
+
+.container section.b-content div.column-left .bri-story {
+  width: 100%;
+  padding: 40px 20px 0 60px;
+}
+
+.container section.b-content div.column-left .bri-story .ico-left {
+  background-color: #ea6060;
+  background-position: 10px -227px;
+}
+
+.container section.b-content div.column-left .bri-story h1 {
+  color: #475055;
+}
+
+.container section.b-content div.column-left .bri-story p.time {
+  margin: 11px 0 0;
+}
+
+.container section.b-content div.column-left .bri-story p.about {
+  margin: 36px 0 0 0;
+}
+
+.container section.b-content div.column-left .bri-numbers {
+  padding: 115px 0 0 81px;
+  background-color: #1f3045;
+}
+
+.container section.b-content div.column-left .bri-numbers a.share {
+  float: left;
+  padding: 50px 0 0 0;
+  border: 0px solid red;
+  background-position: -53px -404px;
+}
+
+.container section.b-content div.column-left .bri-numbers a.like {
+  margin: 0 0 0 78px;
+  padding: 50px 0 0 0;
+  border: 0px solid red;
+  background-position: -171px -199px;
+}
+
+.container section.b-content div.column-left .bri-posts {
+  clear: left;
+  width: 300px;
+  height: 440px;
+  box-sizing: border-box;
+  z-index: 1000;
+  background-color: #4fc6f8;
+  color: white;
+  font-size: 17px;
+}
+
+.container section.b-content div.column-left .bri-posts a {
+  color: white;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.container section.b-content div.column-left .bri-posts a:hover {
+  color: #ea6060;
+  transition: 0.5s;
+}
+
+.container section.b-content div.column-left .bri-posts .post {
+  line-height: 22px;
+  padding: 22px 40px 22px 28px;
+}
+
+.container section.b-content div.column-left .bri-posts .post:not(:last-child) {
+  border-bottom: 1px solid #7bd4fa;
+}
+
+.container section.b-content div.column-left .bri-posts .post p.name {
+  position: relative;
+  padding: 10px 0;
+  border: 0px solid black;
+  font-weight: 400;
+}
+
+.container section.b-content div.column-left .bri-posts .post p.name span {
+  font-weight: 100;
+}
+
+.container section.b-content div.column-left .bri-posts .post p.name:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  border: 0px solid red;
+  background: url("../i/sprite.png") -440px -233px;
+}
+
+.container section.b-content div.column-left .bri-posts .post p.mes {
+  padding: 0px 0 0 0;
+}
+
+.container section.b-content div.column-left .bri-posts .post p.time {
+  color: white;
+  font-size: 16px;
+  padding: 22px 0 0 0;
+}
+
+.container section.b-content div.column-left .bri-hot {
+  height: 530px;
+}
+
+.container section.b-content div.column-left .bri-hot h1 {
+  padding: 22px 20px 20px;
+  border-bottom: 1px solid #dde2e4;
+}
+
+.container section.b-content div.column-left .bri-hot p, .container section.b-content div.column-left .bri-hot img {
+  cursor: pointer;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides {
+  position: relative;
+  padding-top: 63px;
+  top: -63px;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.hot-slide {
+  position: relative;
+  padding: 20px 0 0 17px;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.hot-slide li {
+  width: 100%;
+  padding: 0 0 23px 0;
+  border: 0px solid green;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.hot-slide li a {
+  display: block;
+  position: relative;
+  border: 0px solid blue;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.hot-slide li a img.hot-img {
+  clear: left;
+  float: left;
+  display: block;
+  width: 70px;
+  height: 70px;
+  transition: 0.3s;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.hot-slide li a p.about, .container section.b-content div.column-left .bri-hot .hot-slides ul.hot-slide li a p.time {
+  padding: 0 16px 0 86px;
+  border: 0px solid red;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.hot-slide li a p.about:hover {
+  color: #ea6060;
+  transition: 0.3s;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.hot-slide li a p.time {
+  color: #a3abaf;
+  font-size: 13px;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.hot-slide li a:hover p {
+  transform: scale(1.1);
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.hot-slide li a:hover img {
+  transform: matrix(1.1, 0, 0, 1.1, -10, 0);
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.slick-dots {
+  position: absolute;
+  height: 0;
+  top: 22px;
+  right: -80px;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.slick-dots li {
+  margin: 0 0px;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.slick-dots li button:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #a3abaf;
+  opacity: 0.8;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.slick-dots li button:hover:before {
+  background-color: #a3abaf;
+  opacity: 0.9;
+}
+
+.container section.b-content div.column-left .bri-hot .hot-slides ul.slick-dots li.slick-active button:before {
+  background-color: #a3abaf;
+}
+
+.container section.b-content div.column-left .bri-ask {
+  height: 383px;
+  padding: 30px 18px 30px 20px;
+}
+
+.container section.b-content div.column-left .bri-ask h1 {
+  padding-left: 10px;
+  margin: 0 0 21px 0;
+}
+
+.container section.b-content div.column-left .bri-ask input.inp {
+  width: 258px;
+}
+
+.container section.b-content div.column-left .bri-ask input.inp[name='email']::-webkit-input-placeholder {
+  color: #475055;
+}
+
+.container section.b-content div.column-left .bri-ask input.inp[name='email']::-moz-input-placeholder {
+  color: #475055;
+}
+
+.container section.b-content div.column-left .bri-ask input.inp[name='email']:-moz-input-placeholder {
+  color: #475055;
+}
+
+.container section.b-content div.column-left .bri-ask input.inp[name='email']:-ms-input-placeholder {
+  color: #475055;
+}
+
+.container section.b-content div.column-left .bri-ask textarea {
+  height: 105px;
+  padding-top: 10px;
+}
+
+.container section.b-content div.column-left .bri-ask a.submit {
+  width: 97px;
+}
+
+.container section.b-content div.column-right .bri-video {
+  position: relative;
+  height: 300px;
+  margin: 0 0 14px 0;
+  overflow: hidden;
+}
+
+.container section.b-content div.column-right .bri-video .up {
+  position: absolute;
+  z-index: 2;
+  width: 109px;
+  height: 255px;
+}
+
+.container section.b-content div.column-right .bri-video .bri-networks {
+  position: absolute;
+  z-index: 2;
+  transition: 0.5s;
+  left: -109px;
+  opacity: 0.8;
+  padding-top: 28px;
+  width: 109px;
+  height: 300px;
+  background-color: #1f3045;
+}
+
+.container section.b-content div.column-right .bri-video .bri-networks a.like {
+  margin: 0px auto;
+  background-position: -51px -200px;
+}
+
+.container section.b-content div.column-right .bri-video .bri-networks a.later {
+  margin: 22px auto;
+  background-position: -51px -300px;
+}
+
+.container section.b-content div.column-right .bri-video .bri-networks a.share {
+  margin: 22px auto;
+  background-position: -51px -402px;
+}
+
+.container section.b-content div.column-right .bri-video .up:hover ~ .bri-networks, .container section.b-content div.column-right .bri-video .bri-networks:hover {
+  left: 0;
+  transition: 0.5s;
+}
+
+.container section.b-content div.column-right .bri-video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.container section.b-content div.column-right .bri-story {
+  width: 100%;
+  margin: 0;
+  padding: 40px 0 0 60px;
+  background-color: #FFF;
+}
+
+.container section.b-content div.column-right .bri-story .ico-left {
+  background-color: #4fc6f8;
+  background-position: 10px -267px;
+}
+
+.container section.b-content div.column-right .bri-story h1 {
+  width: 45%;
+  color: #475055;
+}
+
+.container section.b-content div.column-right .bri-story p.time {
+  width: 45%;
+  margin: 11px 0 0;
+}
+
+.container section.b-content div.column-right .bri-story p.about {
+  width: 45%;
+  margin: 36px 0 0 0;
+}
+
+.container section.b-content div.column-right .bri-story img.gmi {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  float: right;
+  margin: 0;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq {
+  margin: 14px 0 0 0;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker {
+  color: #fff;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-datepicker-inline {
+  width: 100%;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+  width: 100%;
+  padding: 0;
+  border: 0;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-widget-header {
+  padding-top: 35px;
+  height: 48px;
+  margin-top: 0px;
+  border: 0px solid #dddddd;
+  background: #1f3045;
+  color: white;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker a.ui-corner-all {
+  top: 35px;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker thead {
+  display: none;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker span.ui-datepicker-month, .container section.b-content div.column-right .bri-calendar.sq div#datepicker span.ui-datepicker-year {
+  font-weight: 400;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-widget-content {
+  background: #152840;
+  height: 100%;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-datepicker table {
+  height: 214px;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-datepicker td {
+  width: 42px;
+  border: 1px solid #52627b;
+  padding: 0px;
+  background: transparent;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-state-default, .container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-widget-content .ui-state-default, .container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-widget-header .ui-state-default, .container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-button, .container section.b-content div.column-right .bri-calendar.sq div#datepicker html .ui-button.ui-state-disabled:hover, .container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-button.ui-state-disabled:active {
+  border: 0px solid #c5c5c5;
+  background: transparent;
+  color: #fff;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker td[data-month] {
+  background: #263a54;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker td[data-month]:hover {
+  position: relative;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker td[data-month]:hover:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #263a54;
+  border: 1px solid white;
+  opacity: 0.3;
+  background: #56ccc8;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker td[data-month]:nth-child(6), .container section.b-content div.column-right .bri-calendar.sq div#datepicker td[data-month]:nth-child(7) {
+  background: #324864;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker table .ui-datepicker-current-day[data-handler="selectDay"] {
+  background: #56ccc8;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker table .ui-datepicker-today.ui-datepicker-current-day[data-handler="selectDay"] {
+  background: linear-gradient(to top, #ea6060, #56ccc8);
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker table .ui-datepicker-today {
+  background: #ea6060;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker td a {
+  text-align: center;
+}
+
+.container section.b-content div.column-right .bri-view-more {
+  float: right;
+  margin: 14px 0 14px 14px;
+  padding: 65px 0 0 65px;
+  background-color: #ea6060;
+}
+
+.container section.b-content div.column-right .bri-view-more a.a-view-more {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container section.b-content div.column-right .bri-view-more a.a-view-more:hover h1 {
+  transform: matrix(1.1, 0, 0, 1.1, 20, 0);
+  transition: 0.5s;
+}
+
+.container section.b-content div.column-right .bri-view-more a.a-view-more:hover h1:after {
+  transform: matrix(1, 0, 0, 1, 100, 0) rotate(720deg);
+  transition: 0.5s;
+}
+
+.container section.b-content div.column-right .bri-view-more a.a-view-more h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 300;
+  transition: 0.5s;
+}
+
+.container section.b-content div.column-right .bri-view-more a.a-view-more h1:after {
+  margin-top: 25px;
+  content: "";
+  display: block;
+  width: 33px;
+  height: 33px;
+  background: url("../i/sprite.png") -182px -400px;
+  border: 0px solid white;
+  transition: 0.5s;
+}
+
+.container section.b-content div.column-right .bri-new {
+  position: relative;
+  float: right;
+  margin: 0px 0 0 14px;
+  height: auto;
+}
+
+.container section.b-content div.column-right .bri-new .corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 60px solid #ea6060;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.container section.b-content div.column-right .bri-new p.new {
+  position: absolute;
+  z-index: 1;
+  padding: 35px 0 0 7px;
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+}
+
+.container section.b-content div.column-right .bri-new img.img-new {
+  width: 100%;
+}
+
+.container section.b-content div.column-right .bri-new .ico-left {
+  top: 333px;
+  background-color: #56ccc8;
+  background-position: 13px -309px;
+}
+
+.container section.b-content div.column-right .bri-new h1 {
+  margin: 39px 45px 0 58px;
+}
+
+.container section.b-content div.column-right .bri-new p.about {
+  margin: 22px 45px 0 53px;
+}
+
+.container section.b-content div.column-right .bri-new ul.soc {
+  margin: 43px 45px 28px 65px;
+  border: 0px solid red;
+}
+
+.container section.b-content div.column-right .bri-new ul.soc li {
+  margin-right: 25px;
+  display: inline-block;
+}
+
+.container section.b-content div.column-right .bri-new ul.soc li a {
+  display: block;
+  transition: 0.5s;
+}
+
+.container section.b-content div.column-right .bri-new ul.soc li a:before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 17px;
+  margin-bottom: -2px;
+  border: 0px solid green;
+  background: url("../i/sprite.png");
+}
+
+.container section.b-content div.column-right .bri-new ul.soc li a.shares:before {
+  background-position: -160px -301px;
+}
+
+.container section.b-content div.column-right .bri-new ul.soc li a.views:before {
+  background-position: -200px -300px;
+}
+
+.container section.b-content div.column-right .bri-new ul.soc li a.comm:before {
+  background-position: -232px -299px;
+}
+
+.container section.b-content div.column-right .bri-new ul.soc li a:hover {
+  color: #4fc6f8;
+  transition: 0.5s;
+}
+
+.container section.b-content div.column-right .bri-quote {
+  position: relative;
+  float: right;
+  margin: 14px 0 14px 14px;
+  padding: 35px 95px 15px 85px;
+  height: auto;
+}
+
+.container section.b-content div.column-right .bri-quote q {
+  quotes: "\201d" "\201d";
+  font-style: italic;
+  font-weight: 300;
+  color: #475055;
+  font-size: 24px;
+}
+
+.container section.b-content div.column-right .bri-quote .ico-left {
+  background-color: #56ccc8;
+  background-position: 12px -348px;
+}
+
+.container section.b-content div.column-right .bri-insets {
+  float: right;
+  height: 255px;
+  margin: 0;
+  border-width: 0;
+}
+
+.container section.b-content div.column-right .bri-insets p {
+  margin: 73px 28px 0 40px;
+}
+
+.container section.b-content div.column-right .bri-insets img.ad {
+  width: 450px;
+  margin: 20px 0 0 90px;
+}
+
+.container section.b-content div.column-right .bri-insets ul.links {
+  background-color: #c5cdd1;
+  margin: 0 0 0 0px;
+  padding: 0;
+  padding-right: 0px;
+  border: 0px;
+}
+
+.container section.b-content div.column-right .bri-insets ul.links li {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  margin-right: -5px;
+  height: 45px;
+  margin-left: -0px;
+  background: white;
+  border: 1px solid #48657d;
+  border-right-width: 0;
+}
+
+.container section.b-content div.column-right .bri-insets ul.links li a {
+  display: block;
+  height: 100%;
+  padding: 15px 0 15px 0;
+  background-color: #c5cdd1;
+  color: white;
+  text-decoration: none;
+}
+
+.container section.b-content div.column-right .bri-insets ul.links li a.active {
+  background-color: white;
+  color: black;
+}
+
+.container section.b-content div.column-right .bri-insets ul.links li:first-child {
+  border-left-width: 0;
+}
+
+.container section.b-content div.column-right .bri-insets ul.links li:last-child {
+  border-right-width: 0px;
+  padding-right: 0px;
+}
+
+.container section.b-content div.column-right .bri-insets ul.cont {
+  position: relative;
+  width: 100%;
+  height: 255px;
+  border: 0px solid black;
+}
+
+.container section.b-content div.column-right .bri-insets ul.cont li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: none;
+}
+
+.container section.b-content div.column-right .bri-insets ul.cont li:target {
+  display: block;
+}
+
+.container section.b-content div.column-right .bri-insets ul.cont li#n2 {
+  display: block;
+}
+
+.container section.b-content div.column-right .bri-insets ul.cont li .ins {
+  float: left;
+  box-sizing: border-box;
+  width: 49.5%;
+  height: 100%;
+  padding: 33px 0 0 28px;
+  border: 0px solid red;
+}
+
+.container section.b-content div.column-right .bri-insets ul.cont li .ins img.mini {
+  float: left;
+  width: 55px;
+  margin-right: 24px;
+}
+
+.container section.b-content div.column-right .bri-insets ul.cont li .ins h4.occu {
+  font-weight: 100;
+  color: #a3abaf;
+  margin: 3px 0 30px 0;
+}
+
+.container section.b-content div.column-right .bri-insets ul.cont li .ins p.comm {
+  margin: 0 0 24px 0;
+}
+
+.container section.b-content div.column-right .bri-insets ul.cont li .ins a.email {
+  color: #4fc6f8;
+  text-transform: none;
+}

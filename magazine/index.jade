@@ -1,0 +1,411 @@
+html
+	head
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,100|Noto+Sans|Roboto:100,300,400,500,700', rel='stylesheet', type='text/css')
+
+		script(type='text/javascript', src='//code.jquery.com/jquery-1.11.0.min.js')
+		script(type='text/javascript', src='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js')
+
+		link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css')
+		link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css')
+
+
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css")
+		link(rel="stylesheet", href="/resources/demos/style.css")
+		//- script(src="https://code.jquery.com/jquery-1.12.4.js")
+		script(src="https://code.jquery.com/ui/1.12.0/jquery-ui.js")
+
+		
+		title Magazine
+		script(type='text/javascript', src='js/main.js')
+		link(rel='stylesheet', type='text/css', href='s/main.css')
+	body
+
+		.container
+			section.header
+				.main-menu
+				ul.top-links
+					li 
+						a(href="#") home
+					li 
+						a(href="#") store
+					li 
+						a(href="#") blog
+					li 
+						a(href="#") about
+					li 
+						a(href="#") contact
+				ul.social
+					li.search 
+						a(href="#")
+					li.facebook 
+						a(href="#")
+					li.twitter 
+						a(href="#")
+					li.google-plus 
+						a(href="#")
+					li.profile 
+						a(href="#")
+			section.top-cols
+				.col.column-1
+					ul.first
+						li.home 
+							a(href="#") home
+						li.store 
+							a(href="#") store
+						li.blog 
+							a(href="#") blog
+						li.community 
+							a(href="#") community
+						li.contests 
+							a(href="#") contests
+						li.about 
+							a(href="#") about
+						li.contact 
+							a(href="#") contact
+						li.call (912) 555-1234
+							br
+							|(912) 555-5678
+						li.place 1600 Pennsylvania
+							|Ave NW, Washington
+							|DC 20500, USA
+						li.mail 
+							a.mail-01(href="") hello@website.com
+								br
+							a.mail-02(href="") office@website.com
+							
+				.col.column-2		
+					ul.box
+						li					 
+							a(href="#") tech
+						li					 
+							a(href="#") software & apps
+						li					 
+							a(href="#") gadgets
+						li					 
+							a(href="#") mobile
+					ul.box
+						li					 
+							a(href="#") entertainment
+						li					 
+							a(href="#") film
+						li 					 
+							a(href="#") gaming
+						li					 
+							a(href="#") music
+						li					 
+							a(href="#") sport
+					ul.box
+						li					 
+							a(href="#") business
+						li					 
+							a(href="#") jobs
+						li					 
+							a(href="#") marketing
+						li					 
+							a(href="#") media
+					ul.box
+						li					 
+							a(href="#") lifestyle
+						li					 
+							a(href="#") home
+						li					 
+							a(href="#") health & fitness
+						li					 
+							a(href="#") travel & leisure
+										
+				.col.column-3
+					ul.socblock
+						li.facebook
+							a.a-facebook(href="") facebook
+						li.twitter
+							a.a-twitter(href="") twitter
+						li.google-plus
+							a.a-google-plus(href="") google +
+						li.rss-feeds
+							a.a-rss-feeds(href="") rss feeds
+						li.pinterest
+							a.a-pinterest(href="") pinterest
+					
+							
+							
+				.col.column-4
+					a.b-facebook.s(href="")
+						.ico.ico-f
+						p.num 156K
+						p.follow Follow
+						
+					a.b-twitter.s(href="")
+						.ico.ico-t
+						p.num 89K
+						p.follow Following
+						
+				.sign.si-in
+					h1 sign in
+					p Just select your favorite social network to get started
+					ul.soc
+						li.facebook 
+							a(href="")
+						li.twitter
+							a(href="")
+						li.google-plus
+							a(href="")
+						li.in
+							a(href="")
+				.sign.si-up
+					h1 join the newsletter
+					p Sign up for our personalized daily newsletter
+					form.join(id="j-01")
+						input.inp-mail(type="email", placeholder="Enter email address")
+						
+						a.submit(href="#", onclick="document.getElementById('j-01').submit();return false;") sign up
+						
+			section.b-slides
+				.h
+					h1 Featured story
+					p.now Now that the holiday gift-giving time is over, we're 
+						br 
+						|sure many of our readers unwrapped some new consoles. 
+						|Despite its long life on the market...
+					a.view-more(href="#", onclick="") view more
+				.slides.slick-list  
+					.slide.sl-1
+					.slide.sl-2
+					.slide.sl-3
+					.slide.sl-4
+					
+				button.slick-prev.sl-prev
+					div.line.l
+					div.line.r
+				button.slick-next.sl-next
+					div.line.r
+					div.line.l
+				.slick-dots.dots1
+
+
+			section.b-content
+				div.column-left
+					.bri-story.sq
+						.ico-left
+						h1 Best story you 
+							br
+							|have ever heard
+						p.time 24 minutes ago
+						p.about Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's...
+							a.more(href="#") Read more
+				
+
+			
+					.bri-numbers.sq
+						a.box.share(href="#") 1,325
+						a.box.like(href="#") 682
+					
+					.bri-posts.sq
+						.post
+							p.name Alex White 
+								span @alexwhite
+						.post
+							p.mes Singolo is a free PSD template
+								br 
+								|of a flat, single page website
+								br 
+								|created by 
+								a.in-mes(href="http://bit.ly/19XM8Lj") @PsdChat #freebie #psd http://bit.ly/19XM8Lj
+							p.time 2 hours ago
+						.post
+							p.mes Saturday Career Workshops
+								br 
+								|are back at ADC! See what high 
+								br 
+								|school students created this
+								br 
+								|week: 
+								a.in-mes(href="http://bit.ly/Xx1EsL") http://bit.ly/Xx1EsL
+							p.time 6 hours ago
+
+					.bri-hot.sq
+						h1 What's hot
+						//- ul.hot-dots
+						
+						.hot-slides
+							ul.hot-slide.sl-1
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w12.jpg",alt="")
+										p.about A New Yorker doesn't necessarily come from...
+										p.time 3 minutes ago	
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w08.jpg",alt="")
+										p.about A New Yorker never looks up...
+										p.time 7 hours ago
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w14.jpg",alt="")
+										p.about A New Yorker doesn't take cabs
+										p.time 23 hours ago
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w13.jpg",alt="")
+										p.about A New Yorker views celebrities as regular...
+										p.time 1 day ago
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w11.jpg",alt="")
+										p.about A New Yorker never looks up...
+										p.time 2 days ago
+
+
+							ul.hot-slide.sl-2
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w06.jpg",alt="")
+										p.about A Chicagoan doesn't necessarily come from...
+										p.time 2 days ago
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w17.jpg",alt="")
+										p.about A Chicagoan never looks up...
+										p.time 2 days ago
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w07.jpg",alt="")
+										p.about A Chicagoan doesn't take cabs
+										p.time 3 days agogo
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w05.jpg",alt="")
+										p.about A Chicagoan views celebrities as regular...
+										p.time 3 days ago
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w16.jpg",alt="")
+										p.about A Chicagoan never looks up...
+										p.time 4 days ago
+
+							ul.hot-slide.sl-3
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w03.jpg",alt="")
+										p.about A San Franciscan doesn't necessarily come from...
+										p.time 4 days ago
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w18.jpg",alt="")
+										p.about A San Franciscan never looks up...
+										p.time 5 days ago
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w02.jpg",alt="")
+										p.about A San Franciscan doesn't take cabs
+										p.time 5 days ago
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w16.jpg",alt="")
+										p.about A San Franciscan views celebrities as regular...
+										p.time 6 days ago
+								li
+									a(href="#")					
+										img.hot-img(src="tem/w19.jpg",alt="")
+										p.about A San Franciscan never looks up...
+										p.time a week ago
+
+
+					.bri-ask.sq
+						h1 Ask a Question
+						form(id='j-02'. name='ask', action='$', method='post', onsubmit='return Checkform(this)')
+							input.inp(name='name', type='text', placeholder='Your name', minlength='3', required='required')
+							input.inp(name='email', type='text', placeholder='hello@graphicburger.com', readonly='readonly')
+							textarea(name='question', rows = '5', placeholder='Your question...', required='required')
+							a.submit(href="#", onclick="document.getElementById('j-02').submit();return false;") submit	
+							
+
+				div.column-right
+					
+					.bri-video
+						.up
+						.bri-networks.rec
+							a.box.like(href="#") Like
+							a.box.later(href="#") Later
+							a.box.share(href="#") Share
+						iframe(src="https://www.youtube.com/embed/4c3geD0aXPk" frameborder="0", allowfullscreen="")
+					.bri-story.sq
+						.ico-left
+						h1 Here's What Instagram Ads Will Look Like
+						p.time 3 hours ago
+						p.about Lorem Ipsum is simply dummy text of the printing and typesetting industry... 
+							a.more(href="#") Read more
+						img.gmi(src="tem/Nikon_Zeiss50.jpg", alt="")
+
+					.bri-calendar.sq
+						div#datepicker
+
+
+
+					.bri-view-more.sq
+						a.a-view-more(href="#")
+							h1 VIEW
+								br
+								|MORE
+								br
+								|STORIES
+					.bri-new.rec
+						.corner
+						p.new new
+						img.img-new(src="tem/new-img.jpg", alt="")
+						.ico-left
+						h1 What is Lorem Ipsum?
+						p.about Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting... 
+							a.more(href="#") Read more
+						ul.soc
+							li 
+								a.shares.s(href="#") 569 Shares
+							li
+								a.views.s(href="#") 3,152 Views
+							li
+								a.comm.s(href="#")	21 Comments
+					.bri-quote.rec
+						.ico-left
+						q If you don't like something change it. If 
+							br
+							|&nbsp;you can't change it, change the way you &nbsp;think about it. 
+					.bri-insets.rec
+						ul.links
+							li 
+								a.lin(href="#n1") About
+							li 
+								a.lin.active(href="#n2") Team
+							li 
+								a.lin(href="#n3") Privacy
+							li 
+								a.lin(href="#n4") Advertise		
+							li 
+								a.lin(href="#n5") Contact
+
+						ul.cont
+							li#n2
+								.ins
+									img.mini(src="tem/g1.jpg", alt="")
+									h3.name Anne Hathaway
+									h4.occu CEO / Founder
+									p.comm “Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem ...”
+									a.email(href="") @annehathaway
+								.ins
+									img.mini(src="tem/g2.jpg", alt="")
+									h3.name Kate Upton
+									h4.occu Co-Founder
+									p.comm Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem Ipsum ...
+									a.email(href="") @kateupton
+							li#n1
+								p Our company is a global management consulting firm that serves leading businesses, governments, non governmental organizations, and not-for-profits. We help our clients make lasting improvements to their performance and realize their most important goals. Over nearly a century, we’ve built a firm uniquely equipped to this task.
+
+							
+							li#n3
+								p At our company, we are absolutely committed to your privacy. We know that we must earn your trust—and keep it—every time you use our product. To make good on that promise, we’ve created this Privacy Center, where you’ll find a wealth of info about our approach to privacy.
+
+							li#n4
+								a(href="")
+									img.ad(src="tem/adwu.png")
+							li#n5
+								p Whether you’re looking for answers, would like to solve a problem, or just want to let us know how we did, you’ll find many ways to contact us right here. We’ll help you resolve your issues quickly and easily, getting you back to more important things, like relaxing on your new sofa. 								
