@@ -437,7 +437,7 @@ a.submit:active {
   height: 45px;
   margin: 20px;
   border: 0px solid red;
-  background: #4d6baa url("../i/sprite.png");
+  background: transparent url("../i/sprite.png");
 }
 
 .container section.top-cols .column-4 p.num {
@@ -499,7 +499,6 @@ a.submit:active {
 
 .container section.top-cols .column-4 a.b-twitter .ico-t {
   background-position: -440px -140px;
-  background-color: #4fc6f8;
 }
 
 .container section.top-cols .column-4 a.b-twitter p.follow:after {
