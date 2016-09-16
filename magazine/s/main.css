@@ -160,16 +160,25 @@ a.submit:active {
 
 .container section.header ul.top-links li {
   display: inline-block;
+  position: relative;
+  width: 45px;
   padding: 15px 20px 15px 20px;
   border: 0px solid red;
   text-transform: capitalize;
-  transition: 0.3s;
+}
+
+.container section.header ul.top-links li a {
+  display: block;
+  position: absolute;
 }
 
 .container section.header ul.top-links li:hover {
-  color: #ea6060;
-  transition: 0.3s;
   text-shadow: 1px 15px 15px black;
+}
+
+.container section.header ul.top-links li:hover a {
+  color: #ea6060;
+  font-size: 17px;
 }
 
 .container section.header ul.social {
