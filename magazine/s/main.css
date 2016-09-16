@@ -167,9 +167,8 @@ a.submit:active {
 }
 
 .container section.header ul.top-links li:hover {
-  color: #56ccc8;
+  color: #ea6060;
   transition: 0.3s;
-  font-weight: 500;
   text-shadow: 1px 15px 15px black;
 }
 
