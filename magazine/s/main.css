@@ -161,7 +161,7 @@ a.submit:active {
 .container section.header ul.top-links li {
   display: inline-block;
   position: relative;
-  width: 45px;
+  width: 40px;
   padding: 15px 20px 15px 20px;
   border: 0px solid red;
   text-transform: capitalize;
