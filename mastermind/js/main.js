@@ -151,7 +151,8 @@ case false:
 }
   if (but.value=="NICE!" && n==5)  {
   //window.location='https://www.youtube.com/embed/tv3Rsz-EbzE?autoplay=1&start=9&?vq=480';
-  window.location='https://www.youtube.com/embed/xhqnzdiDkeY?autoplay=1&start=9&?vq=480';
+  //window.location='https://www.youtube.com/embed/xhqnzdiDkeY?autoplay=1&start=9&?vq=480';
+  window.location='https://www.youtube.com/embed/D43_e0ux-2U?autoplay=1&start=0&?vq=480';
 }
 
 
