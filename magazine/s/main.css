@@ -1166,6 +1166,18 @@ a.submit:active {
   top: 35px;
 }
 
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-widget-header a {
+  background: url("../i/sprite.png") -330px -387px;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-widget-header a:nth-child(2) {
+  background: url("../i/sprite.png") -358px -387px;
+}
+
+.container section.b-content div.column-right .bri-calendar.sq div#datepicker .ui-widget-header a span {
+  display: none;
+}
+
 .container section.b-content div.column-right .bri-calendar.sq div#datepicker thead {
   display: none;
 }
