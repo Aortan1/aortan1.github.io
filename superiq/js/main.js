@@ -176,9 +176,9 @@ function timer(t){
 	$('.results p')[0].innerHTML+='<span class="i"><br><br> Уделяйте этой тренировке 15 минут каждый день, и Ваш IQ повысится! <span>';
 
 if (test_time==421 && rig1<20)
-	$('.results p')[0].innerHTML='<span class="i">Ваши результаты:</span><br><br> УГАДАНО СЛОВ: <span>'+rig1+'.</span><br><br><span class="i">Вам стоит потренироваться.<span>';
+	$('.results p')[0].innerHTML='<span class="i">Ваши результаты:</span><br><br> УГАДАНО СЛОВ: <span class="r">'+rig1+'.</span><br><br><span class="i">Вам стоит потренироваться.<span>';
 if (test_time==421 && rig1>=20)
-	$('.results p')[0].innerHTML='<span class="i">Ваши результаты:</span><br><br> УГАДАНО СЛОВ: <span>'+rig1+'.</span><br><br><span class="i">Неплохо!<span>';
+	$('.results p')[0].innerHTML='<span class="i">Ваши результаты:</span><br><br> УГАДАНО СЛОВ: <span class="r">'+rig1+'.</span><br><br><span class="i">Неплохо!<span>';
 
 
 
