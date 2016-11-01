@@ -361,9 +361,11 @@ if (vari==51) {  // Вариант 2 панели ввода ответа.
 	var win=words.in_array(te);
 	if (te==word || (win!=false && the_same_letters(words[win],te))) {
 		rig1++;
-		alert("ВЕРНО! Угадано "+rig1+"."); 
+		//alert("ВЕРНО! Угадано "+rig1+".");
+		$('p.ans')[0].innerHTML='ВЕРНО! Угадано '+rig1+'.<br>';
 				 
-	}	else {alert("Не верно:( \n"+word.toUpperCase()+" => "+word_sh);}
+	}	else {//alert("Не верно:( \n"+word.toUpperCase()+" => "+word_sh);
+$('p.ans')[0].innerHTML='Не верно:( &nbsp;&nbsp;&nbsp; '+word.toUpperCase()+' => '+word_sh+'<br>';}
 	$("#text2").val('')
 }
 
@@ -475,7 +477,7 @@ word_sh=word0.join(''); //объединение массива букв word0 �
 aa=$(".bl-1-word"); 
 aa[0].style.display="block";
 $('.bl-1-word p.comm')[0].innerHTML=word_sh; 
-$('.block h1').html("Вопрос "+num+".");
+$('.block h1').html('Вопрос '+num+'.');
 
 //Подключение ввода ентером.
 aa.keyup(function(event){

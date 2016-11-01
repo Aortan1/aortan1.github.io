@@ -101,7 +101,7 @@ div.container .block {
 
 div.container .block h1 {
   font-size: 32px;
-  padding: 20px 10px;
+  padding: 20px 0px;
 }
 
 div.container .block img.img_n {
@@ -249,4 +249,11 @@ div.container .results span.i {
 
 div.container .results span.r {
   color: red;
+}
+
+div.container p.ans {
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  color: #fff;
 }
