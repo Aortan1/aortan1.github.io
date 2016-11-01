@@ -365,7 +365,7 @@ if (vari==51) {  // Вариант 2 панели ввода ответа.
 		$('p.ans')[0].innerHTML='ВЕРНО! Угадано '+rig1+'.<br>';
 				 
 	}	else {//alert("Не верно:( \n"+word.toUpperCase()+" => "+word_sh);
-$('p.ans')[0].innerHTML='Не верно:( &nbsp;&nbsp;&nbsp; '+word_sh.toUpperCase()+' => '+word.toUpperCase()+'<br>';}
+$('p.ans')[0].innerHTML=word_sh.toUpperCase()+' => '+word.toUpperCase()+'<br>';}
 	$("#text2").val('')
 }
 
