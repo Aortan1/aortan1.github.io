@@ -1,0 +1,142 @@
+
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,100|Noto+Sans|Roboto:100,300,400,500,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" type="text/css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link href="s/timeTo.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <meta charset="utf-8"/>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <title>Super IQ - тренировка интеллекта для взрослых и детей.</title>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/words.js"></script>
+    <link rel="stylesheet" type="text/css" href="s/main.css"/>
+    <script type="text/javascript" src="http://scriptjava.net/source/scriptjava/scriptjava.js"></script>
+  </head>
+  <body>
+    <div id="timer"></div>
+    <div id="timer_mem"></div>
+    <div class="container">
+      <div class="block bl-0">
+        <h1>Super IQ game</h1>
+        <h1 class="c">develop your intelligence :)</h1>
+        <p class="comm ag"><b>Если Вам меньше 18-ти, введите Ваш возраст</b></p>
+        <select name="age" size="1" id="select_age" class="age">
+          <option value="18" selected="selected">18 или ></option>
+          <option value="17">17</option>
+          <option value="16">16</option>
+          <option value="15">15</option>
+          <option value="14">14</option>
+          <option value="13">13</option>
+          <option value="12">12</option>
+          <option value="11">11</option>
+          <option value="10">10</option>
+          <option value="9">9</option>
+          <option value="8">8</option>
+          <option value="7">7</option>
+          <option value="6">6</option>
+        </select>
+        <p class="comm"><b>Выберите тип игры:</b></p>
+        <input onclick="check(40040)" type="radio" class="ival"/><span class="sval">Тестовый режим программы (40сек)</span><br/>
+        <input onclick="check(50050)" type="radio" class="ival"/><span class="sval">Угадай слово (7мин)</span><br/>
+        <input onclick="check(15015)" type="radio" class="ival"/><span class="sval">Тренировка (15мин)</span><br/>
+        <input onclick="check(30030)" type="radio" class="ival"/><span class="sval">Тест (30мин)				</span>
+        
+      </div>
+      <div class="block bl-1">
+        <h1>Вопрос</h1><img src="" alt="" class="img_n"/>
+        <div class="div-in">					
+          <input id="text" name="word" type="text" autocomplete="off" autofocus="autofocus"/>
+          <button onkeyup="check(11)" onclick="check(11)" class="in sub">Ввод</button>
+          <button onclick="check(-1)" class="in skip">Пропустить</button>
+        </div>
+      </div>
+      <div class="block bl-2">
+        <h1>Вопрос</h1><img src="" alt="" class="img_n"/>
+        <div class="div-in">					
+          <button onclick="check(1)" class="in var">1</button>
+          <button onclick="check(2)" class="in var">2</button>
+          <button onclick="check(3)" class="in var">3</button>
+          <button onclick="check(4)" class="in var">4</button>
+          <button onclick="check(5)" class="in var">5</button>
+          <button onclick="check(6)" class="in var">6</button>
+          <button onclick="check(7)" class="in var">7</button>
+          <button onclick="check(8)" class="in var">8</button>
+          <button onclick="check(9)" class="in var">9</button>
+          <button onclick="check(-1)" class="in skip">Пропустить</button>
+        </div>
+      </div>
+      <div class="block bl-3">
+        <h1>Вопрос</h1><img src="" alt="" class="img_n"/>
+        <div class="div-in">					
+          <label class="l">1
+            <input type="checkbox" id="ch1" class="chb"/>
+          </label>
+          <label class="l">2
+            <input type="checkbox" id="ch2" class="chb"/>
+          </label>
+          <label class="l">3
+            <input type="checkbox" id="ch3" class="chb"/>
+          </label>
+          <label class="l">4
+            <input type="checkbox" id="ch4" class="chb"/>
+          </label>
+          <label class="l">5
+            <input type="checkbox" id="ch5" class="chb"/>
+          </label>
+          <label class="l">6
+            <input type="checkbox" id="ch6" class="chb"/>
+          </label>
+          <label class="l">7
+            <input type="checkbox" id="ch7" class="chb"/>
+          </label>
+          <label class="l">8
+            <input type="checkbox" id="ch8" class="chb"/>
+          </label>
+          <label class="l">9
+            <input type="checkbox" id="ch9" class="chb"/>
+          </label>
+          <button onclick="check(33)" class="in sub">Ввод	</button>
+          <button onclick="check(-1)" class="in skip">Пропустить				</button>
+        </div>
+      </div>
+      <div class="block bl-0-15">			
+        <p class="comm"><b>Тренировка продлиться 15 минут. Относиться к ней следует именно как к тренировке, а не как к тесту на IQ.</b><br/>Тренировка проходит в формате теста. Треть времени отведено на вопросы словесного теста, треть - числового, и ещё треть - наглядно-образного. Количество вопросов - с избытком, их можно пропускать без влияния на итог, ответить на все - невозможно.<br/>По окончанию тренировки вы получите оценку уровня IQ, исходя из результатов за время тренировки.<br/>Результаты - в виде 3-х IQ по каждому тесту, и оценки общего IQ.<br/>Вы готовы начать?				</p><br/>
+        <div class="div-in">
+          <button onclick="check(900)" class="in">Начать</button>
+        </div>
+      </div>
+      <div class="block bl-0-30">			
+        <p class="comm"><b>Тест будет длиться в течение 30 минут.</b><br/><br/>Треть времени отведено на вопросы словесного теста, треть - числового, и ещё треть - на вопросы наглядно-образного.<br/><br/>Количество вопросов - с избытком, их можно пропускать без влияния на результат, ответить на все - невозможно.<br/><br/>Результаты по 3-м подтестам подскажут вам о преобладающем стиле Вашего восприятия: вербальном, логическом или образном.<br/>По окончанию теста вы получите оценку Вашего уровня IQ в виде 3-х IQ по каждому тесту, и оценку общего IQ.<br/>Вы готовы начать?				</p><br/>
+        <div class="div-in">
+          <button onclick="check(1800)" class="in">Начать	</button>
+        </div>
+      </div>
+      <div class="block bl-0-40">			
+        <p class="comm"><b>Это тестовый режим для испытания программы и для ознакомления с ней. Результаты IQ, которые выводятся по окончанию в этом режиме, не имеют никакого отношения к действительности.</b><br/><br/>Длительность - 40 секунд.<br/><br/>Вы готовы начать?				</p><br/>
+        <div class="div-in">
+          <button onclick="check(40)" class="in">Начать</button>
+        </div>
+      </div>
+      <div class="block bl-0-50">			
+        <p class="comm"><b>Даётся существительное, и все его буквы случайно перемешаны. Это может быть и имя собственное, например, "днепр" или "япония", а также аббривиатура, например "цск". Угадай, что это за слово. </b><br/><br/>Длительность - 7 минут.<br/><br/>Вы готовы начать?				</p><br/>
+        <div class="div-in">
+          <button onclick="check(421)" class="in">Начать</button>
+        </div>
+      </div>
+      <div class="block bl-1-word">
+        <h1>Вопрос</h1>
+        <p class="comm word"></p>
+        <div class="div-in">					
+          <input id="text2" name="word2" type="text" autocomplete="off" autofocus="autofocus"/>
+          <button onkeyup="check(51)" onclick="check(51)" class="in sub">Ввод</button>
+          <button onclick="check(-2)" class="in skip">Пропустить										</button>
+        </div>
+      </div>
+      <div class="results">
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>

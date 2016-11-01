@@ -1,0 +1,246 @@
+html
+	head
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,100|Noto+Sans|Roboto:100,300,400,500,700', rel='stylesheet', type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Pacifico',type='text/css')
+
+		script(type='text/javascript', src='//code.jquery.com/jquery-1.11.0.min.js')
+		//- script(type='text/javascript', src='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js')
+
+		//- link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css')
+		//- link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css')
+
+		link(href="s/timeTo.css", type="text/css" rel="stylesheet")
+		script(type="text/javascript", src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+		
+
+
+		meta(charset="utf-8")
+		//- link(rel="stylesheet", href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css")
+		//- link(rel="stylesheet", href="/resources/demos/style.css")
+		script(src="https://code.jquery.com/ui/1.12.0/jquery-ui.js")
+
+		
+		title Super IQ - тренировка интеллекта для взрослых и детей.
+		
+		script(type='text/javascript', src='js/main.js')
+		script(type='text/javascript', src='js/words.js')
+		link(rel='stylesheet', type='text/css', href='s/main.css')
+
+
+		script(type="text/javascript", src="http://scriptjava.net/source/scriptjava/scriptjava.js")
+	body
+
+		#timer
+		#timer_mem
+		div.container
+			.block.bl-0
+				h1 Super IQ game
+				h1.c develop your intelligence :)
+				//- h1.z() Развейте Ваш Интеллект :)
+				p.comm.ag
+					b Если Вам меньше 18-ти, введите Ваш возраст
+				select.age(name="age",size="1", id="select_age")
+					option(value="18", selected="selected") 18 или >
+					option(value="17") 17
+					option(value="16") 16
+					option(value="15") 15
+					option(value="14") 14
+					option(value="13") 13
+					option(value="12") 12
+					option(value="11") 11
+					option(value="10") 10
+					option(value="9") 9
+					option(value="8") 8
+					option(value="7") 7
+					option(value="6") 6
+				p.comm
+					b Выберите тип игры:
+				input.ival(onclick="check(40040)" type="radio")
+				span.sval Тестовый режим программы (40сек)
+				br					
+				input.ival(onclick="check(50050)" type="radio")
+				span.sval Угадай слово (7мин)
+				br
+				input.ival(onclick="check(15015)" type="radio")
+				span.sval Тренировка (15мин)
+				br
+				input.ival(onclick="check(30030)" type="radio")
+				span.sval Тест (30мин)				
+				//- div.div-in
+				//- 	button.in(value='') Выбрать
+
+
+			.block.bl-1
+				h1 Вопрос
+				img.img_n(src="", alt="")
+				.div-in					
+					input#text(name="word",type="text", autocomplete="off", autofocus)
+					button.in.sub(onkeyup="check(11)" onclick="check(11)") Ввод
+					button.in.skip(onclick="check(-1)") Пропустить
+
+			.block.bl-2
+				h1 Вопрос
+				img.img_n(src="", alt="")
+				.div-in					
+					button.in.var(onclick="check(1)") 1
+					button.in.var(onclick="check(2)") 2
+					button.in.var(onclick="check(3)") 3
+					button.in.var(onclick="check(4)") 4
+					button.in.var(onclick="check(5)") 5
+					button.in.var(onclick="check(6)") 6
+					button.in.var(onclick="check(7)") 7
+					button.in.var(onclick="check(8)") 8
+					button.in.var(onclick="check(9)") 9
+					button.in.skip(onclick="check(-1)") Пропустить
+
+			.block.bl-3
+				h1 Вопрос
+				img.img_n(src="", alt="")
+				.div-in					
+					label.l 1
+						input.chb(type="checkbox" id="ch1")
+					label.l 2
+						input.chb(type="checkbox" id="ch2")
+					label.l 3
+						input.chb(type="checkbox" id="ch3")
+					label.l 4
+						input.chb(type="checkbox" id="ch4")
+					label.l 5
+						input.chb(type="checkbox" id="ch5")
+					label.l 6
+						input.chb(type="checkbox" id="ch6")
+					label.l 7
+						input.chb(type="checkbox" id="ch7")
+					label.l 8
+						input.chb(type="checkbox" id="ch8")
+					label.l 9
+						input.chb(type="checkbox" id="ch9")					
+					button.in.sub(onclick="check(33)") Ввод	
+					button.in.skip(onclick="check(-1)") Пропустить				
+
+			.block.bl-0-15			
+				p.comm
+					b Тренировка продлиться 15 минут. Относиться к ней следует именно как к тренировке, а не как к тесту на IQ.
+					br 
+					| Тренировка проходит в формате теста. Треть времени отведено на вопросы словесного теста, треть - числового, и ещё треть - наглядно-образного. Количество вопросов - с избытком, их можно пропускать без влияния на итог, ответить на все - невозможно.
+					br 
+					| По окончанию тренировки вы получите оценку уровня IQ, исходя из результатов за время тренировки.
+					br
+					| Результаты - в виде 3-х IQ по каждому тесту, и оценки общего IQ.
+					br
+					| Вы готовы начать?				
+				br
+				.div-in
+					button.in(onclick="check(900)") Начать
+
+			.block.bl-0-30			
+				p.comm
+					b Тест будет длиться в течение 30 минут.
+					br
+					br 	
+					| Треть времени отведено на вопросы словесного теста, треть - числового, и ещё треть - на вопросы наглядно-образного.
+					br
+					br 
+					| Количество вопросов - с избытком, их можно пропускать без влияния на результат, ответить на все - невозможно.
+					br
+					br 
+					| Результаты по 3-м подтестам подскажут вам о преобладающем стиле Вашего восприятия: вербальном, логическом или образном.
+					br 
+					| По окончанию теста вы получите оценку Вашего уровня IQ в виде 3-х IQ по каждому тесту, и оценку общего IQ.
+					br
+					| Вы готовы начать?				
+				br
+				.div-in
+					button.in(onclick="check(1800)") Начать	
+
+			.block.bl-0-40			
+					p.comm
+						b Это тестовый режим для испытания программы и для ознакомления с ней. Результаты IQ, которые выводятся по окончанию в этом режиме, не имеют никакого отношения к действительности.
+						br
+						br
+						| Длительность - 40 секунд.
+						br
+						br
+						| Вы готовы начать?				
+					br
+					.div-in
+						button.in(onclick="check(40)") Начать
+
+			.block.bl-0-50			
+					p.comm
+						b Даётся существительное, и все его буквы случайно перемешаны. Это может быть и имя собственное, например, "днепр" или "япония", а также аббривиатура, например "цск". Угадай, что это за слово. 
+						br
+						br
+						| Длительность - 7 минут.
+						br
+						br
+						| Вы готовы начать?				
+					br
+					.div-in
+						button.in(onclick="check(421)") Начать
+
+			.block.bl-1-word
+				h1 Вопрос
+				p.comm.word
+				.div-in					
+					input#text2(name="word2",type="text", autocomplete="off", autofocus)
+					button.in.sub(onkeyup="check(51)" onclick="check(51)") Ввод
+					button.in.skip(onclick="check(-2)") Пропустить										
+
+			.results
+				p
+
+
+
+			//- .block.bl-24
+			//- 	h1 Вопрос
+			//- 	img.img_n(src="", alt="")
+			//- 	.div-in					
+			//- 		button.in.var(onclick="check(1)") 1
+			//- 		button.in.var(onclick="check(2)") 2
+			//- 		button.in.var(onclick="check(3)") 3
+			//- 		button.in.var(onclick="check(4)") 4
+			//- 		button.in.skip(onclick="check(-1)") Пропустить
+
+			//- .block.bl-25
+			//- 	h1 Вопрос
+			//- 	img.img_n(src="", alt="")
+			//- 	.div-in					
+			//- 		button.in.var(onclick="check(1)") 1
+			//- 		button.in.var(onclick="check(2)") 2
+			//- 		button.in.var(onclick="check(3)") 3
+			//- 		button.in.var(onclick="check(4)") 4
+			//- 		button.in.var(onclick="check(5)") 5
+			//- 		button.in.skip(onclick="check(-1)") Пропустить
+				
+			//- .block.bl-34
+			//- 	h1 Вопрос
+			//- 	img.img_n(src="", alt="")
+			//- 	.div-in					
+			//- 		label 1
+			//- 			input.chb(type="checkbox" id="ch1")
+			//- 		label 2
+			//- 			input.chb(type="checkbox" id="ch2")
+			//- 		label 3
+			//- 			input.chb(type="checkbox" id="ch3")
+			//- 		label 4
+			//- 			input.chb(type="checkbox" id="ch4")
+			//- 		button.in.sub(onclick="check(34)") Ввод	
+			//- 		button.in.skip(onclick="check(-1)") Пропустить
+
+			//- .block.bl-35
+			//- 	h1 Вопрос
+			//- 	img.img_n(src="", alt="")
+			//- 	.div-in					
+			//- 		label 1
+			//- 			input.chb(type="checkbox" id="c1")
+			//- 		label 2
+			//- 			input.chb(type="checkbox" id="c2")
+			//- 		label 3
+			//- 			input.chb(type="checkbox" id="c3")
+			//- 		label 4
+			//- 			input.chb(type="checkbox" id="c4")
+			//- 		label 5
+			//- 			input.chb(type="checkbox" id="c5")		
+			//- 		button.in.sub(onclick="check(35)") Ввод
+			//- 		button.in.skip(onclick="check(-1)") Пропустить

@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  font: 20px 'Roboto', sans-serif;
+  font-weight: 600;
+  color: black;
+  background: url("../i/bg01.jpg");
+}
+
+.div-in {
+  width: 100%;
+  position: relative;
+  margin: 20px auto;
+  padding: 0 0 0 0;
+  opacity: 0.8;
+}
+
+.in {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  border: 0;
+  background: url("../i/buttnice24.png");
+  transition: 0.05s;
+}
+
+.in:last-child {
+  margin-right: 0;
+}
+
+.in:hover {
+  background-position: 0 -40px;
+  transition: 0.05s;
+}
+
+.in:active {
+  background-position: 0 -80px;
+  color: rgba(255, 0, 0, 0.2);
+}
+
+.in.skip {
+  color: blue;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.in.var {
+  color: black;
+  width: 53px;
+  border-radius: 20px;
+  margin-right: 11px;
+}
+
+#timer {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  background-color: #FFF;
+  font-size: 30px;
+  color: blue;
+}
+
+#timer_mem {
+  display: none;
+}
+
+div.container {
+  width: 100%;
+  margin: 0 auto;
+  border: 0px solid red;
+}
+
+div.container .block {
+  display: none;
+  width: 900px;
+  margin: 0px auto;
+  padding: 30px 0 0 0;
+  border: 0px solid red;
+}
+
+div.container .block h1 {
+  font-size: 32px;
+  padding: 20px 10px;
+}
+
+div.container .block img.img_n {
+  width: 800px;
+}
+
+div.container .bl-0 {
+  display: block;
+  padding: 30px 0 0 0;
+  border: 0px solid red;
+}
+
+div.container .bl-0 h1 {
+  color: red;
+  font-family: 'Pacifico', cursive;
+  font-size: 75px;
+  margin: 0 0 0px -10px;
+}
+
+div.container .bl-0 h1.c {
+  font-size: 35px;
+  margin: -40px 0 60px -10px;
+}
+
+div.container .bl-0 select.age {
+  height: 30px;
+  text-align: center;
+  padding-left: 30px;
+  margin: 0 0 0 10px;
+}
+
+div.container .bl-0 select.age, div.container .bl-0 select.age option {
+  color: yellow;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  background: rgba(0, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+div.container .bl-0 select.age option {
+  color: black;
+}
+
+div.container .bl-0 p.comm {
+  margin: 0 auto 10px;
+  font-size: 25px;
+}
+
+div.container .bl-0 p.comm.ag {
+  color: yellow;
+  font-style: italic;
+  display: inline-block;
+  margin-bottom: 100px;
+}
+
+div.container .bl-0 span.sval {
+  margin: 20px 0 10px 10px;
+  font-size: 25px;
+  font-style: italic;
+}
+
+div.container .bl-0 input.ival {
+  margin: 20px 10px 10px 0;
+}
+
+div.container .bl-0-15 {
+  padding: 270px 0 0 0;
+}
+
+div.container .bl-0-30 {
+  padding: 250px 0 0 0;
+}
+
+div.container .bl-0-40 {
+  padding: 270px 0 0 0;
+}
+
+div.container .bl-0-50 {
+  padding: 270px 0 0 0;
+}
+
+div.container .bl-1 input#text, div.container .bl-1 input#text2, div.container .bl-1-word input#text, div.container .bl-1-word input#text2 {
+  float: left;
+  width: 100px;
+  height: 40px;
+  margin: 0 20px 0 170px;
+  padding: 0 0 0 10px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+div.container .bl-1 p.word, div.container .bl-1-word p.word {
+  font-size: 55px;
+}
+
+div.container .bl-2 .in.var:first-child {
+  margin-left: 0px;
+}
+
+div.container .bl-2 .in.var:first-child .div-in {
+  margin: 20px auto;
+}
+
+div.container .bl-3 label.l {
+  float: left;
+  font-size: 20px;
+}
+
+div.container .bl-3 label.l:first-child {
+  margin-left: 0px;
+}
+
+div.container .bl-3 input.chb {
+  width: 30px;
+  height: 30px;
+  margin: 10px 10px 0 0;
+}
+
+div.container .bl-3 button.in.skip {
+  margin: 10px 0 0 15px;
+}
+
+div.container .results {
+  display: none;
+  width: 900px;
+  margin: 0 auto;
+  padding: 250px 0 0 0;
+}
+
+div.container .results p {
+  color: black;
+  font-size: 33px;
+}
+
+div.container .results span {
+  color: green;
+}
+
+div.container .results span.i {
+  color: black;
+  font-style: italic;
+}
+
+div.container .results span.r {
+  color: red;
+}

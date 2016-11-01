@@ -1,0 +1,237 @@
+$gr4: #49617d
+
+
+*
+  padding: 0
+  margin: 0
+  outline: 0
+
+img
+  border: 0
+
+ul
+  list-style: none
+ 
+body
+  width: 100%
+  position: relative
+  // background-color: $gr4
+  font: 20px 'Roboto', sans-serif
+  font-weight: 600
+  color: black
+  background: url("../i/bg01.jpg")
+
+  // color: #475055
+
+.div-in
+  width: 100%  
+  position: relative
+  margin: 20px auto
+  padding: 0 0 0 0
+  //padding: 0 190px 0 0
+  opacity: 0.8
+// .div-in:hover  
+  &:active  
+    top: 2px
+
+.in
+  display: inline-block 
+  width: 150px  /*Ширина рисунка в пикселах */
+  height: 40px /*Высота рисунка */   
+  color: white
+  font-size: 20px
+  font-weight: 600  
+  text-align: center
+  margin-right: 15px
+  margin-left: 15px
+  border: 0  
+  background: url("../i/buttnice24.png")
+  transition: 0.05s
+  &:last-child
+    margin-right: 0   
+  &:hover  
+    background-position: 0 -40px /* Смещение фона */
+    transition: 0.05s  
+  &:active 
+    background-position: 0 -80px /* Смещение фона */ 
+    color: rgba(255,0,0,0.2)
+
+.in.skip
+  color: blue
+  font-style: italic
+  font-weight: 400
+.in.var
+  color: black
+  width: 53px
+  border-radius: 20px
+  margin-right: 11px
+  
+
+
+ 
+#timer 
+    display: block
+    position: absolute
+    top: 20px
+    right: 10px
+    background-color: #FFF
+    font-size: 30px
+    color: blue
+
+
+
+#timer_mem 
+    display: none
+
+div.container  
+  width: 100%
+  margin: 0 auto
+  border: 0px solid red
+
+
+  .block
+    display: none
+    width: 900px
+    margin: 0px auto
+    padding: 30px 0 0 0
+    border: 0px solid red; 
+    h1 // FOR .bl-n1
+      font-size: 32px
+      padding: 20px 10px
+    img.img_n // FOR .bl-n
+      width: 800px    
+
+    
+  
+
+  .bl-0
+    display: block
+    padding: 30px 0 0 0
+    border: 0px solid red
+    h1 
+      color: red
+      font-family: 'Pacifico', cursive
+      font-size: 75px
+      margin: 0 0 0px -10px
+    h1.c
+      font-size: 35px
+      margin: -40px 0 60px -10px
+
+    select.age
+      // width: 100px
+      height: 30px
+      text-align: center
+      padding-left: 30px
+      margin: 0 0 0 10px
+      &, option
+        color: yellow
+        font-size: 22px
+        font-weight: 600
+        font-style: italic
+        text-align: center        
+        background: rgba(0,255,255,0.3)
+        border-radius: 50%
+      option
+        color: black         
+    p.comm
+      margin: 0 auto 10px
+      font-size: 25px
+      &.ag
+        color: yellow
+        font-style: italic 
+        display: inline-block
+        margin-bottom: 100px  
+    span.sval
+      margin: 20px 0 10px 10px
+      font-size: 25px
+      font-style: italic
+    input.ival  
+      margin: 20px 10px 10px 0     
+    // input.sub
+    //   clear: both
+    //   margin: 30px 0 0 0
+
+  .bl-0-15
+    padding: 270px 0 0 0
+  .bl-0-30
+    padding: 250px 0 0 0
+  .bl-0-40
+    padding: 270px 0 0 0
+  .bl-0-50
+    padding: 270px 0 0 0
+
+
+  .bl-1, .bl-1-word        
+    input#text, input#text2
+      float: left
+      width: 100px
+      height: 40px
+      margin: 0 20px 0 170px
+      padding: 0 0 0 10px
+      border-radius: 20px
+      font-size: 18px
+    p.word
+      font-size: 55px;
+  .bl-2
+    .in.var:first-child
+      margin-left: 0px        
+      .div-in
+        margin: 20px auto
+  .bl-3 
+    label.l
+      float: left
+      font-size: 20px
+      &:first-child
+        margin-left: 0px
+    input.chb
+      width: 30px
+      height: 30px
+      margin: 10px 10px 0 0
+    button.in.skip
+      margin: 10px 0 0 15px
+
+  .results
+    display: none
+    width: 900px
+    margin: 0 auto
+    padding: 250px 0 0 0 
+    p
+      color: black
+      font-size: 33px
+    span
+      color: green
+    span.i
+      color: black
+      font-style: italic
+    span.r
+      color: red
+
+             
+  // .bl-34, .bl-35 
+  //   label.l
+  //     float: left
+  //     font-size: 24px
+  //     &:first-child
+  //       margin-left: 20px
+  //   input.chb
+  //     width: 40px
+  //     height: 40px
+  //     margin: 10px 40px 0 0
+  //   button.in.skip
+  //     margin: 10px 0 0 20px 
+  // .bl-35
+  //   label.l:first-child
+  //     margin-left: 0px 
+  //   input.chb
+  //     margin: 10px 25px 0 0
+
+  // .bl-24
+  //   .in.var:first-child
+  //     margin-left: 160px
+  // .bl-25
+  //   .in.var:first-child
+  //     margin-left: 120px  
+
+         
+
+         
