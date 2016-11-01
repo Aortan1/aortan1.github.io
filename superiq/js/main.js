@@ -175,6 +175,13 @@ function timer(t){
 	if (test_time==900)
 	$('.results p')[0].innerHTML+='<span class="i"><br><br> Уделяйте этой тренировке 15 минут каждый день, и Ваш IQ повысится! <span>';
 
+if (test_time==421 && rig1<20)
+	$('.results p')[0].innerHTML='<span class="i">Ваши результаты:</span><br><br> УГАДАНО СЛОВ: <span>'+rig1+'.</span><br><br><span class="i">Вам стоит потренироваться.<span>';
+if (test_time==421 && rig1>=20)
+	$('.results p')[0].innerHTML='<span class="i">Ваши результаты:</span><br><br> УГАДАНО СЛОВ: <span>'+rig1+'.</span><br><br><span class="i">Неплохо!<span>';
+
+
+
  	// window["location"].reload(true);
  } else{setTimeout(function(){timer(t);},1000);} 
 
