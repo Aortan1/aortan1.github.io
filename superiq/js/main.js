@@ -476,7 +476,7 @@ word_sh=word0.join(''); //объединение массива букв word0 �
 
 aa=$(".bl-1-word"); 
 aa[0].style.display="block";
-$('.bl-1-word p.comm')[0].innerHTML=word_sh; 
+$('.bl-1-word p.comm')[0].innerHTML=word_sh.toUpperCase(); 
 $('.block h1').html('Вопрос '+num+'.');
 
 //Подключение ввода ентером.
