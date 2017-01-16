@@ -81,12 +81,15 @@ input.sample {
 .game{
  width: 600px;
  height: 600px;
- margin: 0px auto; 
+ margin: 0px auto;
+ border-radius: 40px; 
  }
 
 .field {
   position: relative;
-  height: 500px;}
+  height: 500px;
+  border-radius: 40px 40px 0 0 ;
+}
 
 li { height: 100px;}
 
