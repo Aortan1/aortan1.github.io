@@ -685,17 +685,17 @@ body .ani .s_jquery .circle[data-anim~=left] {
 }
 
 body .ani .s_jade .circle[data-anim~=left] {
-  animation-duration: 0.528s;
+  animation-duration: 0.208s;
   animation-name: left-spin-ja;
 }
 
 body .ani .s_sass .circle[data-anim~=left] {
-  animation-duration: 0.264s;
+  animation-duration: 0.2s;
   animation-name: left-spin-sa;
 }
 
 body .ani .s_php .circle[data-anim~=left] {
-  animation-duration: 0.2s;
+  animation-duration: 0.264s;
   animation-name: left-spin-ph;
 }
 
@@ -810,7 +810,7 @@ body .ani .s_php div[data-anim~=wrapper] {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(237.6deg);
+    transform: rotate(93.6deg);
   }
 }
 
@@ -819,7 +819,7 @@ body .ani .s_php div[data-anim~=wrapper] {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(118.8deg);
+    transform: rotate(90deg);
   }
 }
 
@@ -828,7 +828,7 @@ body .ani .s_php div[data-anim~=wrapper] {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(90deg);
+    transform: rotate(118.8deg);
   }
 }
 
