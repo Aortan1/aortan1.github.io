@@ -21,7 +21,7 @@ body {
 body a.contact-me {
   position: relative;
   overflow: hidden;
-  bottom: 10px;
+  bottom: 0px;
   display: block;
   width: 268px;
   padding: 15px 0 0 32px;
@@ -153,8 +153,9 @@ body section.me .main p.coder {
 body section.me .main p.about {
   color: #888;
   font-size: 14px;
-  margin: 40px auto;
+  margin: 20px auto;
   width: 585px;
+  line-height: 20px;
 }
 
 body section.info {
