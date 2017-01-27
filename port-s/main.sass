@@ -10,8 +10,8 @@ $c_blue: #67dcf3
 $c_yell: #FFEB3B
 $c_grey: #9E9E9E
 
-$ti: 0.8s
-$to: 0.4s
+$ti: 1.0s//0.8s
+$to: 0.5s//0.4s
 $c_bg: 20s
 
 $ht: 0.75
@@ -426,7 +426,7 @@ body
           border-color: $c_lila
         &:hover, &.ho  
           .circle.bg
-            box-shadow: -0px 0px 50px $c_lila            
+            box-shadow: -0px 0px 50px 30px $c_lila            
             // box-shadow: -24px 15px 50px $c_lila
       &.s_css
         color: $c_viol
@@ -434,7 +434,7 @@ body
           border-color: $c_viol
         &:hover, &.ho  
           .circle.bg
-            box-shadow: 0px 0px 50px $c_viol            
+            box-shadow: 0px 0px 50px 30px $c_viol            
             // box-shadow: -16px 15px 50px $c_viol
       &.s_js
         color: $c_oran
@@ -442,7 +442,7 @@ body
           border-color: $c_oran
         &:hover , &.ho 
           .circle.bg
-            box-shadow: 0px 0px 50px $c_oran              
+            box-shadow: 0px 0px 50px 30px $c_oran              
             // box-shadow: -8px 15px 50px $c_oran        
       &.s_jquery
         color: $c_gree
@@ -450,7 +450,7 @@ body
           border-color: $c_gree
         &:hover, &.ho  
           .circle.bg            
-            box-shadow: 0px 0px 50px $c_gree
+            box-shadow: 0px 0px 50px 30px $c_gree
             // box-shadow: 0px 15px 50px $c_gree        
       &.s_jade
         color: $c_blue
@@ -458,7 +458,7 @@ body
           border-color: $c_blue
         &:hover, &.ho  
           .circle.bg            
-            box-shadow: 0px 0px 50px $c_blue
+            box-shadow: 0px 0px 50px 30px $c_blue
             // box-shadow: 8px 15px 50px $c_blue         
       &.s_sass
         color: $c_yell
@@ -466,7 +466,7 @@ body
           border-color: $c_yell
         &:hover, &.ho  
           .circle.bg            
-            box-shadow: 0px 0px 50px $c_yell
+            box-shadow: 0px 0px 50px 30px $c_yell
             // box-shadow: 16px 15px 50px $c_yell
       &.s_php
         color: $c_grey
@@ -474,7 +474,7 @@ body
           border-color: $c_grey
         &:hover, &.ho  
           .circle.bg            
-            box-shadow: 0px 0px 50px $c_grey
+            box-shadow: 0px 0px 50px 30px $c_grey
             // box-shadow: 24px 15px 50px $c_grey     
       &:last-child
         margin-right: 0
@@ -514,7 +514,7 @@ body
       animation-timing-function: linear
 
     .wrapper[data-anim~=wrapper]
-      animation-duration: 0.01s
+      animation-duration: 0.05s
       animation-delay: $ti / 2
       animation-name: close-wrapper
       
@@ -523,7 +523,7 @@ body
         box-shadow: 0 0 0
         opacity: 0.4
       5% 
-        box-shadow: 0 0 50px
+        box-shadow: 0 0 50px 30px
         opacity: 1.0
       100% 
         box-shadow: 0 0 0

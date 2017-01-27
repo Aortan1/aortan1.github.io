@@ -507,7 +507,7 @@ body section.knowlidge .skills .skill.s_html .circle {
 }
 
 body section.knowlidge .skills .skill.s_html:hover .circle.bg, body section.knowlidge .skills .skill.s_html.ho .circle.bg {
-  box-shadow: 0px 0px 50px #f2273e;
+  box-shadow: 0px 0px 50px 30px #f2273e;
 }
 
 body section.knowlidge .skills .skill.s_css {
@@ -519,7 +519,7 @@ body section.knowlidge .skills .skill.s_css .circle {
 }
 
 body section.knowlidge .skills .skill.s_css:hover .circle.bg, body section.knowlidge .skills .skill.s_css.ho .circle.bg {
-  box-shadow: 0px 0px 50px #a781f8;
+  box-shadow: 0px 0px 50px 30px #a781f8;
 }
 
 body section.knowlidge .skills .skill.s_js {
@@ -531,7 +531,7 @@ body section.knowlidge .skills .skill.s_js .circle {
 }
 
 body section.knowlidge .skills .skill.s_js:hover .circle.bg, body section.knowlidge .skills .skill.s_js.ho .circle.bg {
-  box-shadow: 0px 0px 50px #ff9a05;
+  box-shadow: 0px 0px 50px 30px #ff9a05;
 }
 
 body section.knowlidge .skills .skill.s_jquery {
@@ -543,7 +543,7 @@ body section.knowlidge .skills .skill.s_jquery .circle {
 }
 
 body section.knowlidge .skills .skill.s_jquery:hover .circle.bg, body section.knowlidge .skills .skill.s_jquery.ho .circle.bg {
-  box-shadow: 0px 0px 50px #a5db00;
+  box-shadow: 0px 0px 50px 30px #a5db00;
 }
 
 body section.knowlidge .skills .skill.s_jade {
@@ -555,7 +555,7 @@ body section.knowlidge .skills .skill.s_jade .circle {
 }
 
 body section.knowlidge .skills .skill.s_jade:hover .circle.bg, body section.knowlidge .skills .skill.s_jade.ho .circle.bg {
-  box-shadow: 0px 0px 50px #67dcf3;
+  box-shadow: 0px 0px 50px 30px #67dcf3;
 }
 
 body section.knowlidge .skills .skill.s_sass {
@@ -567,7 +567,7 @@ body section.knowlidge .skills .skill.s_sass .circle {
 }
 
 body section.knowlidge .skills .skill.s_sass:hover .circle.bg, body section.knowlidge .skills .skill.s_sass.ho .circle.bg {
-  box-shadow: 0px 0px 50px #FFEB3B;
+  box-shadow: 0px 0px 50px 30px #FFEB3B;
 }
 
 body section.knowlidge .skills .skill.s_php {
@@ -579,7 +579,7 @@ body section.knowlidge .skills .skill.s_php .circle {
 }
 
 body section.knowlidge .skills .skill.s_php:hover .circle.bg, body section.knowlidge .skills .skill.s_php.ho .circle.bg {
-  box-shadow: 0px 0px 50px #9E9E9E;
+  box-shadow: 0px 0px 50px 30px #9E9E9E;
 }
 
 body section.knowlidge .skills .skill:last-child {
@@ -628,8 +628,8 @@ body .ani div[data-anim~=base] {
 }
 
 body .ani .wrapper[data-anim~=wrapper] {
-  animation-duration: 0.01s;
-  animation-delay: 0.4s;
+  animation-duration: 0.05s;
+  animation-delay: 0.5s;
   animation-name: close-wrapper;
 }
 
@@ -639,7 +639,7 @@ body .ani .wrapper[data-anim~=wrapper] {
     opacity: 0.4;
   }
   5% {
-    box-shadow: 0 0 50px;
+    box-shadow: 0 0 50px 30px;
     opacity: 1.0;
   }
   100% {
@@ -655,100 +655,100 @@ body .ani .circle.light {
 }
 
 body .ani .circle[data-anim~=left] {
-  animation-duration: 0.8s;
+  animation-duration: 1s;
   animation-name: left-spin;
 }
 
 body .ani .circle[data-anim~=right] {
-  animation-duration: 0.4s;
+  animation-duration: 0.5s;
   animation-name: right-spin;
 }
 
 body .ani .s_html .circle[data-anim~=left] {
-  animation-duration: 0.6s;
+  animation-duration: 0.75s;
   animation-name: left-spin-ht;
 }
 
 body .ani .s_css .circle[data-anim~=left] {
-  animation-duration: 0.6s;
+  animation-duration: 0.75s;
   animation-name: left-spin-cs;
 }
 
 body .ani .s_js .circle[data-anim~=left] {
-  animation-duration: 0.264s;
+  animation-duration: 0.33s;
   animation-name: left-spin-js;
 }
 
 body .ani .s_jquery .circle[data-anim~=left] {
-  animation-duration: 0.36s;
+  animation-duration: 0.45s;
   animation-name: left-spin-jq;
 }
 
 body .ani .s_jade .circle[data-anim~=left] {
-  animation-duration: 0.2s;
+  animation-duration: 0.25s;
   animation-name: left-spin-ja;
 }
 
 body .ani .s_sass .circle[data-anim~=left] {
-  animation-duration: 0.2s;
+  animation-duration: 0.25s;
   animation-name: left-spin-sa;
 }
 
 body .ani .s_php .circle[data-anim~=left] {
-  animation-duration: 0.264s;
+  animation-duration: 0.33s;
   animation-name: left-spin-ph;
 }
 
 body .ani .s_html div[data-anim~=wrapper] {
-  animation-delay: 0.4s;
+  animation-delay: 0.5s;
 }
 
 body .ani .s_css div[data-anim~=base], body .ani .s_css .light {
-  animation-delay: 0.4s;
+  animation-delay: 0.5s;
 }
 
 body .ani .s_css div[data-anim~=wrapper] {
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 }
 
 body .ani .s_js div[data-anim~=base], body .ani .s_js .light {
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 }
 
 body .ani .s_js div[data-anim~=wrapper] {
-  animation-delay: 1.2s;
+  animation-delay: 1.5s;
 }
 
 body .ani .s_jquery div[data-anim~=base], body .ani .s_jquery .light {
-  animation-delay: 1.2s;
+  animation-delay: 1.5s;
 }
 
 body .ani .s_jquery div[data-anim~=wrapper] {
-  animation-delay: 1.6s;
+  animation-delay: 2s;
 }
 
 body .ani .s_jade div[data-anim~=base], body .ani .s_jade .light {
-  animation-delay: 1.6s;
+  animation-delay: 2s;
 }
 
 body .ani .s_jade div[data-anim~=wrapper] {
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 
 body .ani .s_sass div[data-anim~=base], body .ani .s_sass .light {
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 
 body .ani .s_sass div[data-anim~=wrapper] {
-  animation-delay: 2.4s;
+  animation-delay: 3s;
 }
 
 body .ani .s_php div[data-anim~=base], body .ani .s_php .light {
-  animation-delay: 2.4s;
+  animation-delay: 3s;
 }
 
 body .ani .s_php div[data-anim~=wrapper] {
-  animation-delay: 2.8s;
+  animation-delay: 3.5s;
 }
 
 @keyframes right-spin {
