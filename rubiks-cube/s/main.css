@@ -65,7 +65,7 @@ i {
 
 .edge-2 {
   z-index: 0;
-  width: 86px;
+  width: 88px;
   height: 175px;
   margin: 7px 57px 0 0;
   -webkit-transform: skewY(-45deg);
@@ -93,7 +93,7 @@ i {
 
 .edge-4 {
   z-index: 16;
-  width: 86px;
+  width: 88px;
   height: 175px;
   margin: 7px 0 0 179px;
   -webkit-transform: skewY(-45deg);
