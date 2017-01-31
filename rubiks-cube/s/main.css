@@ -65,7 +65,7 @@ i {
 
 .edge-2 {
   z-index: 0;
-  width: 88px;
+  width: 86px;
   height: 175px;
   margin: 7px 57px 0 0;
   -webkit-transform: skewY(-45deg);
@@ -75,7 +75,7 @@ i {
 }
 
 .edge-2 i {
-  width: 24px;
+  width: 23px;
   height: 54px;
   /*background: #03A9F4;*/
 }
@@ -93,7 +93,7 @@ i {
 
 .edge-4 {
   z-index: 16;
-  width: 88px;
+  width: 86px;
   height: 175px;
   margin: 7px 0 0 179px;
   -webkit-transform: skewY(-45deg);
@@ -107,7 +107,7 @@ i {
 .edge-4 i {
 -moz-box-sizing: border-box; 
  box-sizing: border-box;
- width: 26px; height: 56px;
+ width: 25px; height: 56px;
 }
 
 .edge-4 i:not(:nth-child(5)) {
