@@ -1,0 +1,148 @@
+$gr4: #49617d
+$gre: #e1e5e7
+$grc: #c5cdd1
+$turq: #56ccc8
+$l-blue: #4fc6f8
+$red: #ea6060
+
+$spr: "../i/sprite.png"
+
+
+*
+  padding: 0
+  margin: 0
+  outline: 0
+
+img
+  border: 0
+
+ul
+  list-style: none
+ 
+body
+  color: #475055
+  background-color: $gr4
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  width: 100%
+
+a
+  color: black
+  text-decoration: none
+  text-transform: capitalize
+  transition: 0.3s
+  &:hover
+    transition: 0.3s
+
+a.button
+  background-color: #7954b6
+  border: 1px solid transparent
+  border-radius: 30px
+  color: #fff
+  display: block
+  font-size: 18px
+  font-weight: 700    
+  height: 42px
+  padding: 18px 0 0 0
+  text-align: center
+  text-transform: uppercase
+  width: 230px
+  &:hover
+    border: 1px solid #fff
+    background-color: #8966c2
+    // height: 42px// height: 43px
+    margin-left: 0px
+    // padding-top: 17px
+    // width: 228px// width: 232px
+
+  &:active
+    background-color: #5e34a3
+    border: 1px solid transparent
+    color: #e7765f
+    // font-size: 17px
+    // height: 40px
+    // padding-left: 2px
+    // margin: 8px 0 0 2px
+    // width: 227px
+      
+
+
+h1, h2, h3
+  color: #fff
+  font-family: 'Open Sans', sans-serif
+  font-size: 50px
+  font-weight: 300
+  text-transform: capitalize  
+h2
+h3
+
+
+.main
+  min-width:960px 
+  max-width: 1920px
+  margin: 0 auto
+  padding: 0px
+  border: 0px  
+
+
+/*Шапка сайта*/ 
+
+
+
+
+header.header
+  width: 100%
+  height: 760px
+  position: relative
+  background: url("../i/bg_head_pl.png") #de4981
+  color: #fff
+
+
+nav.nav
+  padding-top: 40px
+  p.g
+    position: absolute
+    top: 30px
+    left: 50px
+    // float: left
+    color: #fff
+    text-transform: uppercase
+    font-size: 25px
+    font-weight: 700
+  div.links
+    float: right
+    margin-left: 170px
+    &:hover
+      a:first-child
+        border: 2px solid transparent
+  a
+    // font: bold 12px/14px
+    color: white
+    border: 2px solid transparent
+    border-radius: 15px
+    display:inline
+    font-size: 12px 
+    font-weight: 700
+    margin-left: 10px
+    padding: 4px 12px
+    text-transform: uppercase
+    &:first-child
+      border: 2px solid white
+  // a:hover ~ a:not(:first-child)
+  //   color: red
+  a:hover
+    border: 2px solid white 
+  a:first-child:hover
+    border: 2px solid white 
+
+
+div.download-in-header
+  border: 0px solid green
+  margin: 135px 370px 0 1000px 
+  width: 525px
+  // float: right
+  // margin-right: 370px
+  p.p-download
+    font-size: 17px
+    line-height: 30px
+    margin: 25px 0 75px 0
