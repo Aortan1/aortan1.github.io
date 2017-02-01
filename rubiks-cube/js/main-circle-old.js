@@ -3,7 +3,7 @@
 
 $(document).ready (function(){ 
 var this1,this2;  
-var difficulty_level=30; // уровень сложности (количество движений размешивания)
+var difficulty_level=400; // уровень сложности (количество движений размешивания)
 //3-5 - ЛЁГКИЙ,
 //6-9 - СРЕДНИЙ,
 //10 и > - СЛОЖНЫЙ.
@@ -173,20 +173,20 @@ var a=90*na;
   
   if (nseg==6){ cube[i]=rot(cube[i],axe,a); }
     
-  if (nseg==1 && axe==1 && cube[i].x<0){ cube[i]=rot(cube[i],axe,a); }  
-  if (nseg==2 && axe==1 && cube[i].x==0){ cube[i]=rot(cube[i],axe,a); }
-  if (nseg==3 && axe==1 && cube[i].x>0){ cube[i]=rot(cube[i],axe,a); } 
+  if (nseg==1 && axe==1 && cube[i].x<-0.2){ cube[i]=rot(cube[i],axe,a); }  
+  if (nseg==2 && axe==1 && Math.abs(cube[i].x)<0.1){ cube[i]=rot(cube[i],axe,a); }
+  if (nseg==3 && axe==1 && cube[i].x>0.2){ cube[i]=rot(cube[i],axe,a); } 
   
-  if (nseg==1 && axe==2 && cube[i].y<0){ cube[i]=rot(cube[i],axe,a); }  
-  if (nseg==2 && axe==2 && cube[i].y==0){ cube[i]=rot(cube[i],axe,a); }
-  if (nseg==3 && axe==2 && cube[i].y>0){ cube[i]=rot(cube[i],axe,a); }
+  if (nseg==1 && axe==2 && cube[i].y<-0.2){ cube[i]=rot(cube[i],axe,a); }  
+  if (nseg==2 && axe==2 && Math.abs(cube[i].y)<0.1){ cube[i]=rot(cube[i],axe,a); }
+  if (nseg==3 && axe==2 && cube[i].y>0.2){ cube[i]=rot(cube[i],axe,a); }
   
-  if (nseg==1 && axe==3 && cube[i].z<-0){ cube[i]=rot(cube[i],axe,a); }  
-  if (nseg==2 && axe==3 && cube[i].z==0){ cube[i]=rot(cube[i],axe,a); }
-  if (nseg==3 && axe==3 && cube[i].z>0){ cube[i]=rot(cube[i],axe,a); }
+  if (nseg==1 && axe==3 && cube[i].z<-0.2){ cube[i]=rot(cube[i],axe,a); }  
+  if (nseg==2 && axe==3 && Math.abs(cube[i].z)<0.1){ cube[i]=rot(cube[i],axe,a); }
+  if (nseg==3 && axe==3 && cube[i].z>0.2){ cube[i]=rot(cube[i],axe,a); }
   
 }
-  // document.write("<b> move_seg axe="+axe+" nseg="+nseg +" a="+a+"</b><br> ");
+ // document.write("<b> move_seg axe="+axe+" nseg="+nseg +" a="+a+"</b><br> ");
   return cube; 
 }
 
@@ -202,54 +202,38 @@ function rot(po, axe, a){
   //alert (-Math.sin(an));
  // alert("ttt x="+cube[100].x+" y="+cube[100].y+" z="+cube[100].z); 
   if (axe=='z'||axe==3)    {
-po.x = (xx*cos - yy*sin).toFixed(1); //alert(yy+' '+sin+' '+po.x);
-po.y = (xx*sin + yy*cos).toFixed(1);
+po.x = (xx*cos - yy*sin).toFixed(3); //alert(yy+' '+sin+' '+po.x);
+po.y = (xx*sin + yy*cos).toFixed(3);
 po.z = zz;  }
   if (axe=='x'||axe==1)    {
-po.y= (yy*cos - zz*sin).toFixed(1);
-po.z= (yy*sin + zz*cos).toFixed(1);
+po.y= (yy*cos - zz*sin).toFixed(3);
+po.z= (yy*sin + zz*cos).toFixed(3);
 po.x = xx; }  
   if (axe=='y'||axe==2)    {
-po.z = (zz*cos - xx*sin).toFixed(1);
-po.x = (zz*sin + xx*cos).toFixed(1);
+po.z = (zz*cos - xx*sin).toFixed(3);
+po.x = (zz*sin + xx*cos).toFixed(3);
 po.y = yy; }
-  if (po.x == 1) po.edge=3;  else
-  if (po.x == -1) po.edge=1; else
-  if (po.y == 1) po.edge=0; else
-  if (po.y == -1) po.edge=2; else  
-  if (po.z == 1) po.edge=4; else
-  if (po.z == -1) po.edge=5;   
+  if (po.x > 0.86) po.edge=3;  else
+  if (po.x < -0.86) po.edge=1; else
+  if (po.y > 0.86) po.edge=0; else
+  if (po.y < -0.86) po.edge=2; else  
+  if (po.z > 0.86) po.edge=4; else
+  if (po.z < -0.86) po.edge=5;   
 return po;
 };
 
 
 function fill_in_cells(){
 var cube = []; 
-var cu0={id:0, x:0.5, y:1, z:0, color:0, edge:0};   
+var cu0={id:0, x:0.5, y:0.866, z:0, color:0, edge:0};   
 var cu8={id:8, x:0, y:1, z:0, color:0, edge:0};// Точка Ку.  
 
   //ПЕРВЫЕ 9 точек на грани 1(сегмент y>0.866).
 //-------------------------------------------
-// for (var i=0; i<9; i++){
-// if (i==8) cube[8]=Object.create(cu8); else {cube[i] =Object.create(cu0); cube[i] = rot(cube[i],2,45*i);}
-// //alert("a="+i*45+" koords: x="+cube[i].x+" y="+cube[i].y+" z="+cube[i].z+" edge="+cube[i].edge);  
-// };
-
-// Вместо 8точек, расположенных по кругу через 45гр, делаю 8 точек на серединах сторон и вершинах квадрата 
-cube[0] =Object.create(cu0); 
-var cu1={id:1, x:0.5, y:1, z:-0.5, color:0, edge:0};  cube[1]=Object.create(cu1);
-var cu2={id:2, x:0, y:1, z:-0.5, color:0, edge:0};    cube[2]=Object.create(cu2);
-var cu3={id:3, x:-0.5, y:1, z:-0.5, color:0, edge:0}; cube[3]=Object.create(cu3); 
-var cu4={id:4, x:-0.5, y:1, z:0, color:0, edge:0};    cube[4]=Object.create(cu4);
-var cu5={id:5, x:-0.5, y:1, z:0.5, color:0, edge:0};  cube[5]=Object.create(cu5);
-var cu6={id:6, x:0, y:1, z:0.5, color:0, edge:0};     cube[6]=Object.create(cu6);
-var cu7={id:7, x:0.5, y:1, z:0.5, color:0, edge:0};   cube[7]=Object.create(cu7);
-cube[8]=Object.create(cu8); 
-
-// for (var i=0; i<9; i++){
-// alert("i="+i+" koords: x="+cube[i].x+" y="+cube[i].y+" z="+cube[i].z+" edge="+cube[i].edge+" Math.abs(x+y+z)="+(Math.abs(cube[i].x+cube[i].y+cube[i].z))+" x*y*z="+(cube[i].x*cube[i].y*cube[i].z));  
-// };
-
+for (var i=0; i<9; i++){
+if (i==8) cube[8]=Object.create(cu8); else {cube[i] =Object.create(cu0); cube[i] = rot(cube[i],2,45*i);}
+//alert("a="+i*45+" koords: x="+cube[i].x+" y="+cube[i].y+" z="+cube[i].z+" edge="+cube[i].edge);  
+};  
 // ДАЛЕЕ ВСЕ ЭТИ 9 ТОЧЕК ПОВЕРНУТЬ 3 РАЗА ВОКРУГ Z НА 90градусов, А ПОТОМ НА 90 И 270 ВОКРУГ X.
 for (i=9; i<18; i++){
 cube[i] =Object.create(cube[i-9]);
@@ -282,7 +266,7 @@ return cube;
 function newcube(){
   var cube = [];
   var x,y,z,c,g;
-  var cu0={id:0, x:0.5, y:1, z:0, color:0, edge:0}; 
+  var cu0={id:0, x:0.5, y:0.866, z:0, color:0, edge:0}; 
   
   for (var i=0; i<54; i++){
    cube[i] =Object.create(cu0);
@@ -296,14 +280,12 @@ function newcube(){
 }
 
 function ncell (cu) {
- var x = +cu.x;
- var y = +cu.y;
- var z = +cu.z;
- var g = cu.edge;
- //alert (x+' '+y+' '+z);
- //var xyz=(x*y*z)+(x+y+z); 
+ var x = cu.x;
+ var y = cu.y;
+ var z = cu.z;
+ var g = cu.edge; 
  var nce;
-    if (x*y*z+Math.abs(x+y+z)==1) nce=5; else
+    if (y>0.9 || x>0.9 || z>0.9 || x<-0.9 || y<-0.9 || z<-0.9 ) nce=5; else
     if ((g==0||g==2) && x>0 && x==-z) nce=9; else
   if ((g==0||g==2) && x<0 && x==z) nce=7; else
   if ((g==0||g==2) && x<0 && x==-z) nce=1; else
