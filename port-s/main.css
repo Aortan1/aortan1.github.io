@@ -68,7 +68,7 @@ body a.contact-me:active:after {
 body .main {
   text-align: center;
   margin: 0 auto;
-  border: 0px solid red;
+  border: 2px solid green;
 }
 
 body .main h1 {

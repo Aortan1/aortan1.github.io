@@ -279,7 +279,7 @@ $('.block label.l').each(function(){
 
 
 
-if (vari==15015){			// Подготовка к тесту
+if (vari==15015){			// Подготовка к тесту-Выбор игры
 test_mode=false;	
 $('.bl-0-15')[0].style.display="block";
  }else $('.bl-0-15')[0].style.display="none";
@@ -292,6 +292,12 @@ if (vari==50050){
 test_mode=false;		
 $('.bl-0-50')[0].style.display="block";
  }else $('.bl-0-50')[0].style.display="none";
+if (vari==60060){
+test_mode=false;		
+$('.bl-0-60')[0].style.display="block";
+ }else $('.bl-0-60')[0].style.display="none";
+
+
 if (vari==40040){
 test_mode=true;
 $('.bl-0-40')[0].style.display="block";

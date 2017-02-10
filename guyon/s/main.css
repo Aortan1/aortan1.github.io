@@ -15,7 +15,8 @@ ul {
 
 body {
   color: #475055;
-  background-color: #49617d;
+  background-color: green;
+  background: radial-gradient(at bottom, white, #a65959);
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   width: 100%;
@@ -62,9 +63,12 @@ a.button:active {
 h1, h2, h3 {
   color: #fff;
   font-family: 'Open Sans', sans-serif;
-  font-size: 50px;
   font-weight: 300;
   text-transform: capitalize;
+}
+
+h1 {
+  font-size: 50px;
 }
 
 .main {
@@ -141,4 +145,101 @@ div.download-in-header p.p-download {
   font-size: 17px;
   line-height: 30px;
   margin: 25px 0 75px 0;
+}
+
+section.amazing-fea {
+  background: #fff;
+  height: 1200px;
+}
+
+section.amazing-fea .main {
+  max-width: 1350px;
+}
+
+section.amazing-fea .main h1.h1-main {
+  color: #7954b6;
+  margin: 0 auto;
+  padding: 115px 0 35px 0;
+  text-align: center;
+  width: 33%;
+  transition: 0.5s;
+}
+
+section.amazing-fea .main h1.h1-main:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+section.amazing-fea .main p.p-main {
+  color: #565656;
+  margin: 0 auto 150px;
+  text-align: center;
+  width: 33%;
+}
+
+section.amazing-fea .main img.ama-img {
+  float: left;
+}
+
+section.amazing-fea .main ul.features {
+  float: right;
+}
+
+section.amazing-fea .main ul.features li {
+  margin: 0 0 50px 0;
+}
+
+section.amazing-fea .main ul.features li h2.feature {
+  color: #7954b6;
+  margin: 0 0 30px 0;
+}
+
+section.amazing-fea .main ul.features li:before {
+  content: "";
+  display: block;
+  border: 0px solid red;
+  float: left;
+  width: 110px;
+  height: 90px;
+  margin: 10px 0 0 0;
+  background: url("../i/ico01.png") no-repeat;
+  transition: 0.5s;
+}
+
+section.amazing-fea .main ul.features li:not(:last-child):hover:before {
+  margin: 10px -20px 0 0;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+section.amazing-fea .main ul.features li:nth-child(2):before {
+  background: url("../i/ico02.png") no-repeat;
+}
+
+section.amazing-fea .main ul.features li:nth-child(3):before {
+  background: url("../i/ico03.png") no-repeat;
+}
+
+section.amazing-fea .main ul.features li:nth-child(4):before {
+  background: url("../i/ico04.png") no-repeat;
+}
+
+section.amazing-fea .main ul.features li:last-child:before {
+  background: none;
+}
+
+section.amazing-fea .main ul.features li a {
+  color: #f34791;
+  text-decoration: underline;
+}
+
+section.amazing-fea .main ul.features li a:hover {
+  color: red;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+section.about-appguyon {
+  background: url("../i/bg_viol.png") no-repeat;
+  height: 1600px;
 }
