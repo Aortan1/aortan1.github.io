@@ -81,8 +81,8 @@ $(elem).clone().appendTo(Ul);
   } while (ntime<1000);
 };  
 
-my_slider(El1, 50000, 5000);
-my_slider(El2, 25000, 3000);
+my_slider(El1, 4000, 5000);
+my_slider(El2, 2500, 3000);
 
  
 $(document).on('click','.sl', function(){ var x=$(this).parent(".slides"); scr(x);});
