@@ -143,7 +143,7 @@ section.b-form {
         top: 0;
         height: 100%;
         width: 100%;
-        background: linear-gradient(to top, rgba(255, 255, 255, 0), white); }
+        background: linear-gradient(to top, rgba(248, 248, 248, 0), #f8f8f8); }
     section.b-form .top-start-now ul.item-names {
       display: inline-block;
       vertical-align: top; }
@@ -617,7 +617,7 @@ section.b-content div.bb-user-list {
     transform: rotate(133.2deg); } }
   section.b-content div.bb-user-list ul.rating {
     border: 1px solid red;
-    height: 160px; }
+    height: 16px; }
     section.b-content div.bb-user-list ul.rating li.star {
       padding: 0;
       margin: 0;
