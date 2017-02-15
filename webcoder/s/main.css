@@ -615,6 +615,15 @@ section.b-content div.bb-user-list {
   to {
     -webkit-transform: rotate(133.2deg);
     transform: rotate(133.2deg); } }
+  section.b-content div.bb-user-list ul.rating {
+    border: 1px solid red; }
+    section.b-content div.bb-user-list ul.rating li.star {
+      padding: 0;
+      background: url();
+      border: 1px solid blue;
+      display: inline-block;
+      width: 18px;
+      height: 16px; }
 
 section.b-article .column {
   border-bottom: 1px solid #cfcfcf;
