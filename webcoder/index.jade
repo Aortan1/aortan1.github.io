@@ -62,18 +62,18 @@ html
 							//- h2.about I am
 							fieldset.fs-your-sex
 								h2.not-displayed Woman
-								input.radio.r1(name="sex", type="radio", id="female", value="female", title="I'm a woman", hidden="true", checked)
+								input.radio.r1(name="sex", type="radio", id="female", value="female", title="I'm a woman", hidden="true")
 								label(for="female",title="I'm a woman")
 								h2.not-displayed Man
-								input.radio.r2(name="sex", type="radio", id="male", value="male",  title="I'm a man", hidden="true")
+								input.radio.r2(name="sex", type="radio", id="male", value="male", checked, title="I'm a man", hidden="true")
 								label(for="male",title="I'm a man")
 							h2.about.look looking for
 							fieldset.fs-your-sex
 								h2.not-displayed Woman
-								input.radio.r1(name="p_sex", type="radio", id="p_female", value="female", title="I'm looking for a woman", hidden="true")
+								input.radio.r1(name="p_sex", type="radio", id="p_female", value="female", checked, title="I'm looking for a woman", hidden="true")
 								label(for="p_female",title="I'm looking for a woman")
 								h2.not-displayed Man
-								input.radio.r2(name="p_sex", type="radio", id="p_male", value="male", title="I'm looking for a man", hidden="true", checked)
+								input.radio.r2(name="p_sex", type="radio", id="p_male", value="male", title="I'm looking for a man", hidden="true")
 								label(for="p_male",title="I'm looking for a man")
 						.item
 							input.field(type="text", name="name", id="name", required)
