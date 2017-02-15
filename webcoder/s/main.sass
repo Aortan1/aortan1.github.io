@@ -1,0 +1,782 @@
+
+
+*
+	padding: 0
+	margin: 0
+	outline: 0
+
+img
+	border: 0
+
+ul
+	list-style: none
+
+fieldset
+	border: none
+
+
+body
+	//border: 3px solid green
+	background-color: white
+	font: 16px Roboto, sans-serif
+	font-weight: 300
+	color: #000
+	width: 100%
+	margin: 0 auto
+
+a
+	color: black
+	text-decoration: none
+	text-transform: capitalize
+	transition: 0.3s
+	&:hover
+		transition: 0.3s
+
+a.a-main
+	color: #ffaf69
+	text-decoration: underline
+	font-size: 14px
+
+.not-displayed 
+	display: none
+
+h1.h1-main
+	color: #4e4e4e
+	margin: 40px 0 25px 0
+	font-size: 30px
+	font-weight: 300
+
+
+
+h2.about, .about
+	color: #666666
+	font-size: 17px
+	font-weight: 300
+
+
+.p-main
+	font-size: 14px
+	line-height: 23.0px
+
+
+
+
+.main
+	border: 1px solid transparent//green
+	margin: 0 auto
+	width: 960px
+	
+	
+
+header.b-logo
+	background: url(../i/logot.png) 50.55% no-repeat
+	height: 105px
+	p.about-logo
+		display: none
+
+
+section.b-form
+	background: #ff8d1e
+	//background: radial-gradient(circle, #ffcc33, #ff8b1d)
+	background: url("../i/shadow.png") 50% 100% no-repeat, url("../i/orange.png") no-repeat
+	background-size: auto, cover
+	height: 504px
+	.main
+		height: 465px
+		padding-top: 19px
+	.top-slider
+		background: #fff
+		display: inline-block
+		//cursor: pointer
+		border-radius: 5px 0 0 5px
+		width: calc(50% - 1px)
+		//width: 50%
+		height: 100%
+		position: relative
+		overflow: hidden
+		vertical-align: top
+		font-size: 0px
+		.slides
+			width: 99999px
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			.sl
+				display: inline-block
+				//margin-right: -4px
+				img
+					width: 100%
+					padding: 0
+					margin: 0
+					float: left
+			// .sl:nth-child(4)
+			// 	margin-right: 0
+			// .sl.r
+			// 	margin-left: 4px
+		.dots
+			//display: none
+			display: inline-block
+			text-align: center
+			position: absolute
+			width: 100%
+			height: 5%
+			padding: 10px
+			bottom: 10px
+			z-index: 2
+			.dot
+				width: 8px
+				height: 8px
+				border: 2px solid #777
+				border-radius: 50%
+				box-shadow: 0 0 1px #fff
+				background: #000
+				display: inline-block
+				opacity: 0.5
+				margin-right: 3px
+				.in
+					border-radius: 50%
+					width: 8px
+					height: 8px
+					background: #ff9615
+					opacity: 0
+
+			.dot-active
+				background: #ff9615
+				opacity: 1.0
+
+
+
+
+
+	.top-start-now
+		background: #f8f8f8
+		border-left: 1px solid #ddd
+		border-radius: 0 5px 5px 0
+		box-sizing: border-box
+		display: inline-block
+		height: 100%
+		padding: 18px 22px
+		margin-left: -5px
+		vertical-align: top
+		//width: calc(50% + 6px)
+		width: 50%
+
+		h1.join
+			//border: 1px solid red
+			font-size: 40px
+			font-weight: 300
+			color: #ff8210
+			margin-bottom: 15px
+			position: relative
+			.curtain
+				position: absolute
+				top: 0
+				height: 100%
+				width: 100%
+				background: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,1))
+
+		ul.item-names
+			display: inline-block
+			vertical-align: top
+			li
+				box-sizing: border-box
+				border: 1px solid transparent//black
+				height: 48px
+				width: 100px
+				h2.about
+					line-height: 48px
+				
+		form.form-start-now
+			//border: 1px solid red
+			display: inline-block
+			vertical-align: top
+			h2.about
+				display: inline-block
+				vertical-align: middle
+			h2.about.look
+				padding: 0 9px 0 30px
+				background: url("../i/loupe.png") 6% 50% no-repeat
+
+			input[type="radio"], input[type="checkbox"]
+				display: none
+
+			.field
+				height: 35px
+				background: linear-gradient(to top, #fff, #e7e7e7)
+				border: 1px solid #909090
+				border-radius: 18px
+				box-sizing: border-box
+				color: #555
+				font-size: 16px
+				font-weight: 400
+				padding-left: 15px
+				padding-top: 4px
+				width: 100%
+				&:active,	&:focus
+					background: linear-gradient(to top, #fff, #e7e7e7)
+					border-top-color: #b77c7c
+					border-left-color: #b77c7c
+					border-bottom-color: #eea8a8
+					border-right-color: #eea8a8
+				
+			select.field
+				appearance: none
+				background: url("../i/edge.png") no-repeat right, linear-gradient(to top, #fff, #e7e7e7)
+			
+			select::-ms-expand
+				display: none
+
+
+			select#bith_d
+				width: 24%
+				margin-right: 1.2%
+
+			select#bith_m
+				width: 41%
+				margin-right: 1.2%
+			select#bith_y
+				width: 30%
+			.item
+				border: 1px solid transparent//blue
+				box-sizing: border-box
+				height: 48px
+				padding: 5px 0
+
+			fieldset.fs-your-sex
+				display: inline-block
+				vertical-align: middle
+
+			.radio:checked+label
+				background-color: #ebeded
+				transition: 0.3s
+			.radio:not(checked)+label
+				background-color: #ff9a12
+				transition: 0.3s
+
+			.radio.r1:checked+label
+				background: url("../i/woman-checked.png")
+			.radio.r2:checked+label
+				background: url("../i/man-checked.png")
+			.radio.r1:not(checked)+label
+				background: url("../i/woman.png")
+			.radio.r2:not(checked)+label
+				background: url("../i/man.png")
+
+			.radio+label
+				cursor: pointer
+				background-color: transparent//orange
+				border: 1px solid #795301
+				display: inline-block
+				height: 33px
+				margin: 0
+				padding: 0
+				// vertical-align: middle
+				// position: absolute
+				width: 48px
+			.radio.r1+label
+				margin-right: -5px
+				border-radius: 24px 0 0 24px
+				border-width: 1px 0 1px 1px
+			.radio.r2+label
+				border-radius: 0 24px 24px 0
+				border-width: 1px 1px 1px 0
+
+			fieldset.fs-slogan,	fieldset.fs-drink
+				display: inline-block
+				height: 60px
+				margin: 10px 0px
+				border: 0px solid green
+				.item
+					height: 28px
+					
+				span.about
+					border: 0px solid red
+					padding: 0 58px 0 14px
+					vertical-align: 2px
+
+
+			label	div.in
+					height: 10px
+					width: 10px
+					border: 1px solid #fff
+					transition: 0.5s
+
+
+			.checkbox+label
+				cursor: pointer
+				border: 1px outset #e2e2e2
+				display: inline-block
+				height: 12px
+				width: 12px
+				transition: 0.3s
+
+
+
+			.checkbox:checked+label div.in
+				background: radial-gradient(at 0% 0%, #fec348, #fd8d1b )
+				background: #fd8d1b
+				box-shadow: -1px -1px 1px #909090 inset
+				transform: 0.3s
+			.checkbox:not(checked)+label div.in
+				background: white
+				transition: 0.3s
+
+			.radios+label
+				cursor: pointer
+				border: 1px outset #e2e2e2
+				border-radius: 50%
+				display: inline-block
+				height: 12px
+				width: 12px
+				transition: 0.3s
+				div.in
+					border-radius: 50%
+
+			.radios:checked+label div.in
+				background: radial-gradient(at 0% 0%, #fec348, #fd8d1b )
+				background: #fd8d1b
+				transition: 0.3s
+			.radios:not(checked)+label div.in
+				background-color: white
+				transition: 0.3s
+			
+			input.submit
+				height: 68px
+				width: 100%
+				border: 1px solid #7fa607
+				border-radius: 34px
+				background-color: #8fc113
+				background: linear-gradient(to top, #94c516 0%, #72aa00 50%, #8fb92b 50%, #b5cc3f 100%)
+				box-shadow: inset 0 0 1px 1px #bfdc73
+				color: #fff
+				font-family: 'Source Sans Pro', sans-serif
+				font-size: 42px
+				font-weight: 200
+				// font-stretch: ultra-condensed
+				text-transform: capitalize
+				text-shadow: #4b6f01 0 -2px 2px
+				transition: 0.5s 
+				&:hover
+					color: yellow
+					transition: 0.3s 
+				&:active
+					margin: 1px
+					box-shadow: inset 1px 1px 5px 1px #517900
+					transition: 0.3s
+
+section.b-content
+	.main
+		border: 0px solid yellow
+		height: 350px
+
+	
+	div.bb-round
+		border: 0px solid orange
+		box-sizing: border-box
+		width: 50%
+		display: inline-block
+		padding-right: 10px
+		vertical-align: top
+		img.img-round
+			width: 173px
+			float: left
+
+
+	div.bb-user-list
+		//border: 1px solid orange
+		box-sizing: border-box
+		display: inline-block
+		padding-left: 70px
+		vertical-align: top
+		width: 49%
+		.user-slider
+			//border: 1px solid red
+			height: 70px
+			width: 390px
+			display: inline-block
+			cursor: pointer
+			//border-radius: 5px 0 0 5px
+			position: relative
+			overflow: hidden
+			vertical-align: top
+			.slides
+				font-size: 0px
+				width: 99999px
+				height: 100%
+				position: absolute
+				top: 0
+				left: 0
+				.sl
+					//font-size: 0px
+					padding-right: 10px
+					margin: 0
+					display: inline-block
+					//margin-right: -4px
+					img.i-user
+						width: 70px
+						float: left
+		.active-list
+			height: 180px
+			margin-top: 20px 
+			width: 390px
+			//border: 1px solid blue
+			ul.links
+				li
+					border: 1px solid #ccc
+					border-radius: 5px 5px 0 0
+					box-sizing: border-box
+					text-align: center
+					height: 30px
+					display: inline-block
+					padding-top: 5px
+					a:link, a:visited
+						display: inline-block
+						height: 100%
+						color: #969696
+						text-decoration: none
+
+				li:first-child
+					width: 90px
+					background-color: #f4f4f4
+					margin-right: -4px 
+				li:last-child
+					width: 155px
+					background-color: #fff
+					a.lin
+						padding-right: 5px
+						color: #ffa352
+						text-transform: none
+					small.s
+						color: #b9b9b9
+
+					
+			ul.content
+				position: relative
+				width: 100%
+				height: 100%
+				background-color: #fff
+				border: 0px solid black
+				li
+					border: 1px solid #ccc
+					border-radius: 5px
+					box-sizing: border-box;
+					padding: 15px 18px
+					position: absolute
+					width: 100%
+					height: 100%
+					display: none
+					z-index: 2
+				#inset2
+					display: block
+					z-index: 1
+				li:target
+					display: block
+				li#inset1
+					background-color: #fff
+				li#inset2
+					background-color: #fff
+			
+			div.progress
+			
+			progress
+				margin-top: 10px
+				background-color: #edf0f0
+				border: 1px outset #dcdcdc
+				height: 15px
+				border-radius: 3px
+				width: 212px
+
+			progress::-webkit-progress-bar
+				background-color: #edf0f0
+				border: 1px outset #dcdcdc
+				height: 15px
+				border-radius: 3px
+				width: 212px
+			progress::-webkit-progress-value
+				background-color: #ff9317
+				border: 0
+				height: 12px
+				border-radius: 3px
+
+			progress::-moz-progress-bar
+				background-color: #edf0f0
+				border: 1px outset #dcdcdc
+				height: 15px
+				border-radius: 3px
+				width: 100%
+			progress::-moz-progress-value
+				background-color: #ff9317
+				border: 0
+				height: 12px
+				border-radius: 3px
+
+			span.p-value
+				display: block
+				position: absolute
+				font-size: 10px
+				font-weight: 700
+				top: 12px
+				left: 50%
+				color: #4e4e4e
+
+
+
+			form.d-inform
+				position: relative
+				width: 212px
+				
+
+
+				.rads+label
+					border: 1px outset #dcdcdc
+					border-radius: 3px
+					background-color: #e8e9e9
+					box-sizing: border-box
+					cursor: pointer
+					display: inline-block
+					font-size: 10px
+					font-weight: 600
+					color: #4e4e4e
+					height: 28px
+					margin: 25px -9px 25px 0
+					padding: 6px 0 0 13px
+					position: relative
+					top: 20%
+					right: 0
+					width: calc(20% + 4px)
+					transition: 0.3s
+					-moz-user-select: none
+					-webkit-user-select: none
+				.rads+label:not(:first-of-type)
+						border-left-width: 0
+				.rads+label:not(:last-of-type)
+						border-right-width: 0
+
+				.rads+label	.ang
+					height: 27px
+					width: 9px
+					position: absolute
+					bottom: 0
+					left: 97%
+					border: 0px solid red
+					display: inline-block
+					overflow: hidden
+
+					&:after
+						content: ""
+						background-color: #e8e9e9
+						position: absolute
+						bottom: 59%
+						right: 100%
+						width: 50px
+						height: 50px
+						border: 1px solid #bababa
+						transform: skewY(56.9deg) rotate(106deg) translateX(-6px)
+
+
+				.rads:nth-of-type(1)+label, .rads:nth-of-type(1)+label .ang:after, .rads:nth-of-type(2)+label, .rads:nth-of-type(2)+label .ang:after
+					background-color: #c2c4c4		
+				.rads:nth-of-type(1)+label .ang:after, .rads:nth-of-type(2)+label .ang:after
+					border-color: #787a7a
+				.rads:checked+label, .rads:checked+label .ang:after
+					background-color: #ff9d0f
+					transition: 0.3s
+				.rads:checked+label .ang:after
+					border-color: #d3800e	
+
+				.rads#step1+label
+					z-index: 5
+				.rads#step2+label
+					z-index: 4
+				.rads#step3+label
+					z-index: 3
+				.rads#step4+label
+					z-index: 2
+				.rads#step5+label
+					z-index: 1
+
+				
+				input[type="range"]
+					width: 100%
+					-webkit-appearance: none
+					border-radius: 3px
+					height: 14px
+					border: 1px outset #dcdcdc
+					background-color: #ff9a12
+					box-shadow: inset 0 0 2px 1px #fff
+				input[type="range"]::-moz-range-track	
+					width: 100%
+					border-radius: 3px
+					height: 14px
+					border: 1px outset #dcdcdc
+					background-color: #ff9a12
+					box-shadow: inset 0 0 2px 1px #fff	
+
+
+				input[type='range']::-webkit-slider-thumb
+					-webkit-appearance: none
+					background: url("../i/range-thumb.png")
+					cursor: pointer
+					width: 13px
+					height: 25px
+				input[type="range"]::-moz-range-thumb
+					border-radius: 0
+					border: 0
+					background: url("../i/range-thumb.png")
+					cursor: pointer
+					width: 13px
+					height: 25px
+
+				input[type="range"]::-ms-fill-lower,
+				input[type="range"]::-ms-fill-upper,
+				input[type="range"]::-ms-ticks
+					background: transparent
+
+				input[type="range"]::-ms-track
+					width: 100%
+					border-radius: 3px
+					height: 14px
+					border: 1px outset #dcdcdc
+					background-color: #ff9a12
+					box-shadow: inset 0 0 2px 1px #fff
+
+				input[type="range"]::-ms-thumb
+					background: url("../i/range-thumb.png")
+					width: 13px
+					height: 25px
+					cursor: pointer
+			
+
+			form.d-inform, div.d-right
+				display: inline-block
+				vertical-align: top
+
+			
+			div.d-right
+				padding-left: 45px
+				.skill
+					width: 90px
+					height: 90px
+					position: relative
+					border: 0px solid red
+					transition: 5s
+					span.num
+						color: #4e4e4e
+						display: inline-block
+						position: absolute
+						top: 40%
+						left: 37%
+					.circle
+						width: 56px
+						height: 56px
+						border: 17px solid #ffa352
+						border-radius: 50%
+						position: absolute
+						clip: rect(0px, 45px, 90px, 0px)
+						transition: 5s
+					.circle.bg
+						border-color: #e7e8e8
+						clip: rect(auto, auto, auto, auto)
+	
+
+				.wrapper
+					//margin: 50px 100px
+					width: 90px
+					height: 90px
+					position: absolute
+					clip: rect(0px, 90px, 90px, 45px)
+
+
+			.circle
+				&[data-anim~=right]
+					animation-iteration-count: infinite
+					animation-fill-mode: forwards
+					animation-duration: 10s
+					animation-delay: 2s
+					animation-name: right-spin
+
+			@keyframes right-spin
+				from
+					transform: rotate(0deg)
+				to
+					transform: rotate(133.2deg)
+
+section.b-article
+
+	.main
+		//border: 1px solid red
+	.column
+		border-bottom: 1px solid #cfcfcf
+		column-count: 3
+		column-width: 32%
+		column-gap: 2.5%
+		height: 100%		
+		margin-top: -15px
+		height: 365px
+		padding-bottom: 45px
+		// .column
+		// 	display: flex
+		// 	justify-content: center
+		
+		p.p-main
+			margin-bottom: 15px
+		ol.actions
+			font-size: 14px
+			line-height: 23.0px
+			list-style-position: inside
+
+
+		p.p-highlighted	
+			color: #ffa352
+			font-size: 14px
+			//line-height: 23.0px
+			margin: 15px 0 25px 0
+			padding-left: 15px
+			border-left: 3px solid #ffc28c
+
+		a.a-main.r
+			padding: 0 0 90px 155px
+			// margin-top: -15px 
+			text-align: right	
+
+		blockquote.ending
+			color: #9a9a9a
+			display: block
+			font-size: 14px			
+			padding: 25px 25px 0
+			font-style: italic
+			position: relative
+			&:before, &:after
+				color: #cfcfcf
+				position: absolute
+				font-size: 70px
+				font-family: 'Source Sans Pro', sans-serif
+				font-weight: 100
+			&:before
+				content: "\201C"				
+				left: -13px
+				top: 5px
+			&:after
+				content: "\201D"
+				right: 15px
+				bottom: -45px
+
+footer.b-footer
+	height: 100px
+	.main
+		background: url("../i/logo-footer.png") 0% 40% no-repeat
+	p.epilog		
+		font-size: 18px
+		margin: 15px 0 10px
+		text-align: right
+		text-transform: capitalize
+		span.vd 
+			color: #cfcfcf
+	p.year
+		color: #cfcfcf
+		font-size: 29px
+		text-align: right
+
+
+

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,100|Noto+Sans|Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1200">
+    <script src="https://code.jquery.com/ui/3.3.1/jquery-ui.js"></script>
+    <title>Web Coder</title>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="s/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+  </head>
+  <body>
+    <header class="b-logo">
+      <div class="main">
+        <div class="logo">
+          <p class="about-logo">Test task</p>
+        </div>
+      </div>
+    </header>
+    <section class="b-form">
+      <div class="main">
+        <div class="top-slider">
+          <ul class="slides">
+            <li class="sl"><img src="tem/photo1.jpg" alt=""></li>
+            <li class="sl"><img src="tem/photo2.jpg" alt=""></li>
+            <li class="sl"><img src="tem/photo3.jpg" alt=""></li>
+            <li class="sl"><img src="tem/photo4.jpg" alt=""></li>
+          </ul>
+          <ul class="dots">
+            <li class="dot">
+              <div class="in"></div>
+            </li>
+            <li class="dot">
+              <div class="in"></div>
+            </li>
+            <li class="dot">
+              <div class="in"></div>
+            </li>
+            <li class="dot">
+              <div class="in"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="top-start-now">
+          <h1 class="join">Join us now. It's FREE
+            <div class="curtain"></div>
+          </h1>
+          <ul class="item-names">
+            <li>
+              <h2 class="about"> I am</h2>
+            </li>
+            <li>
+              <h2 class="about"> Name</h2>
+            </li>
+            <li>
+              <h2 class="about"> Age</h2>
+            </li>
+            <li>
+              <h2 class="about"> City</h2>
+            </li>
+          </ul>
+          <form class="form-start-now" action="#" method="post" name="start_now" id="start_now">
+            <div class="item">
+              <fieldset class="fs-your-sex">
+                <h2 class="not-displayed">Woman</h2>
+                <input class="radio r1" name="sex" type="radio" id="female" value="female" title="I'm a woman" hidden="true">
+                <label for="female" title="I'm a woman"></label>
+                <h2 class="not-displayed">Man</h2>
+                <input class="radio r2" name="sex" type="radio" id="male" value="male" checked title="I'm a man" hidden="true">
+                <label for="male" title="I'm a man"></label>
+              </fieldset>
+              <h2 class="about look">looking for</h2>
+              <fieldset class="fs-your-sex">
+                <h2 class="not-displayed">Woman</h2>
+                <input class="radio r1" name="p_sex" type="radio" id="p_female" value="female" checked title="I'm looking for a woman" hidden="true">
+                <label for="p_female" title="I'm looking for a woman"></label>
+                <h2 class="not-displayed">Man</h2>
+                <input class="radio r2" name="p_sex" type="radio" id="p_male" value="male" title="I'm looking for a man" hidden="true">
+                <label for="p_male" title="I'm looking for a man"></label>
+              </fieldset>
+            </div>
+            <div class="item">
+              <input class="field" type="text" name="name" id="name" required>
+            </div>
+            <div class="item">
+              <div class="fs-your-bithday">
+                <select class="field" name="bith_d" id="bith_d">
+                  <option value="12" selected>12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                </select>
+                <select class="field" name="bith_m" id="bith_m">
+                  <option value="october" selected>october</option>
+                  <option value="november">november</option>
+                  <option value="december">december</option>
+                </select>
+                <select class="field" name="bith_y" id="bith_y">
+                  <option value="1984" selected>1984</option>
+                  <option value="1985">1985</option>
+                  <option value="1986">1986</option>
+                </select>
+              </div>
+            </div>
+            <div class="item">
+              <select class="field" name="city" id="city">
+                <option value="London" selected>London</option>
+                <option value="Liverpool">Liverpool</option>
+                <option value="York">York</option>
+              </select>
+            </div>
+            <fieldset class="fs-slogan">
+              <div class="item">
+                <input class="checkbox" type="checkbox" name="slogan1" id="slogan1" value="I'm cool" checked>
+                <label for="slogan1">
+                  <div class="in"></div>
+                </label><span class="about">I'm cool</span>
+              </div>
+              <div class="item">
+                <input class="checkbox" type="checkbox" name="slogan2" id="slogan2" value="Live's good">
+                <label for="slogan2">
+                  <div class="in"></div>
+                </label><span class="about">Live's good</span>
+              </div>
+            </fieldset>
+            <fieldset class="fs-drink">
+              <div class="item">
+                <input class="radios" type="radio" name="drink" id="tee" value="I'm cool">
+                <label for="tee">
+                  <div class="in"></div>
+                </label><span class="about">Tee</span>
+              </div>
+              <div class="item">
+                <input class="radios" type="radio" name="drink" id="beer" value="Live's good" checked>
+                <label for="beer">
+                  <div class="in"></div>
+                </label><span class="about">Beer</span>
+              </div>
+            </fieldset>
+            <div class="item">
+              <input class="submit" type="submit" value="Start now">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="b-content">
+      <div class="main">
+        <div class="bb-round">
+          <h1 class="h1-main">Code this block</h1><img class="img-round" src="tem/round-photo.png" alt="">
+          <p class="p-main around">This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun, together with seemingly endless possibilities to meet new single people from your area, make friends, go on a date and enjoy good company. With thousands of local personals, will make your life a whole lot busier with all that dating. This is a great place to find true friends or devoted partners for long-term relationships or marriage. We</p>
+        </div>
+        <div class="bb-user-list">
+          <h1 class="h1-main">Users list</h1>
+          <div class="user-slider">
+            <ul class="slides">
+              <li class="sl"><img class="i-user" src="tem/s-photo.jpg" alt=""></li>
+              <li class="sl"><img class="i-user" src="tem/s-photo.jpg" alt=""></li>
+              <li class="sl"><img class="i-user" src="tem/s-photo.jpg" alt=""></li>
+              <li class="sl"><img class="i-user" src="tem/s-photo.jpg" alt=""></li>
+              <li class="sl"><img class="i-user" src="tem/s-photo.jpg" alt=""></li>
+            </ul>
+            <ul class="dots">
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+            </ul>
+          </div>
+          <div class="active-list">
+            <ul class="links">
+              <li id="lin1"> <a class="lin" href="#inset1">Users list</a></li>
+              <li id="lin2"> <a class="lin active" href="#inset2">Active list tab</a><small class="s">| 38</small></li>
+            </ul>
+            <ul class="content">
+              <li id="inset1">
+                <p>Here is a users list. There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles.</p>
+              </li>
+              <li id="inset2">
+                <form class="d-inform" method="post" action="#">
+                  <div class="progress">
+                    <progress max="100" value="66"></progress><span class="p-value">20%</span>
+                  </div>
+                  <input class="rads" name="step" type="radio" id="step1" value="1" hidden="true">
+                  <label class="tep" for="step1">Step 1
+                    <div class="ang"></div>
+                  </label>
+                  <input class="rads" name="step" type="radio" id="step2" value="2" hidden="true">
+                  <label class="tep" for="step2">Step 2
+                    <div class="ang"></div>
+                  </label>
+                  <input class="rads" name="step" type="radio" id="step3" value="3" hidden="true" checked>
+                  <label class="tep" for="step3">Step 3
+                    <div class="ang"></div>
+                  </label>
+                  <input class="rads" name="step" type="radio" id="step4" value="4" hidden="true">
+                  <label class="tep" for="step4">Step 4
+                    <div class="ang"></div>
+                  </label>
+                  <input class="rads" name="step" type="radio" id="step5" value="5" hidden="true">
+                  <label class="tep" for="step5">Step 5</label>
+                  <input class="range" type="range">
+                </form>
+                <div class="d-right">
+                  <div class="skill"><span class="num">37%</span>
+                    <div class="circle bg"> </div>
+                    <div class="wrapper">
+                      <div class="circle" data-anim="right"></div>
+                    </div>
+                  </div>
+                  <div class="rating"><span>★</span><span>★</span><span>☆</span><span>☆</span><span>☆</span></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="b-article">
+      <div class="main">
+        <h1 class="h1-main">How to succeed in online dating</h1>
+        <div class="column">
+          <p class="p-main">There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. We provide a wide range of features allowing you to gather as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.</p>
+          <p class="p-highlighted">In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.</p>
+          <p class="p-main">You can also upload photos to your dating profile from your Facebook account.
+            <ol class="actions">
+              <li>Access your dating life even when you’re not browsing <a class="a-main" href="">Cupid.com</a>!</li>
+              <li>Search for new matches from your browser easily.</li>
+              <li>Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends are online or have updated their profile info</li>
+              <li>Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends.</li>
+            </ol>
+          </p>
+          <blockquote class="ending">In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.</blockquote><br><a class="a-main r" href="">Click here to view more</a>
+        </div>
+      </div>
+    </section>
+    <footer class="b-footer">
+      <div class="main">
+        <p class="epilog"> <span class="vd">VD </span>Web coder test task</p>
+        <p class="year">2013</p>
+      </div>
+    </footer>
+  </body>
+</html>

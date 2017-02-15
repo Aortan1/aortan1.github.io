@@ -1,0 +1,228 @@
+doctype html
+html
+	head
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,100|Noto+Sans|Roboto:100,300,400,500,700', rel='stylesheet', type='text/css')
+
+		script(type='text/javascript', src='//code.jquery.com/jquery-1.11.0.min.js')
+
+
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=1200")
+		
+	
+		script(src="https://code.jquery.com/ui/3.3.1/jquery-ui.js")
+
+		
+		title Web Coder
+		script(type='text/javascript', src='js/main.js')
+		link(rel='stylesheet', type='text/css', href='s/main.css')
+		link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200', rel='stylesheet')
+	body
+		header.b-logo
+			.main
+				div.logo
+					p.about-logo Test task
+		section.b-form
+			.main
+				div.top-slider
+					ul.slides
+						li.sl
+							img(src="tem/photo1.jpg" alt="")
+						li.sl
+							img(src="tem/photo2.jpg" alt="")
+						li.sl
+							img(src="tem/photo3.jpg" alt="")
+						li.sl
+							img(src="tem/photo4.jpg" alt="")
+					ul.dots
+						li.dot
+							.in
+						li.dot
+							.in
+						li.dot
+							.in
+						li.dot
+							.in
+
+
+				div.top-start-now
+					h1.join Join us now. It's FREE
+						.curtain
+					ul.item-names
+						li
+							h2.about  I am
+						li
+							h2.about  Name
+						li
+							h2.about  Age
+						li
+							h2.about  City
+					form.form-start-now(action="#", method="post", name="start_now", id="start_now")
+						.item
+							//- h2.about I am
+							fieldset.fs-your-sex
+								h2.not-displayed Woman
+								input.radio.r1(name="sex", type="radio", id="female", value="female", title="I'm a woman", hidden="true")
+								label(for="female",title="I'm a woman")
+								h2.not-displayed Man
+								input.radio.r2(name="sex", type="radio", id="male", value="male", checked, title="I'm a man", hidden="true")
+								label(for="male",title="I'm a man")
+							h2.about.look looking for
+							fieldset.fs-your-sex
+								h2.not-displayed Woman
+								input.radio.r1(name="p_sex", type="radio", id="p_female", value="female", checked, title="I'm looking for a woman", hidden="true")
+								label(for="p_female",title="I'm looking for a woman")
+								h2.not-displayed Man
+								input.radio.r2(name="p_sex", type="radio", id="p_male", value="male", title="I'm looking for a man", hidden="true")
+								label(for="p_male",title="I'm looking for a man")
+						.item
+							input.field(type="text", name="name", id="name", required)
+						.item
+							.fs-your-bithday
+								select.field(name="bith_d", id="bith_d")
+									option(value="12", selected) 12
+									option(value="13") 13
+									option(value="14") 14
+								select.field(name="bith_m", id="bith_m")
+									option(value="october", selected) october
+									option(value="november") november
+									option(value="december") december
+								select.field(name="bith_y", id="bith_y")
+									option(value="1984", selected) 1984
+									option(value="1985") 1985
+									option(value="1986") 1986
+						.item
+							select.field(name="city", id="city")
+								option(value="London", selected) London
+								option(value="Liverpool") Liverpool
+								option(value="York") York
+						fieldset.fs-slogan
+							.item
+								input.checkbox(type="checkbox", name="slogan1", id="slogan1", value="I'm cool", checked)
+								label(for="slogan1")
+									div.in
+								span.about I'm cool
+							.item
+								input.checkbox(type="checkbox", name="slogan2", id="slogan2", value="Live's good")
+								label(for="slogan2")
+									div.in
+								span.about Live's good
+						fieldset.fs-drink
+							.item
+								input.radios(type="radio", name="drink", id="tee", value="I'm cool")
+								label(for="tee")
+									div.in
+								span.about Tee
+							.item
+								input.radios(type="radio", name="drink", id="beer", value="Live's good", checked)
+								label(for="beer")
+									div.in
+								span.about Beer
+						.item
+							input.submit(type="submit", value="Start now")
+
+		section.b-content
+			.main
+				div.bb-round
+					h1.h1-main Code this block
+					img.img-round(src="tem/round-photo.png", alt="")
+					p.p-main.around This text should be changeable. Lorem ipsum text here. Offers great opportunities to everyone looking to meet locals, find romantic dates and make new friends. Our dating site gives you hours of dating fun, together with seemingly endless possibilities to meet new single people from your area, make friends, go on a date and enjoy good company. With thousands of local personals, will make your life a whole lot busier with all that dating. This is a great place to find true friends or devoted partners for long-term relationships or marriage. We
+
+				div.bb-user-list
+					h1.h1-main Users list
+					//-img.user(src="tem/activelist.jpg")
+					div.user-slider
+						ul.slides
+							li.sl
+								img.i-user(src="tem/s-photo.jpg", alt="")
+							li.sl
+								img.i-user(src="tem/s-photo.jpg", alt="")
+							li.sl
+								img.i-user(src="tem/s-photo.jpg", alt="")
+							li.sl
+								img.i-user(src="tem/s-photo.jpg", alt="")
+							li.sl
+								img.i-user(src="tem/s-photo.jpg", alt="")
+						ul.dots
+							li.dot
+							li.dot
+							li.dot
+							li.dot
+							li.dot
+
+					div.active-list
+						ul.links
+							li#lin1 
+								a.lin(href="#inset1") Users list
+							li#lin2 
+								a.lin.active(href="#inset2") Active list tab
+								small.s | 38
+						ul.content
+									li#inset1
+										p Here is a users list. There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles.
+
+
+									li#inset2
+										form.d-inform(method="post", action="#")
+
+											div.progress
+												progress(max="100", value="66")
+												span.p-value 20%
+
+											input.rads(name="step", type="radio", id="step1", value="1", hidden="true")
+											label.tep(for="step1") Step 1
+												div.ang
+											input.rads(name="step", type="radio", id="step2", value="2", hidden="true")
+											label.tep(for="step2") Step 2
+												div.ang
+											input.rads(name="step", type="radio", id="step3", value="3", hidden="true", checked)
+											label.tep(for="step3") Step 3
+												div.ang
+											input.rads(name="step", type="radio", id="step4", value="4", hidden="true")
+											label.tep(for="step4") Step 4
+												div.ang
+											input.rads(name="step", type="radio", id="step5", value="5", hidden="true")
+											label.tep(for="step5") Step 5
+
+
+											input.range(type="range")
+
+
+										div.d-right
+											.skill
+												span.num 37%
+												div.circle.bg 
+												div.wrapper
+													div.circle(data-anim="right")
+
+											.rating
+												span ★
+												span ★
+												span ☆
+												span ☆
+												span ☆
+
+
+		section.b-article
+			.main
+				h1.h1-main How to succeed in online dating
+				div.column
+					p.p-main There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. We provide a wide range of features allowing you to gather as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.
+					p.p-highlighted In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.
+					p.p-main You can also upload photos to your dating profile from your Facebook account.
+						ol.actions
+							li Access your dating life even when you’re not browsing 
+								a.a-main(href="") Cupid.com
+								|!
+							li Search for new matches from your browser easily.
+							li Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends are online or have updated their profile info
+							li Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends.
+					blockquote.ending In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.
+					br
+					a.a-main.r(href="") Click here to view more
+		footer.b-footer
+			.main
+				p.epilog 
+					span.vd VD 
+					|Web coder test task
+				p.year 2013
