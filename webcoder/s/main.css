@@ -356,7 +356,7 @@ section.b-content div.bb-user-list {
     height: 180px;
     margin-top: 20px;
     width: 390px; }
-    section.b-content div.bb-user-list .active-list ul.links li {
+    section.b-content div.bb-user-list .active-list ul.links li.l-lin {
       border: 1px solid #ccc;
       border-radius: 5px 5px 0 0;
       box-sizing: border-box;
@@ -364,7 +364,7 @@ section.b-content div.bb-user-list {
       height: 30px;
       display: inline-block;
       padding-top: 5px; }
-      section.b-content div.bb-user-list .active-list ul.links li a:link, section.b-content div.bb-user-list .active-list ul.links li a:visited {
+      section.b-content div.bb-user-list .active-list ul.links li.l-lin a:link, section.b-content div.bb-user-list .active-list ul.links li.l-lin a:visited {
         display: inline-block;
         height: 100%;
         color: #969696;
@@ -388,7 +388,7 @@ section.b-content div.bb-user-list {
       height: 100%;
       background-color: #fff;
       border: 0px solid black; }
-      section.b-content div.bb-user-list .active-list ul.content li {
+      section.b-content div.bb-user-list .active-list ul.content li.li-page {
         border: 1px solid #ccc;
         border-radius: 5px;
         box-sizing: border-box;
@@ -616,14 +616,19 @@ section.b-content div.bb-user-list {
     -webkit-transform: rotate(133.2deg);
     transform: rotate(133.2deg); } }
   section.b-content div.bb-user-list ul.rating {
-    border: 1px solid red; }
+    border: 1px solid red;
+    height: 160px; }
     section.b-content div.bb-user-list ul.rating li.star {
       padding: 0;
-      background: url();
+      margin: 0;
+      position: relative;
+      background: url("..i/star.png");
       border: 1px solid blue;
       display: inline-block;
       width: 18px;
       height: 16px; }
+    section.b-content div.bb-user-list ul.rating li.star.em {
+      background: url("..i/star-empty.png"); }
 
 section.b-article .column {
   border-bottom: 1px solid #cfcfcf;

@@ -62,18 +62,18 @@ html
 							//- h2.about I am
 							fieldset.fs-your-sex
 								h2.not-displayed Woman
-								input.radio.r1(name="sex", type="radio", id="female", value="female", title="I'm a woman", hidden="true")
+								input.radio.r1(name="sex", type="radio", id="female", value="female", title="I'm a woman", hidden="true", checked)
 								label(for="female",title="I'm a woman")
 								h2.not-displayed Man
-								input.radio.r2(name="sex", type="radio", id="male", value="male", checked, title="I'm a man", hidden="true")
+								input.radio.r2(name="sex", type="radio", id="male", value="male",  title="I'm a man", hidden="true")
 								label(for="male",title="I'm a man")
 							h2.about.look looking for
 							fieldset.fs-your-sex
 								h2.not-displayed Woman
-								input.radio.r1(name="p_sex", type="radio", id="p_female", value="female", checked, title="I'm looking for a woman", hidden="true")
+								input.radio.r1(name="p_sex", type="radio", id="p_female", value="female", title="I'm looking for a woman", hidden="true")
 								label(for="p_female",title="I'm looking for a woman")
 								h2.not-displayed Man
-								input.radio.r2(name="p_sex", type="radio", id="p_male", value="male", title="I'm looking for a man", hidden="true")
+								input.radio.r2(name="p_sex", type="radio", id="p_male", value="male", title="I'm looking for a man", hidden="true", checked)
 								label(for="p_male",title="I'm looking for a man")
 						.item
 							input.field(type="text", name="name", id="name", required)
@@ -152,17 +152,17 @@ html
 
 					div.active-list
 						ul.links
-							li#lin1 
+							li.l-lin#lin1 
 								a.lin(href="#inset1") Users list
-							li#lin2 
+							li.l-lin#lin2 
 								a.lin.active(href="#inset2") Active list tab
 								small.s | 38
 						ul.content
-									li#inset1
+									li.li-page#inset1
 										p Here is a users list. There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles.
 
 
-									li#inset2
+									li.li-page#inset2
 										form.d-inform(method="post", action="#")
 
 											div.progress
