@@ -615,20 +615,21 @@ section.b-content div.bb-user-list {
   to {
     -webkit-transform: rotate(133.2deg);
     transform: rotate(133.2deg); } }
-  section.b-content div.bb-user-list ul.rating {
-    border: 1px solid red;
-    height: 16px; }
-    section.b-content div.bb-user-list ul.rating li.star {
-      padding: 0;
-      margin: 0;
-      position: relative;
-      background: url("..i/star.png");
-      border: 1px solid blue;
-      display: inline-block;
-      width: 18px;
-      height: 16px; }
-    section.b-content div.bb-user-list ul.rating li.star.em {
-      background: url("..i/star-empty.png"); }
+    section.b-content div.bb-user-list .active-list ul.rating {
+      border: 0px solid red;
+      height: 16px;
+      margin-left: 3px; }
+      section.b-content div.bb-user-list .active-list ul.rating li.star {
+        padding: 0;
+        margin: 13px -5px 0 0;
+        position: relative;
+        background: url("../i/star.png") 0% 0% no-repeat;
+        border: 0px solid blue;
+        display: inline-block;
+        width: 18px;
+        height: 16px; }
+      section.b-content div.bb-user-list .active-list ul.rating li.star.em {
+        background: url("../i/star-empty.png"); }
 
 section.b-article .column {
   border-bottom: 1px solid #cfcfcf;
