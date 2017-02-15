@@ -89,9 +89,9 @@ $(document).on('click','.sl', function(){ var x=$(this).parent(".slides"); scr(x
 
 
 $(document).on('click','.links li', function(){
-   $(this).css({'backgroundColor' : '#fff'}).find('a').css({'color':'#ffa352'});
+   $(this).css({'backgroundColor' : '#fff','zIndex' : '10'}).find('a').css({'color':'#ffa352'});
    var x; if($(this).get(0)==$("#lin1").get(0)) x=$("#lin2"); else x=$("#lin1");
-   $(x).css({'backgroundColor' : '#f4f4f4'}).find('a').css({ 'color':'#969696'});
+   $(x).css({'backgroundColor' : '#f4f4f4','zIndex' : '1'}).find('a').css({ 'color':'#969696'});
 });
 
 

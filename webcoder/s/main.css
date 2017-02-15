@@ -74,7 +74,7 @@ section.b-form {
     background: #fff;
     display: inline-block;
     border-radius: 5px 0 0 5px;
-    width: calc(50% - 1px);
+    width: calc(50% - 4px);
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -353,15 +353,18 @@ section.b-content div.bb-user-list {
           width: 70px;
           float: left; }
   section.b-content div.bb-user-list .active-list {
-    height: 180px;
+    height: 155px;
     margin-top: 20px;
     width: 390px; }
     section.b-content div.bb-user-list .active-list ul.links li.l-lin {
       border: 1px solid #ccc;
+      border-bottom-width: 0;
       border-radius: 5px 5px 0 0;
       box-sizing: border-box;
       text-align: center;
-      height: 30px;
+      position: relative;
+      z-index: 1;
+      height: 31px;
       display: inline-block;
       padding-top: 5px; }
       section.b-content div.bb-user-list .active-list ul.links li.l-lin a:link, section.b-content div.bb-user-list .active-list ul.links li.l-lin a:visited {
@@ -384,13 +387,14 @@ section.b-content div.bb-user-list {
         color: #b9b9b9; }
     section.b-content div.bb-user-list .active-list ul.content {
       position: relative;
+      top: -1px;
       width: 100%;
       height: 100%;
       background-color: #fff;
       border: 0px solid black; }
       section.b-content div.bb-user-list .active-list ul.content li.li-page {
         border: 1px solid #ccc;
-        border-radius: 5px;
+        border-radius: 0 5px 5px 5px;
         box-sizing: border-box;
         padding: 15px 0 0 18px;
         position: absolute;
