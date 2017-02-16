@@ -1,7 +1,7 @@
 doctype html
 html
 	head
-		link(href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,100|Noto+Sans|Roboto:100,300,400,500,700', rel='stylesheet', type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200|Roboto:100,300,400,500,700', rel='stylesheet', type='text/css')
 
 		script(type='text/javascript', src='//code.jquery.com/jquery-1.11.0.min.js')
 
@@ -16,7 +16,7 @@ html
 		title Web Coder
 		script(type='text/javascript', src='js/main.js')
 		link(rel='stylesheet', type='text/css', href='s/main.css')
-		link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200', rel='stylesheet')
+
 	body
 		header.b-logo
 			.main
@@ -25,6 +25,8 @@ html
 		section.b-form
 			.main
 				div.top-slider
+					//- Контейнер верхнего слайдера. Слайдер пока сырой, не работает управление и дотсы, сейчас над ним работаю. Зато у меня одна фунция на оба слайдера, позже расширю её на другие виды слайдеров.	
+
 					ul.slides
 						li.sl
 							img(src="tem/photo1.jpg" alt="")
@@ -57,9 +59,10 @@ html
 							label(for="bith_d").about  Age
 						li
 							label(for="city").about  City
+
 					form.form-start-now(action="#", method="post", name="start_now", id="start_now")
+						//- Ещё нужно сделать проверку данных формы регулярыми выражениями, не дошли руки.
 						.item
-							//- h2.about I am
 							fieldset.fs-your-sex
 								h2.not-displayed Woman
 								input.radio.r1(name="sex", type="radio", id="female", value="female", title="I'm a woman", hidden="true")
@@ -123,6 +126,7 @@ html
 
 		section.b-content
 			.main
+				//- Можно бы написать скрипт для обтекания текстом любой круглой картинки произвольного радиуса, но обощёлся пока ручным методом. 
 				div.bb-round
 					h1.h1-main Code this block
 					img.img-round(src="tem/round-photo.png", alt="")
@@ -138,8 +142,8 @@ html
 
 				div.bb-user-list
 					h1.h1-main Users list
-					//-img.user(src="tem/activelist.jpg")
 					div.user-slider
+						//- Второй слайдер пока без элементов уравления, т.к. управление пока не готово.
 						ul.slides
 							li.sl
 								img.i-user(src="tem/s-photo.jpg", alt="")
@@ -159,6 +163,7 @@ html
 							li.dot
 
 					div.active-list
+						//- Форма вкладок слегка не соответствует. Зато добился того, чтобы вкладки не скакали при переключении, правда немного с некрасивым изменением слилей с js, надо бы добавлением классов менять стили, не успел исправить. 
 						ul.links
 							li.l-lin#lin1 
 								a.lin(href="#inset1") Users list
@@ -174,8 +179,12 @@ html
 							li.li-page
 								form.d-inform(method="post", action="#")
 									div.progress
+										//- У элемента progress слабая кроссбраузерность, по хорошему лучше бы его не использовать, а сделать свой, но показал знание html5, правда стили для разных браузеров недоработаны. То же касается элемента input[type="range"], ползунок с диапазоном нужно отдельно писать, либо взять из jquery.     
 										progress(max="100", value="66")
 										span.p-value 20%
+
+
+										//- Над блоком с уголками долго работал, дважды полностью переделывал, но вышло ничего, с "радио"-переключением. Весь код и css полностью мой.
 
 									input.rads(name="step", type="radio", id="step1", value="1", hidden="true")
 									label.tep(for="step1") Step 1
@@ -197,11 +206,14 @@ html
 
 
 								div.d-right
+									//- Элемент с анимацией. Обощёлся одной анимацией, при угле больше 180град их нужно 3, и кода чуть больше, такой элемент есть на сайте моего портфолио.
 									.skill
 										span.num 37%
 										div.circle.bg 
 										div.wrapper
 											div.circle(data-anim="right")
+
+									//- Рейтинг заплаткой, я уже писал для него функцию на js, когда делал сайт http://aortan1.github.io/skybox/ Перенести не хватило времени. Хотя можно обойтись и чистым css.			
 
 									ul.rating
 										li.star

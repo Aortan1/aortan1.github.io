@@ -1,103 +1,75 @@
 
 $(document).ready (function(){
-  //alert("11");
-var El1=$(".top-slider");
-var El2=$(".user-slider");
+
+var El1=$(".top-slider"); // Контейнер слайдера 1.
+var El2=$(".user-slider"); // Контейнер слайдера 2.
 
 
-
-// $(".slides").click(function(){scr(".slides");});
-// $('div').click(function() {
-//   $('this').hide("slow");
-//             //$('this').css('opacity', '0.5');
-//             // $(this).css('right', '4px');
-//         });
-
-//  $(document).click( function(event){
-//       //if( $(event.target).closest("p").length ) 
-//       //  return;
-//       //$("p").fadeOut("slow");
-//       scr(".slides");
-//       event.stopPropagation();
-//     });
-
-function scr(O){
- var wi = $(".slides .sl img").outerWidth();
- O.animate({left: '-='+wi,}, scrolltime);
+function scr(O){ // смена 1 слайда, для запуска кликом, пока доработана.
+ var wi = $(".slides .sl img").outerWidth(); // внешняя ширина картинки.
+ O.animate({left: '-='+wi,}, scrolltime); // Анимация прокрутки в слайдере - не лучший вариант,
+  // ниже столкнусля с проблемой с функцией setInterval, поэтому пришлось пока применить 
+  // метод .animate в связке delay(delay).animate(...)
 };
 
 
-function my_slider(Element, delay, scrolltime){
-  //var delay=10000;
-  //var scrolltime=1500;
+function my_slider(Element, delay, scrolltime){ // Основная функция слайдера
+
   var Ul, Li, wi, n, ntime;
-  n=$(Element).find('.slides .sl').length;
-  Ul=$(Element).find(".slides");
-  Li=$(Element).find(".slides .sl");
-  D=$(Element).find(".dots .dot");  
-  wi = Li.find("img").outerWidth();
+  n=$(Element).find('.slides .sl').length; // Количество слайдов
+  Ul=$(Element).find(".slides"); // список слайдов
+  Li=$(Element).find(".slides .sl"); // слайд
+  D=$(Element).find(".dots .dot");  // дотсы слайдов
+  wi = Li.find("img").outerWidth(); // внешняя ширина картинки.
   
-  //wi = Li.find('img').outerWidth();
-  // var xleft = Ul.css( "left" );
-  //   var offset = Ul.offset();
-  //   var x=offset.left; 
-  //   var y=offset.top;
-  //   alert(x);
-$(Li).each(function(i,elem) { 
-$(elem).clone().appendTo(Ul);
+
+$(Li).each(function(i,elem) { // клонирую каждый слайд и ставлю в конец списка, удваивая его длину. 
+$(elem).clone().appendTo(Ul); 
 });
 
 
-// $(Element).find('.slides .sl:eq(0)').clone().appendTo((Element).find(".slides"));
-
 
   
   
-  function scroll(){    
+  function scroll(){  // Однократная прокрутка всех слайдов.  
      
   var vi;
   $(D).each(function(i,elem) {  
-    $(elem).eq(i).addClass("dot-active");
-    vi = $(Li).eq(i).outerWidth();
-    Ul.delay(delay).animate({left: '-='+vi}, scrolltime);//.parent().find(".in").eq(1).animate({opacity: 1}, 0 , function() {});
-    //D.eq(i).find(".in").delay(delay).animate({opacity: 1}, scrolltime, function() {});
-    //$(elem).delay(delay).removeClass("dot-active");
-    //setTimeout(function() {$(this).eq(i).removeClass("dot-active");}, delay);
-    
+    $(elem).addClass("dot-active"); // Связать прокрутку с дотсами пока не выходит.
+    //setTimeout(function() {         
+      vi = $(Li).eq(i).outerWidth();
+      Ul.delay(delay).animate({left: '-='+vi}, scrolltime); // Анимация прокрутки одного слайда после задержки delay.
+      $(elem).removeClass("dot-active");
+    //}, delay);
     //$(elem).removeClass("dot-active");
   });  
-  Ul.animate({left: '=0',}, 0);
+  Ul.animate({left: '=0',}, 0); // Мгновенный возрат к началу слайда. 
+  // Незаметен из-за идетничных картинок 1-ой и (n+1)-ой, клонированной.
   
 
   };
-  
-  //$(Li).click(function(){scr(Ul);});
-  //Li.bind("click", function(){scr();});
+
   
   ntime=0;
   do {
   ntime++;
-  scroll();
-  } while (ntime<1000);
+  scroll();             // Вызов 1й прокрутки всех слайдов 1000 раз.
+  } while (ntime<1000); 
 };  
 
-my_slider(El1, 4000, 5000);
-my_slider(El2, 2500, 3000);
+my_slider(El1, 4000, 5000); // Вызов функции для 1го слайдера. 
+my_slider(El2, 2500, 3000); // Вызов функции для 2го слайдера.
 
  
-$(document).on('click','.sl', function(){ var x=$(this).parent(".slides"); scr(x);});
+$(document).on('click','.sl', function(){ var x=$(this).parent(".slides"); scr(x);}); // Клики по слайдеру пока не работают.
 
 
-$(document).on('click','.links li', function(){
+$(document).on('click','.links li', function(){ 
+// Изменение стилей вкладок по клику Users list на странице ниже второго слайдера. Хотя лучше через addClass и remooveClass.  
    $(this).css({'backgroundColor' : '#fff','zIndex' : '10'}).find('a').css({'color':'#ffa352'});
    var x; if($(this).get(0)==$("#lin1").get(0)) x=$("#lin2"); else x=$("#lin1");
    $(x).css({'backgroundColor' : '#f4f4f4','zIndex' : '1'}).find('a').css({ 'color':'#969696'});
 });
-
-
-// $('a#lin1').click(function (){
-
-// $('#inset').css("backgroundColor": "#f00");
 
 
 });
