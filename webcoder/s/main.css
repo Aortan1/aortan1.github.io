@@ -312,33 +312,32 @@ section.b-form {
 section.b-content .main {
   border: 0px solid yellow;
   height: 350px; }
-
-section.b-content div.bb-round {
-  border: 0px solid orange;
-  box-sizing: border-box;
-  width: 50%;
-  display: inline-block;
-  padding-right: 10px;
-  vertical-align: top; }
-  section.b-content div.bb-round p.around {
-    text-align: right; }
-    section.b-content div.bb-round p.around span.tr {
-      background-color: #f00;
-      opacity: 1; }
-    section.b-content div.bb-round p.around span.sf1 {
-      letter-spacing: -0.03em; }
-    section.b-content div.bb-round p.around span.sf4 {
-      word-spacing: 0.3em; }
-    section.b-content div.bb-round p.around span.sf5 {
-      word-spacing: 0.25em; }
-    section.b-content div.bb-round p.around span.sf6 {
-      letter-spacing: -0.015em; }
-    section.b-content div.bb-round p.around span.sf7 {
-      letter-spacing: 0.015em; }
-    section.b-content div.bb-round p.around span.sf8 {
-      letter-spacing: 0.05em;
-      word-spacing: 0.4em; }
-  section.b-content div.bb-round img.img-round {
+  section.b-content .main div.bb-round {
+    border: 0px solid orange;
+    box-sizing: border-box;
+    width: 50%;
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: top; }
+    section.b-content .main div.bb-round p.p-main.around {
+      text-align: right; }
+      section.b-content .main div.bb-round p.p-main.around span.tr {
+        background-color: #f00;
+        opacity: 1; }
+      section.b-content .main div.bb-round p.p-main.around span.sf1 {
+        letter-spacing: -0.03em; }
+      section.b-content .main div.bb-round p.p-main.around span.sf4 {
+        word-spacing: 0.3em; }
+      section.b-content .main div.bb-round p.p-main.around span.sf5 {
+        word-spacing: 0.25em; }
+      section.b-content .main div.bb-round p.p-main.around span.sf6 {
+        letter-spacing: -0.015em; }
+      section.b-content .main div.bb-round p.p-main.around span.sf7 {
+        letter-spacing: 0.015em; }
+      section.b-content .main div.bb-round p.p-main.around span.sf8 {
+        letter-spacing: 0.05em;
+        word-spacing: 0.4em; }
+  section.b-content .main img.img-round {
     width: 173px;
     display: inline-block;
     position: absolute;
