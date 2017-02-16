@@ -64,7 +64,7 @@ header.b-logo {
 
 section.b-form {
   background: #ff8d1e;
-  background: url("../i/shadow.png") 50% 100% no-repeat, url("../i/orange.png") no-repeat;
+  background: url("../i/shadow.png") 50% 100% no-repeat, radial-gradient(at 50% 50%, #ffd000, #ff8b1d);
   background-size: auto, cover;
   height: 504px; }
   section.b-form .main {
@@ -152,7 +152,7 @@ section.b-form {
         border: 1px solid transparent;
         height: 48px;
         width: 100px; }
-        section.b-form .top-start-now ul.item-names li h2.about {
+        section.b-form .top-start-now ul.item-names li .about {
           line-height: 48px; }
     section.b-form .top-start-now form.form-start-now {
       display: inline-block;
