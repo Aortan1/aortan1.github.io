@@ -42,6 +42,7 @@ $(elem).clone().appendTo(Ul);
       $(elem).removeClass("dot-active");
     //}, delay);
     //$(elem).removeClass("dot-active");
+      if (i==0) $(elem).addClass("dot-active");
   });  
   Ul.animate({left: '=0',}, 0); // Мгновенный возрат к началу слайда. 
   // Незаметен из-за идетничных картинок 1-ой и (n+1)-ой, клонированной.
