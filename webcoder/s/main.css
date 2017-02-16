@@ -178,7 +178,6 @@ section.b-form {
         padding-top: 4px;
         width: 100%; }
         section.b-form .top-start-now form.form-start-now .field:active, section.b-form .top-start-now form.form-start-now .field:focus {
-          background: linear-gradient(to top, #fff, #e7e7e7);
           border-top-color: #b77c7c;
           border-left-color: #b77c7c;
           border-bottom-color: #eea8a8;
