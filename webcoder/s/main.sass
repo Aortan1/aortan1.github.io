@@ -379,14 +379,31 @@ section.b-content
 		padding-right: 10px
 		vertical-align: top
 		p.around
-			span.transp
-				opacity: 0
-			span.tr1
-				width: 0	
+			text-align: right
+			span.tr
+				background-color: #f00
+				opacity: 1
+			span.sf1
+				letter-spacing: -0.03em
+			span.sf4
+				word-spacing: 0.3em
+			span.sf5
+				word-spacing: 0.25em
+			span.sf6
+				letter-spacing: -0.015em
+			span.sf7
+				letter-spacing: 0.015em
+			span.sf8
+				letter-spacing: 0.05em
+				word-spacing: 0.4em					
+
+	
+
 		img.img-round
 			width: 173px
 			display: inline-block
 			position: absolute
+			opacity: 1
 
 
 
@@ -483,11 +500,11 @@ section.b-content
 					width: 100%
 					height: 100%
 					display: none
-					z-index: 1
+					z-index: 2
 
 			ul.content>li.li-page:nth-of-type(2)
 				display: block
-				z-index: 2
+				z-index: 1
 			ul.content>span#inset1:target~li:nth-of-type(2),
 			ul.content>span#inset2:target~li:nth-of-type(1)
 				display: none		
