@@ -319,29 +319,33 @@ section.b-content .main {
     display: inline-block;
     padding-right: 10px;
     vertical-align: top; }
+    section.b-content .main div.bb-round .spaser {
+      height: 21px;
+      border: 1px solid transparent;
+      float: left;
+      clear: left; }
+    section.b-content .main div.bb-round .spaser.s1 {
+      width: 148px; }
+    section.b-content .main div.bb-round .spaser.s2 {
+      width: 170px; }
+    section.b-content .main div.bb-round .spaser.s3 {
+      width: 183px; }
+    section.b-content .main div.bb-round .spaser.s4 {
+      width: 187px; }
+    section.b-content .main div.bb-round .spaser.s5 {
+      width: 183px; }
+    section.b-content .main div.bb-round .spaser.s6 {
+      width: 177px; }
+    section.b-content .main div.bb-round .spaser.s7 {
+      width: 163px; }
+    section.b-content .main div.bb-round .spaser.s8 {
+      width: 134px; }
     section.b-content .main div.bb-round p.p-main.around {
-      text-align: right; }
-      section.b-content .main div.bb-round p.p-main.around span.tr {
-        background-color: #f00;
-        opacity: 1; }
-      section.b-content .main div.bb-round p.p-main.around span.sf1 {
-        letter-spacing: -0.03em; }
-      section.b-content .main div.bb-round p.p-main.around span.sf4 {
-        word-spacing: 0.3em; }
-      section.b-content .main div.bb-round p.p-main.around span.sf5 {
-        word-spacing: 0.25em; }
-      section.b-content .main div.bb-round p.p-main.around span.sf6 {
-        letter-spacing: -0.015em; }
-      section.b-content .main div.bb-round p.p-main.around span.sf7 {
-        letter-spacing: 0.015em; }
-      section.b-content .main div.bb-round p.p-main.around span.sf8 {
-        letter-spacing: 0.05em;
-        word-spacing: 0.4em; }
-  section.b-content .main img.img-round {
-    width: 173px;
-    display: inline-block;
-    position: absolute;
-    opacity: 1; }
+      text-align: justify; }
+    section.b-content .main div.bb-round img.img-round {
+      width: 173px;
+      display: inline-block;
+      position: absolute; }
 
 section.b-content div.bb-user-list {
   box-sizing: border-box;
