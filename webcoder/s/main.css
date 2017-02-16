@@ -721,7 +721,15 @@ section.b-article .column {
 footer.b-footer {
   height: 100px; }
   footer.b-footer .main {
-    background: url("../i/logo-footer.png") 0% 40% no-repeat; }
+    position: relative; }
+  footer.b-footer .logo-footer {
+    width: 113px;
+    height: 41px;
+    background: url("../i/logo-footer.png");
+    background-size: contain;
+    position: absolute;
+    top: 15px;
+    left: 0; }
   footer.b-footer p.epilog {
     font-size: 18px;
     margin: 15px 0 10px;
