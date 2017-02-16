@@ -243,33 +243,33 @@ section.b-form {
         border: 0px solid green; }
         section.b-form .top-start-now form.form-start-now fieldset.fs-slogan .item, section.b-form .top-start-now form.form-start-now fieldset.fs-drink .item {
           height: 28px; }
-        section.b-form .top-start-now form.form-start-now fieldset.fs-slogan span.about, section.b-form .top-start-now form.form-start-now fieldset.fs-drink span.about {
-          border: 0px solid red;
-          padding: 0 58px 0 14px;
-          vertical-align: 2px; }
-      section.b-form .top-start-now form.form-start-now label div.in {
+      section.b-form .top-start-now form.form-start-now label.about {
+        border: 0px solid red;
+        padding: 0 58px 0 14px;
+        vertical-align: 2px; }
+      section.b-form .top-start-now form.form-start-now label.but div.in {
         height: 10px;
         width: 10px;
         border: 1px solid #fff;
         transition: 0.5s; }
-      section.b-form .top-start-now form.form-start-now .checkbox + label {
+      section.b-form .top-start-now form.form-start-now .checkbox + label.but {
         cursor: pointer;
         border: 1px outset #e2e2e2;
         display: inline-block;
         height: 12px;
         width: 12px;
         transition: 0.3s; }
-      section.b-form .top-start-now form.form-start-now .checkbox:checked + label div.in {
+      section.b-form .top-start-now form.form-start-now .checkbox:checked + label.but div.in {
         background: radial-gradient(at 0% 0%, #fec348, #fd8d1b);
         background: #fd8d1b;
         box-shadow: -1px -1px 1px #909090 inset;
         -webkit-transform: 0.3s;
         -ms-transform: 0.3s;
         transform: 0.3s; }
-      section.b-form .top-start-now form.form-start-now .checkbox:not(checked) + label div.in {
+      section.b-form .top-start-now form.form-start-now .checkbox:not(checked) + label.but div.in {
         background: white;
         transition: 0.3s; }
-      section.b-form .top-start-now form.form-start-now .radios + label {
+      section.b-form .top-start-now form.form-start-now .radios + label.but {
         cursor: pointer;
         border: 1px outset #e2e2e2;
         border-radius: 50%;
@@ -277,13 +277,13 @@ section.b-form {
         height: 12px;
         width: 12px;
         transition: 0.3s; }
-        section.b-form .top-start-now form.form-start-now .radios + label div.in {
+        section.b-form .top-start-now form.form-start-now .radios + label.but div.in {
           border-radius: 50%; }
-      section.b-form .top-start-now form.form-start-now .radios:checked + label div.in {
+      section.b-form .top-start-now form.form-start-now .radios:checked + label.but div.in {
         background: radial-gradient(at 0% 0%, #fec348, #fd8d1b);
         background: #fd8d1b;
         transition: 0.3s; }
-      section.b-form .top-start-now form.form-start-now .radios:not(checked) + label div.in {
+      section.b-form .top-start-now form.form-start-now .radios:not(checked) + label.but div.in {
         background-color: white;
         transition: 0.3s; }
       section.b-form .top-start-now form.form-start-now input.submit {

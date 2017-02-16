@@ -290,20 +290,20 @@ section.b-form
 				.item
 					height: 28px
 					
-				span.about
+			label.about
 					border: 0px solid red
 					padding: 0 58px 0 14px
 					vertical-align: 2px
 
 
-			label	div.in
+			label.but	div.in
 					height: 10px
 					width: 10px
 					border: 1px solid #fff
 					transition: 0.5s
 
 
-			.checkbox+label
+			.checkbox+label.but
 				cursor: pointer
 				border: 1px outset #e2e2e2
 				display: inline-block
@@ -313,16 +313,16 @@ section.b-form
 
 
 
-			.checkbox:checked+label div.in
+			.checkbox:checked+label.but div.in
 				background: radial-gradient(at 0% 0%, #fec348, #fd8d1b )
 				background: #fd8d1b
 				box-shadow: -1px -1px 1px #909090 inset
 				transform: 0.3s
-			.checkbox:not(checked)+label div.in
+			.checkbox:not(checked)+label.but div.in
 				background: white
 				transition: 0.3s
 
-			.radios+label
+			.radios+label.but
 				cursor: pointer
 				border: 1px outset #e2e2e2
 				border-radius: 50%
@@ -333,11 +333,11 @@ section.b-form
 				div.in
 					border-radius: 50%
 
-			.radios:checked+label div.in
+			.radios:checked+label.but div.in
 				background: radial-gradient(at 0% 0%, #fec348, #fd8d1b )
 				background: #fd8d1b
 				transition: 0.3s
-			.radios:not(checked)+label div.in
+			.radios:not(checked)+label.but div.in
 				background-color: white
 				transition: 0.3s
 			
