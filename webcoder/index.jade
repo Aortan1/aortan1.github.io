@@ -156,51 +156,51 @@ html
 								a.lin(href="#inset1") Users list
 							li.l-lin#lin2 
 								a.lin.active(href="#inset2") Active list tab
-								small.s | 38
+									small.s | 38
 						ul.content
-									li.li-page#inset1
-										p Here is a users list. There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles.
+							span#inset1
+							span#inset2
+							li.li-page
+								p Here is a users list. There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles.
+
+							li.li-page
+								form.d-inform(method="post", action="#")
+									div.progress
+										progress(max="100", value="66")
+										span.p-value 20%
+
+									input.rads(name="step", type="radio", id="step1", value="1", hidden="true")
+									label.tep(for="step1") Step 1
+										div.ang
+									input.rads(name="step", type="radio", id="step2", value="2", hidden="true")
+									label.tep(for="step2") Step 2
+										div.ang
+									input.rads(name="step", type="radio", id="step3", value="3", hidden="true", checked)
+									label.tep(for="step3") Step 3
+										div.ang
+									input.rads(name="step", type="radio", id="step4", value="4", hidden="true")
+									label.tep(for="step4") Step 4
+										div.ang
+									input.rads(name="step", type="radio", id="step5", value="5", hidden="true")
+									label.tep(for="step5") Step 5
 
 
-									li.li-page#inset2
-										form.d-inform(method="post", action="#")
-
-											div.progress
-												progress(max="100", value="66")
-												span.p-value 20%
-
-											input.rads(name="step", type="radio", id="step1", value="1", hidden="true")
-											label.tep(for="step1") Step 1
-												div.ang
-											input.rads(name="step", type="radio", id="step2", value="2", hidden="true")
-											label.tep(for="step2") Step 2
-												div.ang
-											input.rads(name="step", type="radio", id="step3", value="3", hidden="true", checked)
-											label.tep(for="step3") Step 3
-												div.ang
-											input.rads(name="step", type="radio", id="step4", value="4", hidden="true")
-											label.tep(for="step4") Step 4
-												div.ang
-											input.rads(name="step", type="radio", id="step5", value="5", hidden="true")
-											label.tep(for="step5") Step 5
+									input.range(type="range")
 
 
-											input.range(type="range")
+								div.d-right
+									.skill
+										span.num 37%
+										div.circle.bg 
+										div.wrapper
+											div.circle(data-anim="right")
 
-
-										div.d-right
-											.skill
-												span.num 37%
-												div.circle.bg 
-												div.wrapper
-													div.circle(data-anim="right")
-
-											ul.rating
-												li.star
-												li.star
-												li.star
-												li.star.em
-												li.star.em
+									ul.rating
+										li.star
+										li.star
+										li.star
+										li.star.em
+										li.star.em
 
 
 		section.b-article

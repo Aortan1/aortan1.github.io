@@ -370,8 +370,11 @@ section.b-content div.bb-user-list {
       section.b-content div.bb-user-list .active-list ul.links li.l-lin a:link, section.b-content div.bb-user-list .active-list ul.links li.l-lin a:visited {
         display: inline-block;
         height: 100%;
+        width: 100%;
         color: #969696;
         text-decoration: none; }
+    section.b-content div.bb-user-list .active-list ul.links li.l-lin#lin2 {
+      z-index: 10; }
     section.b-content div.bb-user-list .active-list ul.links li:first-child {
       width: 90px;
       background-color: #f4f4f4;
@@ -384,6 +387,7 @@ section.b-content div.bb-user-list {
         color: #ffa352;
         text-transform: none; }
       section.b-content div.bb-user-list .active-list ul.links li:last-child small.s {
+        padding-left: 5px;
         color: #b9b9b9; }
     section.b-content div.bb-user-list .active-list ul.content {
       position: relative;
@@ -393,6 +397,7 @@ section.b-content div.bb-user-list {
       background-color: #fff;
       border: 0px solid black; }
       section.b-content div.bb-user-list .active-list ul.content li.li-page {
+        background-color: #fff;
         border: 1px solid #ccc;
         border-radius: 0 5px 5px 5px;
         box-sizing: border-box;
@@ -401,16 +406,19 @@ section.b-content div.bb-user-list {
         width: 100%;
         height: 100%;
         display: none;
-        z-index: 2; }
-      section.b-content div.bb-user-list .active-list ul.content #inset2 {
-        display: block;
         z-index: 1; }
-      section.b-content div.bb-user-list .active-list ul.content li:target {
-        display: block; }
-      section.b-content div.bb-user-list .active-list ul.content li#inset1 {
-        background-color: #fff; }
-      section.b-content div.bb-user-list .active-list ul.content li#inset2 {
-        background-color: #fff; }
+    section.b-content div.bb-user-list .active-list ul.content > li.li-page:nth-of-type(2) {
+      display: block;
+      z-index: 2; }
+    section.b-content div.bb-user-list .active-list ul.content > span#inset1:target ~ li:nth-of-type(2),
+    section.b-content div.bb-user-list .active-list ul.content > span#inset2:target ~ li:nth-of-type(1) {
+      display: none; }
+    section.b-content div.bb-user-list .active-list ul.content > span#inset1:target ~ li:nth-of-type(1),
+    section.b-content div.bb-user-list .active-list ul.content > span#inset2:target ~ li:nth-of-type(2) {
+      display: block; }
+    section.b-content div.bb-user-list .active-list #inset1, section.b-content div.bb-user-list .active-list #inset2 {
+      display: none;
+      position: fixed; }
     section.b-content div.bb-user-list .active-list progress {
       margin-top: 10px;
       background-color: #edf0f0;
