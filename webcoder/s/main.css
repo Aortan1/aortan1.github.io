@@ -21,7 +21,6 @@ body {
   margin: 0 auto; }
 
 a {
-  color: black;
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.3s; }
@@ -32,6 +31,9 @@ a.a-main {
   color: #ffaf69;
   text-decoration: underline;
   font-size: 14px; }
+  a.a-main:hover {
+    transition: 0.3s;
+    color: #ba6516; }
 
 .not-displayed {
   display: none; }
