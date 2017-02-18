@@ -46,6 +46,7 @@ h1.h1-main {
 
 h2.about, .about {
   color: #666666;
+  cursor: pointer;
   font-size: 17px;
   font-weight: 300; }
 
@@ -201,6 +202,7 @@ section.b-form {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
+        cursor: pointer;
         background: url("../i/edge.png") no-repeat right, linear-gradient(to top, #fff, #e7e7e7); }
       section.b-form .top-start-now form.form-start-now select::-ms-expand {
         display: none; }
@@ -261,6 +263,7 @@ section.b-form {
         section.b-form .top-start-now form.form-start-now fieldset.fs-slogan .item, section.b-form .top-start-now form.form-start-now fieldset.fs-drink .item {
           height: 28px; }
       section.b-form .top-start-now form.form-start-now label.about {
+        cursor: pointer;
         border: 0px solid red;
         padding: 0 58px 0 14px;
         vertical-align: 2px; }
@@ -304,6 +307,7 @@ section.b-form {
         background-color: white;
         transition: 0.3s; }
       section.b-form .top-start-now form.form-start-now input.submit {
+        cursor: pointer;
         height: 68px;
         width: 100%;
         border: 1px solid #7fa607;
