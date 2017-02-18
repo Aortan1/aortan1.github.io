@@ -28,7 +28,7 @@ html
 				div.top-slider
 					//- Контейнер верхнего слайдера. Слайдер пока сырой, не работает управление и дотсы, сейчас над ним работаю. Зато у меня одна фунция на оба слайдера, позже расширю её на другие виды слайдеров.	
 
-					ul.slides
+					ul.slides(data-nnow="0")
 						li.sl
 							img(src="tem/photo1.jpg" alt="")
 						li.sl
@@ -140,7 +140,7 @@ html
 					h1.h1-main Users list
 					div.user-slider
 						//- Второй слайдер пока без элементов уравления, т.к. управление пока не готово.
-						ul.slides
+						ul.slides(data-nnow="0")
 							li.sl
 								img.i-user(src="tem/s-photo1.jpg", alt="")
 							li.sl
