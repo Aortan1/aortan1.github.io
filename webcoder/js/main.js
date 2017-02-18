@@ -26,7 +26,7 @@ function my_slider_slim (Element, delay, scrolltime){ // МОй СЛАЙДЕР. 
     function scroll(i){ // функция единичной перемотки слайда и отмотки слайдов в начало при достижении конца
       console.log("scroll-i = "+i);  
       var nnow = $(Ul).data('nnow'); // извлечение номера текущего слайда.
-        if(i!=undefined) {$(Ul).animate({left: '-='+wi*(i-nnow)}, scrolltime*kbut).data('nnow', i);return;}
+        if(i!=undefined) {$(Ul).animate({left: '-='+wi*(i-nnow)}, scrolltime*kbut).data('nnow', i);dota(i);return;}
         nnow++; // переход к следующему слайду
         if(nnow == n+1)  {nnow = 1; $(Ul).animate({left: '+='+wi*n}, 0);}  // сдвиг всех слайдов к началу, незаметный для глаза
         $(Ul).animate({left: '-='+wi}, scrolltime).data('nnow', nnow); // анимация прокрутки слайда 
@@ -46,31 +46,29 @@ function my_slider_slim (Element, delay, scrolltime){ // МОй СЛАЙДЕР. 
 
 
           $(D).click(
-          function(){
-            clearInterval(id);
-            },      
+          // function(){
+          //  clearInterval(id);
+          //  },      
           function(){
             var ind = $(this).index();
             //alert("click!!!");
             console.log("ind = "+ind);
             
-            scroll(ind);
-            dota(ind); 
-            },
-          // ffffffffunction(){
-          //     id = setTimeout(scroll(), delay+scrolltime*(1-kbut));
-          // };
-              
-          function(){
-              id = setInterval(scroll(), delay+scrolltime);
-          });
+            scroll(ind);             
+            });           
+          // function(){
+          //    id = setInterval(scroll(), delay+scrolltime);
+          // });
+      
 
-          $(Element).hover(
+          $(Element).on('mouseenter', 
           function(){
             clearInterval(id);
-            },      
+            });
+            
+          $(Element).on('mouseleave', 
           function(){
-              id = setInterval(scroll(), delay+scrolltime);
+              id = setInterval(scroll, delay+scrolltime);
           });
 
 
