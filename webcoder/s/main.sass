@@ -432,22 +432,38 @@ section.b-content
 		padding-left: 70px
 		vertical-align: top
 		width: 49%
-		.user-slider
+
+
+
+		div.user-slider
+			position: relative
 			height: 70px
 			width: 390px
+			.arrow
+				border: 0px solid red	
+				cursor: pointer	
+				height: 20px
+				width: 22px
+				position: absolute
+				top: 25px
+				z-index: 2
+			.arrow.left
+				background: url("../i/arrow-left.png") no-repeat
+				left: -35px
+			.arrow.right
+				background: url("../i/arrow-right.png") no-repeat
+				right: -35px
+
+
+		div.user-slider .s-window
+			height: 100%
+			width: 100%
 			display: inline-block
-			//cursor: pointer
 			position: relative
 			overflow: hidden
 			vertical-align: top
 			user-select: none
-			.arrow
-				height: 20px
-				width: 22px
-				po
 
-			.arrow.left
-			.arrow.right
 
 			.slides
 				font-size: 0px

@@ -141,34 +141,36 @@ html
 				div.bb-user-list
 					h1.h1-main Users list
 					div.user-slider
-						//- Второй слайдер пока без элементов уравления, т.к. управление пока не готово.
-						ul.slides(data-nnow="0")
-							li.sl
-								img.i-user(src="tem/s-photo1.jpg", alt="")
-							li.sl
-								img.i-user(src="tem/s-photo2.jpg", alt="")
-							li.sl
-								img.i-user(src="tem/s-photo3.jpg", alt="")
-							li.sl
-								img.i-user(src="tem/s-photo4.jpg", alt="")
-							li.sl
-								img.i-user(src="tem/s-photo5.jpg", alt="")
-							li.sl
-								img.i-user(src="tem/s-photo6.jpg", alt="")
-							li.sl
-								img.i-user(src="tem/s-photo7.jpg", alt="")
-							li.sl
-								img.i-user(src="tem/s-photo8.jpg", alt="")
-										
-						ul.dots
-							li.dot
-							li.dot
-							li.dot
-							li.dot
-							li.dot
-							li.dot
-							li.dot
-							li.dot
+						.arrow.left
+						.arrow.right
+						.s-window
+							ul.slides(data-nnow="0")
+								li.sl
+									img.i-user(src="tem/s-photo1.jpg", alt="")
+								li.sl
+									img.i-user(src="tem/s-photo2.jpg", alt="")
+								li.sl
+									img.i-user(src="tem/s-photo3.jpg", alt="")
+								li.sl
+									img.i-user(src="tem/s-photo4.jpg", alt="")
+								li.sl
+									img.i-user(src="tem/s-photo5.jpg", alt="")
+								li.sl
+									img.i-user(src="tem/s-photo6.jpg", alt="")
+								li.sl
+									img.i-user(src="tem/s-photo7.jpg", alt="")
+								li.sl
+									img.i-user(src="tem/s-photo8.jpg", alt="")
+											
+							ul.dots
+								li.dot
+								li.dot
+								li.dot
+								li.dot
+								li.dot
+								li.dot
+								li.dot
+								li.dot
 
 					div.active-list
 						//- Форма вкладок немного отличается. Зато они сделаны стилями без картинок, и добился того, чтобы вкладки не скакали при переключении, правда немного с некрасивым изменением слилей в js, надо бы добавлением классов менять стили, не успел исправить. 
