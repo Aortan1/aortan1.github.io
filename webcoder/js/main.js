@@ -57,7 +57,7 @@ function my_slider_slim (Element, delay, scrolltime){ // МОй СЛАЙДЕР. 
             scroll(ind);
             dota(ind); 
             },
-          // function(){
+          // ffffffffunction(){
           //     id = setTimeout(scroll(), delay+scrolltime*(1-kbut));
           // };
               
