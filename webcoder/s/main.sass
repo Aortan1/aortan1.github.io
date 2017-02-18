@@ -95,6 +95,18 @@ section.b-form
 		overflow: hidden
 		vertical-align: top
 		font-size: 0px
+		user-select: none
+		.half-div-button
+			border: 0px solid blue
+			position: absolute
+			width: 50%
+			height: 70%
+			top: 0
+			z-index: 10
+		.half-div-button.left
+			left: 0
+		.half-div-button.right
+			left: 50%
 		.slides
 			width: 99999px
 			height: 100%
@@ -420,6 +432,7 @@ section.b-content
 			position: relative
 			overflow: hidden
 			vertical-align: top
+			user-select: none
 			.slides
 				font-size: 0px
 				width: 99999px

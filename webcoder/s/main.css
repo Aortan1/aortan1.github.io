@@ -81,7 +81,22 @@ section.b-form {
     position: relative;
     overflow: hidden;
     vertical-align: top;
-    font-size: 0px; }
+    font-size: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    section.b-form .top-slider .half-div-button {
+      border: 0px solid blue;
+      position: absolute;
+      width: 50%;
+      height: 70%;
+      top: 0;
+      z-index: 10; }
+    section.b-form .top-slider .half-div-button.left {
+      left: 0; }
+    section.b-form .top-slider .half-div-button.right {
+      left: 50%; }
     section.b-form .top-slider .slides {
       width: 99999px;
       height: 100%;
@@ -362,7 +377,11 @@ section.b-content div.bb-user-list {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    vertical-align: top; }
+    vertical-align: top;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     section.b-content div.bb-user-list .user-slider .slides {
       font-size: 0px;
       width: 99999px;
