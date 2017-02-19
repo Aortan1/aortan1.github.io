@@ -606,10 +606,10 @@ section.b-content
 				
 
 
-				.rads+label // степсы(шаги) - лабелы инпутов (во вкладке) 
+				.rads+label // степсы(шаги) + их метки (во вкладке) 
 					border: 1px outset #dcdcdc
 					border-radius: 3px
-					background-color: #e8e9e9
+					background-color: #c0c0c0
 					box-sizing: border-box
 					cursor: pointer
 					display: inline-block
@@ -643,26 +643,31 @@ section.b-content
 
 					&:after
 						content: ""
-						background-color: #e8e9e9
+						background-color: #c0c0c0
 						position: absolute
 						bottom: 59%
 						right: 100%
 						width: 50px
 						height: 50px
-						border: 1px solid #bababa
+						border: 1px solid #5a5a5a
 						transform: skewY(56.9deg) rotate(106deg) translateX(-6px)
 
-
-				.rads:nth-of-type(1)+label, .rads:nth-of-type(1)+label .ang:after, .rads:nth-of-type(2)+label, .rads:nth-of-type(2)+label .ang:after
-					background-color: #c2c4c4		
-				.rads:nth-of-type(1)+label .ang:after, .rads:nth-of-type(2)+label .ang:after
-					border-color: #787a7a
 				.rads:checked+label, .rads:checked+label .ang:after
 					background-color: #ff9d0f
 					transition: 0.3s
 				.rads:checked+label .ang:after
-					border-color: #d3800e	
+					border-color: #d3800e
 
+				.rads:checked+label+.rads+label, .rads:checked+label+.rads+label+.rads+label, .rads:checked+label+.rads+label+.rads+label+.rads+label, .rads:checked+label+.rads+label+.rads+label+.rads+label+.rads+label 
+					background: linear-gradient(to top, #e7e7e7 , #f5fafb)
+					transition: 0.3s
+					
+				.rads:checked+label+.rads+label .ang:after, .rads:checked+label+.rads+label+.rads+label .ang:after, .rads:checked+label+.rads+label+.rads+label+.rads+label .ang:after
+					background: linear-gradient(to top, #e7e7e7 , #f5fafb)
+					border-color: #8e8e8e
+					transition: 0.3s
+						
+	
 				.rads#step1+label
 					z-index: 5
 				.rads#step2+label
@@ -780,21 +785,28 @@ section.b-content
 				to
 					transform: rotate(133.2deg)
 
-			ul.rating
+			form.rating
 				border: 0px solid red
-				height: 16px
-				margin-left: 3px 
-				li.star
+				height: 18px
+				margin: 13px 0 0 3px
+
+				.star+label
+					cursor: pointer
 					padding: 0
-					margin: 13px -5px 0 0
+					margin: 0 -5px 0 0
 					position: relative
 					background: url("../i/star.png") 0% 0% no-repeat
 					border: 0px solid blue
 					display: inline-block
 					width: 18px
 					height: 16px
-				li.star.em
-					background: url("../i/star-empty.png")	
+				.star:checked+label~label, .star:hover+label~label
+					background: url("../i/star-empty.png")
+
+				
+				.star:checked~label:hover
+					background: url("../i/star.png")
+
 
 
 section.b-article

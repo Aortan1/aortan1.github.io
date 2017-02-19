@@ -225,13 +225,18 @@ html
 
 									//- Рейтинг заплаткой, я уже писал для него функцию на js, когда делал сайт http://aortan1.github.io/skybox/ Перенести не хватило времени. Хотя можно обойтись и чистым css.			
 
-									ul.rating
-										li.star
-										li.star
-										li.star
-										li.star.em
-										li.star.em
-
+									form.rating(action="#", method="post", name="rating_form")
+										input.star(type="radio", id="star1",name="star",hidden="true")
+										label(for="star1")
+										input.star(type="radio", id="star2",name="star",hidden="true", checked)
+										label(for="star2")
+										input.star(type="radio", id="star3",name="star",hidden="true")
+										label(for="star3")
+										input.star(type="radio", id="star4",name="star",hidden="true")
+										label(for="star4")
+										input.star(type="radio", id="star5",name="star",hidden="true")
+										label(for="star5")
+										
 
 		section.b-article
 			.main

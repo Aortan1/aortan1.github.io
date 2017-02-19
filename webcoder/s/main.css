@@ -530,7 +530,7 @@ section.b-content div.bb-user-list {
       section.b-content div.bb-user-list .active-list form.d-inform .rads + label {
         border: 1px outset #dcdcdc;
         border-radius: 3px;
-        background-color: #e8e9e9;
+        background-color: #c0c0c0;
         box-sizing: border-box;
         cursor: pointer;
         display: inline-block;
@@ -562,25 +562,28 @@ section.b-content div.bb-user-list {
         overflow: hidden; }
         section.b-content div.bb-user-list .active-list form.d-inform .rads + label .ang:after {
           content: "";
-          background-color: #e8e9e9;
+          background-color: #c0c0c0;
           position: absolute;
           bottom: 59%;
           right: 100%;
           width: 50px;
           height: 50px;
-          border: 1px solid #bababa;
+          border: 1px solid #5a5a5a;
           -webkit-transform: skewY(56.9deg) rotate(106deg) translateX(-6px);
           -ms-transform: skewY(56.9deg) rotate(106deg) translateX(-6px);
           transform: skewY(56.9deg) rotate(106deg) translateX(-6px); }
-      section.b-content div.bb-user-list .active-list form.d-inform .rads:nth-of-type(1) + label, section.b-content div.bb-user-list .active-list form.d-inform .rads:nth-of-type(1) + label .ang:after, section.b-content div.bb-user-list .active-list form.d-inform .rads:nth-of-type(2) + label, section.b-content div.bb-user-list .active-list form.d-inform .rads:nth-of-type(2) + label .ang:after {
-        background-color: #c2c4c4; }
-      section.b-content div.bb-user-list .active-list form.d-inform .rads:nth-of-type(1) + label .ang:after, section.b-content div.bb-user-list .active-list form.d-inform .rads:nth-of-type(2) + label .ang:after {
-        border-color: #787a7a; }
       section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label .ang:after {
         background-color: #ff9d0f;
         transition: 0.3s; }
       section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label .ang:after {
         border-color: #d3800e; }
+      section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label + .rads + label, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label + .rads + label + .rads + label, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label + .rads + label + .rads + label + .rads + label {
+        background: linear-gradient(to top, #e7e7e7, #f5fafb);
+        transition: 0.3s; }
+      section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label .ang:after, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label + .rads + label .ang:after, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label + .rads + label + .rads + label .ang:after {
+        background: linear-gradient(to top, #e7e7e7, #f5fafb);
+        border-color: #8e8e8e;
+        transition: 0.3s; }
       section.b-content div.bb-user-list .active-list form.d-inform .rads#step1 + label {
         z-index: 5; }
       section.b-content div.bb-user-list .active-list form.d-inform .rads#step2 + label {
@@ -695,21 +698,24 @@ section.b-content div.bb-user-list {
   to {
     -webkit-transform: rotate(133.2deg);
     transform: rotate(133.2deg); } }
-    section.b-content div.bb-user-list .active-list ul.rating {
+    section.b-content div.bb-user-list .active-list form.rating {
       border: 0px solid red;
-      height: 16px;
-      margin-left: 3px; }
-      section.b-content div.bb-user-list .active-list ul.rating li.star {
+      height: 18px;
+      margin: 13px 0 0 3px; }
+      section.b-content div.bb-user-list .active-list form.rating .star + label {
+        cursor: pointer;
         padding: 0;
-        margin: 13px -5px 0 0;
+        margin: 0 -5px 0 0;
         position: relative;
         background: url("../i/star.png") 0% 0% no-repeat;
         border: 0px solid blue;
         display: inline-block;
         width: 18px;
         height: 16px; }
-      section.b-content div.bb-user-list .active-list ul.rating li.star.em {
+      section.b-content div.bb-user-list .active-list form.rating .star:checked + label ~ label, section.b-content div.bb-user-list .active-list form.rating .star:hover + label ~ label {
         background: url("../i/star-empty.png"); }
+      section.b-content div.bb-user-list .active-list form.rating .star:checked ~ label:hover {
+        background: url("../i/star.png"); }
 
 section.b-article .column {
   border-bottom: 1px solid #cfcfcf;

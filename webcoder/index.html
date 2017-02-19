@@ -225,13 +225,18 @@
                       <div class="circle" data-anim="right"></div>
                     </div>
                   </div>
-                  <ul class="rating">
-                    <li class="star"></li>
-                    <li class="star"></li>
-                    <li class="star"></li>
-                    <li class="star em"></li>
-                    <li class="star em"></li>
-                  </ul>
+                  <form class="rating" action="#" method="post" name="rating_form">
+                    <input class="star" type="radio" id="star1" name="star" hidden="true">
+                    <label for="star1"></label>
+                    <input class="star" type="radio" id="star2" name="star" hidden="true" checked>
+                    <label for="star2"></label>
+                    <input class="star" type="radio" id="star3" name="star" hidden="true">
+                    <label for="star3"></label>
+                    <input class="star" type="radio" id="star4" name="star" hidden="true">
+                    <label for="star4"></label>
+                    <input class="star" type="radio" id="star5" name="star" hidden="true">
+                    <label for="star5"></label>
+                  </form>
                 </div>
               </li>
             </ul>
