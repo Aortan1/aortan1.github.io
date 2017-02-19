@@ -584,10 +584,10 @@ section.b-content div.bb-user-list {
         transition: 0.3s; }
       section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label .ang:after {
         border-color: #d3800e; }
-      section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label + .rads + label, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label + .rads + label + .rads + label, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label + .rads + label + .rads + label + .rads + label {
+      section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label ~ label {
         background: linear-gradient(to top, #e7e7e7, #f5fafb);
         transition: 0.3s; }
-      section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label .ang:after, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label + .rads + label .ang:after, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label + .rads + label + .rads + label + .rads + label .ang:after {
+      section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label ~ label .ang:after {
         background: linear-gradient(to top, #e7e7e7, #f5fafb);
         border-color: #8e8e8e;
         transition: 0.3s; }
