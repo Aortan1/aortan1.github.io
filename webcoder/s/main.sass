@@ -1,4 +1,5 @@
 
+$spr: "../i/sprite.png"
 
 *
 	padding: 0
@@ -477,10 +478,52 @@ section.b-content
 					padding-right: 10px
 					margin: 0
 					display: inline-block
+					position: relative
 
 					img.i-user
 						width: 70px
 						float: left
+					.mask						
+						position: absolute
+						height: 100%
+						width: calc(100% - 10px)
+						background: rgba(0,0,0,0.5)
+						opacity: 0
+						transition: 0.3s
+						z-index: 1
+						h6.pers-name
+							border: 0px solid blue
+							color: #fff
+							font-size: 14px
+							font-weight: 300
+							margin: 17px auto
+							width: 50px
+						a.pers-like, a.pers-add
+							border: 0px solid red
+							cursor: pointer
+							position: absolute
+							bottom: 9px 
+							background: url($spr)
+							height: 20px
+							opacity: 0.5
+							width: 20px
+							&:hover
+								opacity: 1
+						a.pers-like
+							background-position: -55px -95px
+							left: 20%
+						a.pers-add
+							background-position: -5px -95px
+							right: 18%		
+
+
+
+
+					.mask:hover
+						opacity: 1
+						transition: 0.3s	
+
+
 		.active-list
 			height: 155px
 			margin-top: 20px 
