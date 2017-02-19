@@ -60,7 +60,7 @@ h2.about, .about {
   width: 960px; }
 
 header.b-logo {
-  background: url(../i/logot.png) 50.55% no-repeat;
+  background: url("../i/logot.png") 50.55% no-repeat;
   height: 105px; }
   header.b-logo p.about-logo {
     display: none; }

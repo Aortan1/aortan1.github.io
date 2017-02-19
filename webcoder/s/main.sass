@@ -71,7 +71,7 @@ h2.about, .about
 	
 
 header.b-logo
-	background: url(../i/logot.png) 50.55% no-repeat
+	background: url("../i/logot.png") 50.55% no-repeat
 	height: 105px
 	p.about-logo
 		display: none
@@ -80,7 +80,6 @@ header.b-logo
 section.b-form
 	background: #ff8d1e
 	background: url("../i/shadow.png") 50% 100% no-repeat, radial-gradient(at 50% 50%, #ffd20d, #ffd20d, #ffa70f, #ff8b1d)
-	// Стоило бы склеить все фоновые картинки стилей в спрайт, но руки не дошли.
 	background-size: auto, cover
 	height: 504px
 	.main
@@ -146,18 +145,11 @@ section.b-form
 				display: inline-block
 				opacity: 0.5
 				margin-right: 8px
-				// .in
-				// 	border-radius: 50%
-				// 	width: 8px
-				// 	height: 8px
-				// 	background: #ff9615
-				// 	opacity: 0
+
 
 			.dot-active
 				background: #ff9615
 				opacity: 1.0
-
-
 
 
 
@@ -206,6 +198,8 @@ section.b-form
 			h2.about.look
 				padding: 0 9px 0 30px
 				background: url("../i/loupe.png") 6% 50% no-repeat
+				//background: url("../i/sprite.png")
+				//background-position: -50px, -186px
 
 			input[type="radio"], input[type="checkbox"]
 				display: none
@@ -895,6 +889,3 @@ footer.b-footer
 		color: #cfcfcf
 		font-size: 29px
 		text-align: right
-
-
-
