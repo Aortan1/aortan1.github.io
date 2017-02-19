@@ -388,13 +388,20 @@ section.b-content div.bb-user-list {
       width: 22px;
       position: absolute;
       top: 25px;
+      transition: 0.3s;
       z-index: 2; }
     section.b-content div.bb-user-list div.user-slider .arrow.left {
       background: url("../i/arrow-left.png") no-repeat;
       left: -35px; }
+    section.b-content div.bb-user-list div.user-slider .arrow.left:hover {
+      left: -38px;
+      transition: 0.3s; }
     section.b-content div.bb-user-list div.user-slider .arrow.right {
       background: url("../i/arrow-right.png") no-repeat;
       right: -35px; }
+    section.b-content div.bb-user-list div.user-slider .arrow.right:hover {
+      right: -38px;
+      transition: 0.3s; }
   section.b-content div.bb-user-list div.user-slider .s-window {
     height: 100%;
     width: 100%;
