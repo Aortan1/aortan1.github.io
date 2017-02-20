@@ -116,10 +116,10 @@ $('.links li').on('click', function(){
 
 
 $("#fstart").submit(function(){ // фунция проверки верности формата вводимых данных
-  var regname = /^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9-_\.]{2,20}$/;
+  var reg_name = /^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9-_\.]{2,20}$/;
   var name = $("#name").val();
   //if ($("#name").val().length<3){
-  if (!regname.test(name)){  // проверка на регулярное выражение имени
+  if (!reg_name.test(name)){  // проверка на регулярное выражение имени
 
     $(".item#it-name").addClass("data-wrong");
   }
