@@ -138,7 +138,7 @@ section.b-form {
         opacity: 1.0; }
   section.b-form .top-start-now {
     background: #f8f8f8;
-    border-left: 1px solid #ddd;
+    border-left: 2px solid #dcdcdc;
     border-radius: 0 5px 5px 0;
     box-sizing: border-box;
     display: inline-block;
