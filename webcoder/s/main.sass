@@ -245,7 +245,7 @@ section.b-form
 				padding-top: 2px
 				width: 100%
 				transition: 0.3s
-				&:active,	&:focus
+				&:focus
 					border-top-color: #cb6f17
 					border-left-color: #cb6f17
 					border-bottom-color: #ffad03
@@ -302,10 +302,20 @@ section.b-form
 					top: 9px
 					right: -30px
 			.item.data-right
+				.field:focus
+					border-top-color: #cb6f17
+					border-left-color: #cb6f17
+					border-bottom-color: #ffad03
+					border-right-color: #ffad03
 				&:after
 					background: url($spr) -155px -113px
 
 			.item.data-wrong
+				.field:focus
+					border-top-color: #a95d5d
+					border-left-color: #a95d5d
+					border-bottom-color: #eeabab
+					border-right-color: #eeabab		
 				&:after
 					background: url($spr) -199px -113px
 	

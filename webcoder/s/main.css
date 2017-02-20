@@ -206,7 +206,7 @@ section.b-form {
         padding-top: 2px;
         width: 100%;
         transition: 0.3s; }
-        section.b-form .top-start-now form.form-start-now .field:active, section.b-form .top-start-now form.form-start-now .field:focus {
+        section.b-form .top-start-now form.form-start-now .field:focus {
           border-top-color: #cb6f17;
           border-left-color: #cb6f17;
           border-bottom-color: #ffad03;
@@ -245,8 +245,18 @@ section.b-form {
         position: absolute;
         top: 9px;
         right: -30px; }
+      section.b-form .top-start-now form.form-start-now .item.data-right .field:focus {
+        border-top-color: #cb6f17;
+        border-left-color: #cb6f17;
+        border-bottom-color: #ffad03;
+        border-right-color: #ffad03; }
       section.b-form .top-start-now form.form-start-now .item.data-right:after {
         background: url("../i/sprite.png") -155px -113px; }
+      section.b-form .top-start-now form.form-start-now .item.data-wrong .field:focus {
+        border-top-color: #a95d5d;
+        border-left-color: #a95d5d;
+        border-bottom-color: #eeabab;
+        border-right-color: #eeabab; }
       section.b-form .top-start-now form.form-start-now .item.data-wrong:after {
         background: url("../i/sprite.png") -199px -113px; }
       section.b-form .top-start-now form.form-start-now fieldset.fs-your-sex {
