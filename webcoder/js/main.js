@@ -103,17 +103,6 @@ function my_slider_slim (Element, delay, scrolltime){ // МОй СЛАЙДЕР. 
 };
 
 
-// function Checkform(fstart) { // фунция проверки верности формата вводимых данных
-//   var name = fstart.name.value;
-//   var bith_d = fstart.bith_d.value;
-//   var bith_m = fstart.bith_m.value;
-//   var bith_y = fstart.bith_y.value;
-//   //var bad = "";
-
-//   }
-//   return true;
-// }
-
   
 
 $('.links li').on('click', function(){ 
@@ -126,7 +115,7 @@ $('.links li').on('click', function(){
 });
 
 
-$("#fstart").submit(function(){
+$("#fstart").submit(function(){ // фунция проверки верности формата вводимых данных
   if ($("#name").val().length<3)
   {
     $(".item#it-name").addClass("data-wrong");
