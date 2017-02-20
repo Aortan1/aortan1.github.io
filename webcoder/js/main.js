@@ -126,6 +126,20 @@ $('.links li').on('click', function(){
 });
 
 
+$("#fstart").submit(function(){
+  if ($("#name").val().length<3)
+  {
+    $(".item#it-name").addClass("data-wrong");
+  }
+  else
+  {$(".item#it-name").removeClass("data-wrong").addClass("data-right");
+  }
+  $(".item#it-bith").addClass("data-right");
+  return false;
+})
+
+
+
 });
 
 

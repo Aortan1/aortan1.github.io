@@ -75,6 +75,7 @@ section.b-form {
     padding-top: 19px; }
   section.b-form .top-slider {
     background: #fff;
+    border-right: 1px solid #dcdcdc;
     display: inline-block;
     border-radius: 5px 0 0 5px;
     width: calc(50% - 4px);
@@ -143,8 +144,8 @@ section.b-form {
     box-sizing: border-box;
     display: inline-block;
     height: 100%;
-    padding: 18px 22px;
-    margin-left: -3px;
+    padding: 18px 38px 18px 22px;
+    margin-left: -4px;
     vertical-align: top;
     width: calc(50% + 4); }
     section.b-form .top-start-now h1.join {
@@ -231,7 +232,20 @@ section.b-form {
         border: 1px solid transparent;
         box-sizing: border-box;
         height: 48px;
-        padding: 5px 0; }
+        padding: 5px 0;
+        position: relative; }
+      section.b-form .top-start-now form.form-start-now .item.data-right:after, section.b-form .top-start-now form.form-start-now .item.data-wrong:after {
+        content: "";
+        background: url("../i/sprite.png") -155px -113px;
+        height: 24px;
+        width: 26px;
+        position: absolute;
+        top: 9px;
+        right: -30px; }
+      section.b-form .top-start-now form.form-start-now .item.data-right:after {
+        background: url("../i/sprite.png") -155px -113px; }
+      section.b-form .top-start-now form.form-start-now .item.data-wrong:after {
+        background: url("../i/sprite.png") -199px -113px; }
       section.b-form .top-start-now form.form-start-now fieldset.fs-your-sex {
         display: inline-block;
         vertical-align: middle; }

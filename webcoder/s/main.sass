@@ -101,6 +101,7 @@ section.b-form
 		padding-top: 19px
 	.top-slider
 		background: #fff
+		border-right: 1px solid #dcdcdc
 		display: inline-block
 		border-radius: 5px 0 0 5px
 		width: calc(50% - 4px)
@@ -174,8 +175,8 @@ section.b-form
 		box-sizing: border-box
 		display: inline-block
 		height: 100%
-		padding: 18px 22px
-		margin-left: -3px
+		padding: 18px 38px 18px 22px
+		margin-left: -4px
 		vertical-align: top
 		width: calc(50% + 4)
 
@@ -247,6 +248,9 @@ section.b-form
 					border-bottom-color: #ffad03
 					border-right-color: #ffad03
 					transition: 0.3s
+
+
+
 				
 			select.field
 				appearance: none
@@ -284,6 +288,24 @@ section.b-form
 				box-sizing: border-box
 				height: 48px
 				padding: 5px 0
+				position: relative
+			.item.data-right, .item.data-wrong
+				&:after
+					content: ""
+					background: url($spr) -155px -113px
+					height: 24px
+					width: 26px
+					position: absolute
+					top: 9px
+					right: -30px
+			.item.data-right
+				&:after
+					background: url($spr) -155px -113px
+
+			.item.data-wrong
+				&:after
+					background: url($spr) -199px -113px
+	
 
 			fieldset.fs-your-sex
 				display: inline-block

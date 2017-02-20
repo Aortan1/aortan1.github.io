@@ -76,9 +76,9 @@ html
 								h2.not-displayed Man
 								input.radio.r2(name="p_sex", type="radio", id="p_male", value="male", title="I'm looking for a man", hidden="true", checked)
 								label(for="p_male",title="I'm looking for a man")
-						.item
-							input.field(type="text", name="name", id="name", minlength="3", pattern = "^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9-_\.]{2,20}$", required)
-						.item
+						.item#it-name
+							input.field(type="text", name="name", id="name",  required)
+						.item#it-bith
 							.fs-your-bithday
 								select.field(name="bith_d", id="bith_d")
 									option(value="12", selected) 12
