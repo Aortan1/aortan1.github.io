@@ -54,7 +54,7 @@
               <label class="about" for="city"> City</label>
             </li>
           </ul>
-          <form class="form-start-now" action="#" method="post" name="start_now" id="start_now">
+          <form class="form-start-now" action="#" method="post" name="fstart" id="fstart" onsubmit="Checkform(this)">
             <div class="item">
               <fieldset class="fs-your-sex">
                 <h2 class="not-displayed">Woman</h2>
@@ -75,7 +75,7 @@
               </fieldset>
             </div>
             <div class="item">
-              <input class="field" type="text" name="name" id="name" required>
+              <input class="field" type="text" name="name" id="name" minlength="3" pattern="^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9-_.]{2,20}$" required>
             </div>
             <div class="item">
               <div class="fs-your-bithday">
@@ -219,7 +219,7 @@
           <div class="active-list">
             <ul class="links">
               <li class="l-lin" id="lin1"> <a class="lin" href="#inset1">Users list</a></li>
-              <li class="l-lin" id="lin2"> <a class="lin active" href="#inset2">Active list tab<small class="s">| 38</small></a></li>
+              <li class="l-lin lin-active" id="lin2"> <a class="lin" href="#inset2">Active list tab<small class="s">| 38</small></a></li>
             </ul>
             <ul class="content"><span id="inset1"></span><span id="inset2"></span>
               <li class="li-page">

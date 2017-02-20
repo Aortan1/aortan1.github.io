@@ -32,25 +32,25 @@ function my_slider_slim (Element, delay, scrolltime){ // МОй СЛАЙДЕР. 
 
     function scroll(i){ // функция единичной перемотки слайда и отмотки слайдов в начало при достижении конца 
       var nnow = $(Ul).data('nnow'); // извлечение номера текущего слайда.
-      var scrollt = scrolltime;
-      var x_offset='-='+wi;
+      var scrollt = scrolltime; // время прокуртки
+      var x_offset='-='+wi; // смещение слайда по x изменением его свойства left
       console.log("nnow0= "+nnow+" left0= "+$(Ul).position().left + " button-i = "+i);      
       
-      if(i=="right") { 
+      if(i=="right") {  // случай нажатия правой кнопки прокрутки 1 слайда
         x_offset='-='+wi;
-        scrollt = scrolltime*kbut;
+        scrollt = scrolltime*kbut; // ускоренная прокрутка
         nnow++;} else
-      if(i=="left") { 
+      if(i=="left") {   // случай нажатия левой кнопки прокрутки 1 слайда
         x_offset='+='+wi;
         scrollt = scrolltime*kbut;
         nnow--;} else
-      if(i!=undefined) {
-        x_offset = '-='+wi*(i-nnow); 
+      if(i!=undefined) {  // случаи нажатия кнопок-дотсов
+        x_offset = '-='+wi*(i-nnow);
         scrollt = scrolltime*kbut;
         nnow = i;}    
-      else nnow++; // переход к следующему слайду
+      else nnow++; // переход к следующему слайду в остальных случаях
       
-      if(nnow == -1)  {nnow = n-1; $(Ul).animate({left: '-='+wi*n}, 0).data('nnow', nnow);}  // сдвиг всех слайдов к началу, незаметный для глаза     
+      if(nnow == -1)  {nnow = n-1; $(Ul).animate({left: '-='+wi*n}, 0).data('nnow', nnow);}  // сдвиг всех слайдов к последнему слайду, незаметный для глаза     
       $(Ul).animate({left: x_offset}, scrollt).data('nnow', nnow); // анимация прокрутки слайда 
       if(nnow == n)  {nnow = 0; $(Ul).animate({left: '+='+wi*n}, 0).data('nnow', nnow);}  // сдвиг всех слайдов к началу, незаметный для глаза
       dota(nnow);
@@ -70,29 +70,29 @@ function my_slider_slim (Element, delay, scrolltime){ // МОй СЛАЙДЕР. 
 
 
 
-          $(D).click(     
+          $(D).click(     // событие нажатия на кнопки-дотсы
           function(){
             var button_ind = $(this).index();
             console.log("ind = "+button_ind);            
             scroll(button_ind);
             });
       
-          $(B_left).click(      
+          $(B_left).click( // событие нажатия на левую кнопку прокрутки 1 слайда     
           function(){
             scroll("left");
             });   
-          $(B_right).click(     
+          $(B_right).click(  // событие нажатия на правую кнопку прокрутки 1 слайда     
           function(){
             scroll("right");
             });
       
 
-          $(Element).on('mouseenter', 
+          $(Element).on('mouseenter', // приостановка автопрокрутки слайдера при наведении на него курсора
           function(){
             clearInterval(id);
             });
             
-          $(Element).on('mouseleave', 
+          $(Element).on('mouseleave', // продолжение автопрокрутки слайдера после прекращения наведения на него курсора
           function(){
               id = setInterval(scroll, delay+scrolltime);
           });
@@ -103,13 +103,28 @@ function my_slider_slim (Element, delay, scrolltime){ // МОй СЛАЙДЕР. 
     });
 
 };
+
+
+// function Checkform(fstart) { // фунция проверки верности формата вводимых данных
+//   var name = fstart.name.value;
+//   var bith_d = fstart.bith_d.value;
+//   var bith_m = fstart.bith_m.value;
+//   var bith_y = fstart.bith_y.value;
+//   //var bad = "";
+
+//   }
+//   return true;
+// }
+
   
 
-$(document).on('click','.links li', function(){ 
-// Изменение стилей вкладок по клику Users list на странице ниже второго слайдера. Хотя лучше через addClass и remooveClass.  
-   $(this).css({'backgroundColor' : '#fff','zIndex' : '10'}).find('a').css({'color':'#ffa352'});
+$('.links li').on('click', function(){ 
+// Изменение стилей вкладок по клику Users list на странице ниже второго слайдера.
+   $(this).addClass("lin-active");
+   //$(this).css({'backgroundColor' : '#fff','zIndex' : '10'}).find('a').css({'color':'#ffa352'});
    var x; if($(this).get(0)==$("#lin1").get(0)) x=$("#lin2"); else x=$("#lin1");
-   $(x).css({'backgroundColor' : '#f4f4f4','zIndex' : '1'}).find('a').css({ 'color':'#969696'});
+   $(x).removeClass("lin-active");
+   //$(x).css({'backgroundColor' : '#f4f4f4','zIndex' : '1'}).find('a').css({ 'color':'#969696'});
 });
 
 

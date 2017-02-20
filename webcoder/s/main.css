@@ -177,7 +177,16 @@ section.b-form {
         vertical-align: middle; }
       section.b-form .top-start-now form.form-start-now h2.about.look {
         padding: 0 9px 0 30px;
-        background: url("../i/loupe.png") 6% 50% no-repeat; }
+        position: relative; }
+        section.b-form .top-start-now form.form-start-now h2.about.look:before {
+          content: "";
+          background: url("../i/sprite.png");
+          background-position: -10px -66px;
+          position: absolute;
+          height: 20px;
+          width: 20px;
+          top: 3px;
+          left: 6px; }
       section.b-form .top-start-now form.form-start-now input[type="radio"], section.b-form .top-start-now form.form-start-now input[type="checkbox"] {
         display: none; }
       section.b-form .top-start-now form.form-start-now .field {
@@ -204,7 +213,7 @@ section.b-form {
         -moz-appearance: none;
         appearance: none;
         cursor: pointer;
-        background: url("../i/edge.png") no-repeat right, linear-gradient(to top, #fff, #e7e7e7); }
+        background: url("../i/edge.png") right no-repeat, linear-gradient(to top, #fff, #e7e7e7); }
       section.b-form .top-start-now form.form-start-now select::-ms-expand {
         display: none; }
       section.b-form .top-start-now form.form-start-now select#bith_d {
@@ -227,19 +236,21 @@ section.b-form {
         display: inline-block;
         vertical-align: middle; }
       section.b-form .top-start-now form.form-start-now .radio:checked + label {
-        background-color: #ebeded;
-        transition: 0.3s; }
+        background-color: #ebeded; }
       section.b-form .top-start-now form.form-start-now .radio:not(checked) + label {
-        background-color: #ff9a12;
-        transition: 0.3s; }
+        background-color: #ff9a12; }
       section.b-form .top-start-now form.form-start-now .radio.r1:checked + label {
-        background: url("../i/woman-checked.png"); }
+        background: url("../i/sprite.png");
+        background-position: -186px -10px; }
       section.b-form .top-start-now form.form-start-now .radio.r2:checked + label {
-        background: url("../i/man-checked.png"); }
+        background: url("../i/sprite.png");
+        background-position: -113px -66px; }
       section.b-form .top-start-now form.form-start-now .radio.r1:not(checked) + label {
-        background: url("../i/woman.png"); }
+        background: url("../i/sprite.png");
+        background-position: -119px -156px; }
       section.b-form .top-start-now form.form-start-now .radio.r2:not(checked) + label {
-        background: url("../i/man.png"); }
+        background: url("../i/sprite.png");
+        background-position: -46px -66px; }
       section.b-form .top-start-now form.form-start-now .radio + label {
         cursor: pointer;
         background-color: transparent;
@@ -382,7 +393,6 @@ section.b-content div.bb-user-list {
     height: 70px;
     width: 390px; }
     section.b-content div.bb-user-list div.user-slider .arrow {
-      border: 0px solid red;
       cursor: pointer;
       height: 20px;
       width: 22px;
@@ -391,13 +401,15 @@ section.b-content div.bb-user-list {
       transition: 0.3s;
       z-index: 2; }
     section.b-content div.bb-user-list div.user-slider .arrow.left {
-      background: url("../i/arrow-left.png") no-repeat;
+      background: url("../i/sprite.png") no-repeat;
+      background-position: -10px -10px;
       left: -35px; }
     section.b-content div.bb-user-list div.user-slider .arrow.left:hover {
       left: -38px;
       transition: 0.3s; }
     section.b-content div.bb-user-list div.user-slider .arrow.right {
-      background: url("../i/arrow-right.png") no-repeat;
+      background: url("../i/sprite.png") no-repeat;
+      background-position: -52px -10px;
       right: -35px; }
     section.b-content div.bb-user-list div.user-slider .arrow.right:hover {
       right: -38px;
@@ -455,10 +467,10 @@ section.b-content div.bb-user-list {
             section.b-content div.bb-user-list div.user-slider .s-window .slides .sl .mask a.pers-like:hover, section.b-content div.bb-user-list div.user-slider .s-window .slides .sl .mask a.pers-add:hover {
               opacity: 1; }
           section.b-content div.bb-user-list div.user-slider .s-window .slides .sl .mask a.pers-like {
-            background-position: -55px -95px;
+            background-position: -80px -120px;
             left: 20%; }
           section.b-content div.bb-user-list div.user-slider .s-window .slides .sl .mask a.pers-add {
-            background-position: -5px -95px;
+            background-position: -10px -120px;
             right: 18%; }
         section.b-content div.bb-user-list div.user-slider .s-window .slides .sl .mask:hover {
           opacity: 1;
@@ -468,6 +480,7 @@ section.b-content div.bb-user-list {
     margin-top: 20px;
     width: 390px; }
     section.b-content div.bb-user-list .active-list ul.links li.l-lin {
+      background: #f4f4f4;
       border: 1px solid #ccc;
       border-bottom-width: 0;
       border-radius: 5px 5px 0 0;
@@ -484,22 +497,22 @@ section.b-content div.bb-user-list {
         width: 100%;
         color: #969696;
         text-decoration: none; }
-    section.b-content div.bb-user-list .active-list ul.links li.l-lin#lin2 {
-      z-index: 10; }
     section.b-content div.bb-user-list .active-list ul.links li:first-child {
       width: 90px;
-      background-color: #f4f4f4;
       margin-right: -4px; }
     section.b-content div.bb-user-list .active-list ul.links li:last-child {
-      width: 155px;
-      background-color: #fff; }
+      width: 155px; }
       section.b-content div.bb-user-list .active-list ul.links li:last-child a.lin {
         padding-right: 5px;
-        color: #ffa352;
         text-transform: none; }
       section.b-content div.bb-user-list .active-list ul.links li:last-child small.s {
         padding-left: 5px;
         color: #b9b9b9; }
+    section.b-content div.bb-user-list .active-list ul.links li.l-lin.lin-active {
+      background: #fff;
+      z-index: 3; }
+      section.b-content div.bb-user-list .active-list ul.links li.l-lin.lin-active a {
+        color: #ffa352; }
     section.b-content div.bb-user-list .active-list ul.content {
       position: relative;
       top: -2px;
@@ -617,14 +630,15 @@ section.b-content div.bb-user-list {
           transform: skewY(56.9deg) rotate(106deg) translateX(-6px); }
       section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label, section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label .ang:after {
         background-color: #ff9d0f;
-        transition: 0.3s; }
+        transition: 0.3s;
+        border-color: #ffbd30; }
       section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label .ang:after {
         border-color: #d3800e; }
       section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label ~ label {
         background: linear-gradient(to top, #e7e7e7, #f5fafb);
         transition: 0.3s; }
       section.b-content div.bb-user-list .active-list form.d-inform .rads:checked + label ~ label .ang:after {
-        background: linear-gradient(to top, #e7e7e7, #f5fafb);
+        background: linear-gradient(257deg, #e7e7e7, #f5fafb);
         border-color: #8e8e8e;
         transition: 0.3s; }
       section.b-content div.bb-user-list .active-list form.d-inform .rads#step1 + label {
@@ -654,14 +668,16 @@ section.b-content div.bb-user-list {
         box-shadow: inset 0 0 2px 1px #fff; }
       section.b-content div.bb-user-list .active-list form.d-inform input[type='range']::-webkit-slider-thumb {
         -webkit-appearance: none;
-        background: url("../i/range-thumb.png");
+        background: url("../i/sprite.png");
+        background-position: -47px -120px;
         cursor: pointer;
         width: 13px;
         height: 25px; }
       section.b-content div.bb-user-list .active-list form.d-inform input[type="range"]::-moz-range-thumb {
         border-radius: 0;
         border: 0;
-        background: url("../i/range-thumb.png");
+        background: url("../i/sprite.png");
+        background-position: -47px -120px;
         cursor: pointer;
         width: 13px;
         height: 25px; }
@@ -677,7 +693,8 @@ section.b-content div.bb-user-list {
         background-color: #ff9a12;
         box-shadow: inset 0 0 2px 1px #fff; }
       section.b-content div.bb-user-list .active-list form.d-inform input[type="range"]::-ms-thumb {
-        background: url("../i/range-thumb.png");
+        background: url("../i/sprite.png");
+        background-position: -47px -120px;
         width: 13px;
         height: 25px;
         cursor: pointer; }
@@ -742,7 +759,6 @@ section.b-content div.bb-user-list {
     -webkit-transform: rotate(133.2deg);
     transform: rotate(133.2deg); } }
     section.b-content div.bb-user-list .active-list form.rating {
-      border: 0px solid red;
       height: 18px;
       margin: 13px 0 0 3px; }
       section.b-content div.bb-user-list .active-list form.rating .star + label {
@@ -750,15 +766,17 @@ section.b-content div.bb-user-list {
         padding: 0;
         margin: 0 -5px 0 0;
         position: relative;
-        background: url("../i/star.png") 0% 0% no-repeat;
-        border: 0px solid blue;
+        background: url("../i/sprite.png");
+        background-position: -119px -120px;
         display: inline-block;
         width: 18px;
         height: 16px; }
       section.b-content div.bb-user-list .active-list form.rating .star:checked + label ~ label, section.b-content div.bb-user-list .active-list form.rating .star:hover + label ~ label {
-        background: url("../i/star-empty.png"); }
+        background: url("../i/sprite.png");
+        background-position: -150px -10px; }
       section.b-content div.bb-user-list .active-list form.rating .star:checked ~ label:hover {
-        background: url("../i/star.png"); }
+        background: url("../i/sprite.png");
+        background-position: -119px -120px; }
 
 section.b-article .column {
   border-bottom: 1px solid #cfcfcf;

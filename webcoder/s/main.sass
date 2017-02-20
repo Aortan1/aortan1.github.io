@@ -198,9 +198,19 @@ section.b-form
 				vertical-align: middle
 			h2.about.look
 				padding: 0 9px 0 30px
-				background: url("../i/loupe.png") 6% 50% no-repeat
-				//background: url("../i/sprite.png")
-				//background-position: -50px, -186px
+				//background: url("../i/loupe.png") 6% 50% no-repeat
+				position: relative
+				&:before
+					content: ""
+					background: url($spr)
+					background-position: -10px -66px
+					position: absolute
+					height: 20px
+					width: 20px
+					top: 3px
+					left: 6px
+		
+
 
 			input[type="radio"], input[type="checkbox"]
 				display: none
@@ -228,8 +238,18 @@ section.b-form
 			select.field
 				appearance: none
 				cursor: pointer
-				background: url("../i/edge.png") no-repeat right, linear-gradient(to top, #fff, #e7e7e7)
-			
+				background: url("../i/edge.png") right no-repeat, linear-gradient(to top, #fff, #e7e7e7)
+				// position: relative
+				// &:before
+				// 	content: ""
+				// 	background: url($spr)
+				// 	background-position: -93px -10px
+				// 	border: 10px solid red
+				// 	position: absolute
+				// 	height: 36px
+				// 	width: 37px
+				// 	top: 0px
+				// 	left: 0px
 			select::-ms-expand
 				display: none
 
@@ -258,23 +278,31 @@ section.b-form
 
 			.radio:checked+label
 				background-color: #ebeded
-				transition: 0.3s
+				//transition: 0.3s
 			.radio:not(checked)+label
 				background-color: #ff9a12
-				transition: 0.3s
+				//transition: 0.3s
 
 			.radio.r1:checked+label
-				background: url("../i/woman-checked.png")
+				//background: url("../i/woman-checked.png")
+				background: url($spr)
+				background-position: -186px -10px	
 			.radio.r2:checked+label
-				background: url("../i/man-checked.png")
+				//background: url("../i/man-checked.png")
+				background: url($spr)
+				background-position: -113px -66px		
 			.radio.r1:not(checked)+label
-				background: url("../i/woman.png")
+				//background: url("../i/woman.png")
+				background: url($spr)
+				background-position: -119px -156px
 			.radio.r2:not(checked)+label
-				background: url("../i/man.png")
+				//background: url("../i/man.png")
+				background: url($spr)
+				background-position: -46px -66px
 
 			.radio+label
 				cursor: pointer
-				background-color: transparent//orange
+				background-color: transparent
 				border: 1px solid #795301
 				display: inline-block
 				height: 33px
@@ -435,8 +463,7 @@ section.b-content
 			height: 70px
 			width: 390px
 			.arrow
-				border: 0px solid red	
-				cursor: pointer	
+				cursor: pointer
 				height: 20px
 				width: 22px
 				position: absolute
@@ -444,17 +471,21 @@ section.b-content
 				transition: 0.3s
 				z-index: 2
 			.arrow.left
-				background: url("../i/arrow-left.png") no-repeat
+				//background: url("../i/arrow-left.png") no-repeat
+				background: url($spr) no-repeat
+				background-position: -10px -10px
 				left: -35px
 			.arrow.left:hover
 				left: -38px
 				transition: 0.3s
 			.arrow.right
-				background: url("../i/arrow-right.png") no-repeat
+				//background: url("../i/arrow-right.png") no-repeat
+				background: url($spr) no-repeat
+				background-position: -52px -10px
 				right: -35px
 			.arrow.right:hover
 				right: -38px
-				transition: 0.3s	
+				transition: 0.3s
 
 
 		div.user-slider .s-window
@@ -510,10 +541,10 @@ section.b-content
 							&:hover
 								opacity: 1
 						a.pers-like
-							background-position: -55px -95px
+							background-position: -80px -120px
 							left: 20%
 						a.pers-add
-							background-position: -5px -95px
+							background-position: -10px -120px
 							right: 18%		
 
 
@@ -531,6 +562,7 @@ section.b-content
 
 			ul.links // ссылки вкладок
 				li.l-lin
+					background: #f4f4f4
 					border: 1px solid #ccc
 					border-bottom-width: 0
 					border-radius: 5px 5px 0 0
@@ -548,22 +580,29 @@ section.b-content
 						width: 100%
 						color: #969696
 						text-decoration: none
-				li.l-lin#lin2
-					z-index: 10	
+	
 				li:first-child
 					width: 90px
-					background-color: #f4f4f4
 					margin-right: -4px 
 				li:last-child
 					width: 155px
-					background-color: #fff
 					a.lin
 						padding-right: 5px
-						color: #ffa352
 						text-transform: none
 					small.s
 						padding-left: 5px
 						color: #b9b9b9
+
+			ul.links	li.l-lin.lin-active
+				background: #fff
+				z-index: 3
+				a
+					color: #ffa352
+			// ul.links	li.l-lin.lin-passive
+			// 	background: #f4f4f4
+			// 	z-index: 1
+			// 	a
+			// 		color: #969696
 
 					
 			ul.content
@@ -699,15 +738,17 @@ section.b-content
 				.rads:checked+label, .rads:checked+label .ang:after
 					background-color: #ff9d0f
 					transition: 0.3s
+					border-color: #ffbd30
 				.rads:checked+label .ang:after
 					border-color: #d3800e
 
 				.rads:checked+label~label
 					background: linear-gradient(to top, #e7e7e7 , #f5fafb)
-					transition: 0.3s
-					
+					transition: 0.3s		
+
 				.rads:checked+label~label .ang:after
-					background: linear-gradient(to top, #e7e7e7 , #f5fafb)
+					background: linear-gradient(257deg, #e7e7e7 , #f5fafb)
+					//background: #f0f4f4
 					border-color: #8e8e8e
 					transition: 0.3s
 						
@@ -743,14 +784,18 @@ section.b-content
 
 				input[type='range']::-webkit-slider-thumb
 					-webkit-appearance: none
-					background: url("../i/range-thumb.png")
+					//background: url("../i/range-thumb.png")
+					background: url($spr)
+					background-position: -47px -120px
 					cursor: pointer
 					width: 13px
 					height: 25px
 				input[type="range"]::-moz-range-thumb
 					border-radius: 0
 					border: 0
-					background: url("../i/range-thumb.png")
+					//background: url("../i/range-thumb.png")
+					background: url($spr)
+					background-position: -47px -120px
 					cursor: pointer
 					width: 13px
 					height: 25px
@@ -769,7 +814,9 @@ section.b-content
 					box-shadow: inset 0 0 2px 1px #fff
 
 				input[type="range"]::-ms-thumb
-					background: url("../i/range-thumb.png")
+					//background: url("../i/range-thumb.png")
+					background: url($spr)
+					background-position: -47px -120px
 					width: 13px
 					height: 25px
 					cursor: pointer
@@ -830,7 +877,6 @@ section.b-content
 					transform: rotate(133.2deg)
 
 			form.rating
-				border: 0px solid red
 				height: 18px
 				margin: 13px 0 0 3px
 
@@ -839,17 +885,22 @@ section.b-content
 					padding: 0
 					margin: 0 -5px 0 0
 					position: relative
-					background: url("../i/star.png") 0% 0% no-repeat
-					border: 0px solid blue
+					//background: url("../i/star.png") 0% 0% no-repeat
+					background: url($spr)
+					background-position: -119px -120px
 					display: inline-block
 					width: 18px
 					height: 16px
 				.star:checked+label~label, .star:hover+label~label
-					background: url("../i/star-empty.png")
+					//background: url("../i/star-empty.png")
+					background: url($spr)
+					background-position: -150px -10px
 
 				
 				.star:checked~label:hover
-					background: url("../i/star.png")
+					//background: url("../i/star.png")
+					background: url($spr)
+					background-position: -119px -120px
 
 
 

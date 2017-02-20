@@ -58,7 +58,7 @@ html
 						li
 							label(for="city").about  City
 
-					form.form-start-now(action="#", method="post", name="start_now", id="start_now")
+					form.form-start-now(action="#", method="post", name="fstart", id="fstart", onsubmit = "Checkform(this)")
 
 						.item
 							fieldset.fs-your-sex
@@ -77,7 +77,7 @@ html
 								input.radio.r2(name="p_sex", type="radio", id="p_male", value="male", title="I'm looking for a man", hidden="true")
 								label(for="p_male",title="I'm looking for a man")
 						.item
-							input.field(type="text", name="name", id="name", required)
+							input.field(type="text", name="name", id="name", minlength="3", pattern = "^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9-_\.]{2,20}$", required)
 						.item
 							.fs-your-bithday
 								select.field(name="bith_d", id="bith_d")
@@ -209,8 +209,8 @@ html
 						ul.links
 							li.l-lin#lin1 
 								a.lin(href="#inset1") Users list
-							li.l-lin#lin2 
-								a.lin.active(href="#inset2") Active list tab
+							li.l-lin#lin2.lin-active 
+								a.lin(href="#inset2") Active list tab
 									small.s | 38
 						ul.content
 							span#inset1
