@@ -138,15 +138,15 @@ section.b-form {
         opacity: 1.0; }
   section.b-form .top-start-now {
     background: #f8f8f8;
-    border-left: 3px solid #dcdcdc;
+    border-left: 1px solid #dcdcdc;
     border-radius: 0 5px 5px 0;
     box-sizing: border-box;
     display: inline-block;
     height: 100%;
     padding: 18px 22px;
-    margin-left: -5px;
+    margin-left: -3px;
     vertical-align: top;
-    width: 50%; }
+    width: calc(50% + 4); }
     section.b-form .top-start-now h1.join {
       font-size: 40px;
       font-weight: 300;
