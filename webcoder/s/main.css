@@ -796,6 +796,9 @@ section.b-content div.bb-user-list {
         background: url("../i/sprite.png");
         background-position: -119px -120px; }
 
+section.b-article .main {
+  overflow: hidden; }
+
 section.b-article .column {
   border-bottom: 1px solid #cfcfcf;
   -webkit-column-count: 3;
