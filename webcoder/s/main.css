@@ -526,7 +526,7 @@ section.b-content div.bb-user-list {
       section.b-content div.bb-user-list .active-list ul.content li.li-page {
         background-color: #fff;
         border: 1px solid #ccc;
-        border-bottom: 3px groove #eee;
+        border-bottom: 3px groove #fefefe;
         border-radius: 0px 5px 5px 5px;
         box-sizing: border-box;
         padding: 15px 0 0 18px;
