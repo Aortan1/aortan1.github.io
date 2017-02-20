@@ -238,7 +238,7 @@ section.b-form {
       section.b-form .top-start-now form.form-start-now .radio:checked + label {
         background-color: #ebeded; }
       section.b-form .top-start-now form.form-start-now .radio:not(checked) + label {
-        background-color: #ff9a12; }
+        background-color: #ff9d0f; }
       section.b-form .top-start-now form.form-start-now .radio.r1:checked + label {
         background: url("../i/sprite.png");
         background-position: -186px -10px; }
@@ -657,14 +657,14 @@ section.b-content div.bb-user-list {
         border-radius: 3px;
         height: 14px;
         border: 1px outset #dcdcdc;
-        background-color: #ff9a12;
+        background-color: #ff9d0f;
         box-shadow: inset 0 0 2px 1px #fff; }
       section.b-content div.bb-user-list .active-list form.d-inform input[type="range"]::-moz-range-track {
         width: 100%;
         border-radius: 3px;
         height: 14px;
         border: 1px outset #dcdcdc;
-        background-color: #ff9a12;
+        background-color: #ff9d0f;
         box-shadow: inset 0 0 2px 1px #fff; }
       section.b-content div.bb-user-list .active-list form.d-inform input[type='range']::-webkit-slider-thumb {
         -webkit-appearance: none;
@@ -690,7 +690,7 @@ section.b-content div.bb-user-list {
         border-radius: 3px;
         height: 14px;
         border: 1px outset #dcdcdc;
-        background-color: #ff9a12;
+        background-color: #ff9d0f;
         box-shadow: inset 0 0 2px 1px #fff; }
       section.b-content div.bb-user-list .active-list form.d-inform input[type="range"]::-ms-thumb {
         background: url("../i/sprite.png");
@@ -724,7 +724,7 @@ section.b-content div.bb-user-list {
           clip: rect(0px, 45px, 90px, 0px);
           transition: 5s; }
         section.b-content div.bb-user-list .active-list div.d-right .skill .circle.bg {
-          border-color: #e7e8e8;
+          border-color: #e7e7e7;
           clip: rect(auto, auto, auto, auto); }
       section.b-content div.bb-user-list .active-list div.d-right .wrapper {
         width: 90px;

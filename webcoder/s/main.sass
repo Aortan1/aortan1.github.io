@@ -1,6 +1,19 @@
 
 $spr: "../i/sprite.png"
 
+$ll-grey: #e7e7e7
+$l-grey: #dcdcdc
+$d-grey: #c0c0c0
+
+$l-orange: #ffa352
+$d-orange: #ff9d0f
+
+$m-green: #94c516
+$d-green: #72aa00
+$l-green: #8fb92b
+$ll-green: #b5cc3f
+
+
 *
 	padding: 0
 	margin: 0
@@ -217,7 +230,7 @@ section.b-form
 
 			.field
 				height: 35px
-				background: linear-gradient(to top, #fff, #e7e7e7)
+				background: linear-gradient(to top, #fff, $ll-grey)
 				border: 1px solid #909090
 				border-radius: 18px
 				box-sizing: border-box
@@ -238,7 +251,7 @@ section.b-form
 			select.field
 				appearance: none
 				cursor: pointer
-				background: url("../i/edge.png") right no-repeat, linear-gradient(to top, #fff, #e7e7e7)
+				background: url("../i/edge.png") right no-repeat, linear-gradient(to top, #fff, $ll-grey)
 				// position: relative
 				// &:before
 				// 	content: ""
@@ -280,7 +293,7 @@ section.b-form
 				background-color: #ebeded
 				//transition: 0.3s
 			.radio:not(checked)+label
-				background-color: #ff9a12
+				background-color: $d-orange
 				//transition: 0.3s
 
 			.radio.r1:checked+label
@@ -384,7 +397,7 @@ section.b-form
 				border: 1px solid #7fa607
 				border-radius: 34px
 				background-color: #8fc113
-				background: linear-gradient(to top, #94c516 0%, #72aa00 50%, #8fb92b 50%, #b5cc3f 100%)
+				background: linear-gradient(to top, $m-green 0%, $d-green 50%, $l-green 50%, $ll-green 100%)
 				box-shadow: inset 0 0 1px 1px #bfdc73
 				color: #fff
 				font-family: 'Source Sans Pro', sans-serif
@@ -597,7 +610,7 @@ section.b-content
 				background: #fff
 				z-index: 3
 				a
-					color: #ffa352
+					color: $l-orange
 			// ul.links	li.l-lin.lin-passive
 			// 	background: #f4f4f4
 			// 	z-index: 1
@@ -643,14 +656,14 @@ section.b-content
 			progress
 				margin-top: 10px
 				background-color: #edf0f0
-				border: 1px outset #dcdcdc
+				border: 1px outset $l-grey
 				height: 15px
 				border-radius: 3px
 				width: 212px
 
 			progress::-webkit-progress-bar
 				background-color: #edf0f0
-				border: 1px outset #dcdcdc
+				border: 1px outset $l-grey
 				height: 15px
 				border-radius: 3px
 				width: 212px
@@ -662,7 +675,7 @@ section.b-content
 
 			progress::-moz-progress-bar
 				background-color: #edf0f0
-				border: 1px outset #dcdcdc
+				border: 1px outset $l-grey
 				height: 15px
 				border-radius: 3px
 				width: 100%
@@ -690,9 +703,9 @@ section.b-content
 
 
 				.rads+label // степсы(шаги) + их метки (во вкладке) 
-					border: 1px outset #dcdcdc
+					border: 1px outset $l-grey
 					border-radius: 3px
-					background-color: #c0c0c0
+					background-color: $d-grey
 					box-sizing: border-box
 					cursor: pointer
 					display: inline-block
@@ -726,7 +739,7 @@ section.b-content
 
 					&:after
 						content: ""
-						background-color: #c0c0c0
+						background-color: $d-grey
 						position: absolute
 						bottom: 59%
 						right: 100%
@@ -736,18 +749,18 @@ section.b-content
 						transform: skewY(56.9deg) rotate(106deg) translateX(-6px)
 
 				.rads:checked+label, .rads:checked+label .ang:after
-					background-color: #ff9d0f
+					background-color: $d-orange
 					transition: 0.3s
 					border-color: #ffbd30
 				.rads:checked+label .ang:after
 					border-color: #d3800e
 
 				.rads:checked+label~label
-					background: linear-gradient(to top, #e7e7e7 , #f5fafb)
+					background: linear-gradient(to top, $ll-grey , #f5fafb)
 					transition: 0.3s		
 
 				.rads:checked+label~label .ang:after
-					background: linear-gradient(257deg, #e7e7e7 , #f5fafb)
+					background: linear-gradient(257deg, $ll-grey , #f5fafb)
 					//background: #f0f4f4
 					border-color: #8e8e8e
 					transition: 0.3s
@@ -770,15 +783,15 @@ section.b-content
 					-webkit-appearance: none
 					border-radius: 3px
 					height: 14px
-					border: 1px outset #dcdcdc
-					background-color: #ff9a12
+					border: 1px outset $l-grey
+					background-color: $d-orange
 					box-shadow: inset 0 0 2px 1px #fff
 				input[type="range"]::-moz-range-track	
 					width: 100%
 					border-radius: 3px
 					height: 14px
-					border: 1px outset #dcdcdc
-					background-color: #ff9a12
+					border: 1px outset $l-grey
+					background-color: $d-orange
 					box-shadow: inset 0 0 2px 1px #fff	
 
 
@@ -809,8 +822,8 @@ section.b-content
 					width: 100%
 					border-radius: 3px
 					height: 14px
-					border: 1px outset #dcdcdc
-					background-color: #ff9a12
+					border: 1px outset $l-grey
+					background-color: $d-orange
 					box-shadow: inset 0 0 2px 1px #fff
 
 				input[type="range"]::-ms-thumb
@@ -845,13 +858,13 @@ section.b-content
 					.circle
 						width: 56px
 						height: 56px
-						border: 17px solid #ffa352
+						border: 17px solid $l-orange
 						border-radius: 50%
 						position: absolute
 						clip: rect(0px, 45px, 90px, 0px)
 						transition: 5s
 					.circle.bg
-						border-color: #e7e8e8
+						border-color: $ll-grey
 						clip: rect(auto, auto, auto, auto)
 	
 
@@ -927,7 +940,7 @@ section.b-article
 
 
 		p.p-highlighted	
-			color: #ffa352
+			color: $l-orange
 			font-size: 14px
 			margin: 15px 0 25px 0
 			padding-left: 15px

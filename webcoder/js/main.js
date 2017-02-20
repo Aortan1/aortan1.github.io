@@ -18,7 +18,6 @@ function my_slider_slim (Element, delay, scrolltime){ // МОй СЛАЙДЕР. 
     var B_left = $(Element).find(".left");  //левая кнопка перемотки
     var B_right = $(Element).find(".right");  //правая кнопка перемотки
     var wi= $(Li).outerWidth(); //ширина слайда
-    //var wi = 70;
     var n = $(Li).length; // количество слайдов
     var kbut = 1/5; //время прокрутки по кнопкам будет scrolltime * kbut
     var id; // для id таймера задержки между слайдами
@@ -34,7 +33,7 @@ function my_slider_slim (Element, delay, scrolltime){ // МОй СЛАЙДЕР. 
       var nnow = $(Ul).data('nnow'); // извлечение номера текущего слайда.
       var scrollt = scrolltime; // время прокуртки
       var x_offset='-='+wi; // смещение слайда по x изменением его свойства left
-      console.log("nnow0= "+nnow+" left0= "+$(Ul).position().left + " button-i = "+i);      
+      //console.log("nnow0= "+nnow+" left0= "+$(Ul).position().left + " button-i = "+i);      
       
       if(i=="right") {  // случай нажатия правой кнопки прокрутки 1 слайда
         x_offset='-='+wi;
@@ -53,8 +52,7 @@ function my_slider_slim (Element, delay, scrolltime){ // МОй СЛАЙДЕР. 
       if(nnow == -1)  {nnow = n-1; $(Ul).animate({left: '-='+wi*n}, 0).data('nnow', nnow);}  // сдвиг всех слайдов к последнему слайду, незаметный для глаза     
       $(Ul).animate({left: x_offset}, scrollt).data('nnow', nnow); // анимация прокрутки слайда 
       if(nnow == n)  {nnow = 0; $(Ul).animate({left: '+='+wi*n}, 0).data('nnow', nnow);}  // сдвиг всех слайдов к началу, незаметный для глаза
-      dota(nnow);
-      
+      dota(nnow);      
       //console.log("nnow = "+nnow+" left = "+$(Ul).position().left);
        
     } 
