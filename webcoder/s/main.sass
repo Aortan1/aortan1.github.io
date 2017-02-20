@@ -298,20 +298,22 @@ section.b-form
 
 			.radio.r1:checked+label
 				//background: url("../i/woman-checked.png")
-				background: url($spr)
-				background-position: -186px -10px	
+				background: url($spr), linear-gradient(to top, $l-orange, $d-orange)
+				background-position: -186px -10px, 0 0
+				box-shadow: inset 2px 2px 5px rgba(0,0,0,0.35)
 			.radio.r2:checked+label
 				//background: url("../i/man-checked.png")
-				background: url($spr)
-				background-position: -113px -66px		
+				background: url($spr), linear-gradient(to top, $l-orange, $d-orange)
+				background-position: -113px -66px, 0 0
+				box-shadow: inset 0px 2px 5px rgba(0,0,0,0.35)		
 			.radio.r1:not(checked)+label
 				//background: url("../i/woman.png")
-				background: url($spr)
-				background-position: -119px -156px
+				background: url($spr), linear-gradient(to top, #e6e7e7, #f5fafb)
+				background-position: -119px -156px, 0 0
 			.radio.r2:not(checked)+label
 				//background: url("../i/man.png")
-				background: url($spr)
-				background-position: -46px -66px
+				background: url($spr), linear-gradient(to top, #e6e7e7, #f5fafb)
+				background-position: -46px -66px, 0 0
 
 			.radio+label
 				cursor: pointer

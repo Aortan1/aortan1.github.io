@@ -240,17 +240,19 @@ section.b-form {
       section.b-form .top-start-now form.form-start-now .radio:not(checked) + label {
         background-color: #ff9d0f; }
       section.b-form .top-start-now form.form-start-now .radio.r1:checked + label {
-        background: url("../i/sprite.png");
-        background-position: -186px -10px; }
+        background: url("../i/sprite.png"), linear-gradient(to top, #ffa352, #ff9d0f);
+        background-position: -186px -10px, 0 0;
+        box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.35); }
       section.b-form .top-start-now form.form-start-now .radio.r2:checked + label {
-        background: url("../i/sprite.png");
-        background-position: -113px -66px; }
+        background: url("../i/sprite.png"), linear-gradient(to top, #ffa352, #ff9d0f);
+        background-position: -113px -66px, 0 0;
+        box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.35); }
       section.b-form .top-start-now form.form-start-now .radio.r1:not(checked) + label {
-        background: url("../i/sprite.png");
-        background-position: -119px -156px; }
+        background: url("../i/sprite.png"), linear-gradient(to top, #e6e7e7, #f5fafb);
+        background-position: -119px -156px, 0 0; }
       section.b-form .top-start-now form.form-start-now .radio.r2:not(checked) + label {
-        background: url("../i/sprite.png");
-        background-position: -46px -66px; }
+        background: url("../i/sprite.png"), linear-gradient(to top, #e6e7e7, #f5fafb);
+        background-position: -46px -66px, 0 0; }
       section.b-form .top-start-now form.form-start-now .radio + label {
         cursor: pointer;
         background-color: transparent;
