@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="welcomeApp">
   <head>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200|Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=1200">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/angular.js"></script>
     <title>Web Coder</title>
     <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="s/main.css">
   </head>
-  <body>
+  <body ng-controller="WelcomeCtrl">
     <header class="b-logo">
       <div class="main">
         <div class="logo">
@@ -37,7 +38,7 @@
           </ul>
         </div>
         <div class="top-start-now">
-          <h1 class="join">Join us now. It's FREE
+          <h1 class="join">{{message}}
             <div class="curtain"></div>
           </h1>
           <ul class="item-names">
@@ -75,7 +76,7 @@
               </fieldset>
             </div>
             <div class="item" id="it-name">
-              <input class="field" type="text" name="name" id="name" required>
+              <input class="field" type="text" name="name" id="name" required ng-model="name">
             </div>
             <div class="item" id="it-bith">
               <div class="fs-your-bithday">
@@ -136,7 +137,7 @@
               </div>
             </fieldset>
             <div class="item">
-              <input class="submit" type="submit" value="Start now">
+              <input class="submit" type="submit" value="Start now" ng-click="clickHandler()">
             </div>
           </form>
         </div>

@@ -1,5 +1,5 @@
 doctype html
-html
+html(ng-app="welcomeApp")
 	head
 		link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200|Roboto:100,300,400,500,700', rel='stylesheet', type='text/css')
 
@@ -10,13 +10,13 @@ html
 		meta(name="viewport", content="width=1200")
 	
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
-
+		script(src='js/angular.js')
 		
 		title Web Coder
 		script(type='text/javascript', src='js/main.js')
 		link(rel='stylesheet', type='text/css', href='s/main.css')
 
-	body
+	body(ng-controller="WelcomeCtrl")
 		header.b-logo
 			.main
 				div.logo
@@ -45,7 +45,7 @@ html
 						li.dot
 
 				div.top-start-now
-					h1.join Join us now. It's FREE
+					h1.join {{message}}
 						.curtain
 					ul.item-names
 						li
@@ -76,7 +76,7 @@ html
 								input.radio.r2(name="p_sex", type="radio", id="p_male", value="male", title="I'm looking for a man", hidden="true", checked)
 								label(for="p_male",title="I'm looking for a man")
 						.item#it-name
-							input.field(type="text", name="name", id="name",  required)
+							input.field(type="text", name="name", id="name",  required, ng-model="name")
 						.item#it-bith
 							.fs-your-bithday
 								select.field(name="bith_d", id="bith_d")
@@ -119,7 +119,7 @@ html
 									div.in
 								label.about(for="beer") Beer
 						.item
-							input.submit(type="submit", value="Start now")
+							input.submit(type="submit", value="Start now", ng-click="clickHandler()")
 
 		section.b-content
 			.main

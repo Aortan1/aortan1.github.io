@@ -148,6 +148,7 @@ section.b-form {
     display: inline-block;
     height: 100%;
     padding: 18px 38px 18px 22px;
+    position: relative;
     margin-left: -5px;
     vertical-align: top;
     width: calc(50% + 4); }
@@ -156,15 +157,19 @@ section.b-form {
       font-weight: 300;
       color: #ff8210;
       margin-bottom: 15px;
-      position: relative; }
+      position: absolute;
+      height: 48px;
+      white-space: pre;
+      overflow: hidden; }
       section.b-form .top-start-now h1.join .curtain {
         position: absolute;
         top: 0;
         height: 100%;
-        width: 100%;
+        width: 450px;
         background: linear-gradient(to top, rgba(248, 248, 248, 0), #f8f8f8); }
     section.b-form .top-start-now ul.item-names {
       display: inline-block;
+      margin-top: 63px;
       vertical-align: top; }
       section.b-form .top-start-now ul.item-names li {
         box-sizing: border-box;
@@ -175,6 +180,7 @@ section.b-form {
           line-height: 48px; }
     section.b-form .top-start-now form.form-start-now {
       display: inline-block;
+      margin-top: 63px;
       vertical-align: top; }
       section.b-form .top-start-now form.form-start-now h2.about {
         display: inline-block;

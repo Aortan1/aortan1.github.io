@@ -1,8 +1,29 @@
 
+
+var hello = "Join us now. It's FREE";
+var welcomeApp = angular.module("welcomeApp", []);
+welcomeApp.controller("WelcomeCtrl", function ($scope) {
+            $scope.message = hello;
+            var reg_name1 = /^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9-_\.]{2,10}$/;
+            var reg_name2 = /^[a-zA-Zа-яА-Я][a-zA-Zа-яА-Я0-9-_\.]{2,16}$/;
+            $scope.clickHandler = function () {
+                if ($scope.name && reg_name1.test($scope.name))
+                $scope.message = "Welcome, "+$scope.name+":)";
+                else if($scope.name && reg_name2.test($scope.name))
+                $scope.message = "Hi, "+$scope.name+":)";
+                else $scope.message = hello;
+              }
+        });
+
+
+
 $(document).ready (function(){
 
 var El1=$(".top-slider"); // Контейнер слайдера 1.
 var El2=$(".user-slider"); // Контейнер слайдера 2.
+
+
+
 
 my_slider_slim(El1, 3000, 2000); // Вызов функции для 1го слайдера. 
 my_slider_slim(El2, 1500, 2000); // Вызов функции для 2го слайдера.
