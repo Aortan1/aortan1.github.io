@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0; }
+
+img {
+  border: 0; }
+
+ul {
+  list-style: none; }
+
+body {
+  width: 100%;
+  position: relative;
+  background-color: #adc7f8;
+    background-color-font-family: 'Lobster', cursive;
+  font-size: 40px;
+  color: black;
+  background: url("../i/76.jpg") 0 30%;
+  background-size: cover; }
+
+div.container {
+  width: 100%;
+  margin: 0 auto; }
+  div.container .block {
+    display: none;
+    width: 850px;
+    margin: 100px auto;
+    padding: 30px 0 0 0;
+    border: 0px solid green; }
+    div.container .block h1.h1-question {
+      font-size: 1em;
+      padding: 20px 0px; }
+    div.container .block p.comment {
+      font-size: 0.8em;
+      color: red;
+      font-style: italic; }
+    div.container .block p.question {
+      font-size: 0.8em;
+      color: black; }
+  div.container .appear {
+    display: block; }
+
+.div-in {
+  width: 100%;
+  position: relative;
+  margin: 20px auto;
+  padding: 0 0 0 0;
+  opacity: 0.8;
+    opacity-border: 0px solid red; }
+
+input#text {
+  display: inline-block;
+  font-size: 0.5em;
+  width: 150px;
+  height: 35px;
+  margin: 0 20px 0 0px;
+  padding: 0 0 0 10px;
+  border-radius: 20px; }
+
+button.in {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 15px;
+  border: 1px solid #7fa607;
+  border-radius: 20px;
+  background-color: #8fc113;
+  background: linear-gradient(to top, #94c516 0%, #72aa00 50%, #8fb92b 50%, #b5cc3f 100%);
+  box-shadow: inset 0 0 1px 1px #bfdc73;
+  transition: 0.05s; }
+  button.in:last-child {
+    margin-right: 0; }
+  button.in:hover {
+    background-position: 0 -3px;
+    transition: 0.3s;
+    color: yellow; }
+  button.in:active {
+    background-position: 0 -10px;
+    box-shadow: inset 1px 1px 5px 1px #517900; }
+
+button.in.skip {
+  color: blue;
+  font-style: italic;
+  font-weight: 400; }
+
+button.in.var {
+  color: black;
+  width: 53px;
+  border-radius: 20px;
+  margin-right: 11px; }

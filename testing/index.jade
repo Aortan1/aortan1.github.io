@@ -1,0 +1,50 @@
+doctype html
+html(ng-app="testingApp")
+	head
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,300,100|Noto+Sans|Roboto:100,300,400,500,700', rel='stylesheet', type='text/css')
+		link(href="https://fonts.googleapis.com/css?family=Lobster",type='text/css')
+
+		meta(charset="utf-8")
+
+		
+		title Testing
+		
+
+		script(src='js/jquery.3.1.1.min.js')
+		script(src='js/angular.min.js')
+		script(src='js/model.json')
+		script(src='js/main.js')
+
+		link(rel='stylesheet', type='text/css', href='s/main.css')
+		
+
+	body(ng-controller="TestingCtrl")
+		div.container
+		
+
+			.block.bl-start.appear
+				h1.h1-question {{message}}
+				br
+				h1.h1-question Количество вопросов - {{n_ques}}.
+
+				.div-i
+					button.in.sub(ng-click="startTest()") Начать тест
+
+
+			.block.bl-1
+				h1.h1-question Вопроc {{i}}
+				p.comment {{comment}}
+				br
+				p.question {{message}}
+				.div-in
+					input#text(name="word",type="text", autofocus, ng-model="answer")
+					button.in.sub(ng-click="clickHandler()") Ввод
+					button.in.skip(ng-click="clickHandler()") Пропустить
+
+			.block.bl-end
+				p.comment {{comment}}
+				br
+				h1.h1-question Количество верных ответов: 
+					span {{n_right}}.
+				h1.h1-question Oценка: 
+					span {{grade}} из 5.
