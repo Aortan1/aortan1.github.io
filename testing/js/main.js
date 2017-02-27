@@ -36,7 +36,7 @@ testingApp.controller("TestingCtrl", function ($scope) {
             	$scope.right = ques[i].right;
 							if($scope.answer && $scope.answer.trim().toLowerCase()==$scope.right) 
  								{n++;	$scope.comment=""; }
- 								else {$scope.comment =ques[i].content+" - "+ques[i].right+'.'; if($scope.answer) $scope.comment="Неверно. "+$scope.comment;}
+ 								else {$scope.comment =ques[i].content+" - "+ques[i].right; if($scope.answer) $scope.comment="Неверно. "+$scope.comment+", а не "+$scope.answer+"."; else $scope.comment+="."}
 							
              	if (i==n_ques-1) { 
             	//$scope.message = "Right answers "+n;
