@@ -34,7 +34,7 @@ testingApp.controller("TestingCtrl", function ($scope) {
 
             $scope.clickHandler = function () {
             	$scope.right = ques[i].right;
-							if($scope.answer && $scope.answer==$scope.right) 
+							if($scope.answer && $scope.answer.trim().toLowerCase()==$scope.right) 
  								{n++;	$scope.comment=""; }
  								else {$scope.comment =ques[i].content+" - "+ques[i].right+'.'; if($scope.answer) $scope.comment="Неверно. "+$scope.comment;}
 							
