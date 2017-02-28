@@ -16,7 +16,7 @@ body {
     background-color-font-family: 'Lobster', cursive;
   font-size: 40px;
   color: black;
-  background: url("../i/76.jpg") 0 30%;
+  background: url("../i/76.jpg") 0 30% no-repeat;
   background-size: cover; }
 
 div.container {
