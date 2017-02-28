@@ -1,6 +1,5 @@
 
 
-
 // var ques = "Question_1";
 var i=0;
 var n=0;
@@ -59,7 +58,8 @@ testingApp.controller("TestingCtrl", function ($scope) {
             	$scope.answer='';            	
  							
             	i++; $scope.i = i+1;
-              } 
+              }
+             
             }
             
           // }
@@ -68,12 +68,19 @@ testingApp.controller("TestingCtrl", function ($scope) {
 
 
 
+$(document).ready(function(){
 
-function $_GET(key) {
-  var s = window.location.search;
-  s = s.match(new RegExp(key + '=([^&=]+)'));
-  return s ? s[1] : false;
-};
+
+$(".block").keyup(function(event){
+  if (event.keyCode == 13) {
+  $(this).find('.sub')[0].click().unbind();
+  return false;       
+   }
+});
+
+
+});
+
 
 
 function rando(n){
