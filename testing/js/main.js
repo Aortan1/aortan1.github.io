@@ -3,7 +3,7 @@
 // var ques = "Question_1";
 var i=0;
 var n=0;
-var n_ques = model.questions.length;
+var number;
 // var model = {
 //             testname: "Test_1",
 //             intro: "Please enter answers of test 1.",
@@ -15,33 +15,39 @@ var n_ques = model.questions.length;
 
 var testingApp = angular.module("testingApp", []);
 testingApp.controller("TestingCtrl", function ($scope) {
-						$scope.message = model.intro;
-						var ques = model.questions.shuffle();
-						$scope.n_ques = ques.length;
+						var list = model.questions.shuffle();
+            $scope.message = model.intro;
+            $scope.numberall = list.length;
 						
-
-
+            
 						$scope.startTest = function () {
 						$(".block").removeClass("appear");
  						$(".block.bl-1").addClass("appear");
  						
- 						$scope.message = ques[0].content+'?';
+            if($scope.nq) number = $scope.nq; else number=$scope.numberall
+ 						$scope.message = list[0].content+'?';
  						$scope.i = i+1;
+            $scope.answer = "";
 						};
 
-						
+            // $scope.clickNumOfQues = function () {
+            // $scope.n_ques = n_q;						
+            // };
 
             $scope.clickHandler = function () {
-            	$scope.right = ques[i].right;
-							if($scope.answer && $scope.answer.trim().toLowerCase()==$scope.right) 
- 								{n++;	$scope.comment=""; }
- 								else {$scope.comment =ques[i].content+" - "+ques[i].right; if($scope.answer) $scope.comment="Неверно. "+$scope.comment+", а не "+$scope.answer+"."; else $scope.comment+="."}
+            	$scope.right = list[i].right;
+              var answer = $scope.answer.trim().toLowerCase();
+              if(answer.substr(0,1)=="<" && answer.substr(answer.length-1,1)==">") answer = answer.substr(1,answer.length-2); // обрезка скобок <>
 							
-             	if (i==n_ques-1) { 
+              if(answer && answer==$scope.right) 
+ 								{n++;	$scope.comment=""; }
+ 								else {$scope.comment =list[i].content+" - "+list[i].right; if($scope.answer) $scope.comment="Неверно. "+$scope.comment+", а не "+$scope.answer+"."; else $scope.comment+="."}
+							
+             	if (i==number-1) { 
             	//$scope.message = "Right answers "+n;
  							//if($scope.answer && $scope.answer==$scope.right) n++;
  							$scope.n_right = n;
- 							$scope.grade = (n*5/n_ques).toFixed(2);
+ 							$scope.grade = (n*5/number).toFixed(2);
  							
             	$(".block").removeClass("appear");
             	$(".block.bl-end").addClass("appear");
@@ -49,12 +55,12 @@ testingApp.controller("TestingCtrl", function ($scope) {
  							{
  							//if($scope.answer && $scope.answer==$scope.right) 
  							//	{n++;	$scope.comment=""; }
- 							//	else {$scope.comment ="Неверно. "+ques[i].content+" - "+ques[i].right+'.';}
-             	$scope.message = ques[i+1].content+'?';
+ 							//	else {$scope.comment ="Неверно. "+list[i].content+" - "+list[i].right+'.';}
+             	$scope.message = list[i+1].content+'?';
              	$scope.n_right = n;
             	
             	console.log("i = "+i+" n = "+n+" $scope.message = "+$scope.message+" $scope.answer = "+$scope.answer+" $scope.right = "+$scope.right);
-            	//ques[i	].right = $scope.answer;
+            	//list[i	].right = $scope.answer;
             	$scope.answer='';            	
  							
             	i++; $scope.i = i+1;

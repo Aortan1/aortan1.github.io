@@ -58,6 +58,14 @@ input#text {
   padding: 0 0 0 10px;
   border-radius: 20px; }
 
+form#form_nq {
+  display: inline-block; }
+
+input.nq:checked + label {
+  color: maroon;
+  border-bottom: 1px solid maroon;
+  transition: 0.3s; }
+
 button.in {
   display: inline-block;
   width: 150px;
