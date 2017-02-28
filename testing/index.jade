@@ -20,23 +20,24 @@ html(ng-app="testingApp")
 
 	body(ng-controller="TestingCtrl")
 		div.container
-		
+			.block.bl-0.appear
+				h1.h1-question Выберите тест:
+				form(action="", id="form_ntest")
+						div.rad-item(ng-repeat="test in model") 
+							input.nt(type="radio", name="nt", ng-value="$index", id="nt{{$index}}", ng-model="$parent.nt")
+							label(for="nt{{$index}}") {{test.testname}}
+				button.in.sub(ng-click="chooseTest()") Выбрать
 
-			.block.bl-start.appear
+
+			.block.bl-start
 				h1.h1-question {{message}}
-				br
 				h1.h1-question Количество вопросов ?
 					form(action="", id="form_nq")
-						input.nq(type="radio", name="nq", value="5", id="nq5", ng-model="nq", checked)
-						label(for="nq5") 5;	
-						input.nq(type="radio", name="nq", value="20", id="nq20",ng-model="nq") 
-						label(for="nq20") 20;
-						//input.nq(type="radio", name="nq", value="50", id="nq50",ng-model="nq")
-						//label(for="nq50") 50;
-						input.nq(type="radio", name="nq", value="", id="nqall",ng-model="nq")
-						label(for="nqall") {{numberall}}.
-				.div-i
-					button.in.sub(ng-click="startTest()") Начать тест
+						div.rad-item(ng-repeat="num in num_questions") 
+							input.nq(type="radio", name="nq", ng-value="num", id="nq{{num}}", ng-model="$parent.nq")
+							label(for="nq{{num}}") {{num}};
+				//-.div-in
+				button.in.sub(ng-click="startTest()") Начать тест
 
 
 			.block.bl-1
@@ -48,6 +49,7 @@ html(ng-app="testingApp")
 					input#text(name="word",type="text", autofocus, ng-model="answer")
 					button.in.sub(ng-click="clickHandler()") Ввод
 					button.in.skip(ng-click="clickHandler()") Пропустить
+
 
 			.block.bl-end
 				p.comment {{comment}}

@@ -13,23 +13,27 @@
   </head>
   <body ng-controller="TestingCtrl">
     <div class="container">
-      <div class="block bl-start appear">
-        <h1 class="h1-question">{{message}}</h1><br>
+      <div class="block bl-0 appear">
+        <h1 class="h1-question">Выберите тест:</h1>
+        <form action="" id="form_ntest">
+          <div class="rad-item" ng-repeat="test in model"> 
+            <input class="nt" type="radio" name="nt" ng-value="$index" id="nt{{$index}}" ng-model="$parent.nt">
+            <label for="nt{{$index}}">{{test.testname}}</label>
+          </div>
+        </form>
+        <button class="in sub" ng-click="chooseTest()">Выбрать</button>
+      </div>
+      <div class="block bl-start">
+        <h1 class="h1-question">{{message}}</h1>
         <h1 class="h1-question">Количество вопросов ?
           <form action="" id="form_nq">
-            <input class="nq" type="radio" name="nq" value="5" id="nq5" ng-model="nq" checked>
-            <label for="nq5">5;	</label>
-            <input class="nq" type="radio" name="nq" value="20" id="nq20" ng-model="nq">
-            <label for="nq20">20;</label>
-            <!--input.nq(type="radio", name="nq", value="50", id="nq50",ng-model="nq")-->
-            <!--label(for="nq50") 50;-->
-            <input class="nq" type="radio" name="nq" value="" id="nqall" ng-model="nq">
-            <label for="nqall">{{numberall}}.</label>
+            <div class="rad-item" ng-repeat="num in num_questions"> 
+              <input class="nq" type="radio" name="nq" ng-value="num" id="nq{{num}}" ng-model="$parent.nq">
+              <label for="nq{{num}}">{{num}};</label>
+            </div>
           </form>
         </h1>
-        <div class="div-i">
-          <button class="in sub" ng-click="startTest()">Начать тест</button>
-        </div>
+        <button class="in sub" ng-click="startTest()">Начать тест</button>
       </div>
       <div class="block bl-1">
         <h1 class="h1-question">Вопроc {{i}}.</h1>

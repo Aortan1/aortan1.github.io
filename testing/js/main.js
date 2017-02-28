@@ -4,6 +4,7 @@
 var i=0;
 var n=0;
 var number;
+var list;
 // var model = {
 //             testname: "Test_1",
 //             intro: "Please enter answers of test 1.",
@@ -15,20 +16,37 @@ var number;
 
 var testingApp = angular.module("testingApp", []);
 testingApp.controller("TestingCtrl", function ($scope) {
-						var list = model.questions.shuffle();
-            $scope.message = model.intro;
-            $scope.numberall = list.length;
 						
+            $scope.model = model;
+            $scope.nt = 0; // но
+
+            $scope.chooseTest = function () {
+            $(".block").removeClass("appear");
+            $(".block.bl-start").addClass("appear");
+            var nt = $scope.nt;
+            list = model[nt].questions.shuffle();
+            $scope.message = model[nt].intro;
+            $scope.num_questions = model[nt].num_questions;
+            $scope.numberall = list.length;
+            $scope.nq = $scope.num_questions[0]; //checked в списке - первое значение числа вопросов.
             
+            };
+
+            
+						
+
+
 						$scope.startTest = function () {
 						$(".block").removeClass("appear");
  						$(".block.bl-1").addClass("appear");
  						
             if($scope.nq) number = $scope.nq; else number=$scope.numberall
- 						$scope.message = list[0].content+'?';
+ 						//number = $scope.nq;
+            $scope.message = list[0].content+'?';
  						$scope.i = i+1;
             $scope.answer = "";
-						};
+						
+            };
 
             // $scope.clickNumOfQues = function () {
             // $scope.n_ques = n_q;						
