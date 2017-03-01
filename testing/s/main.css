@@ -12,7 +12,9 @@ ul {
 body {
   width: 100%;
   position: relative;
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Lobster', Arial;
+  font-style: italic;
+  font-weight: 400;
   font-size: 40px;
   color: black;
   background-color: #94b63e;
