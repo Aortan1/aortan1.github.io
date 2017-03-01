@@ -32,8 +32,6 @@ testingApp.controller("TestingCtrl", function ($scope) {
             
             };
 
-            
-						
 
 
 						$scope.startTest = function () {
