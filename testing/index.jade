@@ -21,7 +21,7 @@ html(ng-app="testingApp")
 	body(ng-controller="TestingCtrl")
 		div.container
 			.block.bl-0.appear
-				h1.h1-question Выберите тест:
+				h1.h1-question Выберите обучающий тест:
 				form(action="", id="form_ntest")
 						div.rad-item(ng-repeat="test in model") 
 							input.nt(type="radio", name="nt", ng-value="$index", id="nt{{$index}}", ng-model="$parent.nt")

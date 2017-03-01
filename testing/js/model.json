@@ -3,8 +3,8 @@
 var	model = [ 
 					{
             testname: "Теги html и их атрибуты.",
-            num_questions: [5,10,20,50],
-            intro: "Тест на знание HTML-тегов. Названия тегов можно вводить без угловых скобок.",
+            num_questions: [5,20,50],
+            intro: "Обучающий тест на знание HTML-тегов. Названия тегов можно вводить без угловых скобок.",
             questions: [
             	{num: 1, content: "Тег, который создает заголовок первого уровня",		right: "h1"},
               {num: 2, content: "Тег, который создает абзац", 	right: "p"},
@@ -55,7 +55,16 @@ var	model = [
               {num: 47, content: "Значения атрибута type, которое создает поле ввода урл", 	right: "url"},
               {num: 48, content: "Значения атрибута type, которое создает поле поиска", 	right: "search"},
               {num: 49, content: "Значения атрибута type, которое создает поле ввода цвета", 	right: "color"},
-              {num: 50, content: "Значения атрибута type, которое создает поле ввода даты", 	right: "date"}
+              {num: 50, content: "Значения атрибута type, которое создает поле ввода даты", 	right: "date"},
+              {num: 51, content: "Значения атрибута type, которое создает поле ввода месяца", 	right: "month"},
+              {num: 52, content: "Значения атрибута type, которое создает поле ввода недели", 	right: "week"},
+              {num: 53, content: "Значения атрибута type, которое создает поле ввода даты-время", 	right: "time"},
+              {num: 54, content: "Значения атрибута type, которое создает ползунок", 	right: "range"},
+              {num: 55, content: "Атрибут, который добавляет проверку по регулярному выражению для инпута", 	right: "pattern"},
+              {num: 56, content: "Значение text-align, которое задает выравнивание по центру", 	right: "center"},
+              {num: 57, content: "Значение text-align, которое задает выравнивание по левому краю", 	right: "left"},
+              {num: 58, content: "Значение text-align, которое задает выравнивание по правому краю", 	right: "right"},
+              {num: 59, content: "Значение text-align, которое задает выравнивание по правому и по левому краям одновременно", 	right: "justify"}
               ]
             
         },
@@ -64,10 +73,49 @@ var	model = [
         
             testname: "Свойства css.",
             num_questions: [2,3],
-            intro: "Тест на знание css-свойств.",
+            intro: "Обучающий тест на знание css-свойств.",
             questions: [
             	{num: 60, content: "Значение свойства font-weight, которое делает жирный",		right: "bold"},
+            	{num: 61, content: "", 	right: ""},
               {num: 62, content: "Значение свойства font-style, которое делает курсив", 	right: "italic"},
-              {num: 63, content: "Значение свойства font-style, которое устанавливает наклонное написание",  	right: "oblique"}
+              {num: 63, content: "Значение свойства font-style, которое устанавливает наклонное написание",  	right: "oblique"},
+              {num: 64, content: "", 	right: ""},
+              {num: 65, content: "", 	right: ""},
+              {num: 66, content: "", 	right: ""},
+              {num: 67, content: "", 	right: ""},
+              {num: 68, content: "", 	right: ""},
+              {num: 69, content: "", 	right: ""},
+              {num: 70, content: "", 	right: ""},
+              {num: 71, content: "", 	right: ""},
+              {num: 72, content: "", 	right: ""},
+              {num: 73, content: "", 	right: ""},
+              {num: 74, content: "", 	right: ""},
+              {num: 75, content: "", 	right: ""},
+              {num: 76, content: "", 	right: ""},
+              {num: 77, content: "", 	right: ""},
+              {num: 78, content: "", 	right: ""},
+              {num: 79, content: "", 	right: ""},
+              {num: 80, content: "", 	right: ""},
+              {num: 81, content: "", 	right: ""},
+              {num: 82, content: "", 	right: ""},
+              {num: 83, content: "", 	right: ""},
+              {num: 84, content: "", 	right: ""},
+              {num: 85, content: "", 	right: ""},
+              {num: 86, content: "", 	right: ""},
+              {num: 87, content: "", 	right: ""},
+              {num: 88, content: "", 	right: ""},
+              {num: 89, content: "", 	right: ""},
+              {num: 90, content: "", 	right: ""},
+              {num: 91, content: "", 	right: ""},
+              {num: 92, content: "", 	right: ""},
+              {num: 93, content: "", 	right: ""},
+              {num: 94, content: "", 	right: ""},
+              {num: 95, content: "", 	right: ""},
+              {num: 96, content: "", 	right: ""},
+              {num: 97, content: "", 	right: ""},
+              {num: 98, content: "", 	right: ""},
+              {num: 99, content: "", 	right: ""},
+              {num: 100, content: "", 	right: ""}
+              
         		]
        	}];

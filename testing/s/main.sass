@@ -1,8 +1,8 @@
 
-$m-green: #94c516
-$d-green: #72aa00
+$m-green: #649516
+$d-green: #427a00
 $l-green: #8fb92b
-$ll-green: #b5cc3f
+$ll-green: yellow
 
 *
 	padding: 0
@@ -18,47 +18,47 @@ ul
 body
 	width: 100%
 	position: relative
-	background-color: #adc7f8
-  font-family: 'Lobster', cursive
+	font-family: 'Lobster', cursive
 	font-size: 40px
-	//font-weight: 400
 	color: black
-	background: url("../i/76.jpg") 0 30% no-repeat
+	background-color: #94b63e
+	//background-size: cover
+	background: url("../i/76d.jpg") 0 15% no-repeat
 	background-size: cover
 
 
 div.container 
-  width: 100%
-  margin: 0 auto
+	width: 100%
+	margin: 0 auto
 
 
-  .block
-    display: none
-    width: 850px
-    margin: 100px auto
-    padding: 30px 0 0 0
-    border: 1px solid transparent; 
-    h1.h1-question
-      font-size: 1em
-      padding: 20px 0px
-    p.comment
-      font-size: 0.8em
-      color: red
-      font-style: italic
-    p.question
-      font-size: 0.8em
-      color: black
-    
+	.block
+		display: none
+		width: 850px
+		margin: 100px auto
+		padding: 30px 50px
+		border: 1px solid transparent; 
+		h1.h1-question
+			font-size: 1em
+			padding: 20px 0px
+		p.comment
+			font-size: 0.8em
+			color: red
+			font-style: italic
+		p.question
+			font-size: 0.8em
+			color: black
+		
 
-  .appear
-    display: block
+	.appear
+		display: block
 
 
 
 .div-in
-  margin: 30px auto
-  opacity: 0.8
-  //border: 0px solid red
+	margin: 30px auto
+	opacity: 0.8
+	//border: 0px solid red
 
 
 // input#text, button.in
@@ -66,49 +66,53 @@ div.container
 //   opacity: 0.8
 
 input#text
-  display: inline-block
-  font-size: 0.5em
-  width: 150px
-  height: 35px
-  margin: 0 20px 0 0px
-  padding: 0 0 0 10px
-  border-radius: 20px
+	display: inline-block
+	font-size: 0.5em
+	width: 150px
+	height: 35px
+	margin: 0 20px 0 0px
+	padding: 0 0 0 10px
+	border-radius: 20px
 
 form#form_nq
-  display: inline-block
-  margin-bottom: 20px 
-  div.rad-item
-    border: 1px solid transparent
-    display: inline-block
-    // box-sizing: border-box
-    // width: 80px
-    padding-right: 10px
+	display: inline-block
+	margin-bottom: 20px 
+	div.rad-item
+		border: 1px solid transparent
+		display: inline-block
+		// box-sizing: border-box
+		// width: 80px
+		padding-right: 10px
 
 form#form_ntest
-  display: block
-  margin-bottom: 20px 
-  div.rad-item
-    border: 1px solid transparent
-    display: block
-    padding-right: 10px
+	display: block
+	margin-bottom: 20px 
+	div.rad-item
+		border: 1px solid transparent
+		display: block
+		padding-right: 10px
 
 
 
 input.nt:checked+label
-  color: green
-  border: 1px solid green
-  transition: 0.3s
+	color: green
+	background-color: rgba(255,255,255,0.3)
+	border: 1px solid green
+	border-radius: 10px
+	transition: 0.3s
 
 input.nq+label
-  border: 1px solid transparent
-  padding: 0 5px
-  transition: 0.3s
+	border: 1px solid transparent
+	padding: 0 5px
+	transition: 0.3s
 
 input.nq:checked+label
-  color: maroon
-  border: 1px solid maroon
-  transition: 0.3s
- 
+	background-color: rgba(255,255,255,0.3)
+	border: 1px solid maroon
+	border-radius: 10px
+	color: maroon
+	transition: 0.3s
+
 
 button.in
 	display: inline-block 
@@ -125,6 +129,7 @@ button.in
 	background-color: #8fc113
 	background: linear-gradient(to top, $m-green 0%, $d-green 50%, $l-green 50%, $ll-green 100%)
 	box-shadow: inset 0 0 1px 1px #bfdc73
+	//outline: 10px solid rgba(255,255,255,0.6)
 	transition: 0.05s
 	&:last-child
 		margin-right: 0
