@@ -48,7 +48,9 @@ div.container {
 
 .div-in {
   margin: 30px auto;
-  opacity: 0.8; }
+  opacity: 0.8;
+  -webkit-user-select: none;
+  -moz-user-select: none; }
 
 input#text {
   display: inline-block;
@@ -80,6 +82,15 @@ input.nt:checked + label {
   background-color: rgba(255, 255, 255, 0.3);
   border: 1px solid green;
   border-radius: 10px;
+  transition: 0.3s; }
+
+input.pro, input.pro + label {
+  font-size: 0.5em;
+  opacity: 0;
+  transition: 0.3s; }
+
+input.nt:checked + label + input.pro, input.nt:checked + label + input.pro + label {
+  opacity: 1;
   transition: 0.3s; }
 
 input.nq + label {

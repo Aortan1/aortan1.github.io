@@ -26,7 +26,10 @@ html(ng-app="testingApp")
 						div.rad-item(ng-repeat="test in model") 
 							input.nt(type="radio", name="nt", ng-value="$index", id="nt{{$index}}", ng-model="$parent.nt")
 							label(for="nt{{$index}}") {{test.testname}}
-				button.in.sub(ng-click="chooseTest()") Выбрать
+							input.pro(type="checkbox", name="pro", id="pro{{$index}}", ng-model="$parent.pro")
+							label(for="pro{{$index}}") (я - профи).
+				.div-in
+					button.in.sub(ng-click="chooseTest()") Выбрать
 
 
 			.block.bl-start
@@ -36,8 +39,8 @@ html(ng-app="testingApp")
 						div.rad-item(ng-repeat="num in num_questions") 
 							input.nq(type="radio", name="nq", ng-value="num", id="nq{{num}}", ng-model="$parent.nq")
 							label(for="nq{{num}}") {{num}};
-				//-.div-in
-				button.in.sub(ng-click="startTest()") Начать тест
+				.div-in
+					button.in.sub(ng-click="startTest()") Начать тест
 
 
 			.block.bl-1

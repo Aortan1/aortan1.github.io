@@ -18,15 +18,23 @@ var testingApp = angular.module("testingApp", []);
 testingApp.controller("TestingCtrl", function ($scope) {
 						
             $scope.model = model;
-            $scope.nt = 0; // но
+            $scope.nt = 0; // $scope.nt - номер теста. 0, или 1. 0 - по умолчайнию, checked.
 
             $scope.chooseTest = function () {
             $(".block").removeClass("appear");
             $(".block.bl-start").addClass("appear");
             var nt = $scope.nt;
+            var pro = $scope.pro;
             list = model[nt].questions.shuffle();
+
+            if (pro) {
+            list = list.filter(function(x) {
+            return x.d > 0; // теперь в списке list только вопросы с ненулевым свойством d
+            });
+
+            };
             $scope.message = model[nt].intro;
-            $scope.num_questions = model[nt].num_questions;
+            if(!pro) $scope.num_questions = model[nt].num_questions; else $scope.num_questions = model[nt].num_questions_pro;
             $scope.numberall = list.length;
             $scope.nq = $scope.num_questions[0]; //checked в списке - первое значение числа вопросов.
             

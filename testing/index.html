@@ -19,9 +19,13 @@
           <div class="rad-item" ng-repeat="test in model"> 
             <input class="nt" type="radio" name="nt" ng-value="$index" id="nt{{$index}}" ng-model="$parent.nt">
             <label for="nt{{$index}}">{{test.testname}}</label>
+            <input class="pro" type="checkbox" name="pro" id="pro{{$index}}" ng-model="$parent.pro">
+            <label for="pro{{$index}}">(я - профи).</label>
           </div>
         </form>
-        <button class="in sub" ng-click="chooseTest()">Выбрать</button>
+        <div class="div-in">
+          <button class="in sub" ng-click="chooseTest()">Выбрать</button>
+        </div>
       </div>
       <div class="block bl-start">
         <h1 class="h1-question">{{message}}</h1>
@@ -33,7 +37,9 @@
             </div>
           </form>
         </h1>
-        <button class="in sub" ng-click="startTest()">Начать тест</button>
+        <div class="div-in">
+          <button class="in sub" ng-click="startTest()">Начать тест</button>
+        </div>
       </div>
       <div class="block bl-1">
         <h1 class="h1-question">Вопроc {{i}}.</h1>
