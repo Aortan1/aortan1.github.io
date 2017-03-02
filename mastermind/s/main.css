@@ -72,7 +72,7 @@ input.sample {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin:  40px 0px 0 0;
+  margin:  25px 0px 0 0;
   font-size: 18px;
   color: white;
   background-color: #55b618;
@@ -198,7 +198,7 @@ div.fild_buttons { width: 600px; }
 .n-4-6 div.attempt tt, .n-4-6 div.result em
 {display:none;}
 .n-4-6 h5.ruls {
-  top:10px; right: 35px;}
+  top: 35px; right: 35px;}
 .n-4-6 input.sample {display: block;}
 .n-4-6 .fild_buttons .buttons input {
   width: 60px;
@@ -218,7 +218,7 @@ height: 50px;}
 .n-5-8 div.attempt tt, .n-5-8 div.result em
 {display:block;}
 .n-5-8 h5.ruls {
-  top:10px; right: 15px;} 
+  top: 35px; right: 15px;} 
 .n-5-8 input.sample {display: none;}
 .n-5-8 .fild_buttons .buttons input {
   width: 50px;
