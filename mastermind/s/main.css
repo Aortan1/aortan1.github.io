@@ -63,7 +63,8 @@ text-align: left;
 }
 h5.ruls a {
   padding-left: 5px;
-  font-family: 'Roboto', cursive;
+  font-family: arial;
+  font-style: italic;
   color: #009688;
 }
 input.sample {
