@@ -223,7 +223,9 @@ if (sum1==n){
 // Htag[0].style.backgroundColor = "#388E3C"; Htag[0].style.color="white";
 // Htag[0].style.fontSize = "20px"; 
 Htag[0].classList.add("rai");          
-Sec[0].style.opacity = 1;            
+Sec[0].style.opacity = 1;
+Htag[0].style.fontFamily = "arial";
+Htag[0].style.fontStyle = "italic";           
 }      
 
 if (attempt_now==n_at && sum1!=n){
@@ -231,6 +233,8 @@ if (attempt_now==n_at && sum1!=n){
 Htag[0].innerHTML="Попробуйте ещё раз, у вас получится.";
 Htag[0].style.color="black";
 Htag[0].style.fontSize = "18px";
+Htag[0].style.fontFamily = "arial";
+Htag[0].style.fontStyle = "italic";
 Sec[0].style.opacity = 1;
 // Sample[0].style.display="block";
 // alert (Sample[0].style.display);
