@@ -44,9 +44,9 @@ html(ng-app="testingApp")
 
 
 			.block.bl-1
-				h1.h1-question Вопроc {{i}}.
 				p.comment {{comment}}
-				br
+				//-br
+				h1.h1-question Вопроc {{i}}.
 				p.question {{message}}
 				.div-in
 					input#text(name="word",type="text", autofocus, ng-model="answer")

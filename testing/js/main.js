@@ -64,8 +64,12 @@ testingApp.controller("TestingCtrl", function ($scope) {
               if(answer.substr(0,1)=="<" && answer.substr(answer.length-1,1)==">") answer = answer.substr(1,answer.length-2); // обрезка скобок <>
 							
               if(answer && answer==$scope.right) 
- 								{n++;	$scope.comment=""; }
- 								else {$scope.comment =list[i].content+" - "+list[i].right; if($scope.answer) $scope.comment="Неверно. "+$scope.comment+", а не "+$scope.answer+"."; else $scope.comment+="."}
+ 								{n++;	$scope.comment="Верно."; $("p.comment").removeClass("c-wrong").addClass("c-right");}
+ 								else {
+                  $scope.comment =list[i].content+" - "+list[i].right; 
+                  $("p.comment").removeClass("c-right").addClass("c-wrong"); 
+                  if($scope.answer) $scope.comment="Неверно. "+$scope.comment+", а не "+$scope.answer+"."; else $scope.comment+=".";
+                  }
 							
              	if (i==number-1) { 
             	//$scope.message = "Right answers "+n;
