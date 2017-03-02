@@ -38,13 +38,16 @@ div.container {
       padding: 20px 0px; }
     div.container .block p.comment {
       font-size: 0.8em;
-      color: red;
       font-style: italic; }
     div.container .block p.question {
       font-size: 0.8em;
       color: black; }
   div.container .appear {
     display: block; }
+  div.container .c-wrong {
+    color: red; }
+  div.container .c-right {
+    color: green; }
 
 .div-in {
   margin: 30px auto;
@@ -84,10 +87,19 @@ input.nt:checked + label {
   border-radius: 10px;
   transition: 0.3s; }
 
+input.pro {
+  margin-left: 15px; }
+
 input.pro, input.pro + label {
-  font-size: 0.5em;
+  font-size: 0.55em;
+  color: #333;
   opacity: 0;
   transition: 0.3s; }
+
+input.pro:checked + label {
+  color: #000;
+  box-shadow: 0 0 10px 10px #ffa;
+  border-radius: 10px; }
 
 input.nt:checked + label + input.pro, input.nt:checked + label + input.pro + label {
   opacity: 1;
@@ -148,6 +160,8 @@ button.in.var {
     min-width: 180px;
     border-radius: 30px;
     font-size: 0.7em; }
-    button.in input#text, input#text input#text {
-      height: 52px;
-      border-radius: 26px; } }
+  input#text {
+    height: 52px;
+    border-radius: 26px; }
+  input.pro, input.pro + label {
+    font-size: 0.8em; } }
