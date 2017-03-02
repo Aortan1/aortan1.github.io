@@ -82,7 +82,9 @@ if (opac==1)  {
   Sample[0].value="PLAY";
   Htag[0].innerHTML="Mastermind";
   Htag[0].style.fontSize="55px";
-  Htag[0].style.color="#55b618";  
+  Htag[0].style.color="#55b618"; 
+  Htag[0].style.fontFamily = "Pacifico";
+  Htag[0].style.fontStyle = "normal";  
 
 }
 
