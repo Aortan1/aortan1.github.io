@@ -55,7 +55,7 @@ padding: 10px -10px 0 0;
 h5.ruls {
 display: block;
 position: absolute;
-top: 35px;
+top: 20px;
 right: 35px;
 height: 20px;  
 padding: 5px 5px 0 0px;
@@ -198,7 +198,7 @@ div.fild_buttons { width: 600px; }
 .n-4-6 div.attempt tt, .n-4-6 div.result em
 {display:none;}
 .n-4-6 h5.ruls {
-  top: 35px; right: 35px;}
+  top: 20px; right: 35px;}
 .n-4-6 input.sample {display: block;}
 .n-4-6 .fild_buttons .buttons input {
   width: 60px;
@@ -218,7 +218,7 @@ height: 50px;}
 .n-5-8 div.attempt tt, .n-5-8 div.result em
 {display:block;}
 .n-5-8 h5.ruls {
-  top: 35px; right: 15px;} 
+  top: 20px; right: 15px;} 
 .n-5-8 input.sample {display: none;}
 .n-5-8 .fild_buttons .buttons input {
   width: 50px;
