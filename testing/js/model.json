@@ -119,5 +119,20 @@ var	model = [
               {num: 99, content: "Свойство CSS, которое задает толщину границ", 	right: "border-width"},
               {num: 100, d:5,content: "Свойство CSS, которое задает тип границ", 	right: "border-style"}
               
-        		]
-       	}];
+      		]
+       	},
+
+			{
+            testname: "Тест для Куща",
+            num_questions: [3],
+            num_questions_pro: [3],
+            intro: "Тест, определяющий, насколько хорошо вы себя знаете.",
+            questions: [
+            	{num: 1, d:5,content: "Ваша фамилия",		right: "Кущ"},
+            	{num: 2, d:5,content: "Сколько вам лет",		right: "32"},
+              {num: 3, d:5,content: "Ваше имя", 	right: "Чебураша"}
+      ]
+     	}
+
+
+       ];
