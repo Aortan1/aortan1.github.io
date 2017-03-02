@@ -55,7 +55,7 @@ padding: 10px -10px 0 0;
 h5.ruls {
 display: block;
 position: absolute;
-top: 20px;
+top: 35px;
 right: 35px;
 height: 20px;  
 padding: 5px 5px 0 0px;
@@ -72,7 +72,7 @@ input.sample {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin:  30px 0px 0 0;
+  margin:  40px 0px 0 0;
   font-size: 18px;
   color: white;
   background-color: #55b618;
