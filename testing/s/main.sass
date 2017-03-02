@@ -108,14 +108,22 @@ input.nt:checked+label
 	border-radius: 10px
 	transition: 0.3s
 
+input.pro
+	margin-left: 15px
+
 input.pro, input.pro+label
-	font-size: 0.5em
+	font-size: 0.65em
+	color: #777
 	opacity: 0
 	transition: 0.3s
 
+input.pro:checked+label
+	color: #000
+	//background: yellow
+	//border-radius: 10px
 
 input.nt:checked+label+input.pro, input.nt:checked+label+input.pro+label
-	opacity: 1
+	opacity: 1	
 	transition: 0.3s
 
 input.nq+label
@@ -181,11 +189,13 @@ button.in.var
 		font-size: 0.7em
 		//color: red
 
-	 input#text
+	input#text
 	 	height: 52px
 	 	//min-height: 35px
 	 	border-radius: 26px
 
+	input.pro, input.pro+label
+		font-size: 0.8em
 
 
 
