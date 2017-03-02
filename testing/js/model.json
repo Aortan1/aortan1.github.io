@@ -233,7 +233,7 @@ var	model = [
             intro: "Тест, определяющий, насколько хорошо вы себя знаете.",
             questions: [
             	{num: 1, d:5,content: "Ваша фамилия",		right: "Кущ"},
-            	{num: 2, d:5,content: "Сколько вам лет",		right: "32"},
+            	{num: 2, d:5,content: "Ваш возраст",		right: "32 года"},
               {num: 3, d:5,content: "Ваше имя", 	right: "Чебураша"}
       ]
      	}
