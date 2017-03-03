@@ -45,9 +45,11 @@ div.container {
   div.container .appear {
     display: block; }
   div.container .c-wrong {
-    color: red; }
+    color: red;
+    font-size: 1em; }
   div.container .c-right {
-    color: green; }
+    color: green;
+    font-size: 1em; }
 
 .div-in {
   margin: 30px auto;

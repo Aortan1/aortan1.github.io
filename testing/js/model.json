@@ -166,7 +166,7 @@ var	model = [
 	            {num: 147, d:5, content: "Значение свойства display, которое задает элемент-ячейку таблицы",		right: "table-cell"},
 	            {num: 148, content: "Свойство CSS, которое задает цвет фона",		right: "background-color"},
 	            {num: 149, content: "Свойство CSS, которое задает картинку фона",		right: "background-image"},
-	            {num: 150, d:5, content: "Свойство CSS, которое задает позицию картинки фона",		right: "background-position"},
+	            {num: 150, d:5, content: "Свойство CSS, которое задает начальное положение картинки фона",		right: "background-position"},
 	            {num: 151, d:5, content: "Свойство CSS, которое задает прокрутку картинки фона",		right: "background-attachment"},
 	            {num: 152, content: "Свойство CSS, которое задает способ повторения картинки фона",		right: "background-repeat"},
 	            {num: 153, content: "Свойство-сокращение для фона",		right: "background"},
@@ -224,19 +224,8 @@ var	model = [
 	            
               
       		]
-       	},
+       	}
 
-			{
-            testname: "Тест для Куща",
-            num_questions: [3],
-            num_questions_pro: [3],
-            intro: "Тест, определяющий, насколько хорошо вы себя знаете.",
-            questions: [
-            	{num: 1, d:5,content: "Ваша фамилия",		right: "Кущ"},
-            	{num: 2, d:5,content: "Ваш возраст",		right: "32 года"},
-              {num: 3, d:5,content: "Ваше имя", 	right: "Чебураша"}
-      ]
-     	}
-
+			
 
        ];
