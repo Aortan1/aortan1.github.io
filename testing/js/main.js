@@ -28,6 +28,7 @@ testingApp.controller("TestingCtrl", function ($scope) {
             list = model[nt].questions.shuffle();
 
             if (pro) {
+            $(".block").addClass("bl-pro");  
             list = list.filter(function(x) {
             return x.d > 0; // теперь в списке list только вопросы с ненулевым свойством d
             });
@@ -37,7 +38,7 @@ testingApp.controller("TestingCtrl", function ($scope) {
             if(!pro) $scope.num_questions = model[nt].num_questions; else $scope.num_questions = model[nt].num_questions_pro;
             $scope.numberall = list.length;
             $scope.nq = $scope.num_questions[0]; //checked в списке - первое значение числа вопросов.
-            
+            //$(".block").removeClass("bl-pro");
             };
 
 
