@@ -61,6 +61,9 @@ testingApp.controller("TestingCtrl", function ($scope) {
             $scope.clickHandler = function () {
             	$scope.right = list[i].right.toLowerCase();
               var answer = $scope.answer.trim().toLowerCase();
+              if(answer.substr(0,2)=="::") answer = answer.substr(2,answer.length-2); // обрезка :: перед псевдостилем.
+              if(answer.substr(0,1)==":") answer = answer.substr(1,answer.length-1); // обрезка : перед псевдостилем.
+              if(answer.substr(answer.length-2,2)=="()") answer = answer.substr(0,answer.length-2); // обрезка () в конце функции.                  
               if(answer.substr(0,1)=="<" && answer.substr(answer.length-1,1)==">") answer = answer.substr(1,answer.length-2); // обрезка скобок <>
 							
               if(answer && answer==$scope.right) 
