@@ -76,10 +76,11 @@ testingApp.controller("TestingCtrl", function ($scope) {
                   }
 							
              	if (i==number-1) { 
-            	//$scope.message = "Right answers "+n;
- 							//if($scope.answer && $scope.answer==$scope.right) n++;
- 							$scope.n_right = n;
- 							$scope.grade = (n*5/number).toFixed(2);
+ 							var grade = (n*5/number).toFixed(2);
+              $scope.n_right = 'Количество верных ответов: '+n+' из '+number+'.';
+              $scope.grade = 'Оценка: '+grade+' из 5.';
+              if (grade==5) $scope.n_right='Отличный результат! '+n+' из '+number+'!';
+
  							
             	$(".block").removeClass("appear");
             	$(".block.bl-end").addClass("appear");
