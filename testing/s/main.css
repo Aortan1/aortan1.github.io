@@ -18,7 +18,7 @@ body {
   font-size: 2.5em;
   color: black;
   background-color: #94b63e;
-  background: url("../i/76d.jpg") 0 15% no-repeat;
+  background: url("../i/76d.jpg") 0 25.5% no-repeat;
   background-size: cover;
   text-shadow: 1px 1px 2px #fff; }
 
@@ -28,11 +28,11 @@ div.container {
   div.container .block {
     display: none;
     width: 850px;
-    margin: 100px auto;
+    margin: 10vh auto;
     padding: 30px 50px;
     border: 1px solid transparent;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.8); }
+    background-color: rgba(255, 255, 255, 0.9); }
     div.container .block h1.h1-question {
       font-size: 1em;
       padding: 20px 0px; }
@@ -51,7 +51,7 @@ div.container {
     color: green;
     font-size: 1em; }
   div.container .bl-pro {
-    background: linear-gradient(to top left, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 128, 0.8) 5%, rgba(255, 255, 255, 0.8) 15%, rgba(255, 255, 255, 0.8) 85%, rgba(255, 255, 128, 0.8) 95%, rgba(255, 255, 255, 0.8) 100%); }
+    background: linear-gradient(to top left, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 128, 0.9) 5%, rgba(255, 255, 255, 0.9) 15%, rgba(255, 255, 255, 0.9) 85%, rgba(255, 255, 128, 0.9) 95%, rgba(255, 255, 255, 0.9) 100%); }
 
 .div-in {
   margin: 30px auto;

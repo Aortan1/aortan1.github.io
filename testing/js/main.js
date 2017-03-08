@@ -148,7 +148,11 @@ Array.prototype.shuffle = function() {
 // Т.е у прототипов array будет свойство .in_array.
 
 
-
+// var g=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
+// g=g.shuffle(); // испытание ф-и .shuffle()
+// for(i=0; i<g.length; i++){
+// console.log("g["+i+"] = "+g[i]);
+// }
 
 
 

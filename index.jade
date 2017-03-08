@@ -1,168 +1,173 @@
 
 
 html
-  head
-    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300|Noto+Sans|Roboto:700,400,300', rel='stylesheet', type='text/css')
-    link(rel="stylesheet", type="text/css", href="port-s/main.css")
-    link(href="https://fonts.googleapis.com/css?family=Fondamento")  
-    
-    script(type="text/javascript", src="//code.jquery.com/jquery-3.1.1.min.js")
-    script(type="text/javascript", src="port-js/main.js")
-    script(type="text/javascript", src="port-js/reload.js")
-    
+	head
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300|Noto+Sans|Roboto:700,400,300', rel='stylesheet', type='text/css')
+		link(rel="stylesheet", type="text/css", href="port-s/main.css")
+		link(href="https://fonts.googleapis.com/css?family=Fondamento")
+		
+		script(type="text/javascript", src="//code.jquery.com/jquery-3.1.1.min.js")
+		script(type="text/javascript", src="port-js/main.js")
+		script(type="text/javascript", src="port-js/reload.js")
+		
 
-  body
-    div.onsticky  
-    section.me
-      .main
-        .div-i
-          img.img-me(src="port-i/nick-img1.jpg", alt="")
-        h1 Alexandr Vasilyevich
-        p.coder HTML Coder
-        p.about I like to solve math problems, very responsible and punctual, can perform tasks independently and in a team, calm and hard. 
-          br
-          |Since childhood, fond of programming and computer hardware, like tourism, sports, music. 
-          br
-          |I read a lot, expands the knowledge of foreign languages. 
-          br
-          |My English level is Intermediate. 
-        a.contact-me(href="skype:aortan3?chat") contact me    
-          
-    section.info
-      .main
-        ul.ul-info
-          li.call 
-            p Call me 
-            a(href="#") +38(066) 287 75 71
-          li.skype 
-            p Skype me 
-            a(href="skype:aortan3?chat") aortan3
-          li.mail 
-            p Email me 
-            a(href="mailto:darto@gmail.com?subject=About job") darto@gmail.com
-          li.git 
-            p Watch me 
-            a(href="https://github.com/Aortan1", target="_blank") aortan1.github.io
-     section.knowlidge
-      .main
-        h2 My knowlidge
-        .skills
-          .skill.s_html
-            h3 html
-            div.circle.light
-            div.circle.black
-            div.circle.bg        
-            div.wrapper(data-anim="base wrapper")       
-              div.circle(data-anim="base left")
-              div.circle(data-anim="base right")
-          .skill.s_css
-            h3 css
-            div.circle.light
-            div.circle.black
-            div.circle.bg        
-            div.wrapper(data-anim="base wrapper")
-              div.circle(data-anim="base left")
-              div.circle(data-anim="base right")
-          .skill.s_js
-            h3 js
-            div.circle.light
-            div.circle.black
-            div.circle.bg          
-            div.wrapper(data-anim="base")
-              div.circle(data-anim="base left")
-              
-          .skill.s_jquery
-            h3 jquery
-            div.circle.light
-            div.circle.black
-            div.circle.bg          
-            div.wrapper(data-anim="base")
-              div.circle(data-anim="base left")
-              
-          .skill.s_jade
-            h3 jade
-            div.circle.light
-            div.circle.black
-            div.circle.bg          
-            div.wrapper(data-anim="base")
-              div.circle(data-anim="base left")
-              
-          .skill.s_sass
-            h3 sass
-            div.circle.light
-            div.circle.black
-            div.circle.bg          
-            div.wrapper(data-anim="base")
-              div.circle(data-anim="base left")
-              
-          .skill.s_php
-            h3 php
-            div.circle.light
-            div.circle.black
-            div.circle.bg          
-            div.wrapper(data-anim="base")
-              div.circle(data-anim="base left")
-                  
-              
-     section.my-pro
-      .main
-        h2 My projects
-        a.to-top(href="")
-          .line.n1
-          .line.n2
-           
-        .pro
-          a(href="http://aortan1.github.io/decoblog/",target="_blank")
-            .mask
-              p.view view site html
-              p.name Decoblog
-            img(src="port-i/pro-decoblog-2.jpg")
-        .pro
-          a(href="http://aortan1.github.io/magazine/",target="_blank")
-            .mask
-              p.view view site html
-              p.name Blog Magazine
-            img(src="port-i/pro-magazine.jpg")       
-        .pro
-          a(href="http://aortan1.github.io/skybox/",target="_blank")
-            .mask
-              p.view view site html
-              p.name Skybox
-            img(src="port-i/pro-skybox.jpg")
-        .pro
-          a(href="http://aortan1.github.io/viewport/",target="_blank")
-            .mask
-              p.view view site html
-              p.name Viewport
-            img(src="port-i/pro-viewport.jpg")
-        .pro
-          a(href="http://aortan1.github.io/notify/",target="_blank")
-            .mask
-              p.view view site html 
-              p.name Notify
-            img(src="port-i/pro-notify.jpg")
-        .pro
-          a(href="http://aortan1.github.io/mastermind",target="_blank")
-            .mask
-              p.view view site html
-              p.name Mastermind Game.  JavaScript.
-            img(src="port-i/pro-mastermind-58b.jpg")
-        .pro
-          a(href="http://aortan1.github.io/rubiks-cube/",target="_blank")
-            .mask
-              p.view view site html
-              p.name Rubik's Cube Game. JavaScript & jQuery.
-            img(src="port-i/pro-rubiks-cube4.jpg") 
-        .pro
-          a(href="https://youtu.be/ViwUo4oVN8Y",target="_blank")
-            .mask
-              p.view view promo video
-              p.name Online Poker Game. PHP.
-            img(src="port-i/pro-poker.jpg")       
-        
-     section.footer
-       .main
-         form(action="")
-           a.contact-me(href="skype:aortan3?chat") contact me
-         p.thanks Thank you for your watching!
-      
+	body
+		div.onsticky
+		section.me
+			.main
+				.div-i
+					img.img-me(src="port-i/nick-img1.jpg", alt="")
+				h1 Alexandr Vasilyevich
+				p.coder HTML Coder
+				p.about I like to solve math problems, very responsible and punctual, can perform tasks independently and in a team, calm and hard. 
+					br
+					|Since childhood, fond of programming and computer hardware, like tourism, sports, music. 
+					br
+					|I read a lot, expands the knowledge of foreign languages. 
+					br
+					|My English level is Intermediate. 
+				a.contact-me(href="skype:aortan3?chat") contact me
+					
+		section.info
+			.main
+				ul.ul-info
+					li.call 
+						p Call me 
+						a(href="#") +38(066) 287 75 71
+					li.skype 
+						p Skype me 
+						a(href="skype:aortan3?chat") aortan3
+					li.mail 
+						p Email me 
+						a(href="mailto:darto@gmail.com?subject=About job") darto@gmail.com
+					li.git 
+						p Watch me 
+						a(href="https://github.com/Aortan1", target="_blank") aortan1.github.io
+		section.knowlidge
+			.main
+				h2 My knowlidge
+				.skills
+					.skill.s_html
+						h3 html
+						div.circle.light
+						div.circle.black
+						div.circle.bg
+						div.wrapper(data-anim="base wrapper")
+							div.circle(data-anim="base left")
+							div.circle(data-anim="base right")
+					.skill.s_css
+						h3 css
+						div.circle.light
+						div.circle.black
+						div.circle.bg
+						div.wrapper(data-anim="base wrapper")
+							div.circle(data-anim="base left")
+							div.circle(data-anim="base right")
+					.skill.s_js
+						h3 js
+						div.circle.light
+						div.circle.black
+						div.circle.bg
+						div.wrapper(data-anim="base")
+							div.circle(data-anim="base left")
+							
+					.skill.s_jquery
+						h3 jquery
+						div.circle.light
+						div.circle.black
+						div.circle.bg
+						div.wrapper(data-anim="base")
+							div.circle(data-anim="base left")
+							
+					.skill.s_jade
+						h3 jade
+						div.circle.light
+						div.circle.black
+						div.circle.bg
+						div.wrapper(data-anim="base")
+							div.circle(data-anim="base left")
+							
+					.skill.s_sass
+						h3 sass
+						div.circle.light
+						div.circle.black
+						div.circle.bg
+						div.wrapper(data-anim="base")
+							div.circle(data-anim="base left")
+							
+					.skill.s_php
+						h3 php
+						div.circle.light
+						div.circle.black
+						div.circle.bg
+						div.wrapper(data-anim="base")
+							div.circle(data-anim="base left")
+
+
+		section.my-pro
+			.main
+				h2 My projects
+				a.to-top(href="")
+					.line.n1
+					.line.n2
+					
+				.pro
+					a(href="http://aortan1.github.io/decoblog/",target="_blank")
+						.mask
+							p.view view site html
+							p.name Decoblog
+						img(src="port-i/pro-decoblog-2.jpg")
+				.pro
+					a(href="http://aortan1.github.io/magazine/",target="_blank")
+						.mask
+							p.view view site html
+							p.name Blog Magazine
+						img(src="port-i/pro-magazine.jpg")
+				.pro
+					a(href="http://aortan1.github.io/skybox/",target="_blank")
+						.mask
+							p.view view site html
+							p.name Skybox
+						img(src="port-i/pro-skybox.jpg")
+				.pro
+					a(href="http://aortan1.github.io/viewport/",target="_blank")
+						.mask
+							p.view view site html
+							p.name Viewport
+						img(src="port-i/pro-viewport.jpg")
+				.pro
+					a(href="http://aortan1.github.io/notify/",target="_blank")
+						.mask
+							p.view view site html 
+							p.name Notify
+						img(src="port-i/pro-notify.jpg")
+				.pro
+					a(href="http://aortan1.github.io/testing/",target="_blank")
+						.mask
+							p.view view site html
+							p.name Testing of html and css knowledge. JavaScript & AngularJS.
+						img(src="port-i/pro-testing.jpg")
+				.pro
+					a(href="http://aortan1.github.io/mastermind",target="_blank")
+						.mask
+							p.view view site html
+							p.name Mastermind Game.	JavaScript.
+						img(src="port-i/pro-mastermind-58b.jpg")
+				.pro
+					a(href="http://aortan1.github.io/rubiks-cube/",target="_blank")
+						.mask
+							p.view view site html
+							p.name Rubik's Cube Game. JavaScript & jQuery.
+						img(src="port-i/pro-rubiks-cube4.jpg") 
+				.pro
+					a(href="https://youtu.be/ViwUo4oVN8Y",target="_blank")
+						.mask
+							p.view view promo video
+							p.name Online Poker Game. PHP.
+						img(src="port-i/pro-poker.jpg")
+
+		section.footer
+			.main
+				form(action="")
+					a.contact-me(href="skype:aortan3?chat") contact me
+				p.thanks Thank you for your watching!
