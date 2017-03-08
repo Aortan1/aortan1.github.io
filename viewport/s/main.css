@@ -290,7 +290,7 @@ section.b-wall .content ul.con-menu>li{
 }
 
 section.b-wall .content ul.con-menu>li:not(:last-child) h3{
-  width: 110%;
+  width: 108%;
   background: url("../i/lll2.png") 100% 0% no-repeat;
 }
 
