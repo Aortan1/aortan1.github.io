@@ -11,7 +11,8 @@ html(ng-app="testingApp")
 		
 
 		script(src='js/jquery.3.1.1.min.js')
-		script(src='js/angular.min.js')
+		//- script(src='js/angular.min.js')
+		script(src='js/angular.1.6.2.js')
 		script(src='js/model.json')
 		script(src='js/main.js')
 
@@ -44,10 +45,10 @@ html(ng-app="testingApp")
 
 
 			.block.bl-1
-				p.comment {{comment}}
+				p.comment(ng-bind='comment',da-bind='comment')
 				//-br
 				p.h1-question Вопроc {{i}}.
-				p.question {{message}}
+				p.question(ng-bind='message',da-bind='message')
 				.div-in
 					input#text(name="word",type="text", autofocus, ng-model="answer")
 					button.in.sub(ng-click="clickHandler()") Ввод

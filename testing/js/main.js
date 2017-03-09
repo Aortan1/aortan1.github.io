@@ -17,6 +17,8 @@ var list;
 var testingApp = angular.module("testingApp", []);
 testingApp.controller("TestingCtrl", function ($scope) {
 						
+
+
             $scope.model = model;
             $scope.nt = 0; // $scope.nt - номер теста. 0, или 1. 0 - по умолчайнию, checked.
 
@@ -60,6 +62,7 @@ testingApp.controller("TestingCtrl", function ($scope) {
             // };
 
             $scope.clickHandler = function () {
+
             	$scope.right = list[i].right.toLowerCase();
               var answer = $scope.answer.trim().toLowerCase();
               if(answer.substr(0,2)=="::") answer = answer.substr(2,answer.length-2); // обрезка :: перед псевдостилем.
@@ -68,10 +71,10 @@ testingApp.controller("TestingCtrl", function ($scope) {
               if(answer.substr(0,1)=="<" && answer.substr(answer.length-1,1)==">") answer = answer.substr(1,answer.length-2); // обрезка скобок <>
 							
               if(answer && answer==$scope.right) 
- 								{n++;	 $("p.comment").removeClass("c-wrong").addClass("c-right"); $scope.comment="Верно.";}
+ 								{n++;	  $scope.comment='Верно.'; $("p.comment").removeClass("c-wrong").addClass("c-right");}
  								else {
                   $scope.comment = list[i].content+" - "+list[i].right; 
-                  if($scope.answer) $scope.comment="Неверно. "+$scope.comment+", а не "+$scope.answer+"."; else $scope.comment+=".";
+                  if($scope.answer) $scope.comment='Неверно. '+$scope.comment+', а не '+$scope.answer+'.'; else $scope.comment+='.';
                   $("p.comment").removeClass("c-right").addClass("c-wrong"); 
                   }
 							
@@ -95,7 +98,8 @@ testingApp.controller("TestingCtrl", function ($scope) {
             	console.log("i = "+i+" n = "+n+" $scope.message = "+$scope.message+" $scope.answer = "+$scope.answer+" $scope.right = "+$scope.right);
             	//list[i	].right = $scope.answer;
             	$scope.answer='';            	
- 							
+ 							// da_bind('comment',comment);
+              // da_bind('message',answer);
             	i++; $scope.i = i+1;
               }
              
@@ -128,6 +132,15 @@ var ran = Math.ceil(r*n);
 // if (ran == n) {ran=1;}  
 return Math.floor(ran);  
 }
+
+// function da_bind (html_x, js_x) {
+//   var Bi = document.querySelectorAll('*[da-bind]');;
+//   for (var i = 0; i <Bi.length; i++) {
+//     var att_value = Bi[i].getAttribute('da-bind');
+//     if (att_value==html_x) Bi[i].innerHTML=$scope.js_x;  
+// }};
+
+
 
 
 // Функция перемешивания элементов массива.

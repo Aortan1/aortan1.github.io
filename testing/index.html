@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <title>Testing</title>
     <script src="js/jquery.3.1.1.min.js"></script>
-    <script src="js/angular.min.js"></script>
+    <script src="js/angular.1.6.2.js"></script>
     <script src="js/model.json"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="s/main.css">
@@ -42,9 +42,9 @@
         </div>
       </div>
       <div class="block bl-1">
-        <p class="comment">{{comment}}</p>
+        <p class="comment" ng-bind="comment" da-bind="comment"></p>
         <p class="h1-question">Вопроc {{i}}.</p>
-        <p class="question">{{message}}</p>
+        <p class="question" ng-bind="message" da-bind="message"></p>
         <div class="div-in">
           <input id="text" name="word" type="text" autofocus ng-model="answer">
           <button class="in sub" ng-click="clickHandler()">Ввод</button>
