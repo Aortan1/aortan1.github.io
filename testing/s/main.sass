@@ -26,17 +26,16 @@ body
 	font-family: 'Lobster', Arial
 	font-style: italic
 	font-weight: 400
-	//font-size: 40px
-	font-size: 2.5em
+	//font-size: 32px
+	font-size: 2em
 	color: black
 	background-color: #94b63e
-	//background-size: cover
 	background: url("../i/76d.jpg") 0 25.5% no-repeat
 	background-size: cover
 	text-shadow: 1px 1px 2px #fff
 
+
 div.container
-	//font-size: 1em 
 	width: 100%
 	margin: 0 auto
 
@@ -49,15 +48,17 @@ div.container
 		border: 1px solid transparent;
 		border-radius: 20px
 		background-color: $wh
-		h1.h1-question
-			font-size: 1em
+		p.h1-question
+			//font-size: 1em
+			font-size: 1.125em
+			font-weight: 700
 			padding: 20px 0px
 		p.comment
-			font-size: 0.8em
+			//font-size: 1em//0.8em
 			//color: red
 			font-style: italic
 		p.question
-			font-size: 0.8em
+			//font-size:  1em//0.8em
 			color: black
 		
 
@@ -65,10 +66,10 @@ div.container
 		display: block
 	.c-wrong
 		color: red
-		font-size: 1em
+		font-size: 32px
 	.c-right
 		color: green
-		font-size: 1em
+		font-size: 32px
 	.bl-pro
 		background: linear-gradient(to top left, $wh 0%, $yel 5%, $wh 15%, $wh 85%, $yel 95%, $wh 100%)
 
@@ -86,7 +87,8 @@ div.container
 
 input#text
 	display: inline-block
-	font-size: 0.5em
+	font-size: 24px
+	//font-size: 0.5em
 	width: 150px
 	height: 35px
 	margin: 0 20px 0 0px
@@ -125,7 +127,8 @@ input.pro
 	margin-left: 15px
 
 input.pro, input.pro+label
-	font-size: 0.55em
+	//font-size: 0.55em
+	font-size: 18px
 	color: #333
 	opacity: 0
 	transition: 0.3s
@@ -143,6 +146,8 @@ input.nt:checked+label+input.pro, input.nt:checked+label+input.pro+label
 input.nq+label
 	border: 1px solid transparent
 	padding: 0 5px
+	font-weight: 700
+	font-size: 36px
 	transition: 0.3s
 
 input.nq:checked+label
@@ -194,7 +199,7 @@ button.in.var
 
 @media (max-width: 1400px)
 	body
-		//font-size: 2em
+		font-size: 2.5em
 
 	button.in, input#text
 		width: 18vw
@@ -202,7 +207,7 @@ button.in.var
 		min-width: 180px
 		//min-height: 40px
 		border-radius: 30px
-		font-size: 0.7em
+		//font-size: 0.7em
 		//color: red
 
 	input#text
@@ -211,7 +216,7 @@ button.in.var
 	 	border-radius: 26px
 
 	input.pro, input.pro+label
-		font-size: 0.8em
+		//font-size: 0.8em
 
 
 

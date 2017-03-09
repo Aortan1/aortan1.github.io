@@ -71,8 +71,8 @@ testingApp.controller("TestingCtrl", function ($scope) {
  								{n++;	 $("p.comment").removeClass("c-wrong").addClass("c-right"); $scope.comment="Верно.";}
  								else {
                   $scope.comment = list[i].content+" - "+list[i].right; 
-                  $("p.comment").removeClass("c-right").addClass("c-wrong"); 
                   if($scope.answer) $scope.comment="Неверно. "+$scope.comment+", а не "+$scope.answer+"."; else $scope.comment+=".";
+                  $("p.comment").removeClass("c-right").addClass("c-wrong"); 
                   }
 							
              	if (i==number-1) { 

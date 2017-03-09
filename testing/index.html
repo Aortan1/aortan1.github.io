@@ -14,7 +14,7 @@
   <body ng-controller="TestingCtrl">
     <div class="container">
       <div class="block bl-0 appear">
-        <h1 class="h1-question">Выберите обучающий тест:</h1>
+        <p class="h1-question">Выберите обучающий тест:</p>
         <form action="" id="form_ntest">
           <div class="rad-item" ng-repeat="test in model"> 
             <input class="nt" type="radio" name="nt" ng-value="$index" id="nt{{$index}}" ng-model="$parent.nt">
@@ -28,22 +28,22 @@
         </div>
       </div>
       <div class="block bl-start">
-        <h1 class="h1-question">{{message}}</h1>
-        <h1 class="h1-question">Количество вопросов ?
+        <p class="h1-question">{{message}}</p>
+        <p class="h1-question">Количество вопросов ?
           <form action="" id="form_nq">
             <div class="rad-item" ng-repeat="num in num_questions"> 
               <input class="nq" type="radio" name="nq" ng-value="num" id="nq{{num}}" ng-model="$parent.nq">
               <label for="nq{{num}}">{{num}};</label>
             </div>
           </form>
-        </h1>
+        </p>
         <div class="div-in">
           <button class="in sub" ng-click="startTest()">Начать тест</button>
         </div>
       </div>
       <div class="block bl-1">
         <p class="comment">{{comment}}</p>
-        <h1 class="h1-question">Вопроc {{i}}.</h1>
+        <p class="h1-question">Вопроc {{i}}.</p>
         <p class="question">{{message}}</p>
         <div class="div-in">
           <input id="text" name="word" type="text" autofocus ng-model="answer">
@@ -53,8 +53,8 @@
       </div>
       <div class="block bl-end">
         <p class="comment">{{comment}}</p><br>
-        <h1 class="h1-question">{{n_right}}</h1>
-        <h1 class="h1-question">{{grade}}</h1>
+        <p class="h1-question">{{n_right}}</p>
+        <p class="h1-question">{{grade}}</p>
         <div class="div-in">
           <button class="in sub" onclick="window['location'].reload(true)">Ещё раз		</button>
         </div>
