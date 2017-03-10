@@ -74,7 +74,7 @@ testingApp.controller("TestingCtrl", function ($scope) {
 
             	$scope.right = clear_word(list[i].right);
               var answer = clear_word($scope.answer);
-              
+
 							
               if(answer && answer==$scope.right) 
  								{n++;	  $scope.comment='Верно.'; $("p.comment").removeClass("c-wrong").addClass("c-right");}
