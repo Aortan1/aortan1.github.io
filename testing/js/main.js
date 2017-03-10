@@ -63,12 +63,18 @@ testingApp.controller("TestingCtrl", function ($scope) {
 
             $scope.clickHandler = function () {
 
-            	$scope.right = list[i].right.toLowerCase();
-              var answer = $scope.answer.trim().toLowerCase();
-              if(answer.substr(0,2)=="::") answer = answer.substr(2,answer.length-2); // обрезка :: перед псевдостилем.
-              if(answer.substr(0,1)==":") answer = answer.substr(1,answer.length-1); // обрезка : перед псевдостилем.
-              if(answer.substr(answer.length-2,2)=="()") answer = answer.substr(0,answer.length-2); // обрезка () в конце функции.                  
-              if(answer.substr(0,1)=="<" && answer.substr(answer.length-1,1)==">") answer = answer.substr(1,answer.length-2); // обрезка скобок <>
+              function clear_word(x){
+                var cl = x.trim().toLowerCase();
+                if(cl.substr(0,2)=="::") cl = cl.substr(2,cl.length-2); // обрезка :: перед псевдостилем.
+                if(cl.substr(0,1)==":") cl = cl.substr(1,cl.length-1); // обрезка : перед псевдостилем.
+                if(cl.substr(cl.length-2,2)=="()") cl = cl.substr(0,cl.length-2); // обрезка () в конце функции.                  
+                if(cl.substr(0,1)=="<" && cl.substr(cl.length-1,1)==">") cl = cl.substr(1,cl.length-2); // обрезка скобок <>
+                return cl;
+              }
+
+            	$scope.right = clear_word(list[i].right);
+              var answer = clear_word($scope.answer);
+              
 							
               if(answer && answer==$scope.right) 
  								{n++;	  $scope.comment='Верно.'; $("p.comment").removeClass("c-wrong").addClass("c-right");}
