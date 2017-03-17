@@ -208,17 +208,29 @@ button.for-changing-bg {
   float: left;
   width: 200px;
   height: 50px;
-  background-color: transparent;
+  background: transparent;
   border: 2px outset white;
   border-radius: 30px;
   color: white;
-  opacity: 0.3;
+  opacity: 0.5;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   outline: none;
   transition: 1s; }
+  button.for-changing-bg.but1:hover {
+    background: url("../i/bg-testing-wonder.jpg") 0 17.5% no-repeat;
+    background-size: cover;
+    transition: 1s; }
+  button.for-changing-bg.but2:hover {
+    background: url("../i/bg-testing-maya-bay.jpg") 0 17% no-repeat;
+    background-size: cover;
+    transition: 1s; }
+  button.for-changing-bg.but3:hover {
+    background: url("../i/bg-testing-machu_picchu.jpg") 0 13% no-repeat;
+    background-size: cover;
+    transition: 1s; }
 
 button:hover {
   opacity: 0.8;
