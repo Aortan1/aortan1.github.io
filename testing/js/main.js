@@ -127,17 +127,22 @@ $(".block").keyup(function(event){
    }
 });
 
+$(".but1").click(function(){
+    $("body").removeClass("bg2").removeClass("bg3").addClass("bg1");         
+});
+$(".but2").click(function(){
+    $("body").removeClass("bg1").removeClass("bg3").addClass("bg2");         
+}); 
+$(".but3").click(function(){
+    $("body").removeClass("bg1").removeClass("bg2").addClass("bg3");         
+});
+
+
 
 });
 
 
 
-function rando(n){
-var r=Math.random();
-var ran = Math.ceil(r*n);
-// if (ran == n) {ran=1;}  
-return Math.floor(ran);  
-}
 
 // function da_bind (html_x, js_x) {
 //   var Bi = document.querySelectorAll('*[da-bind]');;

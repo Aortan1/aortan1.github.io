@@ -17,10 +17,22 @@ body {
   font-weight: 400;
   font-size: 2em;
   color: black;
-  background-color: #94b63e;
-  background: url("../i/76d.jpg") 0 25.5% no-repeat;
-  background-size: cover;
   text-shadow: 1px 1px 2px #fff; }
+
+.bg1 {
+  background: url("../i/bg-testing-wonder.jpg") 0 17.5% no-repeat;
+  background-size: cover;
+  transition: 1s; }
+
+.bg2 {
+  background: url("../i/bg-testing-maya-bay.jpg") 0 17% no-repeat;
+  background-size: cover;
+  transition: 1s; }
+
+.bg3 {
+  background: url("../i/bg-testing-machu_picchu.jpg") 0 13% no-repeat;
+  background-size: cover;
+  transition: 1s; }
 
 input[type="radio"] {
   visibility: hidden; }
@@ -48,11 +60,12 @@ input[type="radio"]:checked + label:before {
 
 div.container {
   width: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border: 0px solid red; }
   div.container .block {
     display: none;
     width: 850px;
-    margin: 10vh auto;
+    margin: 10vh auto 0;
     padding: 30px 50px;
     border: 1px solid transparent;
     border-radius: 20px;
@@ -180,6 +193,41 @@ button.in.var {
   color: black;
   width: 53px;
   border-radius: 20px; }
+
+.buttons-for-changing-bg {
+  width: 850px;
+  margin: 0px auto;
+  position: absolute;
+  top: 515px;
+  left: calc(50% - 425px); }
+
+button.for-changing-bg {
+  cursor: pointer;
+  margin: 0px 40px;
+  font-size: 25px;
+  float: left;
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  border: 4px outset white;
+  border-radius: 30px;
+  color: white;
+  opacity: 0.3;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  transition: 1s; }
+
+button:hover {
+  opacity: 0.8;
+  transition: 1s; }
+
+button:active {
+  border-style: inset;
+  opacity: 1.0;
+  transition: 1s; }
 
 @media handheld {
   body {

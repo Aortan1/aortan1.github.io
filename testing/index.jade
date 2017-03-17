@@ -17,9 +17,9 @@ html(ng-app="testingApp")
 		script(src='js/main.js')
 
 		link(rel='stylesheet', type='text/css', href='s/main.css')
-		
 
-	body(ng-controller="TestingCtrl")
+
+	body.bg1(ng-controller="TestingCtrl")
 		div.container
 			.block.bl-0.appear
 				p.h1-question Выберите обучающий тест:
@@ -31,6 +31,7 @@ html(ng-app="testingApp")
 							label(for="pro{{$index}}") (я - профи).
 				.div-in
 					button.in.sub(ng-click="chooseTest()") Выбрать
+					button.in.sub(onclick="window['location'].reload(true)") Ещё раз
 
 
 			.block.bl-start
@@ -61,4 +62,8 @@ html(ng-app="testingApp")
 				p.h1-question {{n_right}}
 				p.h1-question {{grade}}
 				.div-in
-						button.in.sub(onclick="window['location'].reload(true)") Ещё раз		
+
+			.buttons-for-changing-bg
+				button.for-changing-bg.but1 Фон 1
+				button.for-changing-bg.but2 Фон 2
+				button.for-changing-bg.but3 Фон 3

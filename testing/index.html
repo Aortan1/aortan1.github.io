@@ -11,7 +11,7 @@
     <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="s/main.css">
   </head>
-  <body ng-controller="TestingCtrl">
+  <body class="bg1" ng-controller="TestingCtrl">
     <div class="container">
       <div class="block bl-0 appear">
         <p class="h1-question">Выберите обучающий тест:</p>
@@ -25,6 +25,7 @@
         </form>
         <div class="div-in">
           <button class="in sub" ng-click="chooseTest()">Выбрать</button>
+          <button class="in sub" onclick="window['location'].reload(true)">Ещё раз</button>
         </div>
       </div>
       <div class="block bl-start">
@@ -55,9 +56,12 @@
         <p class="comment">{{comment}}</p><br>
         <p class="h1-question">{{n_right}}</p>
         <p class="h1-question">{{grade}}</p>
-        <div class="div-in">
-          <button class="in sub" onclick="window['location'].reload(true)">Ещё раз		</button>
-        </div>
+        <div class="div-in"></div>
+      </div>
+      <div class="buttons-for-changing-bg">
+        <button class="for-changing-bg but1">Фон 1</button>
+        <button class="for-changing-bg but2">Фон 2</button>
+        <button class="for-changing-bg but3">Фон 3</button>
       </div>
     </div>
   </body>
