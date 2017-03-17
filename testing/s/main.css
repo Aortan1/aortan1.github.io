@@ -220,15 +220,15 @@ button.for-changing-bg {
   outline: none;
   transition: 1s; }
   button.for-changing-bg.but1:hover {
-    background: url("../i/bg-testing-wonder.jpg") 0 17.5% no-repeat;
+    background: url("../i/bg-testing-wonder-m.jpg") 0 17.5% repeat;
     background-size: cover;
     transition: 1s; }
   button.for-changing-bg.but2:hover {
-    background: url("../i/bg-testing-maya-bay.jpg") 0 17% no-repeat;
+    background: url("../i/bg-testing-maya-bay-m.jpg") 0 17% repeat;
     background-size: cover;
     transition: 1s; }
   button.for-changing-bg.but3:hover {
-    background: url("../i/bg-testing-machu_picchu.jpg") 0 13% no-repeat;
+    background: url("../i/bg-testing-machu_picchu-m.jpg") 0 13% repeat;
     background-size: cover;
     transition: 1s; }
 
