@@ -177,11 +177,12 @@ button.in {
   button.in:last-child {
     margin-right: 0; }
   button.in:hover {
-    background-position: 0 -3px;
+    border-width: 3px;
     transition: 0.3s;
     color: yellow; }
   button.in:active {
-    background-position: 0 -10px;
+    border-width: 5px;
+    background-position: 0 -5px;
     box-shadow: inset 1px 1px 5px 1px #517900; }
 
 button.in.skip {
