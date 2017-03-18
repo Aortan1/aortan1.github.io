@@ -25,7 +25,6 @@
         </form>
         <div class="div-in">
           <button class="in sub" ng-click="chooseTest()">Выбрать</button>
-          <button class="in sub" onclick="window['location'].reload(true)">Ещё раз</button>
         </div>
       </div>
       <div class="block bl-start">
@@ -56,7 +55,9 @@
         <p class="comment">{{comment}}</p><br>
         <p class="h1-question">{{n_right}}</p>
         <p class="h1-question">{{grade}}</p>
-        <div class="div-in"></div>
+        <div class="div-in">
+          <button class="in sub" onclick="window['location'].reload(true)">Ещё раз</button>
+        </div>
       </div>
       <div class="buttons-for-changing-bg">
         <button class="for-changing-bg but1">Фон 1</button>
