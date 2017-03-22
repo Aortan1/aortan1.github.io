@@ -91,8 +91,10 @@ section.b-navigation {
   width: 160px;
   height: 45px;
   float: left;
-  margin: 15px 0px 0px 0;
-  background: url(../i/sprite.png);
+  margin: 16px 0px 0px 0;
+  /*background: url(../i/sprite.png);*/
+  background: url(../i/skybox_logo_8.png) no-repeat;
+  background-size: contain;
   border: 0px solid red;
 }
 

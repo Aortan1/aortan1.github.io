@@ -30,7 +30,7 @@ body {
   transition: 1s; }
 
 .bg3 {
-  background: url("../i/bg-testing-machu_picchu-m.jpg") 0 13% repeat;
+  background: url("../i/bg-testing-magic-sky.jpg") 0 13% repeat;
   background-size: cover;
   transition: 1s; }
 
@@ -229,7 +229,7 @@ button.for-changing-bg {
     background-size: cover;
     transition: 1s; }
   button.for-changing-bg.but3:hover {
-    background: url("../i/bg-testing-machu_picchu-m.jpg") 0 20% repeat;
+    background: url("../i/bg-testing-magic-sky.jpg") 0 35% repeat;
     background-size: cover;
     transition: 1s; }
 
