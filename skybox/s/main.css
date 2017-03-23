@@ -54,7 +54,7 @@ color: #566375;
  input:-ms-input-placeholder      {color:#96a6a7;}
 
 .main {
-  max-width: 1280px;
+  /*max-width: 1280px;*/
   min-width: 960px;
   height: 100%;
   position: relative;
@@ -186,7 +186,7 @@ height: 75px;
 .b-navigation div.red {
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 0;
   width: 50%;/*calc(26% - 182px);*/
   height: 75px;
   background-color: #e94e38;
@@ -314,7 +314,7 @@ section.b-search {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
-  z-index: 11;
+  z-index: 17;
 }
 
 .b-filter .select {
@@ -328,7 +328,7 @@ section.b-search {
   background-color: transparent;
   border: 1px solid #96a6a7;
   cursor: pointer;
-  z-index: 11;
+  z-index: 17;
 }
 
 .b-filter .field {
@@ -380,7 +380,7 @@ section.b-search {
 .field ul.list {
   width: 217px;
   margin-top: 2px;
-  z-index: 27;
+  z-index: 37;
   position: absolute;
   border-radius: 25px;
   border: 1px solid #b6c0c1;
@@ -393,13 +393,14 @@ section.b-search {
   background-color: white;
   border: 0px solid #96a6a7;
   box-shadow: 0 0 4px #96a6a7;
+  z-index: 37;
 }
 
 
 
 .field ul.list li {
   position: relative;
-  z-index: 27;
+  z-index: 37;
   list-style-type: none;
   padding: 12px 24px;
   color: black;
