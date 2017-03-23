@@ -33,11 +33,13 @@ h6 {
   font-size: 14px;
   color: #96a6a7;
   display: inline;
+  transition: 0.3s;
 }
 
 a:hover {
   color: #e94e38;
   cursor: url("../i/cursor_black_hand.png");
+  transition: 0.3s;
 }
 
 a:active {
@@ -48,10 +50,11 @@ p {
 color: #566375;
 }
 
- input::-webkit-input-placeholder {color:#96a6a7;}
- input::-moz-placeholder          {color:#96a6a7;}
- input:-moz-placeholder           {color:#96a6a7;}
- input:-ms-input-placeholder      {color:#96a6a7;}
+input::-webkit-input-placeholder {color:#fff; font-size: 17px; font-family: Open Sans;}
+input::-moz-placeholder          {color:#fff; font-size: 17px; font-family: Open Sans;}
+input:-moz-placeholder           {color:#fff; font-size: 17px; font-family: Open Sans;}
+input:-ms-input-placeholder      {color:#fff; font-size: 17px; font-family: Open Sans;}
+  
 
 .main {
   /*max-width: 1280px;*/
@@ -67,13 +70,15 @@ color: #566375;
 .b-navigation .main, .b-search .main {
   border: 0px solid red;
   padding: 0 25px;
-  width: 980px;  
+  width: 980px;
+  z-index: 5;  
 }
 
 .b-filter .main {
   border: 0px solid red;
   max-width: 1280px;
   min-width: 960px;  
+  z-index: 4; 
 }
 
 
@@ -128,7 +133,7 @@ section.b-navigation {
 .b-navigation .nav-find {
   float: right;
   position: relative;
-  z-index: 2;
+  z-index: 1;
   width: 6%;
   height: 75px;
   background-color: #e2dee0;
@@ -148,7 +153,7 @@ section.b-navigation {
 
 .b-navigation .nav-login {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   width: 24%;
   height: 75px;
   float: right;
@@ -235,7 +240,7 @@ section.b-search {
  .b-search div.hid-find input.btn-find {
   position: absolute;
   top: 22px; right: 6%;
-  z-index: 22; 
+  z-index: 1; 
   display: block;
   width: 14%;
   height: 30px;
@@ -275,7 +280,7 @@ section.b-search {
 
  .b-search div.hid-login input.btn-login {
   margin: 20px auto;
-  z-index: 22; 
+  z-index: 1; 
   display: block;
   width: 30%;
   height: 30px;
@@ -289,6 +294,10 @@ section.b-search {
   cursor: pointer; 
  }
 
+.b-search  input.inp::-webkit-input-placeholder {color:#96a6a7; font-size: 15px;}
+.b-search  input.inp::-moz-placeholder          {color:#96a6a7; font-size: 15px;}
+.b-search  input.inp:-moz-placeholder           {color:#96a6a7; font-size: 15px;}
+.b-search  input.inp:-ms-input-placeholder      {color:#96a6a7; font-size: 15px;}
 
 
 
@@ -306,7 +315,7 @@ section.b-search {
 }
 
 
-.b-search .select {
+.b-search .select, .b-search input.keyword {
   width: 217px;
   height: 50px;
   border-radius: 25px;
@@ -314,8 +323,24 @@ section.b-search {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
-  z-index: 17;
+  z-index: 5;
 }
+
+.b-search input.keyword {
+  width: 461px;
+  padding-left: 25px;
+  color:#fff;
+  font-size: 17px;
+}
+
+
+/*
+.b-search input.keyword::-webkit-input-placeholder {
+  color:#fff;
+  font-size: 17px;
+}*/
+
+
 
 .b-filter .select {
   width: 115px;
@@ -328,14 +353,16 @@ section.b-search {
   background-color: transparent;
   border: 1px solid #96a6a7;
   cursor: pointer;
-  z-index: 17;
+  z-index: 4;
 }
 
 .b-filter .field {
   margin: 0 0 0 10px;
+  position: relative; 
+  z-index: 4;
 }
 
-.field:hover {position: relative; z-index: 26;}
+/*.b-filter .field:hover {position: relative; z-index: 4;}*/
 
 .b-filter .showmap {
   color: #96a6a7;
@@ -365,22 +392,24 @@ section.b-search {
 }
 
 .field span {
-  margin: 15px 0 0 25px;
+  margin: 12px 0 0 25px;
   display: block;
   background-color: rgba(255, 255, 0, 0.0);
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
   overflow: hidden;
 }
 
 .b-filter .field span {
-  margin: 5px 0 0 10px;
+  margin: 6px 0 0 12px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .field ul.list {
   width: 217px;
   margin-top: 2px;
-  z-index: 37;
+  z-index: 4;
   position: absolute;
   border-radius: 25px;
   border: 1px solid #b6c0c1;
@@ -393,19 +422,21 @@ section.b-search {
   background-color: white;
   border: 0px solid #96a6a7;
   box-shadow: 0 0 4px #96a6a7;
-  z-index: 37;
+  z-index: 4;
 }
 
 
 
 .field ul.list li {
   position: relative;
-  z-index: 37;
+  z-index: 5;
   list-style-type: none;
   padding: 12px 24px;
   color: black;
   border-radius: 25px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  transition-property: color;
+  transition-duration: 0.3s;
 }
 
 .b-filter .field ul.list li {
@@ -414,6 +445,7 @@ section.b-search {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 25px;
   border: 2px solid transparent;
+  /*transition: 0.3s;*/
 }
 
 .b-search .field ul.list li:hover {
@@ -421,6 +453,7 @@ section.b-search {
   color: #e94e38;
   background-color: #fff;
   border: 1px solid #b6c0c1;
+  /*transition: 0.3s;*/
 }
 
 .b-filter .field ul.list li:hover {
@@ -428,6 +461,7 @@ section.b-search {
   color: #e94e38;
   background-color: #fff;
   border: 2px solid #e2dee0;
+  /*transition: 0.3s;*/
 }
 
 .field {
@@ -465,7 +499,7 @@ section.b-search {
   width: 980px;
   height: 100%;
   margin: 0 auto;
-  padding: 0 25px 0 28px;
+  padding: 0 35px 0 28px;
   border: 0px solid green;
 }
 
@@ -600,7 +634,7 @@ ul.posts div.picture div.p-showmore {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: 15;
+  z-index: 1;
   opacity:0.0;
 } 
 
@@ -633,17 +667,19 @@ ul.posts .post-orange_beach .p-showmore {
 ul.posts .post-violet_house .p-showmore {
   background-color: rgba(136,73,156,0.8);
   border:1px solid #88499c;
+  transition: 0.5s;
   /*background-color: #88499c;*/
 }
 
 ul.posts div.picture div.p-showmore:hover {
  opacity: 1;
- z-index: 15;
+ z-index: 2;
+ transition: 0.5s;
 }
 
 div.p-s-1 {
   position: relative;
-  z-index: 17;
+  z-index: 2;
   width: 140px;
   height: 26px;
   margin: 22px auto;
@@ -656,11 +692,14 @@ div.p-s-1 {
    
 }
 
-div.p-s-1:hover , div.p-s-2:hover , div.p-s-3:hover {top: 1px;}
+div.p-s-1:hover , div.p-s-2:hover , div.p-s-3:hover {
+  top: 1px;
+  transition: 0.3s;
+}
 
 div.p-s-2 {
   position: relative;
-  z-index: 17;
+  z-index: 2;
   float: left;
   width: 90px;
   height: 20px;
@@ -673,7 +712,7 @@ div.p-s-2 {
 
 div.p-s-3 {
   position: relative;
-  z-index: 17;
+  z-index: 2;
   float: right;
   width: 25px;
   height: 20px;
@@ -705,11 +744,14 @@ ul.posts div.p-price {
 }
 
 
-ul.posts div.p-price:hover {color: yellow;}
+ul.posts div.p-price:hover {
+  color: yellow;
+  transition: 0.3s;
+}
 
 ul.posts div.p-sign {
   position: relative;
-  z-index:20;
+  z-index: 2;
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -720,6 +762,7 @@ ul.posts div.p-sign {
 
 ul.posts div.p-sign:hover {
   position: relative;
+  transition: 0.3s;
   top: 3px;
 }
 
@@ -1084,7 +1127,7 @@ padding: 65px 0 45px 0;
   width: 492px; 
   margin: 0 auto;}
 
-.b-footer input.inp-email {
+input.inp-email {
   width: 490px;
   height: 60px;
   border-radius: 30px;
@@ -1093,20 +1136,20 @@ padding: 65px 0 45px 0;
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-  z-index: 11;
+  z-index: 1;
 }
 
-.b-footer input::-webkit-input-placeholder {color:#fff;}
+/*.b-footer input::-webkit-input-placeholder {color:#fff;}
 .b-footer input::-moz-placeholder          {color:#fff;}
 .b-footer input:-moz-placeholder           {color:#fff;}
-.b-footer input:-ms-input-placeholder      {color:#fff;}
+.b-footer input:-ms-input-placeholder      {color:#fff;}*/
 
 
 
  .b-footer input.btn-email {
   position: absolute;
   top: 5px; right:7px;
-  z-index: 22; 
+  z-index: 1; 
   display: block;
   width: 120px;
   height: 50px;
