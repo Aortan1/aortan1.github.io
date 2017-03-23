@@ -14,6 +14,7 @@ ul {
 }
 
 body {
+  cursor: url("../i/cursor_black_hand.png");
   width: 100%;
   min-width: 960px;
   margin: 0 auto;
@@ -36,6 +37,7 @@ h6 {
 
 a:hover {
   color: #e94e38;
+  cursor: url("../i/cursor_black_hand.png");
 }
 
 a:active {
@@ -462,8 +464,8 @@ section.b-search {
   width: 980px;
   height: 100%;
   margin: 0 auto;
-  padding: 0 25px 0 25px;
-  border: 0px solid green; 
+  padding: 0 25px 0 28px;
+  border: 0px solid green;
 }
 
 
