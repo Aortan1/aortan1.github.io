@@ -1,6 +1,4 @@
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-
 * {
   padding: 0;
   margin: 0;
@@ -30,7 +28,7 @@ a,
 h6 {
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   color: #96a6a7;
   display: inline;
@@ -56,14 +54,24 @@ color: #566375;
 .main {
   max-width: 1280px;
   min-width: 960px;
+  height: 100%;
   position: relative;
   margin: 0 auto;
   padding: 0 0px;
+  border: 0px solid blue;
+  z-index: 1;
+}
+
+.b-navigation .main, .b-search .main {
   border: 0px solid red;
+  padding: 0 25px;
+  width: 980px;  
 }
 
 .b-filter .main {
-width: 960px;  
+  border: 0px solid red;
+  max-width: 1280px;
+  min-width: 960px;  
 }
 
 
@@ -75,16 +83,17 @@ section.b-navigation {
 }
 
 .b-navigation .nav-links {
-  width: 56%;
-  float: left;
+  width: 686px;/* 56%; */
+  /*float: left;*/
+  display: inline-block;
   height: 75px;
-  margin-left: calc(26% - 180px);
+  margin-left: 0px;/*calc(26% - 180px);*/
   background-color: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  border: solid 1px transparent;
+  border: solid 0px black;/*transparent;*/
 }
 
 .b-navigation .nav-links .logo {
@@ -99,11 +108,13 @@ section.b-navigation {
 }
 
 .b-navigation .nav-links ul {
-  float: rigth;
+  /*float: rigth;*/
+  display: inline-block;
   position: absolute;
-  right: calc(45% - 160px);
+  /*right: calc(45% - 160px);*/
   height: 45px;
   overflow: hidden;
+  padding-left: 30px;
   border: 0px solid blue;
 }
 
@@ -172,8 +183,9 @@ height: 75px;
 
 .b-navigation div.red {
   position: absolute;
+  top: 0;
   right: 0px;
-  width: calc(26% - 182px);
+  width: 50%;/*calc(26% - 182px);*/
   height: 75px;
   background-color: #e94e38;
 }
@@ -194,7 +206,7 @@ section.b-search {
 .b-search div.hid-find{
  display: none; 
  position: absolute; 
- margin: 0 0 0 70%;
+ margin: 0 0 0 686px;
  border-radius: 0 0 35px 35px; 
  width: 30%;
  height: 75px;
@@ -237,7 +249,7 @@ section.b-search {
 .b-search div.hid-login{
  display: none;
  position: absolute;
- margin: 0 0 0 76%;
+ margin: 0 0 0 745px;
  border-radius: 0 0 35px 35px; 
  width: 24%;
  height: 185px;
@@ -444,7 +456,14 @@ section.b-search {
   height: 60px;
   margin: 0 auto;
   border-bottom: 1px solid #e2dee0;
-  /*background-color: #fff;*/
+
+}
+.b-filter_panel {  
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 25px 0 25px;
+  border: 0px solid green; 
 }
 
 
@@ -453,6 +472,7 @@ section.b-search {
   float: left;
   margin: 23px 20px 0 0px;
   height: 10px;
+  padding-left: 0px;
 }
 
 .b-filter ul.links li {
@@ -472,7 +492,7 @@ section.b-search {
 .b-filter ul.filters {
   float: right;
   width: 355px;
-  margin: -2px -10px 0 0;
+  margin: -2px -20px 0 0;
   border-radius: 10px;
 }
 
