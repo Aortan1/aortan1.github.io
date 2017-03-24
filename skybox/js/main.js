@@ -142,7 +142,8 @@ var places = {
   
   $(".showmap").click(function(){
     var pl = $("#g-place").html();
-    $("iframe.map").attr("src",goo+places[pl]);
+    if($("iframe.map").attr("src")!=goo+places[pl]) 
+      $("iframe.map").attr("src",goo+places[pl]);
     $(".map-block").removeClass("none");          
   });
   
