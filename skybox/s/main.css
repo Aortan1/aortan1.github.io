@@ -735,7 +735,8 @@ ul.posts div.picture div.p-showmore:hover {
  transition: 0.5s;
 }
 
-div.p-s-1 {
+a.p-s-1 {  
+  display: block;
   position: relative;
   z-index: 2;
   width: 140px;
@@ -750,7 +751,9 @@ div.p-s-1 {
    
 }
 
-div.p-s-1:hover , div.p-s-2:hover , div.p-s-3:hover {
+
+
+a.p-s-1:hover , div.p-s-2:hover , div.p-s-3:hover {
   top: 1px;
   transition: 0.3s;
 }
@@ -988,13 +991,13 @@ ul.posts .wide-post .i-comment p {
   font-size: 15px;
 }
 
-ul.posts .wide-post a {
+ul.posts .wide-post a.read-more {
   text-transform: none;
   color: #566375;
   font-weight: 600;
 }
 
-ul.posts .wide-post  a:hover {
+ul.posts .wide-post  a.read-more:hover {
   color: #1baf5d;
 }
 
