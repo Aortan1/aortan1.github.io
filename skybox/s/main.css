@@ -14,7 +14,6 @@ ul {
 }
 
 body {
-  cursor: url("../i/cursor_black_hand.png");
   width: 100%;
   min-width: 960px;
   margin: 0 auto;
@@ -874,9 +873,12 @@ ul.posts ul.level li.emp {
   background-position: -220px -150px;
 }
 
-ul.posts ul.level li:last-child {
+ul.posts div.info ul.level li.like-num {
   background: none;
   position: relative;
+  font-size: 11px;
+  font-weight: 700;
+  color: #798788;
   top: -2px;
   left: 5px;
 }
