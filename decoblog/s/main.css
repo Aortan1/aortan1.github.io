@@ -53,7 +53,6 @@ h5 {
 }
 
 
-}
 h6 {
   font-size: 18px;
   letter-spacing: 3px;
@@ -782,5 +781,46 @@ section.b-content {
 .b-content .main {
   max-width: 360px;
 }
+
+}
+
+@media handheld (max-width: 790px){
+h1 {
+  font-size: 76px;
+  font-weight: 600;
+  letter-spacing: 6px;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+h5 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: #999999;
+}
+
+h6 {
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+p {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  text-transform: none;
+  /*text-align: justify;*/
+  text-align:center;
+}
+a {
+  font-size: 30px;
+  text-transform: none;
+  color: #fff;
+}
+
 
 }
