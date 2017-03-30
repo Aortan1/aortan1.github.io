@@ -784,7 +784,7 @@ section.b-content {
 
 }
 
-@media handheld (max-width: 790px){
+/*@media handheld {
 h1 {
   font-size: 76px;
   font-weight: 600;
@@ -813,7 +813,7 @@ p {
   letter-spacing: 1px;
   line-height: 28px;
   text-transform: none;
-  /*text-align: justify;*/
+
   text-align:center;
 }
 a {
@@ -823,4 +823,4 @@ a {
 }
 
 
-}
+}*/
