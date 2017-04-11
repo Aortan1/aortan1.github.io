@@ -30,12 +30,14 @@ testingApp.controller("TestingCtrl", function ($scope) {
             list = model[nt].questions.shuffle();
 
             if (pro) {
-            $(".block").addClass("bl-pro");  
-            list = list.filter(function(x) {
-            return x.d > 0; // теперь в списке list только вопросы с ненулевым свойством d
-            });
+              $(".block").addClass("bl-pro");  
+              list = list.filter(function(x) {return x.d > 4;});
+              // в случае pro (для профи) в списке list только вопросы со сложностью 4<d<10
+            } 
+            else
+              list = list.filter(function(x) {return x.d < 6;});
+              // иначе (для чайников) в списке list только вопросы со сложностью 0<d<6
 
-            };
             $scope.message = model[nt].intro;
             if(!pro) $scope.num_questions = model[nt].num_questions; else $scope.num_questions = model[nt].num_questions_pro;
             $scope.numberall = list.length;
