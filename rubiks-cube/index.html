@@ -1,0 +1,67 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+<h1>Rubik's Cube</h1>
+
+<div class="cube" onselectstart="return false" onmousedown="return false">
+  
+<div class="edge edge-1">   
+  <i>&#8593;</i> <i>&#8593;</i> <i>&#8593;</i>
+  <i></i> <i></i> <i></i>
+  <i>&#8595;</i> <i>&#8595;</i> <i>&#8595;</i>
+</div> 
+
+<div class="edge edge-2">   
+  <i></i> <i></i> <i></i>
+  <i></i> <i></i> <i></i>
+  <i></i> <i></i> <i></i>
+</div> 
+
+<div class="edge edge-3">   
+  <i></i> <i></i> <i></i>
+  <i></i> <i></i> <i></i>
+  <i></i> <i></i> <i></i>
+</div>
+
+<div class="edge edge-4">   
+  <i>&#8592;</i> <i></i> <i>&#8594;</i>
+  <i>&#8592;</i> <i></i> <i>&#8594;</i>
+  <i>&#8592;</i> <i></i> <i>&#8594;</i>
+</div> 
+  
+<div class="edge edge-5">   
+  <i>&#8592;</i> <i></i> <i>&#8594;</i>
+  <i>&#8592;</i> <i></i> <i>&#8594;</i>
+  <i>&#8592;</i> <i></i> <i>&#8594;</i>
+</div> 
+ 
+<div class="edge edge-6">   
+  <i></i> <i></i> <i></i>
+  <i></i> <i></i> <i></i>
+  <i></i> <i></i> <i></i>
+</div>  
+
+ 
+  
+  <form action="">
+<input type="button" class="but but11" value="&#8593;" title='Сместить "камеру" вокруг оси X ВВЕРХ'>
+<input type="button" class="but but1" value="&#8595;" title='Сместить "камеру" вокруг оси X ВНИЗ'>  
+<input type="button" class="but but2" value="&#10226;" title='Сместить "камеру" вокруг оси Y ПРОТИВ ЧАСОВОЙ СТРЕЛКИ '> 
+<input type="button" class="but but22" value="&#10227;" title='Сместить "камеру" вокруг оси Y ПО ЧАСОВОЙ СТРЕЛКЕ'>   
+<input type="button" class="but but33" value="&#8592;" title='Сместить "камеру" вокруг оси Z ВЛЕВО'>
+<input type="button" class="but but3" value="&#8594;" title='Сместить "камеру" вокруг оси Z ВПРАВО'>
+</form>
+  
+  
+</div>  
+
+<div class="axes">
+<span class="arrow ar_x">&#8594;</span>
+<span class="arrow ar_y">&#8594;</span>
+<span class="arrow ar_z">&#8594;</span>
+  <span class="xyz x">x</span>
+  <span class="xyz y">y</span>
+  <span class="xyz z">z</span>
+  
+</div>  
