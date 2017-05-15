@@ -509,8 +509,8 @@ body .ani {
     -webkit-animation-name: left-spin-sa;
     animation-name: left-spin-sa; }
   body .ani .s_php .circle[data-anim~=left] {
-    -webkit-animation-duration: 0.33s;
-    animation-duration: 0.33s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
     -webkit-animation-name: left-spin-ph;
     animation-name: left-spin-ph; }
   body .ani .s_html div[data-anim~=wrapper] {
@@ -686,16 +686,16 @@ body .ani {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   to {
-    -webkit-transform: rotate(118.8deg);
-    transform: rotate(118.8deg); } }
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); } }
 
 @keyframes left-spin-ph {
   from {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   to {
-    -webkit-transform: rotate(118.8deg);
-    transform: rotate(118.8deg); } }
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); } }
 
 @-webkit-keyframes close-wrapper {
   to {
