@@ -71,6 +71,7 @@ testingApp.controller("TestingCtrl", function ($scope) {
                 if(cl.substr(0,1)==":") cl = cl.substr(1,cl.length-1); // обрезка : перед псевдостилем.
                 if(cl.substr(cl.length-2,2)=="()") cl = cl.substr(0,cl.length-2); // обрезка () в конце функции.                  
                 if(cl.substr(0,1)=="<" && cl.substr(cl.length-1,1)==">") cl = cl.substr(1,cl.length-2); // обрезка скобок <>
+                if(cl.substr(0,1)=="/" && cl.substr(cl.length-1,1)=="/") cl = cl.substr(1,cl.length-2); // обрезка скобок / рег.выражений
                 return cl;
               }
 
