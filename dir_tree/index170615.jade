@@ -1,0 +1,28 @@
+html
+	head
+		script(type="text/javascript", src="//code.jquery.com/jquery-3.1.1.min.js")
+		script(type="text/javascript", src="js/main.js")
+		link(rel='stylesheet', type='text/css', href='s/main.css')
+
+	body
+
+		.window
+			.controls
+			.tree_window#tree_window
+				//- details.dir
+				//- 	summary.dir_name#root_dir_name Root folder
+				//- 	.create_dir
+				//- 		form(name="createDir",action="$", onsubmit = "return fun_createDir(this)")
+				//- 			input.actions.input_create_dir(type="text", name="dir_name", placeholder="Create folder", 
+				//- 			autocomplete="off")
+			.subwindow
+
+			.root_dir.display_none#div_for_cloning
+				.folder#dir0
+					details.dir
+						summary.dir_name Root folder
+					div.create_dir
+						form(name="createDir", actions="$", onsubmit = "return fun_createDir(this)")
+							input.actions.input_create_dir(type="text", name="dir_name", placeholder="Create folder", 
+							autocomplete="off")
+					div.delete_dir Delete

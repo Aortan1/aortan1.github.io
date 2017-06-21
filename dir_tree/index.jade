@@ -1,0 +1,58 @@
+html
+	head
+		script(type="text/javascript", src="//code.jquery.com/jquery-3.1.1.min.js")
+		script(type="text/javascript", src="js/main.js")
+		link(rel='stylesheet', type='text/css', href='s/main.css')
+
+	body.dd
+
+		.window
+			//- .controls - верхняя панель 
+			.controls
+				form(name="searchFile", actions="$", onsubmit = "return fun_seachFile(this);")
+					input.search_file(type="text", name="searchfile", placeholder="Search",autocomplete="off")
+			//- левое окно для дерева директорий
+			.tree_window#tree_window
+			//- правое окно отображение содержания папок 
+			.subwindow#subwindow
+				h1.subw_folder_name#subw_folder_name Имя папки
+				hr.subw_hr
+				.subw_inner_place
+
+
+			.root_dir.display_none#div_for_cloning
+				.folder.sel#dir0(data-name="ROOT FOLDER", data-parent="")
+					details.dir
+						summary.dir_name.in ROOT FOLDER
+						form(name="renameFile", actions="$", onsubmit = "return fun_renameFile(this);")
+							input.rename(type="text", name="rename", value="", pattern=".+",
+								autocomplete="off")
+					div.create_dir
+						form(name="createDir", actions="$", onsubmit = "return fun_createDir(this);")
+							input.actions.input_create_dir(type="text", name="dir_name", placeholder="Create folder", pattern=".+",
+							autocomplete="off")
+					//- div.act_dir.rename_dir Rename
+					div.act_dir.delete_dir Delete
+				.image.sel#img0
+					//- Для изображений дерева
+					.img_shape
+					.img_name.in img.jpg
+					form(name="renameFile", actions="$", onsubmit = "return fun_renameFile(this);")
+							input.rename.rename_img(type="text", name="rename", value="", pattern=".+",
+								autocomplete="off")
+					.act_dir.delete_dir Delete			
+
+
+				.file.file_dir.sel
+					//- Для папок окна
+					.file_rect
+					.file_name.in Новая папка
+				.file.file_img.sel
+					//- Для изображений окна
+					a.a-img(href="" target="_blank")
+						img.file_img_rect(src="", alt="")
+					.file_size 
+					.file_name.in image.img
+				#container_for_img
+					img#ima(src="", alt="")
+

@@ -1,0 +1,28 @@
+
+<html>
+  <head>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="s/main.css"/>
+  </head>
+  <body>
+    <div class="window">
+      <div class="controls"></div>
+      <div class="tree_window" id="tree_window"></div>
+      <div class="subwindow"></div>
+      <div class="root_dir display_none" id="div_for_cloning">
+        <div class="folder" id="dir0">
+          <details class="dir">
+            <summary class="dir_name">Root folder</summary>
+          </details>
+          <div class="create_dir">
+            <form name="createDir" actions="$" onsubmit="return fun_createDir(this)">
+              <input class="actions input_create_dir" type="text" name="dir_name" placeholder="Create folder" autocomplete="off"/>
+            </form>
+          </div>
+          <div class="delete_dir">Delete</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

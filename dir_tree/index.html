@@ -1,0 +1,56 @@
+
+<html>
+  <head>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="s/main.css"/>
+  </head>
+  <body class="dd">
+    <div class="window">
+      <div class="controls">
+        <form name="searchFile" actions="$" onsubmit="return fun_seachFile(this);">
+          <input class="search_file" type="text" name="searchfile" placeholder="Search" autocomplete="off"/>
+        </form>
+      </div>
+      <div class="tree_window" id="tree_window"></div>
+      <div class="subwindow" id="subwindow">
+        <h1 class="subw_folder_name" id="subw_folder_name">Имя папки</h1>
+        <hr class="subw_hr"/>
+        <div class="subw_inner_place"></div>
+      </div>
+      <div class="root_dir display_none" id="div_for_cloning">
+        <div class="folder sel" id="dir0" data-name="ROOT FOLDER" data-parent="">
+          <details class="dir">
+            <summary class="dir_name in">ROOT FOLDER</summary>
+            <form name="renameFile" actions="$" onsubmit="return fun_renameFile(this);">
+              <input class="rename" type="text" name="rename" value="" pattern=".+" autocomplete="off"/>
+            </form>
+          </details>
+          <div class="create_dir">
+            <form name="createDir" actions="$" onsubmit="return fun_createDir(this);">
+              <input class="actions input_create_dir" type="text" name="dir_name" placeholder="Create folder" pattern=".+" autocomplete="off"/>
+            </form>
+          </div>
+          <div class="act_dir delete_dir">Delete</div>
+        </div>
+        <div class="image sel" id="img0">
+          <div class="img_shape"></div>
+          <div class="img_name in">img.jpg</div>
+          <form name="renameFile" actions="$" onsubmit="return fun_renameFile(this);">
+            <input class="rename rename_img" type="text" name="rename" value="" pattern=".+" autocomplete="off"/>
+          </form>
+          <div class="act_dir delete_dir">Delete			</div>
+        </div>
+        <div class="file file_dir sel">
+          <div class="file_rect"></div>
+          <div class="file_name in">Новая папка</div>
+        </div>
+        <div class="file file_img sel"><a class="a-img" href="" target="_blank"><img class="file_img_rect" src="" alt=""/></a>
+          <div class="file_size"> </div>
+          <div class="file_name in">image.img</div>
+        </div>
+        <div id="container_for_img"><img id="ima" src="" alt=""/></div>
+      </div>
+    </div>
+  </body>
+</html>
