@@ -1,0 +1,17 @@
+
+
+.folders
+	//- p {{ name }}
+	//- label Age:
+	//- input(type="text", (keyup)="onAgeChanged($event.target.value)")
+
+	.folder.sel(*ngFor="let folder of lof_child | isinfolder:parent:'dir'", [folder]=folder)
+		details.dir
+			//- Отображение папок дерева
+			summary.dir_name.in( (click)="select_folder(folder.id);" ) {{ folder.name }}
+			folders([lof_child] = 'lof_child' , [parent]="folder.id", [name]='name', (ageChanged)='age = $event')
+	.image.sel(*ngFor="let image of lof_child | isinfolder:parent:'img'")
+		.img-container
+			//- Отображение файлов изображений дерева
+			.img_shape
+			.img_name.in {{ image.name }}

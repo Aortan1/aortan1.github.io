@@ -1,0 +1,178 @@
+$color-border-m: #b9b8b9
+$color-boxsha-1: rgba(0,0,0,.42)
+$color-boxsha-2: rgba(0,0,0,.6)
+$color-boxsha-3: rgba(0,0,0,.56)
+$color-backgr-lwindow: #f0f0f0//#f4f3f4//#ebeffd
+$color-font-m: #555
+
+
+body
+
+
+input, textarea   
+  outline: none
+  border-radius: 5px
+
+.window, .controls, subwindow, .tree_window
+  box-shadow: 0 2px 2px 0 $color-boxsha-1,0 3px 1px -2px $color-boxsha-2,0 1px 5px 0 $color-boxsha-3
+  border-radius: 5px
+  background-color: $color-backgr-lwindow
+
+.window
+  margin: 0 auto
+  width: 1500px
+  height: 850px
+  //border: 2px solid $color-border-m 
+  position: relative
+  //background-color: #343436
+  background-color: #fbfafb
+
+.controls
+  width: calc(100% - 20px)
+  margin: 10px
+  height: calc(10% - 20px)
+  //border: 1px solid $color-border-m
+  position: relative
+
+  input.search_file, #upload_visible
+    position: absolute
+    top: 27%
+    left: 3.5%
+    padding: 5px 20px
+    //background-color: #1b2b34
+    color: $color-font-m
+    &::-webkit-input-placeholder
+        text-align: center
+        font-size: 16px
+        font-style: italic
+        color: $color-font-m
+
+  // .upload
+  app-file-upload
+    position: absolute
+    left: auto
+    top: 3px
+    right: 150px
+    width: 300px 
+    height: 50px
+    border: 1px solid gr
+
+
+
+    
+
+
+
+subwindow
+  display: inline-block
+  //background-color: #fff
+  width: calc(58% - 70px)
+  height: 84%
+  margin: 10px
+  padding: 10px
+  overflow: scroll
+  position: relative
+  top: 0
+  //border: 1px solid $color-border-m
+
+
+
+.tree_window 
+  //border: 1px solid #fff
+  float: left
+  overflow: scroll
+  padding: 10px
+  width: 41%
+  height: 84%
+  margin: 10px
+  position: relative
+  top: 0px
+  background-color: $color-backgr-lwindow
+
+
+#bblocks
+  display: none
+
+
+
+.image
+  padding: 0 0 0 35px
+  // height: 0px 
+  height: 45px 
+  position: relative
+  border: 1px dotted transparent
+
+.img-container
+  // height:  45px
+  position: relative
+
+.img_shape
+  color: $color-font-m
+  display: inline-block
+  width: 35px
+  height: 35px
+  border-radius: 0px 10px 0 0
+  background: url("../i/img.png") no-repeat
+  background-size: contain
+  font-weight: 400
+  //padding: 0 0 0 35px
+  user-select: none
+  margin-top: 5px
+  overflow: visible
+
+.img_name
+  display: inline-block
+  color: $color-font-m
+  padding: 20px 0 0px 5px
+  vertical-align: top
+
+
+.button_reset
+  cursor: pointer
+  width: 95px
+  height: 55px 
+  font-size: 30px
+  border: 1px solid #aaa
+  border-radius: 10px
+  color: #aaa
+  position: absolute
+  top: 4px
+  right: 12px
+  transform: scale(0.7)
+  transition: 0.2s
+  box-shadow: 0 2px 2px 0 $color-boxsha-1,0 3px 1px -2px $color-boxsha-2,0 1px 5px 0 $color-boxsha-3
+  &:before
+    content: "reset"
+    margin: 10px 5px 5px 20px
+    display: block
+  &:hover
+    transform: scale(0.8)
+    transition: 0.2s
+  &:active
+    transform: scale(0.75)
+    top: 1px
+    transition: 0.2s    
+
+
+
+app-popup
+  //display: none
+  transform: scale(0,0)
+  transition: transform 0.1s, background-color 0.1s
+  transition-delay: 0s, 0.5s
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background-color: transparent
+  z-index: 10
+  border: 2px solid double
+
+.display-block
+  //display: block
+  background: rgba(0,0,0,0.8)
+  transform: scale(1,1)
+  transition: transform 0.1s, background-color 0.1s
+
+

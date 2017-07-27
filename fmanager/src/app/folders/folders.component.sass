@@ -1,0 +1,254 @@
+$color-font-m: #555
+$color-backgr-lwindow: #ebeffd
+$color-backgr-create-input: rgba(92, 184, 92, 1)
+$color-backgr-delete-input: rgba(217, 83, 79, 1)
+$color-backgr-selected: #c8ccfd
+$delete-input-border: 1px dashed grey
+$selected-border: 1px dotted green
+
+
+input, textarea   
+  outline: none
+  border-color: transparent
+  border-radius: 5px
+
+
+.container  
+  position: relative
+  height: 100%
+  left: 40px;
+  //border: 1px dashed orange
+  
+ 
+// .container:empty
+//   display:none
+
+
+.selecting //блок папки
+  display: block
+  position: relative
+  margin-top: 5px
+  //border: 1px solid green
+  
+  
+summary.dir_name
+  color: $color-font-m
+  width: 170px
+  height: 25px
+  border: 1px dotted transparent
+  border-radius: 0px 10px 0 0  
+  background: url("../i/folder1.png") no-repeat
+  background-size: contain
+  padding: 5px 5px 0px 50px
+  font-weight: 400
+  user-select: none
+  margin-top: 8px
+  overflow: visible
+  position: relative
+  left: 40px
+
+
+.create
+  position: absolute
+  top: 00px
+  left: 270px
+  opacity: 0
+  transition: 0.7s
+
+.create form
+  margin-bottom: 0px
+
+//.actions
+.create__input
+  color: #fff
+  cursor: pointer
+  width: 55px
+  height: 20px
+  border: 1px dashed grey
+  border-radius: 5px
+  //background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(92, 184, 92, 1))
+  background-color: $color-backgr-create-input
+  font-style: italic
+  font-size: 14px
+  opacity: 1
+  margin-top: 2px
+  padding: 4px 3px 2px 
+  text-align: center
+
+  &::-webkit-input-placeholder
+      color: #fff
+
+.delete
+  color: #fff
+  cursor: pointer
+  font-style: italic
+  position: absolute
+  top: 2px
+  left: 335px
+  opacity: 0
+  transition: 1s
+  padding: 5px 0px 5px 10px
+  width: 55px
+  height: 16px
+  border-radius: 5px
+  //background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(217, 83, 79, 1))
+  background-color: $color-backgr-delete-input
+  border: $delete-input-border
+  
+
+
+.image .delete
+  top: 7px
+  left: 220px
+  border: 1px dotted transparent
+
+
+.selected
+  // border: 2px solid red  
+
+.selected>.create, .selected>.create~.delete, .image>.selected>.delete
+  opacity: 1!important
+  transition: 0.7s 
+
+.selected>.selecting.visual, .selected.selecting.visual 
+  //border: 1px dotted blue
+  background-color: $color-backgr-selected
+  color: $color-font-m
+  font-weight: 600
+ 
+.image>.selected
+  background-color: $color-backgr-selected
+  border: $selected-border
+  color: $color-font-m
+  font-weight: 600
+  .img_name
+    color: $color-font-m
+
+
+
+
+
+
+
+
+
+
+
+input.rename
+  display: none
+  border-width: 0
+  opacity: 0
+  color: $color-font-m
+  font-weight: 600
+  width: 90%
+  height: 35px
+  position: absolute
+  top: 0
+  right: 100px
+  background: $color-backgr-selected
+  font-weight: 400
+  font-size: 14px
+  margin-top: 0px
+  
+
+
+input.rename.rename_img
+  padding: 9px 0px 0px 0px
+  top: 0px
+  left: 40px
+
+
+
+input.rename.rename_dir
+  //background: transparent
+  padding: 2px 0px 0px 27px
+  height: 24px
+  width: 68%
+  top: 0px
+  left: 40px
+  //border: 1px solid green
+  
+
+.rename.rename_dir:focus,.rename.rename_img:focus
+  opacity: 1
+
+// .show_rename>form>.rename
+//   display: block!important
+.show_rename 
+  display: block!important
+
+
+.delete.actions
+  display: inline-block
+
+
+
+
+.image
+  //margin-bottom: 10px
+  padding: 0 0 0 35px
+  height: 100% 
+  position: relative
+  left: 40px
+ 
+
+.img-container
+  // height:  45px
+  position: relative
+
+.img_shape
+  color: $color-font-m
+  display: inline-block
+  width: 35px
+  height: 30px
+  //border: 1px solid maroon
+  border-radius: 0px 10px 0 0
+  background: url("../i/img.png") no-repeat
+  background-size: contain
+  font-weight: 400
+  //padding: 0 0 0 35px
+  user-select: none
+  margin-top: 5px
+  overflow: visible
+
+
+
+.img_shape
+  color: $color-font-m
+  display: inline-block
+  width: 35px
+  height: 35px
+  //border: 1px solid red
+  border-radius: 0px 10px 0 0
+  background: url("../i/img.png") no-repeat
+  background-repeat: no-repeat
+  background-size: contain
+  font-weight: 400
+  //padding: 0 0 0 35px
+  user-select: none
+  margin-top: 5px
+  overflow: visible
+
+
+.img_name
+  display: inline-block
+  color: $color-font-m
+  padding: 18px 0 0px 0px
+  vertical-align: top
+  width: 350px
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+
+#container_for_img
+ height: 200px
+
+  //display: none
+  
+// .red
+//   border-color: red!important
+//   background-color: red!important
+// .green
+//   color: green
+     

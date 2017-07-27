@@ -1,0 +1,37 @@
+
+
+div(style="width: 100%; position: relative;")
+	
+	.container(*ngFor=" let folder of lof_child; let i = index")
+		details(*ngIf="(folder.parent_id==parent)&&(folder.type_of_file=='dir')", #directory_details='', style="height:100%;", [id] = 'folder.id')
+			//- !!!!! ТЕПЕРЬ К details ДОБАВЛЯЕТСЯ КЛАСС .selected 
+			//- Отображение папок дерева
+			summary.selecting.dir_name.visual.in( (click)="onSelectEmit(folder.id);", (dblclick)='onNameDoubleClick(sum);', #sum='') {{ folder.name }}
+				//- [ngClass]="{'show_rename': show_rename}", 
+				form((submit) = "rename(new_name.value, folder); ngOnInit();")
+					input.rename.rename_dir(type="text", value="{{ folder.name }}", pattern=".+",	autocomplete="off", #new_name='')
+			div.create
+				form((submit) = "create(create_input.value, folder.id); create_input.value=''")
+					input.create__input(type="text", placeholder="Create", pattern=".+",
+						autocomplete="off", #create_input='')
+			//- div.act_dir.rename_dir Rename
+			div.delete((click)="delete(folder.id)") Delete
+
+
+
+			folders( [parent]="folder.id", (select)="onSelectEmit($event);", (created)="onCreateEmit($event);", (deleted)="onDeleteEmit($event);", (renamed)="onRenameEmit($event);")
+
+	.image(*ngFor="let image of lof_child", style="height:100%;")
+		.container-if.selecting.visual(*ngIf="(image.parent_id==parent)&&(image.type_of_file=='img')", [id]="image.id", (click)="onSelectEmit(image.id); ")
+			//- Отображение файлов изображений дерева
+			.img_shape
+			.img_name((dblclick)='onNameDoubleClick(nam);', title='{{ image.name}}', #nam='') {{ image.name}}
+				form((submit) = "rename(new_name.value, image); ngOnInit();")
+					input.rename.rename_img(type="text", value="{{ image.name }}", pattern=".+",	autocomplete="off", #new_name='')
+	
+			div.delete((click)="delete(image.id)") Delete
+
+
+//- .selecting - прежде, .sel, - блок папки или файла изображения, к кот. применяется класс .selected, и определяющий логический блок файла или папки
+
+//- .visual - визуально выделяемый элемент блока, у которого меняется border

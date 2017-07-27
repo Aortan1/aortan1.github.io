@@ -1,0 +1,21 @@
+
+.button_up((click)='onClickButtonUp(sel_folder.id);')
+h1.subw_folder_name#subw_folder_name {{sel_folder.name}}
+hr.subw_hr
+.subw_inner_place
+	ng-container(*ngFor="let file of lof")
+		.file.file_dir.for-select(*ngIf="(file.parent_id==sel_folder.id)&&(file.type_of_file=='dir')", (click)="onSelectInSub(file.id);", (dblclick)="onDoubleClickInSub(file.id);", [id]="'w'+file.id")
+			//- Для папок окна
+			.file_rect
+			.file_name {{file.name}}
+	ng-container(*ngFor="let image of lof",)
+		.file.file_img.for-select(*ngIf="(image.parent_id==sel_folder.id)&&(image.type_of_file=='img')", (click)="onSelectInSub(image.id);",(dblclick)="onDoubleClickInSub(image.id);",[id]="'w'+image.id", title="{{ image.name }}",)
+			//- Для изображений окна
+			.a-img
+				//- img.file_img_rect(src="{{image.path}}", alt="")
+				img.file_img_rect(src="{{ image.src_base64 ? image.src_base64: image.path}}", alt="")
+			.file_size 	 {{image.img_width}} x {{image.img_height}}
+			.file_name {{image.name}}
+	#viewImg(*ngIf="sel_folder.type_of_file=='img'")
+		img#ima([ngClass]="{'width100': sel_folder.big_or_small}", src="{{ sel_folder.src_base64 ? sel_folder.src_base64: sel_folder.path}}", alt="")
+

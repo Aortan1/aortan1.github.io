@@ -1,0 +1,147 @@
+$color-border-m: #b9b8b9
+$color-font-m: #555
+$color-boxsha-1: rgba(0,0,0,.42)
+$color-boxsha-2: rgba(0,0,0,.6)
+$color-boxsha-3: rgba(0,0,0,.56)
+
+.button_up
+  cursor: pointer
+  width: 55px
+  height: 55px 
+  font-size: 30px
+  border: 1px solid #aaa
+  border-radius: 10px
+  color: #aaa
+  position: absolute
+  top: 12px
+  left: 12px
+  transform: scale(0.7)
+  transition: 0.2s
+  box-shadow: 0 2px 2px 0 $color-boxsha-1,0 3px 1px -2px $color-boxsha-2,0 1px 5px 0 $color-boxsha-3
+  &:before
+    content: "↑"
+    margin: 10px 5px 5px 20px
+    display: block
+  &:hover
+    transform: scale(0.8)
+    transition: 0.2s
+  &:active
+    transform: scale(0.75)
+    top: 1px
+    transition: 0.2s  
+
+
+h1.subw_folder_name
+  color: $color-font-m!important
+  font-style: italic
+  padding-left: 90px
+
+hr.subw_hr
+  border: 1px solid $color-border-m
+
+.subw_inner_place
+  height: 100%
+  background-repeat: no-repeat
+  background-position: 50% 35%
+  background-size: contain
+
+
+
+// div.ngfor-container
+//  display: inline-block
+// // margin: 15px
+//  position: relative
+//  vertical-align: bottom
+
+
+.a-img
+  width: 75px
+.file
+ border: 1px solid transparent
+ border-radius: 5px
+ display: inline-block
+ margin: 20px 10px
+ position: relative
+ vertical-align: bottom
+ //border: 1px solid red
+
+.file_dir
+  bottom: 2px
+
+.file_dir.selected-in-window
+  border: 1px solid #75a9ff
+  border-radius: 5px
+  background-color: rgba(0,0,255,0.15)
+  .file_name
+    font-weight: 600
+    color: #255 
+
+
+.file_img.selected-in-window
+  border: 1px solid #75a9ff
+  border-radius: 5px
+  background-color: rgba(0,0,255,0.15)
+  .file_name
+    font-weight: 600
+    color: #255 
+
+
+.file_rect
+ background: url("../i/folder1.png") no-repeat
+ background-size: contain
+ background-position: 0% 100%
+ cursor: pointer
+ //border: 1px solid #f00
+ //border-radius: 0 15px 0 0
+ margin-bottom: 0px
+ width: 60px
+ height: 50px
+ //background-color: #aaf
+
+.file_img
+  margin-bottom: 0px
+
+.file_img_rect
+ cursor: pointer
+ margin: 5px 5%
+ width: 90% 
+
+.file_size
+ margin: 0 5%
+ font-size: 12px
+ width: 100%
+ font-size: 12px
+ text-overflow: ellipsis
+
+
+.file_name
+ margin: 0 5%
+ font-size: 12px
+ padding: 5px 0 0 0px
+ width: 75px
+ //position: absolute
+ top: 100%
+ left: 0
+ overflow: hidden
+ text-overflow: ellipsis
+ white-space: nowrap
+ 
+
+// .img_shape
+//   padding-top: 30px
+
+#viewImg
+ margin: 15px
+ height: 200px
+ //border: 2px double green
+
+ img#ima
+  width: auto
+
+
+
+.width100
+  width: 100%!important
+
+
+  //display: none

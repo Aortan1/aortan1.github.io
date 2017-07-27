@@ -1,0 +1,14 @@
+
+
+//- .app-popup
+//- 	.popup-window([ngStyle]="{'left':'calc(50% - '+ width/2 +'px)',  'top':'calc(50% - '+ height/2 +'px)'}")
+//- 		.imgname Hello
+//- 		.imgarea([ngStyle]="{'background-image': 'url('+ src +')', 'width':width+'px', 'height':height+'px'}")
+//- 			.close-button((click)="closePopup();" )
+
+
+
+.app-popup
+	.imgarea([ngStyle]="{'background-image': 'url('+ src +')', 'width':width+'px', 'height':height+'px', 'left':'calc(50% - '+ width/2 +'px)',  'top':'calc(50% - '+ height/2 +'px)'}")
+		.imgname {{sel_image.name}}	
+		.close-button((click)="closePopup();" )

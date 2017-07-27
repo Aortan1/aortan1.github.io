@@ -1,0 +1,15 @@
+
+<div class="window" id="window">
+  <div class="controls">
+    <form (submit)="this.listService.seachFile(searchfile.value); ngOnInit();">
+      <input class="search_file" type="text" name="searchfile" placeholder="Search" autocomplete="off" #searchfile="" id="id_search"/>
+    </form>
+    <app-file-upload [sel_folder]="sel_folder" #fu="" (change)="fu.addPhoto($event);this.listService.writeData();this.listService.definition_img_sizes();" [multiple]="true"></app-file-upload>
+    <div class="button_reset" (click)="this.listService.setInitialData(); this.listService.writeData(); this.listService.reload();"></div>
+  </div>
+  <div class="tree_window" id="tree_window">
+    <folders #folderc="" [parent]="parent" (select)="goToFolder($event); this.listService.add_class_selected_in_sub($event);" (created)="ngOnInit();" (deleted)="ngOnInit();" (renamed)="ngOnInit();"></folders>
+  </div>
+  <subwindow [sel_folder]="sel_folder" (select)="onSelectedInWin($event);" (double_click)="onDoubleClickInWin($event);" (button_up_click)="onClickButtonUpInWin($event);"></subwindow>
+</div>
+<app-popup #pop="" [ngClass]="{'display-block': show_popup}" [sel_folder]="sel_folder" [sel_image]="sel_image" (close_popup)="toggle_show_popup();"></app-popup>

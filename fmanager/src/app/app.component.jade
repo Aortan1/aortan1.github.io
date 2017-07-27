@@ -1,0 +1,101 @@
+
+
+.window#window
+	//- .controls - верхняя панель 
+	.controls
+		form((submit)="this.listService.seachFile(searchfile.value); ngOnInit();")
+			input.search_file(type="text", name="searchfile", placeholder="Search",autocomplete="off", #searchfile='',id="id_search")
+		app-file-upload([sel_folder]='sel_folder', #fu='',(change)="fu.addPhoto($event);this.listService.writeData();this.listService.definition_img_sizes();", [multiple]="true")
+		.button_reset((click)='this.listService.setInitialData(); this.listService.writeData(); this.listService.reload();')
+	//- левое окно для дерева директорий
+	.tree_window#tree_window
+
+		//- .test
+		//- 	p {{ getName() }}
+		//- 	form( (submit) = "fill_name (input_name.value) ")
+		//- 		input( type='text', #input_name='' )
+
+
+
+		//- .test
+		//- 	//- p {{ getName() }}
+		//- 	//- form()
+		//- 	input(type='text', [(ngModel)]='name',  [ngStyle] = "{'background-color':color}", (change)='onChange(ctrl.value)' , #ctrl='')
+		//- 	input(type='text', [(ngModel)]='color',  [ngStyle] = "{'color':color}")
+
+		//- 	p My age: {{ age }}
+
+		
+		folders(#folderc='', [parent]='parent',  (select)="goToFolder($event); this.listService.add_class_selected_in_sub($event);", (created)="ngOnInit();", (deleted)="ngOnInit();", (renamed)="ngOnInit();")
+
+
+		
+		//- .folder.for-select.selected(id="dir0")
+		//- 	details.dir
+		//- 		summary.dir_name.in() {{ name }}
+		//- 		//- form(name="renameFile", actions="$", onsubmit = "return fun_renameFile(this);")
+		//- 		//- 	input.rename(type="text", name="rename", value="", pattern=".+",
+		//- 		//- 		autocomplete="off")
+				
+		//- 		//- folder([lof_child] = 'lof' , [a]="'someprop'")
+		//- 		folders([lof_child] = 'lof' , [parent]="parent", [name]='name', (ageChanged)='age = $event')
+				
+
+
+
+
+				//- folder.for-select(*ngFor="let folder of lof")
+				//- 	ng-container(*ngIf="folder.parent_id == 'dir0'")
+				//- 		summary.dir_name.in {{ folder.name }}
+
+
+
+
+	
+	//- правое окно отображение содержания папок
+	subwindow([sel_folder]='sel_folder', (select)="onSelectedInWin($event);",(double_click)="onDoubleClickInWin($event);", (button_up_click)="onClickButtonUpInWin($event);")
+
+app-popup(#pop='', [ngClass]="{'display-block': show_popup}", [sel_folder]="sel_folder",  [sel_image]='sel_image', (close_popup)="toggle_show_popup();")
+
+	//- #bblocks
+
+	//- 	.folders#folders_for_ins
+	//- 		.folder.for-select(*ngFor="let folder of lof_child")
+	//- 			ng-container(*ngIf="folder.parent_id == parent")
+	//- 				summary.dir_name.in {{ folder.name}}
+
+	//- 	.folder.for-select#dir0(data-name="ROOT FOLDER", data-parent="")
+	//- 		details.dir
+	//- 			summary.dir_name.in ROOT FOLDER
+	//- 			form(name="renameFile", actions="$", onsubmit = "return fun_renameFile(this);")
+	//- 				input.rename(type="text", name="rename", value="", pattern=".+",
+	//- 					autocomplete="off")
+	//- 		div.create
+	//- 			form(name="createDir", actions="$", onsubmit = "return fun_createDir(this);")
+	//- 				input.actions.input_create_dir(type="text", name="dir_name", placeholder="Create folder", pattern=".+",
+	//- 				autocomplete="off")
+	//- 		//- div.act_dir.rename_dir Rename
+	//- 		div.act_dir.delete_dir Delete
+	//- 	.image.for-select#img0
+	//- 		//- Для изображений дерева
+	//- 		.img_shape
+	//- 		.img_name.in img.jpg
+	//- 		form(name="renameFile", actions="$", onsubmit = "return fun_renameFile(this);")
+	//- 				input.rename.rename_img(type="text", name="rename", value="", pattern=".+",
+	//- 					autocomplete="off")
+	//- 		.act_dir.delete_dir Delete			
+
+
+		.file.file_dir.for-select
+			//- Для папок окна
+			.file_rect
+			.file_name.in Новая папка
+		.file.file_img.for-select
+			//- Для изображений окна
+			a.a-img(href="" target="_blank")
+				img.file_img_rect(src="", alt="")
+			.file_size 
+			.file_name.in image.img
+		#container_for_img
+			img#ima(src="", alt="")
+

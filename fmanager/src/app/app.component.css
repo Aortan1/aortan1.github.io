@@ -1,0 +1,167 @@
+input, textarea {
+  outline: none;
+  border-radius: 5px; }
+
+.window, .controls, subwindow, .tree_window {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.42), 0 3px 1px -2px rgba(0, 0, 0, 0.6), 0 1px 5px 0 rgba(0, 0, 0, 0.56);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.42), 0 3px 1px -2px rgba(0, 0, 0, 0.6), 0 1px 5px 0 rgba(0, 0, 0, 0.56);
+  border-radius: 5px;
+  background-color: #f0f0f0; }
+
+.window {
+  margin: 0 auto;
+  width: 1500px;
+  height: 850px;
+  position: relative;
+  background-color: #fbfafb; }
+
+.controls {
+  width: calc(100% - 20px);
+  margin: 10px;
+  height: calc(10% - 20px);
+  position: relative; }
+  .controls input.search_file, .controls #upload_visible {
+    position: absolute;
+    top: 27%;
+    left: 3.5%;
+    padding: 5px 20px;
+    color: #555; }
+    .controls input.search_file::-webkit-input-placeholder, .controls #upload_visible::-webkit-input-placeholder {
+      text-align: center;
+      font-size: 16px;
+      font-style: italic;
+      color: #555; }
+  .controls app-file-upload {
+    position: absolute;
+    left: auto;
+    top: 3px;
+    right: 150px;
+    width: 300px;
+    height: 50px;
+    border: 1px solid gr; }
+
+subwindow {
+  display: inline-block;
+  width: calc(58% - 70px);
+  height: 84%;
+  margin: 10px;
+  padding: 10px;
+  overflow: scroll;
+  position: relative;
+  top: 0; }
+
+.tree_window {
+  float: left;
+  overflow: scroll;
+  padding: 10px;
+  width: 41%;
+  height: 84%;
+  margin: 10px;
+  position: relative;
+  top: 0px;
+  background-color: #f0f0f0; }
+
+#bblocks {
+  display: none; }
+
+.image {
+  padding: 0 0 0 35px;
+  height: 45px;
+  position: relative;
+  border: 1px dotted transparent; }
+
+.img-container {
+  position: relative; }
+
+.img_shape {
+  color: #555;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 0px 10px 0 0;
+  background: url("../i/img.png") no-repeat;
+  background-size: contain;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 5px;
+  overflow: visible; }
+
+.img_name {
+  display: inline-block;
+  color: #555;
+  padding: 20px 0 0px 5px;
+  vertical-align: top; }
+
+.button_reset {
+  cursor: pointer;
+  width: 95px;
+  height: 55px;
+  font-size: 30px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  color: #aaa;
+  position: absolute;
+  top: 4px;
+  right: 12px;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.42), 0 3px 1px -2px rgba(0, 0, 0, 0.6), 0 1px 5px 0 rgba(0, 0, 0, 0.56);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.42), 0 3px 1px -2px rgba(0, 0, 0, 0.6), 0 1px 5px 0 rgba(0, 0, 0, 0.56); }
+  .button_reset:before {
+    content: "reset";
+    margin: 10px 5px 5px 20px;
+    display: block; }
+  .button_reset:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+  .button_reset:active {
+    -webkit-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75);
+    top: 1px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+
+app-popup {
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: background-color 0.1s, -webkit-transform 0.1s;
+  transition: background-color 0.1s, -webkit-transform 0.1s;
+  -o-transition: transform 0.1s, background-color 0.1s;
+  transition: transform 0.1s, background-color 0.1s;
+  transition: transform 0.1s, background-color 0.1s, -webkit-transform 0.1s;
+  -webkit-transition-delay: 0s, 0.5s;
+  -o-transition-delay: 0s, 0.5s;
+  transition-delay: 0s, 0.5s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 10;
+  border: 2px solid double; }
+
+.display-block {
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition: background-color 0.1s, -webkit-transform 0.1s;
+  transition: background-color 0.1s, -webkit-transform 0.1s;
+  -o-transition: transform 0.1s, background-color 0.1s;
+  transition: transform 0.1s, background-color 0.1s;
+  transition: transform 0.1s, background-color 0.1s, -webkit-transform 0.1s; }

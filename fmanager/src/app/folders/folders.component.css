@@ -1,0 +1,197 @@
+input, textarea {
+  outline: none;
+  border-color: transparent;
+  border-radius: 5px; }
+
+.container {
+  position: relative;
+  height: 100%;
+  left: 40px; }
+
+.selecting {
+  display: block;
+  position: relative;
+  margin-top: 5px; }
+
+summary.dir_name {
+  color: #555;
+  width: 170px;
+  height: 25px;
+  border: 1px dotted transparent;
+  border-radius: 0px 10px 0 0;
+  background: url("../i/folder1.png") no-repeat;
+  background-size: contain;
+  padding: 5px 5px 0px 50px;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 8px;
+  overflow: visible;
+  position: relative;
+  left: 40px; }
+
+.create {
+  position: absolute;
+  top: 00px;
+  left: 270px;
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s; }
+
+.create form {
+  margin-bottom: 0px; }
+
+.create__input {
+  color: #fff;
+  cursor: pointer;
+  width: 55px;
+  height: 20px;
+  border: 1px dashed grey;
+  border-radius: 5px;
+  background-color: #5cb85c;
+  font-style: italic;
+  font-size: 14px;
+  opacity: 1;
+  margin-top: 2px;
+  padding: 4px 3px 2px;
+  text-align: center; }
+  .create__input::-webkit-input-placeholder {
+    color: #fff; }
+
+.delete {
+  color: #fff;
+  cursor: pointer;
+  font-style: italic;
+  position: absolute;
+  top: 2px;
+  left: 335px;
+  opacity: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  padding: 5px 0px 5px 10px;
+  width: 55px;
+  height: 16px;
+  border-radius: 5px;
+  background-color: #d9534f;
+  border: 1px dashed grey; }
+
+.image .delete {
+  top: 7px;
+  left: 220px;
+  border: 1px dotted transparent; }
+
+.selected > .create, .selected > .create ~ .delete, .image > .selected > .delete {
+  opacity: 1 !important;
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s; }
+
+.selected > .selecting.visual, .selected.selecting.visual {
+  background-color: #c8ccfd;
+  color: #555;
+  font-weight: 600; }
+
+.image > .selected {
+  background-color: #c8ccfd;
+  border: 1px dotted green;
+  color: #555;
+  font-weight: 600; }
+  .image > .selected .img_name {
+    color: #555; }
+
+input.rename {
+  display: none;
+  border-width: 0;
+  opacity: 0;
+  color: #555;
+  font-weight: 600;
+  width: 90%;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  right: 100px;
+  background: #c8ccfd;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 0px; }
+
+input.rename.rename_img {
+  padding: 9px 0px 0px 0px;
+  top: 0px;
+  left: 40px; }
+
+input.rename.rename_dir {
+  padding: 2px 0px 0px 27px;
+  height: 24px;
+  width: 68%;
+  top: 0px;
+  left: 40px; }
+
+.rename.rename_dir:focus, .rename.rename_img:focus {
+  opacity: 1; }
+
+.show_rename {
+  display: block !important; }
+
+.delete.actions {
+  display: inline-block; }
+
+.image {
+  padding: 0 0 0 35px;
+  height: 100%;
+  position: relative;
+  left: 40px; }
+
+.img-container {
+  position: relative; }
+
+.img_shape {
+  color: #555;
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  border-radius: 0px 10px 0 0;
+  background: url("../i/img.png") no-repeat;
+  background-size: contain;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 5px;
+  overflow: visible; }
+
+.img_shape {
+  color: #555;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 0px 10px 0 0;
+  background: url("../i/img.png") no-repeat;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 5px;
+  overflow: visible; }
+
+.img_name {
+  display: inline-block;
+  color: #555;
+  padding: 18px 0 0px 0px;
+  vertical-align: top;
+  width: 350px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+#container_for_img {
+  height: 200px; }

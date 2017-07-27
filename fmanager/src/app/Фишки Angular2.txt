@@ -1,0 +1,471 @@
+
+
+
+ 1. *ngFor="let todo of todos" 
+
+ 	<section class="todo-list" > 
+		 		<div class="todo-item" *ngFor="let todo of todos" [class.completed]="todo.completed" >		 			
+		 			<span class="title">{{ todo }}</span>
+		 		</div>
+	</section>
+
+		* - директива структурная, т.е изменяет дом-дерево.
+		*ngFor - ИМЯ ДИРЕКТИВЫ для циклического повторения тега
+		todo - ЛОКАЛЬНАЯ переменная, любое имя
+		todos - наш массив задач, указанный В КЛАССЕ компонента как свойство.
+		(В компоненте .ts: 
+			export class AppComponent {
+				title = 'Angular 2Do';
+				todos = todos;
+				// todos слева - имя св-ва, todos справа - массив-константа, заданная в том же .ts или в др.месте.
+			}
+		)
+
+	
+
+
+ 2. *ngIf="todos.length"
+
+		* - директива структурная, т.е изменяет дом-дерево.
+		*ngIf - ИМЯ ДИРЕКТИВЫ, которая удаляет элемент в случае, если условие внутри даёт false
+
+
+3.  "material-icons"  - класс иконок от Гугла, стиль Material Design, его нужно подгружать в link'e head'a.
+Вероятно, интерпретатор встроен в npm.
+Но можно добавить командой: $ npm install material-design-icons
+
+	Применение: указать класс material-icons и наполнить тег названием иконки, например check_box или check_box_outline_blank
+
+	<i class="material-icons">check_box_outline_blank</i>
+	<i class="material-icons" style="font-size:36px">check_box_outline_blank</i>
+	<i class="material-icons" style="font-size:48px;color:red">check_box_outline_blank</i>
+
+	Гид от Гугл: https://google.github.io/material-design-icons/
+
+
+ 4. [ngClass]="{'completed': todo.completed}"
+		 директива ngClass атрибутная, т.е изменяет внешний вид и поведение элемента
+
+		 [ngClass]
+		 переключает применение класса completed,
+		 	применяет класс 'completed' к элементу в случае свойства todo.completed, равного true?,
+		 	и НЕ применяет класс в случае  todo.completed==false
+
+	Пример2:
+	form((submit)="fill_name(input_name.value)")
+				input(type='text', #input_name='', [ngClass]='{red: true, green: false}')
+	В sass:
+	 .red
+	 	color: red
+	 .green
+	 	color: green
+
+
+	Теперь к полю инпут применится класс грин, и вводиться будет зелёным шрифтом. 	 	 	
+
+
+5. <i class="material-icons"> {{ todo.completed ? 'check_box': 'check_box_outline_blank'}}</i>
+	это шаблонные теги, или Интерполяция (модификация Elvis оператора).
+  
+	тег отображается в с разным наполнением вместо {{}} в зависимости от значения todo.completed == true или false
+
+	Переменная todo.completed===true -> в тег вставляется check_box.
+	Переменная todo.completed===false -> в тег вставляется check_box_outline_blank.
+
+	Источник: https://habrahabr.ru/post/274743/
+
+
+ 6.	<i class="material-icons" [innerText]="'=)'" > </i>  
+ 		
+ 		Атрибут [innerText]="'=)'" обращается к свойству тега .innerText и меняет содержимое элемента на =)
+ 		Аналогично можно заменить это на [textContent]="'=)'"
+ 		Т.е через квадратные скобки в теге [property] можно обратиться к св-ву property того дом-элемента, в котором это обращение прописано. 
+
+
+7. <i class="material-icons" [textContent]="todo.completed ? 'check_box': 'check_box_outline_blank'" > </i> 
+	
+		Тоже отображает с разным наполнением зн-я св-ва .textContent в зависимости от значения todo.completed == true или false
+		(аналог использования {{}} в п.5)
+
+
+
+
+ 8. <div class="todo-item" *ngFor="let todo of todos" [class.completed]="todo.completed" >
+ 		ПРИВЯЗКА к ОПРеделённому КЛАССУ напрямую 
+ 		(удобна, когда нужно указать только ОДИН класс, иначе использовать  [ngClass] )
+		
+		класс .completed применится в случае истинного свойства переменной todo.completed
+
+
+
+9. <input type="text" placeholder="Что нужно сделать?" #titleInput>
+		
+		#titleInput - объявление локальной переменной в шаблоне, и передаём её как параметр ф-и create для события формы submit.
+		лок.пер-я titleInput - теперь равна дом-элементу инпута.
+
+
+10.	<form class="todo-form" (submit)="create($event, titleInput.value)">
+		
+		$event - запускаем create() c аргументами объекта события и значения инпута, о том, что $event - это событие, говорит $ 
+		В файле .ts эта переменная будет без $, т.е. event
+
+	
+
+11. <form class="todo-form" (submit)="create($event, titleInput.value); titleInput.value='';"> 
+		
+		Вариант очистки поля инпута после отправки формы - дописать содержание submit (аналог onsubmit в js) т.е вставить titleInput.value='';
+		НО: мы поместили логику в шаблон, а ей здесь не место, это лучше не мешать.
+
+
+
+12. <input type="text" name="title" [(ngModel)]="newTodoTitle" placeholder="Что нужно сделать?" required> {{ newTodoTitle }}
+		
+		После добавления модуля FormsModule работает директива [(ngModel), т.е. двусторонняя привязка данных newTodoTitle к свойству newTodoTitle в app.component.ts
+
+		После добавления модуля FormsModule событие (submit) больше не срабатывает, и нужно исп. (ngSubmit)
+
+
+13. <form class="todo-form" (ngSubmit)="create(); todoForm.reset()" #todoForm="ngForm">
+
+		Форма после отправки данных принимает невалидный вид(красная рамка). Чтобы сделать её валидной, нужно после запуска create(); её перезапустить.
+		Для этого обозначим её лок.переменной #todoForm="ngForm" и запустим на ней метод .reset()
+
+
+14. <button type="submit" [disabled]="todoForm.form.invalid" >Добавить</button> 
+
+		Форма невалидна, пока её поле инпута пусто.
+		Сделаем кнопку Сабмит неактивной, пока форма невалидна (пока не введено значение в поле)
+		Для этого св-во [disabled] кнопки приравняем свойству формы todoForm.form.invalid, где todoForm - "метка" формы, .form.invalid = её булево свойство валидности. Теперь если оно истинно, кнопка становится disabled.
+
+
+15. Разделение проекта на компоненты называется Декомпозицией. 
+
+
+16. <todo-form (add)="create($event)"></todo-form> 
+
+		Назначаем форме событие add. $event означает, что в ф-ю передадутся данные, введённые поль-лем (?? видимо как свойства event).
+
+		-->
+
+17. Компоненты - отвечают за внешний вид приложения и взаимод-е с поль-лем.
+				Сервисы - за логику: за получение, предоставление и работу с данными приложения.
+				Сервисы - это простые классы.
+				В файле app.module.ts в декораторе:
+					в св-ве declarations регистрируются КОМПОНЕНТЫ (как эл-ты массива),
+					а в св-ве providers регистрируются СЕРВИСЫ (как эл-ты массива).
+
+
+
+18. Чтобы внедрить сервис в компонент, нужно:
+	1 - в компонент добавить конструктор и добавить параметр с типом сервиса:
+		
+		constructor (private todoService: TodoService){	
+		this.todos = [];
+		// ? видимо имя параметра todoService - это имя конструктора для вызова после слова new ?
+		}
+
+		[этот конструктор призван создавать экземпляр компонента, в д.сл. компонента класса TodoListComponent]
+
+	2 - зарегистрировать сервис в app.module.ts:
+		-- импортировать класс сервиса:
+			import { TodoService} from './shared/todo.service';
+
+		-- добавить в декоратор @NgModule в свойство providers имя класса сервиса TodoService как элемент массива сервисов:
+			@NgModule({
+				..., 
+				providers: [TodoService],
+				...
+			})	 
+	3 - определить в классе компонента метод ngOnInit(), внутрь его - в д.сл. код для получения задач.
+		ngOnInit() {
+		this.todos = this.todoService.getTodos();
+	}
+		ngOnInit() - Один из методов Lifecycle Hooks ("крюки жизненного цикла"), методы, кот.Ангуляр вызовет в определённый момент, ngOnInit() - в момент инициализации компонента.
+		Метод ngOnInit вызывается один раз после установки свойств компонента, которые участвуют в привязке.
+		(источник: https://metanit.com/web/angular2/2.8.php)
+
+	4 - импортировать интерфейс OnInit и ввести этот интерфейс для класса компонента:
+
+			import { Component, OnInit } from '@angular/core';
+
+			export class TodoListComponent implements OnInit {...}
+
+		Имплементация этого интерфейса в классе позволит избежать ситуации, когда забыли указать для класса компонента ф-ю конструктора и ф-ю ngOnInit().
+
+
+19. Т.к приложение тестовое, сервера у него нет, поэтому можно создать фейковый сервер, внедрив новый модуль, командой: npm install angular-in-memory-web-api --save
+и прописать в system.config.js св-во для map:
+ 'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
+
+ 
+20. Для передачи свойства из компонета родителя( app.component ) 1 дочернему компоненту (folder.component) 2:
+
+ 1 - импортировать Input в 2: import { Component, Input } from '@angular/core';
+ 2 - импортировать класс 1 в 2 и класс 2 в 1.
+ 3 - в классе 2 объявить импортируемое св-во: @Input() lof_child : Folder[]; 
+ 4 - в хтмл 1 в теге дочернего определить свойство дочернего, равное родительскому свойству: 
+ folder([lof_child] = 'lof') - это в jade.
+
+(5) - в комп.1 в декораторе @Component прописать св-во 	divectives: [FoldersComponent] - указать гласс ребёнка.
+(6) - в комп.2 в декораторе @Component прописать св-во inputs: ['lof_child:lof', 'parent:parent', 'name:name'] - через дв-е имя св-ва в ребёнке:имя этого св-ва в родителе
+
+??Пункты (5) и (6) видимо, устарели и необязятельны.
+
+
+ В хтмле folder([lof_child] = 'lof') эл-ту фолдер присваивается зн=е св-ва из класса компонента 1.
+ Инпут транслирует lof_child ИЗ дом.эт-та folder В класс компонента этого эл-та (компонента 2.)
+ Класс компонента ребёнка 2 делает доступной это св-во в дом-элементе шаблона ребёнка.
+
+
+20.2. Для передачи св-ва из ребёнка 2 родителю 1:
+
+1 - импортировать EventEmitterв 2: import { Component, Input, EventEmitter } from '@angular/core'; 
+2 - инициализируем в 1 св-во, кот. будем передавать из 2: age = 20;
+3 - задаём в классе 2 переменную для екземпляра EventEmitter'a: 
+
+		ageChanged = new EventEmitter<string>(); 
+
+	возвращаемый тип должен соотв-ть типу возвр.значения age, т.е string (для инпута)
+4 - в шаблоне ребёнка 2, в инпуте, кот.передаёт зн-е, навешиваем обработчик событию kewup:
+		 (keyup)="onAgeChanged($event.target.value)"
+5 - в классе ребёнка 2 описываем обработчик:
+
+		ageChanged = new EventEmitter<string>();
+
+  		onAgeChanged(age:string){
+  		  this.ageChanged.emit(age);
+  		}
+?6 - в декораторе класса 2 описываем в св-ве outputs отдаваемые св-ва, т.е. зн-е эмиттера:
+
+		outputs: ['ageChanged']
+
+7 - в шаблоне родителя 1 в элементе ребёнка folder описываем выражение для емитированного события ageChanged:
+		(ageChanged)='age = $event'
+
+
+
+
+
+21. ONE WAY BINDING:
+
+	@Component({
+		selector: 'my-app', 
+		template: `
+				<h1>Hello from {{ name }}</h1>
+		`,
+		styleUrls: ['app.component.css']
+	})
+	
+	export class AppComponent {
+		name = 'Alex';
+	}
+
+   Выражение в шаблоне - это стринг-интерполяция[с-и - это конкотенация строкового выр-я из шаблона заменой неких литералов их значениями], формируется методом one-way binding,
+   от класса к дом-элементу.
+
+
+22.  "TWO WAY BINDING" // настоящий two way binding см.ниже в п.27
+
+	 @Component({
+		selector: 'my-app', 
+		templateUrl: 'app.component.html', 
+		styleUrls: ['app.component.css']
+	})
+	
+	export class AppComponent {
+		name: string = "Alex";
+  		getName(){
+  			return "My name is "+this.name+"!";
+  		}
+  	
+  		fill_name(name){
+  			this.name = name;
+  		}
+	} 
+	В шаблоне на pug - app.component.jade
+		.test
+			p {{ getName() }}
+			form( (submit) = "fill_name ( input_name.value ) ")
+				input( type='text', #input_name='' )
+
+	Или в шаблоне:
+		.test
+			p {{ getName() }}
+			form()
+				input(type='text', [value]='name', #input_name='', (change)='onChange(input_name.value)')
+					
+
+	 
+	 Атрибут #input_name='' соответствует метке #input_name Ангуляра для элемента, которая является как бы шаблонной переменной, содержащей дом-эл-т. Теперь мы можем к событию submit привязять обработчик fill_name c параметром свойства value эт-та в этой переменной:  fill_name ( input_name.value )
+	 Равенство ='' я написал, т.к джейд без него не компилирует.
+
+ 23. TS: Конструктор, занимающийся только инициализацией свойств:
+ 		export class Todo { 
+ 			id: number;
+			constructor(public title: string, 
+						public completed: boolean = false){}
+		}
+
+		Теперь при создании об-та Todo через new введённые в скобках зн-я будут присвоены здесь же объявленым св-вам title и completed.
+
+
+24. [] - условно означают "движение" внутрь элемента (как например приравнивание св-ва дом-эл-та какому-л.зн-ю)
+	() - движение из элемента в класс.
+
+
+25. Извлечение вводимого в шаблон зн-я прямо из инпута по событию (change), а не из формы по сабмиту:
+
+	1:
+	В шаблоне:
+		input(type='text',  #input_name='', (change)='onChange($event.target.value)')
+
+	В классе комп-та:   	
+		onChange(value:string){
+  		console.log('$event.target.value = '+value);
+  		}
+
+  	У события есть св-во target - это дом-элемент инпут, и у него - св-во value.  	
+
+  	Либо 2:
+  	В шаблоне:
+		input(type='text',  #input_name='', (change)='onChange(input_name.value)')
+
+	В классе комп-та:   	
+		onChange(value:string){
+  		console.log('input_name.value = '+value);
+  		}
+  	Здесь используем св-во value дом-эл-та инпута в шаблонной переменной input_name 
+
+
+26. Определение стиля элементу через переменную в классе:
+	input(type='text', [value]='name', #input_name='', [ngStyle] = '{"color":color}')
+
+	В классе: color = "red";
+
+
+27. Two way binding:
+
+			input(type='text', [value]='name',  [ngStyle] = "{'background-color':color}", (change)='onChange(ctrl.value)' , #ctrl='')
+			input(type='text', [(ngModel)]='color',  [ngStyle] = "{'color':color}")
+
+	В классе: color = "red";
+
+	При вводе во второй инпут цвета, например green, фон первого окрашивается в этот цвет. Т.е. шаблонная переменная color получает двустороннюю связь с классом. 
+
+
+28. Итого, 4 типа связей:
+
+ 1 - {{  }} - стринг интерполейшн(one way binding)(ОТ КЛАССА -> ЭЛ-ТУ) - привязка элемента дом к значению компонента.
+
+ 2 - [value]="name"	- property binding (ОТ КЛАССА -> ЭЛ-ТУ) - привязка св-ва эл-та хтмл к зн-ю компонента.
+
+     Это привязка к св-ву, как [value], или к директиве, как [ngStyle].		
+
+ 3 - (change)='onChange(ctrl.value)' - event binding, привязка к событию. (ОТ ЭЛ-ТА -> К КЛАССУ по ивенту) - привязка метода компонента к событию в дом.
+
+ 4 - [(ngModel)]='color' - two way binding ( КЛАСС <-> ЭЛ-Т) . 
+ Двусторонняя привязка, когда элемент DOM привязан к значению на компоненте, при этом изменения на одном конце привязки сразу приводят к изменениям на другом конце
+
+
+
+
+
+
+Создание файлов.
+
+0. ПАПКА helloapp - папка приложения
+
+1. package.json - устанавливает пакеты и зависимости, которые будут использоваться проектом
+2. tsconfig.json - определяет настройки для компилятора TypeScript`
+3. systemjs.config.js - даёт инфу загрузчику модулей о том, где искать модули приложения, 
+	и регистрирует все необходимые пакеты
+
+4. Папка node_modules - создаётся автоматом командами
+		win R
+		cmd
+		C:\WINDOWS\system32>D:
+		D:\>cd D:\angular2\helloapp
+		D:\angular2\helloapp>npm install	
+
+5. Папка app.
+	6. app.component.ts - cоздание компонента Angular. Здесь записал данные todos и класс компонента.
+	7. app.module.ts - cоздание модуля приложения. Приложение состоит из модулей. Здесь мы импотируем ряд модулей, и создаём свой модуль.
+	8. main.ts - указывает Angularу, как запускать наше приложение. 
+			Инициализирует платформу, которая запускат приложение, и затем использует эту платформу 
+			для загрузки модуля AppModule.
+9. index.html - в папке helloapp
+
+		10. app.component.html (в app) - хтмл компонента, путь к нему и селектор, куда он будет помещён, ук. в файле компонента app.compotent.ts
+		11. app.component.css  (в app) - цсс компонента, путь к нему указан в файле компонента app.compotent.ts
+
+
+
+хх. Запуск приложения - C:\angular2\purchaseApp>npm start
+
+
+СМ. app.component.html
+
+
+
+
+
+
+npm(Node.js Package Manager) — менеджер пакетов, входящий в состав Node.js. 
+
+Node или Node.js — программная платформа, основанная на движке V8 (транслирующем JavaScript в машинный код), превращающая JavaScript из узкоспециализированного языка в язык общего назначения. Node.js добавляет возможность JavaScript взаимодействовать с устройствами ввода-вывода через свой API (написанный на C++), подключать другие внешние библиотеки, написанные на разных языках, обеспечивая вызовы к ним из JavaScript-кода. Node.js применяется преимущественно на сервере, выполняя роль веб-сервера, но есть возможность разрабатывать на Node.js и десктопные оконные приложения
+
+2 вида привязки данных в Ангуляре2: привязка свойств, и привязка событий.
+
+
+
+
+
+https://learn.javascript.ru/es-function
+https://learn.javascript.ru/set-map - коллекции js: Set, Map, WeakSet и WeakMap
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+https://medium.com/@frontman/%D0%BA%D0%BE%D1%80%D1%82%D0%B5%D0%B6%D0%B8-%D0%B2-javascript-af280e716ebc
+
+https://learn.javascript.ru/new-prototype
+https://learn.javascript.ru/class-inheritance
+
+https://habrahabr.ru/post/104186/
+https://learn.javascript.ru/object
+
+https://metanit.com/web/typescript/2.1.php
+http://typescript-lang.ru/docs/Interfaces.html
+
+https://metanit.com/web/angular2/2.8.php
+
+https://learn.javascript.ru/descriptors-getters-setters - Дескрипторы, геттеры и сеттеры свойств
+
+https://metanit.com/web/angular2/2.9.php - Шаблонные переменные, ViewChild и ContentChild
+
+
+От 26июн17:
+8:31:18
+5:21:49-кибератака
+вых.
+6:57:29
+
+От 07июл17:
+8:04:19 = 8.05
+8:53:40 = 8.9
+8:08:18 = 8.15
+6:00:59 = 6.0		итого: -8.9
+
+
+
+
+
+
+
+
+mariia.shpineva Moderator 10:09   
+ 
+@all Всем доброе утро! Коллеги, хочу к вам обратиться с просьбой. Но перед этим, хочу выразить вам свою благодарность за то, какие вы: активные, веселые, отзывчивые и, конечно, профессионалы в своей сфере. И мне бы очень хотелось, чтобы об этом знала не только наша команда, но и наше запорожское (и не только) комьюнити. Поэтому собственно просьба: зайдите в профили коллег на линкедин и подтвердите их навыки. Также, добавтесь на ДОУ и поставьте оценку компании. Это можно сделать здесь https://jobs.dou.ua/companies/powercodelab/poll. Заранее спасибо!
+ 
+jobs.dou.ua
+Оценка компании PowerCodeIT на DOU
+98/100 по оценке 7 сотрудников.
+

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+.button_up {
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  font-size: 30px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  color: #aaa;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.42), 0 3px 1px -2px rgba(0, 0, 0, 0.6), 0 1px 5px 0 rgba(0, 0, 0, 0.56);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.42), 0 3px 1px -2px rgba(0, 0, 0, 0.6), 0 1px 5px 0 rgba(0, 0, 0, 0.56); }
+  .button_up:before {
+    content: "↑";
+    margin: 10px 5px 5px 20px;
+    display: block; }
+  .button_up:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+  .button_up:active {
+    -webkit-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75);
+    top: 1px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s; }
+
+h1.subw_folder_name {
+  color: #555 !important;
+  font-style: italic;
+  padding-left: 90px; }
+
+hr.subw_hr {
+  border: 1px solid #b9b8b9; }
+
+.subw_inner_place {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+  background-size: contain; }
+
+.a-img {
+  width: 75px; }
+
+.file {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 20px 10px;
+  position: relative;
+  vertical-align: bottom; }
+
+.file_dir {
+  bottom: 2px; }
+
+.file_dir.selected-in-window {
+  border: 1px solid #75a9ff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 255, 0.15); }
+  .file_dir.selected-in-window .file_name {
+    font-weight: 600;
+    color: #255; }
+
+.file_img.selected-in-window {
+  border: 1px solid #75a9ff;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 255, 0.15); }
+  .file_img.selected-in-window .file_name {
+    font-weight: 600;
+    color: #255; }
+
+.file_rect {
+  background: url("../i/folder1.png") no-repeat;
+  background-size: contain;
+  background-position: 0% 100%;
+  cursor: pointer;
+  margin-bottom: 0px;
+  width: 60px;
+  height: 50px; }
+
+.file_img {
+  margin-bottom: 0px; }
+
+.file_img_rect {
+  cursor: pointer;
+  margin: 5px 5%;
+  width: 90%; }
+
+.file_size {
+  margin: 0 5%;
+  font-size: 12px;
+  width: 100%;
+  font-size: 12px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.file_name {
+  margin: 0 5%;
+  font-size: 12px;
+  padding: 5px 0 0 0px;
+  width: 75px;
+  top: 100%;
+  left: 0;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+#viewImg {
+  margin: 15px;
+  height: 200px; }
+  #viewImg img#ima {
+    width: auto; }
+
+.width100 {
+  width: 100% !important; }

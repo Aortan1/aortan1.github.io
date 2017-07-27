@@ -1,0 +1,7 @@
+
+<div class="app-popup">
+  <div class="imgarea" [ngStyle]="{'background-image': 'url('+ src +')', 'width':width+'px', 'height':height+'px', 'left':'calc(50% - '+ width/2 +'px)',  'top':'calc(50% - '+ height/2 +'px)'}">
+    <div class="imgname">{{sel_image.name}}	</div>
+    <div class="close-button" (click)="closePopup();"></div>
+  </div>
+</div>
