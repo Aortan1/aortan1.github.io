@@ -51,8 +51,6 @@ export class FoldersComponent implements OnInit, OnChanges {
 
 
 
-
-
   onCreateEmit(){ //?передача события создания папки вверх по дереву папок-компонентов
     this.created.emit();
   }
@@ -66,6 +64,11 @@ export class FoldersComponent implements OnInit, OnChanges {
     x.childNodes[1].childNodes[1].classList.add('show_rename');
     x.childNodes[1].childNodes[1].focus();
 
+  }
+
+  onBlur(){ // в случае убора фокуса с инпута до ввода - убираем класс его видимости
+        var RenameInput = document.getElementsByClassName("show_rename")[0];
+        if(RenameInput) RenameInput.classList.remove("show_rename"); //удаление display:block с инпута в случае убора фокуса с него.
   }
 
   onRenameEmit(){

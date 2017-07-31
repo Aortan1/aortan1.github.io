@@ -1,7 +1,7 @@
 #upload_visible {
   position: relative;
   width: 80px;
-  left: 120px;
+  left: 10px;
   top: 8px;
   padding: 5px 20px;
   color: #555; }
@@ -14,7 +14,7 @@
 #upload_button {
   position: relative;
   top: 15px;
-  left: 130px;
+  left: 20px;
   width: 55px;
   height: 29px; }
 

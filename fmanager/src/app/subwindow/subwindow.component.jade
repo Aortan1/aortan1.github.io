@@ -9,7 +9,7 @@ hr.subw_hr
 			.file_rect
 			.file_name {{file.name}}
 	ng-container(*ngFor="let image of lof",)
-		.file.file_img.for-select(*ngIf="(image.parent_id==sel_folder.id)&&(image.type_of_file=='img')", (click)="onSelectInSub(image.id);",(dblclick)="onDoubleClickInSub(image.id);",[id]="'w'+image.id", title="{{ image.name }}",)
+		.file.file_img.for-select(*ngIf="(image.parent_id==sel_folder.id)&&(image.type_of_file=='img')", (click)="onSelectInSub(image.id);",(dblclick)="onDoubleClickInSub(image.id);",[id]="'w'+image.id", title="Name: {{ image.name }}\nDimensions: {{image.img_width}} x {{image.img_height}}")
 			//- Для изображений окна
 			.a-img
 				//- img.file_img_rect(src="{{image.path}}", alt="")

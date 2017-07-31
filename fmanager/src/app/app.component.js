@@ -15,7 +15,15 @@ var core_1 = require("@angular/core"), listoffolders_service_1 = require("./shar
         this.listService = e, this.parent = "", this.show_popup = !1;
     }
     return e.prototype.ngOnInit = function() {
+        this.listService.readSessionLoginFromLoc(), this.listService.session_login && this.userEnter(), 
         this.lof = this.listService.getList(), this.sel_folder = this.listService.sel_folder;
+    }, e.prototype.userEnter = function() {
+        this.greeting = "Hello, " + this.listService.session_login + ".", document.getElementsByTagName("app-login")[0].classList.add("login-display-none");
+    }, e.prototype.userGreeting = function(e) {
+        this.greeting = "Hello, " + e + ".", this.listService.session_login = e, this.listService.writeSessionLoginToLoc();
+    }, e.prototype.userExit = function() {
+        document.getElementsByTagName("app-login")[0].classList.remove("login-display-none"), 
+        this.listService.session_login = "", this.greeting = "", this.listService.writeSessionLoginToLoc();
     }, e.prototype.ngAfterViewInit = function() {
         this.listService.makeSelection(this.sel_folder.id);
     }, e.prototype.toggle_show_popup = function(e) {

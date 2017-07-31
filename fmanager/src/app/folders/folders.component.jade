@@ -8,8 +8,8 @@ div(style="width: 100%; position: relative;")
 			//- Отображение папок дерева
 			summary.selecting.dir_name.visual.in( (click)="onSelectEmit(folder.id);", (dblclick)='onNameDoubleClick(sum);', #sum='') {{ folder.name }}
 				//- [ngClass]="{'show_rename': show_rename}", 
-				form((submit) = "rename(new_name.value, folder); ngOnInit();")
-					input.rename.rename_dir(type="text", value="{{ folder.name }}", pattern=".+",	autocomplete="off", #new_name='')
+				form((submit) = "rename(new_name.value, folder); ngOnInit(); new_name.value=folder.name;")
+					input.rename.rename_dir(type="text", value="{{ folder.name }}", pattern=".+",	autocomplete="off", #new_name='', (blur)="onBlur()")
 			div.create
 				form((submit) = "create(create_input.value, folder.id); create_input.value=''")
 					input.create__input(type="text", placeholder="Create", pattern=".+",
@@ -26,8 +26,8 @@ div(style="width: 100%; position: relative;")
 			//- Отображение файлов изображений дерева
 			.img_shape
 			.img_name((dblclick)='onNameDoubleClick(nam);', title='{{ image.name}}', #nam='') {{ image.name}}
-				form((submit) = "rename(new_name.value, image); ngOnInit();")
-					input.rename.rename_img(type="text", value="{{ image.name }}", pattern=".+",	autocomplete="off", #new_name='')
+				form((submit) = "rename(new_name.value, image); ngOnInit(); new_name.value=image.name;")
+					input.rename.rename_img(type="text", value="{{ image.name }}", pattern=".+",	autocomplete="off", #new_name='', (blur)="onBlur()")
 	
 			div.delete((click)="delete(image.id)") Delete
 

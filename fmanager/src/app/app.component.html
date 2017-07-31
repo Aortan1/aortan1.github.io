@@ -1,9 +1,12 @@
 
+<app-login class="login-display-none" (user_entering)="userGreeting($event);"></app-login>
 <div class="window" id="window">
   <div class="controls">
     <form (submit)="this.listService.seachFile(searchfile.value); ngOnInit();">
       <input class="search_file" type="text" name="searchfile" placeholder="Search" autocomplete="off" #searchfile="" id="id_search"/>
     </form>
+    <div class="user-greeting">{{greeting}}</div>
+    <div class="exit" (click)="userExit();">Exit</div>
     <app-file-upload [sel_folder]="sel_folder" #fu="" (change)="fu.addPhoto($event);this.listService.writeData();this.listService.definition_img_sizes();" [multiple]="true"></app-file-upload>
     <div class="button_reset" (click)="this.listService.setInitialData(); this.listService.writeData(); this.listService.reload();"></div>
   </div>

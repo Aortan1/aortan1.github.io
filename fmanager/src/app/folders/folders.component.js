@@ -1,8 +1,8 @@
 "use strict";
 
-var __decorate = this && this.__decorate || function(e, t, o, i) {
-    var r, n = arguments.length, s = n < 3 ? t : null === i ? i = Object.getOwnPropertyDescriptor(t, o) : i;
-    if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(e, t, o, i); else for (var c = e.length - 1; c >= 0; c--) (r = e[c]) && (s = (n < 3 ? r(s) : n > 3 ? r(t, o, s) : r(t, o)) || s);
+var __decorate = this && this.__decorate || function(e, t, o, r) {
+    var i, n = arguments.length, s = n < 3 ? t : null === r ? r = Object.getOwnPropertyDescriptor(t, o) : r;
+    if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) s = Reflect.decorate(e, t, o, r); else for (var c = e.length - 1; c >= 0; c--) (i = e[c]) && (s = (n < 3 ? i(s) : n > 3 ? i(t, o, s) : i(t, o)) || s);
     return n > 3 && s && Object.defineProperty(t, o, s), s;
 };
 
@@ -27,6 +27,9 @@ var core_1 = require("@angular/core"), FoldersComponent = function() {
     }, e.prototype.onNameDoubleClick = function(e) {
         this.show_rename = !this.show_rename, e.childNodes[1].childNodes[1].classList.add("show_rename"), 
         e.childNodes[1].childNodes[1].focus();
+    }, e.prototype.onBlur = function() {
+        var e = document.getElementsByClassName("show_rename")[0];
+        e && e.classList.remove("show_rename");
     }, e.prototype.onRenameEmit = function() {
         this.renamed.emit();
     }, e.prototype.renameFile = function(e, t) {

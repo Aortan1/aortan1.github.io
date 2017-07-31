@@ -28,6 +28,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   	show_popup: boolean = false;
 
+  	greeting: String;
+
 
 
   constructor(public listService:ListOfFoldersService){
@@ -38,14 +40,46 @@ export class AppComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit(){
+  	this.listService.readSessionLoginFromLoc();
+
+  	if(this.listService.session_login) {this.userEnter();  }
+
+   
     this.lof = this.listService.getList();
     this.sel_folder=this.listService.sel_folder;
     //console.log("app.component ngOnInit"); 
   }
 
+  userEnter(){
+  	this.greeting = "Hello, "+this.listService.session_login+".";
+  	document.getElementsByTagName("app-login")[0].classList.add("login-display-none");
+  }
+
+
+  userGreeting(username){
+  	this.greeting = "Hello, "+username+".";
+  	this.listService.session_login = username;
+  	this.listService.writeSessionLoginToLoc();
+  }
+
+
+
+  userExit(){
+  	document.getElementsByTagName("app-login")[0].classList.remove("login-display-none");
+  	this.listService.session_login = ''; this.greeting='';
+  	this.listService.writeSessionLoginToLoc();
+
+  }
+
+
+
+
+
 
   ngAfterViewInit(){
   	this.listService.makeSelection(this.sel_folder.id);
+
+
 
 
   }
@@ -108,7 +142,6 @@ export class AppComponent implements OnInit, AfterViewInit {
    	}
   	//if(this.sel_folder.type_of_file=='img') window.open(this.sel_folder.path+this.sel_folder.name);
   }
-
 
 
 

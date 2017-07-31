@@ -12,6 +12,7 @@ export class ListOfFoldersService{
      //selected_id: string;
      sel_folder:Folder; getSelFolder(){return this.sel_folder;}
      sel_image:Folder;
+     session_login: String;
      //big_or_small: boolean;
      //static sel : string = "dir0";
      constructor( ){
@@ -41,7 +42,16 @@ export class ListOfFoldersService{
             }
     }
 
+    readSessionLoginFromLoc(){
+        if(localStorage.getItem("session_login")) 
+            {
+                console.info("Чтение ЛОГИНА из локалки.")
+                this.session_login = JSON.parse(localStorage.getItem("session_login"));
+            }
+    }
+
     readData(){
+        this.readSessionLoginFromLoc();
         this.readListFromLoc();
         this.readSelectionFromLoc();
     }
@@ -56,8 +66,13 @@ export class ListOfFoldersService{
         localStorage.setItem("sel_folder",JSON.stringify(this.sel_folder));        
     }
 
+    writeSessionLoginToLoc(){
+        console.info("Запись ЛОГИНА в локалку."); 
+        localStorage.setItem("session_login",JSON.stringify(this.session_login));        
+    }
 
     writeData(){// сохранение массива дерева и выделенной папки в лок.хранилище
+        this.writeSessionLoginToLoc();
         this.writeListToLoc();
         this.writeSelectionToLoc();        
     } 
@@ -65,7 +80,7 @@ export class ListOfFoldersService{
     setInitialData(){
          console.info("Инициализация.");
          this.list_of_folders = [];
-         this.list_of_folders.push(new Folder("ROOT FOLDER", "", 'dir0' ));
+         this.list_of_folders.push(new Folder("SYSTEM", "", 'dir0' ));
          this.list_of_folders.push(new Folder( "Видео", "dir0", 'dirx1'));
          this.list_of_folders.push(new Folder( "Музыка", "dir0", 'dirx2'));
          this.list_of_folders.push(new Folder( "Документы", "dir0", 'dirx3'));
@@ -169,8 +184,8 @@ export class ListOfFoldersService{
      add_class_selected(id : string):void {// вью-ф-я выделения файла или папки по её id (в дереве)
         console.log("add_class_selected ID = "+id);
 
-        var RenameInput = document.getElementsByClassName("show_rename")[0];
-        if(RenameInput) RenameInput.classList.remove("show_rename"); //удаление display:block с инпута в случае убора фокуса с него.
+        // var RenameInput = document.getElementsByClassName("show_rename")[0];
+        // if(RenameInput) RenameInput.classList.remove("show_rename"); //удаление display:block с инпута в случае убора фокуса с него.
 
         //Убираем выделение с выделенной ранее папки
         var SelFolder  = document.getElementsByClassName("selected")[0];
@@ -327,7 +342,7 @@ export class ListOfFoldersService{
         var folder:Folder = new Folder(name, parent, undefined, "dir");
         this.list_of_folders.push(folder); // добавление новой папки в массив
            //alert(folder.id+"  "+folder.type_of_file+"  "+this.list_of_folders.length);
-           //console.log(this.list_of_folders);
+        console.log(this.list_of_folders);
                    
         this.writeListToLoc();
         this.makeSelection(folder.id);   
@@ -355,7 +370,7 @@ export class ListOfFoldersService{
 
     renameFile(new_name: string, folder:Folder):boolean {
          var RenameInputEl=document.querySelector("input:focus");
-         RenameInputEl.classList.remove('show_rename'); //убираем display:block с инпута
+         RenameInputEl.classList.remove('show_rename'); //убираем display:block с инпута после ввода
          //alert("new_name = "+new_name); 
          //alert(RenameInputEl.value); 
          if (folder.name==new_name) return false;
@@ -366,6 +381,7 @@ export class ListOfFoldersService{
           {
              alert("Такое имя в каталоге уже существует.");
              //RenameInputEl.value = folder.name;
+
              return false;
           }
          this.list_of_folders[this.getIndex(folder.id)].name = new_name;

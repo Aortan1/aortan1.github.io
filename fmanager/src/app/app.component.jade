@@ -1,10 +1,15 @@
-
+//- app-login.login-display-none
+app-login.login-display-none((user_entering)="userGreeting($event);")
 
 .window#window
 	//- .controls - верхняя панель 
 	.controls
 		form((submit)="this.listService.seachFile(searchfile.value); ngOnInit();")
 			input.search_file(type="text", name="searchfile", placeholder="Search",autocomplete="off", #searchfile='',id="id_search")
+
+
+		.user-greeting {{greeting}}
+		.exit((click)='userExit();') Exit
 		app-file-upload([sel_folder]='sel_folder', #fu='',(change)="fu.addPhoto($event);this.listService.writeData();this.listService.definition_img_sizes();", [multiple]="true")
 		.button_reset((click)='this.listService.setInitialData(); this.listService.writeData(); this.listService.reload();')
 	//- левое окно для дерева директорий

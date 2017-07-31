@@ -1,0 +1,8 @@
+
+<div class="app-login" id="app-login">
+  <form class="log-form" (submit)="onSubmit()">
+    <input class="log-inp input-login" type="text" placeholder="Name" name="username" id="username" required="" [(ngModel)]="user.name" #username="" pattern="[a-zA-Z._-]{3,}[0-9]*"/>
+    <input class="log-inp input-password" type="password" placeholder="Password" name="userpass" id="userpass" required="" [(ngModel)]="user.pass"/>
+    <input class="log-inp input-submit" type="submit" value="Enter"/>
+  </form>
+</div>
