@@ -3,35 +3,33 @@ $color-backgr-lwindow: #ebeffd
 $color-backgr-create-input: rgba(92, 184, 92, 1)
 $color-backgr-delete-input: rgba(217, 83, 79, 1)
 $color-backgr-selected: #c8ccfd
+$color-backgr-active: #d9d9d9
 $delete-input-border: 1px dashed grey
-$selected-border: 1px dotted green
-
+$selected-border: 1px dotted #99f
+$selected-border-color: #99f
 
 input, textarea   
   outline: none
   border-color: transparent
   border-radius: 5px
 
+summary:active, summary:focus 
+  outline: none  
 
-.container  
+.folders
+  width: 100%
+  position: relative
+
+.folders__folder
   position: relative
   height: 100%
-  left: 40px;
-  //border: 1px dashed orange
-  
- 
-// .container:empty
-//   display:none
+  left: 40px
 
+  
 
-.selecting //блок папки
-  display: block
-  position: relative
-  margin-top: 5px
-  //border: 1px solid green
   
   
-summary.dir_name
+summary.folder-name
   color: $color-font-m
   width: 170px
   height: 25px
@@ -52,13 +50,11 @@ summary.dir_name
   position: absolute
   top: 00px
   left: 270px
-  opacity: 0
-  transition: 0.7s
+  transform: scale(0,0)
+  transition: 0.5s 
 
 .create form
-  margin-bottom: 0px
 
-//.actions
 .create__input
   color: #fff
   cursor: pointer
@@ -81,12 +77,14 @@ summary.dir_name
 .delete
   color: #fff
   cursor: pointer
+  display: inline-block
   font-style: italic
   position: absolute
   top: 2px
   left: 335px
-  opacity: 0
-  transition: 1s
+  //opacity: 0
+  transform: scale(0,0)
+  transition: 0.5s
   padding: 5px 0px 5px 10px
   width: 55px
   height: 16px
@@ -97,31 +95,44 @@ summary.dir_name
   
 
 
-.image .delete
+.folders__image .delete
   top: 7px
   left: 220px
   border: 1px dotted transparent
 
 
-.selected
-  // border: 2px solid red  
+.selected>.create, .selected>.create~.delete, .folders__image.selected>.delete
+  //opacity: 1!important
+  transform: scale(1,1)
+  transition: 0.5s 
 
-.selected>.create, .selected>.create~.delete, .image>.selected>.delete
-  opacity: 1!important
-  transition: 0.7s 
 
-.selected>.selecting.visual, .selected.selecting.visual 
+.selected.folders__folder>.folder-name
+  border: 1px solid $selected-border-color
+
+.selected.folders__folder>.folder-name, .selected.folders__image
   //border: 1px dotted blue
   background-color: $color-backgr-selected
   color: $color-font-m
   font-weight: 600
- 
-.image>.selected
+  transition: 0.0s 
+  //класс .selected добавляется при клике на папку/файл
+
+
+.active.folders__folder>.folder-name
+  //border: 1px dotted blue
+  background-color: $color-backgr-active
+  color: $color-font-m
+  font-weight: 600
+  transition: 0.0s   
+  //класс .active добавляется родительской папке, содержащей выделенную
+
+.selected.folders__image
   background-color: $color-backgr-selected
   border: $selected-border
   color: $color-font-m
   font-weight: 600
-  .img_name
+  .image-name
     color: $color-font-m
 
 
@@ -172,66 +183,39 @@ input.rename.rename_dir
 .rename.rename_dir:focus, .rename.rename_img:focus
   opacity: 1
 
-// .show_rename>form>.rename
-//   display: block!important
 
-.show_rename 
+.js-show_rename 
   display: block!important
 
 
-.delete.actions
-  display: inline-block
 
-
-
-
-.image
-  //margin-bottom: 10px
-  padding: 0 0 0 35px
+.folders__image
+  margin-top: 5px
+  padding-left: 5px
   height: 100% 
   position: relative
-  left: 40px
+  left: 75px
+  //border: 1px solid red
  
 
-.img-container
-  // height:  45px
-  position: relative
 
-.img_shape
-  color: $color-font-m
-  display: inline-block
-  width: 35px
-  height: 30px
-  //border: 1px solid maroon
-  border-radius: 0px 10px 0 0
-  background: url("../i/img.png") no-repeat
-  background-size: contain
-  font-weight: 400
-  //padding: 0 0 0 35px
-  user-select: none
-  margin-top: 5px
-  overflow: visible
-
-
-
-.img_shape
+.image-shape
   color: $color-font-m
   display: inline-block
   width: 35px
   height: 35px
-  //border: 1px solid red
+  //border: 1px solid blue
   border-radius: 0px 10px 0 0
   background: url("../i/img.png") no-repeat
   background-repeat: no-repeat
   background-size: contain
   font-weight: 400
-  //padding: 0 0 0 35px
   user-select: none
   margin-top: 5px
   overflow: visible
 
 
-.img_name
+.image-name
   display: inline-block
   color: $color-font-m
   padding: 18px 0 0px 0px
@@ -241,15 +225,3 @@ input.rename.rename_dir
   text-overflow: ellipsis
   white-space: nowrap
 
-
-#container_for_img
- height: 200px
-
-  //display: none
-  
-// .red
-//   border-color: red!important
-//   background-color: red!important
-// .green
-//   color: green
-     

@@ -66,19 +66,19 @@ hr.subw_hr {
 .file_dir {
   bottom: 2px; }
 
-.file_dir.selected-in-window {
+.file_dir.selected-in-sub {
   border: 1px solid #75a9ff;
   border-radius: 5px;
   background-color: rgba(0, 0, 255, 0.15); }
-  .file_dir.selected-in-window .file_name {
+  .file_dir.selected-in-sub .file_name {
     font-weight: 600;
     color: #255; }
 
-.file_img.selected-in-window {
+.file_img.selected-in-sub {
   border: 1px solid #75a9ff;
   border-radius: 5px;
   background-color: rgba(0, 0, 255, 0.15); }
-  .file_img.selected-in-window .file_name {
+  .file_img.selected-in-sub .file_name {
     font-weight: 600;
     color: #255; }
 

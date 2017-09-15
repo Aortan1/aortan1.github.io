@@ -3,7 +3,6 @@ input, textarea {
   border-radius: 5px; }
 
 .window, .controls, subwindow, .tree_window {
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.42), 0 3px 1px -2px rgba(0, 0, 0, 0.6), 0 1px 5px 0 rgba(0, 0, 0, 0.56);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.42), 0 3px 1px -2px rgba(0, 0, 0, 0.6), 0 1px 5px 0 rgba(0, 0, 0, 0.56);
   border-radius: 5px;
   background-color: #f0f0f0; }
@@ -16,27 +15,75 @@ input, textarea {
   background-color: #fbfafb; }
 
 .controls {
+  padding: 15px 0 0 25px;
   width: calc(100% - 20px);
   margin: 10px;
-  height: calc(10% - 20px);
+  height: 50px;
   position: relative; }
-  .controls input.search_file, .controls #upload_visible {
-    position: absolute;
-    top: 27%;
-    left: 3.5%;
-    padding: 5px 20px;
+
+input.controls__search_file {
+  float: left;
+  position: relative;
+  padding: 5px 20px;
+  color: #555; }
+  input.controls__search_file::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
     color: #555; }
-    .controls input.search_file::-webkit-input-placeholder, .controls #upload_visible::-webkit-input-placeholder {
-      text-align: center;
-      font-size: 16px;
-      font-style: italic;
-      color: #555; }
-  .controls app-file-upload {
-    position: absolute;
-    left: auto;
-    top: 3px;
-    right: 150px;
-    height: 50px; }
+
+.controls__user-greeting, .controls__exit {
+  float: left;
+  position: relative;
+  padding: 3px 20px;
+  height: 20px;
+  left: 600px;
+  font-style: italic;
+  font-size: 18px; }
+
+.controls__exit:hover {
+  cursor: pointer;
+  color: red;
+  text-decoration: underline; }
+
+app-file-upload {
+  float: left;
+  position: relative;
+  left: 700px;
+  height: 50px; }
+
+.controls__button_reset {
+  float: right;
+  position: relative;
+  bottom: 12px;
+  cursor: pointer;
+  width: 95px;
+  height: 55px;
+  font-size: 30px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  color: #aaa;
+  right: 12px;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  transition: 0.2s;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.42), 0 3px 1px -2px rgba(0, 0, 0, 0.6), 0 1px 5px 0 rgba(0, 0, 0, 0.56); }
+  .controls__button_reset:before {
+    content: "reset";
+    margin: 10px 5px 5px 20px;
+    display: block; }
+  .controls__button_reset:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 0.2s; }
+  .controls__button_reset:active {
+    -webkit-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75);
+    top: 1px;
+    transition: 0.2s; }
 
 subwindow {
   display: inline-block;
@@ -93,56 +140,13 @@ subwindow {
   padding: 20px 0 0px 5px;
   vertical-align: top; }
 
-.button_reset {
-  cursor: pointer;
-  width: 95px;
-  height: 55px;
-  font-size: 30px;
-  border: 1px solid #aaa;
-  border-radius: 10px;
-  color: #aaa;
-  position: absolute;
-  top: 4px;
-  right: 12px;
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.42), 0 3px 1px -2px rgba(0, 0, 0, 0.6), 0 1px 5px 0 rgba(0, 0, 0, 0.56);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.42), 0 3px 1px -2px rgba(0, 0, 0, 0.6), 0 1px 5px 0 rgba(0, 0, 0, 0.56); }
-  .button_reset:before {
-    content: "reset";
-    margin: 10px 5px 5px 20px;
-    display: block; }
-  .button_reset:hover {
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s; }
-  .button_reset:active {
-    -webkit-transform: scale(0.75);
-    -ms-transform: scale(0.75);
-    transform: scale(0.75);
-    top: 1px;
-    -webkit-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s; }
-
 app-popup {
   -webkit-transform: scale(0, 0);
   -ms-transform: scale(0, 0);
   transform: scale(0, 0);
-  -webkit-transition: background-color 0.1s, -webkit-transform 0.1s;
   transition: background-color 0.1s, -webkit-transform 0.1s;
-  -o-transition: transform 0.1s, background-color 0.1s;
   transition: transform 0.1s, background-color 0.1s;
   transition: transform 0.1s, background-color 0.1s, -webkit-transform 0.1s;
-  -webkit-transition-delay: 0s, 0.5s;
-  -o-transition-delay: 0s, 0.5s;
   transition-delay: 0s, 0.5s;
   position: absolute;
   width: 100%;
@@ -157,9 +161,7 @@ app-popup {
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
-  -webkit-transition: background-color 0.1s, -webkit-transform 0.1s;
   transition: background-color 0.1s, -webkit-transform 0.1s;
-  -o-transition: transform 0.1s, background-color 0.1s;
   transition: transform 0.1s, background-color 0.1s;
   transition: transform 0.1s, background-color 0.1s, -webkit-transform 0.1s; }
 
@@ -172,19 +174,3 @@ app-login {
 
 .login-display-none {
   display: none; }
-
-.user-greeting, .exit {
-  display: inline-block;
-  position: relative;
-  height: 20px;
-  left: 900px;
-  top: 21px;
-  font-style: italic;
-  font-size: 18px; }
-
-.exit {
-  left: 970px; }
-  .exit:hover {
-    cursor: pointer;
-    color: red;
-    text-decoration: underline; }

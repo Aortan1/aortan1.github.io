@@ -1,9 +1,8 @@
 
 
-
  1. *ngFor="let todo of todos" 
 
- 	<section class="todo-list" > 
+ 	<section class="todo-list" >
 		 		<div class="todo-item" *ngFor="let todo of todos" [class.completed]="todo.completed" >		 			
 		 			<span class="title">{{ todo }}</span>
 		 		</div>
@@ -48,7 +47,7 @@
 
 		 [ngClass]
 		 переключает применение класса completed,
-		 	применяет класс 'completed' к элементу в случае свойства todo.completed, равного true?,
+		 	применяет класс 'completed' к элементу в случае свойства todo.completed, равного true,
 		 	и НЕ применяет класс в случае  todo.completed==false
 
 	Пример2:
@@ -82,7 +81,7 @@
  		Т.е через квадратные скобки в теге [property] можно обратиться к св-ву property того дом-элемента, в котором это обращение прописано. 
 
 
-7. <i class="material-icons" [textContent]="todo.completed ? 'check_box': 'check_box_outline_blank'" > </i> 
+7. <i class="material-icons" [textContent]="todo.completed ? 'check_box': 'check_box_outline_blank'" > </i>
 	
 		Тоже отображает с разным наполнением зн-я св-ва .textContent в зависимости от значения todo.completed == true или false
 		(аналог использования {{}} в п.5)
@@ -219,7 +218,7 @@
 
 20.2. Для передачи св-ва из ребёнка 2 родителю 1:
 
-1 - импортировать EventEmitterв 2: import { Component, Input, EventEmitter } from '@angular/core'; 
+1 - импортировать EventEmitter в 2: import { Component, Input, EventEmitter } from '@angular/core'; 
 2 - инициализируем в 1 св-во, кот. будем передавать из 2: age = 20;
 3 - задаём в классе 2 переменную для екземпляра EventEmitter'a: 
 
@@ -242,7 +241,14 @@
 7 - в шаблоне родителя 1 в элементе ребёнка folder описываем выражение для емитированного события ageChanged:
 		(ageChanged)='age = $event'
 
+ЛИБО:
+ 1 - импортируем в ребёнка не только EventEmitter, но и Output: 
+ 		import { Component, Input, EventEmitter, Output } from '@angular/core';
+ 3 - переменную события в ребёнке задаём как выводимую - с аутпутом:
+ 		@Output() ageChanged = new EventEmitter<string>();
 
+ 6 - св-во outputs в декораторе - не нужно.
+   		
 
 
 
@@ -367,6 +373,182 @@
  Двусторонняя привязка, когда элемент DOM привязан к значению на компоненте, при этом изменения на одном конце привязки сразу приводят к изменениям на другом конце
 
 
+29. <div class="todo-list"  >		<!-- *ngIf="todos.length" -->
+		<todo-item *ngFor = " let todo of todos" [todo]='todo' (delete)='onDelete($event);' (toggle) = 'onToggle($event);' > <!-- В компонент todo-list отправляем здесь 3 св-ва: todo, delete, toggle -->
+		</todo-item>
+</div>
+
+	Методы, описанные в шаблоне компонента, включая те, что внутри тегов дочерних компонентов, ОТНОСЯТСЯ К КЛАССУ ЭТОГО КОМПОНЕНТА!!!
+	Т.е. onToggle($event) , onDelete($event) - это методы класса TodoListComponent, а не класса TodoItemComponent
+
+
+
+
+29. МАРШРУТИЗАЦИЯ:
+-1-. В индекс хтмл установить бейз.
+-2-. в app.module.ts: импортировать RouterModule, в декларировании - конфигурировать пути:
+
+RouterModule.forRoot([
+      {path: 'welcome', component: WelcomeComponent},      		
+      {path: '', redirectTo: 'welcome', pathMatch:'full'},      		
+      {path: '**', component: PageNotFoundComponent}      		
+      ])
+
+// 2й аргумент - это не имя к-та, а ссылка на к-т WelcomeComponent
+// в сл.пустого пути - перенаправление на путь 'welcome'. pathMatch:'full' - значит, что совпадение с путём '' должно быть полное (только пустой путь). Цепочка редиректов (редирект на редирект) не работает, перенаправление только 1 раз.
+// если ничего не подошло, направить по этой ссылке 
+
+    // 1. Проверка путей на соответствие происходит сверху вниз.
+    // 2. первый путь, кот.подходит срабатывает, остальные игрорируются.
+    // 3. Пути регистрочувствительны.
+    // 4. При нажатии на ссылку вся страница не перегружается, а только загружается новый компонент.
+
+
+-3-. В шаблоне app.component.html вставить директиву <router-outlet></router-outlet> в месте подгружаемого компонента.
+-4-. Вместо атрибутов href ссылок меню задать значения routerLink: 
+	 <li routerLinkActive="active">
+        <a [routerLink]="['/welcome']">Home</a>
+    </li>
+
+
+
+30. ПРИКОЛ ES6: Константу, заданную через const, естественно, нельзя переопределять и изменять. Но если в const положить объект, его СВ-ВА МОЖНО МЕНЯТЬ, добавлять, удалять и т.д., но не удалять ссылку на объект.
+
+Область видимости const -  та же, что и у let - внутри текущих фиг.скобок {}
+
+ 
+
+31. ES5:  Условие неопределённости переменной: if(typeoff t === 'undefined')
+
+function timer (t) {
+		let time = (typeof t === 'undefined') ? 60 : t;
+		console.log(time);
+		//в случае отсутствия передачи параметра - выведет 60, иначе - параметр.
+}
+
+Теперь в ЕS6 можно писать так:
+
+function timer (time=60) {
+		console.log(time);
+}
+
+32. Шаблонизация в ЕS6 (переменные, выводимые в разметку) - с исп-ем обр.кавычек `` и  ${variable}:
+	let avg = (sum / marks.length).toFixed(2);
+	let res = `<div>${name} ${lastname} <strong>${avg}</strong></div>`;
+
+	И строку в обр.кавычках можно разрывать переносами строк, они не разрывают строку в ``.
+
+
+33. Сохранение контекста в ES5 и ES6:
+
+
+	function MyTimer(t){   // - это ф-я-конструктор ES5, аналог класса. В ES6 - class MyTimer {...}, и методы и св-ва - без this, как обычно.
+		this.time = t;
+		
+		this.tick = function(){
+			this.time--;
+			console.log(this.time);
+			document.getElementById("timer1").innerHTML = this.time;
+			}
+		
+		this.run = function(){
+			var that = this; //  setIngerval вызывается в контексте windows, и this теряется. Поэтому контекст this сохраняется в that  
+			setInterval(function(){
+				that.tick();
+			}, 1000);		
+			}
+		
+		this.run = function(){		
+			setInterval(() => {this.tick();}, 1000); 
+
+			// Kлючевое отличие СТРЕЛОЧНОЙ Ф-И в том, что она сохраняет контекст, т.е её контекст тот же, как в том месте, в котором она написана.	
+			// Контекст обычной ф-и - тот, на котором она вызвана, т.е для	setInterval(function(){			that.tick();}, 1000); - контекст this - это ?анонимная ф-я.
+			// СТРЕЛОЧНЫЕ Ф-И надо использовать только там, где надо сохранить контекст родителя (в асинх.действиях, анимациях, сет-интервалах, сет-таймаутах, аякс-запросах и т.п).
+
+		}	
+}
+
+// Вариант с классом вместо ф-и-конструктора (ES6):
+
+class MyTimer6{
+	constructor(t = 100){
+		this.time = t;
+	}
+	
+	tick(){
+		this.time--;
+		console.log(this.time);
+		document.getElementById("timer1").innerHTML = this.time;
+	}
+	
+	run(){
+		var that = this;
+		setInterval(function(){
+			that.tick();
+		}, 1000);		
+	}
+	
+	run(){		
+		setInterval(() => {this.tick();}, 1000); 
+	}	
+}
+
+
+
+t1 = new MyTimer6(100).run();
+
+
+
+class ConsoleTimer extends MyTimer{
+	tick(){
+		// this.time--;
+		// document.getElementById("timer1").innerHTML = this.time;
+		super.tick(); // Вызов родительского метода. ЧТОБЫ НЕ ПОВТОРЯТЬ код метода родителя, вызываем сначала метод родителя с тем же именем ключ.словом SUPER, потом пишем остальной код
+		console.log(this.time);
+	}	
+}
+
+
+t1 = new ConsoleTimer(100).run();
+
+
+class ReverseTimer extends MyTimer{
+	tick(){
+		this.time++;
+		console.log(this.time);
+	}	
+}
+
+t1 = new ReverseTimer(100).run(); // Теперь отсчёт идёт вверх.
+
+
+
+//*********************
+
+let items = document.querySelectorAll(".items__item");
+for(let item of items){
+	item.onclick = function (e) {
+ // item.onclick = (e) => { - будет потеря контекста	
+		this.classList.toggle('item--active');
+	}
+}
+
+// Здесь this ссылаетс на item, и на нём вызывается метод onclick.
+// Если заменить function на стрелочную ф-ю, то item уже не будет контекстом, контекстом будет window, и функция работать как надо не будет.
+
+
+!!!!!!!! ES6 РЕКОМЕНДУЕТСЯ КОМПИЛИТЬ В ES5 !!!!!!!!
+
+
+
+34. Прототипное наследование. (https://youtu.be/SveV1LXwWZ4)
+Прототип - резервное хранилище св-в.
+
+"use strict" - директива, при включении которой код будет работать по современному стандарту ES5. При этом код, написанный до введения ES5 - может не работать. Если же нужно, чтобы работал старый код, нужно просто не упоминать эту директиву.
+
+
+
+
 
 
 
@@ -421,7 +603,7 @@ Node или Node.js — программная платформа, основа�
 
 
 https://learn.javascript.ru/es-function
-https://learn.javascript.ru/set-map - коллекции js: Set, Map, WeakSet и WeakMap
+https://learn.javascript.ru/set-map
 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty
 https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 https://medium.com/@frontman/%D0%BA%D0%BE%D1%80%D1%82%D0%B5%D0%B6%D0%B8-%D0%B2-javascript-af280e716ebc
@@ -437,9 +619,49 @@ http://typescript-lang.ru/docs/Interfaces.html
 
 https://metanit.com/web/angular2/2.8.php
 
-https://learn.javascript.ru/descriptors-getters-setters - Дескрипторы, геттеры и сеттеры свойств
+DOM:
+1. https://stackoverflow.com/questions/32693061/angular-2-typescript-get-hold-of-an-element-in-the-template/35209681#35209681 - angular 2 / typescript : get hold of an element in the template
 
-https://metanit.com/web/angular2/2.9.php - Шаблонные переменные, ViewChild и ContentChild
+2. https://stackoverflow.com/questions/40464794/how-to-perform-dom-manipulation-in-angular2-and-angular4-components - How to perform DOM manipulation in Angular2 and Angular4 components
+
+
+3. https://www.youtube.com/watch?v=vrdHEBkGAow - how to use JQuery in Angular2. Angular 2 Tutorial (2016) - Angular 2 & jQuery (use with caution!)
+
+4. https://stackoverflow.com/questions/43001821/angular2-getelementsbyclassname-on-elementref - Angular2 getElementsByClassName on ElementRef
+
+Promise:
+https://scotch.io/tutorials/javascript-promises-for-dummies - ПРОМИСЫ 19
+https://youtu.be/wBraVpRkTAk -  - ПРОМИСЫ 19 видос
+https://youtu.be/fEgOzb7EmEM - ПРОМИСЫ 21, вебинар 1:35
+
+https://itvdn.com/ru/blog/article/programing-javascript - Асинхронное пр-е в JS. Исп-е Deferred и Promise.
+
+
+https://stackoverflow.com/questions/36352405/file-upload-with-angular2-to-rest-api - File Upload with Angular2 to Rest API
+!!!! https://golosay.net/post-formdata-angular-2-with-data/ - отправка имени, фамилии и файла фото, Angular2
+
+https://stackoverflow.com/questions/39643862/contents-of-file-in-angular2 - ФайлАплоадер
+http://valor-software.com/ng2-file-upload/
+
+https://developer.mozilla.org/ru/docs/Web/API/FileList - Использование FileList
+https://developer.mozilla.org/ru/docs/Web/API/File - Интерфейс File
+https://developer.mozilla.org/ru/docs/Web/API/FileReader - Объект FileReader
+
+https://developer.mozilla.org/en-US/docs/Using_files_from_web_applications - здесь скрытие неподдающегося стилизации инпута типа file попроще.
+
+
+Observable: 
+	https://youtu.be/NK-WzH3RBds
+	https://youtu.be/1frKc597awU?list=PLqHlAwsJRxANlSuRSgldPWsbNkPqVBeFp
+
+
+https://youtu.be/iHC0CNcj2_Y - Видеокурс Angular 2 Essential. Урок 5. Маршрутизация - НЕзаконченый урок
+https://youtu.be/-T2x1ysnS9Q - Angular 2 Routing - Полное руководство #1 Основы. МАРШРУТИЗАЦИЯ
+https://youtu.be/dKYkN0Zqaf8 - Angular 2 Routing - Полное руководство #2 - Вторичные роуты
+https://youtu.be/dKYkN0Zqaf8?t=20s - структура папок и компонентов проекта Deborah Kurata
+(https://github.com/DeborahK/Angular-Routing - репозиторий проекта Deborah Kurata)
+
+
 
 
 От 26июн17:
@@ -448,11 +670,50 @@ https://metanit.com/web/angular2/2.9.php - Шаблонные переменны
 вых.
 6:57:29
 
-От 07июл17:
+От 03июл17:
 8:04:19 = 8.05
 8:53:40 = 8.9
 8:08:18 = 8.15
 6:00:59 = 6.0		итого: -8.9
+
+От 10июл17:
+7:59:30 = 8.0
+8:37:54 = 8.6
+9:02:24 = 9.05
+6:48:23 = 6.8    -7.55
+
+
+8:31:20 = 8.5
+8:36:08 = 8.6
+8:37:15 = 8.6
+6:36:33 = 6.6	-7.7
+
+
+
+8:01:47 = 8.0
+6:30:16 = 6.5
+8:25:36 = 8.4
+8:18:50 = 8.3	-8.8
+
+
+От 31июл17:
+8:29:40 = 8.5
+7:58:01 = 7.95
+8:23:45	= 8.4	-15.15 +?6 = 9.15
+8:58:58 = 9.0	-6.15
+
+От 7авг17:
+8:29:28 = 8.5
+6:33:34 = 6.55
+8:23:37 = 8.4	-16.55
+8:10:39 = 8.15	-8.4
+
+От 14авг17:
+8:08:36 = 8.15
+8:25:35 = 8.4
+8:29:44 = 8.5	-14.95
+6:38:11 = 6.65	-8.3
+
 
 
 

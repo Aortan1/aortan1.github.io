@@ -28,36 +28,88 @@ input, textarea
   background-color: #fbfafb
 
 .controls
+  padding: 15px 0 0 25px
   width: calc(100% - 20px)
   margin: 10px
-  height: calc(10% - 20px)
+  height: 50px//calc(10% - 20px)
   //border: 1px solid $color-border-m
   position: relative
 
-  input.search_file, #upload_visible
-    position: absolute
-    top: 27%
-    left: 3.5%
-    padding: 5px 20px
-    //background-color: #1b2b34
-    color: $color-font-m
-    &::-webkit-input-placeholder
-        text-align: center
-        font-size: 16px
-        font-style: italic
-        color: $color-font-m
-
-  // .upload
-  app-file-upload
-    position: absolute
-    left: auto
-    top: 3px
-    right: 150px
-    //width: 300px 
-    height: 50px
-    //border: 1px solid green
+input.controls__search_file
+  float: left
+  position: relative
+  //border: 1px solid red
+  //height: 20px
+  //top: 27%
+  //left: 3.5%
+  padding: 5px 20px
+  //background-color: #1b2b34
+  color: $color-font-m
+  &::-webkit-input-placeholder
+      text-align: center
+      font-size: 16px
+      font-style: italic
+      color: $color-font-m
 
 
+
+.controls__user-greeting, .controls__exit
+  float: left
+  position: relative
+  padding: 3px 20px
+  //width: 100px
+  height: 20px
+  //border: 1px solid green
+  left: 600px
+  //top: 21px
+  font-style: italic
+  font-size: 18px
+
+.controls__exit
+
+  
+  &:hover
+    cursor: pointer
+    color: red
+    text-decoration: underline      
+
+
+app-file-upload
+  float: left
+  position: relative
+  left: 700px
+  //top: 18px
+  //right: 150px
+  //width: 300px 
+  height: 50px
+  //border: 1px solid green
+
+.controls__button_reset
+  float: right
+  position: relative
+  bottom: 12px
+  cursor: pointer
+  width: 95px
+  height: 55px 
+  font-size: 30px
+  border: 1px solid #aaa
+  border-radius: 10px
+  color: #aaa
+  right: 12px
+  transform: scale(0.7)
+  transition: 0.2s
+  box-shadow: 0 2px 2px 0 $color-boxsha-1,0 3px 1px -2px $color-boxsha-2,0 1px 5px 0 $color-boxsha-3
+  &:before
+    content: "reset"
+    margin: 10px 5px 5px 20px
+    display: block
+  &:hover
+    transform: scale(0.8)
+    transition: 0.2s
+  &:active
+    transform: scale(0.75)
+    top: 1px
+    transition: 0.2s  
 
     
 
@@ -127,31 +179,7 @@ subwindow
   vertical-align: top
 
 
-.button_reset
-  cursor: pointer
-  width: 95px
-  height: 55px 
-  font-size: 30px
-  border: 1px solid #aaa
-  border-radius: 10px
-  color: #aaa
-  position: absolute
-  top: 4px
-  right: 12px
-  transform: scale(0.7)
-  transition: 0.2s
-  box-shadow: 0 2px 2px 0 $color-boxsha-1,0 3px 1px -2px $color-boxsha-2,0 1px 5px 0 $color-boxsha-3
-  &:before
-    content: "reset"
-    margin: 10px 5px 5px 20px
-    display: block
-  &:hover
-    transform: scale(0.8)
-    transition: 0.2s
-  &:active
-    transform: scale(0.75)
-    top: 1px
-    transition: 0.2s    
+  
 
 
 
@@ -189,20 +217,3 @@ app-login
   
 
 
-.user-greeting, .exit
-  display: inline-block
-  position: relative
-  //width: 100px
-  height: 20px
-  //border: 1px solid green
-  left: 900px
-  top: 21px
-  font-style: italic
-  font-size: 18px
-
-.exit
-  left: 970px
-  &:hover
-    cursor: pointer
-    color: red
-    text-decoration: underline

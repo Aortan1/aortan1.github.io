@@ -1,27 +1,9 @@
 
-.app-login#app-login
-	form.log-form((submit)='onSubmit()')
+//- Окно авторизации
+.app-login
+	form.log-form((ngSubmit)='login(loginForm)', #loginForm="ngForm")
 		input.log-inp.input-login(type="text", placeholder="Name", name="username", id="username", required='', [(ngModel)] = "user.name", #username='', pattern = '[a-zA-Z\._\-]{3,}[0-9]*')
-		//- p Input clases:			|
-		//- 	b {{username.className}} 
 		input.log-inp.input-password(type="password", placeholder="Password", name="userpass", id="userpass", required='', [(ngModel)] = "user.pass")
+		p(style="font-size: 12px; font-style: italic; color: #888; text-align: center; margin-bottom: -10px;") (admin: 0; Alex, 12345; Polina, 23456;)
 		input.log-inp.input-submit(type="submit", value="Enter")
-		//- ul
-		//- 	li(*ngFor="let item of itemArray") {{item.name}}
 
-
-
-//- <div>
-//-      <input placeholder="Имя" required="" id="username" type="text">
-//-     </div>
-//-     <div>
-//-      <input placeholder="Пароль" required="" id="password" type="password">
-//-     </div>
-
-
-
-//- .app-popup
-//- 	.popup-window([ngStyle]="{'left':'calc(50% - '+ width/2 +'px)',  'top':'calc(50% - '+ height/2 +'px + 0px)'}")
-//- 		.imgname {{sel_image.name}}	
-//- 		.imgarea([ngStyle]="{'background-image': 'url('+ src +')', 'width':width+'px', 'height':height+'px'}")
-//- 		.close-button((click)="closePopup();" )

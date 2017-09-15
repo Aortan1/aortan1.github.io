@@ -1,18 +1,18 @@
 
-<app-login class="login-display-none" (user_entering)="userGreeting($event);"></app-login>
+<app-login (user_entering)="userGreeting($event);" style="display:none;"></app-login>
 <div class="window" id="window">
   <div class="controls">
     <form (submit)="this.listService.seachFile(searchfile.value); ngOnInit();">
-      <input class="search_file" type="text" name="searchfile" placeholder="Search" autocomplete="off" #searchfile="" id="id_search"/>
+      <input class="controls__search_file" type="text" name="searchfile" placeholder="Search" autocomplete="off" #searchfile="" id="id_search"/>
     </form>
-    <div class="user-greeting">{{greeting}}</div>
-    <div class="exit" (click)="userExit();">Exit</div>
+    <div class="controls__user-greeting">{{greeting}}</div>
+    <div class="controls__exit" (click)="userExit()">Exit</div>
     <app-file-upload [sel_folder]="sel_folder" #fu="" (change)="fu.addPhoto($event);this.listService.writeData();this.listService.definition_img_sizes();" [multiple]="true"></app-file-upload>
-    <div class="button_reset" (click)="this.listService.setInitialData(); this.listService.writeData(); this.listService.reload();"></div>
+    <div class="controls__button_reset" (click)="this.listService.setInitialData(); this.listService.writeData(); this.listService.reload();"></div>
   </div>
   <div class="tree_window" id="tree_window">
-    <folders #folderc="" [parent]="parent" (select)="goToFolder($event); this.listService.add_class_selected_in_sub($event);" (created)="ngOnInit();" (deleted)="ngOnInit();" (renamed)="ngOnInit();"></folders>
+    <folders #folderc="" [parent]="parent" (select)="goToFolder($event); subw.ngOnInit(); this.listService.add_class_selected_in_sub($event);" (created)="ngOnInit();" (deleted)="ngOnInit();" (renamed)="ngOnInit();"></folders>
   </div>
-  <subwindow [sel_folder]="sel_folder" (select)="onSelectedInWin($event);" (double_click)="onDoubleClickInWin($event);" (button_up_click)="onClickButtonUpInWin($event);"></subwindow>
+  <subwindow [sel_folder]="sel_folder" (select)="onSelectedInApp($event);" (double_click)="goInside($event);" (button_up_click)="onClickButtonUpInWin($event);" #subw=""></subwindow>
 </div>
 <app-popup #pop="" [ngClass]="{'display-block': show_popup}" [sel_folder]="sel_folder" [sel_image]="sel_image" (close_popup)="toggle_show_popup();"></app-popup>

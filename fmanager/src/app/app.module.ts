@@ -18,11 +18,16 @@ import { LoginComponent } from './login/login.component';
 import { HttpModule } from '@angular/http';
 import { InMemoryWebApiModule } from "angular-in-memory-web-api";
 
+import { UsersData } from "./login/usersdata.service";
+import { AuthService   } from "./login/auth.service";
+//import { MaterialModule } from "@angular/material"; 
+//import {ScrollToModule} from 'ng2-scroll-to';
+import { RouterModule } from "@angular/router";
+import { FirstComponent } from './first/first.component';
+import { LoginModule } from './login/login.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-//import { InMemoryServerModule } from "./login/inMemoryServer";
-import { UsersData } from "./login/inMemoryServer"; // ?? что за модуль InMemoryServerModule ????
-
-
+import { AppRoutingModule } from "./app-routing/app-routing.module";
 
 @NgModule({
   declarations: [
@@ -32,20 +37,33 @@ import { UsersData } from "./login/inMemoryServer"; // ?? что за модул
     SubwindowComponent,
     FileUploadComponent,
     PopupComponent,
-    LoginComponent
+    LoginComponent,
+    FirstComponent,
+    PageNotFoundComponent, 
+    //MaterialModule
+    //ScrollToModule
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(UsersData) // в скобках - имя класса с методом createDb()
-    //InMemoryServerModule
+    InMemoryWebApiModule.forRoot(UsersData), // в скобках - имя класса с методом createDb()
+      
+      //   RouterModule.forRoot([
+      // {path: 'system', component: AppComponent},
+      // {path: '', redirectTo: 'system', pathMatch:'full'}, 
+      // {path: '**', component: PageNotFoundComponent} 
+      // ]),
+    
+    LoginModule,
+    AppRoutingModule // модуль, отвечающий за раутинг, размещать в самом низу, чтобы его пути добавлялись ?в самый низ 
+
   ],
    providers: [
-   	ListOfFoldersService // !! ВСЕ СЕРВИСЫ НУЖНО РЕГИСТРИРОВАТЬ В providers ОСН.МОДУЛЯ ПРИЛОЖЕНИЯ 
-    // { provide: TOASTR_TOKEN, useValue: toastr }, //.?.
-    // { provide: JQ_TOKEN, useValue: jQuery } //.?.
+   	ListOfFoldersService,// !! ВСЕ СЕРВИСЫ НУЖНО РЕГИСТРИРОВАТЬ В providers ОСН.МОДУЛЯ ПРИЛОЖЕНИЯ 
+    AuthService
     ],
-  bootstrap: [AppComponent] //bootstrap - перевод: начальная загрузка
+  bootstrap: [FirstComponent] //bootstrap - перевод: начальная загрузка
 })
 export class AppModule { }

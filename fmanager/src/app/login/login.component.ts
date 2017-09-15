@@ -1,15 +1,25 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Http } from "@angular/http";
+//import { Http } from "@angular/http";
 
-import 'rxjs/add/operator/toPromise'; // добавляем оператор toPromise
+//import 'rxjs/add/operator/toPromise'; // добавляем оператор toPromise
 
 import { Observable } from 'rxjs/Observable';
 
-// import 'rxjs/add/operator/map';
-// import 'rxjs/add/operator/catch';
-// import 'rxjs/add/operator/throw';
+import 'rxjs/add/operator/map';
+//import 'rxjs/add/operator/catch';
+//import 'rxjs/add/operator/throw'; 
+//import 'rxjs/add/observable/throw';
 
-import { ListOfFoldersService } from '../shared/listoffolders.service'; // вообще то здесь ему не место
+//import 'rxjs/add/operator/take';
+
+
+//import { ListOfFoldersService } from '../shared/listoffolders.service'; // вообще то здесь ему не место
+import { User } from './user';
+import { AuthService } from './auth.service'; 
+
+import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -18,145 +28,47 @@ import { ListOfFoldersService } from '../shared/listoffolders.service'; // во�
 })
 export class LoginComponent implements OnInit {
 
-  public user:User = new User(0,"","");  
-  public itemArray: User[] = [];
-
+  public user:User = new User(0,"","",false);  // ?? для полей с [(ngModel)] в форме
   private apiUrl = "app/users";
   
   @Output() user_entering = new EventEmitter<string>();
 
 
-  clickHandler(){ //НЕ ИСПОЛЬЗУЮ
+login(loginForm: NgForm) {  // возвращает true в случае совпадения логина и пароля, и false в случае отсутствия такой пары
+      let userName = loginForm.form.value.username; //this.user.name = userName;
+      let password = loginForm.form.value.userpass; //this.user.pass = password;
+      //let LogWindow = document.getElementsByTagName("app-login")[0];
+      //alert(userName+" "+password);
 
-  	// this.http.get - отправка get запроса по указанному адресу. Метод возвращает
-  	// объест Observable из библиотеки RxJS. С помощью метода subscribe подписываемся на событие.
-  	// Событие произойдёт после получения ответа от сервера.
-
-  	this.http.get("app/users").subscribe(
-  		result => this.itemArray = result.json().data, // в случае успеха сервер вернёт статус-код 200
-  		error => console.log(error.statusText) // в случае ошибки сервер вернёт статус-код 404
-  		
-
-  		// result - 1й пар-р м.subscribe - это объект типа Response, наследующий от Body 
-  		// методы json(), text(), arrayBuffer(), blob().
-  		// .data - свойство, содержащее на выходе десерелизованные данные.
-  		);
-  }
-
-  private handleErrorPromise(error: any){ // метод для вывода ошибки сервера
-  	console.log('Произошла ошибка сервера.', error );
-  	return Promise.reject(error.message || error);
-
-  }
-
-
-  private handleErrorObservable(error: any){ // метод для вывода ошибки сервера
-  	console.log('Произошла ошибка сервера.', error );
-  	return Observable.throw(error.message || error);
-
+      this.authService.login(userName, password)
+      .map(check => {
+          if (check) {
+              //LogWindow.classList.add("login-display-none");        
+        this.user = new User(0,"","",false); //обнуляем поля в шаблоне формы логина
+        this.user_entering.emit(userName);
+        this.router.navigate(['/system']);
+                      
+          } else {
+              alert("Логин или пароль неверны."); 
+              this.user = new User(0,"","",false); //обнуляем поля в шаблоне формы логина
+        //this.session_login = '';
+        //this.setLogin(); 
+          }
+      })
+      .subscribe(); 
   }
 
 
-
-
-
-
-
-
-
-
-
-
-// Observable:
-// .subscripe(fun) - перебирает массив результата result, вызывая на каждом итеме ф-ю-параметр fun
-
-
-  getUsersDataWithPromise(): Promise<User[]> { // получение массива зарегистрированных пользователей с "сервера"
-  	 return this.http.get(this.apiUrl)
-  	 			.toPromise()
-  	 			.then(res => res.json().data)
-  	 			.then(users => {return this.itemArray = users})
-  	 			.catch(this.handleErrorPromise); }
-
-
-  // getUsersDataWithObservable(): Observable<User[]> { // получение массива зарегистрированных пользователей с "сервера"
-  // 	 return this.http.get(this.apiUrl)
-  // 	 			.map(res => res.json().data as User[])
-  // 	 			.map(users => {return this.itemArray = users})
-  // 	 			.catch(this.handleErrorObservable); }
-
-
-
-
-  onSubmit():void {  // возвращает true в случае совпадения логина и пароля, и false в случае отсутствия такой пары
-  	let LogWindow = document.getElementsByTagName("app-login")[0];
-  	this.getUsersDataWithPromise()
-  	.then(users => {
-  		let suitable_user = users.find(obj => obj.name == this.user.name); // поиск итема в массиве users, по соответствию name d введённом объесте user
-  		
-  		if(this.listService.session_login) return true; else
-  		if(suitable_user) return suitable_user.pass == this.user.pass;
-  		else return false;
-  	 	})
-  	.then(check => {
-  		if (check) {
-  			LogWindow.classList.add("login-display-none");
-  			this.user_entering.emit(this.user.name);
-  			this.user = new User(0,"","");
-  		} else {
-  			alert("Логин или пароль неверны."); 
-  			this.user = new User(0,"","");
-  		}
-  	});   
-  }
-
-
-
-
-  // onSubmit(){
-  
-  // 	let LogWindow = document.getElementsByTagName("app-login")[0];
-
-  // 	this.checkData()
-  // 	.toPromise()
-  // 	.then(check => {if (this.checkData()) LogWindow.classList.add("login-display-none"); })           
-  	
-  // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  constructor(private http:Http, public listService:ListOfFoldersService) { }
+  constructor(public authService: AuthService, private router: Router) { }
 
   ngOnInit() {
   	//this.user.name = this.listService.session_login.toString();
   }
 
-  show_data(){
-  	alert(this.userJson());
+
+
   }
 
-  userJson() { return JSON.stringify(this.user); } 
-
-}
-
-
-class User {
-	constructor(
-		public id: number,
-		public name: string,
-		public pass: string){}
-
-}
 
 
 

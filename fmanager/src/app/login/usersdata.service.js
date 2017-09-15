@@ -11,11 +11,18 @@ var UsersData = function() {
             users: [ {
                 id: 1,
                 name: "Alex",
-                pass: "12345"
+                pass: "12345",
+                isAdmin: !1
             }, {
                 id: 2,
                 name: "Polina",
-                pass: "23456"
+                pass: "23456",
+                isAdmin: !1
+            }, {
+                id: 0,
+                name: "admin",
+                pass: "0",
+                isAdmin: !0
             } ]
         };
     }, e;

@@ -3,7 +3,10 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background: -webkit-radial-gradient(rgba(0, 0, 0, 0.5), transparent);
+  background: -o-radial-gradient(rgba(0, 0, 0, 0.5), transparent);
+  background: radial-gradient(rgba(0, 0, 0, 0.5), transparent); }
 
 .log-form {
   padding: 20px 20px 15px;

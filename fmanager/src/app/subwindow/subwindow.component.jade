@@ -1,15 +1,19 @@
 
+//-.button_up((click)='this.listService.findNextId();onSelectInSub(image.id);')
 .button_up((click)='onClickButtonUp(sel_folder.id);')
 h1.subw_folder_name#subw_folder_name {{sel_folder.name}}
 hr.subw_hr
-.subw_inner_place
+.subw_inner_place#sip((window:keydown.ArrowLeft)="onSelectInSub(this.listService.findPreviousId()); ngOnInit()",
+(window:keydown.ArrowRight)="onSelectInSub(this.listService.findNextId()); ngOnInit()",
+(window:keydown.Enter)="goInside(this.listService.sel_file.id);",
+(window:keydown.ArrowUp)="onClickButtonUp(sel_folder.id);")
 	ng-container(*ngFor="let file of lof")
-		.file.file_dir.for-select(*ngIf="(file.parent_id==sel_folder.id)&&(file.type_of_file=='dir')", (click)="onSelectInSub(file.id);", (dblclick)="onDoubleClickInSub(file.id);", [id]="'w'+file.id")
+		.file.file_dir.for-select(*ngIf="(file.parent_id==sel_folder.id)&&(file.type_of_file=='dir')", (click)="onSelectInSub(file.id);", (dblclick)="goInside(file.id);", [id]="'w'+file.id")
 			//- Для папок окна
 			.file_rect
 			.file_name {{file.name}}
-	ng-container(*ngFor="let image of lof",)
-		.file.file_img.for-select(*ngIf="(image.parent_id==sel_folder.id)&&(image.type_of_file=='img')", (click)="onSelectInSub(image.id);",(dblclick)="onDoubleClickInSub(image.id);",[id]="'w'+image.id", title="Name: {{ image.name }}\nDimensions: {{image.img_width}} x {{image.img_height}}")
+	ng-container(*ngFor="let image of lof")
+		.file.file_img.for-select(*ngIf="(image.parent_id==sel_folder.id)&&(image.type_of_file=='img')", (click)="onSelectInSub(image.id);",(dblclick)="goInside(image.id);",[id]="'w'+image.id", title="Name: {{ image.name }}\nDimensions: {{image.img_width}} x {{image.img_height}}")
 			//- Для изображений окна
 			.a-img
 				//- img.file_img_rect(src="{{image.path}}", alt="")

@@ -1,8 +1,8 @@
 
-<div style="width: 100%; position: relative;">
-  <div class="container" *ngFor=" let folder of lof_child; let i = index">
-    <details *ngIf="(folder.parent_id==parent)&amp;&amp;(folder.type_of_file=='dir')" #directory_details="" style="height:100%;" [id]="folder.id">
-      <summary class="selecting dir_name visual in" (click)="onSelectEmit(folder.id);" (dblclick)="onNameDoubleClick(sum);" #sum="">{{ folder.name }}
+<div class="folders">
+  <ng-container *ngFor=" let folder of lof_child; let i = index">
+    <details class="folders__folder" *ngIf="(folder.parent_id==parent)&amp;&amp;(folder.type_of_file=='dir')" #directory_details="" style="height:100%;" [id]="folder.id">
+      <summary class="folder-name" (click)="onSelectEmit(folder.id);" (dblclick)="onNameDoubleClick(sum);" [title]="'parent='+parent+', folder.id='+folder.id" #sum="">{{ folder.name }}
         <form (submit)="rename(new_name.value, folder); ngOnInit(); new_name.value=folder.name;">
           <input class="rename rename_dir" type="text" value="{{ folder.name }}" pattern=".+" autocomplete="off" #new_name="" (blur)="onBlur()"/>
         </form>
@@ -15,16 +15,16 @@
       <div class="delete" (click)="delete(folder.id)">Delete</div>
       <folders [parent]="folder.id" (select)="onSelectEmit($event);" (created)="onCreateEmit($event);" (deleted)="onDeleteEmit($event);" (renamed)="onRenameEmit($event);"></folders>
     </details>
-  </div>
-  <div class="image" *ngFor="let image of lof_child" style="height:100%;">
-    <div class="container-if selecting visual" *ngIf="(image.parent_id==parent)&amp;&amp;(image.type_of_file=='img')" [id]="image.id" (click)="onSelectEmit(image.id); ">
-      <div class="img_shape"></div>
-      <div class="img_name" (dblclick)="onNameDoubleClick(nam);" title="{{ image.name}}" #nam="">{{ image.name}}
+  </ng-container>
+  <ng-container *ngFor="let image of lof_child" style="height:100%;">
+    <div class="folders__image" *ngIf="(image.parent_id==parent)&amp;&amp;(image.type_of_file=='img')" [id]="image.id" (click)="onSelectEmit(image.id); ">
+      <div class="image-shape"></div>
+      <div class="image-name" (dblclick)="onNameDoubleClick(nam);" title="{{ image.name}}" [title]="'parent='+parent+', image.id='+image.id" #nam="">{{ image.name}}
         <form (submit)="rename(new_name.value, image); ngOnInit(); new_name.value=image.name;">
           <input class="rename rename_img" type="text" value="{{ image.name }}" pattern=".+" autocomplete="off" #new_name="" (blur)="onBlur()"/>
         </form>
       </div>
       <div class="delete" (click)="delete(image.id)">Delete</div>
     </div>
-  </div>
+  </ng-container>
 </div>

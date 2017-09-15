@@ -1,25 +1,92 @@
+//!!!!!!!!!!! СКОПИРУЙ ФАЙЛЫ environments!!!!!!!!!!!!
+
+
 import { Folder } from './folder';
+import { User } from '../login/user';
 
 import {Injectable} from '@angular/core';
+
+import { Http } from '@angular/http';
+
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/throw';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
+
+import { AuthService } from '../login/auth.service';
+
+//npm install ng2-scroll-to --save
+
+//import { environment } from "../../environments/environment"
 
 
 @Injectable()  // рекомендуемый декоратор перед классом любого сервиса
 export class ListOfFoldersService{
 
+     //private apiUrl = 'api/users';
+     //private apiUrl = '/users';
+     private host: string;
      path1: string = "http://aortan1.github.io/webcoder/tem/"; // путь к файлам изображений
-     list_of_folders:Folder[] = [];
+     list_of_folders: Folder[] = [];
+     sel_folder: Folder; 
+     getSelFolder(){return this.sel_folder;}
+     sel_image: Folder;
+     sel_file: Folder;
+     //session_login: String;
 
-     //selected_id: string;
-     sel_folder:Folder; getSelFolder(){return this.sel_folder;}
-     sel_image:Folder;
-     session_login: String;
-     //big_or_small: boolean;
-     //static sel : string = "dir0";
-     constructor( ){
+     constructor( private http: Http, private authService: AuthService){
+
+         this.host = 'api';//environment.host;
          this.readData(); // <- вариант чтения из локалки при перегрузке страницы
          //this.setInitialData(); // <- вариант возвр-я к исх.данным при перегрузке страницы
 
      }
+
+    
+
+    sortObjectsByProperty(arr, property):void{
+        arr.sort((a,b) => {
+                    if (a[property] < b[property]) return -1;
+                    if (a[property] > b[property]) return 1;
+                     return 0;});
+    }      
+
+
+
+    // onEnter(){
+    // }
+
+
+    findNextId(id=this.sel_file.id){ // найти id след.файла той же папке
+        //alert(this.sel_file.id);
+        let index = this.getIndex(id); let i = index;
+        let parent = this.getParent(id); 
+        //alert(i);      
+        do {i++; if(i>this.list_of_folders.length) i=0;}
+        while (this.list_of_folders[i] && (this.list_of_folders[i].parent_id!=parent));
+        //alert(i);
+        if(this.list_of_folders[i]) return this.list_of_folders[i].id; else return id;
+    }
+
+
+    findPreviousId(id=this.sel_file.id){ // найти id предыдущ.файла той же папке
+        //alert(this.sel_file.id);
+        let index = this.getIndex(id); let i = index;
+        let parent = this.getParent(id); 
+        //alert(i);      
+        do {i--; if(i<0) i=this.list_of_folders.length;}
+        while (this.list_of_folders[i] && this.list_of_folders[i].parent_id!=parent);
+        //alert(i);
+        if(this.list_of_folders[i]) return this.list_of_folders[i].id; else return id;
+    }
+
+
+    findFirstId(id=this.sel_file.id){ // найти id первого файла в родителе id
+    	//let obj=this.sel_file;
+    	let result =  this.list_of_folders.find(obj => obj.parent_id==id);//||this.sel_file;
+    	if (result) return result.id; //else return id;
+
+    }
 
     readListFromLoc(){// чтение массива дерева в лок.хранилище
         if(localStorage.getItem("list_of_folders")) 
@@ -42,18 +109,59 @@ export class ListOfFoldersService{
             }
     }
 
-    readSessionLoginFromLoc(){
-        if(localStorage.getItem("session_login")) 
-            {
-                console.info("Чтение ЛОГИНА из локалки.")
-                this.session_login = JSON.parse(localStorage.getItem("session_login"));
-            }
-    }
+  //   readSessionLoginFromLoc(){
+  //       if(localStorage.getItem("session_login")) 
+  //           {                
+  //               this.session_login = JSON.parse(localStorage.getItem("session_login"));
+  //               console.info("Чтение ЛОГИНА из локалки. "+this.session_login);
+  //           }
+  //   }
+
+
+  //   getUsersDataWithPromise(): Promise<User[]> { // получение массива зарегистрированных пользователей с "сервера"
+  //      return this.http.get(this.host+this.apiUrl)
+  //                  .toPromise()
+  //                  .then(res => res.json().data as User[])
+  //                  .catch(this.handleErrorPromise); }
+
+
+  //   getUsersDataWithObservable(): Observable<User[]> { // получение массива зарегистрированных пользователей с "сервера"
+  //      return this.http.get(this.host+this.apiUrl)
+  //                  .map(res => res.json().data as User[])
+  //                  .catch(this.handleErrorObservable); }
+
+  //   // this.http.get - отправка get запроса по указанному адресу. Метод возвращает
+  //   // объест Observable из библиотеки RxJS. С помощью метода subscribe подписываемся на событие.
+  //   // Событие произойдёт после получения ответа от сервера.
+
+
+
+  // // При использовании Promise в onSubmit() используем структуру
+  // // this.getUsersDataWithPromise().then().then()
+  // // При замене её на применение Observable заменяем эту структуру на
+  // // getUsersDataWithObservable().map.subscribe(), не меняя параметров внутри,
+  // // т.е. then и then меняется на map и subscribe, либо на
+  // //  map map и subscribe() (с пустым subscribe в конце).      
+
+
+
+  //   private handleErrorObservable(error:any){
+  //       console.error('Произошла ошибка', error);
+  //       return Observable.throw(error.message || error);
+  //   }
+
+
+  //   private handleErrorPromise(error: any){ // метод для вывода ошибки сервера
+  //       console.log('Произошла ошибка сервера.', error );
+  //       return Promise.reject(error.message || error);
+  //  }
+
 
     readData(){
-        this.readSessionLoginFromLoc();
+        this.authService.getLogin();
         this.readListFromLoc();
         this.readSelectionFromLoc();
+        this.sortObjectsByProperty(this.list_of_folders, "type_of_file");
     }
 
     writeListToLoc(){// сохранение массива дерева в лок.хранилище
@@ -66,13 +174,13 @@ export class ListOfFoldersService{
         localStorage.setItem("sel_folder",JSON.stringify(this.sel_folder));        
     }
 
-    writeSessionLoginToLoc(){
-        console.info("Запись ЛОГИНА в локалку."); 
-        localStorage.setItem("session_login",JSON.stringify(this.session_login));        
-    }
+    // writeSessionLoginToLoc(){
+    //     console.info("Запись ЛОГИНА в локалку."); 
+    //     localStorage.setItem("session_login",JSON.stringify(this.session_login));        
+    // }
 
     writeData(){// сохранение массива дерева и выделенной папки в лок.хранилище
-        this.writeSessionLoginToLoc();
+        this.authService.setLogin();
         this.writeListToLoc();
         this.writeSelectionToLoc();        
     } 
@@ -169,53 +277,101 @@ export class ListOfFoldersService{
     return parent;
    }
 
-    open_tree_till(id : string):boolean{ // вью-ф-я, раскрывающая дерево каталогов до файла/папки id и его содержимого, например при поиске
+   close_tree(except_id=""){ // закрывает все папки дерева левого окна, кроме папки except_id
+   	//document.getElementById(except_id).setAttribute("open", ""); 
+   	this.list_of_folders.forEach(function(item, i, arr) { 
+             if (item.type_of_file=="dir" && item.id!=except_id) document.getElementById(item.id).removeAttribute("open");
+    });
+
+   }
+
+    open_tree_till(id : string, selectedPosX=0, selectedPosY = 0):boolean{ // вью-ф-я, раскрывающая дерево каталогов до файла/папки id и его содержимого, например при поиске
             var El = document.getElementById(id); // здесь тег details, представляющий открываемую папку 
             var parent = this.getParent(id);
             console.log("pareint ID = "+parent+", open = "+El.getAttribute("open"));
-            El.setAttribute("open", "true");  
+            El.setAttribute("open", "true"); 
+
+              selectedPosX += El.offsetLeft;
+              selectedPosY += El.offsetTop;
+              
+              //alert(selectedPosX+" "+selectedPosY);
+              //El.scrollIntoView(false);
+
             if (parent) {
                 var Parent = document.getElementById("#"+parent);
-                this.open_tree_till(parent);
+                this.open_tree_till(parent,selectedPosX,selectedPosY);
             } else return false;
     }
 
 
+    // scrollToElement(id) {
+    //     alert('scroll');
+    //     var theElement = document.getElementById(id).offsetParent;
+    //     var selectedPosX = 0;
+    //     var selectedPosY = 0;
+  
+    //    while (theElement != null) {
+    //     selectedPosX += theElement.clientLeft;
+    //     selectedPosY += theElement.clientTop;
+    //    //theElement = theElement.offsetParent;
+    //    }
+                                      
+    // window.scrollTo(selectedPosX,selectedPosY);
+    // }
+
+     remove_class_selected():void{
+     	//Убираем выделение с выделенной ранее папки
+        var Selected  = document.getElementsByClassName("selected")[0];
+        if(Selected) Selected.classList.remove("selected");
+     }
+
+     remove_class_active():void{
+     	//Убираем выделение с выделенной ранее папки
+        var ActiveFolder  = document.getElementsByClassName("active")[0];
+        if(ActiveFolder) ActiveFolder.classList.remove("active");
+     }
+
      add_class_selected(id : string):void {// вью-ф-я выделения файла или папки по её id (в дереве)
-        console.log("add_class_selected ID = "+id);
-
-        // var RenameInput = document.getElementsByClassName("show_rename")[0];
-        // if(RenameInput) RenameInput.classList.remove("show_rename"); //удаление display:block с инпута в случае убора фокуса с него.
-
         //Убираем выделение с выделенной ранее папки
-        var SelFolder  = document.getElementsByClassName("selected")[0];
-        if(SelFolder) SelFolder.classList.remove("selected");  
-
+        this.remove_class_selected(); 
         //Выделяем кликнутую папку
-        SelFolder = document.getElementById(id);
-        SelFolder.classList.add("selected");
+        var Selected = document.getElementById(id);
+        Selected.classList.add("selected");             
+    }
 
-             
-       //console.log(" open = "+ SelFolder.getAttribute("open"));
+      add_class_active(id : string):void {// вью-ф-я выделения активной(содержащей выделенную) папки в деревепо её id (в дереве)    
+        //Убираем выделение с выделенной ранее папки
+		this.remove_class_active();
+        //Выделяем активную папку
+        var ActiveFolder = document.getElementById(id);
+        ActiveFolder.classList.add("active");
    }
 
 
     add_class_selected_in_sub(id : string):void { // вью-ф-я выделения файла или папки по её id в левом окне
 
-        //document.addEventListener('DOMContentLoaded', () => {
+			//Удаляем класс selected-in-sub с предыдущей папки
+        	var SelFolder  = document.getElementsByClassName("selected-in-sub")[0];
+        	if(SelFolder) SelFolder.classList.remove("selected-in-sub");
 
-            var SelFolder  = document.getElementsByClassName("selected-in-window")[0];
-            if(SelFolder) SelFolder.classList.remove("selected-in-window");  
+        	//Выделяем кликнутую папку (после загрузки списка папок в элементе)
+            var process = new Promise((resolve) =>
+            {
+            	setTimeout(() => {
+					SelFolder = document.getElementById('w'+id);
+					resolve()
+            	}, 0)
+            	
+            }).then((responce) => {
+            	//console.log(responce);
+            	if(SelFolder) SelFolder.classList.add("selected-in-sub");
+            		//console.log('Then');
+        	}); 
+     
+     		// Функция .then срабатвывает только после вызова ф-и resolve()
+     		// В responce переходит параметр ф-и resolve() 
 
-            //Выделяем кликнутую папку
-            SelFolder = document.getElementById('w'+id);
-            if(SelFolder) SelFolder.classList.add("selected-in-window");
-        // });
 
-
-
-
-        
     }
 
 
@@ -267,20 +423,6 @@ export class ListOfFoldersService{
     }
 
 
-    // isBigImage(id : string):boolean{
-    //   let big_or_small = false;
-    //   let ViewImg = document.getElementById("viewImg");
-
-    //   if (ViewImg && this.sel_folder.type_of_file=="img") {
-    //       let width = this.getImgWidth(id); 
-    //       big_or_small = (width>ViewImg.clientWidth) ? true:false;
-    //       //alert(big_or_small);
-         
-    //   }
-    //   return big_or_small;  
-
-    // }
-
 
     definition_img_sizes(){ // определение размеров картинок и фактора big_or_small превышения размеров картинки над размером дива #viewImg левого окна 
         let ViewImg = document.getElementById("viewImg");
@@ -306,14 +448,6 @@ export class ListOfFoldersService{
 }
 
 
-
-    // check(name:string, parent:string):boolean { // проверка существования папки с предложенным именем в текущем каталоге
-    // var name_is_already_exist=false;
-    // this.list_of_folders.forEach(function(item, i, arr) { 
-    // if (item.parent_id==parent && item.name==name) name_is_already_exist=true;
-    // });
-    // return name_is_already_exist;
-    // }
 
     isNameInFolder(name,parent){
         let isNameOfFile=false;
@@ -343,7 +477,8 @@ export class ListOfFoldersService{
         this.list_of_folders.push(folder); // добавление новой папки в массив
            //alert(folder.id+"  "+folder.type_of_file+"  "+this.list_of_folders.length);
         console.log(this.list_of_folders);
-                   
+        
+        this.sortObjectsByProperty(this.list_of_folders, "name");
         this.writeListToLoc();
         this.makeSelection(folder.id);   
  
@@ -351,7 +486,7 @@ export class ListOfFoldersService{
   }
 
     deleteDir(id: string){
-
+    	   if (!this.authService.isAdmin()) {alert("Удалять папки и файлы может только администратор."); return;}	
            let parent = this.getParent(id);
            if(parent) this.makeSelection(parent);
 
@@ -370,7 +505,7 @@ export class ListOfFoldersService{
 
     renameFile(new_name: string, folder:Folder):boolean {
          var RenameInputEl=document.querySelector("input:focus");
-         RenameInputEl.classList.remove('show_rename'); //убираем display:block с инпута после ввода
+         RenameInputEl.classList.remove('js-show_rename'); //убираем display:block с инпута после ввода
          //alert("new_name = "+new_name); 
          //alert(RenameInputEl.value); 
          if (folder.name==new_name) return false;

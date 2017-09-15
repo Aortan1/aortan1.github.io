@@ -3,17 +3,19 @@ input, textarea {
   border-color: transparent;
   border-radius: 5px; }
 
-.container {
+summary:active, summary:focus {
+  outline: none; }
+
+.folders {
+  width: 100%;
+  position: relative; }
+
+.folders__folder {
   position: relative;
   height: 100%;
   left: 40px; }
 
-.selecting {
-  display: block;
-  position: relative;
-  margin-top: 5px; }
-
-summary.dir_name {
+summary.folder-name {
   color: #555;
   width: 170px;
   height: 25px;
@@ -36,13 +38,12 @@ summary.dir_name {
   position: absolute;
   top: 00px;
   left: 270px;
-  opacity: 0;
-  -webkit-transition: 0.7s;
-  -o-transition: 0.7s;
-  transition: 0.7s; }
-
-.create form {
-  margin-bottom: 0px; }
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
 .create__input {
   color: #fff;
@@ -64,14 +65,17 @@ summary.dir_name {
 .delete {
   color: #fff;
   cursor: pointer;
+  display: inline-block;
   font-style: italic;
   position: absolute;
   top: 2px;
   left: 335px;
-  opacity: 0;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   padding: 5px 0px 5px 10px;
   width: 55px;
   height: 16px;
@@ -79,28 +83,44 @@ summary.dir_name {
   background-color: #d9534f;
   border: 1px dashed grey; }
 
-.image .delete {
+.folders__image .delete {
   top: 7px;
   left: 220px;
   border: 1px dotted transparent; }
 
-.selected > .create, .selected > .create ~ .delete, .image > .selected > .delete {
-  opacity: 1 !important;
-  -webkit-transition: 0.7s;
-  -o-transition: 0.7s;
-  transition: 0.7s; }
+.selected > .create, .selected > .create ~ .delete, .folders__image.selected > .delete {
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
 
-.selected > .selecting.visual, .selected.selecting.visual {
+.selected.folders__folder > .folder-name {
+  border: 1px solid #99f; }
+
+.selected.folders__folder > .folder-name, .selected.folders__image {
   background-color: #c8ccfd;
   color: #555;
-  font-weight: 600; }
+  font-weight: 600;
+  -webkit-transition: 0.0s;
+  -o-transition: 0.0s;
+  transition: 0.0s; }
 
-.image > .selected {
+.active.folders__folder > .folder-name {
+  background-color: #d9d9d9;
+  color: #555;
+  font-weight: 600;
+  -webkit-transition: 0.0s;
+  -o-transition: 0.0s;
+  transition: 0.0s; }
+
+.selected.folders__image {
   background-color: #c8ccfd;
-  border: 1px dotted green;
+  border: 1px dotted #99f;
   color: #555;
   font-weight: 600; }
-  .image > .selected .img_name {
+  .selected.folders__image .image-name {
     color: #555; }
 
 input.rename {
@@ -134,38 +154,17 @@ input.rename.rename_dir {
 .rename.rename_dir:focus, .rename.rename_img:focus {
   opacity: 1; }
 
-.show_rename {
+.js-show_rename {
   display: block !important; }
 
-.delete.actions {
-  display: inline-block; }
-
-.image {
-  padding: 0 0 0 35px;
+.folders__image {
+  margin-top: 5px;
+  padding-left: 5px;
   height: 100%;
   position: relative;
-  left: 40px; }
+  left: 75px; }
 
-.img-container {
-  position: relative; }
-
-.img_shape {
-  color: #555;
-  display: inline-block;
-  width: 35px;
-  height: 30px;
-  border-radius: 0px 10px 0 0;
-  background: url("../i/img.png") no-repeat;
-  background-size: contain;
-  font-weight: 400;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin-top: 5px;
-  overflow: visible; }
-
-.img_shape {
+.image-shape {
   color: #555;
   display: inline-block;
   width: 35px;
@@ -182,7 +181,7 @@ input.rename.rename_dir {
   margin-top: 5px;
   overflow: visible; }
 
-.img_name {
+.image-name {
   display: inline-block;
   color: #555;
   padding: 18px 0 0px 0px;
@@ -192,6 +191,3 @@ input.rename.rename_dir {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   white-space: nowrap; }
-
-#container_for_img {
-  height: 200px; }

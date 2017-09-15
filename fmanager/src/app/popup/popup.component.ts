@@ -14,14 +14,22 @@ export class PopupComponent implements OnInit, OnChanges {
   width: number;
   height: number;
   top: number;
-  left: number;
- 
+  left: number; 
 
 
   constructor() { }
 
-  closePopup(){
-  	this.close_popup.emit();
+  definitionPopupSizes(Img):void{  
+  
+    this.src = Img.src_base64 ? Img.src_base64: Img.path;
+    this.width = Img.img_width;
+    this.height = Img.img_height;
+    let cli_w = document.body.clientWidth, cli_h = document.body.clientHeight;
+    while((this.width>=cli_w) || (this.height>=cli_h)) {this.width=this.width * 0.95; this.height=this.height * 0.95;} 
+
+    this.left = (cli_w - this.width)/2;
+    this.top = (cli_h - this.height)/2;
+
   }
 
   ngOnInit() {
@@ -29,22 +37,15 @@ export class PopupComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(){
-  	if(!this.sel_image) this.sel_image = this.sel_folder;
-  	this.src = this.sel_image.src_base64 ? this.sel_image.src_base64: this.sel_image.path;
-  	this.width = this.sel_image.img_width;
-  	this.height = this.sel_image.img_height;
-  	let cli_w = document.body.clientWidth, cli_h = document.body.clientHeight;
-  	while((this.width>=cli_w) || (this.height>=cli_h)) {this.width=this.width * 0.95; this.height=this.height * 0.95;} 
-
-  	this.left = (cli_w - this.width)/2;
-  	this.top = (cli_h - this.height)/2;
- 
-
-
-
-
-	//alert(this.width+" "+this.height+" "+this.top+" "+this.left);
-
+    if(!this.sel_image) this.sel_image = this.sel_folder;
+    this.definitionPopupSizes(this.sel_image);  
   }
+
+
+  closePopup(){
+    this.close_popup.emit();
+  }
+
+
 
 }

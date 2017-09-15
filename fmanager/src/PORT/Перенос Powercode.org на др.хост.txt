@@ -1,0 +1,48 @@
+
+
+alexander.demushkin 14:31
+Таня, что там насчёт проекта, может введёшь в курс дела? А то я сегодня хотел бы уйти в 5, если возможно.
+
+tatyana.kurylo 14:33 
+Не могут перенести на новый домен
+как только перенсут, мы с Миланой тебя введем в курс дела
+
+alexander.demushkin 14:35
+Ок.
+
+
+
+--
+
+pavel.ripskiy Admin 15:29
+
+Вот данные от ftp аккаунта powercode.org
+powercod.ftp.ukraine.com.ua
+powercod_maks
+2i62kl0j
+отсюда надо слимть сайт
+и залить его туда, куда тебе алена скинула данные от аккаунта
+на всякий случай, вот данные по Database
+powercod.mysql.ukraine.com.ua
+powercod_db
+07t5ymg6
+
+
+
+--
+
+alena.kygai 15:11 
+
+чтоб залить сайт на redbridge-it.com воспользуйся вот этими логином и паролем ФТП
+
+	pitshop.ftp.ukraine.com.ua
+	pitshop_redbridge
+	5k567jxg
+
+Все указания дает Таня
+
+alexander.demushkin 15:14
+Насколько я понял, сайт уже заливает Павел.
+
+alena.kygai 15:14
+Нет

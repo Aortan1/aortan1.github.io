@@ -1,0 +1,201 @@
+
+
+
+МОЙ МЭЙЛ: aortan3@powercodeit.com -> alexandr.d@powercode.us
+
+
+
+
+
+
+git:
+
+Alexandr Demushkin
+alexandr.d@powercode.us
+passphrase: 31415926
+
+почта-старая: aortan3@powercodeit.com
+
+
+git config --list       -- посмотреть все установленные настройки
+
+
+------ git: how to push Existing folder -------
+
+cd existing_folder
+//git init
+
+git remote add origin git@localhost:aortan3/fmanager.git
+
+git add . - добавить под версионный контроль все файлы (созданные с последнего коммита)
+git commit -m "Initial commit" - пример коммита
+git push -u origin master - ПУШ В МАСТЕР
+git ls-tree HEAD src/ - просмотр src папки
+
+
+
+
+---- git: Просмотр готового SSL ключа 
+
+$ cat ~/.ssh/id_rsa.pub
+
+
+------ git: Проверка удалённых серверов
+
+git remote - просмотреть, какие удалённые серверы у вас уже настроены. Перечисляет список имён-сокращений для всех уже указанных удалённых дескрипторов
+вывод: origin
+
+$ git remote -v - адреса
+вывод:
+origin  http://localhost/aortan3/fmanager.git (fetch)
+origin  http://localhost/aortan3/fmanager.git (push)
+
+
+---- git: Добавить удалённый сервер
+
+
+$ git remote add [сокращение] [url] - добавление удалённого сервера
+(пример: $ git remote add pb git://github.com/paulboone/ticgit.git)
+
+$ git remote add fm git://192.168.1.199/aortan3/fmanager.git
+(теперь у удал.сервера сокращение fm)
+
+_______________________________________
+
+---- git: 
+
+$ git status - git-status - Show the working tree status - выводит тек. ветку
+вывод: 
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+
+
+$ git log - просмотр истории коммитов
+вывод: 
+commit d4f13d0d682644d92b95f71661b3c50bdaabd6c3 (HEAD -> master, origin/master)
+Author: Alexandr Demushkin <aortan3@powercodeit.com>
+Date:   Mon Aug 7 17:29:41 2017 +0300
+
+    Add some comment
+
+commit 73f86a051bf601d6dd2b10f7337a7b909b8a8525
+Author: Alexandr Demushkin <aortan3@powercodeit.com>
+Date:   Mon Aug 7 17:23:28 2017 +0300
+
+    Init commit
+
+commit d1a51de661c89a619f6754f651730246f36c4e92
+Author: Alexandr Demushkin <aortan3@powercodeit.com>
+Date:   Fri Aug 4 10:07:45 2017 +0300
+
+    Initial commit
+
+commit 2d88fa22e7429202ec286ab768e50b37ce5adc09
+Author: Alexandr Demushkin <aortan3@powercodeit.com>
+Date:   Thu Aug 3 11:41:16 2017 +0300
+
+    Initial commit
+
+$ git ls-tree HEAD, $ git ls-tree master 
+$ ls -la
+$ git ls-tree HEAD src/ - просмотр содержимого корневой папки src 
+
+-------
+Команды просмотра дерева объектов Git
+(по видео https://youtu.be/-JbZi1bRZg8) 
+# Git ls-tree command
+ 
+# Lists the contents of a given tree object, like what "/bin/ls -a" does in the current working directory
+# git ls-tree works with tree-ish ids
+# "Tree-ish" is a term that refers to any identifier that ultimately leads to a (sub)directory tree
+ 
+git log
+git ls-tree HEAD
+git ls-tree master
+git ls-tree 9046780b0d104ed8
+ 
+# Path
+ 
+# List css dir
+git ls-tree HEAD css
+# Lists content inside css/ dir
+git ls-tree HEAD css/
+ 
+# Useful options
+ 
+# -r Recurse into sub-trees
+git ls-tree -r HEAD
+ 
+# -t Show tree entries even when going to recurse them
+git ls-tree -rt HEAD
+ 
+# -l Show object size of blob (file) entries
+git ls-tree HEAD -l
+git ls-tree HEAD -rl
+ 
+# Back one commit
+git ls-tree -r HEAD^
+# Back two commits
+git ls-tree -r HEAD^^
+# Back two commits
+git ls-tree -r HEAD~2
+ 
+# Man page
+man git-ls-tree
+-----------------------------------------
+
+170817: 
+Команды в git bush:
+
+$ mkdir bar        - создать папку bar
+$ cd bar/          - перейти в папку bar
+$ npm init         - This will ask you a bunch of questions, and then write a package.json for you. Создаст package.json
+
+
+$ npm install babel-cli babel-core babel-preset-es2015 --save-dev - установка BABEL
+$ npm run build    - запустит команду, записанную в package.json, в св-ве "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist --presets es2015"
+  }
+$ npm install --save-dev babel-plugin-transform-object-rest-spread - пример команды для установки плагина конкретно для транспиляции spread-оператора
+
+
+ИСПОЛЬЗОВАНИНИЕ Babel для транспиляции проекта из es6 в es5 - Пояснения:
+- (тестовый вариант)
+- открываем git bush
+- создаём новую папку проекта bar
+- переходим в неё и ставим babel (команда см.выше)
+- командой выше создаём package.json 
+- создаём папку src для файлов проекта, делаем там файл app.js, написанный на es6, делаем index.html
+- в package.json в свойстве build пишем команду транспиляции(см.выше).
+- $ npm run build - этой командой транспилируем файл.
+- просматриваем результат в консоли открытого index.html
+
+!!  В Angular2 в TypeScript УЖЕ встроен Babel, поэтому не нужно заботится о транспиляции через Babel
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+************************
+
+170816
+
+Имя компьютера: DESKTOP-G188P68 -> dev-alexander-d
+Рабочая группа: WORKGROUP -> DEVELOPERS
+
