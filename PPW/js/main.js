@@ -107,7 +107,7 @@ $(document).ready(function() {
 
         $("a.cont_item, a.nav_item, .button-portfolio").click(function() { // плавная прокрутка до якоря
             var elementClick = $(this).attr("href");
-            var destination = $(elementClick).offset().top;
+            var destination = $(elementClick).offset().top - 100;
             jQuery("html,body").animate({
                 scrollTop: destination
             }, 800);
