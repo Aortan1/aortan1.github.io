@@ -1,0 +1,239 @@
+doctype html
+html
+    head
+        link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:700', rel='stylesheet', type='text/css')
+        link(rel="icon", href="http://localhost:7885/i/favicon.ico")
+        meta(charset="utf-8")
+
+        title Power Print White
+        script(type="text/javascript", src="js/jquery-3.2.1.min.js")
+        script(type="text/javascript", src="js/blocksit.min.js")
+        script(type='text/javascript', src='js/main.js')
+        link(rel='stylesheet', type='text/css', href='s/main.css')
+    body
+        //.b-header__bg.bg
+        section.b-nav
+            .main
+                .b-nav__container
+                    .cont_item.cont_item--logo
+                    a.cont_item(href="#services") Услуги
+                    a.cont_item(href="#portfolio") Портфолио
+                    a.cont_item(href="#contacts") Контакты
+                    .cont_item.cont_item--empty
+                    .cont_item.cont_item--phone 044
+                        b  - 111 - 12 - 34
+
+        section.b-header
+            .b-header__bg.bg
+            .main
+                .b-header__order
+                    .order__logo
+                    h3.order__h Рекламная полиграфия
+                    .button.order__button-order-brief заказать бриф
+
+        section.b-services
+            .b-services-bg
+            .main
+                p
+                    a(id="services")
+                h1.b-services__h1
+                    | Услуги
+                    br
+                    | Продукция
+
+                .b-services__items
+                    .service#service-polygraphy
+                        //.img
+                        h2.service__h2 Полиграфия
+                        p.service__p Создайте рекламную продукцию, которая так же уникальна, как и вы. Визитка, листовка, флаер, открытки и др.
+                    .service#service-souvenirs
+                        //.img
+                        h2.service__h2 Сувенирная
+                            br
+                            |продукция
+                        p.service__p Выделите себя среди своих конкурентов или создайте незабываемый подарок своим родным и близким. Футболки, бейсболки, чашки, флешки, подарочные наборы.
+                    .service#service-large-format-printing
+                        //.img
+                        h2.service__h2 Широкоформатная
+                            br
+                            |печать
+                        p.service__p Повысьте узнаваемость бренда и продвигайте продукты в любом месте и в любое время используя все виды широкоформатной печати. Оракал, постеры, фотобумага, фотопостеры, холст.
+                    .b-services__buttons
+                        .button.button-portfolio(href="#portfolio") портфолио
+                        .button.button-to-order заказать
+            .bg.mist__bg
+                .mist__bg-left
+                .mist__bg-right
+
+    section.b-about-company
+        .b-about-company__bg.bg
+        .main
+            .b-about-company__item
+                h1.item-h1 О компании
+                p.item-p Всё просто. Наша работа - помочь Вам развить свой бизнес.
+                    br
+                    | Power Print позволяет владельцам бизнеса по всей Украине профессионально преподносить себя.
+                    br
+                    | Наш широкий ассортимент качественной продукции и доступные цены позволят создать индивидуальный стиль компании и привлечь максимум клиентов.
+                    br
+                    | Мы уверены, что вы будете на 100% удовлетворены нашими продуктами, качеством, дизайном и внимательным обслуживанием.
+            .b-about-company__item
+                h1.item-h1#why-power-print Почему
+                p.item-p Широкий выбора продукции
+                    br
+                    | Мы предлагаем индивидуальный продход в создании печатной рекламной продукции как для бизнеса, так и для личного использования. Если вам нужно создать визитку, флаер, футболку или пригласительный на свадьбу, мы с радостью Вам поможем. И не забывайте, что мы так же помогаем предприятиям привлекать больше клиентов через маркетинг социальных медиа, E-mail маркетинг и
+                    br
+                    | разработку индивидуальных сайтов.
+
+    section.b-portfolio
+        .main
+            p
+                a(id="portfolio")
+            h1.b-portfolio__h1 Портфолио
+            .b-portfolio__nav
+                .nav-button.nav-button--active#button-polygraphy() Полиграфия
+                .nav-button#button-souvenirs() Сувенирная продукция
+                .nav-button#button-outdoor-advertising() Наружная реклама
+            .b-portfolio__items#items-polygraphy.b-portfolio__items--active
+                .items__item.items__item--wide#p01(data-size = "2")
+                    .h Оформление свадебной атрибутики
+                .items__item#p02
+                    .h Оформление свадебной атрибутики
+                .items__item#p03
+                    .h Оформление свадебной атрибутики
+                .items__item.items__item--wide#p04(data-size = "2")
+                    .h Оформление свадебной атрибутики
+                .items__item#p05
+                    .h Оформление свадебной атрибутики
+                .items__item#p06
+                    .h Оформление свадебной атрибутики
+                .items__item.items__item--wide#p07(data-size = "2")
+                    .h Оформление свадебной атрибутики
+                .items__item#p08
+                    .h Оформление свадебной атрибутики
+                .items__item#p09
+                    .h Оформление свадебной атрибутики
+                .items__item.items__item--wide#p10(data-size = "2")
+                    .h Оформление свадебной атрибутики
+                .items__item#p11
+                    .h Оформление свадебной атрибутики
+                .items__item#p12
+                    .h Оформление свадебной атрибутики
+                .items__item.items__item--wide#p13(data-size = "2")
+                    .h Оформление свадебной атрибутики
+            .b-portfolio__items#items-souvenirs
+                .items__item.items__item--wide#p23
+                    .h Сувениры
+                .items__item#p24
+                    .h Сувениры
+                .items__item#p25
+                    .h Сувениры
+                .items__item.items__item--wide#p26(data-size = "2")
+                    .h Сувениры
+                .items__item.items__item--wide#p14(data-size = "2")
+                    .h Сувениры
+                .items__item#p15
+                    .h Сувениры
+                .items__item#p16
+                    .h Сувениры
+                .items__item.items__item--wide#p17(data-size = "2")
+                    .h Сувениры
+                .items__item#p18
+                    .h Сувениры
+                .items__item#p19
+                    .h Сувениры
+                .items__item.items__item--wide#p20(data-size = "2")
+                    .h Сувениры
+                .items__item#p21
+                    .h Сувениры
+                .items__item#p22
+                    .h Сувениры
+                .items__item.items__item--wide#p42(data-size = "2")
+                    .h Сувениры
+                .items__item#p43
+                    .h Сувениры
+                .items__item#p44
+                    .h Сувениры
+                .items__item#p40
+                    .h Сувениры
+                .items__item#p41
+                    .h Сувениры
+
+
+            .b-portfolio__items#items-outdoor-advertising
+                .items__item#p31
+                    .h Вывески и баннеры
+                .items__item#p32
+                    .h Вывески и баннеры
+                .items__item.items__item--wide#p33(data-size = "2")
+                    .h Вывески и баннеры
+                .items__item#p34
+                    .h Вывески и баннеры
+                .items__item#p35
+                    .h Вывески и баннеры
+                .items__item.items__item--wide#p36(data-size = "2")
+                    .h Вывески и баннеры
+                .items__item#p37
+                    .h Вывески и баннеры
+                .items__item#p38
+                    .h Вывески и баннеры
+                .items__item.items__item--wide#p39(data-size = "2")
+                    .h Вывески и баннеры
+                .items__item.items__item--wide#p27(data-size = "2")
+                    .h Вывески и баннеры
+                .items__item#p28
+                    .h Вывески и баннеры
+                .items__item#p29
+                    .h Вывески и баннеры
+                .items__item.items__item--wide#p30(data-size = "2")
+                    .h Вывески и баннеры
+            .b-portfolio__button-request-brief.button запросить бриф
+
+    section.b-working
+        .bg.plan__bg
+        .main
+            h1.b-working__h1 Как мы работаем
+            .b-working__plan
+                .plan-item
+                    h2.item-h2 Свяжитесь с нами
+                    p.item-p Чтобы сделать заказ, напишите нам, что бы вы хотели получить, и наши менеджеры свяжуться с Вами для уточнения и согласования цены
+                .plan-item
+                    h2.item-h2 Утвердите макет
+                    p.item-p Оцените проделанную работу и вынесите окончательный вердикт по макету и деталям вашего заказа
+                .plan-item
+                    h2.item-h2 Получите макет
+                    p.item-p Получите профессиональный макет с индивидуальным дизайном и всеми необходимыми для вас исходниками
+                .plan-item
+                    h2.item-h2 Наслаждайтесь
+                    p.item-p Теперь у вас есть всё необходимое для зарабатывания миллионов! Наслаждайтесь полученным результатом и прибылью и не забудьте порекомендовать нас своим друзьям
+        .bg.mist__bg
+            .mist__bg-left
+            .mist__bg-right
+
+    section.b-sign-up
+        .main
+            p
+                a(id="contacts")
+            h1.b-sign-up__h Мы вам понравились?
+            p.b-sign-up__comment-p Спасибо! Вы нам тоже! Оставьте вашу заявку, и наши менеджеры вышлют вам бриф, как только мы выпустим их из подвала
+            form.b-sign-up__form()
+                input.b-sign-up__input#phone-input(type='text', placeholder='Ваш телефон')
+                input.b-sign-up__input#email-input(type='text', placeholder='Ваш e-mail')
+                .button.b-sign-up__button-request-brief запросить бриф
+
+    section.b-footer
+        .b-footer__bg.bg
+        .main
+            .b-footer__nav
+                a.nav_item(href="#services") Услуги
+                a.nav_item(href="#portfolio") Портфолио
+                a.nav_item(href="#contacts") Контакты
+                .nav_item.nav_item--empty
+                .nav__logo
+                    .logo__img
+                    a.logo__email(href="mailto:info@powerprint.com.ua") info@powerprint.com.ua
+                    p.logo__phone-p 044  - 111 - 12 - 34
+
+
+
