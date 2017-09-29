@@ -28,6 +28,7 @@ $htitle-dur: calc(2s * var(--ani-speed));
 $neon1-dur: 30s;
 $neon2-dur: 120s;
 
+@import url('https://fonts.googleapis.com/css?family=Lato:300i&subset=latin-ext');
 
 :root{
 	--ani-speed: 0.5; // коеффициент скорости комплекса анимаций
@@ -950,7 +951,7 @@ section.b-header{
   transform: translateX(-50%);
   top: 235px;
   //background: url("../i/path.svg") no-repeat 0 265px;
-  background: url('../i/how1.svg') no-repeat 106px 30px, url('../i/how2.svg') no-repeat 1075px 234px, url('../i/how3.svg') no-repeat 126px 468px, url('../i/how4.svg') no-repeat 1080px 700px, url("../i/path.svg") no-repeat 0 170px / contain;
+  background: url('../i/how1+.svg') no-repeat 106px 30px, url('../i/how2+.svg') no-repeat 1075px 234px, url('../i/how3+.svg') no-repeat 126px 468px, url('../i/how4+.svg') no-repeat 1080px 700px, url("../i/path.svg") no-repeat 0 170px / contain;
   z-index: 0;
   @media(max-width: 830px){
     opacity: 0;
