@@ -8,6 +8,8 @@ html
         title Power Print White
         script(type="text/javascript", src="js/jquery-3.2.1.min.js")
         script(type="text/javascript", src="js/blocksit.min.js")
+        script(type="text/javascript", src="js/jquery.textmistake.min.js")
+        //script(type="text/javascript", src="https://cdn.rawgit.com/tarampampam/jquery.textmistake/master/src/jquery.textmistake.js")
         script(type='text/javascript', src='js/main.js')
         link(rel='stylesheet', type='text/css', href='s/main.css')
     body
@@ -29,7 +31,7 @@ html
                 .b-header__order
                     .order__logo
                     h3.order__h Рекламная полиграфия
-                    .button.order__button-order-brief заказать бриф
+                    .button.order__button-order-brief(href="#contacts") заказать бриф
 
         section.b-services
             .b-services-bg
@@ -60,7 +62,7 @@ html
                         p.service__p Повысьте узнаваемость бренда и продвигайте продукты в любом месте и в любое время используя все виды широкоформатной печати. Оракал, постеры, фотобумага, фотопостеры, холст.
                     .b-services__buttons
                         .button.button-portfolio(href="#portfolio") портфолио
-                        .button.button-to-order заказать
+                        .button.button-to-order(href="#contacts") заказать
             .bg.mist__bg
                 .mist__bg-left
                 .mist__bg-right
