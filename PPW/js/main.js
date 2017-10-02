@@ -50,10 +50,9 @@ $(document).ready(function() {
                 'mailNotSended': 'Ошибка при отправке',
                 'mailNotSendedDesc': 'Увы, но ваше сообщение не было отправлено. Извините что так получилось.',
             },
-            // 'mailTo': 'aortan@i.ua',
-            // 'mailFrom': 'darto.ua@gmail.com',
-            'mailTo': 'aortan(d0g)i.ua'.replace(/\(d0g\)/, '@'),
-            'mailFrom': 'darto.ua(d0g)gmail.com'.replace(/\(d0g\)/, '@'),
+            //'mailTo': 'aortan(d0g)i.ua'.replace(/\(d0g\)/, '@'),
+            'mailFrom': 'textmistake@'+window.location.hostname,
+            //'mailFrom': 'darto.ua(d0g)gmail.com'.replace(/\(d0g\)/, '@'),
             'mandrillKey': 'aec5df13674a7e39389b06f6900bb895-us16', // Get your - https://mandrill.com/signup/
             'sendmailUrl': '' // ./textmistake.php
         });
