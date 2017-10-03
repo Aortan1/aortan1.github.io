@@ -426,7 +426,7 @@ section.b-nav {
 	animation-name: opacity0to1_ani, neon_ani;
 	animation-delay: $bg-del, 3s;
 	animation-duration: $bg-dur, $neon1-dur;
-	animation-fill-mode: forwards, forwards;
+	animation-fill-mode: forwards, none;
 	animation-iteration-count: 1, infinite;
 }
 
@@ -442,6 +442,7 @@ section.b-header{
 	animation-delay: $header-del;
 	animation-duration: $header-dur;
 	animation-fill-mode: forwards;
+
 	@media only screen and (max-device-width: 700px){
 		overflow: hidden;
 		//border: 5px solid red;
@@ -457,7 +458,7 @@ section.b-header{
 	top: 50%;
 	width: 590px;
 	margin: 0 auto;
-	//outline: 1px solid blue;
+	outline: 1px solid transparent; // !! избавляет от глюка с нижним бордером кнопки
 	.order__logo {
 		height: 110px;
 		width: 100%;
@@ -493,9 +494,8 @@ section.b-header{
 		}
 	}
 	.order__button-order-brief{
-		margin: 0 auto 0;
+		margin: 40px auto 0;
 		position: relative;
-		top: 40px;
 		//border-bottom-width: 1.4px;
 	}
 }

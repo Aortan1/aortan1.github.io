@@ -441,8 +441,8 @@ section.b-nav {
   animation-delay: var(--ani-init-delay), 3s;
   -webkit-animation-duration: var(--ani-init-delay), 30s;
   animation-duration: var(--ani-init-delay), 30s;
-  -webkit-animation-fill-mode: forwards, forwards;
-  animation-fill-mode: forwards, forwards;
+  -webkit-animation-fill-mode: forwards, none;
+  animation-fill-mode: forwards, none;
   -webkit-animation-iteration-count: 1, infinite;
   animation-iteration-count: 1, infinite; }
 
@@ -474,7 +474,8 @@ section.b-header {
   transform: translateY(-50%);
   top: 50%;
   width: 590px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  outline: 1px solid transparent; }
   .b-header__order .order__logo {
     height: 110px;
     width: 100%;
@@ -507,9 +508,8 @@ section.b-header {
       .b-header__order .order__h {
         font-size: 40px; } }
   .b-header__order .order__button-order-brief {
-    margin: 0 auto 0;
-    position: relative;
-    top: 40px; }
+    margin: 40px auto 0;
+    position: relative; }
 
 .b-services {
   position: relative; }
