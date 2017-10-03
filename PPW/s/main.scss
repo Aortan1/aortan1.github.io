@@ -197,6 +197,7 @@ p{
     position: relative;
     left: 10px;
     transition: 0.5s;
+	//box-shadow: 2px 2px 17px 5px rgba(0,0,0,0);
   }
   &:hover{
     box-shadow: 2px 2px 17px 5px rgba(0,0,0,0.2);
@@ -251,8 +252,8 @@ p{
 
 .mist__bg{
   width: 100%;
-  height: 100%;
-  //border: 5px solid green;
+  height: 90%;
+  //border: 2px solid green;
   min-width: 0;
   &-left,
   &-right{
@@ -309,7 +310,7 @@ section.b-nav {
 			//.cont_item--logo, .cont_item--phone{display: none;}
 			a.cont_item{display: none;}
 			.cont_item--phone{
-				padding-top: 15px!important;
+				padding-top: 13px!important;
 			}
 			.b-nav__container{
 				margin-left: 70px;
@@ -434,7 +435,7 @@ section.b-header{
 	height: 735px;
 	//background: url('../i/1.svg'), url('../i/2.svg'), url('../i/2-1.svg') 0 100%, url('../i/2-2.svg')  0 100%, url('../i/2-3.svg') 0 100%;
 	//background: url('../i/2-3.svg') 0 100%;
-	border: 0px solid red;
+	//outline: 1px solid red;
 	position: relative;
 	opacity: 0;
 	animation-name: opacity0to1_ani;
@@ -454,12 +455,13 @@ section.b-header{
 	position: relative;
 	transform: translateY(-50%);
 	top: 50%;
-	width: 570px;
+	width: 590px;
 	margin: 0 auto;
+	//outline: 1px solid blue;
 	.order__logo {
 		height: 110px;
 		width: 100%;
-		background: url('../i/Logo big.svg');
+		background: url('../i/Logo big.svg') no-repeat;
 		animation-name: order__logo_ani;
 		animation-delay: $hlogo-del;
 		animation-duration: $hlogo-dur;
@@ -480,7 +482,7 @@ section.b-header{
 		letter-spacing: 4px;
 		margin-top: 15px;
 		position: relative;
-		top: -100;
+		top: -100px;
 		//opacity: 0;
 		animation-name: order__h_ani;
 		animation-delay: $htitle-del;
@@ -491,7 +493,10 @@ section.b-header{
 		}
 	}
 	.order__button-order-brief{
-		margin: 40px auto 0;
+		margin: 0 auto 0;
+		position: relative;
+		top: 40px;
+		//border-bottom-width: 1.4px;
 	}
 }
 

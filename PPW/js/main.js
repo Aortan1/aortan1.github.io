@@ -1,18 +1,5 @@
 
 
-// window.onload = function() {
-// document.querySelectorAll('a') //предотварщение перехода по клику на все ссылки
-//     .forEach(function(item, i, arr){
-//         item.addEventListener("click", function(event){
-//                     event.preventDefault();
-//                     return false;
-//         }, false)
-//     });
-// };
-
-
-
-
 function PortfolioActivation(num,buttons,objects){ // ф-я переключения между блоками портфолио .b-portfolio__items
     var object_id;
     [].forEach.call(objects, function(item, i){
@@ -30,35 +17,6 @@ function PortfolioActivation(num,buttons,objects){ // ф-я переключен
 
 
 $(document).ready(function() {
-
-    (function(e){
-        //alert("Hello.");
-        jQuery(document).textmistake({
-            'l10n': {
-                'title': 'Запросить бриф:',
-                'urlHint': 'Адрес страницы с ошибкой:',
-                'errTextHint': 'Текст с ошибкой:',
-                'yourComment': 'Ваш комментарий или корректная версия:',
-                'userComment': 'Комментарий от пользователя:',
-                'commentPlaceholder': 'Введите комментарий',
-                'cancel': 'Отмена',
-                'send': 'Отправить',
-                'mailSubject': 'Ошибка в тексте на сайте',
-                'mailTitle': 'Ошибка в тексте на сайте',
-                'mailSended': 'Уведомление отправлено',
-                'mailSendedDesc': 'Ваше уведомление успешно отправлено. Спасибо за ваш отзыв!',
-                'mailNotSended': 'Ошибка при отправке',
-                'mailNotSendedDesc': 'Увы, но ваше сообщение не было отправлено. Извините что так получилось.',
-            },
-            //'mailTo': 'aortan(d0g)i.ua'.replace(/\(d0g\)/, '@'),
-            'mailFrom': 'textmistake@'+window.location.hostname,
-            //'mailFrom': 'darto.ua(d0g)gmail.com'.replace(/\(d0g\)/, '@'),
-            'mandrillKey': 'aec5df13674a7e39389b06f6900bb895-us16', // Get your - https://mandrill.com/signup/
-            'sendmailUrl': '' // ./textmistake.php
-        });
-    })(jQuery);
-
-
 
     var id="#"+document.querySelector('.b-portfolio__items--active').id;
     var Portfolio_items = document.getElementsByClassName('b-portfolio__items');
@@ -145,38 +103,5 @@ $(document).ready(function() {
             }, 800);
             return false;
         });
-
-
-
-
-    //     $(".b-sign-up__button-request-brief").click(function(e){
-    //     alert("Hello.");
-    //     jQuery(document).textmistake({
-    //         'l10n': {
-    //             'title': 'Сообщить автору об опечатке:',
-    //             'urlHint': 'Адрес страницы с ошибкой:',
-    //             'errTextHint': 'Текст с ошибкой:',
-    //             'yourComment': 'Ваш комментарий или корректная версия:',
-    //             'userComment': 'Комментарий от пользователя:',
-    //             'commentPlaceholder': 'Введите комментарий',
-    //             'cancel': 'Отмена',
-    //             'send': 'Отправить',
-    //             'mailSubject': 'Ошибка в тексте на сайте',
-    //             'mailTitle': 'Ошибка в тексте на сайте',
-    //             'mailSended': 'Уведомление отправлено',
-    //             'mailSendedDesc': 'Ваше уведомление успешно отправлено. Спасибо за ваш отзыв!',
-    //             'mailNotSended': 'Ошибка при отправке',
-    //             'mailNotSendedDesc': 'Увы, но ваше сообщение не было отправлено. Извините что так получилось.',
-    //         },
-    //         'mailTo': 'aortan(d0g)i.ua'.replace(/\(d0g\)/, '@'),
-    //         'mailFrom': 'darto.ua(d0g)gmail.com'.replace(/\(d0g\)/, '@'),
-    //         'mandrillKey': '36a6b3d9756a4f3973fba2b7ffd83850-us16', // Get your - https://mandrill.com/signup/
-    //         'sendmailUrl': '' // ./textmistake.php
-    //     });
-    // })(jQuery);
-
-
-
-
 
 });

@@ -271,7 +271,7 @@ p {
 
 .mist__bg {
   width: 100%;
-  height: 100%;
+  height: 90%;
   min-width: 0; }
   .mist__bg-left, .mist__bg-right {
     width: 80px;
@@ -334,7 +334,7 @@ section.b-nav {
         section.b-nav .main a.cont_item {
           display: none; }
         section.b-nav .main .cont_item--phone {
-          padding-top: 15px !important; }
+          padding-top: 13px !important; }
         section.b-nav .main .b-nav__container {
           margin-left: 70px; } }
     @media (max-width: 768px) {
@@ -448,7 +448,6 @@ section.b-nav {
 
 section.b-header {
   height: 735px;
-  border: 0px solid red;
   position: relative;
   opacity: 0;
   -webkit-animation-name: opacity0to1_ani;
@@ -474,12 +473,12 @@ section.b-header {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   top: 50%;
-  width: 570px;
+  width: 590px;
   margin: 0 auto; }
   .b-header__order .order__logo {
     height: 110px;
     width: 100%;
-    background: url("../i/Logo big.svg");
+    background: url("../i/Logo big.svg") no-repeat;
     -webkit-animation-name: order__logo_ani;
     animation-name: order__logo_ani;
     -webkit-animation-delay: calc(2s * var(--ani-speed));
@@ -495,7 +494,7 @@ section.b-header {
     letter-spacing: 4px;
     margin-top: 15px;
     position: relative;
-    top: -100;
+    top: -100px;
     -webkit-animation-name: order__h_ani;
     animation-name: order__h_ani;
     -webkit-animation-delay: calc(1.5s * var(--ani-speed));
@@ -508,7 +507,9 @@ section.b-header {
       .b-header__order .order__h {
         font-size: 40px; } }
   .b-header__order .order__button-order-brief {
-    margin: 40px auto 0; }
+    margin: 0 auto 0;
+    position: relative;
+    top: 40px; }
 
 .b-services {
   position: relative; }
