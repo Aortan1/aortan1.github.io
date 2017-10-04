@@ -1138,12 +1138,11 @@ section.b-header {
       padding: 0 20px; } }
 
 .b-footer {
-  margin-top: -70px;
+  margin-top: 45px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 5px 0;
-  height: 406px;
-  border: 0px solid blue;
+  height: 295px;
   letter-spacing: 5px;
   overflow: hidden;
   position: relative; }
@@ -1181,19 +1180,19 @@ section.b-header {
         .b-footer .main .nav__logo {
           display: none; }
         .b-footer .main .b-footer__nav {
-          top: 340px; } }
+          top: 230px; } }
 
 .b-footer__bg {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../i/footer0.png");
+  background: url("../i/footer2.png");
   background-size: cover;
   background-repeat: no-repeat; }
 
 .b-footer__nav {
   position: relative;
-  top: 210px;
+  top: 100px;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
