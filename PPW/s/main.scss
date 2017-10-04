@@ -621,12 +621,15 @@ section.b-header{
 
 
 .b-about-company{
-	//height: 1420px;
+	height: 1390px;
     position: relative;
-	//outline: 1px solid green;
+	//outline: 2px solid green;
 	.main{
         width: 100%;
 		max-width: 1175px;
+	}
+	@media only screen and (max-device-width: 700px){
+		height: auto;
 	}
 }
 .b-about-company__bg{
@@ -663,7 +666,7 @@ section.b-header{
 	}
     &:last-child{
       padding: 50px 0;
-      margin-bottom: 310px;
+      //margin-bottom: 310px;
 		//@media (max-width: 1460px) {margin-bottom: 70px;}
 
     }

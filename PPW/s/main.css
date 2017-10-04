@@ -614,10 +614,14 @@ section.b-header {
         margin: 50px auto 0; } }
 
 .b-about-company {
+  height: 1390px;
   position: relative; }
   .b-about-company .main {
     width: 100%;
     max-width: 1175px; }
+  @media only screen and (max-device-width: 700px) {
+    .b-about-company {
+      height: auto; } }
 
 .b-about-company__bg {
   -webkit-box-sizing: border-box;
@@ -651,8 +655,7 @@ section.b-header {
   .b-about-company__item:nth-child(2n) {
     text-align: right; }
   .b-about-company__item:last-child {
-    padding: 50px 0;
-    margin-bottom: 310px; }
+    padding: 50px 0; }
   @media only screen and (max-device-width: 700px) {
     .b-about-company__item {
       text-align: center !important; }
