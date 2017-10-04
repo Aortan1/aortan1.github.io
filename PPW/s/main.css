@@ -619,7 +619,8 @@ section.b-header {
   position: relative; }
   .b-about-company .main {
     width: 100%;
-    max-width: 1175px; }
+    max-width: 1175px;
+    padding: 0 40px; }
   @media only screen and (max-device-width: 700px) {
     .b-about-company {
       height: auto; } }
@@ -706,9 +707,11 @@ section.b-header {
   position: relative; }
   .b-portfolio .main {
     max-width: 1900px; }
-  @media only screen and (max-device-width: 650px) {
+  @media only screen and (max-device-width: 700px) {
     .b-portfolio {
-      padding-top: 60px; } }
+      padding-top: 60px;
+      -webkit-box-shadow: 0 -60px 60px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 -60px 60px rgba(0, 0, 0, 0.05); } }
 
 .b-portfolio__h1 {
   display: block;

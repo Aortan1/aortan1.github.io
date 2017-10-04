@@ -627,6 +627,7 @@ section.b-header{
 	.main{
         width: 100%;
 		max-width: 1175px;
+		padding: 0 40px;
 	}
 	@media only screen and (max-device-width: 700px){
 		height: auto;
@@ -642,7 +643,6 @@ section.b-header{
 	background: url('../i/bg2t.png') 0 0; // 145px 0;
 	background-size: contain;
 	background-repeat: no-repeat;
-
 	animation-name: neon_ani;
 	animation-delay: 3s;
 	animation-duration: $neon2-dur;
@@ -731,9 +731,9 @@ section.b-header{
 	box-shadow: 0 60px 60px rgba(0,0,0,0.05);
 	position: relative;
 	.main{max-width: 1900px;}
-	@media only screen and (max-device-width: 650px){
+	@media only screen and (max-device-width: 700px){
 		padding-top: 60px;
-		//.main{max-width: calc(100% - 60px);}
+		box-shadow: 0 -60px 60px rgba(0,0,0,0.05);
 	}
 
 }
