@@ -279,14 +279,14 @@ p {
 
 .mist__bg {
   width: 100%;
-  height: 100%;
+  height: 90%;
   min-width: 0; }
   .mist__bg-left, .mist__bg-right {
     width: 80px;
     height: 100%;
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%); }
+    -webkit-transform: translateY(-108%);
+    -ms-transform: translateY(-108%);
+    transform: translateY(-108%); }
   .mist__bg-left {
     float: left;
     height: 90%;
