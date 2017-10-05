@@ -19,7 +19,7 @@ $bg-del: var(--ani-init-delay);
 $bg-dur: var(--ani-init-delay);
 
 $header-del: calc(2s * var(--ani-speed));
-$header-dur: calc(2s * var(--ani-speed));
+$header-dur: calc(1.5s * var(--ani-speed));
 $hlogo-del: calc(2s * var(--ani-speed));
 $hlogo-dur: calc(2s * var(--ani-speed));
 $htitle-del: calc(1.5s * var(--ani-speed));
@@ -31,7 +31,7 @@ $neon2-dur: 120s;
 @import url('https://fonts.googleapis.com/css?family=Lato:300i&subset=latin-ext');
 
 :root{
-	--ani-speed: 0.5; // коеффициент скорости комплекса анимаций
+	--ani-speed: 0.7; // коеффициент скорости комплекса анимаций
 	--ani-init-delay: 0.5s; // исходная задержка комплекса анимаций(для ожидания загрузки изображений фона)
 
 }
