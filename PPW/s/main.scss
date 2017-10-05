@@ -11,6 +11,9 @@ $button-color-lilac-a: rgba(250, 76, 147, 0.5);
 
 $logo-del: var(--ani-init-delay);
 $logo-dur: calc(2s * var(--ani-speed));
+$logo-blink-del: 3s;
+$logo-blink-dur: 10s;
+
 $cont1-del: calc(0.5s * var(--ani-speed));
 $cont2-del: calc(0.9s * var(--ani-speed));
 $cont3-del: calc(1.3s * var(--ani-speed));
@@ -19,7 +22,7 @@ $bg-del: var(--ani-init-delay);
 $bg-dur: var(--ani-init-delay);
 
 $header-del: calc(2s * var(--ani-speed));
-$header-dur: calc(1.5s * var(--ani-speed));
+$header-dur: calc(1.6s * var(--ani-speed));
 $hlogo-del: calc(2s * var(--ani-speed));
 $hlogo-dur: calc(2s * var(--ani-speed));
 $htitle-del: calc(1.5s * var(--ani-speed));
@@ -27,12 +30,14 @@ $htitle-dur: calc(2s * var(--ani-speed));
 
 $neon1-dur: 30s;
 $neon2-dur: 120s;
+$neon1-del: 5s;
+$neon2-del: 5s;
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300i&subset=latin-ext');
 
 :root{
 	--ani-speed: 0.7; // коеффициент скорости комплекса анимаций
-	--ani-init-delay: 0.5s; // исходная задержка комплекса анимаций(для ожидания загрузки изображений фона)
+	--ani-init-delay: 0.7s; // исходная задержка комплекса анимаций(для ожидания загрузки изображений фона)
 
 }
 
@@ -378,8 +383,8 @@ section.b-nav {
 		margin-top: 0;
 		opacity: 0;
 		animation-name: opacity0to1_ani, blink_ani;
-		animation-delay: $logo-del, 3s;
-		animation-duration: $logo-dur, 10s;
+		animation-delay: $logo-del, $logo-blink-del;
+		animation-duration: $logo-dur, $logo-blink-dur;
 		animation-iteration-count: 1, infinite;
 	}
 
@@ -430,7 +435,7 @@ section.b-nav {
 	//background: url('../i/bg1t-960.png') center 60px / contain no-repeat;
 	opacity: 1;
 	animation-name: neon_ani;
-	animation-delay: 3s;
+	animation-delay: $neon1-del;
 	animation-duration: $neon1-dur;
 	animation-iteration-count: infinite;
 
@@ -644,7 +649,7 @@ section.b-header{
 	background-size: contain;
 	background-repeat: no-repeat;
 	animation-name: neon_ani;
-	animation-delay: 3s;
+	animation-delay: $neon2-del;
 	animation-duration: $neon2-dur;
 	animation-iteration-count: infinite;
 
@@ -726,10 +731,20 @@ section.b-header{
 
 
 .b-portfolio{
-	//height: 1250px;
-	//background: url('../i/3-1.svg') no-repeat 0 60%;
-	box-shadow: 0 60px 60px rgba(0,0,0,0.05);
+	//box-shadow: 0 60px 60px rgba(0,0,0,0.05);
 	position: relative;
+	&:before{
+		background:  linear-gradient(rgba(0,0,0,0.05), #fff);
+		content: "";
+		position: absolute;
+		bottom: -60px;
+		left: 50%;
+		transform: translate(-50%);
+		width: 1920px;
+		height: 60px;
+		//outline: 1px solid black;
+
+	}
 	.main{max-width: 1900px;}
 	@media only screen and (max-device-width: 700px){
 		padding-top: 60px;
@@ -951,7 +966,7 @@ section.b-header{
 }
 
 .plan__bg{
-  //border: 5px solid yellow;
+  //border: 2px solid yellow;
   width: 1440px;
   min-width: 1325px;
   height: 100%;
@@ -1021,7 +1036,20 @@ section.b-header{
 
 
 .b-sign-up {
-	box-shadow: 0 -60px 60px rgba(0,0,0,0.05);
+	position: relative;
+	//box-shadow: 0 -60px 60px rgba(0,0,0,0.05);
+	&:before{
+		background:  linear-gradient(#fff, rgba(0,0,0,0.05));
+		content: "";
+		position: absolute;
+		top: -60px;
+		left: 50%;
+		transform: translate(-50%);
+		width: 1920px;
+		height: 60px;
+		//outline: 1px solid black;
+
+	}
 	.main{
 		width: 55%;
         max-width: 1045px;
