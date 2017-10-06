@@ -217,11 +217,12 @@ html
                 a(id="contacts")
             h1.b-sign-up__h Мы вам понравились?
             p.b-sign-up__comment-p Спасибо! Вы нам тоже! Оставьте вашу заявку, и наши менеджеры вышлют вам бриф, как только мы выпустим их из подвала
-            form.b-sign-up__form()
-                input.b-sign-up__input#phone-input(type='text', placeholder='Ваш телефон')
-                input.b-sign-up__input#email-input(type='text', placeholder='Ваш e-mail')
-                textarea.b-sign-up__input#comment-input(placeholder='Ваши пожелания и предпочтения')
-                .button.b-sign-up__button-request-brief запросить бриф
+            form.b-sign-up__form#b-sign-up__form(action="sender.php", method="post")
+                input.b-sign-up__input#phone-input(type='text', name = "phone", placeholder='Ваш телефон', required='required')
+                input.b-sign-up__input#email-input(type='text', name = "email", placeholder='Ваш e-mail', required='required')
+                textarea.b-sign-up__input#comment-input(name = "comment", placeholder='Ваши пожелания и предпочтения')
+                .button.b-sign-up__button-request-brief#b-sign-up__submit(type="submit") запросить бриф
+                //input.button.b-sign-up__button-request-brief(type="submit", value="запросить бриф")
 
     section.b-footer
         .b-footer__bg.bg

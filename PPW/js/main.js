@@ -1,5 +1,8 @@
 
 
+
+
+
 function PortfolioActivation(num,buttons,objects){ // ф-я переключения между блоками портфолио .b-portfolio__items
     var object_id;
     [].forEach.call(objects, function(item, i){
@@ -13,6 +16,11 @@ function PortfolioActivation(num,buttons,objects){ // ф-я переключен
     return object_id;
 }
 
+
+// var form = document.getElementById("b-sign-up__form");
+// document.getElementById("b-sign-up__submit").addEventListener("click", function () {
+//     form.submit();
+// });
 
 
 

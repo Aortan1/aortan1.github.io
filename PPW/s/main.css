@@ -1138,6 +1138,10 @@ section.b-header {
   margin: 0 10px 50px; }
   .b-sign-up__input:focus {
     border-color: orange; }
+    .b-sign-up__input:focus:valid {
+      border-color: green; }
+    .b-sign-up__input:focus:invalid {
+      border-color: red; }
   .b-sign-up__input#comment-input {
     width: 100%;
     height: 190px;

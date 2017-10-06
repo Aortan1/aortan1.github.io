@@ -1106,6 +1106,12 @@ section.b-header{
 	margin: 0 10px 50px;
 	&:focus{
 		border-color: orange;
+		&:valid{
+			border-color: green;
+		}
+		&:invalid{
+			border-color: red;
+		}
 	}
 	&#comment-input{
 		//box-sizing: border-box;
