@@ -16,12 +16,12 @@ function PortfolioActivation(num,buttons,objects){ // ф-я переключен
     return object_id;
 }
 
-
-// var form = document.getElementById("b-sign-up__form");
-// document.getElementById("b-sign-up__submit").addEventListener("click", function () {
-//     form.submit();
-// });
-
+window.onload = function() {
+    var form = document.getElementById("b-sign-up__form");
+    document.getElementById("b-sign-up__submit").addEventListener("click", function () {
+        form.submit();
+    });
+}
 
 
 $(document).ready(function() {
