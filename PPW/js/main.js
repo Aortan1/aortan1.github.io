@@ -16,22 +16,25 @@ function PortfolioActivation(num,buttons,objects){ // ф-я переключен
     return object_id;
 }
 
-function Submit(form){
+function validation(form){
     var phone = form.phone;
     var email = form.email;
     //var comment = form.comment;
     var reg_email = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
     var reg_phone = /^[0-9()\-+ ]+$/;
+    var valid = true;
 
     if (!reg_email.test(email.value)) {
         email.classList.add('invalid');
         email.value = "";
         email.placeholder = "Введите Ваш email.";
         email.title = "Пожалуйста, введите Ваш email в корректной форме.";
+        valid = valid*false;
     }
     else {
           email.classList.remove('invalid');
           email.classList.add('valid');
+          valid = valid*true;
         }
 
     if (!reg_phone.test(phone.value)) {
@@ -39,13 +42,16 @@ function Submit(form){
         phone.value = "";
         phone.placeholder = "Пожалуйста, введите Ваш телефон.";
         phone.title = "Пожалуйста, введите Ваш телефон в корректной форме.";
+        valid = valid*false;
     }
     else {
         phone.classList.remove('invalid');
         phone.classList.add('valid');
+        valid = valid*true;
     }
 
-    if ((reg_email.test(email.value)) && reg_phone.test(phone.value)) form.submit();
+    //if (valid) {alert("All is OK!!"); form.submit();} else  {alert("INVALIDE!!");}
+    if (valid) form.submit();
 
 }
 
@@ -53,7 +59,7 @@ window.onload = function() { // Самбит для кнопки формы от
     var form = document.getElementById("b-sign-up__form");
     document.getElementById("b-sign-up__submit").addEventListener("click", function () {
         //form.submit();
-        Submit(form);
+        validation(form);
     });
 }
 
