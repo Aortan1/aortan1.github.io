@@ -40,7 +40,7 @@ function validation(form){
     if (!reg_phone.test(phone.value)) {
         phone.classList.add('invalid');
         phone.value = "";
-        phone.placeholder = "Пожалуйста, введите Ваш телефон.";
+        phone.placeholder = "Введите Ваш телефон.";
         phone.title = "Пожалуйста, введите Ваш телефон в корректной форме.";
         valid = valid*false;
     }
