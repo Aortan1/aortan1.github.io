@@ -16,10 +16,44 @@ function PortfolioActivation(num,buttons,objects){ // ф-я переключен
     return object_id;
 }
 
-window.onload = function() {
+function Submit(form){
+    var phone = form.phone;
+    var email = form.email;
+    //var comment = form.comment;
+    var reg_email = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+    var reg_phone = /^[0-9()\-+ ]+$/;
+
+    if (!reg_email.test(email.value)) {
+        email.classList.add('invalid');
+        email.value = "";
+        email.placeholder = "Введите Ваш email.";
+        email.title = "Пожалуйста, введите Ваш email в корректной форме.";
+    }
+    else {
+          email.classList.remove('invalid');
+          email.classList.add('valid');
+        }
+
+    if (!reg_phone.test(phone.value)) {
+        phone.classList.add('invalid');
+        phone.value = "";
+        phone.placeholder = "Пожалуйста, введите Ваш телефон.";
+        phone.title = "Пожалуйста, введите Ваш телефон в корректной форме.";
+    }
+    else {
+        phone.classList.remove('invalid');
+        phone.classList.add('valid');
+    }
+
+    if ((reg_email.test(email.value)) && reg_phone.test(phone.value)) form.submit();
+
+}
+
+window.onload = function() { // Самбит для кнопки формы отправки письма
     var form = document.getElementById("b-sign-up__form");
     document.getElementById("b-sign-up__submit").addEventListener("click", function () {
-        form.submit();
+        //form.submit();
+        Submit(form);
     });
 }
 

@@ -173,6 +173,21 @@ p{
 }
 
 
+.valid{
+	border-color: green!important;
+	&::placeholder{
+		color: green;
+	}
+}
+
+.invalid{
+	border-color: red!important;
+	&::placeholder{
+		color: red;
+	}
+}
+
+
 .button{
   border: 1px solid #000;
   //box-sizing: border-box;
@@ -1106,13 +1121,23 @@ section.b-header{
 	margin: 0 10px 50px;
 	&:focus{
 		border-color: orange;
-		&:valid{
-			border-color: green;
-		}
-		&:invalid{
-			border-color: red;
+		&::placeholder{
+			color: $font-color-gray;
 		}
 	}
+	//&:focus:valid{
+	//		border-color: green;
+	//		&::placeholder{
+	//			color: green;
+	//		}
+	//}
+	//&:focus:invalid{
+	//		border-color: red;
+	//		&::placeholder{
+	//			color: red;
+	//		}
+	//}
+
 	&#comment-input{
 		//box-sizing: border-box;
 		width: 100%;
