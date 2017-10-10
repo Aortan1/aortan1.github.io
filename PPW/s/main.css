@@ -476,7 +476,7 @@ section.b-nav {
   top: -400px;
   padding-top: 49%;
   min-height: 570px;
-  overflow: hidden; }
+  height: auto; }
 
 .video-container__waves {
   top: 420px;
