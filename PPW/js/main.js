@@ -61,6 +61,10 @@ window.onload = function() { // Самбит для кнопки формы от
         //form.submit();
         validation(form);
     });
+
+    var video = document.getElementById("video-container__video");
+    video.playbackRate = 1;
+
 }
 
 

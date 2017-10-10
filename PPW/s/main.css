@@ -472,6 +472,24 @@ section.b-nav {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
+.b-header__video-container {
+  top: -400px;
+  padding-top: 49%;
+  min-height: 570px;
+  overflow: hidden; }
+
+.video-container__waves {
+  top: 420px;
+  padding-top: 49%;
+  min-height: 570px;
+  background: url("../i/1.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2-1.svg") center 580px/contain no-repeat; }
+
+.video-container__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
 section.b-header {
   height: 815px;
   position: relative;
