@@ -25,29 +25,29 @@ function validation(form){
     var valid = true;
 
     if (!reg_email.test(email.value)) {
+        email.classList.remove('valid');
         email.classList.add('invalid');
         email.value = "";
         email.placeholder = "Введите Ваш email.";
         email.title = "Пожалуйста, введите Ваш email в корректной форме.";
-        valid = valid*false;
+        valid = false;
     }
     else {
           email.classList.remove('invalid');
           email.classList.add('valid');
-          valid = valid*true;
         }
 
     if (!reg_phone.test(phone.value)) {
+        phone.classList.remove('valid');
         phone.classList.add('invalid');
         phone.value = "";
         phone.placeholder = "Введите Ваш телефон.";
         phone.title = "Пожалуйста, введите Ваш телефон в корректной форме.";
-        valid = valid*false;
+        valid = false;
     }
     else {
         phone.classList.remove('invalid');
         phone.classList.add('valid');
-        valid = valid*true;
     }
 
     //if (valid) {alert("All is OK!!"); form.submit();} else  {alert("INVALIDE!!");}
