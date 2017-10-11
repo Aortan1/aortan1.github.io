@@ -6,10 +6,9 @@ html
         link(rel="icon", href="http://localhost:7885/i/favicon.ico")
         meta(charset="utf-8")
         title Power Print White
-        script(type="text/javascript", src="js/jquery-3.2.1.min.js")
-        script(type="text/javascript", src="js/blocksit.min.js")
-        //script(type="text/javascript", src="js/jquery.textmistake.min.js")
-        script(type='text/javascript', src='js/main.js')
+        script(src="js/jquery-3.2.1.min.js")
+        script(src="js/blocksit.min.js")
+        script(src='js/main.js')
         link(rel='stylesheet', type='text/css', href='s/main.css')
     body
         //.b-header__bg.bg
@@ -27,7 +26,7 @@ html
         section.b-header
             //.b-header__bg.bg
             .b-header__video-container.bg
-                video.video-container__video#video-container__video(loop='', muted='', autoplay='', poster="video/poster.jpg")
+                video.video-container__video#video-container__video(async, autoplay, loop, muted, poster="i/poster1038.jpg")
                     source(src="video/Background_ORNandGRNv3.mp4", type="video/mp4")
                 .video-container__waves.bg
             .main
@@ -127,62 +126,60 @@ html
                 .items__item.items__item--wide#p13(data-size = "2")
                     .h Полиграфия
             .b-portfolio__items#items-souvenirs
-
-                .items__item.items__item--wide#p14(data-size = "2")
+                .items__item.items__item--wide#s01(data-size = "2")
                     .h Наружная реклама
-                .items__item#p15
+                .items__item#s02
                     .h Сувениры
-                .items__item#p16
+                .items__item#s03
                     .h Сувениры
-                .items__item.items__item--wide#p17(data-size = "2")
+                .items__item.items__item--wide#s04(data-size = "2")
                     .h Сувениры
-                .items__item#p18
+                .items__item#s05
                     .h Сувениры
-                .items__item#p19
+                .items__item#s06
                     .h Наружная реклама
-                .items__item.items__item--wide#p20(data-size = "2")
+                .items__item.items__item--wide#s07(data-size = "2")
                     .h Сувениры
-                .items__item#p21
+                .items__item#s08
                     .h Сувениры
-                .items__item#p22
+                .items__item#s09
                     .h Сувениры
-                .items__item.items__item--wide#p23(data-size = "2")
+                .items__item.items__item--wide#s10(data-size = "2")
                     .h Сувениры
-                .items__item#p24
+                .items__item#s11
                     .h Сувениры
-                .items__item#p25
+                .items__item#s12
                     .h Сувениры
-                .items__item.items__item--wide#p26(data-size = "2")
+                .items__item.items__item--wide#s13(data-size = "2")
                     .h Сувениры
-
-
             .b-portfolio__items#items-outdoor-advertising
-                .items__item#p31
+                .items__item#a05
                     .h Вывески и баннеры
-                .items__item#p32
+                .items__item#a06
                     .h Вывески и баннеры
-                .items__item.items__item--wide#p33(data-size = "2")
+                .items__item.items__item--wide#a07(data-size = "2")
                     .h Вывески и баннеры
-                .items__item#p34
+                .items__item#a08
                     .h Вывески и баннеры
-                .items__item#p35
+                .items__item#a09
                     .h Вывески и баннеры
-                .items__item.items__item--wide#p36(data-size = "2")
+                .items__item.items__item--wide#a10(data-size = "2")
                     .h Вывески и баннеры
-                .items__item#p37
+                .items__item#a11
                     .h Вывески и баннеры
-                .items__item#p38
+                .items__item#a12
                     .h Вывески и баннеры
-                .items__item.items__item--wide#p39(data-size = "2")
+                .items__item.items__item--wide#a13(data-size = "2")
                     .h Вывески и баннеры
-                .items__item.items__item--wide#p27(data-size = "2")
+                .items__item.items__item--wide#a01(data-size = "2")
                     .h Вывески и баннеры
-                .items__item#p28
+                .items__item#a02
                     .h Вывески и баннеры
-                .items__item#p29
+                .items__item#a03
                     .h Вывески и баннеры
-                .items__item.items__item--wide#p30(data-size = "2")
+                .items__item.items__item--wide#a04(data-size = "2")
                     .h Вывески и баннеры
+
             .b-portfolio__button-request-brief.button(href="#contacts") запросить бриф
 
     section.b-working

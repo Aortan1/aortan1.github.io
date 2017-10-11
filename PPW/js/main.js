@@ -63,7 +63,13 @@ window.onload = function() { // Самбит для кнопки формы от
     });
 
     var video = document.getElementById("video-container__video");
-    video.playbackRate = 1;
+    //video.playbackRate = 0.3;
+    video.addEventListener("canplay", function() {
+        setTimeout(function() {
+            video.play();
+        }, 5000);
+    });
+
 
 }
 
