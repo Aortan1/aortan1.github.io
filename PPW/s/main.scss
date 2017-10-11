@@ -88,8 +88,8 @@ ul{
 }
 
 @keyframes order__h_ani{
-	from {top: -100px;}
-	to {top: 0;}
+	from {top: -100px; opacity: 0;}
+	to {top: 0; opacity: 1;}
 }
 @keyframes order__logo_ani{
 	from {filter: blur(50px);}
@@ -462,11 +462,6 @@ section.b-nav {
 	min-height: 570px;
 	height: auto;
 	//overflow: hidden;
-	//opacity: 0;
-	//animation-name: opacity0to1_ani;
-	//animation-delay: 3s;
-	//animation-duration: 6s;
-	//animation-fill-mode: forwards;
 }
 
 .video-container__waves{
@@ -517,7 +512,7 @@ section.b-header{
 		height: 110px;
 		width: 100%;
 		background: url('../i/Logo big.svg') no-repeat;
-		//animation-name: order__logo_ani;
+		animation-name: order__logo_ani;
 		animation-delay: $hlogo-del;
 		animation-duration: $hlogo-dur;
 		animation-fill-mode: forwards;
@@ -537,9 +532,9 @@ section.b-header{
 		letter-spacing: 4px;
 		margin-top: 15px;
 		position: relative;
-		//top: -100px;
-		//opacity: 0;
-		//animation-name: order__h_ani;
+		top: -100px;
+		opacity: 0;
+		animation-name: order__h_ani;
 		animation-delay: $htitle-del;
 		animation-duration: $htitle-dur;
 		animation-fill-mode: forwards;
@@ -903,6 +898,7 @@ section.b-header{
 	background-repeat: no-repeat;
 	background-size: contain;
 	box-sizing: border-box;
+	cursor: pointer;
 	width: 289px;
 	height: 240px;
 	//margin: 25px 12.5px 0 0;
@@ -985,33 +981,31 @@ section.b-header{
  #p12{background: url("../mockups/square_8.png") no-repeat;}
  #p13{background: url("../mockups/gorizont_5.png") no-repeat;}
 
- #s01{background: url("../mockups/gorizont_6.png") no-repeat;}
- #s02{background: url("../mockups/square_9.png") no-repeat;}
- #s03{background: url("../mockups/square_10.png") no-repeat;}
- #s04{background: url("../mockups/gorizont_7.png") no-repeat;}
- #s05{background: url("../mockups/square_11.png") no-repeat;}
- #s06{background: url("../mockups/square_12.png") no-repeat;}
- #s07{background: url("../mockups/gorizont_8.png") no-repeat;}
- #s08{background: url("../mockups/square_13.png") no-repeat;}
- #s09{background: url("../mockups/square_14.png") no-repeat;}
- #s10{background: url("../mockups/gorizont_9.png") no-repeat;}
- #s11{background: url("../mockups/square_15.png") no-repeat;}
- #s12{background: url("../mockups/square_16.png") no-repeat;}
- #s13{background: url("../mockups/gorizont_10.png") no-repeat;}
+ #s01{background: url("../mockups/Футболки.jpg") no-repeat;}
+ #s02{background: url("../mockups/чашки.jpg") no-repeat;}
+ #s03{background: url("../mockups/ручки.jpg") no-repeat;}
+ #s04{background: url("../mockups/Флешки.jpg") no-repeat;}
+ #s05{background: url("../mockups/кепки.jpg") no-repeat;}
+ #s06{background: url("../mockups/зажигалки.jpg") no-repeat;}
+ #s07{background: url("../mockups/Подарочные наборы.jpg") no-repeat;}
+ #s08{background: url("../mockups/брелки.jpg") no-repeat;}
+ #s09{background: url("../mockups/Чашки2.jpg") no-repeat;}
 
- #a01{background: url("../mockups/gorizont_1.png") no-repeat;}
- #a02{background: url("../mockups/square_1.png") no-repeat;}
- #a03{background: url("../mockups/square_2.png") no-repeat;}
- #a04{background: url("../mockups/gorizont_2.png") no-repeat;}
- #a05{background: url("../mockups/square_3.png") no-repeat;}
- #a06{background: url("../mockups/square_4.png") no-repeat;}
- #a07{background: url("../mockups/gorizont_3.png") no-repeat;}
- #a08{background: url("../mockups/square_5.png") no-repeat;}
- #a09{background: url("../mockups/square_6.png") no-repeat;}
- #a10{background: url("../mockups/gorizont_4.png") no-repeat;}
- #a11{background: url("../mockups/square_7.png") no-repeat;}
- #a12{background: url("../mockups/square_8.png") no-repeat;}
- #a13{background: url("../mockups/gorizont_5.png") no-repeat;}
+
+	#a01{background: url("../mockups/gorizont_6.png") no-repeat;}
+	#a02{background: url("../mockups/square_9.png") no-repeat;}
+	#a03{background: url("../mockups/square_10.png") no-repeat;}
+	#a04{background: url("../mockups/gorizont_7.png") no-repeat;}
+	#a05{background: url("../mockups/square_11.png") no-repeat;}
+	#a06{background: url("../mockups/square_12.png") no-repeat;}
+	#a07{background: url("../mockups/gorizont_8.png") no-repeat;}
+	#a08{background: url("../mockups/square_13.png") no-repeat;}
+	#a09{background: url("../mockups/square_14.png") no-repeat;}
+	#a10{background: url("../mockups/gorizont_9.png") no-repeat;}
+	#a11{background: url("../mockups/square_15.png") no-repeat;}
+	#a12{background: url("../mockups/square_16.png") no-repeat;}
+	#a13{background: url("../mockups/gorizont_10.png") no-repeat;}
+
 
 .b-working{
 	//height: 870px;

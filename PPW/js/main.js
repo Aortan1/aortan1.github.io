@@ -82,6 +82,10 @@ $(document).ready(function() {
 
     var ids = ["#items-polygraphy", "#items-souvenirs", "#items-outdoor-advertising"];
 
+    $(document.getElementsByClassName('items__item--wide')).each(function(i,elem) {
+        elem.setAttribute("data-size", "2");
+    });
+
     $( Portfolio_nav_buttons ).each(function(i) {
         $(this).click(
             function () {
