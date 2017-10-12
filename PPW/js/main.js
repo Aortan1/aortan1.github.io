@@ -56,19 +56,31 @@ function validation(form){
 }
 
 window.onload = function() { // Самбит для кнопки формы отправки письма
+
+    var video = document.getElementById("video-container__video");
+
+    (function myHandler(e) {
+        console.log("11111!!!!");
+        setTimeout(function () {
+            video.play();
+        }, 5000);
+    })();
+
+
     var form = document.getElementById("b-sign-up__form");
     document.getElementById("b-sign-up__submit").addEventListener("click", function () {
         //form.submit();
         validation(form);
     });
 
-    var video = document.getElementById("video-container__video");
+
     //video.playbackRate = 0.3;
-    video.addEventListener("canplay", function() {
-        setTimeout(function() {
-            video.play();
-        }, 5000);
-    });
+    // video.addEventListener("canplay", function() {
+    //     setTimeout(function() {
+    //         video.play();
+    //     }, 5000);
+    // });
+
 
 
 }
@@ -118,23 +130,23 @@ $(document).ready(function() {
             var conWidth;
             if (winWidth < 3 * el) {
                 conWidth = 2 * el;
-                console.log(2 * el);
+                //console.log(2 * el);
                 col = 2
             } else if (winWidth < 4 * el) {
                 conWidth = 3 * el;
-                console.log(3 * el);
+                //console.log(3 * el);
                 col = 3
             } else if (winWidth < 5 * el) {
                 conWidth = 4 * el;
-                console.log(4 * el);
+                //console.log(4 * el);
                 col = 4
             } else if (winWidth < 6 * el) {
                 conWidth = 5 * el;
-                console.log(5 * el);
+                //console.log(5 * el);
                 col = 5;
             } else {
                 conWidth = 6 * el;
-                console.log(6 * el);
+                //console.log(6 * el);
                 col = 6;
             }
 

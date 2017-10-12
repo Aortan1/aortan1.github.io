@@ -493,6 +493,8 @@ section.b-nav {
   top: 0;
   left: 0;
   width: 100%; }
+  .video-container__video:hover {
+    border: 2px solid blue; }
 
 section.b-header {
   height: 815px;
@@ -633,19 +635,19 @@ section.b-header {
   .b-services__items #service-souvenirs:before {
     content: "";
     position: absolute;
-    right: 0;
-    top: 30px;
-    width: 167px;
-    height: 180px;
-    background: url("../i/ser-2-shirt_w167.png") no-repeat; }
+    right: -50px;
+    top: 15px;
+    width: 247px;
+    height: 249px;
+    background: url("../i/ser-2-ico.svg") no-repeat; }
   .b-services__items #service-large-format-printing:before {
     content: "";
     position: absolute;
-    left: -30px;
+    left: -70px;
     top: 30px;
-    width: 212px;
-    height: 186px;
-    background: url("../i/ser-3-out_w212.png") no-repeat; }
+    width: 247px;
+    height: 249px;
+    background: url("../i/ser-3-ico.svg") no-repeat; }
   .b-services__items .b-services__buttons {
     margin: 0 auto;
     text-align: center; }
@@ -1152,7 +1154,7 @@ section.b-header {
   min-width: 1325px;
   height: 100%;
   top: 235px;
-  background: url("../i/how1+.svg") no-repeat 106px 30px, url("../i/how2+.svg") no-repeat 1075px 234px, url("../i/how3+.svg") no-repeat 126px 468px, url("../i/how4+.svg") no-repeat 1080px 700px, url("../i/path.svg") no-repeat 0 170px/contain;
+  background: url("../i/how1.svg") no-repeat 116px 30px, url("../i/how2.svg") no-repeat 1075px 241px, url("../i/how3.svg") no-repeat 116px 474px, url("../i/how4.svg") no-repeat 1080px 710px, url("../i/path.svg") no-repeat 0 170px/contain;
   z-index: 0; }
   @media (max-width: 830px) {
     .plan__bg {
