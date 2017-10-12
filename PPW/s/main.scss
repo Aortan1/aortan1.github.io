@@ -273,6 +273,7 @@ p{
   background-size: contain;
   background-repeat: no-repeat;
   @media only screen and (max-device-width: 700px){
+	width: 100%;
 	min-width: 1325px;
   }
 }
@@ -321,13 +322,15 @@ section.b-nav {
 	z-index: 10;
 	top: 0;
 	background: linear-gradient(to top, rgba(255,255,255,0.8), #fff);
-	@media only screen and (max-device-width: 700px){padding-bottom: 30px;}
+	@media only screen and (max-device-width: 700px){
+		padding-bottom: 30px;
+		height: 40px;
+	}
 	.main {
 		//outline: 2px solid violet;
 		width: 1440px;
 		letter-spacing: 2.3px;
 		.cont_item--empty {display: block;}
-
 		@media (max-width: 1460px) {
 			//outline: 2px solid red;
 			letter-spacing: 1px;
@@ -369,8 +372,6 @@ section.b-nav {
 
 	}
 }
-
-
 .b-nav__container {
 	//outline: 1px solid blue;
 	padding-top: 5px;
@@ -458,13 +459,16 @@ section.b-nav {
 }
 
 .b-header__video-container{
-	//top: -400px;
+
 	top: -50%;
-	//transform: translate(-50%, 50%);
 	height: 100vh;
 	width: 100vw;
 	padding-top: 49%;
-	//min-height: 570px;
+	@media only screen and (max-device-width: 700px) {
+		top: -400px;
+		min-height: 570px;
+		height: auto;
+	}
 }
 .video-container__waves{
 	top: 44.21vh;
@@ -473,6 +477,13 @@ section.b-nav {
 	width: 100vw;
 	//min-height: 570px;
 	background: url('../i/1.svg') center 0px / contain no-repeat, url('../i/2.svg') center 0px / contain no-repeat, url('../i/2.svg') center 0px / contain no-repeat, url('../i/2-1.svg') center 63.156vh / cover no-repeat, url('../i/2-2.svg') center 53.16vh / cover no-repeat, url('../i/2-3.svg') center 60.53vh / cover no-repeat;
+	@media only screen and (max-device-width: 700px) {
+		top: 420px;
+		height: 570px;
+		width: 100%;
+		background: url('../i/1.svg') center 0px / contain no-repeat, url('../i/2.svg') center 0px / contain no-repeat, url('../i/2.svg') center 0px / contain no-repeat, url('../i/2-1.svg') center 600px / cover no-repeat, url('../i/2-2.svg') center 505px / cover no-repeat, url('../i/2-3.svg') center 575px / cover no-repeat;
+	}
+
 }
 
 
@@ -481,13 +492,14 @@ section.b-nav {
 	top: 0;
 	left: 0;
 	width: 100%;
-	//height: 80%;
+	@media only screen and (max-device-width: 700px) {
+
+	}
 }
 
 section.b-header{
 	.main{border: 0px solid red; width: 570px; padding: 0;}
-	height: 85.79vh;//815px;
-	//height: 815px;
+	height: 85.79vh; //85.79vh;//815px;
 	outline: 0px solid red;
 	position: relative;
 	//top: 4.21vh;
@@ -498,8 +510,7 @@ section.b-header{
 	animation-fill-mode: forwards;
 
 	@media only screen and (max-device-width: 700px){
-		overflow: hidden;
-		//border: 5px solid red;
+		height: 815px;
 		.b-header__bg{
 			background: url('../i/bg1-mo720.png') center -80px / contain no-repeat;
 		}
