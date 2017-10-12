@@ -496,7 +496,7 @@ section.b-nav {
 
 section.b-header {
   height: 85.79vh;
-  outline: 2px solid red;
+  outline: 0px solid red;
   position: relative;
   opacity: 0;
   -webkit-animation-name: opacity0to1_ani;
