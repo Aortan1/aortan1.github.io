@@ -290,9 +290,7 @@ p {
 
 .bg {
   min-width: 1920px;
-  max-width: 1920px;
   position: absolute;
-  width: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -339,8 +337,9 @@ section.b-nav {
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.02);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.02);
   padding: 5px 0 15px;
-  height: 40px;
-  border: 0px solid blue;
+  min-height: 40px;
+  height: 4.21vh;
+  outline: 0px solid blue;
   letter-spacing: 5px;
   position: fixed;
   width: 100%;
@@ -477,27 +476,27 @@ section.b-nav {
   animation-iteration-count: infinite; }
 
 .b-header__video-container {
-  top: -400px;
-  padding-top: 49%;
-  min-height: 570px;
-  height: auto; }
+  top: -50%;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 49%; }
 
 .video-container__waves {
-  top: 420px;
+  top: 44.21vh;
   padding-top: 49%;
-  min-height: 570px;
-  background: url("../i/1.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2-1.svg") center 600px/cover no-repeat, url("../i/2-2.svg") center 505px/cover no-repeat, url("../i/2-3.svg") center 575px/cover no-repeat; }
+  height: 100vh;
+  width: 100vw;
+  background: url("../i/1.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2-1.svg") center 63.156vh/cover no-repeat, url("../i/2-2.svg") center 53.16vh/cover no-repeat, url("../i/2-3.svg") center 60.53vh/cover no-repeat; }
 
 .video-container__video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%; }
-  .video-container__video:hover {
-    border: 2px solid blue; }
 
 section.b-header {
-  height: 815px;
+  height: 85.79vh;
+  outline: 2px solid red;
   position: relative;
   opacity: 0;
   -webkit-animation-name: opacity0to1_ani;
