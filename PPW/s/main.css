@@ -678,6 +678,7 @@ section.b-header {
 
 .b-about-company {
   height: 146.31vh;
+  min-height: 1390px;
   position: relative; }
   .b-about-company .main {
     display: -webkit-box;
