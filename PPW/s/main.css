@@ -603,6 +603,9 @@ section.b-header {
 .b-services__items {
   padding-top: 20px;
   padding-bottom: 70px; }
+  @media only screen and (max-device-width: 700px) {
+    .b-services__items {
+      padding-bottom: 40px; } }
   @media (max-width: 768px) {
     .b-services__items .service {
       padding: 0 20px !important;
@@ -674,27 +677,43 @@ section.b-header {
         margin: 50px auto 0; } }
 
 .b-about-company {
-  height: 1390px;
+  height: 146.31vh;
   position: relative; }
   .b-about-company .main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 100%;
     max-width: 1175px;
-    padding: 0 40px; }
+    padding: 20px 40px 100px; }
   @media only screen and (max-device-width: 700px) {
     .b-about-company {
-      height: auto; } }
+      height: 1750px; }
+      .b-about-company .main {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; } }
 
 .b-about-company__bg {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
-  width: 100%;
+  width: 100vw;
   padding-top: 72.29%;
   height: auto;
   min-height: 1380px;
-  background: url("../i/bg2t.png") 0 0;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: url("../i/bg2t.png") 0 0/cover no-repeat;
   -webkit-animation-name: neon_ani;
   animation-name: neon_ani;
   -webkit-animation-delay: 7s;
@@ -708,22 +727,15 @@ section.b-header {
       background: url("../i/bg2-mo700.png") 0 0 no-repeat/contain; } }
 
 .b-about-company__item {
-  padding: 25px 0; }
-  .b-about-company__item:first-child {
-    padding-top: 220px; }
+  padding: 25px 0 50px; }
   .b-about-company__item:nth-child(2n+1) {
     text-align: left; }
   .b-about-company__item:nth-child(2n) {
     text-align: right; }
-  .b-about-company__item:last-child {
-    padding: 50px 0; }
   @media only screen and (max-device-width: 700px) {
     .b-about-company__item {
-      text-align: center !important; }
-      .b-about-company__item:first-child {
-        margin-bottom: 30px; }
-      .b-about-company__item:last-child {
-        margin-bottom: 20px; } }
+      text-align: center !important;
+      padding: 125px 0 25px; } }
   .b-about-company__item .item-h1 {
     display: inline-block;
     letter-spacing: 4.5px;
