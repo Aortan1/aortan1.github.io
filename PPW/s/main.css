@@ -368,7 +368,7 @@ section.b-nav {
     @media (max-width: 992px) {
       section.b-nav .main {
         width: 100%; }
-        section.b-nav .main a.cont_item {
+        section.b-nav .main .cont_item--for-anchor {
           display: none; }
         section.b-nav .main .cont_item--phone {
           padding-top: 13px !important; }
@@ -424,14 +424,14 @@ section.b-nav {
   .cont_item--logo {
     margin-top: 0;
     opacity: 0;
-    -webkit-animation-name: opacity0to1_ani, blink_ani;
-    animation-name: opacity0to1_ani, blink_ani;
-    -webkit-animation-delay: var(--ani-init-delay), 3s;
-    animation-delay: var(--ani-init-delay), 3s;
-    -webkit-animation-duration: calc(2s * var(--ani-speed)), 10s;
-    animation-duration: calc(2s * var(--ani-speed)), 10s;
-    -webkit-animation-iteration-count: 1, infinite;
-    animation-iteration-count: 1, infinite; }
+    -webkit-animation-name: opacity0to1_ani;
+    animation-name: opacity0to1_ani;
+    -webkit-animation-delay: var(--ani-init-delay);
+    animation-delay: var(--ani-init-delay);
+    -webkit-animation-duration: calc(2s * var(--ani-speed));
+    animation-duration: calc(2s * var(--ani-speed));
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
   .cont_item:nth-child(2) {
     -webkit-animation-delay: calc(0.5s * var(--ani-speed) + var(--ani-init-delay));
     animation-delay: calc(0.5s * var(--ani-speed) + var(--ani-init-delay)); }
@@ -859,13 +859,17 @@ section.b-header {
   @media only screen and (max-device-width: 700px) {
     .nav-button {
       padding: 60px 10px;
-      font-size: 0.85em; }
+      font-size: 0.85em;
+      width: 28%; }
       .nav-button:first-child {
         border-radius: 15px 0 0 15px; }
       .nav-button:last-child {
         border-radius: 0 15px 15px 0; }
       .nav-button:nth-child(2) {
-        border-width: 1px 0px; } }
+        border-width: 1px 0px; }
+      .nav-button#button-outdoor-advertising {
+        width: 41%;
+        min-width: 240px; } }
   .nav-button--active {
     background: -webkit-gradient(linear, left top, right top, from(#fcc46c), to(#fa4c93));
     background: -webkit-linear-gradient(left, #fcc46c, #fa4c93);

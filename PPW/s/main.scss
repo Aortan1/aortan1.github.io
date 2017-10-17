@@ -327,7 +327,6 @@ section.b-nav {
 		height: 40px;
 	}
 	.main {
-		//outline: 2px solid violet;
 		width: 1440px;
 		letter-spacing: 2.3px;
 		.cont_item--empty {display: block;}
@@ -338,11 +337,8 @@ section.b-nav {
 			.cont_item--empty {display: none;}
 		}
 		@media (max-width: 992px) {
-			//outline: 2px solid blue;
-			//width: 755px;
 			width: 100%;
-			//.cont_item--logo, .cont_item--phone{display: none;}
-			a.cont_item{display: none;}
+			.cont_item--for-anchor{display: none;}
 			.cont_item--phone{
 				padding-top: 13px!important;
 			}
@@ -393,17 +389,17 @@ section.b-nav {
 	animation-fill-mode: forwards;
 	opacity: 0;
 
-    //&.cont_item--logo, &.cont_item--phone{
-    //  display: none;
-    //}
-
 	&--logo{
 		margin-top: 0;
 		opacity: 0;
-		animation-name: opacity0to1_ani, blink_ani;
-		animation-delay: $logo-del, $logo-blink-del;
-		animation-duration: $logo-dur, $logo-blink-dur;
-		animation-iteration-count: 1, infinite;
+		animation-name: opacity0to1_ani;
+		animation-delay: $logo-del;
+		animation-duration: $logo-dur;
+		animation-iteration-count: 1;
+		//animation-name: opacity0to1_ani, blink_ani;
+		//animation-delay: $logo-del, $logo-blink-del;
+		//animation-duration: $logo-dur, $logo-blink-dur;
+		//animation-iteration-count: 1, infinite;
 	}
 
 	&:nth-child(2){
@@ -869,6 +865,7 @@ section.b-header{
 	@media only screen and (max-device-width: 700px){
 		padding: 60px 10px;
 		font-size: 0.85em;
+		width: 28%;
 		&:first-child{
 			border-radius: 15px 0 0 15px;
 		}
@@ -878,7 +875,10 @@ section.b-header{
 		&:nth-child(2){
 			border-width: 1px 0px;
 		}
-
+		&#button-outdoor-advertising{
+			width: 41%;
+			min-width: 240px;
+		}
 	}
 	&--active{
 		background: linear-gradient(left, $button-color-yellow, $button-color-lilac);
