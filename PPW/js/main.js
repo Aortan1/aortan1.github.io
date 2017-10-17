@@ -110,47 +110,47 @@ $(document).ready(function() {
     });
 
 
-
     (function doBlocksit() {
 
-        for(var i = 0; i<ids.length; i++) {
-            $(ids[i]).BlocksIt({
-                    numOfCol: 6,
-                    offsetX: 6.25,
-                    offsetY: 12.5,
-                    blockElement: '.items__item'
-                });
-        }
 
-        // window resize
-        var currentWidth = 1920;
-        var el = 289 + 25;
-        $(window).resize(function () {
-            var winWidth = $(window).width();
-            var conWidth;
+        function defineCol(winWidth){
             if (winWidth < 3 * el) {
-                conWidth = 2 * el;
-                //console.log(2 * el);
                 col = 2
             } else if (winWidth < 4 * el) {
-                conWidth = 3 * el;
-                //console.log(3 * el);
                 col = 3
             } else if (winWidth < 5 * el) {
-                conWidth = 4 * el;
-                //console.log(4 * el);
                 col = 4
             } else if (winWidth < 6 * el) {
-                conWidth = 5 * el;
-                //console.log(5 * el);
                 col = 5;
             } else {
-                conWidth = 6 * el;
-                //console.log(6 * el);
                 col = 6;
             }
+            return col;
+        }
 
+        var el = 289 + 25; //ширина широкого блока + один отступ до след.блока
 
+        var currentWidth = $(window).width(); //текущая ширина окна
+        var col = defineCol(currentWidth); //ОПТИМАЛЬНОЕ кол-во блоков в строке, соотв.текущ.ширине
+        var conWidth = col * el; //ОПТИМАЛЬНАЯ ширина
+
+        if (conWidth !== currentWidth) { // перестройка блоков при ресайзе
+            currentWidth = conWidth;
+            for(var i = 0; i<ids.length; i++) {
+                $(ids[i]).width(conWidth)
+                    .BlocksIt({
+                        numOfCol: col,
+                        offsetX: 6.25,
+                        offsetY: 12.5,
+                        blockElement: '.items__item'
+                    });
+            }
+        }
+
+        $(window).resize(function () {
+            currentWidth=$(window).width();
+            col = defineCol(currentWidth);
+            conWidth = col * el;
 
             if (conWidth !== currentWidth) { // перестройка блоков при ресайзе
                 currentWidth = conWidth;
