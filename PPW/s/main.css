@@ -1042,70 +1042,58 @@ section.b-header {
   background: url("../mockups/polygraphy/13_common.jpg") no-repeat; }
 
 #s01 {
-  background: url("../mockups/souvenirs/Футболки.jpg") no-repeat; }
+  background: url("../mockups/souvenirs/01_t-shirts.jpg") no-repeat; }
 
 #s02 {
-  background: url("../mockups/souvenirs/чашки.jpg") no-repeat; }
+  background: url("../mockups/souvenirs/02_cups.jpg") no-repeat; }
 
 #s03 {
-  background: url("../mockups/souvenirs/ручки.jpg") no-repeat; }
+  background: url("../mockups/souvenirs/03_pens.jpg") no-repeat; }
 
 #s04 {
-  background: url("../mockups/souvenirs/Флешки.jpg") no-repeat; }
+  background: url("../mockups/souvenirs/04_flash_drives.jpg") no-repeat; }
 
 #s05 {
-  background: url("../mockups/souvenirs/кепки.jpg") no-repeat; }
+  background: url("../mockups/souvenirs/05_caps.jpg") no-repeat; }
 
 #s06 {
-  background: url("../mockups/souvenirs/зажигалки.jpg") no-repeat; }
+  background: url("../mockups/souvenirs/06_lighters.jpg") no-repeat; }
 
 #s07 {
-  background: url("../mockups/souvenirs/Подарочные наборы.jpg") no-repeat; }
+  background: url("../mockups/souvenirs/07_gift_sets.jpg") no-repeat; }
 
 #s08 {
-  background: url("../mockups/souvenirs/брелки.jpg") no-repeat; }
+  background: url("../mockups/souvenirs/08_trinkets.jpg") no-repeat; }
 
 #s09 {
-  background: url("../mockups/souvenirs/Чашки2.jpg") no-repeat; }
+  background: url("../mockups/souvenirs/09_cups2.jpg") no-repeat; }
 
 #a01 {
-  background: url("../mockups/gorizont_6.png") no-repeat; }
+  background: url("../mockups/large-format-printing/01_printing_on_oracle.jpg") no-repeat; }
 
 #a02 {
-  background: url("../mockups/square_9.png") no-repeat; }
+  background: url("../mockups/large-format-printing/02_press_wall.jpg") no-repeat; }
 
 #a03 {
-  background: url("../mockups/square_10.png") no-repeat; }
+  background: url("../mockups/large-format-printing/03_x_banner.jpg") no-repeat; }
 
 #a04 {
-  background: url("../mockups/gorizont_7.png") no-repeat; }
+  background: url("../mockups/large-format-printing/04_photo_collage.jpg") no-repeat; }
 
 #a05 {
-  background: url("../mockups/square_11.png") no-repeat; }
+  background: url("../mockups/large-format-printing/05_poster.png") no-repeat; }
 
 #a06 {
-  background: url("../mockups/square_12.png") no-repeat; }
+  background: url("../mockups/large-format-printing/06_rollup.jpg") no-repeat; }
 
 #a07 {
-  background: url("../mockups/gorizont_8.png") no-repeat; }
+  background: url("../mockups/large-format-printing/07_canvas.jpg") no-repeat; }
 
 #a08 {
-  background: url("../mockups/square_13.png") no-repeat; }
+  background: url("../mockups/large-format-printing/08_photographic_paper.png") no-repeat; }
 
 #a09 {
-  background: url("../mockups/square_14.png") no-repeat; }
-
-#a10 {
-  background: url("../mockups/gorizont_9.png") no-repeat; }
-
-#a11 {
-  background: url("../mockups/square_15.png") no-repeat; }
-
-#a12 {
-  background: url("../mockups/square_16.png") no-repeat; }
-
-#a13 {
-  background: url("../mockups/gorizont_10.png") no-repeat; }
+  background: url("../mockups/large-format-printing/09_banner.jpg") no-repeat; }
 
 .b-working {
   overflow: hidden;
