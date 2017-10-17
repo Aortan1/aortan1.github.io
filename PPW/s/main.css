@@ -820,7 +820,8 @@ section.b-header {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
       -ms-flex-pack: center;
-      justify-content: center; } }
+      justify-content: center;
+      width: 98%; } }
 
 .nav-button {
   display: -webkit-box;
@@ -860,7 +861,7 @@ section.b-header {
     .nav-button {
       padding: 60px 10px;
       font-size: 0.85em;
-      width: 28%; }
+      width: calc((100% - 350px) / 2) !important; }
       .nav-button:first-child {
         border-radius: 15px 0 0 15px; }
       .nav-button:last-child {
@@ -868,8 +869,7 @@ section.b-header {
       .nav-button:nth-child(2) {
         border-width: 1px 0px; }
       .nav-button#button-outdoor-advertising {
-        width: 41%;
-        min-width: 240px; } }
+        min-width: 350px; } }
   .nav-button--active {
     background: -webkit-gradient(linear, left top, right top, from(#fcc46c), to(#fa4c93));
     background: -webkit-linear-gradient(left, #fcc46c, #fa4c93);

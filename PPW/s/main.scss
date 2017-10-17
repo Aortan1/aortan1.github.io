@@ -837,6 +837,7 @@ section.b-header{
 	align-items: stretch;
 	@media only screen and (max-device-width: 700px){
 		justify-content: center;
+		width: 98%;
 	}
 }
 .nav-button{
@@ -865,7 +866,9 @@ section.b-header{
 	@media only screen and (max-device-width: 700px){
 		padding: 60px 10px;
 		font-size: 0.85em;
-		width: 28%;
+		//width: 28%;
+		//width: 300px!important;
+		width: calc((100% - 350px) / 2)!important;
 		&:first-child{
 			border-radius: 15px 0 0 15px;
 		}
@@ -876,8 +879,8 @@ section.b-header{
 			border-width: 1px 0px;
 		}
 		&#button-outdoor-advertising{
-			width: 41%;
-			min-width: 240px;
+			//width: 41%;
+			min-width: 350px;
 		}
 	}
 	&--active{

@@ -59,12 +59,12 @@ window.onload = function() { // Самбит для кнопки формы от
 
     var video = document.getElementById("video-container__video");
 
-    (function myHandler(e) {
-        console.log("11111!!!!");
-        setTimeout(function () {
-            video.play();
-        }, 5000);
-    })();
+    // (function myHandler(e) {
+    //     console.log("11111!!!!");
+    //     setTimeout(function () {
+    //         video.play();
+    //     }, 5000);
+    // })();
 
 
     var form = document.getElementById("b-sign-up__form");
