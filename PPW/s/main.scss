@@ -859,8 +859,12 @@ section.b-header{
     padding: 10px;
 	text-transform: uppercase;
 	transition: 0.5s;
-	@media (max-width: 992px) {
+	@media (max-width: 1070px) {
 		font-size: 1.0em;
+		width: 29%;
+		&#button-outdoor-advertising{
+			min-width: 240px;
+		}
 	}
 	@media only screen and (max-device-width: 700px){
 		padding: 60px 10px;
