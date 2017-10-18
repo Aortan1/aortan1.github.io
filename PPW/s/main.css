@@ -340,7 +340,6 @@ section.b-nav {
   padding: 5px 0 15px;
   min-height: 40px;
   height: 4.21vh;
-  outline: 0px solid blue;
   letter-spacing: 5px;
   position: fixed;
   width: 100%;
@@ -410,7 +409,6 @@ section.b-nav {
   justify-content: space-around; }
 
 .cont_item {
-  margin-top: -50px;
   height: 100%;
   padding: 14px 15px 5px;
   font-size: 1em;
