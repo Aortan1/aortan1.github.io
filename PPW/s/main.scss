@@ -1,7 +1,4 @@
 
-
-
-
 $font-color-gray: #4a4a4a;
 $button-color-yellow: #fcc46c;
 $button-color-lilac: #fa4c93;
@@ -40,6 +37,47 @@ $neon2-del: 7s;
 	--ani-init-delay: 1.0s; // исходная задержка комплекса анимаций(для ожидания загрузки изображений фона)
 
 }
+
+
+// --Portfolio images--
+
+// Polygraphy
+#polygraphy_01{background: url("../mockups/polygraphy/01_booklet.png") no-repeat;}
+#polygraphy_02{background: url("../mockups/polygraphy/02_business_cards.png") no-repeat;}
+#polygraphy_03{background: url("../mockups/polygraphy/03_notebooks.jpg") no-repeat;}
+#polygraphy_04{background: url("../mockups/polygraphy/04_catalog.png") no-repeat;}
+#polygraphy_05{background: url("../mockups/polygraphy/05_leaflets.jpg") no-repeat;}
+#polygraphy_06{background: url("../mockups/polygraphy/06_desktop_calendars.png") no-repeat;}
+#polygraphy_07{background: url("../mockups/polygraphy/07_paper_bags.jpg") no-repeat;}
+#polygraphy_08{background: url("../mockups/polygraphy/08_posters.jpg") no-repeat;}
+#polygraphy_09{background: url("../mockups/polygraphy/09_wall_calendars.png") no-repeat;}
+#polygraphy_10{background: url("../mockups/polygraphy/10_common.jpg") no-repeat;}
+#polygraphy_11{background: url("../mockups/polygraphy/11_postcards.jpg") no-repeat;}
+#polygraphy_12{background: url("../mockups/polygraphy/12_journals.png") no-repeat;}
+#polygraphy_13{background: url("../mockups/polygraphy/13_common.jpg") no-repeat;}
+
+// Souvenirs
+#souvenirs_01{background: url("../mockups/souvenirs/01_t-shirts.jpg") no-repeat;} // Футболки.jpg
+#souvenirs_02{background: url("../mockups/souvenirs/02_cups.jpg") no-repeat;} // чашки.jpg
+#souvenirs_03{background: url("../mockups/souvenirs/03_pens.jpg") no-repeat;} // ручки.jpg
+#souvenirs_04{background: url("../mockups/souvenirs/04_flash_drives.jpg") no-repeat;} // Флешки.jpg
+#souvenirs_05{background: url("../mockups/souvenirs/05_caps.jpg") no-repeat;} // кепки.jpg
+#souvenirs_06{background: url("../mockups/souvenirs/06_lighters.jpg") no-repeat;} // зажигалки.jpg
+#souvenirs_07{background: url("../mockups/souvenirs/07_gift_sets.jpg") no-repeat;} // Подарочные наборы.jpg
+#souvenirs_08{background: url("../mockups/souvenirs/08_trinkets.jpg") no-repeat;} // брелки.jpg
+#souvenirs_09{background: url("../mockups/souvenirs/09_cups2.jpg") no-repeat;} // Чашки2.jpg
+
+// Large-format printing
+#large_01{background: url("../mockups/large-format-printing/01_printing_on_oracle.jpg") no-repeat;}
+#large_02{background: url("../mockups/large-format-printing/02_press_wall.jpg") no-repeat;}
+#large_03{background: url("../mockups/large-format-printing/03_x_banner.jpg") no-repeat;}
+#large_04{background: url("../mockups/large-format-printing/04_photo_collage.jpg") no-repeat;}
+#large_05{background: url("../mockups/large-format-printing/05_poster.png") no-repeat;}
+#large_06{background: url("../mockups/large-format-printing/06_rollup.jpg") no-repeat;}
+#large_07{background: url("../mockups/large-format-printing/07_canvas.jpg") no-repeat;}
+#large_08{background: url("../mockups/large-format-printing/08_photographic_paper.png") no-repeat;}
+#large_09{background: url("../mockups/large-format-printing/09_banner.jpg") no-repeat;}
+
 
 * {
 	padding: 0;
@@ -292,12 +330,16 @@ p{
   }
   &-left{
     float: left;
+	position: relative;
+	left: -2px;
 	height: 90%;
     background: linear-gradient(to right, rgba(255,255,255,1),rgba(255,255,255,0));
 	@media only screen and (max-device-width: 700px){width: 170px;}
   }
   &-right{
     float: right;
+	position: relative;
+	right: -2px; // - чтобы убрать 1пиксель справа без тумана при резайсе окна
     width: 100px;
 	height: 80%;
     background: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,1));
@@ -309,7 +351,7 @@ p{
   }
 }
 
-section.b-nav {
+.b-nav {
 	box-shadow: 0 10px 10px rgba(0,0,0,0.02);
 	padding: 5px 0 15px;
 	//height: 40px;
@@ -494,7 +536,7 @@ section.b-nav {
 	}
 }
 
-section.b-header{
+.b-header{
 	.main{border: 0px solid red; width: 570px; padding: 0;}
 	height: 85.79vh; //85.79vh;//815px;
 	outline: 0px solid red;
@@ -860,7 +902,7 @@ section.b-header{
 	@media (max-width: 1070px) {
 		font-size: 1.0em;
 		width: 29%;
-		&#button-outdoor-advertising{
+		&#button-large{
 			min-width: 240px;
 		}
 	}
@@ -879,7 +921,7 @@ section.b-header{
 		&:nth-child(2){
 			border-width: 1px 0px;
 		}
-		&#button-outdoor-advertising{
+		&#button-large{
 			//width: 41%;
 			min-width: 350px;
 		}
@@ -996,6 +1038,9 @@ section.b-header{
 		transition: 0.5s;
         user-select: none;
 		z-index: 2;
+		@media only screen and (max-device-width: 700px){
+			line-height: 1.5em;
+		}
 	}
 }
 
@@ -1003,42 +1048,6 @@ section.b-header{
 	width: 603px;
 }
 
-// Polygraphy
-#p01{background: url("../mockups/polygraphy/01_booklet.png") no-repeat;}
-#p02{background: url("../mockups/polygraphy/02_business_cards.png") no-repeat;}
-#p03{background: url("../mockups/polygraphy/03_notebooks.jpg") no-repeat;}
-#p04{background: url("../mockups/polygraphy/04_catalog.png") no-repeat;}
-#p05{background: url("../mockups/polygraphy/05_leaflets.jpg") no-repeat;}
-#p06{background: url("../mockups/polygraphy/06_desktop_calendars.png") no-repeat;}
-#p07{background: url("../mockups/polygraphy/07_paper_bags.jpg") no-repeat;}
-#p08{background: url("../mockups/polygraphy/08_posters.jpg") no-repeat;}
-#p09{background: url("../mockups/polygraphy/09_wall_calendars.png") no-repeat;}
-#p10{background: url("../mockups/polygraphy/10_common.jpg") no-repeat;}
-#p11{background: url("../mockups/polygraphy/11_postcards.jpg") no-repeat;}
-#p12{background: url("../mockups/polygraphy/12_journals.png") no-repeat;}
-#p13{background: url("../mockups/polygraphy/13_common.jpg") no-repeat;}
-
-// Souvenirs
-#s01{background: url("../mockups/souvenirs/01_t-shirts.jpg") no-repeat;} // Футболки.jpg
-#s02{background: url("../mockups/souvenirs/02_cups.jpg") no-repeat;} // чашки.jpg
-#s03{background: url("../mockups/souvenirs/03_pens.jpg") no-repeat;} // ручки.jpg
-#s04{background: url("../mockups/souvenirs/04_flash_drives.jpg") no-repeat;} // Флешки.jpg
-#s05{background: url("../mockups/souvenirs/05_caps.jpg") no-repeat;} // кепки.jpg
-#s06{background: url("../mockups/souvenirs/06_lighters.jpg") no-repeat;} // зажигалки.jpg
-#s07{background: url("../mockups/souvenirs/07_gift_sets.jpg") no-repeat;} // Подарочные наборы.jpg
-#s08{background: url("../mockups/souvenirs/08_trinkets.jpg") no-repeat;} // брелки.jpg
-#s09{background: url("../mockups/souvenirs/09_cups2.jpg") no-repeat;} // Чашки2.jpg
-
-// Outdoor advertising
-#a01{background: url("../mockups/large-format-printing/01_printing_on_oracle.jpg") no-repeat;}
-#a02{background: url("../mockups/large-format-printing/02_press_wall.jpg") no-repeat;}
-#a03{background: url("../mockups/large-format-printing/03_x_banner.jpg") no-repeat;}
-#a04{background: url("../mockups/large-format-printing/04_photo_collage.jpg") no-repeat;}
-#a05{background: url("../mockups/large-format-printing/05_poster.png") no-repeat;}
-#a06{background: url("../mockups/large-format-printing/06_rollup.jpg") no-repeat;}
-#a07{background: url("../mockups/large-format-printing/07_canvas.jpg") no-repeat;}
-#a08{background: url("../mockups/large-format-printing/08_photographic_paper.png") no-repeat;}
-#a09{background: url("../mockups/large-format-printing/09_banner.jpg") no-repeat;}
 
 
 .b-working{

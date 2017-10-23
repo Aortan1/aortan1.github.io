@@ -23,13 +23,14 @@ html
                     a.cont_item.cont_item--phone(href="tel:+380441111234") 044
                         b  - 111 - 12 - 34
 
-        section.b-header
+        header.b-header
             //.b-header__bg.bg
             .b-header__video-container.bg
-                video.video-container__video#video-container__video(loop, autoplay,  width="auto", height="auto", muted, poster="i/poster1038.png")
-                    source(src="video/Background_ORNandGRNv3.mp4", type="video/mp4")
+                video.video-container__video#video-container__video(loop, autoplay, preload="auto", style="width: 100%; height: auto;", muted, poster="")
+                    source(src="video/Background-full.mp4", type="video/mp4")
                 .video-container__waves.bg
             .main
+                .b-header__order
                 .b-header__order
                     .order__logo
                     h3.order__h Рекламная полиграфия
@@ -97,74 +98,76 @@ html
             .b-portfolio__nav
                 .nav-button.nav-button--active#button-polygraphy() Полиграфия
                 .nav-button#button-souvenirs() Сувенирная продукция
-                .nav-button#button-outdoor-advertising() Широкоформатная печать
+                .nav-button#button-large() Широкоформатная печать
             .b-portfolio__items#items-polygraphy.b-portfolio__items--active
-                .items__item.items__item--wide#p01
+                .items__item.items__item--wide#polygraphy_01
                     .h Печать буклетов
-                .items__item#p02
+                .items__item#polygraphy_02
                     .h Печать визиток
-                .items__item#p03
+                .items__item#polygraphy_03
                     .h Печать блокнотов
-                .items__item.items__item--wide#p04
+                .items__item.items__item--wide#polygraphy_04
                     .h Печать каталогов
-                .items__item#p05
+                .items__item#polygraphy_05
                     .h Печать листовок
-                .items__item#p06
+                .items__item#polygraphy_06
                     .h Печать настольных календарей
-                .items__item.items__item--wide#p07
+                .items__item.items__item--wide#polygraphy_07
                     .h Печать на бумажных пакетах
-                .items__item#p08
+                .items__item#polygraphy_08
                     .h Печать плакатов
-                .items__item#p09
+                .items__item#polygraphy_09
                     .h Печать настенных календарей
-                .items__item.items__item--wide#p10
+                .items__item.items__item--wide#polygraphy_10
                     .h Печать папок, конвертов, бланков и дипломов
-                .items__item#p11
-                    .h Печать открыток и пригласительных
-                .items__item#p12
+                .items__item#polygraphy_11
+                    .h Печать открыток и пригласи
+                        wbr
+                        |тельных
+                .items__item#polygraphy_12
                     .h Печать журналов
-                .items__item.items__item--wide#p13
+                .items__item.items__item--wide#polygraphy_13
                     .h Печать брошюр и флаеров
 
             .b-portfolio__items#items-souvenirs
-                .items__item.items__item--wide#s01
+                .items__item.items__item--wide#souvenirs_01
                     .h Печать на футболках
-                .items__item#s02
+                .items__item#souvenirs_02
                     .h Печать на чашках
-                .items__item#s03
+                .items__item#souvenirs_03
                     .h Печать на ручках
-                .items__item.items__item--wide#s04
+                .items__item.items__item--wide#souvenirs_04
                     .h Печать на флешках
-                .items__item#s05
+                .items__item#souvenirs_05
                     .h Печать на бейсболках
-                .items__item#s06
+                .items__item#souvenirs_06
                     .h Печать на зажигалках
-                .items__item.items__item--wide#s07
+                .items__item.items__item--wide#souvenirs_07
                     .h Подарочные наборы
-                .items__item#s08
+                .items__item#souvenirs_08
                     .h Печать на брелках
-                .items__item#s09
+                .items__item#souvenirs_09
                     .h Печать на чашках
-            .b-portfolio__items#items-outdoor-advertising
-                .items__item.items__item--wide#a01
+            .b-portfolio__items#items-large
+                .items__item.items__item--wide#large_01
                     .h Печать на оракале
-                .items__item#a02
+                .items__item#large_02
                     .h Печать пресс волла
-                .items__item#a03
+                .items__item#large_03
                     .h Баннер паук,
                         br
                         |X-Banner
-                .items__item.items__item--wide#a04
+                .items__item.items__item--wide#large_04
                     .h Печать фотоколлажа на постере
-                .items__item#a05
+                .items__item#large_05
                     .h Печать постеров
-                .items__item#a06
+                .items__item#large_06
                     .h Стенды Roll-up
-                .items__item.items__item--wide#a07
+                .items__item.items__item--wide#large_07
                     .h Печать на холсте
-                .items__item#a08
+                .items__item#large_08
                     .h Печать на фотобумаге
-                .items__item#a09
+                .items__item#large_09
                     .h Печать баннеров
 
             .b-portfolio__button-request-brief.button(href="#contacts") запросить бриф
@@ -203,7 +206,7 @@ html
                 .button.b-sign-up__button-request-brief#b-sign-up__submit(type="submit") запросить бриф
                 //input.button.b-sign-up__button-request-brief(type="submit", value="запросить бриф")
 
-    section.b-footer
+    footer.b-footer
         .b-footer__bg.bg
         .main
             .b-footer__nav
