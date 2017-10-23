@@ -24,7 +24,7 @@
     <header class="b-header">
       <!--.b-header__bg.bg-->
       <div class="b-header__video-container bg">
-        <video class="video-container__video" id="video-container__video" loop autoplay preload="auto" style="width: 100%; height: auto;" muted poster="">
+        <video class="video-container__video" id="video-container__video" loop autoplay preload="auto" muted>
           <source src="video/Background-full.mp4" type="video/mp4">
         </video>
         <div class="video-container__waves bg"></div>
@@ -72,7 +72,13 @@
     </section>
   </body>
   <section class="b-about-company">
-    <div class="bg b-about-company__bg"></div>
+    <div class="b-about-company__video-container bg">
+      <video class="video-container__video2" loop autoplay preload muted>
+        <source src="video/Background-animation-2.mp4" type="video/mp4">
+      </video>
+      <div class="video-container__waves2 bg"></div>
+    </div>
+    <!--.bg.b-about-company__bg-->
     <div class="main">
       <div class="b-about-company__item">
         <h1 class="item-h1">О компании</h1>

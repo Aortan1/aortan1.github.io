@@ -26,7 +26,7 @@ html
         header.b-header
             //.b-header__bg.bg
             .b-header__video-container.bg
-                video.video-container__video#video-container__video(loop, autoplay, preload="auto", style="width: 100%; height: auto;", muted, poster="")
+                video.video-container__video#video-container__video(loop, autoplay, preload="auto", muted)
                     source(src="video/Background-full.mp4", type="video/mp4")
                 .video-container__waves.bg
             .main
@@ -71,7 +71,11 @@ html
                 .mist__bg-right
 
     section.b-about-company
-        .bg.b-about-company__bg
+        .b-about-company__video-container.bg
+            video.video-container__video2(loop, autoplay, preload, muted)
+                source(src="video/Background-animation-2.mp4", type="video/mp4")
+            .video-container__waves2.bg
+        //.bg.b-about-company__bg
         .main
             .b-about-company__item
                 h1.item-h1 О компании

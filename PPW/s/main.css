@@ -576,9 +576,22 @@ p {
   top: -50%;
   height: 100vh;
   width: 100vw;
-  padding-top: 49%; }
+  padding-top: 49%;
+  overflow: hidden; }
   @media only screen and (max-device-width: 700px) {
     .b-header__video-container {
+      top: -400px;
+      min-height: 570px;
+      height: auto; } }
+
+.b-about-company__video-container {
+  top: 0%;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 49%;
+  overflow: hidden; }
+  @media only screen and (max-device-width: 700px) {
+    .b-about-company__video-container {
       top: -400px;
       min-height: 570px;
       height: auto; } }
@@ -588,17 +601,36 @@ p {
   padding-top: 49%;
   height: 100vh;
   width: 100vw;
-  background: url("../i/1.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2-1.svg") center 63.156vh/cover no-repeat, url("../i/2-2.svg") center 53.16vh/cover no-repeat, url("../i/2-3.svg") center 60.53vh/cover no-repeat; }
+  background: url("../i/1.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2-1.svg") center 63.156vh/cover no-repeat, url("../i/2-2.svg") center 53.16vh/cover no-repeat, url("../i/2-3.svg") center 60.53vh/cover no-repeat; }
   @media only screen and (max-device-width: 700px) {
     .video-container__waves {
       top: 420px;
       height: 570px;
       width: 100%;
-      background: url("../i/1.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2-1.svg") center 600px/cover no-repeat, url("../i/2-2.svg") center 505px/cover no-repeat, url("../i/2-3.svg") center 575px/cover no-repeat; } }
+      background: url("../i/1.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2-1.svg") center 600px/cover no-repeat, url("../i/2-2.svg") center 505px/cover no-repeat, url("../i/2-3.svg") center 575px/cover no-repeat; } }
+
+.video-container__waves2 {
+  top: 0;
+  padding-top: 49%;
+  height: 100vh;
+  width: 100vw;
+  background: url("../i/2-1.svg") center -150vh/cover no-repeat, url("../i/2-2.svg") center -152vh/cover no-repeat, url("../i/2-3.svg") center -160vh/cover no-repeat, url("../i/3-1.svg") center 113vh/cover no-repeat, url("../i/3-2.svg") center 98vh/cover no-repeat, url("../i/3-3.svg") center 88vh/cover no-repeat; }
+  @media only screen and (max-device-width: 700px) {
+    .video-container__waves2 {
+      top: 420px;
+      height: 570px;
+      width: 100%;
+      background: url("../i/1.svg") center 0px/contain no-repeat, url("../i/2.svg") center 0px/contain no-repeat, url("../i/2-1.svg") center 600px/cover no-repeat, url("../i/2-2.svg") center 505px/cover no-repeat, url("../i/2-3.svg") center 575px/cover no-repeat; } }
 
 .video-container__video {
   position: absolute;
   top: 0;
+  left: 0;
+  width: 100%; }
+
+.video-container__video2 {
+  position: absolute;
+  top: -250px;
   left: 0;
   width: 100%; }
 
