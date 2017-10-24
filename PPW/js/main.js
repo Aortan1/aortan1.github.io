@@ -174,7 +174,7 @@ $(document).ready(function() {
             var destination = $(elementClick).offset().top - 100;
             jQuery("html,body").animate({
                 scrollTop: destination
-            }, 800);
+            }, 1500);
             return false;
         });
 
@@ -185,7 +185,7 @@ $(document).ready(function() {
         var scrolled = window.pageYOffset;
         //var winh = window.innerHeight;
         var video = document.getElementById("video-container__video");
-        var h_video_off = 100;
+        var h_video_off = 900;
 
         if (scrolled>h_video_off && $(video).attr("autoplay"))  {
             video.removeAttribute("autoplay");

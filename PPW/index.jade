@@ -11,11 +11,13 @@ html
         script(src='js/main.js')
         link(rel='stylesheet', type='text/css', href='s/main.css')
     body
+        p
+            a(id="home")
         //.b-header__bg.bg
         section.b-nav
             .main
                 .b-nav__container
-                    .cont_item.cont_item--logo
+                    a.cont_item.cont_item--logo(href="#home")
                     a.cont_item.cont_item--for-anchor(href="#services") Услуги
                     a.cont_item.cont_item--for-anchor(href="#portfolio") Портфолио
                     a.cont_item.cont_item--for-anchor(href="#contacts") Контакты
@@ -72,7 +74,7 @@ html
                     .b-services__buttons
                         .button.button-portfolio(href="#portfolio") портфолио
                         .button.button-to-order(href="#contacts") заказать
-            .bg.mist__bg
+            //.bg.mist__bg
                 .mist__bg-left
                 .mist__bg-right
 

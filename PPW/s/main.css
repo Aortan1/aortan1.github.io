@@ -539,8 +539,10 @@ p {
   .cont_item:nth-child(6) {
     -webkit-animation-delay: calc(1.7s * var(--ani-speed) + var(--ani-init-delay));
     animation-delay: calc(1.7s * var(--ani-speed) + var(--ani-init-delay)); }
-  .cont_item:not(:first-child):hover {
+  .cont_item:hover {
     border-bottom-color: #000; }
+  .cont_item.cont_item--logo:hover, .cont_item.cont_item--phone:hover {
+    border-bottom-color: transparent; }
 
 .cont_item--logo {
   min-width: 203px;
@@ -572,13 +574,13 @@ p {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.b-header__video-container {
-  top: -50%;
-  height: 100vh;
+.b-header__video-container.bg {
+  top: 0;
+  height: auto;
   width: 100vw;
   padding-top: 49%; }
   @media only screen and (max-device-width: 700px) {
-    .b-header__video-container {
+    .b-header__video-container.bg {
       top: -400px;
       min-height: 570px;
       height: auto; } }
@@ -589,19 +591,19 @@ p {
   top: 0; }
 
 .object-1 {
-  top: 22%; }
+  top: 0.2%; }
 
 .object-2 {
-  top: 22.5%; }
+  top: 0.5%; }
 
 .object-3 {
-  top: 53.5%; }
+  top: 68.5%; }
 
 .object-4 {
-  top: 52%; }
+  top: 62.5%; }
 
 .object-5 {
-  top: 51%; }
+  top: 57%; }
 
 .video-container__waves {
   top: 44.21vh;
@@ -618,7 +620,7 @@ p {
 
 .video-container__video {
   position: absolute;
-  top: 0;
+  top: -50%;
   left: 0;
   width: 100%; }
 
@@ -1047,7 +1049,6 @@ p {
   background-size: contain;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  cursor: pointer;
   width: 289px;
   height: 240px;
   padding: 10px;
@@ -1078,14 +1079,6 @@ p {
     -ms-transform: scale(1.05, 1.05);
     transform: scale(1.05, 1.05);
     border-bottom-width: 0; }
-  .items__item:active {
-    position: absolute;
-    z-index: 2;
-    -webkit-transform: scale(1.5, 1.5);
-    -ms-transform: scale(1.5, 1.5);
-    transform: scale(1.5, 1.5); }
-    .items__item:active .h {
-      opacity: 0; }
   .items__item:hover .h {
     color: #fff;
     -webkit-transition: 0.5s;
@@ -1093,11 +1086,6 @@ p {
     transition: 0.5s; }
   .items__item:hover:after {
     background: rgba(0, 0, 0, 0.5);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s; }
-  .items__item:active:after {
-    background: transparent;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
