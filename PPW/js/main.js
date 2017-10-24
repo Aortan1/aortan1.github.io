@@ -178,4 +178,34 @@ $(document).ready(function() {
             return false;
         });
 
+
+
+    window.onscroll = function() {
+
+        var scrolled = window.pageYOffset;
+        //var winh = window.innerHeight;
+        var video = document.getElementById("video-container__video");
+        var h_video_off = 100;
+
+        if (scrolled>h_video_off && $(video).attr("autoplay"))  {
+            video.removeAttribute("autoplay");
+            video.pause();
+
+        }
+        if (scrolled<h_video_off && !$(video).attr("autoplay"))  {
+            video.setAttribute("autoplay","autoplay");
+            video.play();
+        }
+
+
+    };
+
+
+
+
+
+
+
+
 });
+
