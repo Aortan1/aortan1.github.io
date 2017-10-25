@@ -161,7 +161,28 @@ $(document).ready(function() {
 
 
 
-        (function onResize() {
+        // (function onResize() {
+        //     currentWidth=$(window).width();
+        //     col = defineCol(currentWidth);
+        //     conWidth = col * el;
+        //
+        //     if (conWidth !== currentWidth) { // перестройка блоков при ресайзе
+        //         currentWidth = conWidth;
+        //         for(var i = 0; i<ids.length; i++) {
+        //             $(ids[i]).width(conWidth)
+        //                 .BlocksIt({
+        //                     numOfCol: col,
+        //                     offsetX: 6.25,
+        //                     offsetY: 12.5,
+        //                     blockElement: '.items__item'
+        //                 });
+        //         }
+        //     }
+        // })();
+        //
+        // $(window).resize(function(){onResize()});
+
+        $(window).resize(function() {
             currentWidth=$(window).width();
             col = defineCol(currentWidth);
             conWidth = col * el;
@@ -178,9 +199,7 @@ $(document).ready(function() {
                         });
                 }
             }
-        })();
-
-        $(window).resize(function(){onResize()});
+        });
 
 
     })();
