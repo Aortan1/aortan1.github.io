@@ -105,7 +105,7 @@ $(document).ready(function() {
 
         document.querySelector(".b-header__bg").remove();
 
-    }, 5000);
+    }, 100);
 
 
     var id="#"+document.querySelector('.b-portfolio__items--active').id;
