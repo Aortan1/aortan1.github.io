@@ -487,17 +487,18 @@ p{
 
 .b-header__bg{
 	position: absolute;
+	top: -50%;
 	width: 100%;
 	padding-top: 49%;
 	min-height: 570px; //1080px;
 	height: auto;
-	background: url('../i/bg1t.png') center 60px / contain no-repeat;
+	background: url('../i/poster3.png') center 0px / cover no-repeat;
 	//background: url('../i/bg1t-960.png') center 60px / contain no-repeat;
 	opacity: 1;
-	animation-name: neon_ani;
-	animation-delay: $neon1-del;
-	animation-duration: $neon1-dur;
-	animation-iteration-count: infinite;
+	//animation-name: neon_ani;
+	//animation-delay: $neon1-del;
+	//animation-duration: $neon1-dur;
+	//animation-iteration-count: infinite;
 }
 
 .b-header__video-container.bg{
@@ -563,6 +564,8 @@ p{
 	top: -50%;
 	left: 0;
 	width: 100%;
+	//animation-name: opacity0to1_ani;
+	//animation-duration: 1s;
 	@media only screen and (max-device-width: 700px) {
 
 	}
@@ -583,7 +586,7 @@ p{
 	@media only screen and (max-device-width: 700px){
 		height: 815px;
 		.b-header__bg{
-			background: url('../i/bg1-mo720.png') center -80px / contain no-repeat;
+			//background: url('../i/bg1-mo720.png') center -80px / contain no-repeat;
 		}
 	}
 }

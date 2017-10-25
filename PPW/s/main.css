@@ -559,20 +559,13 @@ p {
 
 .b-header__bg {
   position: absolute;
+  top: -50%;
   width: 100%;
   padding-top: 49%;
   min-height: 570px;
   height: auto;
-  background: url("../i/bg1t.png") center 60px/contain no-repeat;
-  opacity: 1;
-  -webkit-animation-name: neon_ani;
-  animation-name: neon_ani;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-  -webkit-animation-duration: 30s;
-  animation-duration: 30s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
+  background: url("../i/poster3.png") center 0px/cover no-repeat;
+  opacity: 1; }
 
 .b-header__video-container.bg {
   top: 0;
@@ -643,9 +636,7 @@ p {
     padding: 0; }
   @media only screen and (max-device-width: 700px) {
     .b-header {
-      height: 815px; }
-      .b-header .b-header__bg {
-        background: url("../i/bg1-mo720.png") center -80px/contain no-repeat; } }
+      height: 815px; } }
 
 .b-header__order {
   position: relative;

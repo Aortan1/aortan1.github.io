@@ -88,6 +88,20 @@ window.onload = function() { // Самбит для кнопки формы от
 
 $(document).ready(function() {
 
+    var video_cont = document.getElementById("video-container");
+    setTimeout(function(){
+        var video = document.createElement('video');
+        video_cont.insertBefore(video, video_cont.firstChild);
+        video.className = "video-container__video";
+        video.setAttribute("loop", true);
+        video.setAttribute("autoplay", true);
+        video.setAttribute("muted", true);
+        video.setAttribute("src", "video/Background-full.mp4");
+
+
+    }, 5000);
+
+
     var id="#"+document.querySelector('.b-portfolio__items--active').id;
     var Portfolio_items = document.getElementsByClassName('b-portfolio__items');
     var Portfolio_nav_buttons = document.getElementsByClassName('nav-button');
@@ -103,15 +117,12 @@ $(document).ready(function() {
             function () {
                 id = PortfolioActivation(i,Portfolio_nav_buttons,Portfolio_items)
                 // id - это id всплывающего по клику контейнера с рекламными блоками .b-portfolio__items
-
             }
-
         );
     });
 
 
     (function doBlocksit() {
-
 
         function defineCol(winWidth){
             if (winWidth < 3 * el) {
@@ -147,7 +158,10 @@ $(document).ready(function() {
             }
         }
 
-        $(window).resize(function () {
+
+
+
+        (function onResize() {
             currentWidth=$(window).width();
             col = defineCol(currentWidth);
             conWidth = col * el;
@@ -164,7 +178,10 @@ $(document).ready(function() {
                         });
                 }
             }
-        });
+        })();
+
+        $(window).resize(function(){onResize()});
+
 
     })();
 
