@@ -613,9 +613,12 @@ p {
 
 .video-container__video {
   position: absolute;
-  top: -50%;
+  top: 0%;
   left: 0;
   width: 100%; }
+  @media only screen and (max-device-width: 700px) {
+    .video-container__video {
+      top: 0%; } }
 
 .b-header {
   height: 85.79vh;
@@ -822,18 +825,10 @@ p {
   padding-top: 72.29%;
   height: auto;
   min-height: 1380px;
-  background: url("../i/bg2t.png") 0 0/cover no-repeat;
-  -webkit-animation-name: neon_ani;
-  animation-name: neon_ani;
-  -webkit-animation-delay: 7s;
-  animation-delay: 7s;
-  -webkit-animation-duration: 120s;
-  animation-duration: 120s;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
+  background: url("../i/waves_about_us.png") 0 0/cover no-repeat; }
   @media only screen and (max-device-width: 700px) {
     .b-about-company__bg {
-      background: url("../i/bg2-mo700.png") 0 0 no-repeat/contain; } }
+      background: url("../i/waves_about_us.png") 0 0 no-repeat/contain; } }
 
 .b-about-company__item {
   padding: 25px 0 50px; }

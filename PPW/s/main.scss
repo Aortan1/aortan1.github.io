@@ -561,13 +561,14 @@ p{
 
 .video-container__video{
 	position: absolute;
-	top: -50%;
+	//top: -50%;
+	top: 0%;
 	left: 0;
 	width: 100%;
 	//animation-name: opacity0to1_ani;
 	//animation-duration: 1s;
 	@media only screen and (max-device-width: 700px) {
-
+		top: 0%;
 	}
 }
 
@@ -787,14 +788,14 @@ p{
 	height: auto;
 	min-height: 1380px;
 	//height: 1380px;
-	background: url('../i/bg2t.png') 0 0 / cover no-repeat; // 145px 0;
-	animation-name: neon_ani;
-	animation-delay: $neon2-del;
-	animation-duration: $neon2-dur;
-	animation-iteration-count: infinite;
+	background: url('../i/waves_about_us.png') 0 0 / cover no-repeat; // 145px 0;
+	//animation-name: neon_ani;
+	//animation-delay: $neon2-del;
+	//animation-duration: $neon2-dur;
+	//animation-iteration-count: infinite;
 
 	@media only screen and (max-device-width: 700px){
-		background: url('../i/bg2-mo700.png') 0 0 no-repeat / contain;
+		background: url('../i/waves_about_us.png') 0 0 no-repeat / contain;
 	}
 }
 

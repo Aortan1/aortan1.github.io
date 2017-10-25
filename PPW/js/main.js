@@ -101,7 +101,9 @@ $(document).ready(function() {
         video_cont.insertBefore(video, video_cont.firstChild);
         video.appendChild(source);
         source.setAttribute("type", "video/mp4");
-        source.setAttribute("src", "video/Background-full.mp4");
+        source.setAttribute("src", "video/episode02.mp4");
+
+        document.querySelector(".b-header__bg").remove();
 
     }, 5000);
 
@@ -234,14 +236,7 @@ $(document).ready(function() {
             video.play();
         }
 
-
     };
-
-
-
-
-
-
 
 
 });
