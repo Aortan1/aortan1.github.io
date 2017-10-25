@@ -106,7 +106,7 @@ $(document).ready(function() {
         document.querySelector(".b-header__bg").remove();
 
     }, 100);
-    // 100ms+++
+
 
     var id="#"+document.querySelector('.b-portfolio__items--active').id;
     var Portfolio_items = document.getElementsByClassName('b-portfolio__items');

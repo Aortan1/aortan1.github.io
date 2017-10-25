@@ -18,7 +18,8 @@ $cont4-del: calc(1.7s * var(--ani-speed) + var(--ani-init-delay));
 $bg-del: var(--ani-init-delay);
 $bg-dur: calc(2s * var(--ani-speed));
 
-$header-del: calc(2s * var(--ani-speed) + var(--ani-init-delay));
+//$header-del: calc(2s * var(--ani-speed) + var(--ani-init-delay));
+$header-del: 0.5s;
 $header-dur: calc(1.6s * var(--ani-speed));
 $hlogo-del: calc(2s * var(--ani-speed) + var(--ani-init-delay));
 $hlogo-dur: calc(2s * var(--ani-speed));
@@ -130,8 +131,8 @@ ul{
 	to {top: 0; opacity: 1;}
 }
 @keyframes order__logo_ani{
-	from {filter: blur(50px);}
-	to {filter: blur(0);}
+	from {filter: blur(50px); opacity: 0;}
+	to {filter: blur(0); opacity: 1;}
 }
 
 @keyframes neon_ani{
@@ -607,7 +608,7 @@ p{
 		animation-delay: $hlogo-del;
 		animation-duration: $hlogo-dur;
 		animation-fill-mode: forwards;
-		//opacity: 0;
+		opacity: 0;
 	}
 
 	//.order_h-container{
@@ -1105,7 +1106,6 @@ p{
 	@media only screen and (max-device-width: 700px){
 		margin: 60px auto 20px;
 	}
-
 }
 
 .plan__bg{
@@ -1346,7 +1346,8 @@ p{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: url('../i/footer2.png');
+	//background: linear-gradient(96deg, #555555, #282828);
+	background: url('../i/footer-bg25.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
