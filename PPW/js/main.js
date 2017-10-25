@@ -200,7 +200,7 @@ $(document).ready(function() {
                 }
             }
         });
-        $(window).onloadend(function() {
+        setTimeout(function(){
             currentWidth=$(window).width();
             col = defineCol(currentWidth);
             conWidth = col * el;
@@ -217,7 +217,7 @@ $(document).ready(function() {
                         });
                 }
             }
-        });
+        }, 1000);
 
 
     })();
