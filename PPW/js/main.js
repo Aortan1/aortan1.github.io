@@ -91,13 +91,17 @@ $(document).ready(function() {
     var video_cont = document.getElementById("video-container");
     setTimeout(function(){
         var video = document.createElement('video');
+        var source = document.createElement('source');
         video_cont.insertBefore(video, video_cont.firstChild);
         video.className = "video-container__video";
         video.setAttribute("loop", true);
         video.setAttribute("autoplay", true);
         video.setAttribute("muted", true);
-        video.setAttribute("src", "video/Background-full.mp4");
-
+        //video.setAttribute("src", "video/Background-full.mp4");
+        video_cont.insertBefore(video, video_cont.firstChild);
+        video.appendChild(source);
+        source.setAttribute("type", "video/mp4");
+        source.setAttribute("src", "video/Background-full.mp4");
 
     }, 5000);
 
