@@ -145,7 +145,7 @@ $(document).ready(function() {
         var col = defineCol(currentWidth); //ОПТИМАЛЬНОЕ кол-во блоков в строке, соотв.текущ.ширине
         var conWidth = col * el; //ОПТИМАЛЬНАЯ ширина
 
-        if (conWidth !== currentWidth) { // перестройка блоков при ресайзе
+        //if (conWidth !== currentWidth) { // перестройка блоков при ресайзе
             currentWidth = conWidth;
             for(var i = 0; i<ids.length; i++) {
                 $(ids[i]).width(conWidth)
@@ -156,7 +156,7 @@ $(document).ready(function() {
                         blockElement: '.items__item'
                     });
             }
-        }
+        //}
 
 
 
