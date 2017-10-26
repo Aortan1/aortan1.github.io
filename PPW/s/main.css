@@ -1318,7 +1318,7 @@ p {
 
 .b-footer__nav {
   position: relative;
-  top: 100px;
+  top: 65px;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1350,7 +1350,7 @@ p {
     display: block; }
 
 .nav__logo {
-  height: 160px;
+  height: 195px;
   padding: 0 0 10px; }
   .nav__logo .logo__img {
     width: 380px;
