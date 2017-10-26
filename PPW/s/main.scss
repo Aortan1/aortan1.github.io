@@ -19,9 +19,10 @@ $bg-del: var(--ani-init-delay);
 $bg-dur: calc(2s * var(--ani-speed));
 
 //$header-del: calc(2s * var(--ani-speed) + var(--ani-init-delay));
-$header-del: 0.5s;
+$header-del: 0.0s;
 $header-dur: calc(1.6s * var(--ani-speed));
-$hlogo-del: calc(2s * var(--ani-speed) + var(--ani-init-delay));
+//$hlogo-del: calc(2s * var(--ani-speed) + var(--ani-init-delay));
+$hlogo-del: 0.5s;
 $hlogo-dur: calc(2s * var(--ani-speed));
 $htitle-del: calc(1.5s * var(--ani-speed) + var(--ani-init-delay));
 $htitle-dur: calc(2s * var(--ani-speed));
@@ -34,8 +35,8 @@ $neon2-del: 7s;
 @import url('https://fonts.googleapis.com/css?family=Lato:300i&subset=latin-ext');
 
 :root{
-	--ani-speed: 1.0;//0.7; // коеффициент скорости комплекса анимаций
-	--ani-init-delay: 1.0s; // исходная задержка комплекса анимаций(для ожидания загрузки изображений фона)
+	--ani-speed: 0.7;//0.7; // обратный коеффициент скорости комплекса анимаций
+	--ani-init-delay: 0.0s; // исходная задержка комплекса анимаций(для ожидания загрузки изображений фона)
 
 }
 
@@ -517,29 +518,14 @@ p{
 .video-container__object{
 	width: 100%;
 	height: auto;
-	//outline: 5px solid black;
-	//background: black;
 	top: 0;
 }
 
-.object-1{
-	top: 0.2%;
-}
-.object-2{
-	top: 0.5%;
-}
-.object-3{
-	top: 68.5%;
-	//outline: 1px solid blue;
-}
-.object-4{
-	//outline: 1px solid green;
-	top: 62.5%;
-}
-.object-5{
-	//outline: 1px solid red;
-	top: 57%;
-}
+//.object-1{top: 0.2%;}
+//.object-2{top: 0.5%;}
+//.object-3{top: 68.5%;}
+//.object-4{top: 62.5%;}
+//.object-5{top: 57%;}
 
 .video-container__waves{
 	top: 44.21vh;
@@ -591,6 +577,9 @@ p{
 	}
 }
 
+
+
+
 .b-header__order{
 	position: relative;
 	transform: translateY(-50%);
@@ -635,6 +624,14 @@ p{
 	.order__button-order-brief{
 		margin: 40px auto 0;
 		position: relative;
+		opacity: 0;
+		//border-color: red;
+		outline: 1px solid transparent; // !! избавляет от глюка с нижним бордером кнопки
+		animation-name: opacity0to1_ani;
+		animation-delay: 1s; //$hlogo-del;
+		animation-duration: 3s;//$hlogo-dur;
+		animation-fill-mode: forwards;
+
 		//border-bottom-width: 1.4px;
 	}
 }

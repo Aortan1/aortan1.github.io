@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:300i&subset=latin-ext");
 :root {
-  --ani-speed: 1.0;
-  --ani-init-delay: 1.0s; }
+  --ani-speed: 0.7;
+  --ani-init-delay: 0.0s; }
 
 #polygraphy_01 {
   background: url("../mockups/polygraphy/01_booklet.png") no-repeat; }
@@ -571,21 +571,6 @@ p {
   height: auto;
   top: 0; }
 
-.object-1 {
-  top: 0.2%; }
-
-.object-2 {
-  top: 0.5%; }
-
-.object-3 {
-  top: 68.5%; }
-
-.object-4 {
-  top: 62.5%; }
-
-.object-5 {
-  top: 57%; }
-
 .video-container__waves {
   top: 44.21vh;
   padding-top: 49%;
@@ -615,8 +600,8 @@ p {
   opacity: 0;
   -webkit-animation-name: opacity0to1_ani;
   animation-name: opacity0to1_ani;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
   -webkit-animation-duration: calc(1.6s * var(--ani-speed));
   animation-duration: calc(1.6s * var(--ani-speed));
   -webkit-animation-fill-mode: forwards;
@@ -644,8 +629,8 @@ p {
     background: url("../i/Logo big.svg") no-repeat;
     -webkit-animation-name: order__logo_ani;
     animation-name: order__logo_ani;
-    -webkit-animation-delay: calc(2s * var(--ani-speed) + var(--ani-init-delay));
-    animation-delay: calc(2s * var(--ani-speed) + var(--ani-init-delay));
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
     -webkit-animation-duration: calc(2s * var(--ani-speed));
     animation-duration: calc(2s * var(--ani-speed));
     -webkit-animation-fill-mode: forwards;
@@ -673,7 +658,17 @@ p {
         font-size: 40px; } }
   .b-header__order .order__button-order-brief {
     margin: 40px auto 0;
-    position: relative; }
+    position: relative;
+    opacity: 0;
+    outline: 1px solid transparent;
+    -webkit-animation-name: opacity0to1_ani;
+    animation-name: opacity0to1_ani;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
 
 .b-services {
   position: relative; }

@@ -97,6 +97,7 @@ $(document).ready(function() {
         video.setAttribute("loop", true);
         video.setAttribute("autoplay", true);
         video.setAttribute("muted", true);
+        video.setAttribute("poster", "i/poster_BG.png");
         //video.setAttribute("src", "video/Background-full.mp4");
         video_cont.insertBefore(video, video_cont.firstChild);
         video.appendChild(source);
@@ -105,7 +106,7 @@ $(document).ready(function() {
 
         document.querySelector(".b-header__bg").remove();
 
-    }, 100);
+    }, 0);
 
 
     var id="#"+document.querySelector('.b-portfolio__items--active').id;
@@ -213,7 +214,7 @@ $(document).ready(function() {
             var destination = $(elementClick).offset().top - 100;
             jQuery("html,body").animate({
                 scrollTop: destination
-            }, 1500);
+            }, 900);
             return false;
         });
 
