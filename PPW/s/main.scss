@@ -244,7 +244,7 @@ p{
   position: relative;
   transition: 0.5s;
   user-select: none;
-  &.b-header__button{opacity: 0;}
+  #b-header__button{opacity: 0;}
   &:after{
     content: "";
     display: inline-block;

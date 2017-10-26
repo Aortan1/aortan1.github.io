@@ -346,7 +346,7 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  .button.b-header__button {
+  .button #b-header__button {
     opacity: 0; }
   .button:after {
     content: "";
