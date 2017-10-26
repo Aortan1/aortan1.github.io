@@ -514,8 +514,7 @@ p {
   padding: 14px 15px 5px;
   font-size: 1em; }
   .cont_item--logo {
-    margin-top: 0;
-    opacity: 0; }
+    margin-top: 0; }
   .cont_item:nth-child(2) {
     -webkit-animation-delay: calc(0.5s * var(--ani-speed) + var(--ani-init-delay));
     animation-delay: calc(0.5s * var(--ani-speed) + var(--ani-init-delay)); }
