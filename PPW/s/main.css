@@ -346,7 +346,7 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  .button #b-header__button {
+  .buttonb-header__button {
     opacity: 0; }
   .button:after {
     content: "";
@@ -525,18 +525,6 @@ p {
   font-size: 1em; }
   .cont_item--logo {
     margin-top: 0; }
-  .cont_item:nth-child(2) {
-    -webkit-animation-delay: calc(0.5s * var(--ani-speed) + var(--ani-init-delay));
-    animation-delay: calc(0.5s * var(--ani-speed) + var(--ani-init-delay)); }
-  .cont_item:nth-child(3) {
-    -webkit-animation-delay: calc(0.9s * var(--ani-speed) + var(--ani-init-delay));
-    animation-delay: calc(0.9s * var(--ani-speed) + var(--ani-init-delay)); }
-  .cont_item:nth-child(4) {
-    -webkit-animation-delay: calc(1.3s * var(--ani-speed) + var(--ani-init-delay));
-    animation-delay: calc(1.3s * var(--ani-speed) + var(--ani-init-delay)); }
-  .cont_item:nth-child(6) {
-    -webkit-animation-delay: calc(1.7s * var(--ani-speed) + var(--ani-init-delay));
-    animation-delay: calc(1.7s * var(--ani-speed) + var(--ani-init-delay)); }
   .cont_item:hover {
     border-bottom-color: #000; }
   .cont_item.cont_item--logo:hover, .cont_item.cont_item--phone:hover {
@@ -562,7 +550,6 @@ p {
   padding-top: 49%;
   min-height: 570px;
   height: auto;
-  background: url("../i/poster3.png") center 0px/cover no-repeat;
   opacity: 1; }
 
 .b-header__video-container.bg {
@@ -572,7 +559,7 @@ p {
   padding-top: 49%; }
   @media only screen and (max-device-width: 700px) {
     .b-header__video-container.bg {
-      top: 0;
+      top: 50px;
       min-height: 570px;
       height: auto; } }
 
@@ -607,13 +594,12 @@ p {
   height: 85.79vh;
   outline: 0px solid red;
   position: relative;
-  opacity: 0;
   -webkit-animation-name: opacity0to1_ani;
   animation-name: opacity0to1_ani;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
-  -webkit-animation-duration: calc(1.6s * var(--ani-speed));
-  animation-duration: calc(1.6s * var(--ani-speed));
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
   .b-header .main {
@@ -622,7 +608,7 @@ p {
     padding: 0; }
   @media only screen and (max-device-width: 700px) {
     .b-header {
-      height: 815px; } }
+      height: 665px; } }
 
 .b-header__order {
   position: relative;
@@ -632,7 +618,16 @@ p {
   top: 55%;
   width: 590px;
   margin: 0 auto;
-  outline: 1px solid transparent; }
+  outline: 1px solid transparent;
+  -webkit-animation-name: order__blur_ani;
+  animation-name: order__blur_ani;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-duration: calc(2s * var(--ani-speed));
+  animation-duration: calc(2s * var(--ani-speed));
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0; }
   .b-header__order .order__logo {
     height: 110px;
     width: 100%;
@@ -644,8 +639,7 @@ p {
     -webkit-animation-duration: calc(2s * var(--ani-speed));
     animation-duration: calc(2s * var(--ani-speed));
     -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    opacity: 0; }
+    animation-fill-mode: forwards; }
   .b-header__order .order__h {
     text-align: center;
     color: #4a4a4a;
@@ -653,12 +647,10 @@ p {
     letter-spacing: 4px;
     margin-top: 15px;
     position: relative;
-    top: -100px;
-    opacity: 0;
-    -webkit-animation-name: order__h_ani;
-    animation-name: order__h_ani;
-    -webkit-animation-delay: calc(1.5s * var(--ani-speed) + var(--ani-init-delay));
-    animation-delay: calc(1.5s * var(--ani-speed) + var(--ani-init-delay));
+    -webkit-animation-name: order__blur_ani;
+    animation-name: order__blur_ani;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
     -webkit-animation-duration: calc(2s * var(--ani-speed));
     animation-duration: calc(2s * var(--ani-speed));
     -webkit-animation-fill-mode: forwards;
@@ -669,14 +661,14 @@ p {
   .b-header__order #b-header__button {
     margin: 40px auto 0;
     position: relative;
-    opacity: 0;
     outline: 1px solid transparent;
+    opacity: 0;
     -webkit-animation-name: opacity0to1_ani;
     animation-name: opacity0to1_ani;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards; }
 
@@ -738,9 +730,15 @@ p {
     .b-services__items .service:nth-child(2n+1) {
       text-align: left;
       background-position: 0 0; }
+      @media only screen and (max-device-width: 700px) {
+        .b-services__items .service:nth-child(2n+1) {
+          padding: 0px 10px 0 215px; } }
     .b-services__items .service:nth-child(2n) {
       text-align: right;
       background-position: 100% 0; }
+      @media only screen and (max-device-width: 700px) {
+        .b-services__items .service:nth-child(2n) {
+          padding: 0px 190px 0 10px; } }
     .b-services__items .service .service__h2 {
       padding: 15px; }
     .b-services__items .service .service__p {
@@ -752,6 +750,9 @@ p {
     width: 247px;
     height: 258px;
     background: url("../i/ser-1-ico.svg") no-repeat; }
+    @media only screen and (max-device-width: 700px) {
+      .b-services__items #service-polygraphy:before {
+        left: -45px; } }
   .b-services__items #service-souvenirs:before {
     content: "";
     position: absolute;
@@ -760,6 +761,9 @@ p {
     width: 247px;
     height: 249px;
     background: url("../i/ser-2-ico.svg") no-repeat; }
+    @media only screen and (max-device-width: 700px) {
+      .b-services__items #service-souvenirs:before {
+        right: -30px; } }
   .b-services__items #service-large-format-printing:before {
     content: "";
     position: absolute;
@@ -768,6 +772,9 @@ p {
     width: 247px;
     height: 249px;
     background: url("../i/ser-3-ico.svg") no-repeat; }
+    @media only screen and (max-device-width: 700px) {
+      .b-services__items #service-large-format-printing:before {
+        left: -35px; } }
   .b-services__items .b-services__buttons {
     margin: 0 auto;
     text-align: center; }
