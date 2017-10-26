@@ -422,24 +422,22 @@ p{
 
 
 .cont_item {
-	//outline: 1px solid orange;
-	//margin-top: -50px;
-	//margin-top: 60px;
 	height: 100%;
 	padding: 14px 15px 5px;
 	font-size: 1em;
-	animation-name: cont_item_ani;
-	animation-duration: 1.3s;
-	animation-fill-mode: forwards;
-	opacity: 0;
+	//animation-name: cont_item_ani;
+	//animation-duration: 1.3s;
+	//animation-fill-mode: forwards;
+	//opacity: 0;
 
 	&--logo{
 		margin-top: 0;
 		opacity: 0;
-		animation-name: opacity0to1_ani;
-		animation-delay: $logo-del;
-		animation-duration: $logo-dur;
-		animation-iteration-count: 1;
+		//animation-name: opacity0to1_ani;
+		//animation-delay: $logo-del;
+		//animation-duration: $logo-dur;
+		//animation-iteration-count: 1;
+
 		//animation-name: opacity0to1_ani, blink_ani;
 		//animation-delay: $logo-del, $logo-blink-del;
 		//animation-duration: $logo-dur, $logo-blink-dur;

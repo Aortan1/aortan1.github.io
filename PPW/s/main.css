@@ -512,25 +512,10 @@ p {
 .cont_item {
   height: 100%;
   padding: 14px 15px 5px;
-  font-size: 1em;
-  -webkit-animation-name: cont_item_ani;
-  animation-name: cont_item_ani;
-  -webkit-animation-duration: 1.3s;
-  animation-duration: 1.3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  opacity: 0; }
+  font-size: 1em; }
   .cont_item--logo {
     margin-top: 0;
-    opacity: 0;
-    -webkit-animation-name: opacity0to1_ani;
-    animation-name: opacity0to1_ani;
-    -webkit-animation-delay: var(--ani-init-delay);
-    animation-delay: var(--ani-init-delay);
-    -webkit-animation-duration: calc(2s * var(--ani-speed));
-    animation-duration: calc(2s * var(--ani-speed));
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1; }
+    opacity: 0; }
   .cont_item:nth-child(2) {
     -webkit-animation-delay: calc(0.5s * var(--ani-speed) + var(--ani-init-delay));
     animation-delay: calc(0.5s * var(--ani-speed) + var(--ani-init-delay)); }
