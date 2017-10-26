@@ -128,10 +128,10 @@ ul{
 }
 
 @keyframes order__h_ani{
-	from {top: -100px; opacity: 0;}
-	to {top: 0; opacity: 1;}
+	from {top: -100px; filter: blur(50px); opacity: 0;}
+	to {top: 0; filter: blur(0); opacity: 1;}
 }
-@keyframes order__logo_ani{
+@keyframes order__blur_ani{
 	from {filter: blur(50px); opacity: 0;}
 	to {filter: blur(0); opacity: 1;}
 }
@@ -244,6 +244,7 @@ p{
   position: relative;
   transition: 0.5s;
   user-select: none;
+  &.b-header__button{opacity: 0;}
   &:after{
     content: "";
     display: inline-block;
@@ -592,7 +593,7 @@ p{
 		height: 110px;
 		width: 100%;
 		background: url('../i/Logo big.svg') no-repeat;
-		animation-name: order__logo_ani;
+		animation-name: order__blur_ani;
 		animation-delay: $hlogo-del;
 		animation-duration: $hlogo-dur;
 		animation-fill-mode: forwards;
@@ -622,7 +623,7 @@ p{
 			font-size: 40px;
 		}
 	}
-	.order__button-order-brief{
+	#b-header__button{
 		margin: 40px auto 0;
 		position: relative;
 		opacity: 0;
