@@ -644,7 +644,7 @@ p{
 		outline: 1px solid transparent; // !! избавляет от глюка с нижним бордером кнопки
 		opacity: 0;
 		animation-name: opacity0to1_ani;
-		animation-delay: 1s; //$hlogo-del;
+		animation-delay: 0s; //$hlogo-del;
 		animation-duration: 2s;//$hlogo-dur;
 		animation-fill-mode: forwards;
 	}
@@ -1220,8 +1220,9 @@ p{
     //
 	//}
 	.main{
-		width: 55%;
-        max-width: 1045px;
+		width: 57%;
+        max-width: 1065px;//1045px;
+		//outline: 1px solid green;
 
 		@media (max-width: 1460px) {
 			width: 80%;
@@ -1238,13 +1239,14 @@ p{
 }
 
 .b-sign-up__h {
-	padding: 40px 0 20px;
+	padding: 40px 0 0px;
+	//outline: 1px solid red;
 }
 
 .b-sign-up__comment-p {
 	//outline: 1px solid red;
 	text-align: center;
-	padding: 10px 115px;
+	padding: 0px 115px 10px;
 
 }
 
@@ -1267,7 +1269,7 @@ p{
 	border: 1px solid $font-color-gray;
 	box-sizing: border-box;
 	font-family: 'Lato Medium', sans-serif;
-	width: 44%;
+	width: 45%;//44%;
 	height: 80px;
 	font-size: 1em;
 	padding-left: 45px;

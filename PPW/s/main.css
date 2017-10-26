@@ -665,8 +665,8 @@ p {
     opacity: 0;
     -webkit-animation-name: opacity0to1_ani;
     animation-name: opacity0to1_ani;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
     -webkit-animation-fill-mode: forwards;
@@ -1188,8 +1188,8 @@ p {
   -webkit-box-shadow: 0 -60px 60px rgba(0, 0, 0, 0.05);
   box-shadow: 0 -60px 60px rgba(0, 0, 0, 0.05); }
   .b-sign-up .main {
-    width: 55%;
-    max-width: 1045px; }
+    width: 57%;
+    max-width: 1065px; }
     @media (max-width: 1460px) {
       .b-sign-up .main {
         width: 80%; } }
@@ -1201,11 +1201,11 @@ p {
         padding-bottom: 50px; } }
 
 .b-sign-up__h {
-  padding: 40px 0 20px; }
+  padding: 40px 0 0px; }
 
 .b-sign-up__comment-p {
   text-align: center;
-  padding: 10px 115px; }
+  padding: 0px 115px 10px; }
 
 .b-sign-up__form {
   margin: 35px auto 0px;
@@ -1240,7 +1240,7 @@ p {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'Lato Medium', sans-serif;
-  width: 44%;
+  width: 45%;
   height: 80px;
   font-size: 1em;
   padding-left: 45px;
