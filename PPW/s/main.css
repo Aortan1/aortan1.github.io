@@ -1136,7 +1136,7 @@ p {
       opacity: 0; } }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
     .plan__bg {
-      background: url("../i/how1.svg") no-repeat 196px 30px, url("../i/how2.svg") no-repeat 995px 241px, url("../i/how3.svg") no-repeat 196px 474px, url("../i/how4.svg") no-repeat 1000px 710px, url("../i/path.svg") no-repeat 0 170px/contain; } }
+      background: url("../i/how1.svg") no-repeat 196px 40px, url("../i/how2.svg") no-repeat 995px 251px, url("../i/how3.svg") no-repeat 196px 484px, url("../i/how4.svg") no-repeat 1000px 720px, url("../i/path.svg") no-repeat 0 180px/contain; } }
 
 .b-working__plan {
   padding-top: 0px;
@@ -1176,6 +1176,9 @@ p {
       height: 225px; }
     .b-working__plan .plan-item:nth-child(4) {
       height: 225px; }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+        .b-working__plan .plan-item:nth-child(4) {
+          height: 245px; } }
     @media only screen and (max-device-width: 768px) {
       .b-working__plan .plan-item:not(:last-child) {
         border-bottom: 9px solid #fe9b7c; } }
