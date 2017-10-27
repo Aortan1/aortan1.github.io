@@ -609,9 +609,12 @@ p {
   @media only screen and (max-device-width: 768px) {
     .b-header {
       height: 665px; } }
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .b-header {
-      height: 55vh; } }
+      height: 610px; } }
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+    .b-header {
+      height: 750px; } }
 
 .b-header__order {
   position: relative;
