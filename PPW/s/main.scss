@@ -159,7 +159,7 @@ body{
 	overflow-x: hidden;
     min-width: 700px;
 	font-size: 20px;
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		font-size: 35px;
 	}
 	//background: url('../i/bg1t.png') center 40px;
@@ -188,7 +188,7 @@ h1 {
   line-height: 84px;
   text-align: center;
   text-transform: uppercase;
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		font-size: 45px;
 	}
 }
@@ -200,7 +200,7 @@ h2, .service__h2 {
   font-weight: 200;
   letter-spacing: 4.1px;
   text-transform: none;
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		font-size: 38px;
 	}
   //line-height: 25px;
@@ -271,7 +271,7 @@ p{
 
   }
 
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		width: 100%;
 		max-width: 660px;
 		height: 2.5em;
@@ -314,7 +314,7 @@ p{
   transform: translateX(-50%);
   background-size: contain;
   background-repeat: no-repeat;
-  @media only screen and (max-device-width: 700px){
+  @media only screen and (max-device-width: 768px){
 	width: 100%;
 	min-width: 1325px;
   }
@@ -338,7 +338,7 @@ p{
 	left: -2px;
 	height: 90%;
     background: linear-gradient(to right, rgba(255,255,255,1),rgba(255,255,255,0));
-	@media only screen and (max-device-width: 700px){width: 170px;}
+	@media only screen and (max-device-width: 768px){width: 170px;}
   }
   &-right{
     float: right;
@@ -347,7 +347,7 @@ p{
     width: 100px;
 	height: 80%;
     background: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,1));
-	@media only screen and (max-device-width: 700px){width: 170px;}
+	@media only screen and (max-device-width: 768px){width: 170px;}
   }
 
   @media(max-width: 830px){
@@ -368,7 +368,7 @@ p{
 	z-index: 10;
 	top: 0;
 	background: linear-gradient(to top, rgba(255,255,255,0.8), #fff);
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		padding-bottom: 30px;
 		height: 40px;
 	}
@@ -400,7 +400,7 @@ p{
 			}
 		}
 
-		@media only screen and (max-device-width: 700px){
+		@media only screen and (max-device-width: 768px){
 			font-size: 26px;
 			padding: 10px 0 5px;
 			.cont_item--logo{
@@ -510,7 +510,7 @@ p{
 	width: 100vw;
 	padding-top: 49%;
 	//overflow: hidden;
-	@media only screen and (max-device-width: 700px) {
+	@media only screen and (max-device-width: 768px) {
 		//top: -400px;
 		top: 50px;
 		min-height: 570px;
@@ -537,7 +537,7 @@ p{
 	width: 100vw;
 	//min-height: 570px;
 	background: url('../i/1.svg') center 0px / contain no-repeat,  url('../i/2.svg') center 0px / contain no-repeat, url('../i/2-1.svg') center 63.156vh / cover no-repeat, url('../i/2-2.svg') center 53.16vh / cover no-repeat, url('../i/2-3.svg') center 60.53vh / cover no-repeat;
-	@media only screen and (max-device-width: 700px) {
+	@media only screen and (max-device-width: 768px) {
 		top: 420px;
 		height: 570px;
 		width: 100%;
@@ -555,13 +555,17 @@ p{
 	width: 100%;
 	//animation-name: opacity0to1_ani;
 	//animation-duration: 1s;
-	@media only screen and (max-device-width: 700px) {
+	@media only screen and (max-device-width: 768px) {
 		top: 0%;
 	}
 }
 
 .b-header{
-	.main{border: 0px solid red; width: 570px; padding: 0;}
+	.main{
+		border: 0px solid red;
+		width: 570px;
+		padding: 0;
+	}
 	height: 85.79vh; //85.79vh;//815px;
 	outline: 0px solid red;
 	position: relative;
@@ -573,11 +577,16 @@ p{
 	animation-duration: $header-dur;
 	animation-fill-mode: forwards;
 
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		height: 665px;// 815px;
 		.b-header__bg{
 			//background: url('../i/bg1-mo720.png') center -80px / contain no-repeat;
 		}
+	}
+	@media only screen
+	and (min-device-width: 768px)
+	and (max-device-width: 1366px){
+		height: 55vh;
 	}
 }
 
@@ -594,7 +603,7 @@ p{
 	animation-duration: $hlogo-dur;
 	animation-fill-mode: forwards;
 	opacity: 0;
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		//top: 62%;
 	}
 
@@ -634,7 +643,7 @@ p{
 		//animation-delay: $htitle-del;
 		//animation-duration: $htitle-dur;
 		//animation-fill-mode: forwards;
-		@media only screen and (max-device-width: 700px){
+		@media only screen and (max-device-width: 768px){
 			font-size: 40px;
 		}
 	}
@@ -678,7 +687,7 @@ p{
 .b-services__items{
 	padding-top: 20px;
 	padding-bottom: 70px;
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		padding-bottom: 40px;
 	}
 
@@ -704,14 +713,14 @@ p{
 		&:nth-child(2n+1){
 			text-align: left;
 			background-position: 0 0;
-			@media only screen and (max-device-width: 700px){
+			@media only screen and (max-device-width: 768px){
 				padding: 0px 10px 0 215px;
 			}
 		}
 		&:nth-child(2n){
 			text-align: right;
 			background-position: 100% 0;
-			@media only screen and (max-device-width: 700px){
+			@media only screen and (max-device-width: 768px){
 				padding: 0px 190px 0 10px;
 			}
 		}
@@ -732,7 +741,7 @@ p{
 			width: 247px;
 			height: 258px;
 			background: url('../i/ser-1-ico.svg') no-repeat;
-			@media only screen and (max-device-width: 700px){
+			@media only screen and (max-device-width: 768px){
 				left: -45px;
 			}
 		}
@@ -746,7 +755,7 @@ p{
 			width: 247px;
 			height: 249px;
 			background: url('../i/ser-2-ico.svg') no-repeat;
-			@media only screen and (max-device-width: 700px){
+			@media only screen and (max-device-width: 768px){
 				right: -30px;
 			}
 		}
@@ -761,7 +770,7 @@ p{
 			width: 247px;
 			height: 249px;
 			background: url('../i/ser-3-ico.svg') no-repeat;
-			@media only screen and (max-device-width: 700px){
+			@media only screen and (max-device-width: 768px){
 				left: -35px;
 			}
 		}
@@ -777,7 +786,7 @@ p{
 		display: inline-block;
 		margin: 50px 10px 10px;
 		width: 35%;
-		@media only screen and (max-device-width: 700px){
+		@media only screen and (max-device-width: 768px){
 			width: 70%;
 			display: block;
 			margin: 50px auto 0;
@@ -801,10 +810,15 @@ p{
 		padding: 20px 40px 100px;
 		//outline: 2px solid red;
 	}
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		//height: auto;
 		height: 1750px;//1390px;
 		.main{justify-content: flex-end;}
+	}
+	@media only screen
+	and (min-device-width: 1024px)
+	and (max-device-width: 1366px){
+		height: 100vh;
 	}
 }
 .b-about-company__bg{
@@ -821,7 +835,7 @@ p{
 	//animation-duration: $neon2-dur;
 	//animation-iteration-count: infinite;
 
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		background: url('../i/waves_about_us.png') 0 0 no-repeat / contain;
 	}
 }
@@ -844,7 +858,7 @@ p{
 		//@media (max-width: 1460px) {margin-bottom: 70px;}
 
     }
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		text-align: center!important;
 		padding: 125px 0 25px;;
 		&:first-child{
@@ -873,7 +887,7 @@ p{
 		height: 151px;
 		background: url('../i/Logo big.svg') no-repeat -74px 58px;
 		background-size: contain;
-		@media only screen and (max-device-width: 700px){
+		@media only screen and (max-device-width: 768px){
 			transform: scale(0.8,0.8);
 		}
 		&:after{
@@ -891,7 +905,7 @@ p{
 		color: #000;
 		font-size: 1.2em;
 		line-height: 1.6em;
-		@media only screen and (max-device-width: 700px){
+		@media only screen and (max-device-width: 768px){
 			font-size: 1em;
 			line-height: 1.5em;
 		}
@@ -903,20 +917,8 @@ p{
 .b-portfolio{
 	box-shadow: 0 60px 60px rgba(0,0,0,0.05);
 	position: relative;
-	//&:before{
-	//	background:  linear-gradient(rgba(0,0,0,0.05), #fff);
-	//	content: "";
-	//	position: absolute;
-	//	bottom: -60px;
-	//	left: 50%;
-	//	transform: translate(-50%);
-	//	width: 1920px;
-	//	height: 60px;
-	//	//outline: 1px solid black;
-    //
-	//}
 	.main{max-width: 1900px;}
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		padding-top: 60px;
 		box-shadow: 0 -60px 60px rgba(0,0,0,0.05);
 	}
@@ -941,7 +943,7 @@ p{
 	flex-flow: row nowrap;
     justify-content: space-around;
 	align-items: stretch;
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		justify-content: center;
 		width: 98%;
 	}
@@ -969,7 +971,7 @@ p{
 			min-width: 240px;
 		}
 	}
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		padding: 60px 10px;
 		font-size: 0.85em;
 		//width: 28%;
@@ -1019,7 +1021,7 @@ p{
     //overflow-y: hidden;
 	transform: scale(0,0);
 	//transition: 0.5s;
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		border-left: 15px solid transparent;
 	}
 }
@@ -1101,7 +1103,7 @@ p{
 		transition: 0.5s;
         user-select: none;
 		z-index: 2;
-		@media only screen and (max-device-width: 700px){
+		@media only screen and (max-device-width: 768px){
 			line-height: 1.5em;
 		}
 	}
@@ -1129,7 +1131,7 @@ p{
 	@media(max-width: 830px){
 		margin: 75px auto 20px;
 	}
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		margin: 60px auto 20px;
 	}
 }
@@ -1143,12 +1145,18 @@ p{
   //background: url("../i/path.svg") no-repeat 0 265px;
   background: url('../i/how1.svg') no-repeat 116px 30px, url('../i/how2.svg') no-repeat 1075px 241px, url('../i/how3.svg') no-repeat 116px 474px, url('../i/how4.svg') no-repeat 1080px 710px, url("../i/path.svg") no-repeat 0 170px / contain;
   z-index: 0;
-  @media(max-width: 830px){
-    opacity: 0;
-  }
-  @media only screen and (max-device-width: 700px){
+  //@media(max-width: 830px){
+  //  opacity: 0;
+  //}
+  @media only screen and (max-device-width: 768px){
 	opacity: 0;
   }
+  @media only screen
+	and (min-device-width: 768px)
+	and (max-device-width: 1366px){
+	  background: url('../i/how1.svg') no-repeat 196px 30px, url('../i/how2.svg') no-repeat 995px 241px, url('../i/how3.svg') no-repeat 196px 474px, url('../i/how4.svg') no-repeat 1000px 710px, url("../i/path.svg") no-repeat 0 170px / contain;
+  }
+
 }
 
 
@@ -1159,7 +1167,6 @@ p{
 	//height: 870px;
 	//width: 1440px;
 	//background: url('../i/how1.svg') no-repeat 106px 30px, url('../i/how2.svg') no-repeat 1075px 234px, url('../i/how3.svg') no-repeat 126px 468px, url('../i/how4.svg') no-repeat 1080px 700px, url("../i/path.svg") no-repeat 0 170px / contain;
-
 
 	.plan-item {
         //outline: 1px solid blue;
@@ -1173,17 +1180,27 @@ p{
 		}
 		.item-p{
 			padding: 15px;
+			//outline: 1px solid green;
 		}
+
 		&:nth-child(2n+1){text-align: left;}
 		&:nth-child(2n){text-align: right;}
+
+		@media only screen
+		and (min-device-width: 1024px)
+		and (max-device-width: 1366px){
+			&:nth-child(2n+1){padding: 0 0px 0 110px;}
+			&:nth-child(2n){padding: 0 140px 0 0px;}
+		}
+
 		&:nth-child(2){ height: 233px;}
 		&:nth-child(3){ height: 225px;}
 		&:nth-child(4){ height: 225px;}
         &:not(:last-child) {
-			@media(max-width: 830px) {
-				border-bottom: 9px solid #fe9b7c;
-			}
-			@media only screen and (max-device-width: 700px){
+			//@media(max-width: 830px) {
+			//	border-bottom: 9px solid #fe9b7c;
+			//}
+			@media only screen and (max-device-width: 768px){
 				border-bottom: 9px solid #fe9b7c;
 			}
 		}
@@ -1192,7 +1209,7 @@ p{
 			height: auto!important;
 		}
 
-		@media only screen and (max-device-width: 700px){
+		@media only screen and (max-device-width: 768px){
 			height: auto!important;
 			text-align: left!important;
 			.item-h2, .item-p{
@@ -1207,18 +1224,7 @@ p{
 .b-sign-up {
 	position: relative;
 	box-shadow: 0 -60px 60px rgba(0,0,0,0.05);
-	//&:before{
-	//	background:  linear-gradient(#fff, rgba(0,0,0,0.05));
-	//	content: "";
-	//	position: absolute;
-	//	top: -60px;
-	//	left: 50%;
-	//	transform: translate(-50%);
-	//	width: 1920px;
-	//	height: 60px;
-	//	//outline: 1px solid black;
-    //
-	//}
+
 	.main{
 		width: 57%;
         max-width: 1065px;//1045px;
@@ -1232,7 +1238,7 @@ p{
 		}
 		//@media (max-width: 768px) {
 		//}
-		@media only screen and (max-device-width: 700px){
+		@media only screen and (max-device-width: 768px){
 			padding-bottom: 50px;
 		}
 	}
@@ -1258,7 +1264,7 @@ p{
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-between;
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		flex-flow: column wrap!important;
 		align-items: center;
 
@@ -1302,7 +1308,7 @@ p{
 		resize: none;
 		margin: 0 10px 50px; //0 10px 75px;
 	}
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		box-sizing: content-box;
 		width: 100%;
 		height: 100px;
@@ -1315,7 +1321,7 @@ p{
 	//box-sizing: border-box;
 	width: 100%;
 	margin: 0 auto;
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		width: calc(100% + 80px)!important;
 		margin: 0 auto 30px;
 		padding: 0 20px;
@@ -1333,7 +1339,7 @@ p{
 	overflow: hidden;
 	position: relative;
 	//outline: 1px solid red;
-	@media only screen and (max-device-width: 700px){
+	@media only screen and (max-device-width: 768px){
 		display: none;
 	}
 	.main {
@@ -1434,7 +1440,7 @@ p{
 }
 
 
-//@media only screen and (max-device-width: 700px){
+//@media only screen and (max-device-width: 768px){
 //	section.b-header{
 //		overflow: hidden;
 //		border: 5px solid green;
