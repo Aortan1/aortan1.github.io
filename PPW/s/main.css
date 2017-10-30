@@ -547,13 +547,18 @@ p {
   min-width: 200px; }
 
 .b-header__bg {
+  display: none;
   position: absolute;
-  top: -50%;
+  top: -9%;
   width: 100%;
   padding-top: 49%;
   min-height: 570px;
   height: auto;
+  background: url("../i/poster_mob.png") center 0px/cover no-repeat;
   opacity: 1; }
+  @media only screen and (max-device-width: 768px) {
+    .b-header__bg {
+      display: block; } }
 
 .b-header__video-container.bg {
   top: 0;
@@ -591,7 +596,8 @@ p {
   width: 100%; }
   @media only screen and (max-device-width: 768px) {
     .video-container__video {
-      top: 0%; } }
+      top: 0%;
+      display: none; } }
 
 .b-header {
   height: 815px;
@@ -885,7 +891,7 @@ p {
       font-size: 140px;
       position: absolute;
       top: 21px;
-      right: 3px; }
+      right: -7px; }
   .b-about-company__item .item-p {
     color: #000;
     font-size: 1.2em;
@@ -1183,7 +1189,7 @@ p {
       text-align: left; }
     .b-working__plan .plan-item:nth-child(2n) {
       text-align: right; }
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
+    @media only screen and (min-device-width: 769px) and (max-device-width: 1366px) {
       .b-working__plan .plan-item:nth-child(2n+1) {
         padding: 0 0px 0 110px; }
       .b-working__plan .plan-item:nth-child(2n) {

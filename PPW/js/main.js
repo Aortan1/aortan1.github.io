@@ -104,7 +104,7 @@ $(document).ready(function() {
         source.setAttribute("type", "video/mp4");
         source.setAttribute("src", "video/episode02.mp4");
 
-        document.querySelector(".b-header__bg").remove();
+        //document.querySelector(".b-header__bg").remove();
 
     }, 0);
 
@@ -224,7 +224,7 @@ $(document).ready(function() {
 
         var scrolled = window.pageYOffset;
         //var winh = window.innerHeight;
-        var video = document.getElementById("video-container__video");
+        var video = document.querySelector(".video-container__video");
         var h_video_off = 900;
 
         if (scrolled>h_video_off && $(video).attr("autoplay"))  {

@@ -488,14 +488,15 @@ p{
 }
 
 .b-header__bg{
+	display: none;
 	position: absolute;
-	top: -50%;
+	top: -9%;
 	width: 100%;
 	padding-top: 49%;
 	min-height: 570px; //1080px;
 	height: auto;
-	//background: url('../i/poster3.png') center 0px / cover no-repeat;
-
+	background: url('../i/poster_mob.png') center 0px / cover no-repeat;
+	@media only screen and (max-device-width: 768px) {display: block;}
 	opacity: 1;
 	//animation-name: neon_ani;
 	//animation-delay: $neon1-del;
@@ -557,6 +558,7 @@ p{
 	//animation-duration: 1s;
 	@media only screen and (max-device-width: 768px) {
 		top: 0%;
+		display: none;
 	}
 }
 
@@ -915,7 +917,8 @@ p{
 			font-size: 140px;
 			position: absolute;
 			top: 21px;
-			right: 3px;
+			right: -7px;
+			//right: 3px;
 		}
 	}
 
@@ -1210,7 +1213,7 @@ p{
 
 		@media only screen
 		//and (min-device-width: 1024px)
-		and (min-device-width: 768px)
+		and (min-device-width: 769px)
 		and (max-device-width: 1366px){
 			&:nth-child(2n+1){padding: 0 0px 0 110px;}
 			&:nth-child(2n){padding: 0 140px 0 0px;}
@@ -1233,6 +1236,7 @@ p{
 			}
 			@media only screen and (max-device-width: 768px){
 				border-bottom: 9px solid #fe9b7c;
+
 			}
 		}
 		@media(max-width: 830px){
