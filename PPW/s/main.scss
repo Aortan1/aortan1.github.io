@@ -301,12 +301,10 @@ p{
 	padding: 0 20px;
 	position: relative;
 	margin: 0 auto;
-	//outline: 1px solid rgba(255,255,0,0.5);
 }
 
 .bg{
-  //min-width: 1325px;
-  min-width: 1920px;
+  min-width: 1920px; //1325px;
   //max-width: 1920px;
   position: absolute;
   //width: 100%;
@@ -330,7 +328,6 @@ p{
     width: 80px;
     height: 100%;
     transform: translateY(-108%);
-    //border: 1px solid black;
   }
   &-left{
     float: left;
@@ -1390,7 +1387,7 @@ p{
         .nav__logo{
           position: relative;
           transform: scale(0.8,0.8);
-          top: 10px;
+          top: 20px;
         }
         .nav_item--empty {display: none;}
       }
@@ -1398,7 +1395,7 @@ p{
         //.nav__logo{display: none;}
         //.b-footer__nav{top: 340px;}
         width: 90%;
-        .nav__logo{transform: scale(0.5,0.5);  top: 34px; left: -90px;}
+        .nav__logo{transform: scale(0.5,0.5);  top: 44px; left: -90px;}
       }
 
       @media (max-width: 768px) {
