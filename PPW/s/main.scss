@@ -566,7 +566,7 @@ p{
 		width: 570px;
 		padding: 0;
 	}
-	height: 85.79vh; //85.79vh;//815px;
+	height: 815px; //85.79vh;//815px;
 	outline: 0px solid red;
 	position: relative;
 	//top: 4.21vh;
@@ -817,22 +817,26 @@ p{
 	}
 	@media only screen and (max-device-width: 768px){
 		//height: auto;
+		//border: 5px solid red;
 		height: 1750px;//1390px;
-		.main{justify-content: flex-end;}
+		min-height: 1750px;
+		.main{justify-content: flex-start;}
 	}
 
 	@media only screen
 		//and (min-device-width: 1024px
 	and (min-device-width: 769px)
 	and (max-device-width: 1024px){
-		height: 100vh;
+		height: 1390px;
+		min-height: 1390px;
 	}
 
 	@media only screen
 	//and (min-device-width: 1024px
-	and (min-device-width: 1025px)
-	and (max-device-width: 1366px){
-		height: 135vh;
+	and (min-device-width: 1025px){
+	//and (max-device-width: 1366px){
+		height: 1390px;
+		min-height: 1390px;
 	}
 }
 .b-about-company__bg{
@@ -929,6 +933,9 @@ p{
 
 
 .b-portfolio{
+	//background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0.9));
+	background: #fff;
+	outline: 15px solid rgba(255,255,255,0.5);
 	box-shadow: 0 60px 60px rgba(0,0,0,0.05);
 	position: relative;
 	.main{max-width: 1900px;}
@@ -966,6 +973,7 @@ p{
     display: flex; // !! Вертик. выравниваение текста флексом !!
     justify-content: center;
     flex-direction: column;
+	overflow: hidden;
     ///text-align: center;
 	background: rgba(255,255,255,0.5);
 	border: 1px solid #000;

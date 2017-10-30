@@ -594,7 +594,7 @@ p {
       top: 0%; } }
 
 .b-header {
-  height: 85.79vh;
+  height: 815px;
   outline: 0px solid red;
   position: relative;
   -webkit-animation-name: opacity0to1_ani;
@@ -820,18 +820,21 @@ p {
     padding: 20px 40px 100px; }
   @media only screen and (max-device-width: 768px) {
     .b-about-company {
-      height: 1750px; }
+      height: 1750px;
+      min-height: 1750px; }
       .b-about-company .main {
-        -webkit-box-pack: end;
-        -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-        justify-content: flex-end; } }
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; } }
   @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
     .b-about-company {
-      height: 100vh; } }
-  @media only screen and (min-device-width: 1025px) and (max-device-width: 1366px) {
+      height: 1390px;
+      min-height: 1390px; } }
+  @media only screen and (min-device-width: 1025px) {
     .b-about-company {
-      height: 135vh; } }
+      height: 1390px;
+      min-height: 1390px; } }
 
 .b-about-company__bg {
   -webkit-box-sizing: border-box;
@@ -893,6 +896,8 @@ p {
         line-height: 1.5em; } }
 
 .b-portfolio {
+  background: #fff;
+  outline: 15px solid rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0 60px 60px rgba(0, 0, 0, 0.05);
   box-shadow: 0 60px 60px rgba(0, 0, 0, 0.05);
   position: relative; }
@@ -956,6 +961,7 @@ p {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid #000;
   -webkit-box-sizing: border-box;
