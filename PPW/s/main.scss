@@ -820,10 +820,19 @@ p{
 		height: 1750px;//1390px;
 		.main{justify-content: flex-end;}
 	}
+
 	@media only screen
-	and (min-device-width: 1024px)
-	and (max-device-width: 1366px){
+		//and (min-device-width: 1024px
+	and (min-device-width: 769px)
+	and (max-device-width: 1024px){
 		height: 100vh;
+	}
+
+	@media only screen
+	//and (min-device-width: 1024px
+	and (min-device-width: 1025px)
+	and (max-device-width: 1366px){
+		height: 135vh;
 	}
 }
 .b-about-company__bg{
@@ -1192,7 +1201,8 @@ p{
 		&:nth-child(2n){text-align: right;}
 
 		@media only screen
-		and (min-device-width: 1024px)
+		//and (min-device-width: 1024px)
+		and (min-device-width: 768px)
 		and (max-device-width: 1366px){
 			&:nth-child(2n+1){padding: 0 0px 0 110px;}
 			&:nth-child(2n){padding: 0 140px 0 0px;}
