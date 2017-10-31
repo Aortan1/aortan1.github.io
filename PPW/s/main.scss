@@ -547,8 +547,7 @@ p{
 
 .video-container__video{
 	position: absolute;
-	//top: -50%;
-	top: 0%;
+	top: 0%;//-50%;
 	left: 0;
 	width: 100%;
 	//animation-name: opacity0to1_ani;
@@ -707,7 +706,6 @@ p{
       }
     }
 	.service {
-		//outline: 1px solid blue;
 		padding: 0px 205px;
 		margin-top: 40px;
 		position: relative;
@@ -730,11 +728,9 @@ p{
 		}
 		.service__h2{
 			padding: 15px;
-
 		}
 		.service__p{
 			padding: 15px;
-			//border: 1px solid red;
 		}
 	}
 	#service-polygraphy{
@@ -859,7 +855,6 @@ p{
 
 .b-about-company__item{
 	padding: 25px 0 50px;
-	//outline: 2px solid blue;
 	&:first-child{
 		//padding-top: 220px;
 	}
@@ -894,7 +889,6 @@ p{
 	}
 
 	.item-h1#why-power-print{
-		//outline: 1px solid red;
 		position: relative;
 		font-size: 68px;
 		letter-spacing: normal;
@@ -914,7 +908,7 @@ p{
 			font-size: 140px;
 			position: absolute;
 			top: 21px;
-			right: -7px;
+			right: -17px;
 			//right: 3px;
 		}
 	}
