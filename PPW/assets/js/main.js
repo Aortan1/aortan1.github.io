@@ -1,8 +1,5 @@
 
 
-
-
-
 function PortfolioActivation(num,buttons,objects){ // ф-я переключения между блоками портфолио .b-portfolio__items
     var object_id;
     [].forEach.call(objects, function(item, i){
@@ -16,18 +13,19 @@ function PortfolioActivation(num,buttons,objects){ // ф-я переключен
     return object_id;
 }
 
-function validation(form){
+function validation(form){ // валидация формы И САБМИТ, если валидная
     var phone = form.phone;
     var email = form.email;
     //var comment = form.comment;
-    var reg_email = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
-    var reg_phone = /^[0-9()\-+ ]+$/;
+    //var reg_email = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+    var reg_email = /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
+    var reg_phone = /^[0-9()\-+ ]{10,17}$/;
     var valid = true;
 
     if (!reg_email.test(email.value)) {
         email.classList.remove('valid');
         email.classList.add('invalid');
-        email.value = "";
+        //email.value = "";
         email.placeholder = "Введите Ваш email.";
         email.title = "Пожалуйста, введите Ваш email в корректной форме.";
         valid = false;
@@ -40,7 +38,7 @@ function validation(form){
     if (!reg_phone.test(phone.value)) {
         phone.classList.remove('valid');
         phone.classList.add('invalid');
-        phone.value = "";
+        //phone.value = "";
         phone.placeholder = "Введите Ваш телефон.";
         phone.title = "Пожалуйста, введите Ваш телефон в корректной форме.";
         valid = false;
@@ -50,38 +48,57 @@ function validation(form){
         phone.classList.add('valid');
     }
 
-    //if (valid) {alert("All is OK!!"); form.submit();} else  {alert("INVALIDE!!");}
-    if (valid) form.submit();
+    if (valid)
+	{
+        //message("Thank you! Your request have been sended.");
+        message("Возникли временные проблемы с сервером. Пожалуйста, попробуйте ещё раз.");
+        feedback();
 
+	}
+	else message("Пожалуйста, заполните все поля в корректной форме.");
+
+}
+
+function message(text){ // вызов модального окна с сообщением
+    var curtain = document.querySelector(".b-curtain"); // контейнер-ширма
+    document.getElementById("message-text").innerText = text; // блок для текста
+    curtain.classList.add('message-show'); // появление текстового сообщения
+    document.getElementById("button-ok").addEventListener("click", function () {
+        curtain.classList.remove("message-show"); // ожидание нажатия на "Ok."
+    });
+}
+
+
+function feedback()
+{
+	var feedback_form = $("#b-sign-up__form");
+
+	$.ajax({
+		url: '/api/feedback.php',
+		type: 'POST',
+		data: {
+			phone: feedback_form.find('#phone-input').val(),
+			email: feedback_form.find('#email-input').val(),
+			comment: feedback_form.find('#comment-input').val(),
+		},
+		dataType: 'json'
+	}).success(function(result){
+
+	});
 }
 
 window.onload = function() { // Самбит для кнопки формы отправки письма
 
     var video = document.getElementById("video-container__video");
-
-    // (function myHandler(e) {
-    //     console.log("11111!!!!");
-    //     setTimeout(function () {
-    //         video.play();
-    //     }, 5000);
-    // })();
-
-
     var form = document.getElementById("b-sign-up__form");
+
     document.getElementById("b-sign-up__submit").addEventListener("click", function () {
         //form.submit();
-        validation(form);
+        validation(form); // валидация и сабмит по клику на кнопку
     });
-
-
-    //video.playbackRate = 0.3;
-    // video.addEventListener("canplay", function() {
-    //     setTimeout(function() {
-    //         video.play();
-    //     }, 5000);
+    // document.getElementById("button-ok").addEventListener("click", function () {
+    //     document.querySelector(".b-curtain").classList.remove("message-show");
     // });
-
-
 
 }
 
@@ -97,12 +114,12 @@ $(document).ready(function() {
         video.setAttribute("loop", true);
         video.setAttribute("autoplay", true);
         video.setAttribute("muted", true);
-        video.setAttribute("poster", "i/poster_BG.png");
-        //video.setAttribute("src", "video/Background-full.mp4");
+        video.setAttribute("poster", "assets/img/poster_BG.png");
+        //video.setAttribute("src", "assets/video/Background-full.mp4");
         video_cont.insertBefore(video, video_cont.firstChild);
         video.appendChild(source);
         source.setAttribute("type", "video/mp4");
-        source.setAttribute("src", "video/episode02.mp4");
+        source.setAttribute("src", "assets/video/episode02.mp4");
 
         //document.querySelector(".b-header__bg").remove();
 
@@ -208,8 +225,7 @@ $(document).ready(function() {
 
     })();
 
-    $("a.cont_item, a.nav_item, .button").click(function() {
-        //$("a.cont_item, a.nav_item, .button-portfolio, .button-to-order").click(function() { // плавная прокрутка до якоря
+    $("a.cont_item, a.nav_item, #b-header__button, #button-portfolio, #button-to-order, #b-portfolio__button").click(function() { // плавная прокрутка до якоря
             var elementClick = $(this).attr("href");
             var destination = $(elementClick).offset().top - 100;
             jQuery("html,body").animate({
@@ -219,11 +235,9 @@ $(document).ready(function() {
         });
 
 
-
     window.onscroll = function() { // приостановка фонового видео при скроле вниз
 
         var scrolled = window.pageYOffset;
-        //var winh = window.innerHeight;
         var video = document.querySelector(".video-container__video");
         var h_video_off = 900;
 
@@ -238,6 +252,12 @@ $(document).ready(function() {
         }
 
     };
+
+
+
+    jQuery(function($){ // подключение плагина с маской ввода номера телефона
+        $("#phone-input").mask("+38(999)999-99-99");
+    });
 
 
 });

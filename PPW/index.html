@@ -6,11 +6,12 @@
     <link rel="icon" href="http://localhost:7885/i/favicon.ico">
     <meta charset="utf-8">
     <title>Power Print White</title>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/blocksit.min.js"></script>
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="s/normalize.css">
-    <link rel="stylesheet" type="text/css" href="s/main.css">
+    <script src="assets/libs/jquery-3.2.1.min.js"></script>
+    <script src="assets/libs/blocksit.min.js"></script>
+    <script src="assets/libs/jquery.maskedinput.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
   </head>
   <body>
     <p><a id="home"></a></p>
@@ -25,14 +26,8 @@
     <header class="b-header">
       <div class="b-header__bg bg"></div>
       <div class="b-header__video-container bg" id="video-container">
-        <!--video.video-container__video#video-container__video(loop, autoplay, preload="auto", muted)//source(src="video/Background-full.mp4", type="video/mp4")
+        <!--video.video-container__video#video-container__video(loop, autoplay, preload="auto", muted)//source(src="assets/video/Background-full.mp4", type="video/mp4")
         -->
-        <!--.video-container__waves.bg-->
-        <!--object.video-container__object.bg.object-1(type="image/svg+xml", data="i/1.svg")-->
-        <!--object.video-container__object.bg.object-2(type="image/svg+xml", data="i/2.svg")-->
-        <!--object.video-container__object.bg.object-3(type="image/svg+xml", data="i/2-1.svg")-->
-        <!--object.video-container__object.bg.object-4(type="image/svg+xml", data="i/2-2.svg")-->
-        <!--object.video-container__object.bg.object-5(type="image/svg+xml", data="i/2-3.svg")-->
       </div>
       <div class="main">
         <div class="b-header__order"></div>
@@ -65,8 +60,8 @@
             <p class="service__p">Повысьте узнаваемость бренда и продвигайте продукты в любом месте и в любое время используя все виды широкоформатной печати. Оракал, постеры, фотобумага, фотопостеры, холст.</p>
           </div>
           <div class="b-services__buttons">
-            <div class="button button-portfolio" href="#portfolio">портфолио</div>
-            <div class="button button-to-order" href="#contacts">заказать</div>
+            <div class="button" id="button-portfolio" href="#portfolio">портфолио</div>
+            <div class="button" id="button-to-order" href="#contacts">заказать</div>
           </div>
         </div>
       </div>
@@ -76,186 +71,192 @@
       
       -->
     </section>
-  </body>
-  <section class="b-about-company">
-    <div class="bg b-about-company__bg"></div>
-    <div class="main">
-      <div class="b-about-company__item">
-        <h1 class="item-h1">О компании</h1>
-        <p class="item-p">Всё просто. Наша работа - помочь Вам развить свой бизнес.<br>Power Print позволяет владельцам бизнеса по всей Украине профессионально преподносить себя.<br>Наш широкий ассортимент качественной продукции и доступные цены позволят создать индивидуальный стиль компании и привлечь максимум клиентов.<br>Мы уверены, что Вы будете на 100% удовлетворены нашими продуктами, качеством, дизайном и внимательным обслуживанием.</p>
+    <section class="b-about-company">
+      <div class="bg b-about-company__bg"></div>
+      <div class="main">
+        <div class="b-about-company__item">
+          <h1 class="item-h1">О компании</h1>
+          <p class="item-p">Всё просто. Наша работа - помочь Вам развить свой бизнес.<br>Power Print позволяет владельцам бизнеса по всей Украине профессионально преподносить себя.<br>Наш широкий ассортимент качественной продукции и доступные цены позволят создать индивидуальный стиль компании и привлечь максимум клиентов.<br>Мы уверены, что Вы будете на 100% удовлетворены нашими продуктами, качеством, дизайном и внимательным обслуживанием.</p>
+        </div>
+        <div class="b-about-company__item">
+          <h1 class="item-h1" id="why-power-print">Почему</h1>
+          <p class="item-p">Мы предлагаем индивидуальный продход в создании печатной рекламной продукции как для бизнеса, так и для личного использования. Если Вам нужно создать визитку, флаер, футболку или пригласительный на свадьбу, мы с радостью Вам поможем. И не забывайте, что мы так же помогаем предприятиям привлекать больше клиентов через маркетинг социальных медиа, E-mail маркетинг и разработку индивидуальных сайтов.</p>
+        </div>
       </div>
-      <div class="b-about-company__item">
-        <h1 class="item-h1" id="why-power-print">Почему</h1>
-        <p class="item-p">Мы предлагаем индивидуальный продход в создании печатной рекламной продукции как для бизнеса, так и для личного использования. Если Вам нужно создать визитку, флаер, футболку или пригласительный на свадьбу, мы с радостью Вам поможем. И не забывайте, что мы так же помогаем предприятиям привлекать больше клиентов через маркетинг социальных медиа, E-mail маркетинг и разработку индивидуальных сайтов.</p>
-      </div>
-    </div>
-  </section>
-  <section class="b-portfolio">
-    <div class="main">
-      <p><a id="portfolio"></a></p>
-      <h1 class="b-portfolio__h1">Портфолио</h1>
-      <div class="b-portfolio__nav">
-        <div class="nav-button nav-button--active" id="button-polygraphy">Полиграфия</div>
-        <div class="nav-button" id="button-souvenirs">Сувенирная продукция</div>
-        <div class="nav-button" id="button-large">Широкоформатная печать</div>
-      </div>
-      <div class="b-portfolio__items b-portfolio__items--active" id="items-polygraphy">
-        <div class="items__item items__item--wide" id="polygraphy_01">
-          <div class="h">Печать буклетов</div>
+    </section>
+    <section class="b-portfolio">
+      <div class="main">
+        <p><a id="portfolio"></a></p>
+        <h1 class="b-portfolio__h1">Портфолио</h1>
+        <div class="b-portfolio__nav">
+          <div class="nav-button nav-button--active" id="button-polygraphy">Полиграфия</div>
+          <div class="nav-button" id="button-souvenirs">Сувенирная продукция</div>
+          <div class="nav-button" id="button-large">Широкоформатная печать</div>
         </div>
-        <div class="items__item" id="polygraphy_02">
-          <div class="h">Печать визиток</div>
-        </div>
-        <div class="items__item" id="polygraphy_03">
-          <div class="h">Печать блокнотов</div>
-        </div>
-        <div class="items__item items__item--wide" id="polygraphy_04">
-          <div class="h">Печать каталогов</div>
-        </div>
-        <div class="items__item" id="polygraphy_05">
-          <div class="h">Печать листовок</div>
-        </div>
-        <div class="items__item" id="polygraphy_06">
-          <div class="h">Печать настольных календарей</div>
-        </div>
-        <div class="items__item items__item--wide" id="polygraphy_07">
-          <div class="h">Печать на бумажных пакетах</div>
-        </div>
-        <div class="items__item" id="polygraphy_08">
-          <div class="h">Печать плакатов</div>
-        </div>
-        <div class="items__item" id="polygraphy_09">
-          <div class="h">Печать настенных календарей</div>
-        </div>
-        <div class="items__item items__item--wide" id="polygraphy_10">
-          <div class="h">Печать папок, конвертов, бланков и дипломов</div>
-        </div>
-        <div class="items__item" id="polygraphy_11">
-          <div class="h">Печать открыток и пригласи
-            <wbr>тельных
+        <div class="b-portfolio__items b-portfolio__items--active" id="items-polygraphy">
+          <div class="items__item items__item--wide" id="polygraphy_01">
+            <div class="h">Печать буклетов</div>
+          </div>
+          <div class="items__item" id="polygraphy_02">
+            <div class="h">Печать визиток</div>
+          </div>
+          <div class="items__item" id="polygraphy_03">
+            <div class="h">Печать блокнотов</div>
+          </div>
+          <div class="items__item items__item--wide" id="polygraphy_04">
+            <div class="h">Печать каталогов</div>
+          </div>
+          <div class="items__item" id="polygraphy_05">
+            <div class="h">Печать листовок</div>
+          </div>
+          <div class="items__item" id="polygraphy_06">
+            <div class="h">Печать настольных календарей</div>
+          </div>
+          <div class="items__item items__item--wide" id="polygraphy_07">
+            <div class="h">Печать на бумажных пакетах</div>
+          </div>
+          <div class="items__item" id="polygraphy_08">
+            <div class="h">Печать плакатов</div>
+          </div>
+          <div class="items__item" id="polygraphy_09">
+            <div class="h">Печать настенных календарей</div>
+          </div>
+          <div class="items__item items__item--wide" id="polygraphy_10">
+            <div class="h">Печать папок, конвертов, бланков и дипломов</div>
+          </div>
+          <div class="items__item" id="polygraphy_11">
+            <div class="h">Печать открыток и пригласи
+              <wbr>тельных
+            </div>
+          </div>
+          <div class="items__item" id="polygraphy_12">
+            <div class="h">Печать журналов</div>
+          </div>
+          <div class="items__item items__item--wide" id="polygraphy_13">
+            <div class="h">Печать брошюр и флаеров</div>
           </div>
         </div>
-        <div class="items__item" id="polygraphy_12">
-          <div class="h">Печать журналов</div>
+        <div class="b-portfolio__items" id="items-souvenirs">
+          <div class="items__item items__item--wide" id="souvenirs_01">
+            <div class="h">Печать на футболках</div>
+          </div>
+          <div class="items__item" id="souvenirs_02">
+            <div class="h">Печать на чашках</div>
+          </div>
+          <div class="items__item" id="souvenirs_03">
+            <div class="h">Печать на ручках</div>
+          </div>
+          <div class="items__item items__item--wide" id="souvenirs_04">
+            <div class="h">Печать на флешках</div>
+          </div>
+          <div class="items__item" id="souvenirs_05">
+            <div class="h">Печать на бейсболках</div>
+          </div>
+          <div class="items__item" id="souvenirs_06">
+            <div class="h">Печать на зажигалках</div>
+          </div>
+          <div class="items__item items__item--wide" id="souvenirs_07">
+            <div class="h">Подарочные наборы</div>
+          </div>
+          <div class="items__item" id="souvenirs_08">
+            <div class="h">Печать на брелках</div>
+          </div>
+          <div class="items__item" id="souvenirs_09">
+            <div class="h">Печать на чашках</div>
+          </div>
         </div>
-        <div class="items__item items__item--wide" id="polygraphy_13">
-          <div class="h">Печать брошюр и флаеров</div>
+        <div class="b-portfolio__items" id="items-large">
+          <div class="items__item items__item--wide" id="large_01">
+            <div class="h">Печать на оракале</div>
+          </div>
+          <div class="items__item" id="large_02">
+            <div class="h">Печать пресс волла</div>
+          </div>
+          <div class="items__item" id="large_03">
+            <div class="h">Баннер паук,<br>X-Banner</div>
+          </div>
+          <div class="items__item items__item--wide" id="large_04">
+            <div class="h">Печать фотоколлажа на постере</div>
+          </div>
+          <div class="items__item" id="large_05">
+            <div class="h">Печать постеров</div>
+          </div>
+          <div class="items__item" id="large_06">
+            <div class="h">Стенды Roll-up</div>
+          </div>
+          <div class="items__item items__item--wide" id="large_07">
+            <div class="h">Печать на холсте</div>
+          </div>
+          <div class="items__item" id="large_08">
+            <div class="h">Печать на фотобумаге</div>
+          </div>
+          <div class="items__item" id="large_09">
+            <div class="h">Печать баннеров</div>
+          </div>
+        </div>
+        <div class="button" id="b-portfolio__button" href="#contacts">запросить бриф</div>
+      </div>
+    </section>
+    <section class="b-working">
+      <div class="bg plan__bg"></div>
+      <div class="main">
+        <h1 class="b-working__h1">Как мы работаем</h1>
+        <div class="b-working__plan">
+          <div class="plan-item">
+            <h2 class="item-h2">Свяжитесь с нами</h2>
+            <p class="item-p">Чтобы сделать заказ, напишите нам, что бы Вы хотели получить, и наши менеджеры свяжуться с Вами для уточнения и согласования цены</p>
+          </div>
+          <div class="plan-item">
+            <h2 class="item-h2">Утвердите макет</h2>
+            <p class="item-p">Оцените проделанную работу и вынесите окончательный вердикт по макету и деталям Вашего заказа</p>
+          </div>
+          <div class="plan-item">
+            <h2 class="item-h2">Получите макет</h2>
+            <p class="item-p">Получите профессиональный макет с индивидуальным дизайном и всеми необходимыми для Вас исходниками</p>
+          </div>
+          <div class="plan-item">
+            <h2 class="item-h2">Наслаждайтесь</h2>
+            <p class="item-p">Теперь у Вас есть всё необходимое для зарабатывания миллионов! Наслаждайтесь полученным результатом и прибылью и не забудьте порекомендовать нас своим друзьям</p>
+          </div>
         </div>
       </div>
-      <div class="b-portfolio__items" id="items-souvenirs">
-        <div class="items__item items__item--wide" id="souvenirs_01">
-          <div class="h">Печать на футболках</div>
-        </div>
-        <div class="items__item" id="souvenirs_02">
-          <div class="h">Печать на чашках</div>
-        </div>
-        <div class="items__item" id="souvenirs_03">
-          <div class="h">Печать на ручках</div>
-        </div>
-        <div class="items__item items__item--wide" id="souvenirs_04">
-          <div class="h">Печать на флешках</div>
-        </div>
-        <div class="items__item" id="souvenirs_05">
-          <div class="h">Печать на бейсболках</div>
-        </div>
-        <div class="items__item" id="souvenirs_06">
-          <div class="h">Печать на зажигалках</div>
-        </div>
-        <div class="items__item items__item--wide" id="souvenirs_07">
-          <div class="h">Подарочные наборы</div>
-        </div>
-        <div class="items__item" id="souvenirs_08">
-          <div class="h">Печать на брелках</div>
-        </div>
-        <div class="items__item" id="souvenirs_09">
-          <div class="h">Печать на чашках</div>
+      <div class="bg mist__bg">
+        <div class="mist__bg-left"></div>
+        <div class="mist__bg-right"></div>
+      </div>
+    </section>
+    <section class="b-sign-up">
+      <div class="main">
+        <p><a id="contacts"></a></p>
+        <h1 class="b-sign-up__h">Мы Вам понравились?</h1>
+        <p class="b-sign-up__comment-p">Спасибо! Вы нам тоже! Оставьте Вашу заявку, и наши менеджеры вышлют Вам бриф, как только мы выпустим их из подвала</p>
+        <form class="b-sign-up__form" id="b-sign-up__form" action="sender.php" method="post">
+          <input class="b-sign-up__input" id="phone-input" type="tel" name="phone" placeholder="Ваш телефон" required="required" maxlength="17">
+          <input class="b-sign-up__input" id="email-input" type="email" name="email" placeholder="Ваш e-mail" required="required" maxlength="36">
+          <textarea class="b-sign-up__input" id="comment-input" name="comment" placeholder="Ваши пожелания и предпочтения" maxlength="1000"></textarea>
+          <div class="button b-sign-up__button-request-brief" id="b-sign-up__submit">запросить бриф</div>
+        </form>
+      </div>
+    </section>
+    <footer class="b-footer">
+      <div class="b-footer__bg bg"></div>
+      <div class="main">
+        <div class="b-footer__nav"><a class="nav_item" href="#services">Услуги</a><a class="nav_item" href="#portfolio">Портфолио</a><a class="nav_item" href="#contacts">Контакты</a>
+          <div class="nav_item nav_item--empty"></div>
+          <div class="nav__logo">
+            <div class="logo__img"></div><a class="logo__email" href="mailto:info@powerprint.com.ua">info@powerprint.com.ua</a>
+            <p class="logo__phone-p">(095) 117 - 61 - 70</p>
+            <p class="logo__phone-p">(073) 499 - 09 - 18</p>
+          </div>
         </div>
       </div>
-      <div class="b-portfolio__items" id="items-large">
-        <div class="items__item items__item--wide" id="large_01">
-          <div class="h">Печать на оракале</div>
-        </div>
-        <div class="items__item" id="large_02">
-          <div class="h">Печать пресс волла</div>
-        </div>
-        <div class="items__item" id="large_03">
-          <div class="h">Баннер паук,<br>X-Banner</div>
-        </div>
-        <div class="items__item items__item--wide" id="large_04">
-          <div class="h">Печать фотоколлажа на постере</div>
-        </div>
-        <div class="items__item" id="large_05">
-          <div class="h">Печать постеров</div>
-        </div>
-        <div class="items__item" id="large_06">
-          <div class="h">Стенды Roll-up</div>
-        </div>
-        <div class="items__item items__item--wide" id="large_07">
-          <div class="h">Печать на холсте</div>
-        </div>
-        <div class="items__item" id="large_08">
-          <div class="h">Печать на фотобумаге</div>
-        </div>
-        <div class="items__item" id="large_09">
-          <div class="h">Печать баннеров</div>
-        </div>
-      </div>
-      <div class="b-portfolio__button-request-brief button" href="#contacts">запросить бриф</div>
-    </div>
-  </section>
-  <section class="b-working">
-    <div class="bg plan__bg"></div>
-    <div class="main">
-      <h1 class="b-working__h1">Как мы работаем</h1>
-      <div class="b-working__plan">
-        <div class="plan-item">
-          <h2 class="item-h2">Свяжитесь с нами</h2>
-          <p class="item-p">Чтобы сделать заказ, напишите нам, что бы Вы хотели получить, и наши менеджеры свяжуться с Вами для уточнения и согласования цены</p>
-        </div>
-        <div class="plan-item">
-          <h2 class="item-h2">Утвердите макет</h2>
-          <p class="item-p">Оцените проделанную работу и вынесите окончательный вердикт по макету и деталям Вашего заказа</p>
-        </div>
-        <div class="plan-item">
-          <h2 class="item-h2">Получите макет</h2>
-          <p class="item-p">Получите профессиональный макет с индивидуальным дизайном и всеми необходимыми для Вас исходниками</p>
-        </div>
-        <div class="plan-item">
-          <h2 class="item-h2">Наслаждайтесь</h2>
-          <p class="item-p">Теперь у Вас есть всё необходимое для зарабатывания миллионов! Наслаждайтесь полученным результатом и прибылью и не забудьте порекомендовать нас своим друзьям</p>
-        </div>
+    </footer>
+    <!--.b-curtain.message-show - класс для вызова сообщения-->
+    <div class="b-curtain">
+      <div class="b-message" id="message">
+        <div class="b-message__p" id="message-text">Text of the message.</div>
+        <div class="b-message__button-ok" id="button-ok">Ok</div>
       </div>
     </div>
-    <div class="bg mist__bg">
-      <div class="mist__bg-left"></div>
-      <div class="mist__bg-right"></div>
-    </div>
-  </section>
-  <section class="b-sign-up">
-    <div class="main">
-      <p><a id="contacts"></a></p>
-      <h1 class="b-sign-up__h">Мы Вам понравились?</h1>
-      <p class="b-sign-up__comment-p">Спасибо! Вы нам тоже! Оставьте Вашу заявку, и наши менеджеры вышлют Вам бриф, как только мы выпустим их из подвала</p>
-      <form class="b-sign-up__form" id="b-sign-up__form" action="sender.php" method="post">
-        <input class="b-sign-up__input" id="phone-input" type="tel" name="phone" placeholder="Ваш телефон" required="required" maxlength="17">
-        <input class="b-sign-up__input" id="email-input" type="email" name="email" placeholder="Ваш e-mail" required="required" maxlength="36">
-        <textarea class="b-sign-up__input" id="comment-input" name="comment" placeholder="Ваши пожелания и предпочтения" maxlength="1000"></textarea>
-        <div class="button b-sign-up__button-request-brief" id="b-sign-up__submit">запросить бриф</div>
-        <!--input.button.b-sign-up__button-request-brief(type="submit", value="запросить бриф")-->
-      </form>
-    </div>
-  </section>
-  <footer class="b-footer">
-    <div class="b-footer__bg bg"></div>
-    <div class="main">
-      <div class="b-footer__nav"><a class="nav_item" href="#services">Услуги</a><a class="nav_item" href="#portfolio">Портфолио</a><a class="nav_item" href="#contacts">Контакты</a>
-        <div class="nav_item nav_item--empty"></div>
-        <div class="nav__logo">
-          <div class="logo__img"></div><a class="logo__email" href="mailto:info@powerprint.com.ua">info@powerprint.com.ua</a>
-          <p class="logo__phone-p">(095) 117 - 61 - 70</p>
-          <p class="logo__phone-p">(073) 499 - 09 - 18</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  </body>
 </html>

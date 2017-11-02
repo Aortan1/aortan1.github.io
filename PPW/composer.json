@@ -1,0 +1,14 @@
+{
+    "name": "powercode/releaseprint",
+    "description": "Power Print",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "~6.0"
+    },
+    "authors": [
+        {
+            "name": "powercode",
+            "email": "dev.powercode@gmail.com"
+        }
+    ]
+}

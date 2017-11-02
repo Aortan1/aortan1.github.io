@@ -6,11 +6,12 @@ html
         link(rel="icon", href="http://localhost:7885/i/favicon.ico")
         meta(charset="utf-8")
         title Power Print White
-        script(src="js/jquery-3.2.1.min.js")
-        script(src="js/blocksit.min.js")
-        script(src='js/main.js')
-        link(rel='stylesheet', type='text/css', href='s/normalize.css')
-        link(rel='stylesheet', type='text/css', href='s/main.css')
+        script(src="assets/libs/jquery-3.2.1.min.js")
+        script(src="assets/libs/blocksit.min.js")
+        script(src="assets/libs/jquery.maskedinput.min.js")
+        script(src='assets/js/main.js')
+        link(rel='stylesheet', type='text/css', href='assets/css/normalize.css')
+        link(rel='stylesheet', type='text/css', href='assets/css/main.css')
     body
         p
             a(id="home")
@@ -30,14 +31,7 @@ html
             .b-header__bg.bg
             .b-header__video-container#video-container.bg
                 //video.video-container__video#video-container__video(loop, autoplay, preload="auto", muted)
-                    //source(src="video/Background-full.mp4", type="video/mp4")
-                //.video-container__waves.bg
-                //object.video-container__object.bg.object-1(type="image/svg+xml", data="i/1.svg")
-                //object.video-container__object.bg.object-2(type="image/svg+xml", data="i/2.svg")
-                //object.video-container__object.bg.object-3(type="image/svg+xml", data="i/2-1.svg")
-                //object.video-container__object.bg.object-4(type="image/svg+xml", data="i/2-2.svg")
-                //object.video-container__object.bg.object-5(type="image/svg+xml", data="i/2-3.svg")
-
+                    //source(src="assets/video/Background-full.mp4", type="video/mp4")
             .main
                 .b-header__order
                 .b-header__order
@@ -73,157 +67,160 @@ html
                             |печать
                         p.service__p Повысьте узнаваемость бренда и продвигайте продукты в любом месте и в любое время используя все виды широкоформатной печати. Оракал, постеры, фотобумага, фотопостеры, холст.
                     .b-services__buttons
-                        .button.button-portfolio(href="#portfolio") портфолио
-                        .button.button-to-order(href="#contacts") заказать
+                        .button#button-portfolio(href="#portfolio") портфолио
+                        .button#button-to-order(href="#contacts") заказать
             //.bg.mist__bg
                 .mist__bg-left
                 .mist__bg-right
 
-    section.b-about-company
-        .bg.b-about-company__bg
-        .main
-            .b-about-company__item
-                h1.item-h1 О компании
-                p.item-p Всё просто. Наша работа - помочь Вам развить свой бизнес.
-                    br
-                    | Power Print позволяет владельцам бизнеса по всей Украине профессионально преподносить себя.
-                    br
-                    | Наш широкий ассортимент качественной продукции и доступные цены позволят создать индивидуальный стиль компании и привлечь максимум клиентов.
-                    br
-                    | Мы уверены, что Вы будете на 100% удовлетворены нашими продуктами, качеством, дизайном и внимательным обслуживанием.
-            .b-about-company__item
-                h1.item-h1#why-power-print Почему
-                p.item-p Мы предлагаем индивидуальный продход в создании печатной рекламной продукции как для бизнеса, так и для личного использования. Если Вам нужно создать визитку, флаер, футболку или пригласительный на свадьбу, мы с радостью Вам поможем. И не забывайте, что мы так же помогаем предприятиям привлекать больше клиентов через маркетинг социальных медиа, E-mail маркетинг и разработку индивидуальных сайтов.
-
-    section.b-portfolio
-        .main
-            p
-                a(id="portfolio")
-            h1.b-portfolio__h1 Портфолио
-            .b-portfolio__nav
-                .nav-button.nav-button--active#button-polygraphy() Полиграфия
-                .nav-button#button-souvenirs() Сувенирная продукция
-                .nav-button#button-large() Широкоформатная печать
-            .b-portfolio__items#items-polygraphy.b-portfolio__items--active
-                .items__item.items__item--wide#polygraphy_01
-                    .h Печать буклетов
-                .items__item#polygraphy_02
-                    .h Печать визиток
-                .items__item#polygraphy_03
-                    .h Печать блокнотов
-                .items__item.items__item--wide#polygraphy_04
-                    .h Печать каталогов
-                .items__item#polygraphy_05
-                    .h Печать листовок
-                .items__item#polygraphy_06
-                    .h Печать настольных календарей
-                .items__item.items__item--wide#polygraphy_07
-                    .h Печать на бумажных пакетах
-                .items__item#polygraphy_08
-                    .h Печать плакатов
-                .items__item#polygraphy_09
-                    .h Печать настенных календарей
-                .items__item.items__item--wide#polygraphy_10
-                    .h Печать папок, конвертов, бланков и дипломов
-                .items__item#polygraphy_11
-                    .h Печать открыток и пригласи
-                        wbr
-                        |тельных
-                .items__item#polygraphy_12
-                    .h Печать журналов
-                .items__item.items__item--wide#polygraphy_13
-                    .h Печать брошюр и флаеров
-
-            .b-portfolio__items#items-souvenirs
-                .items__item.items__item--wide#souvenirs_01
-                    .h Печать на футболках
-                .items__item#souvenirs_02
-                    .h Печать на чашках
-                .items__item#souvenirs_03
-                    .h Печать на ручках
-                .items__item.items__item--wide#souvenirs_04
-                    .h Печать на флешках
-                .items__item#souvenirs_05
-                    .h Печать на бейсболках
-                .items__item#souvenirs_06
-                    .h Печать на зажигалках
-                .items__item.items__item--wide#souvenirs_07
-                    .h Подарочные наборы
-                .items__item#souvenirs_08
-                    .h Печать на брелках
-                .items__item#souvenirs_09
-                    .h Печать на чашках
-            .b-portfolio__items#items-large
-                .items__item.items__item--wide#large_01
-                    .h Печать на оракале
-                .items__item#large_02
-                    .h Печать пресс волла
-                .items__item#large_03
-                    .h Баннер паук,
+        section.b-about-company
+            .bg.b-about-company__bg
+            .main
+                .b-about-company__item
+                    h1.item-h1 О компании
+                    p.item-p Всё просто. Наша работа - помочь Вам развить свой бизнес.
                         br
-                        |X-Banner
-                .items__item.items__item--wide#large_04
-                    .h Печать фотоколлажа на постере
-                .items__item#large_05
-                    .h Печать постеров
-                .items__item#large_06
-                    .h Стенды Roll-up
-                .items__item.items__item--wide#large_07
-                    .h Печать на холсте
-                .items__item#large_08
-                    .h Печать на фотобумаге
-                .items__item#large_09
-                    .h Печать баннеров
+                        | Power Print позволяет владельцам бизнеса по всей Украине профессионально преподносить себя.
+                        br
+                        | Наш широкий ассортимент качественной продукции и доступные цены позволят создать индивидуальный стиль компании и привлечь максимум клиентов.
+                        br
+                        | Мы уверены, что Вы будете на 100% удовлетворены нашими продуктами, качеством, дизайном и внимательным обслуживанием.
+                .b-about-company__item
+                    h1.item-h1#why-power-print Почему
+                    p.item-p Мы предлагаем индивидуальный продход в создании печатной рекламной продукции как для бизнеса, так и для личного использования. Если Вам нужно создать визитку, флаер, футболку или пригласительный на свадьбу, мы с радостью Вам поможем. И не забывайте, что мы так же помогаем предприятиям привлекать больше клиентов через маркетинг социальных медиа, E-mail маркетинг и разработку индивидуальных сайтов.
 
-            .b-portfolio__button-request-brief.button(href="#contacts") запросить бриф
+        section.b-portfolio
+            .main
+                p
+                    a(id="portfolio")
+                h1.b-portfolio__h1 Портфолио
+                .b-portfolio__nav
+                    .nav-button.nav-button--active#button-polygraphy() Полиграфия
+                    .nav-button#button-souvenirs() Сувенирная продукция
+                    .nav-button#button-large() Широкоформатная печать
+                .b-portfolio__items#items-polygraphy.b-portfolio__items--active
+                    .items__item.items__item--wide#polygraphy_01
+                        .h Печать буклетов
+                    .items__item#polygraphy_02
+                        .h Печать визиток
+                    .items__item#polygraphy_03
+                        .h Печать блокнотов
+                    .items__item.items__item--wide#polygraphy_04
+                        .h Печать каталогов
+                    .items__item#polygraphy_05
+                        .h Печать листовок
+                    .items__item#polygraphy_06
+                        .h Печать настольных календарей
+                    .items__item.items__item--wide#polygraphy_07
+                        .h Печать на бумажных пакетах
+                    .items__item#polygraphy_08
+                        .h Печать плакатов
+                    .items__item#polygraphy_09
+                        .h Печать настенных календарей
+                    .items__item.items__item--wide#polygraphy_10
+                        .h Печать папок, конвертов, бланков и дипломов
+                    .items__item#polygraphy_11
+                        .h Печать открыток и пригласи
+                            wbr
+                            |тельных
+                    .items__item#polygraphy_12
+                        .h Печать журналов
+                    .items__item.items__item--wide#polygraphy_13
+                        .h Печать брошюр и флаеров
 
-    section.b-working
-        .bg.plan__bg
-        .main
-            h1.b-working__h1 Как мы работаем
-            .b-working__plan
-                .plan-item
-                    h2.item-h2 Свяжитесь с нами
-                    p.item-p Чтобы сделать заказ, напишите нам, что бы Вы хотели получить, и наши менеджеры свяжуться с Вами для уточнения и согласования цены
-                .plan-item
-                    h2.item-h2 Утвердите макет
-                    p.item-p Оцените проделанную работу и вынесите окончательный вердикт по макету и деталям Вашего заказа
-                .plan-item
-                    h2.item-h2 Получите макет
-                    p.item-p Получите профессиональный макет с индивидуальным дизайном и всеми необходимыми для Вас исходниками
-                .plan-item
-                    h2.item-h2 Наслаждайтесь
-                    p.item-p Теперь у Вас есть всё необходимое для зарабатывания миллионов! Наслаждайтесь полученным результатом и прибылью и не забудьте порекомендовать нас своим друзьям
-        .bg.mist__bg
-            .mist__bg-left
-            .mist__bg-right
+                .b-portfolio__items#items-souvenirs
+                    .items__item.items__item--wide#souvenirs_01
+                        .h Печать на футболках
+                    .items__item#souvenirs_02
+                        .h Печать на чашках
+                    .items__item#souvenirs_03
+                        .h Печать на ручках
+                    .items__item.items__item--wide#souvenirs_04
+                        .h Печать на флешках
+                    .items__item#souvenirs_05
+                        .h Печать на бейсболках
+                    .items__item#souvenirs_06
+                        .h Печать на зажигалках
+                    .items__item.items__item--wide#souvenirs_07
+                        .h Подарочные наборы
+                    .items__item#souvenirs_08
+                        .h Печать на брелках
+                    .items__item#souvenirs_09
+                        .h Печать на чашках
+                .b-portfolio__items#items-large
+                    .items__item.items__item--wide#large_01
+                        .h Печать на оракале
+                    .items__item#large_02
+                        .h Печать пресс волла
+                    .items__item#large_03
+                        .h Баннер паук,
+                            br
+                            |X-Banner
+                    .items__item.items__item--wide#large_04
+                        .h Печать фотоколлажа на постере
+                    .items__item#large_05
+                        .h Печать постеров
+                    .items__item#large_06
+                        .h Стенды Roll-up
+                    .items__item.items__item--wide#large_07
+                        .h Печать на холсте
+                    .items__item#large_08
+                        .h Печать на фотобумаге
+                    .items__item#large_09
+                        .h Печать баннеров
 
-    section.b-sign-up
-        .main
-            p
-                a(id="contacts")
-            h1.b-sign-up__h Мы Вам понравились?
-            p.b-sign-up__comment-p Спасибо! Вы нам тоже! Оставьте Вашу заявку, и наши менеджеры вышлют Вам бриф, как только мы выпустим их из подвала
-            form.b-sign-up__form#b-sign-up__form(action="sender.php", method="post")
-                input.b-sign-up__input#phone-input(type='tel', name = "phone", placeholder='Ваш телефон', required='required', maxlength="17")
-                input.b-sign-up__input#email-input(type='email', name = "email", placeholder='Ваш e-mail', required='required', maxlength="36")
-                textarea.b-sign-up__input#comment-input(name = "comment", placeholder='Ваши пожелания и предпочтения', maxlength="1000")
-                .button.b-sign-up__button-request-brief#b-sign-up__submit() запросить бриф
-                //input.button.b-sign-up__button-request-brief(type="submit", value="запросить бриф")
+                .button#b-portfolio__button(href="#contacts") запросить бриф
 
-    footer.b-footer
-        .b-footer__bg.bg
-        .main
-            .b-footer__nav
-                a.nav_item(href="#services") Услуги
-                a.nav_item(href="#portfolio") Портфолио
-                a.nav_item(href="#contacts") Контакты
-                .nav_item.nav_item--empty
-                .nav__logo
-                    .logo__img
-                    a.logo__email(href="mailto:info@powerprint.com.ua") info@powerprint.com.ua
-                    p.logo__phone-p (095) 117 - 61 - 70
-                    p.logo__phone-p (073) 499 - 09 - 18
+        section.b-working
+            .bg.plan__bg
+            .main
+                h1.b-working__h1 Как мы работаем
+                .b-working__plan
+                    .plan-item
+                        h2.item-h2 Свяжитесь с нами
+                        p.item-p Чтобы сделать заказ, напишите нам, что бы Вы хотели получить, и наши менеджеры свяжуться с Вами для уточнения и согласования цены
+                    .plan-item
+                        h2.item-h2 Утвердите макет
+                        p.item-p Оцените проделанную работу и вынесите окончательный вердикт по макету и деталям Вашего заказа
+                    .plan-item
+                        h2.item-h2 Получите макет
+                        p.item-p Получите профессиональный макет с индивидуальным дизайном и всеми необходимыми для Вас исходниками
+                    .plan-item
+                        h2.item-h2 Наслаждайтесь
+                        p.item-p Теперь у Вас есть всё необходимое для зарабатывания миллионов! Наслаждайтесь полученным результатом и прибылью и не забудьте порекомендовать нас своим друзьям
+            .bg.mist__bg
+                .mist__bg-left
+                .mist__bg-right
 
+        section.b-sign-up
+            .main
+                p
+                    a(id="contacts")
+                h1.b-sign-up__h Мы Вам понравились?
+                p.b-sign-up__comment-p Спасибо! Вы нам тоже! Оставьте Вашу заявку, и наши менеджеры вышлют Вам бриф, как только мы выпустим их из подвала
+                form.b-sign-up__form#b-sign-up__form(action="sender.php", method="post")
+                    input.b-sign-up__input#phone-input(type='tel', name = "phone", placeholder='Ваш телефон', required='required', maxlength="17")
+                    input.b-sign-up__input#email-input(type='email', name = "email", placeholder='Ваш e-mail', required='required', maxlength="36")
+                    textarea.b-sign-up__input#comment-input(name = "comment", placeholder='Ваши пожелания и предпочтения', maxlength="1000")
+                    .button.b-sign-up__button-request-brief#b-sign-up__submit() запросить бриф
+
+        footer.b-footer
+            .b-footer__bg.bg
+            .main
+                .b-footer__nav
+                    a.nav_item(href="#services") Услуги
+                    a.nav_item(href="#portfolio") Портфолио
+                    a.nav_item(href="#contacts") Контакты
+                    .nav_item.nav_item--empty
+                    .nav__logo
+                        .logo__img
+                        a.logo__email(href="mailto:info@powerprint.com.ua") info@powerprint.com.ua
+                        p.logo__phone-p (095) 117 - 61 - 70
+                        p.logo__phone-p (073) 499 - 09 - 18
+        //.b-curtain.message-show - класс для вызова сообщения
+        .b-curtain
+            .b-message#message
+                .b-message__p#message-text Text of the message.
+                .b-message__button-ok#button-ok Ok
 
 

@@ -228,6 +228,9 @@ p{
 	}
 }
 
+.none{
+	display: none;
+}
 
 .button{
   border: 1px solid #000;
@@ -249,7 +252,7 @@ p{
   &:after{
     content: "";
     display: inline-block;
-    background-image: url('../i/arrow.svg');
+    background-image: url('../img/arrow.svg');
     background-repeat: no-repeat;
     background-size: contain;
 	width: 7.317%; //30px;
@@ -470,7 +473,7 @@ p{
 .cont_item--logo {
 	min-width: 203px;
 	height: 39px;
-	background: url('../i/small logo.svg') no-repeat;
+	background: url('../img/small logo.svg') no-repeat;
 
 }
 
@@ -492,7 +495,7 @@ p{
 	padding-top: 49%;
 	min-height: 570px; //1080px;
 	height: auto;
-	background: url('../i/poster_mob.png') center 0px / cover no-repeat;
+	background: url('../img/poster_mob.png') center 0px / cover no-repeat;
 	@media only screen and (max-device-width: 768px) {display: block;}
 	opacity: 1;
 	//animation-name: neon_ani;
@@ -534,12 +537,12 @@ p{
 	height: 100vh;
 	width: 100vw;
 	//min-height: 570px;
-	background: url('../i/1.svg') center 0px / contain no-repeat,  url('../i/2.svg') center 0px / contain no-repeat, url('../i/2-1.svg') center 63.156vh / cover no-repeat, url('../i/2-2.svg') center 53.16vh / cover no-repeat, url('../i/2-3.svg') center 60.53vh / cover no-repeat;
+	background: url('../img/1.svg') center 0px / contain no-repeat,  url('../img/2.svg') center 0px / contain no-repeat, url('../img/2-1.svg') center 63.156vh / cover no-repeat, url('../img/2-2.svg') center 53.16vh / cover no-repeat, url('../img/2-3.svg') center 60.53vh / cover no-repeat;
 	@media only screen and (max-device-width: 768px) {
 		top: 420px;
 		height: 570px;
 		width: 100%;
-		background: url('../i/1.svg') center 0px / contain no-repeat,  url('../i/2.svg') center 0px / contain no-repeat, url('../i/2-1.svg') center 600px / cover no-repeat, url('../i/2-2.svg') center 505px / cover no-repeat, url('../i/2-3.svg') center 575px / cover no-repeat;
+		background: url('../img/1.svg') center 0px / contain no-repeat,  url('../img/2.svg') center 0px / contain no-repeat, url('../img/2-1.svg') center 600px / cover no-repeat, url('../img/2-2.svg') center 505px / cover no-repeat, url('../img/2-3.svg') center 575px / cover no-repeat;
 	}
 
 }
@@ -578,7 +581,7 @@ p{
 	@media only screen and (max-device-width: 768px){
 		height: 665px;// 815px;
 		.b-header__bg{
-			//background: url('../i/bg1-mo720.png') center -80px / contain no-repeat;
+			//background: url('../img/bg1-mo720.png') center -80px / contain no-repeat;
 		}
 	}
 	@media only screen
@@ -613,7 +616,7 @@ p{
 	.order__logo {
 		height: 110px;
 		width: 100%;
-		background: url('../i/Logo big.svg') no-repeat;
+		background: url('../img/Logo big.svg') no-repeat;
 		animation-name: order__blur_ani;
 		animation-delay: $hlogo-del;
 		animation-duration: $hlogo-dur;
@@ -740,7 +743,7 @@ p{
 			left: -70px;
 			width: 247px;
 			height: 258px;
-			background: url('../i/ser-1-ico.svg') no-repeat;
+			background: url('../img/ser-1-ico.svg') no-repeat;
 			@media only screen and (max-device-width: 768px){
 				left: -45px;
 			}
@@ -754,7 +757,7 @@ p{
 			top: 15px;
 			width: 247px;
 			height: 249px;
-			background: url('../i/ser-2-ico.svg') no-repeat;
+			background: url('../img/ser-2-ico.svg') no-repeat;
 			@media only screen and (max-device-width: 768px){
 				right: -30px;
 			}
@@ -769,7 +772,7 @@ p{
 			top: 30px;
 			width: 247px;
 			height: 249px;
-			background: url('../i/ser-3-ico.svg') no-repeat;
+			background: url('../img/ser-3-ico.svg') no-repeat;
 			@media only screen and (max-device-width: 768px){
 				left: -35px;
 			}
@@ -782,7 +785,7 @@ p{
 		//transform: translateX(50%);
 		//left: -50%;
 	}
-	.button-portfolio, .button-to-order{
+	#button-portfolio, #button-to-order{
 		display: inline-block;
 		margin: 50px 10px 10px;
 		width: 35%;
@@ -842,14 +845,14 @@ p{
 	height: auto;
 	min-height: 1380px;
 	//height: 1380px;
-	background: url('../i/waves_about_us.png') 0 0 / cover no-repeat; // 145px 0;
+	background: url('../img/waves_about_us.png') 0 0 / cover no-repeat; // 145px 0;
 	//animation-name: neon_ani;
 	//animation-delay: $neon2-del;
 	//animation-duration: $neon2-dur;
 	//animation-iteration-count: infinite;
 
 	@media only screen and (max-device-width: 768px){
-		background: url('../i/waves_about_us.png') 0 0 no-repeat / contain;
+		background: url('../img/waves_about_us.png') 0 0 no-repeat / contain;
 	}
 }
 
@@ -896,7 +899,7 @@ p{
 		margin-bottom: 20px;
 		width: 376px;
 		height: 151px;
-		background: url('../i/Logo big.svg') no-repeat -74px 58px;
+		background: url('../img/Logo big.svg') no-repeat -74px 58px;
 		background-size: contain;
 		@media only screen and (max-device-width: 768px){
 			transform: scale(0.8,0.8);
@@ -910,6 +913,10 @@ p{
 			top: 21px;
 			right: -17px;
 			//right: 3px;
+
+			//@media only screen and (max-device-width: 768px){
+			//	text-shadow: -3px -3px 3px #fff;
+			//}
 		}
 	}
 
@@ -964,11 +971,8 @@ p{
 	}
 }
 .nav-button{
-    display: flex; // !! Вертик. выравниваение текста флексом !!
-    justify-content: center;
-    flex-direction: column;
+    display: block;
 	overflow: hidden;
-    ///text-align: center;
 	background: rgba(255,255,255,0.5);
 	border: 1px solid #000;
 	box-sizing: border-box;
@@ -977,10 +981,16 @@ p{
 	font-size: 1.2em;
 	width: 31%;
 	height: 70px;
-    padding: 10px;
+	line-height: 70px;
+    padding: 0 10px;
 	text-transform: uppercase;
 	transition: 0.5s;
 	@media (max-width: 1070px) {
+		padding: 3px 10px 0;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		line-height: initial;
 		font-size: 1.0em;
 		width: 29%;
 		&#button-large{
@@ -990,8 +1000,6 @@ p{
 	@media only screen and (max-device-width: 768px){
 		padding: 60px 10px;
 		font-size: 0.85em;
-		//width: 28%;
-		//width: 300px!important;
 		width: calc((100% - 350px) / 2)!important;
 		&:first-child{
 			border-radius: 15px 0 0 15px;
@@ -1020,7 +1028,7 @@ p{
 		transition: 0.5s;
 	}
 }
-.b-portfolio__button-request-brief{
+.button#b-portfolio__button{
 	margin: 45px auto 75px;
 }
 
@@ -1094,6 +1102,7 @@ p{
     //}
 
 	&:hover .h {
+		cursor: default;
 		color: #fff;
 		transition: 0.5s;
 	}
@@ -1158,8 +1167,8 @@ p{
   min-width: 1325px;
   height: 100%;
   top: 235px;
-  //background: url("../i/path.svg") no-repeat 0 265px;
-  background: url('../i/how1.svg') no-repeat 116px 30px, url('../i/how2.svg') no-repeat 1075px 241px, url('../i/how3.svg') no-repeat 116px 474px, url('../i/how4.svg') no-repeat 1080px 710px, url("../i/path.svg") no-repeat 0 170px / contain;
+  //background: url("../img/path.svg") no-repeat 0 265px;
+  background: url('../img/how1.svg') no-repeat 116px 30px, url('../img/how2.svg') no-repeat 1075px 241px, url('../img/how3.svg') no-repeat 116px 474px, url('../img/how4.svg') no-repeat 1080px 710px, url("../img/path.svg") no-repeat 0 170px / contain;
   z-index: 0;
   @media(max-width: 830px){
     opacity: 0;
@@ -1170,7 +1179,7 @@ p{
   @media only screen
 	and (min-device-width: 768px)
 	and (max-device-width: 1366px){
-	  background: url('../i/how1.svg') no-repeat 196px 40px, url('../i/how2.svg') no-repeat 995px 251px, url('../i/how3.svg') no-repeat 196px 484px, url('../i/how4.svg') no-repeat 1000px 720px, url("../i/path.svg") no-repeat 0 180px / contain;
+	  background: url('../img/how1.svg') no-repeat 196px 40px, url('../img/how2.svg') no-repeat 995px 251px, url('../img/how3.svg') no-repeat 196px 484px, url('../img/how4.svg') no-repeat 1000px 720px, url("../img/path.svg") no-repeat 0 180px / contain;
   }
 
 }
@@ -1182,7 +1191,7 @@ p{
 	padding-bottom: 70px;
 	//height: 870px;
 	//width: 1440px;
-	//background: url('../i/how1.svg') no-repeat 106px 30px, url('../i/how2.svg') no-repeat 1075px 234px, url('../i/how3.svg') no-repeat 126px 468px, url('../i/how4.svg') no-repeat 1080px 700px, url("../i/path.svg") no-repeat 0 170px / contain;
+	//background: url('../img/how1.svg') no-repeat 106px 30px, url('../img/how2.svg') no-repeat 1075px 234px, url('../img/how3.svg') no-repeat 126px 468px, url('../img/how4.svg') no-repeat 1080px 700px, url("../img/path.svg") no-repeat 0 170px / contain;
 
 	.plan-item {
         //outline: 1px solid blue;
@@ -1406,8 +1415,7 @@ p{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	//background: linear-gradient(96deg, #555555, #282828);
-	background: url('../i/footer-bg25.png');
+	background: url('../img/footer-bg25.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -1446,7 +1454,7 @@ p{
 	.logo__img {
 		width: 380px;
 		height: 105px;
-		background: url('../i/logo-footer.svg') no-repeat ;
+		background: url('../img/logo-footer.svg') no-repeat ;
 		//border: 1px solid white;
 	}
 	.logo__email,.logo__phone-p {
@@ -1464,6 +1472,73 @@ p{
 		margin-top: -5px;
 	}
 }
+
+
+.b-curtain{
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: rgba(0,0,0,0.5);
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.2s;
+	//backface-visibility: hidden;
+
+}
+.b-message{
+	box-sizing: border-box;
+	width: 33%;
+	background: linear-gradient(to bottom, #fff, #bbb);
+	box-shadow: 5px 5px 15px #555;
+	padding: 30px 30px 70px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) scale(0.1,0.1);
+	transition: 0.2s;
+	opacity: 0;
+	z-index: 9999;
+}
+
+
+.message-show{
+	opacity: 1;
+	visibility: visible;
+}
+
+.message-show>.b-message{
+	transform: translate(-50%,-50%) scale(1,1);
+	transition: 0.5s;
+	opacity: 1;
+	//visibility: visible;
+}
+
+.b-message__p{
+	text-align: center;
+}
+
+.b-message__button-ok{
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	width: 50px;
+	text-align: center;
+	background: linear-gradient(to bottom, #fff, #bbb);
+	box-shadow: 1px 1px 5px #999;
+	padding: 5px;
+	user-select: none;
+	transition: 0.5s;
+	&:hover{
+		//background: linear-gradient(to top, #fff, #bbb);
+		background: #eee;
+		transition: 0.5s;
+	}
+}
+
 
 
 //@media only screen and (max-device-width: 768px){

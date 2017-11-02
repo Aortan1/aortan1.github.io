@@ -1,0 +1,7 @@
+IndexIgnore */*
+Options -Indexes
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !^/(web)
+RewriteRule ^api/(.*)$ /backend/$1 [L]
